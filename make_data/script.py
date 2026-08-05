@@ -8,15 +8,16 @@ from playwright.async_api import async_playwright
 from tqdm import tqdm
 
 # ==========================================
-# 1. DATA, FONTS, COLORS & ASSETS
+# 1. DATA, FONTS, COLORS, ASSETS & PATHS
 # ==========================================
 
 TEXT_FILE_PATH = "shamela_1M_words.txt"
 IMAGE_FOLDER_PATH = "nature_images"
 
-# Globals to hold loaded assets
-CORPUS_WORDS = []
+DATASET_IMAGES_PATH = "dataset/images"
+DATASET_ANNOTATIONS_PATH = "dataset/annotations"
 
+CORPUS_WORDS = []
 IMAGE_PATHS = []
 
 FONTS = [
@@ -36,34 +37,26 @@ COLORS = [
 
 
 def load_assets():
-    """Loads the text corpus and image paths into memory."""
     global CORPUS_WORDS, IMAGE_PATHS
-
-    # 1. Load Text
     if os.path.exists(TEXT_FILE_PATH):
         print(f"Loading text from {TEXT_FILE_PATH}...")
         with open(TEXT_FILE_PATH, 'r', encoding='utf-8') as f:
             CORPUS_WORDS = f.read().split()
-        print(f"Loaded {len(CORPUS_WORDS)} words.")
     else:
         raise FileNotFoundError(f"{TEXT_FILE_PATH} not found.")
 
-    # 2. Load Image Paths
     if os.path.exists(IMAGE_FOLDER_PATH):
         print(f"Scanning images in {IMAGE_FOLDER_PATH}...")
         valid_extensions = ('.png', '.jpg', '.jpeg', '.webp', '.gif')
         IMAGE_PATHS = [
-            os.path.join(IMAGE_FOLDER_PATH, f)
-            for f in os.listdir(IMAGE_FOLDER_PATH)
+            os.path.join(IMAGE_FOLDER_PATH, f) for f in os.listdir(IMAGE_FOLDER_PATH)
             if f.lower().endswith(valid_extensions)
         ]
-        print(f"Found {len(IMAGE_PATHS)} images.")
     else:
         raise FileNotFoundError(f"{IMAGE_FOLDER_PATH} not found.")
 
 
 def get_real_arabic_text(min_words=30, max_words=300):
-    """Pulls a contiguous chunk of real text from the loaded corpus."""
     count = random.randint(min_words, max_words)
     if len(CORPUS_WORDS) > count:
         start_idx = random.randint(0, len(CORPUS_WORDS) - count)
@@ -74,17 +67,15 @@ def get_real_arabic_text(min_words=30, max_words=300):
 
 
 def get_image_base64(img_path):
-    """Converts a local image to Base64 so Playwright loads it instantly without CORS/local-file restrictions."""
     mime_type, _ = mimetypes.guess_type(img_path)
-    if not mime_type:
-        mime_type = "image/jpeg"
+    if not mime_type: mime_type = "image/jpeg"
     with open(img_path, "rb") as image_file:
         encoded_string = base64.b64encode(image_file.read()).decode('utf-8')
     return f"data:{mime_type};base64,{encoded_string}"
 
 
 # ==========================================
-# 2. LAYOUT COMPONENT GENERATORS
+# 2. HIERARCHICAL LAYOUT GENERATORS
 # ==========================================
 
 def gen_heading(text=None):
@@ -108,35 +99,56 @@ def gen_paragraph(text=None, columns=1):
     font = random.choice(FONTS)
     color = random.choice(COLORS)
     font_size = random.choice([14, 16, 18])
-    col_gap = random.randint(15, 30)
-    col_style = f"column-count: {columns}; column-gap: {col_gap}px;" if columns > 1 else ""
 
-    return f"""
-    <div class="layout-node paragraph" data-label="paragraph" 
-         style="height: 100%; width: 100%; font-family: '{font}'; color: {color}; font-size:{font_size}px; 
-                {col_style} text-align: justify; overflow: hidden; line-height: 1.8; box-sizing: border-box; padding-bottom: 20px;">
-        {text}
-    </div>
-    """
+    # If 1 column, return standard paragraph
+    if columns == 1:
+        return f"""
+        <div class="layout-node paragraph" data-label="paragraph" 
+             style="height: 100%; width: 100%; font-family: '{font}'; color: {color}; font-size:{font_size}px; 
+                    text-align: justify; overflow: hidden; line-height: 1.8; box-sizing: border-box; padding-bottom: 20px;">
+            {text}
+        </div>
+        """
+
+    # If Multi-column: physically split the text and put it in separate layout-node containers
+    words = text.split()
+    chunk_size = len(words) // columns
+    chunks = [" ".join(words[i:i + chunk_size]) for i in range(0, len(words), chunk_size)]
+    if len(chunks) > columns:
+        chunks[columns - 1] += " " + " ".join(chunks[columns:])
+        chunks = chunks[:columns]
+
+    col_gap = random.randint(15, 30)
+
+    html = f'<div class="layout-node multi-column" data-label="multi-column" style="display: grid; grid-template-columns: repeat({columns}, 1fr); gap: {col_gap}px; height: 100%; width: 100%; box-sizing: border-box; padding-bottom: 20px;">'
+    for chunk in chunks:
+        html += f"""
+        <div class="layout-node paragraph" data-label="paragraph" 
+             style="height: 100%; width: 100%; font-family: '{font}'; color: {color}; font-size:{font_size}px; 
+                    text-align: justify; overflow: hidden; line-height: 1.8;">
+            {chunk}
+        </div>
+        """
+    html += "</div>"
+    return html
 
 
 def gen_figure(caption=None):
     caption = caption or "شكل: " + get_real_arabic_text(2, 6)
     font = random.choice(FONTS)
 
-    # Generate the Image HTML
     if IMAGE_PATHS:
         img_path = random.choice(IMAGE_PATHS)
         img_b64 = get_image_base64(img_path)
         img_html = f'<img src="{img_b64}" style="width: 100%; height: 100%; object-fit: cover; display: block;" />'
     else:
-        # Fallback if no images found
         img_html = f'<span style="font-family: \'{font}\';">[صورة]</span>'
 
+    # Notice how the wrapper is a layout-node, and the children are also layout-nodes
     return f"""
-    <div class="layout-node figure-container" data-label="figure" 
+    <div class="layout-node figure" data-label="figure" 
          style="height: 100%; width: 100%; display: flex; flex-direction: column; overflow: hidden; box-sizing: border-box; padding-bottom: 15px;">
-        <div style="flex-grow: 1; background:#e2e8f0; border:2px solid #64748b; display:flex; align-items:center; justify-content:center; box-sizing: border-box; overflow: hidden;">
+        <div class="layout-node figure-image" data-label="figure-image" style="flex-grow: 1; background:#e2e8f0; border:2px solid #64748b; display:flex; align-items:center; justify-content:center; box-sizing: border-box; overflow: hidden;">
             {img_html}
         </div>
         <div class="layout-node figure-caption" data-label="figure-caption" 
@@ -151,16 +163,17 @@ def gen_table(rows=6, cols=3):
     font = random.choice(FONTS)
     color = random.choice(COLORS)
 
-    html = f'<div class="table-wrapper" style="height: 100%; width: 100%; overflow: hidden; box-sizing: border-box; padding-bottom: 15px;">'
-    html += f'<table class="layout-node" data-label="table" style="height: 100%; width: 100%; table-layout: fixed; border-collapse: collapse; font-family: \'{font}\'; color: {color}; box-sizing: border-box;">'
+    # Notice how the wrapper is a layout-node, and the TH/TD cells are also layout-nodes
+    html = f'<div class="layout-node table-wrapper" data-label="table" style="height: 100%; width: 100%; overflow: hidden; box-sizing: border-box; padding-bottom: 15px;">'
+    html += f'<table style="height: 100%; width: 100%; table-layout: fixed; border-collapse: collapse; font-family: \'{font}\'; color: {color}; box-sizing: border-box;">'
 
     for r in range(rows):
         html += "<tr>"
         for c in range(cols):
             if r == 0:
-                html += f'<th class="layout-node" data-label="table-cell" style="border: 2px solid {color}; background-color: #f8fafc; padding: 10px 10px 16px 10px; font-size: 14px; overflow: hidden; box-sizing: border-box;">{get_real_arabic_text(1, 3)}</th>'
+                html += f'<th class="layout-node table-cell" data-label="table-cell" style="border: 2px solid {color}; background-color: #f8fafc; padding: 10px 10px 16px 10px; font-size: 14px; overflow: hidden; box-sizing: border-box;">{get_real_arabic_text(1, 3)}</th>'
             else:
-                html += f'<td class="layout-node" data-label="table-cell" style="border: 1px solid {color}; padding: 10px 10px 16px 10px; font-size: 14px; overflow: hidden; box-sizing: border-box;">{get_real_arabic_text(2, 8)}</td>'
+                html += f'<td class="layout-node table-cell" data-label="table-cell" style="border: 1px solid {color}; padding: 10px 10px 16px 10px; font-size: 14px; overflow: hidden; box-sizing: border-box;">{get_real_arabic_text(2, 8)}</td>'
         html += "</tr>"
     html += "</table></div>"
     return html
@@ -215,9 +228,7 @@ def generate_random_template():
         if r == 0:
             col_layout = "1fr"
         else:
-            col_layout = random.choice([
-                "1fr", "1fr 1fr", "1fr 2fr", "2fr 1fr", "1fr 1fr 1fr"
-            ])
+            col_layout = random.choice(["1fr", "1fr 1fr", "1fr 2fr", "2fr 1fr", "1fr 1fr 1fr"])
 
         cols = col_layout.split()
         html += f'<div style="display: grid; gap: 20px; grid-template-columns: {col_layout}; height: 100%;">'
@@ -254,6 +265,7 @@ async def render_and_extract(html_content, output_image_path, output_json_path):
 
         await page.set_content(html_content, wait_until="networkidle")
 
+        # The Javascript inside Playwright handles the DOM Hierarchy scanning
         script = """
         () => {
             // STEP 1: FIX TABLES 
@@ -282,19 +294,35 @@ async def render_and_extract(html_content, output_image_path, output_json_path):
                 }
             });
 
-            // STEP 3: EXTRACT EXACT BOUNDING BOXES AND TEXT
-            const elements = document.querySelectorAll('.layout-node');
+            // STEP 3: HIERARCHICAL RTL EXTRACTION
             const data = [];
-            elements.forEach(el => {
-                const rect = el.getBoundingClientRect();
+
+            // Recursive function to step into tables/figures/columns
+            function extractNode(node, prefix) {
+                const rect = node.getBoundingClientRect();
                 if (rect.width === 0 || rect.height === 0) return;
 
-                let extractedText = el.innerText ? el.innerText.trim().replace(/\\s+/g, ' ') : "";
-                if (el.getAttribute('data-label') === 'figure') extractedText = "";
+                // Find direct children ONLY (avoids double counting nested items)
+                const allChildren = Array.from(node.querySelectorAll('.layout-node'));
+                const directChildren = allChildren.filter(child => {
+                    let p = child.parentElement;
+                    while (p && p !== node) {
+                        if (p.classList.contains('layout-node')) return false;
+                        p = p.parentElement;
+                    }
+                    return true;
+                });
+
+                // Extract text only if it's a leaf node (e.g. paragraph, cell, caption). Parent boxes will just map the zone.
+                let extractedText = "";
+                if (directChildren.length === 0 && node.getAttribute('data-label') !== 'figure-image') {
+                    extractedText = node.innerText ? node.innerText.trim().replace(/\\s+/g, ' ') : "";
+                }
 
                 data.push({
-                    label: el.getAttribute('data-label'),
+                    label: node.getAttribute('data-label'),
                     text: extractedText,
+                    reading_index: prefix,
                     x: rect.x,
                     y: rect.y,
                     width: rect.width,
@@ -302,7 +330,30 @@ async def render_and_extract(html_content, output_image_path, output_json_path):
                     bottom: rect.bottom,
                     right: rect.right
                 });
+
+                // Dive into children (assigns 4.1, 4.2, etc.)
+                directChildren.forEach((child, index) => {
+                    extractNode(child, `${prefix}.${index + 1}`);
+                });
+            }
+
+            // Find ROOT layout nodes (Boxes that have NO layout-node above them)
+            const allLayoutNodes = Array.from(document.querySelectorAll('.layout-node'));
+            const rootNodes = allLayoutNodes.filter(node => {
+                let p = node.parentElement;
+                while(p) {
+                    if (p.classList.contains('layout-node')) return false;
+                    p = p.parentElement;
+                }
+                return true;
             });
+
+            // Execute recursively, starting at 1. Because the HTML is <dir="rtl">, 
+            // the DOM natural order is inherently Top-To-Bottom, Right-to-Left!
+            rootNodes.forEach((root, index) => {
+                extractNode(root, `${index + 1}`);
+            });
+
             return data;
         }
         """
@@ -321,22 +372,19 @@ async def render_and_extract(html_content, output_image_path, output_json_path):
 # ==========================================
 
 async def main():
-    # Load your local assets (text + images) before rendering
     load_assets()
 
-    os.makedirs("dataset/images", exist_ok=True)
-    os.makedirs("dataset/annotations", exist_ok=True)
+    os.makedirs(DATASET_IMAGES_PATH, exist_ok=True)
+    os.makedirs(DATASET_ANNOTATIONS_PATH, exist_ok=True)
 
-    NUM_SAMPLES = 100
+    NUM_SAMPLES = 10
 
     print(f"Generating {NUM_SAMPLES} Perfected A4 templates...")
     for i in tqdm(range(NUM_SAMPLES)):
         html_string = generate_random_template()
-        img_path = f"dataset/images/sample_{i:07d}.png"
-        json_path = f"dataset/annotations/sample_{i:07d}.json"
-
+        img_path = os.path.join(DATASET_IMAGES_PATH, f"sample_{i:07d}.png")
+        json_path = os.path.join(DATASET_ANNOTATIONS_PATH, f"sample_{i:07d}.json")
         await render_and_extract(html_string, img_path, json_path)
-        # print(f"[{i + 1}/{NUM_SAMPLES}] Saved {img_path}")
 
 
 if __name__ == "__main__":
