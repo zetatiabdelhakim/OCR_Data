@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
+	<Metadata>
+	<Creator></Creator>
+	<Created>2015-12-02T13:09:28</Created>
+	<LastChange>2015-12-02T13:09:28</LastChange></Metadata>
+	<Page imageFilename="Headers-308.jpg" imageWidth="1653" imageHeight="2339">
+	<ReadingOrder>
+	<OrderedGroup id="ro357564684568544579089">
+	<RegionRefIndexed regionRef="r1" index="0"/>
+	<RegionRefIndexed regionRef="r2" index="1"/>
+	<RegionRefIndexed regionRef="r4" index="2"/>
+	<RegionRefIndexed regionRef="r5" index="3"/></OrderedGroup></ReadingOrder>
+	<TextRegion id="r1" orientation="0.00000" readingOrientation="0.00000" readingDirection="right-to-left" type="heading" align="right" primaryLanguage="Arabic">
+	<Coords points="724,450 895,450 895,492 724,492"/>
+	<TextStyle fontSize="1.00000" bgColour="white"/></TextRegion>
+	<TextRegion id="r2" orientation="0.00000" readingOrientation="0.00000" readingDirection="right-to-left" type="heading" align="right" primaryLanguage="Arabic">
+	<Coords points="450,573 1170,573 1170,655 450,655"/>
+	<TextStyle fontSize="2.00000" bgColour="white"/></TextRegion>
+	<TextRegion id="r4" orientation="0.00000" readingOrientation="0.00000" readingDirection="right-to-left" type="heading" align="right" primaryLanguage="Arabic">
+	<Coords points="938,845 1426,845 1426,899 938,899"/>
+	<TextStyle fontSize="0.00000" bgColour="white"/></TextRegion>
+	<TextRegion id="r5" orientation="0.00000" readingOrientation="0.00000" readingDirection="right-to-left" type="paragraph" align="right" primaryLanguage="Arabic">
+	<Coords points="193,940 1428,940 1428,2038 193,2038"/>
+	<TextStyle bgColour="white"/></TextRegion></Page></PcGts>

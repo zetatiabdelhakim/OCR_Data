@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
+	<Metadata>
+	<Creator></Creator>
+	<Created>2016-03-08T08:21:11</Created>
+	<LastChange>2016-03-10T20:23:31</LastChange></Metadata>
+	<Page imageFilename="text1-82.jpg" imageWidth="1654" imageHeight="2338">
+	<ReadingOrder>
+	<OrderedGroup id="ro357564684568544579089">
+	<RegionRefIndexed regionRef="r2" index="0"/>
+	<RegionRefIndexed regionRef="r3" index="1"/>
+	<RegionRefIndexed regionRef="r4" index="2"/>
+	<RegionRefIndexed regionRef="r5" index="3"/>
+	<RegionRefIndexed regionRef="r6" index="4"/></OrderedGroup></ReadingOrder>
+	<NoiseRegion id="r1">
+	<Coords points="0,0 1652,0 1652,6 0,6"/></NoiseRegion>
+	<TextRegion id="r2" readingDirection="right-to-left" type="header" align="right" primaryLanguage="Arabic">
+	<Coords points="262,162 644,162 644,193 262,193"/>
+	<TextStyle bgColour="white"/></TextRegion>
+	<TextRegion id="r3" readingDirection="right-to-left" type="paragraph" align="right" primaryLanguage="Arabic">
+	<Coords points="261,238 1403,238 1403,409 261,409"/>
+	<TextStyle bgColour="white"/></TextRegion>
+	<TextRegion id="r4" readingDirection="right-to-left" type="paragraph" align="right" primaryLanguage="Arabic">
+	<Coords points="259,430 1402,430 1402,659 259,659"/>
+	<TextStyle bgColour="white"/></TextRegion>
+	<TextRegion id="r5" readingDirection="right-to-left" type="paragraph" align="right" primaryLanguage="Arabic">
+	<Coords points="258,677 1402,677 1402,1677 258,1677"/>
+	<TextStyle bgColour="white"/></TextRegion>
+	<TextRegion id="r6" readingDirection="right-to-left" type="paragraph" align="right" primaryLanguage="Arabic">
+	<Coords points="257,1700 1402,1700 1402,2134 257,2134"/>
+	<TextStyle bgColour="white"/></TextRegion>
+	<NoiseRegion id="r7">
+	<Coords points="473,2335 578,2335 578,2337 473,2337"/></NoiseRegion></Page></PcGts>

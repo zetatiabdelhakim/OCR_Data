@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
+	<Metadata>
+	<Creator></Creator>
+	<Created>2016-03-08T09:29:33</Created>
+	<LastChange>2016-03-08T09:29:33</LastChange></Metadata>
+	<Page imageFilename="text1-38.jpg" imageWidth="1654" imageHeight="2338">
+	<NoiseRegion id="r1">
+	<Coords points="0,0 1652,0 1652,15 0,15"/></NoiseRegion>
+	<TextRegion id="r2" readingDirection="right-to-left" type="header" align="right" primaryLanguage="Arabic">
+	<Coords points="541,183 1140,183 1140,224 541,224"/>
+	<TextStyle bgColour="white"/></TextRegion>
+	<TextRegion id="r3" readingDirection="right-to-left" type="paragraph" align="right" primaryLanguage="Arabic">
+	<Coords points="222,276 1328,276 1328,451 222,451"/>
+	<TextStyle bgColour="white"/></TextRegion>
+	<TextRegion id="r4" readingDirection="right-to-left" type="page-number" align="right" primaryLanguage="Arabic">
+	<Coords points="814,2130 862,2130 862,2151 814,2151"/>
+	<TextStyle bgColour="white"/></TextRegion></Page></PcGts>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
+	<Metadata>
+	<Creator></Creator>
+	<Created>2015-11-12T01:18:49</Created>
+	<LastChange>2015-11-12T01:18:57</LastChange></Metadata>
+	<Page imageFilename="Tables-17.jpg" imageWidth="1653" imageHeight="2339">
+	<ReadingOrder>
+	<OrderedGroup id="ro357564684568544579089">
+	<RegionRefIndexed regionRef="r2" index="0"/>
+	<RegionRefIndexed regionRef="r1" index="1"/></OrderedGroup></ReadingOrder>
+	<TextRegion id="r1" orientation="0.00000" readingOrientation="0.00000" readingDirection="right-to-left" type="caption" align="right" primaryLanguage="Arabic">
+	<Coords points="1375,672 1414,672 1414,1676 1375,1676"/>
+	<TextStyle bgColour="white"/></TextRegion>
+	<TableRegion id="r2">
+	<Coords points="450,345 1382,345 1382,2005 450,2005"/></TableRegion>
+	<TableRegion id="r3">
+	<Coords points="392,1800 425,1800 425,1997 392,1997"/></TableRegion></Page></PcGts>

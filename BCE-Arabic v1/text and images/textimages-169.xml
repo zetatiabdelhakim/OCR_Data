@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
+	<Metadata>
+	<Creator></Creator>
+	<Created>2015-11-13T09:42:52</Created>
+	<LastChange>2015-11-13T09:42:52</LastChange></Metadata>
+	<Page imageFilename="textimages-169.jpg" imageWidth="1653" imageHeight="2339">
+	<ReadingOrder>
+	<OrderedGroup id="ro357564684568544579089">
+	<RegionRefIndexed regionRef="r1" index="0"/>
+	<RegionRefIndexed regionRef="r3" index="1"/></OrderedGroup></ReadingOrder>
+	<TextRegion id="r1" orientation="0.00000" readingOrientation="0.00000" readingDirection="right-to-left" type="header" primaryLanguage="Arabic">
+	<Coords points="706,200 910,200 910,244 706,244"/>
+	<TextStyle bgColour="white"/></TextRegion>
+	<ImageRegion id="r2">
+	<Coords points="417,360 1202,360 1202,945 417,945"/></ImageRegion>
+	<TextRegion id="r3" orientation="0.00000" readingOrientation="0.00000" readingDirection="right-to-left" type="page-number" primaryLanguage="Arabic">
+	<Coords points="803,2147 834,2147 834,2167 803,2167"/>
+	<TextStyle bgColour="white"/></TextRegion></Page></PcGts>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
+	<Metadata>
+	<Creator></Creator>
+	<Created>2016-03-08T08:36:15</Created>
+	<LastChange>2016-03-10T20:24:51</LastChange></Metadata>
+	<Page imageFilename="text1-95.jpg" imageWidth="1654" imageHeight="2338">
+	<ReadingOrder>
+	<OrderedGroup id="ro357564684568544579089">
+	<RegionRefIndexed regionRef="r1" index="0"/>
+	<RegionRefIndexed regionRef="r2" index="1"/>
+	<RegionRefIndexed regionRef="r3" index="2"/>
+	<RegionRefIndexed regionRef="r4" index="3"/>
+	<RegionRefIndexed regionRef="r5" index="4"/>
+	<RegionRefIndexed regionRef="r6" index="5"/></OrderedGroup></ReadingOrder>
+	<TextRegion id="r1" readingDirection="right-to-left" type="paragraph" align="right" primaryLanguage="Arabic">
+	<Coords points="0,0 1652,0 1652,5 0,5"/>
+	<TextStyle bgColour="white"/></TextRegion>
+	<TextRegion id="r2" readingDirection="right-to-left" type="heading" align="right" primaryLanguage="Arabic">
+	<Coords points="737,425 927,425 927,472 737,472"/>
+	<TextStyle fontSize="1.00000" bgColour="white"/></TextRegion>
+	<TextRegion id="r3" readingDirection="right-to-left" type="heading" align="right" primaryLanguage="Arabic">
+	<Coords points="450,545 1214,545 1214,623 450,623"/>
+	<TextStyle fontSize="2.00000" bgColour="white"/></TextRegion>
+	<TextRegion id="r4" readingDirection="right-to-left" type="paragraph" align="right" primaryLanguage="Arabic">
+	<Coords points="214,812 1453,812 1453,1659 214,1659"/>
+	<TextStyle bgColour="white"/></TextRegion>
+	<TextRegion id="r5" readingDirection="right-to-left" type="heading" align="right" primaryLanguage="Arabic">
+	<Coords points="700,1731 1448,1731 1448,1779 700,1779"/>
+	<TextStyle fontSize="0.00000" bgColour="white"/></TextRegion>
+	<TextRegion id="r6" readingDirection="right-to-left" type="paragraph" align="right" primaryLanguage="Arabic">
+	<Coords points="215,1818 1451,1818 1451,2061 215,2061"/>
+	<TextStyle bgColour="white"/></TextRegion></Page></PcGts>

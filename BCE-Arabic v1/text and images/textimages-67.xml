@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
+	<Metadata>
+	<Creator></Creator>
+	<Created>2015-11-05T13:15:21</Created>
+	<LastChange>2015-11-05T13:15:21</LastChange></Metadata>
+	<Page imageFilename="textimages-67.jpg" imageWidth="1653" imageHeight="2339">
+	<ReadingOrder>
+	<OrderedGroup id="ro357564684568544579089">
+	<RegionRefIndexed regionRef="r1" index="0"/>
+	<RegionRefIndexed regionRef="r3" index="1"/>
+	<RegionRefIndexed regionRef="r4" index="2"/>
+	<RegionRefIndexed regionRef="r6" index="3"/></OrderedGroup></ReadingOrder>
+	<TextRegion id="r1" orientation="0.00000" readingOrientation="0.00000" readingDirection="right-to-left" type="header" align="right" primaryLanguage="Arabic" secondaryLanguage="Arabic">
+	<Coords points="669,183 955,183 955,214 669,214"/>
+	<TextStyle fontSize="11.00000" bgColour="white"/></TextRegion>
+	<ChartRegion id="r2">
+	<Coords points="282,283 1342,283 1342,851 282,851"/></ChartRegion>
+	<TextRegion id="r3" orientation="0.00000" readingOrientation="0.00000" readingDirection="right-to-left" type="heading" align="right" primaryLanguage="Arabic" secondaryLanguage="Arabic">
+	<Coords points="619,930 1354,930 1354,983 619,983"/>
+	<TextStyle fontSize="13.00000" bgColour="white"/></TextRegion>
+	<TextRegion id="r4" orientation="0.00000" readingOrientation="0.00000" readingDirection="right-to-left" type="paragraph" align="right" primaryLanguage="Arabic" secondaryLanguage="Arabic">
+	<Coords points="271,1025 1356,1025 1356,1341 271,1341"/>
+	<TextStyle fontSize="13.00000" bgColour="white"/></TextRegion>
+	<ChartRegion id="r5">
+	<Coords points="329,1400 1302,1400 1302,2086 329,2086"/></ChartRegion>
+	<TextRegion id="r6" orientation="0.00000" readingOrientation="0.00000" readingDirection="right-to-left" type="page-number" align="right" primaryLanguage="Arabic" secondaryLanguage="Arabic">
+	<Coords points="801,2168 829,2168 829,2188 801,2188"/>
+	<TextStyle fontSize="11.00000" bgColour="white"/></TextRegion></Page></PcGts>

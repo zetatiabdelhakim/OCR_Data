@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
+	<Metadata>
+	<Creator></Creator>
+	<Created>2015-11-12T22:40:36</Created>
+	<LastChange>2015-11-12T22:40:36</LastChange></Metadata>
+	<Page imageFilename="multicolumn-17.jpg" imageWidth="1653" imageHeight="2339">
+	<ReadingOrder>
+	<OrderedGroup id="ro357564684568544579089">
+	<RegionRefIndexed regionRef="r1" index="0"/>
+	<RegionRefIndexed regionRef="r2" index="1"/>
+	<RegionRefIndexed regionRef="r3" index="2"/>
+	<RegionRefIndexed regionRef="r4" index="3"/>
+	<RegionRefIndexed regionRef="r5" index="4"/>
+	<RegionRefIndexed regionRef="r6" index="5"/>
+	<RegionRefIndexed regionRef="r8" index="6"/>
+	<RegionRefIndexed regionRef="r9" index="7"/>
+	<RegionRefIndexed regionRef="r10" index="8"/></OrderedGroup></ReadingOrder>
+	<TextRegion id="r1" type="heading">
+	<Coords points="634,448 978,448 978,487 634,487"/></TextRegion>
+	<TextRegion id="r2" type="heading">
+	<Coords points="733,571 880,571 880,636 733,636"/></TextRegion>
+	<TextRegion id="r3" type="paragraph">
+	<Coords points="191,826 1425,826 1425,1325 191,1325"/></TextRegion>
+	<TextRegion id="r4" type="paragraph">
+	<Coords points="847,1400 1215,1400 1215,1438 847,1438"/></TextRegion>
+	<TextRegion id="r5" type="paragraph">
+	<Coords points="403,1401 770,1401 770,1447 403,1447"/></TextRegion>
+	<TextRegion id="r6" type="paragraph">
+	<Coords points="192,1504 1425,1504 1425,1615 192,1615"/></TextRegion>
+	<TextRegion id="r8" type="paragraph">
+	<Coords points="413,1636 1352,1636 1352,1877 413,1877"/></TextRegion>
+	<TextRegion id="r9" type="paragraph">
+	<Coords points="193,1891 1427,1891 1427,2007 193,2007"/></TextRegion>
+	<TextRegion id="r10" type="paragraph">
+	<Coords points="715,2020 1353,2020 1353,2068 715,2068"/></TextRegion></Page></PcGts>

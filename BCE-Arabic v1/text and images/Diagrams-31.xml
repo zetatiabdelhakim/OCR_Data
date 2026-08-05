@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
+	<Metadata>
+	<Creator></Creator>
+	<Created>2015-11-04T17:51:31</Created>
+	<LastChange>2015-12-23T15:52:17</LastChange></Metadata>
+	<Page imageFilename="diagrams-31_b.tif" imageWidth="1653" imageHeight="2339">
+	<ReadingOrder>
+	<OrderedGroup id="ro357564684568544579089">
+	<RegionRefIndexed regionRef="r5" index="0"/>
+	<RegionRefIndexed regionRef="r8" index="1"/>
+	<RegionRefIndexed regionRef="r2" index="2"/></OrderedGroup></ReadingOrder>
+	<TextRegion id="r2" orientation="0.00000" readingOrientation="0.00000" readingDirection="right-to-left" type="caption" align="right" primaryLanguage="Arabic">
+	<Coords points="254,1268 1355,1268 1355,1408 254,1408"/>
+	<TextStyle bgColour="white"/></TextRegion>
+	<ImageRegion id="r4">
+	<Coords points="357,366 1235,366 1235,680 357,680"/></ImageRegion>
+	<TextRegion id="r5" orientation="0.00000" readingOrientation="0.00000" readingDirection="right-to-left" type="caption" align="right" primaryLanguage="Arabic">
+	<Coords points="781,714 807,714 807,755 781,755"/>
+	<TextStyle bgColour="white"/></TextRegion>
+	<ImageRegion id="r7">
+	<Coords points="372,798 1232,798 1232,1127 372,1127"/></ImageRegion>
+	<TextRegion id="r8" orientation="0.00000" readingOrientation="0.00000" readingDirection="right-to-left" type="caption" align="right" primaryLanguage="Arabic">
+	<Coords points="777,1164 821,1164 821,1199 777,1199"/>
+	<TextStyle bgColour="white"/></TextRegion></Page></PcGts>

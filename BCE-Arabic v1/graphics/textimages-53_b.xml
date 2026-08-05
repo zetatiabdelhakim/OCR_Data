@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
+	<Metadata>
+	<Creator></Creator>
+	<Created>2015-12-11T02:09:17</Created>
+	<LastChange>2015-12-11T02:09:17</LastChange></Metadata>
+	<Page imageFilename="textimages-53_b.tif" imageWidth="1653" imageHeight="2339">
+	<ReadingOrder>
+	<OrderedGroup id="ro357564684568544579089">
+	<RegionRefIndexed regionRef="r1" index="0"/>
+	<RegionRefIndexed regionRef="r2" index="1"/>
+	<RegionRefIndexed regionRef="r3" index="2"/>
+	<RegionRefIndexed regionRef="r4" index="3"/>
+	<RegionRefIndexed regionRef="r5" index="4"/></OrderedGroup></ReadingOrder>
+	<Layers>
+	<Layer id="r7" zIndex="1">
+	<RegionRef regionRef="r6"/>
+	<RegionRef regionRef="r4"/>
+	<RegionRef regionRef="r5"/></Layer></Layers>
+	<TextRegion id="r1" readingDirection="right-to-left" type="heading" align="right" primaryLanguage="Arabic">
+	<Coords points="728,380 899,380 899,419 728,419"/>
+	<TextStyle bgColour="white"/></TextRegion>
+	<TextRegion id="r2" readingDirection="right-to-left" type="heading" align="right" primaryLanguage="Arabic">
+	<Coords points="538,494 1090,494 1090,573 538,573"/>
+	<TextStyle fontSize="2.00000" bgColour="white"/></TextRegion>
+	<TextRegion id="r3" readingDirection="right-to-left" type="heading" align="right" primaryLanguage="Arabic">
+	<Coords points="725,662 904,662 904,705 725,705"/>
+	<TextStyle fontSize="0.00000" bgColour="white"/></TextRegion>
+	<TextRegion id="r4" readingDirection="right-to-left" type="caption" align="right" primaryLanguage="Arabic">
+	<Coords points="904,1077 1179,1077 1179,1256 904,1256"/>
+	<TextStyle bgColour="white"/></TextRegion>
+	<TextRegion id="r5" readingDirection="right-to-left" type="caption" align="right" primaryLanguage="Arabic">
+	<Coords points="431,1121 746,1121 746,1309 431,1309"/>
+	<TextStyle bgColour="white"/></TextRegion>
+	<ChartRegion id="r6">
+	<Coords points="370,986 1258,986 1258,2067 370,2067"/></ChartRegion></Page></PcGts>

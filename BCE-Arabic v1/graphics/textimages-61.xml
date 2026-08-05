@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
+	<Metadata>
+	<Creator></Creator>
+	<Created>2015-11-05T08:58:49</Created>
+	<LastChange>2015-12-23T08:28:11</LastChange></Metadata>
+	<Page imageFilename="textimages-61_b.tif" imageWidth="1653" imageHeight="2339">
+	<ReadingOrder>
+	<OrderedGroup id="ro357564684568544579089">
+	<RegionRefIndexed regionRef="r1" index="0"/>
+	<RegionRefIndexed regionRef="r2" index="1"/>
+	<RegionRefIndexed regionRef="r4" index="2"/>
+	<RegionRefIndexed regionRef="r5" index="3"/>
+	<RegionRefIndexed regionRef="r6" index="4"/></OrderedGroup></ReadingOrder>
+	<Layers>
+	<Layer id="r7" zIndex="1">
+	<RegionRef regionRef="r3"/>
+	<RegionRef regionRef="r4"/>
+	<RegionRef regionRef="r5"/>
+	<RegionRef regionRef="r6"/></Layer></Layers>
+	<TextRegion id="r1" orientation="0.00000" readingOrientation="0.00000" readingDirection="right-to-left" type="heading" align="right" primaryLanguage="Arabic" secondaryLanguage="Arabic">
+	<Coords points="743,571 884,571 884,631 743,631"/>
+	<TextStyle fontSize="2.00000" bgColour="white"/></TextRegion>
+	<TextRegion id="r2" orientation="0.00000" readingOrientation="0.00000" readingDirection="right-to-left" type="paragraph" align="right" primaryLanguage="Arabic" secondaryLanguage="Arabic">
+	<Coords points="345,847 1280,847 1280,1041 345,1041"/>
+	<TextStyle bgColour="white"/></TextRegion>
+	<GraphicRegion id="r3">
+	<Coords points="333,1156 1294,1156 1294,2086 333,2086"/></GraphicRegion>
+	<TextRegion id="r4" readingDirection="right-to-left" type="floating" align="right" primaryLanguage="Arabic">
+	<Coords points="801,1158 1002,1158 1002,1219 801,1219"/></TextRegion>
+	<TextRegion id="r5" readingDirection="right-to-left" type="floating" align="right" primaryLanguage="Arabic">
+	<Coords points="924,1676 1185,1676 1185,1765 924,1765"/></TextRegion>
+	<TextRegion id="r6" readingDirection="right-to-left" type="floating" align="right" primaryLanguage="Arabic">
+	<Coords points="932,1839 1155,1839 1155,1881 932,1881"/></TextRegion></Page></PcGts>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
+	<Metadata>
+	<Creator></Creator>
+	<Created>2015-11-17T20:07:31</Created>
+	<LastChange>2015-11-17T20:07:31</LastChange></Metadata>
+	<Page imageFilename="textimages-365.jpg" imageWidth="1653" imageHeight="2339">
+	<ReadingOrder>
+	<OrderedGroup id="ro357564684568544579089">
+	<RegionRefIndexed regionRef="r3" index="0"/></OrderedGroup></ReadingOrder>
+	<ImageRegion id="r1">
+	<Coords points="507,383 1108,383 1108,985 507,985"/></ImageRegion>
+	<ImageRegion id="r2">
+	<Coords points="512,1012 1113,1012 1113,1623 512,1623"/></ImageRegion>
+	<TextRegion id="r3" orientation="0.00000" readingOrientation="0.00000" readingDirection="right-to-left" type="caption" align="right" primaryLanguage="Arabic">
+	<Coords points="284,1648 1347,1648 1347,1978 284,1978"/>
+	<TextStyle bgColour="white"/></TextRegion></Page></PcGts>

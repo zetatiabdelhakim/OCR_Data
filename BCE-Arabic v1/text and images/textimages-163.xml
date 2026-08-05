@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
+	<Metadata>
+	<Creator></Creator>
+	<Created>2015-11-13T07:34:04</Created>
+	<LastChange>2015-12-11T04:00:20</LastChange></Metadata>
+	<Page imageFilename="textimages-163_b.tif" imageWidth="1653" imageHeight="2339">
+	<ReadingOrder>
+	<OrderedGroup id="ro357564684568544579089">
+	<RegionRefIndexed regionRef="r1" index="0"/>
+	<RegionRefIndexed regionRef="r2" index="1"/>
+	<RegionRefIndexed regionRef="r3" index="2"/>
+	<RegionRefIndexed regionRef="r4" index="3"/>
+	<RegionRefIndexed regionRef="r5" index="4"/>
+	<RegionRefIndexed regionRef="r6" index="5"/>
+	<RegionRefIndexed regionRef="r7" index="6"/></OrderedGroup></ReadingOrder>
+	<TextRegion id="r1" type="paragraph">
+	<Coords points="750,196 874,196 874,237 750,237"/></TextRegion>
+	<TextRegion id="r2" type="paragraph">
+	<Coords points="196,292 1428,292 1428,534 196,534"/></TextRegion>
+	<TextRegion id="r3" type="heading">
+	<Coords points="714,606 1428,606 1428,663 714,663"/>
+	<TextStyle fontSize="0.00000"/></TextRegion>
+	<TextRegion id="r4" type="paragraph">
+	<Coords points="437,795 1188,795 1188,1526 437,1526"/></TextRegion>
+	<TextRegion id="r5" type="paragraph">
+	<Coords points="265,1589 1365,1589 1365,1788 265,1788"/></TextRegion>
+	<TextRegion id="r6" type="paragraph">
+	<Coords points="197,1894 1432,1894 1432,2073 197,2073"/></TextRegion>
+	<TextRegion id="r7" type="paragraph">
+	<Coords points="800,2140 831,2140 831,2161 800,2161"/></TextRegion></Page></PcGts>

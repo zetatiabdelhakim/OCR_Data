@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
+	<Metadata>
+	<Creator></Creator>
+	<Created>2015-11-12T00:37:20</Created>
+	<LastChange>2015-11-12T00:37:20</LastChange></Metadata>
+	<Page imageFilename="textonly-427.jpg" imageWidth="1653" imageHeight="2339">
+	<ReadingOrder>
+	<OrderedGroup id="ro357564684568544579089">
+	<RegionRefIndexed regionRef="r1" index="0"/>
+	<RegionRefIndexed regionRef="r2" index="1"/>
+	<RegionRefIndexed regionRef="r3" index="2"/>
+	<RegionRefIndexed regionRef="r4" index="3"/>
+	<RegionRefIndexed regionRef="r5" index="4"/></OrderedGroup></ReadingOrder>
+	<TextRegion id="r1" orientation="0.00000" readingOrientation="0.00000" readingDirection="right-to-left" type="header" align="right" primaryLanguage="Arabic">
+	<Coords points="737,192 900,192 900,232 737,232"/>
+	<TextStyle bgColour="white"/></TextRegion>
+	<TextRegion id="r2" orientation="0.00000" readingOrientation="0.00000" readingDirection="right-to-left" type="paragraph" align="right" primaryLanguage="Arabic">
+	<Coords points="200,292 1434,292 1434,464 200,464"/>
+	<TextStyle bgColour="white"/></TextRegion>
+	<TextRegion id="r3" orientation="0.00000" readingOrientation="0.00000" readingDirection="right-to-left" type="paragraph" align="right" primaryLanguage="Arabic">
+	<Coords points="203,482 1435,482 1435,791 203,791"/>
+	<TextStyle bgColour="white"/></TextRegion>
+	<TextRegion id="r4" type="footer" align="right" primaryLanguage="Arabic">
+	<Coords points="1218,2014 1438,2014 1438,2069 1218,2069"/>
+	<TextStyle bgColour="white"/></TextRegion>
+	<TextRegion id="r5" type="page-number" align="right" primaryLanguage="Arabic">
+	<Coords points="803,2138 831,2138 831,2158 803,2158"/>
+	<TextStyle bgColour="white"/></TextRegion></Page></PcGts>

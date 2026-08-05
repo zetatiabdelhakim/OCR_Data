@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
+	<Metadata>
+	<Creator></Creator>
+	<Created>2015-11-12T23:14:39</Created>
+	<LastChange>2015-11-12T23:14:39</LastChange></Metadata>
+	<Page imageFilename="textimages-130.jpg" imageWidth="1653" imageHeight="2339">
+	<TextRegion id="r1" orientation="0.00000" readingOrientation="0.00000" readingDirection="right-to-left" type="header" align="right" primaryLanguage="Arabic">
+	<Coords points="677,184 950,184 950,225 677,225"/>
+	<TextStyle bgColour="white"/></TextRegion>
+	<TextRegion id="r2" orientation="0.00000" readingOrientation="0.00000" readingDirection="right-to-left" type="caption" align="right" primaryLanguage="Arabic">
+	<Coords points="1093,347 1290,347 1290,383 1093,383"/>
+	<TextStyle bgColour="white"/></TextRegion>
+	<TextRegion id="r3" orientation="0.00000" readingOrientation="0.00000" readingDirection="right-to-left" type="caption" align="right" primaryLanguage="Arabic">
+	<Coords points="831,349 1030,349 1030,383 831,383"/>
+	<TextStyle bgColour="white"/></TextRegion>
+	<TextRegion id="r4" orientation="0.00000" readingOrientation="0.00000" readingDirection="right-to-left" type="caption" align="right" primaryLanguage="Arabic">
+	<Coords points="558,348 756,348 756,381 558,381"/>
+	<TextStyle bgColour="white"/></TextRegion>
+	<TextRegion id="r5" orientation="0.00000" readingOrientation="0.00000" readingDirection="right-to-left" type="caption" align="right" primaryLanguage="Arabic">
+	<Coords points="279,348 479,348 479,385 279,385"/>
+	<TextStyle bgColour="white"/></TextRegion>
+	<ImageRegion id="r6">
+	<Coords points="1097,397 1348,397 1348,733 1097,733"/></ImageRegion>
+	<TextRegion id="r7" orientation="0.00000" readingOrientation="0.00000" readingDirection="right-to-left" type="caption" align="right" primaryLanguage="Arabic">
+	<Coords points="1135,751 1255,751 1255,780 1135,780"/>
+	<TextStyle bgColour="white"/></TextRegion>
+	<ImageRegion id="r8">
+	<Coords points="838,398 1083,398 1083,735 838,735"/></ImageRegion>
+	<ImageRegion id="r9">
+	<Coords points="559,398 806,398 806,735 559,735"/></ImageRegion>
+	<TextRegion id="r11" orientation="0.00000" readingOrientation="0.00000" readingDirection="right-to-left" type="caption" align="right" primaryLanguage="Arabic">
+	<Coords points="873,752 993,752 993,781 873,781"/>
+	<TextStyle bgColour="white"/></TextRegion>
+	<TextRegion id="r12" orientation="0.00000" readingOrientation="0.00000" readingDirection="right-to-left" type="caption" align="right" primaryLanguage="Arabic">
+	<Coords points="597,752 718,752 718,782 597,782"/>
+	<TextStyle bgColour="white"/></TextRegion>
+	<TextRegion id="r13" orientation="0.00000" readingOrientation="0.00000" readingDirection="right-to-left" type="caption" align="right" primaryLanguage="Arabic">
+	<Coords points="320,752 441,752 441,782 320,782"/>
+	<TextStyle bgColour="white"/></TextRegion>
+	<ImageRegion id="r16">
+	<Coords points="555,788 799,788 799,1077 555,1077"/></ImageRegion>
+	<ImageRegion id="r18">
+	<Coords points="282,788 480,788 480,1077 282,1077"/></ImageRegion>
+	<TextRegion id="r19" orientation="0.00000" readingOrientation="0.00000" readingDirection="right-to-left" type="caption" align="right" primaryLanguage="Arabic">
+	<Coords points="450,1125 1181,1125 1181,1177 450,1177"/>
+	<TextStyle bgColour="white"/></TextRegion>
+	<TextRegion id="r20" orientation="0.00000" readingOrientation="0.00000" readingDirection="right-to-left" type="paragraph" align="right" primaryLanguage="Arabic">
+	<Coords points="199,1286 1434,1286 1434,1789 199,1789"/>
+	<TextStyle bgColour="white"/></TextRegion>
+	<TextRegion id="r21" orientation="0.00000" readingOrientation="0.00000" readingDirection="right-to-left" type="paragraph" align="right" primaryLanguage="Arabic">
+	<Coords points="197,1810 1432,1810 1432,2049 197,2049"/>
+	<TextStyle bgColour="white"/></TextRegion>
+	<TextRegion id="r22" orientation="0.00000" readingOrientation="0.00000" readingDirection="right-to-left" type="page-number" align="right" primaryLanguage="Arabic">
+	<Coords points="803,2132 832,2132 832,2154 803,2154"/>
+	<TextStyle bgColour="white"/></TextRegion>
+	<ImageRegion id="r25">
+	<Coords points="277,398 530,398 530,735 277,735"/></ImageRegion>
+	<ImageRegion id="r26">
+	<Coords points="837,789 1071,789 1071,1077 837,1077"/></ImageRegion>
+	<ImageRegion id="r27">
+	<Coords points="1100,787 1342,787 1342,1076 1100,1076"/></ImageRegion></Page></PcGts>
