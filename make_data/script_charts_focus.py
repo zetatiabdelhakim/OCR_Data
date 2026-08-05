@@ -8,11 +8,15 @@ from playwright.async_api import async_playwright
 from tqdm import tqdm
 
 # ==========================================
-# 1. DATA, FONTS, COLORS & ASSETS
+# 1. DATA, FONTS, COLORS, ASSETS & PATHS
 # ==========================================
 
 TEXT_FILE_PATH = "shamela_1M_words.txt"
 IMAGE_FOLDER_PATH = "nature_images"
+
+# Global Paths
+DATASET_IMAGES_PATH = "dataset/images"
+DATASET_ANNOTATIONS_PATH = "dataset/annotations"
 
 CORPUS_WORDS = []
 IMAGE_PATHS = []
@@ -156,35 +160,20 @@ def gen_chart():
 
     chart_configs = [
         f"type: 'bar', data: {{labels: [{','.join(labels)}], datasets: [{{label: 'Dataset 1', data: {data1}, backgroundColor: 'rgba(54, 162, 235, 0.6)'}}]}}",
-        # 1. Standard Bar
         f"type: 'bar', data: {{labels: [{','.join(labels)}], datasets: [{{label: 'D1', data: {data1}, backgroundColor: '#ff6384'}}]}}, options: {{indexAxis: 'y'}}",
-        # 2. Horizontal Bar
         f"type: 'bar', data: {{labels: [{','.join(labels)}], datasets: [{{label: 'D1', data: {data1}, backgroundColor: '#36a2eb'}}, {{label: 'D2', data: {data2}, backgroundColor: '#ffce56'}}]}}, options: {{scales: {{x: {{stacked: true}}, y: {{stacked: true}}}}}}",
-        # 3. Stacked Bar
         f"type: 'line', data: {{labels: [{','.join(labels)}], datasets: [{{label: 'Trend', data: {data1}, borderColor: '#4bc0c0', tension: 0.1}}]}}",
-        # 4. Standard Line
         f"type: 'line', data: {{labels: [{','.join(labels)}], datasets: [{{label: 'Area', data: {data1}, borderColor: '#9966ff', backgroundColor: 'rgba(153, 102, 255, 0.2)', fill: true}}]}}",
-        # 5. Area Line
         f"type: 'line', data: {{labels: [{','.join(labels)}], datasets: [{{label: 'Steps', data: {data1}, borderColor: '#ff9f40', stepped: true}}]}}",
-        # 6. Stepped Line
         f"type: 'line', data: {{labels: [{','.join(labels)}], datasets: [{{label: 'Y1', data: {data1}, yAxisID: 'y'}}, {{label: 'Y2', data: {data2}, yAxisID: 'y1'}}]}}, options: {{scales: {{y: {{type: 'linear', position: 'left'}}, y1: {{type: 'linear', position: 'right'}}}}}}",
-        # 7. Multi-Axis Line
         f"type: 'pie', data: {{labels: [{','.join(labels)}], datasets: [{{data: {data1}, backgroundColor: ['#ff6384', '#36a2eb', '#cc65fe', '#ffce56', '#4bc0c0']}}]}}",
-        # 8. Pie
         f"type: 'doughnut', data: {{labels: [{','.join(labels)}], datasets: [{{data: {data2}, backgroundColor: ['#ff6384', '#36a2eb', '#cc65fe', '#ffce56', '#4bc0c0']}}]}}",
-        # 9. Doughnut
         f"type: 'doughnut', data: {{labels: [{','.join(labels)}], datasets: [{{data: {data1}, backgroundColor: ['#ff6384', '#36a2eb', '#cc65fe', '#ffce56', '#4bc0c0']}}]}}, options: {{circumference: 180, rotation: -90}}",
-        # 10. Gauge (Half Doughnut)
         f"type: 'radar', data: {{labels: [{','.join(labels)}], datasets: [{{label: 'Metrics', data: {data1}, backgroundColor: 'rgba(255, 99, 132, 0.2)', borderColor: '#ff6384'}}]}}",
-        # 11. Radar
         f"type: 'polarArea', data: {{labels: [{','.join(labels)}], datasets: [{{data: {data1}, backgroundColor: ['rgba(255, 99, 132, 0.5)', 'rgba(54, 162, 235, 0.5)', 'rgba(255, 206, 86, 0.5)', 'rgba(75, 192, 192, 0.5)', 'rgba(153, 102, 255, 0.5)']}}]}}",
-        # 12. PolarArea
         f"type: 'scatter', data: {{datasets: [{{label: 'Scatter', data: [{{x: 10, y: 20}}, {{x: 15, y: 10}}, {{x: 20, y: 30}}, {{x: 25, y: 5}}, {{x: 30, y: 15}}], backgroundColor: '#ff6384'}}]}}",
-        # 13. Scatter
         f"type: 'bubble', data: {{datasets: [{{label: 'Bubble', data: [{{x: 10, y: 20, r: 15}}, {{x: 15, y: 10, r: 10}}, {{x: 20, y: 30, r: 25}}, {{x: 25, y: 5, r: 5}}], backgroundColor: '#36a2eb'}}]}}",
-        # 14. Bubble
         f"type: 'bar', data: {{labels: [{','.join(labels)}], datasets: [{{type: 'line', label: 'Target', data: {data2}, borderColor: '#cc65fe'}}, {{type: 'bar', label: 'Actual', data: {data1}, backgroundColor: '#ffce56'}}]}}"
-        # 15. Mixed Bar/Line
     ]
 
     config = random.choice(chart_configs)
@@ -284,6 +273,23 @@ def generate_random_template():
 # 4. PLAYWRIGHT EXTRACTION ENGINE
 # ==========================================
 
+def assign_block_preserving_index(boxes):
+    """
+    Respects native DOM block order.
+    Parents get -1. Leaf content children get sequential 1, 2, 3...
+    """
+    counter = 1
+    for box in boxes:
+        if box.get('is_parent'):
+            box['reading_index'] = -1
+        else:
+            box['reading_index'] = counter
+            counter += 1
+        # Clean up temporary flag
+        box.pop('is_parent', None)
+    return boxes
+
+
 async def render_and_extract(html_content, output_image_path, output_json_path):
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
@@ -293,6 +299,17 @@ async def render_and_extract(html_content, output_image_path, output_json_path):
 
         script = """
         () => {
+            // STEP 0: Inject missing layout-node classes to inner elements so Playwright sees them.
+            // This fixes the complex-paragraph issue without changing Python HTML logic.
+            document.querySelectorAll('.complex-text').forEach(el => {
+                el.classList.add('layout-node');
+                if(!el.getAttribute('data-label')) el.setAttribute('data-label', 'paragraph');
+            });
+            document.querySelectorAll('.float-image img').forEach(el => {
+                el.classList.add('layout-node');
+                el.setAttribute('data-label', 'image');
+            });
+
             // STEP 1: FIX TABLES 
             const tableWrappers = document.querySelectorAll('.table-wrapper');
             tableWrappers.forEach(wrapper => {
@@ -304,12 +321,10 @@ async def render_and_extract(html_content, output_image_path, output_json_path):
                 }
             });
 
-            // STEP 2: AUTO-FIT TEXT (Fixed for complex overflow)
+            // STEP 2: AUTO-FIT TEXT
             const textNodes = document.querySelectorAll('.complex-text, .paragraph, .heading, th, td, h1, h2, h3');
             textNodes.forEach(node => {
-                // If it's the inner text span, check the bounding box of the parent layout cell instead
                 const container = node.closest('.complex-paragraph') || node;
-
                 while ((container.scrollHeight > container.clientHeight + 1 || container.scrollWidth > container.clientWidth + 1) && node.textContent.trim().split(/\\s+/).length > 0) {
                     let text = node.textContent.trim();
                     let words = text.split(/\\s+/);
@@ -318,28 +333,34 @@ async def render_and_extract(html_content, output_image_path, output_json_path):
                         break;
                     }
                     words.pop();
-                    // We can now safely overwrite textContent without breaking images/headers
                     node.textContent = words.join(' ');
                 }
             });
 
-            // STEP 3: EXTRACT EXACT BOUNDING BOXES AND TEXT
+            // STEP 3: NATIVE DOM EXTRACTION (PRESERVES BLOCK-BY-BLOCK FLOW)
             const elements = document.querySelectorAll('.layout-node');
             const data = [];
+
             elements.forEach(el => {
                 const rect = el.getBoundingClientRect();
                 if (rect.width === 0 || rect.height === 0) return;
 
-                let extractedText = el.innerText ? el.innerText.trim().replace(/\\s+/g, ' ') : "";
+                const label = el.getAttribute('data-label');
 
-                // Exclude raw text extraction from image wrappers/charts if you only want their bboxes
-                if (el.getAttribute('data-label') === 'figure' || el.getAttribute('data-label') === 'chart') {
-                    extractedText = "";
+                // Intelligently identify parents: if it contains inner layout-nodes, it's a wrapper.
+                const children = el.querySelectorAll('.layout-node');
+                const isParent = children.length > 0;
+
+                // Extract text only if it's a leaf node. Skip pulling raw text for visuals.
+                let extractedText = "";
+                if (!isParent && label !== 'image' && label !== 'figure-image' && label !== 'chart') {
+                    extractedText = el.innerText ? el.innerText.trim().replace(/\\s+/g, ' ') : "";
                 }
 
                 data.push({
-                    label: el.getAttribute('data-label'),
+                    label: label,
                     text: extractedText,
+                    is_parent: isParent, // Consumed by Python
                     x: rect.x,
                     y: rect.y,
                     width: rect.width,
@@ -353,6 +374,10 @@ async def render_and_extract(html_content, output_image_path, output_json_path):
         """
 
         bounding_boxes = await page.evaluate(script)
+
+        # Apply strict Python-side indexing (-1 for parents, 1,2,3 for children)
+        bounding_boxes = assign_block_preserving_index(bounding_boxes)
+
         await page.screenshot(path=output_image_path)
 
         with open(output_json_path, 'w', encoding='utf-8') as f:
@@ -368,17 +393,16 @@ async def render_and_extract(html_content, output_image_path, output_json_path):
 async def main():
     load_assets()
 
-    os.makedirs("dataset/images", exist_ok=True)
-    os.makedirs("dataset/annotations", exist_ok=True)
+    os.makedirs(DATASET_IMAGES_PATH, exist_ok=True)
+    os.makedirs(DATASET_ANNOTATIONS_PATH, exist_ok=True)
 
     NUM_SAMPLES = 20
 
     print(f"Generating {NUM_SAMPLES} Perfected A4 templates...")
     for i in tqdm(range(NUM_SAMPLES)):
         html_string = generate_random_template()
-        img_path = f"dataset/images/sample_{i:07d}.png"
-        json_path = f"dataset/annotations/sample_{i:07d}.json"
-
+        img_path = os.path.join(DATASET_IMAGES_PATH, f"sample_{i:07d}.png")
+        json_path = os.path.join(DATASET_ANNOTATIONS_PATH, f"sample_{i:07d}.json")
         await render_and_extract(html_string, img_path, json_path)
 
 

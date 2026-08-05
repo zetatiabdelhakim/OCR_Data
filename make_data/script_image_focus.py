@@ -14,6 +14,10 @@ from tqdm import tqdm
 TEXT_FILE_PATH = "shamela_1M_words.txt"
 IMAGE_FOLDER_PATH = "nature_images"
 
+# Global Paths added here
+DATASET_IMAGES_PATH = "dataset/images"
+DATASET_ANNOTATIONS_PATH = "dataset/annotations"
+
 CORPUS_WORDS = []
 IMAGE_PATHS = []
 
@@ -260,7 +264,6 @@ def generate_random_template():
             if r == 0:
                 comp = gen_heading()
             else:
-                # Introducing the advanced components into the randomization pool
                 comp_type = random.choices(
                     ["header_para", "float_img_para", "table_para", "gallery", "para"],
                     weights=[0.25, 0.25, 0.20, 0.15, 0.15]
@@ -287,6 +290,23 @@ def generate_random_template():
 # ==========================================
 # 4. PLAYWRIGHT EXTRACTION ENGINE
 # ==========================================
+
+def assign_block_preserving_index(boxes):
+    """
+    Respects native DOM block order.
+    Parents get -1. Children get sequential 1, 2, 3...
+    """
+    counter = 1
+    for box in boxes:
+        if box.get('is_parent'):
+            box['reading_index'] = -1
+        else:
+            box['reading_index'] = counter
+            counter += 1
+        # Clean up temporary flag
+        box.pop('is_parent', None)
+    return boxes
+
 
 async def render_and_extract(html_content, output_image_path, output_json_path):
     async with async_playwright() as p:
@@ -323,25 +343,38 @@ async def render_and_extract(html_content, output_image_path, output_json_path):
                 }
             });
 
-            // STEP 3: EXTRACT EXACT BOUNDING BOXES AND TEXT
+            // STEP 3: NATIVE DOM EXTRACTION (PRESERVES BLOCK-BY-BLOCK FLOW)
             const elements = document.querySelectorAll('.layout-node');
             const data = [];
+
             elements.forEach(el => {
                 const rect = el.getBoundingClientRect();
                 if (rect.width === 0 || rect.height === 0) return;
 
-                let extractedText = el.innerText ? el.innerText.trim().replace(/\\s+/g, ' ') : "";
-                if (el.getAttribute('data-label') === 'figure') extractedText = "";
+                const label = el.getAttribute('data-label') || 'unlabeled';
+
+                // Identify parents. In this specific script, 'table' is the only pure wrapper.
+                let isParent = false;
+                if (label === 'table') {
+                    isParent = true;
+                }
+
+                // Extract text only if it's a leaf node. Skip raw text for images.
+                let extractedText = "";
+                if (!isParent && label !== 'figure') {
+                    extractedText = el.innerText ? el.innerText.trim().replace(/\\s+/g, ' ') : "";
+                }
 
                 data.push({
-                    label: el.getAttribute('data-label'),
+                    label: label,
                     text: extractedText,
-                    x: rect.x,
-                    y: rect.y,
-                    width: rect.width,
-                    height: rect.height,
-                    bottom: rect.bottom,
-                    right: rect.right
+                    is_parent: isParent, // Consumed by Python
+                    x: Math.round(rect.x),
+                    y: Math.round(rect.y),
+                    width: Math.round(rect.width),
+                    height: Math.round(rect.height),
+                    bottom: Math.round(rect.bottom),
+                    right: Math.round(rect.right)
                 });
             });
             return data;
@@ -349,6 +382,10 @@ async def render_and_extract(html_content, output_image_path, output_json_path):
         """
 
         bounding_boxes = await page.evaluate(script)
+
+        # Apply block-preserving indexing (-1 for parents, 1, 2, 3... for children)
+        bounding_boxes = assign_block_preserving_index(bounding_boxes)
+
         await page.screenshot(path=output_image_path)
 
         with open(output_json_path, 'w', encoding='utf-8') as f:
@@ -364,16 +401,16 @@ async def render_and_extract(html_content, output_image_path, output_json_path):
 async def main():
     load_assets()
 
-    os.makedirs("dataset/images", exist_ok=True)
-    os.makedirs("dataset/annotations", exist_ok=True)
+    os.makedirs(DATASET_IMAGES_PATH, exist_ok=True)
+    os.makedirs(DATASET_ANNOTATIONS_PATH, exist_ok=True)
 
-    NUM_SAMPLES = 10
+    NUM_SAMPLES = 20
 
     print(f"Generating {NUM_SAMPLES} Advanced A4 templates...")
     for i in tqdm(range(NUM_SAMPLES)):
         html_string = generate_random_template()
-        img_path = f"dataset/images/sample_{i:07d}.png"
-        json_path = f"dataset/annotations/sample_{i:07d}.json"
+        img_path = os.path.join(DATASET_IMAGES_PATH, f"sample_{i:07d}.png")
+        json_path = os.path.join(DATASET_ANNOTATIONS_PATH, f"sample_{i:07d}.json")
 
         await render_and_extract(html_string, img_path, json_path)
 

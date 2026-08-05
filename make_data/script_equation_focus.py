@@ -14,6 +14,10 @@ from tqdm import tqdm
 TEXT_FILE_PATH = "shamela_1M_words.txt"
 IMAGE_FOLDER_PATH = "nature_images"
 
+# Global Paths
+DATASET_IMAGES_PATH = "dataset/images"
+DATASET_ANNOTATIONS_PATH = "dataset/annotations"
+
 CORPUS_WORDS = []
 IMAGE_PATHS = []
 
@@ -93,7 +97,6 @@ def gen_dynamic_equation():
         n1=random.randint(0, 9), n2=random.randint(0, 9), n3=random.randint(0, 9), n4=random.randint(0, 9)
     )
 
-    # Safe fraction addition that won't break LaTeX syntax
     if random.random() > 0.7:
         eq += r" + \frac{" + random.choice(vars) + r"}{" + random.choice(vars) + r"^2}"
 
@@ -297,6 +300,23 @@ def generate_scientific_template():
 # 5. PLAYWRIGHT EXTRACTION ENGINE
 # ==========================================
 
+def assign_block_preserving_index(boxes):
+    """
+    Respects native DOM block order.
+    Parents get -1. Children get sequential 1, 2, 3...
+    """
+    counter = 1
+    for box in boxes:
+        if box.get('is_parent'):
+            box['reading_index'] = -1
+        else:
+            box['reading_index'] = counter
+            counter += 1
+        # Clean up temporary flag
+        box.pop('is_parent', None)
+    return boxes
+
+
 async def render_and_extract(html_content, output_image_path, output_json_path):
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
@@ -306,6 +326,13 @@ async def render_and_extract(html_content, output_image_path, output_json_path):
 
         script = """
         () => {
+            // STEP 0: Inject layout-node classes to inner text elements so Playwright sees them.
+            // This prevents missing text in boxes (like theorems) that mix text and inner layout-nodes.
+            document.querySelectorAll('[data-label="theorem_box"] p, [data-label="theorem_box"] strong').forEach(el => {
+                el.classList.add('layout-node');
+                if(!el.getAttribute('data-label')) el.setAttribute('data-label', 'paragraph');
+            });
+
             // STEP 1: Decode Base64 and Render explicit KaTeX elements
             document.querySelectorAll('.katex-display-math').forEach(el => {
                 const rawMath = decodeURIComponent(escape(atob(el.getAttribute('data-math'))));
@@ -317,39 +344,44 @@ async def render_and_extract(html_content, output_image_path, output_json_path):
             });
 
             // STEP 2: CROP OUT OF BOUNDS SAFELY
-            // Body dimensions are 794x1123. Padding is 30px.
-            // Elements are considered out of bounds if they cross these safe margins.
             const SAFE_RIGHT = 770; 
             const SAFE_BOTTOM = 1100;
 
             const container = document.getElementById('content-flow');
             if (container) {
-                // Loop ONLY through the top-level wrappers. This prevents mass-deletions of inner content.
                 const blocks = Array.from(container.children);
                 blocks.forEach(block => {
                     const rect = block.getBoundingClientRect();
-
-                    // If block is off-screen or heavily touches padding limits, remove it entirely
                     if (rect.right > SAFE_RIGHT || rect.bottom > SAFE_BOTTOM || rect.left < 25 || rect.top < 25 || rect.width === 0) {
                         block.remove();
                     }
                 });
             }
 
-            // STEP 3: EXTRACT EXACT BOUNDING BOXES AND TEXT
+            // STEP 3: NATIVE DOM EXTRACTION (PRESERVES BLOCK-BY-BLOCK FLOW)
             const elements = document.querySelectorAll('.layout-node, td, th');
             const data = [];
+
             elements.forEach(el => {
                 const rect = el.getBoundingClientRect();
-
                 if (rect.width === 0 || rect.height === 0) return;
 
-                let extractedText = el.innerText ? el.innerText.trim().replace(/\\s+/g, ' ') : "";
-                if (el.getAttribute('data-label') === 'figure') extractedText = "";
+                const label = el.getAttribute('data-label') || 'table-cell';
+
+                // Intelligently identify parents: if it contains inner layout-nodes or cells, it's a wrapper.
+                const children = el.querySelectorAll('.layout-node, td, th');
+                const isParent = children.length > 0;
+
+                // Extract text only if it's a leaf node.
+                let extractedText = "";
+                if (!isParent && label !== 'figure') {
+                    extractedText = el.innerText ? el.innerText.trim().replace(/\\s+/g, ' ') : "";
+                }
 
                 data.push({
-                    label: el.getAttribute('data-label') || 'table-cell',
+                    label: label,
                     text: extractedText,
+                    is_parent: isParent, // Consumed by Python
                     x: Math.round(rect.x),
                     y: Math.round(rect.y),
                     width: Math.round(rect.width),
@@ -361,6 +393,10 @@ async def render_and_extract(html_content, output_image_path, output_json_path):
         """
 
         bounding_boxes = await page.evaluate(script)
+
+        # Apply block-preserving indexing (-1 for parents, 1..N for children)
+        bounding_boxes = assign_block_preserving_index(bounding_boxes)
+
         await page.screenshot(path=output_image_path)
 
         with open(output_json_path, 'w', encoding='utf-8') as f:
@@ -375,16 +411,16 @@ async def render_and_extract(html_content, output_image_path, output_json_path):
 
 async def main():
     load_assets()
-    os.makedirs("dataset/images", exist_ok=True)
-    os.makedirs("dataset/annotations", exist_ok=True)
+    os.makedirs(DATASET_IMAGES_PATH, exist_ok=True)
+    os.makedirs(DATASET_ANNOTATIONS_PATH, exist_ok=True)
 
-    NUM_SAMPLES = 50
+    NUM_SAMPLES = 20
 
     print(f"Generating {NUM_SAMPLES} Perfected Scientific Paper layouts...")
     for i in tqdm(range(NUM_SAMPLES)):
         html_string = generate_scientific_template()
-        img_path = f"dataset/images/sci_sample_{i:07d}.png"
-        json_path = f"dataset/annotations/sci_sample_{i:07d}.json"
+        img_path = os.path.join(DATASET_IMAGES_PATH, f"sample_{i:07d}.png")
+        json_path = os.path.join(DATASET_ANNOTATIONS_PATH, f"sample_{i:07d}.json")
 
         await render_and_extract(html_string, img_path, json_path)
 

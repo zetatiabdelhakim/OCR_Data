@@ -100,7 +100,6 @@ def gen_paragraph(text=None, columns=1):
     color = random.choice(COLORS)
     font_size = random.choice([14, 16, 18])
 
-    # If 1 column, return standard paragraph
     if columns == 1:
         return f"""
         <div class="layout-node paragraph" data-label="paragraph" 
@@ -110,7 +109,6 @@ def gen_paragraph(text=None, columns=1):
         </div>
         """
 
-    # If Multi-column: physically split the text and put it in separate layout-node containers
     words = text.split()
     chunk_size = len(words) // columns
     chunks = [" ".join(words[i:i + chunk_size]) for i in range(0, len(words), chunk_size)]
@@ -144,7 +142,6 @@ def gen_figure(caption=None):
     else:
         img_html = f'<span style="font-family: \'{font}\';">[صورة]</span>'
 
-    # Notice how the wrapper is a layout-node, and the children are also layout-nodes
     return f"""
     <div class="layout-node figure" data-label="figure" 
          style="height: 100%; width: 100%; display: flex; flex-direction: column; overflow: hidden; box-sizing: border-box; padding-bottom: 15px;">
@@ -163,7 +160,6 @@ def gen_table(rows=6, cols=3):
     font = random.choice(FONTS)
     color = random.choice(COLORS)
 
-    # Notice how the wrapper is a layout-node, and the TH/TD cells are also layout-nodes
     html = f'<div class="layout-node table-wrapper" data-label="table" style="height: 100%; width: 100%; overflow: hidden; box-sizing: border-box; padding-bottom: 15px;">'
     html += f'<table style="height: 100%; width: 100%; table-layout: fixed; border-collapse: collapse; font-family: \'{font}\'; color: {color}; box-sizing: border-box;">'
 
@@ -258,6 +254,24 @@ def generate_random_template():
 # 4. PLAYWRIGHT EXTRACTION ENGINE
 # ==========================================
 
+def assign_block_preserving_index(boxes):
+    """
+    Respects native DOM block order:
+    - Parents (is_parent == True) get reading_index = -1
+    - Children (is_parent == False) get sequential integers 1, 2, 3...
+    """
+    counter = 1
+    for box in boxes:
+        if box.get('is_parent'):
+            box['reading_index'] = -1
+        else:
+            box['reading_index'] = counter
+            counter += 1
+        # Clean up temporary flag
+        box.pop('is_parent', None)
+    return boxes
+
+
 async def render_and_extract(html_content, output_image_path, output_json_path):
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
@@ -265,7 +279,6 @@ async def render_and_extract(html_content, output_image_path, output_json_path):
 
         await page.set_content(html_content, wait_until="networkidle")
 
-        # The Javascript inside Playwright handles the DOM Hierarchy scanning
         script = """
         () => {
             // STEP 1: FIX TABLES 
@@ -294,35 +307,28 @@ async def render_and_extract(html_content, output_image_path, output_json_path):
                 }
             });
 
-            // STEP 3: HIERARCHICAL RTL EXTRACTION
+            // STEP 3: NATIVE DOM EXTRACTION (PRESERVES BLOCK-BY-BLOCK FLOW)
+            const elements = document.querySelectorAll('.layout-node');
             const data = [];
 
-            // Recursive function to step into tables/figures/columns
-            function extractNode(node, prefix) {
-                const rect = node.getBoundingClientRect();
+            elements.forEach(el => {
+                const rect = el.getBoundingClientRect();
                 if (rect.width === 0 || rect.height === 0) return;
 
-                // Find direct children ONLY (avoids double counting nested items)
-                const allChildren = Array.from(node.querySelectorAll('.layout-node'));
-                const directChildren = allChildren.filter(child => {
-                    let p = child.parentElement;
-                    while (p && p !== node) {
-                        if (p.classList.contains('layout-node')) return false;
-                        p = p.parentElement;
-                    }
-                    return true;
-                });
+                // Check if this node is a parent container
+                const children = el.querySelectorAll('.layout-node');
+                const isParent = children.length > 0 && el.getAttribute('data-label') !== 'figure-image';
 
-                // Extract text only if it's a leaf node (e.g. paragraph, cell, caption). Parent boxes will just map the zone.
+                // Extract text only if it's a leaf node
                 let extractedText = "";
-                if (directChildren.length === 0 && node.getAttribute('data-label') !== 'figure-image') {
-                    extractedText = node.innerText ? node.innerText.trim().replace(/\\s+/g, ' ') : "";
+                if (!isParent && el.getAttribute('data-label') !== 'figure-image') {
+                    extractedText = el.innerText ? el.innerText.trim().replace(/\\s+/g, ' ') : "";
                 }
 
                 data.push({
-                    label: node.getAttribute('data-label'),
+                    label: el.getAttribute('data-label'),
                     text: extractedText,
-                    reading_index: prefix,
+                    is_parent: isParent, // Consumed by Python
                     x: rect.x,
                     y: rect.y,
                     width: rect.width,
@@ -330,35 +336,16 @@ async def render_and_extract(html_content, output_image_path, output_json_path):
                     bottom: rect.bottom,
                     right: rect.right
                 });
-
-                // Dive into children (assigns 4.1, 4.2, etc.)
-                directChildren.forEach((child, index) => {
-                    extractNode(child, `${prefix}.${index + 1}`);
-                });
-            }
-
-            // Find ROOT layout nodes (Boxes that have NO layout-node above them)
-            const allLayoutNodes = Array.from(document.querySelectorAll('.layout-node'));
-            const rootNodes = allLayoutNodes.filter(node => {
-                let p = node.parentElement;
-                while(p) {
-                    if (p.classList.contains('layout-node')) return false;
-                    p = p.parentElement;
-                }
-                return true;
             });
-
-            // Execute recursively, starting at 1. Because the HTML is <dir="rtl">, 
-            // the DOM natural order is inherently Top-To-Bottom, Right-to-Left!
-            rootNodes.forEach((root, index) => {
-                extractNode(root, `${index + 1}`);
-            });
-
             return data;
         }
         """
 
         bounding_boxes = await page.evaluate(script)
+
+        # Apply block-preserving indexing (-1 for parents, 1, 2, 3... for children)
+        bounding_boxes = assign_block_preserving_index(bounding_boxes)
+
         await page.screenshot(path=output_image_path)
 
         with open(output_json_path, 'w', encoding='utf-8') as f:
@@ -377,7 +364,7 @@ async def main():
     os.makedirs(DATASET_IMAGES_PATH, exist_ok=True)
     os.makedirs(DATASET_ANNOTATIONS_PATH, exist_ok=True)
 
-    NUM_SAMPLES = 10
+    NUM_SAMPLES = 20
 
     print(f"Generating {NUM_SAMPLES} Perfected A4 templates...")
     for i in tqdm(range(NUM_SAMPLES)):
