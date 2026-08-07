@@ -1,0 +1,21 @@
+{
+    "boxes": [
+        {
+            "label": "author",
+            "text": "حسنة} ؛ لأن",
+            "x": 326,
+            "y": 982,
+            "width": 65,
+            "height": 18,
+            "bottom": 1000,
+            "right": 391,
+            "reading_index": 1
+        }
+    ],
+    "canvas": {
+        "width": 717,
+        "height": 1018
+    },
+    "template": "book_cover",
+    "hybrid": null
+}

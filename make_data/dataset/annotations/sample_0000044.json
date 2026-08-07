@@ -1,0 +1,65 @@
+{
+    "boxes": [
+        {
+            "label": "org-name",
+            "text": "بِشَيْءٍ أَوَّلَ مِنْهُمْ،",
+            "x": 10,
+            "y": 10,
+            "width": 322,
+            "height": 15,
+            "bottom": 25,
+            "right": 332,
+            "reading_index": 1
+        },
+        {
+            "label": "photo-placeholder",
+            "text": "",
+            "x": 288,
+            "y": 62,
+            "width": 44,
+            "height": 56,
+            "bottom": 118,
+            "right": 332,
+            "reading_index": 2
+        },
+        {
+            "label": "card-title",
+            "text": "شرح مسلم،",
+            "x": 10,
+            "y": 74,
+            "width": 270,
+            "height": 16,
+            "bottom": 90,
+            "right": 280,
+            "reading_index": 3
+        },
+        {
+            "label": "id-number",
+            "text": "2226-5003",
+            "x": 10,
+            "y": 94,
+            "width": 270,
+            "height": 12,
+            "bottom": 106,
+            "right": 280,
+            "reading_index": 4
+        },
+        {
+            "label": "barcode",
+            "text": "",
+            "x": 10,
+            "y": 154,
+            "width": 322,
+            "height": 30,
+            "bottom": 184,
+            "right": 332,
+            "reading_index": 5
+        }
+    ],
+    "canvas": {
+        "width": 342,
+        "height": 194
+    },
+    "template": "id_card",
+    "hybrid": null
+}

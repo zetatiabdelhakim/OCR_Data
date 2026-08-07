@@ -1,0 +1,65 @@
+{
+    "boxes": [
+        {
+            "label": "equation",
+            "text": "𝐸 [ 𝜃 ] = ∫ 𝑥 𝑓 𝜃 ( 𝑥 ) 𝑑 𝑥 + 𝑧 𝛼 2 E[θ]=∫xf θ ​ (x)dx+ α 2 z ​",
+            "x": 20,
+            "y": 26,
+            "width": 593,
+            "height": 62,
+            "bottom": 88,
+            "right": 613,
+            "reading_index": 1
+        },
+        {
+            "label": "hybrid-insert",
+            "text": "",
+            "x": 20,
+            "y": 100,
+            "width": 593,
+            "height": 56,
+            "bottom": 156,
+            "right": 613,
+            "reading_index": -1
+        },
+        {
+            "label": "quote-block",
+            "text": "",
+            "x": 20,
+            "y": 100,
+            "width": 593,
+            "height": 56,
+            "bottom": 156,
+            "right": 613,
+            "reading_index": -1
+        },
+        {
+            "label": "quote",
+            "text": "\"فَكَوَاهُ رَسُولُ اللهِ صلى الله عليه وسلم. قوله: ((عَلَى أَكْحَلِهِ) ) الأكحل\"",
+            "x": 40,
+            "y": 110,
+            "width": 549,
+            "height": 36,
+            "bottom": 146,
+            "right": 589,
+            "reading_index": 2
+        },
+        {
+            "label": "equation",
+            "text": "∫ 0 ∞ cos ⁡ ( 𝑘 ) 𝑑 𝑘 = 𝜆 2 × 𝐶 ∫ 0 ∞ ​ cos(k)dk=λ 2 ×C",
+            "x": 20,
+            "y": 168,
+            "width": 593,
+            "height": 54,
+            "bottom": 222,
+            "right": 613,
+            "reading_index": 3
+        }
+    ],
+    "canvas": {
+        "width": 633,
+        "height": 268
+    },
+    "template": "math_proof",
+    "hybrid": "quote"
+}

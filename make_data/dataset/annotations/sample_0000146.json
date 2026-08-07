@@ -1,0 +1,65 @@
+{
+    "boxes": [
+        {
+            "label": "org-name",
+            "text": "أَنَسٍ قَالَ:",
+            "x": 44,
+            "y": 44,
+            "width": 666,
+            "height": 29,
+            "bottom": 73,
+            "right": 710,
+            "reading_index": 1
+        },
+        {
+            "label": "invoice-number",
+            "text": "INV-42966",
+            "x": 655,
+            "y": 81,
+            "width": 55,
+            "height": 42,
+            "bottom": 123,
+            "right": 710,
+            "reading_index": 2
+        },
+        {
+            "label": "date-line",
+            "text": "03/08/2025",
+            "x": 44,
+            "y": 106,
+            "width": 61,
+            "height": 17,
+            "bottom": 123,
+            "right": 105,
+            "reading_index": 3
+        },
+        {
+            "label": "recipient",
+            "text": "فاتورة إلى: عُبَيْدِ اللهِ الْحَضْرَمِيُّ أَنَّهُ",
+            "x": 44,
+            "y": 145,
+            "width": 666,
+            "height": 18,
+            "bottom": 163,
+            "right": 710,
+            "reading_index": 4
+        },
+        {
+            "label": "total-line",
+            "text": "الإجمالي: 9,615.85",
+            "x": 44,
+            "y": 171,
+            "width": 107,
+            "height": 21,
+            "bottom": 192,
+            "right": 151,
+            "reading_index": 5
+        }
+    ],
+    "canvas": {
+        "width": 754,
+        "height": 1127
+    },
+    "template": "invoice",
+    "hybrid": null
+}

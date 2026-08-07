@@ -1,0 +1,32 @@
+{
+    "boxes": [
+        {
+            "label": "tagline",
+            "text": "من مغيب الشفق إلى نصف",
+            "x": 170,
+            "y": 298,
+            "width": 108,
+            "height": 16,
+            "bottom": 314,
+            "right": 279,
+            "reading_index": 1
+        },
+        {
+            "label": "author",
+            "text": "بْنُ أَبِي عَمْرَةَ",
+            "x": 192,
+            "y": 567,
+            "width": 66,
+            "height": 18,
+            "bottom": 585,
+            "right": 257,
+            "reading_index": 2
+        }
+    ],
+    "canvas": {
+        "width": 449,
+        "height": 603
+    },
+    "template": "book_cover",
+    "hybrid": null
+}

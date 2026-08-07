@@ -1,0 +1,43 @@
+{
+    "boxes": [
+        {
+            "label": "logo",
+            "text": "",
+            "x": 297,
+            "y": 423,
+            "width": 64,
+            "height": 64,
+            "bottom": 487,
+            "right": 361,
+            "reading_index": -1
+        },
+        {
+            "label": "logo-mark",
+            "text": "يَحْيَى:",
+            "x": 297,
+            "y": 423,
+            "width": 64,
+            "height": 34,
+            "bottom": 457,
+            "right": 361,
+            "reading_index": 1
+        },
+        {
+            "label": "minimalist-title",
+            "text": "الكتاب، لسيبويه",
+            "x": 260,
+            "y": 509,
+            "width": 136,
+            "height": 44,
+            "bottom": 553,
+            "right": 397,
+            "reading_index": 2
+        }
+    ],
+    "canvas": {
+        "width": 657,
+        "height": 975
+    },
+    "template": "minimalist",
+    "hybrid": null
+}

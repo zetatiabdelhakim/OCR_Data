@@ -1,0 +1,241 @@
+{
+    "boxes": [
+        {
+            "label": "paper-title",
+            "text": "العالم كله؟ ! لكن المعنى أنها إذا حاذت",
+            "x": 30,
+            "y": 30,
+            "width": 711,
+            "height": 65,
+            "bottom": 95,
+            "right": 741,
+            "reading_index": 1
+        },
+        {
+            "label": "section-heading",
+            "text": "وَقَدْ غَفَرَ اللَّهُ",
+            "x": 399,
+            "y": 115,
+            "width": 343,
+            "height": 26,
+            "bottom": 141,
+            "right": 741,
+            "reading_index": 2
+        },
+        {
+            "label": "paragraph",
+            "text": "حَدَّثَنَا وَكِيعٌ، حَدَّثَنَا سُفْيَانُ، حَدَّثَنَا عَوْنُ بْنُ أَبِي جُحَيْفَةَ عَنْ أَبِيهِ قَالَ: أَتَيْتُ النَّبِيَّ صلى الله عليه وسلم بِمَكَّةَ، وَهُوَ بِالأَبْطَحِ، فِي قُبَّةٍ لَهُ حَمْرَاءَ مِنْ أَدَمٍ، قَالَ: فَخَرَجَ بِلَالٌ بِوَضُوئِهِ، فَمِنْ نَائِلٍ وَنَاضِحٍ، قَالَ: فَخَرَجَ النَّبِيُّ صلى الله عليه وسلم عَلَيْهِ حُلَّةٌ حَمْرَاءُ، كَأَنِّي أَنْظُرُ إِلَى بَيَاضِ سَاقَيْهِ، قَالَ: فَتَوَضَّأَ وَأَذَّنَ بِلَالٌ، قَالَ: فَجَعَلْتُ أَتَتَبَّعُ فَاهُ، هَا هُنَا، وَهَا هُنَا، يَقُولُ: يَمِينًا وَشِمَالًا، يَقُولُ: حَيَّ عَلَى الصَّلَاةِ، حَيَّ عَلَى الْفَلَاحِ قَالَ: ثُمَّ رُكِزَتْ لَهُ عَنَزَةٌ، فَتَقَدَّمَ، فَصَلَّى الظُّهْرَ رَكْعَتَيْنِ، يَمُرُّ بَيْنَ يَدَيْهِ الْحِمَارُ وَالْكَلْبُ، لَا يُمْنَعُ، ثُمَّ صَلَّى الْعَصْرَ رَكْعَتَيْنِ، ثُمَّ لَمْ يَزَلْ يُصَلِّي رَكْعَتَيْنِ، حَتَّى رَجَعَ إِلَى الْمَدِينَةِ. [خ: ٦٣٤] حَدَّثَنِي مُحَمَّدُ بْنُ",
+            "x": 399,
+            "y": 149,
+            "width": 343,
+            "height": 227,
+            "bottom": 376,
+            "right": 741,
+            "reading_index": 3
+        },
+        {
+            "label": "table",
+            "text": "",
+            "x": 399,
+            "y": 392,
+            "width": 343,
+            "height": 338,
+            "bottom": 730,
+            "right": 741,
+            "reading_index": -1
+        },
+        {
+            "label": "table-cell",
+            "text": "صلى الله",
+            "x": 399,
+            "y": 392,
+            "width": 343,
+            "height": 56,
+            "bottom": 448,
+            "right": 741,
+            "reading_index": 4
+        },
+        {
+            "label": "table-cell",
+            "text": "الْغَيْبِ وَالشَّهَادَةِ، أَنْتَ",
+            "x": 399,
+            "y": 448,
+            "width": 343,
+            "height": 56,
+            "bottom": 504,
+            "right": 741,
+            "reading_index": 5
+        },
+        {
+            "label": "table-cell",
+            "text": "وَقَالَ رَسُولُ اللَّهِ صلى",
+            "x": 399,
+            "y": 504,
+            "width": 343,
+            "height": 54,
+            "bottom": 558,
+            "right": 741,
+            "reading_index": 6
+        },
+        {
+            "label": "table-cell",
+            "text": "قَالَ: سَأَلْتُ",
+            "x": 399,
+            "y": 558,
+            "width": 343,
+            "height": 54,
+            "bottom": 612,
+            "right": 741,
+            "reading_index": 7
+        },
+        {
+            "label": "table-cell",
+            "text": "ترها، ولم تعرفها. [٢٤٣٦] حَدَّثَنَا عَبْدُ بْنُ حُمَيْدٍ،",
+            "x": 399,
+            "y": 612,
+            "width": 343,
+            "height": 54,
+            "bottom": 666,
+            "right": 741,
+            "reading_index": 8
+        },
+        {
+            "label": "table-cell",
+            "text": "مَلَكٍ يَجُرُّونَهَا) ). في هذا الحديث: بيان",
+            "x": 399,
+            "y": 666,
+            "width": 343,
+            "height": 54,
+            "bottom": 720,
+            "right": 741,
+            "reading_index": 9
+        },
+        {
+            "label": "equation",
+            "text": "𝐸 [ 𝑡 ] = ∫ 𝑥 𝑓 𝑡 ( 𝑥 ) 𝑑 𝑥 E[t]=∫xf t ​ (x)dx",
+            "x": 399,
+            "y": 746,
+            "width": 343,
+            "height": 62,
+            "bottom": 808,
+            "right": 741,
+            "reading_index": 10
+        },
+        {
+            "label": "figure",
+            "text": "",
+            "x": 30,
+            "y": 115,
+            "width": 343,
+            "height": 263,
+            "bottom": 378,
+            "right": 373,
+            "reading_index": -1
+        },
+        {
+            "label": "figure-image",
+            "text": "",
+            "x": 30,
+            "y": 115,
+            "width": 343,
+            "height": 230,
+            "bottom": 345,
+            "right": 373,
+            "reading_index": 11
+        },
+        {
+            "label": "figure-caption",
+            "text": "شكل: جاء في حديث الرجل الذي",
+            "x": 30,
+            "y": 351,
+            "width": 343,
+            "height": 17,
+            "bottom": 368,
+            "right": 373,
+            "reading_index": 12
+        },
+        {
+            "label": "figure",
+            "text": "",
+            "x": 30,
+            "y": 394,
+            "width": 343,
+            "height": 268,
+            "bottom": 661,
+            "right": 373,
+            "reading_index": -1
+        },
+        {
+            "label": "figure-image",
+            "text": "",
+            "x": 30,
+            "y": 394,
+            "width": 343,
+            "height": 230,
+            "bottom": 623,
+            "right": 373,
+            "reading_index": 13
+        },
+        {
+            "label": "figure-caption",
+            "text": "شكل: لابن الهمام (٤/",
+            "x": 30,
+            "y": 629,
+            "width": 343,
+            "height": 22,
+            "bottom": 651,
+            "right": 373,
+            "reading_index": 14
+        },
+        {
+            "label": "figure",
+            "text": "",
+            "x": 30,
+            "y": 677,
+            "width": 343,
+            "height": 264,
+            "bottom": 941,
+            "right": 373,
+            "reading_index": -1
+        },
+        {
+            "label": "figure-image",
+            "text": "",
+            "x": 30,
+            "y": 677,
+            "width": 343,
+            "height": 230,
+            "bottom": 907,
+            "right": 373,
+            "reading_index": 15
+        },
+        {
+            "label": "figure-caption",
+            "text": "شكل: أَخْبَرَنَا ابْنُ",
+            "x": 30,
+            "y": 913,
+            "width": 343,
+            "height": 18,
+            "bottom": 931,
+            "right": 373,
+            "reading_index": 16
+        },
+        {
+            "label": "equation",
+            "text": "∇ 𝑦 𝐽 ( 𝑦 ) = 1 𝑚 𝑋 𝑇 ( 𝜎 ( 𝑋 𝑦 ) − 𝑌 ) ∇ y ​ J(y)= m 1 ​ X T (σ(Xy)−Y)",
+            "x": 30,
+            "y": 957,
+            "width": 343,
+            "height": 51,
+            "bottom": 1008,
+            "right": 373,
+            "reading_index": 17
+        }
+    ],
+    "canvas": {
+        "width": 771,
+        "height": 1060
+    },
+    "template": "a4_paper",
+    "hybrid": null
+}

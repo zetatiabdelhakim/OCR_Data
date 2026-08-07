@@ -1,0 +1,54 @@
+{
+    "boxes": [
+        {
+            "label": "logo",
+            "text": "",
+            "x": 498,
+            "y": 146,
+            "width": 64,
+            "height": 64,
+            "bottom": 210,
+            "right": 562,
+            "reading_index": -1
+        },
+        {
+            "label": "logo-mark",
+            "text": "عَلَيْكَ",
+            "x": 498,
+            "y": 146,
+            "width": 64,
+            "height": 51,
+            "bottom": 197,
+            "right": 562,
+            "reading_index": 1
+        },
+        {
+            "label": "minimalist-title",
+            "text": "(٣) ، ومن العلماء",
+            "x": 441,
+            "y": 232,
+            "width": 176,
+            "height": 47,
+            "bottom": 279,
+            "right": 618,
+            "reading_index": 2
+        },
+        {
+            "label": "subtext",
+            "text": "مُحَمَّدُ بْنُ رَافِعٍ، حَدَّثَنَا عَبْدُ",
+            "x": 471,
+            "y": 289,
+            "width": 118,
+            "height": 17,
+            "bottom": 306,
+            "right": 588,
+            "reading_index": 3
+        }
+    ],
+    "canvas": {
+        "width": 1059,
+        "height": 452
+    },
+    "template": "minimalist",
+    "hybrid": null
+}

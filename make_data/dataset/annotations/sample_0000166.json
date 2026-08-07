@@ -1,0 +1,32 @@
+{
+    "boxes": [
+        {
+            "label": "tagline",
+            "text": "حَتَّى دَخَلْنَا الْمَدِينَةَ. [٢٤٢٩] حَدَّثَنَا شَيْبَانُ بْنُ فَرُّوخَ، حَدَّثَنَا",
+            "x": 183,
+            "y": 361,
+            "width": 230,
+            "height": 16,
+            "bottom": 377,
+            "right": 413,
+            "reading_index": 1
+        },
+        {
+            "label": "author",
+            "text": "بَكْرٍ، وَزُهَيْرٍ",
+            "x": 268,
+            "y": 694,
+            "width": 59,
+            "height": 18,
+            "bottom": 712,
+            "right": 328,
+            "reading_index": 2
+        }
+    ],
+    "canvas": {
+        "width": 596,
+        "height": 730
+    },
+    "template": "book_cover",
+    "hybrid": null
+}

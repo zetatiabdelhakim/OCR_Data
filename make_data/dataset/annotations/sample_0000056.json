@@ -1,0 +1,208 @@
+{
+    "boxes": [
+        {
+            "label": "store-name",
+            "text": "الإسلام، ويتركون",
+            "x": 10,
+            "y": 14,
+            "width": 214,
+            "height": 21,
+            "bottom": 35,
+            "right": 224,
+            "reading_index": 1
+        },
+        {
+            "label": "date-line",
+            "text": "03/12/2023 - 22:44",
+            "x": 10,
+            "y": 35,
+            "width": 214,
+            "height": 15,
+            "bottom": 50,
+            "right": 224,
+            "reading_index": 2
+        },
+        {
+            "label": "item-line",
+            "text": "طَعَامًا",
+            "x": 191,
+            "y": 63,
+            "width": 33,
+            "height": 40,
+            "bottom": 103,
+            "right": 224,
+            "reading_index": 3
+        },
+        {
+            "label": "price",
+            "text": "113.00",
+            "x": 10,
+            "y": 87,
+            "width": 40,
+            "height": 16,
+            "bottom": 103,
+            "right": 50,
+            "reading_index": 4
+        },
+        {
+            "label": "item-line",
+            "text": "الْأَرْضِ الْمُقَدَّسَةِ رَمْيَةً",
+            "x": 112,
+            "y": 103,
+            "width": 112,
+            "height": 40,
+            "bottom": 143,
+            "right": 224,
+            "reading_index": 5
+        },
+        {
+            "label": "price",
+            "text": "58.00",
+            "x": 10,
+            "y": 127,
+            "width": 33,
+            "height": 16,
+            "bottom": 143,
+            "right": 43,
+            "reading_index": 6
+        },
+        {
+            "label": "item-line",
+            "text": "وَلَمْ يَذْكُرِ:",
+            "x": 165,
+            "y": 143,
+            "width": 59,
+            "height": 40,
+            "bottom": 183,
+            "right": 224,
+            "reading_index": 7
+        },
+        {
+            "label": "price",
+            "text": "102.46",
+            "x": 10,
+            "y": 167,
+            "width": 40,
+            "height": 16,
+            "bottom": 183,
+            "right": 50,
+            "reading_index": 8
+        },
+        {
+            "label": "item-line",
+            "text": "اللَّهِ بْنُ سَعِيدٍ",
+            "x": 158,
+            "y": 183,
+            "width": 66,
+            "height": 40,
+            "bottom": 223,
+            "right": 224,
+            "reading_index": 9
+        },
+        {
+            "label": "price",
+            "text": "124.89",
+            "x": 10,
+            "y": 207,
+            "width": 40,
+            "height": 16,
+            "bottom": 223,
+            "right": 50,
+            "reading_index": 10
+        },
+        {
+            "label": "item-line",
+            "text": "رَجُلٌ مِنْ بَنِي",
+            "x": 158,
+            "y": 223,
+            "width": 66,
+            "height": 40,
+            "bottom": 263,
+            "right": 224,
+            "reading_index": 11
+        },
+        {
+            "label": "price",
+            "text": "61.00",
+            "x": 10,
+            "y": 247,
+            "width": 33,
+            "height": 16,
+            "bottom": 263,
+            "right": 43,
+            "reading_index": 12
+        },
+        {
+            "label": "item-line",
+            "text": "الحديث",
+            "x": 184,
+            "y": 263,
+            "width": 40,
+            "height": 40,
+            "bottom": 303,
+            "right": 224,
+            "reading_index": 13
+        },
+        {
+            "label": "price",
+            "text": "107.33",
+            "x": 10,
+            "y": 287,
+            "width": 40,
+            "height": 16,
+            "bottom": 303,
+            "right": 50,
+            "reading_index": 14
+        },
+        {
+            "label": "total-label",
+            "text": "المجموع",
+            "x": 169,
+            "y": 316,
+            "width": 55,
+            "height": 46,
+            "bottom": 362,
+            "right": 224,
+            "reading_index": 15
+        },
+        {
+            "label": "total-line",
+            "text": "566.68",
+            "x": 10,
+            "y": 343,
+            "width": 47,
+            "height": 19,
+            "bottom": 362,
+            "right": 57,
+            "reading_index": 16
+        },
+        {
+            "label": "barcode",
+            "text": "",
+            "x": 10,
+            "y": 372,
+            "width": 214,
+            "height": 30,
+            "bottom": 402,
+            "right": 224,
+            "reading_index": 17
+        },
+        {
+            "label": "footer-note",
+            "text": "شكرا لزيارتكم",
+            "x": 10,
+            "y": 402,
+            "width": 214,
+            "height": 15,
+            "bottom": 417,
+            "right": 224,
+            "reading_index": 18
+        }
+    ],
+    "canvas": {
+        "width": 234,
+        "height": 451
+    },
+    "template": "receipt",
+    "hybrid": null
+}

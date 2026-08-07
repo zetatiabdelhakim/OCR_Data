@@ -1,0 +1,54 @@
+{
+    "boxes": [
+        {
+            "label": "logo",
+            "text": "",
+            "x": 458,
+            "y": 195,
+            "width": 64,
+            "height": 64,
+            "bottom": 259,
+            "right": 522,
+            "reading_index": -1
+        },
+        {
+            "label": "logo-mark",
+            "text": "يَدًا",
+            "x": 458,
+            "y": 195,
+            "width": 64,
+            "height": 43,
+            "bottom": 238,
+            "right": 522,
+            "reading_index": 1
+        },
+        {
+            "label": "minimalist-title",
+            "text": "أَبُو خَيْثَمَةَ عَنْ",
+            "x": 429,
+            "y": 281,
+            "width": 123,
+            "height": 36,
+            "bottom": 317,
+            "right": 551,
+            "reading_index": 2
+        },
+        {
+            "label": "subtext",
+            "text": "((لَا أَدْرِي نِصْفُ",
+            "x": 451,
+            "y": 327,
+            "width": 79,
+            "height": 17,
+            "bottom": 344,
+            "right": 529,
+            "reading_index": 3
+        }
+    ],
+    "canvas": {
+        "width": 980,
+        "height": 538
+    },
+    "template": "minimalist",
+    "hybrid": null
+}

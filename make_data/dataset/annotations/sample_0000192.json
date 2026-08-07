@@ -1,0 +1,208 @@
+{
+    "boxes": [
+        {
+            "label": "store-name",
+            "text": "وسلم. وَحَدَّثَنَا إِسْحَاقُ",
+            "x": 10,
+            "y": 14,
+            "width": 289,
+            "height": 21,
+            "bottom": 35,
+            "right": 299,
+            "reading_index": 1
+        },
+        {
+            "label": "date-line",
+            "text": "11/08/2025 - 13:28",
+            "x": 10,
+            "y": 35,
+            "width": 289,
+            "height": 15,
+            "bottom": 50,
+            "right": 299,
+            "reading_index": 2
+        },
+        {
+            "label": "item-line",
+            "text": "إلا",
+            "x": 286,
+            "y": 63,
+            "width": 13,
+            "height": 40,
+            "bottom": 103,
+            "right": 299,
+            "reading_index": 3
+        },
+        {
+            "label": "price",
+            "text": "66.60",
+            "x": 10,
+            "y": 87,
+            "width": 33,
+            "height": 16,
+            "bottom": 103,
+            "right": 43,
+            "reading_index": 4
+        },
+        {
+            "label": "item-line",
+            "text": "حديث النفس",
+            "x": 233,
+            "y": 103,
+            "width": 66,
+            "height": 40,
+            "bottom": 143,
+            "right": 299,
+            "reading_index": 5
+        },
+        {
+            "label": "price",
+            "text": "129.00",
+            "x": 10,
+            "y": 127,
+            "width": 40,
+            "height": 16,
+            "bottom": 143,
+            "right": 50,
+            "reading_index": 6
+        },
+        {
+            "label": "item-line",
+            "text": "أَوْ",
+            "x": 286,
+            "y": 143,
+            "width": 13,
+            "height": 40,
+            "bottom": 183,
+            "right": 299,
+            "reading_index": 7
+        },
+        {
+            "label": "price",
+            "text": "46.00",
+            "x": 10,
+            "y": 167,
+            "width": 33,
+            "height": 16,
+            "bottom": 183,
+            "right": 43,
+            "reading_index": 8
+        },
+        {
+            "label": "item-line",
+            "text": "الحديث:",
+            "x": 253,
+            "y": 183,
+            "width": 46,
+            "height": 40,
+            "bottom": 223,
+            "right": 299,
+            "reading_index": 9
+        },
+        {
+            "label": "price",
+            "text": "125.00",
+            "x": 10,
+            "y": 207,
+            "width": 40,
+            "height": 16,
+            "bottom": 223,
+            "right": 50,
+            "reading_index": 10
+        },
+        {
+            "label": "item-line",
+            "text": "فيها، لكنه لم",
+            "x": 213,
+            "y": 223,
+            "width": 86,
+            "height": 40,
+            "bottom": 263,
+            "right": 299,
+            "reading_index": 11
+        },
+        {
+            "label": "price",
+            "text": "190.00",
+            "x": 10,
+            "y": 247,
+            "width": 40,
+            "height": 16,
+            "bottom": 263,
+            "right": 50,
+            "reading_index": 12
+        },
+        {
+            "label": "item-line",
+            "text": "نَحْنُ عِنْدَ",
+            "x": 253,
+            "y": 263,
+            "width": 46,
+            "height": 40,
+            "bottom": 303,
+            "right": 299,
+            "reading_index": 13
+        },
+        {
+            "label": "price",
+            "text": "155.00",
+            "x": 10,
+            "y": 287,
+            "width": 40,
+            "height": 16,
+            "bottom": 303,
+            "right": 50,
+            "reading_index": 14
+        },
+        {
+            "label": "total-label",
+            "text": "المجموع",
+            "x": 244,
+            "y": 316,
+            "width": 55,
+            "height": 46,
+            "bottom": 362,
+            "right": 299,
+            "reading_index": 15
+        },
+        {
+            "label": "total-line",
+            "text": "711.60",
+            "x": 10,
+            "y": 343,
+            "width": 47,
+            "height": 19,
+            "bottom": 362,
+            "right": 57,
+            "reading_index": 16
+        },
+        {
+            "label": "barcode",
+            "text": "",
+            "x": 10,
+            "y": 372,
+            "width": 289,
+            "height": 30,
+            "bottom": 402,
+            "right": 299,
+            "reading_index": 17
+        },
+        {
+            "label": "footer-note",
+            "text": "شكرا لزيارتكم",
+            "x": 10,
+            "y": 402,
+            "width": 289,
+            "height": 15,
+            "bottom": 417,
+            "right": 299,
+            "reading_index": 18
+        }
+    ],
+    "canvas": {
+        "width": 309,
+        "height": 451
+    },
+    "template": "receipt",
+    "hybrid": null
+}

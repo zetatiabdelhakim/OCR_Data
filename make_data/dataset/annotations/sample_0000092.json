@@ -1,0 +1,65 @@
+{
+    "boxes": [
+        {
+            "label": "org-name",
+            "text": "فَقَالَ الْخَصْمُ الْآخَرُ- وَهُوَ",
+            "x": 10,
+            "y": 10,
+            "width": 318,
+            "height": 21,
+            "bottom": 31,
+            "right": 328,
+            "reading_index": 1
+        },
+        {
+            "label": "photo-placeholder",
+            "text": "",
+            "x": 284,
+            "y": 80,
+            "width": 44,
+            "height": 56,
+            "bottom": 136,
+            "right": 328,
+            "reading_index": 2
+        },
+        {
+            "label": "card-title",
+            "text": "الْعَالَمِينَ سُبْحَانَهُ وَتَعَالَى",
+            "x": 10,
+            "y": 85,
+            "width": 266,
+            "height": 23,
+            "bottom": 108,
+            "right": 276,
+            "reading_index": 3
+        },
+        {
+            "label": "id-number",
+            "text": "7935-1758",
+            "x": 10,
+            "y": 112,
+            "width": 266,
+            "height": 19,
+            "bottom": 131,
+            "right": 276,
+            "reading_index": 4
+        },
+        {
+            "label": "barcode",
+            "text": "",
+            "x": 10,
+            "y": 185,
+            "width": 318,
+            "height": 30,
+            "bottom": 215,
+            "right": 328,
+            "reading_index": 5
+        }
+    ],
+    "canvas": {
+        "width": 338,
+        "height": 225
+    },
+    "template": "id_card",
+    "hybrid": null
+}

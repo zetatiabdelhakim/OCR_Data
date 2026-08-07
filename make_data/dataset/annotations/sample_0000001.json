@@ -1,0 +1,296 @@
+{
+    "boxes": [
+        {
+            "label": "org-name",
+            "text": "رَسُولُ اللَّهِ",
+            "x": 44,
+            "y": 44,
+            "width": 680,
+            "height": 33,
+            "bottom": 77,
+            "right": 724,
+            "reading_index": 1
+        },
+        {
+            "label": "invoice-number",
+            "text": "INV-88898",
+            "x": 661,
+            "y": 85,
+            "width": 63,
+            "height": 46,
+            "bottom": 131,
+            "right": 724,
+            "reading_index": 2
+        },
+        {
+            "label": "date-line",
+            "text": "28/06/2026",
+            "x": 44,
+            "y": 112,
+            "width": 69,
+            "height": 19,
+            "bottom": 131,
+            "right": 113,
+            "reading_index": 3
+        },
+        {
+            "label": "recipient",
+            "text": "فاتورة إلى: اللَّهَ يَحْفَظْكَ، احْفَظْ اللَّهَ",
+            "x": 44,
+            "y": 153,
+            "width": 680,
+            "height": 21,
+            "bottom": 174,
+            "right": 724,
+            "reading_index": 4
+        },
+        {
+            "label": "table",
+            "text": "",
+            "x": 44,
+            "y": 188,
+            "width": 680,
+            "height": 816,
+            "bottom": 1004,
+            "right": 724,
+            "reading_index": -1
+        },
+        {
+            "label": "table-cell",
+            "text": "البيان",
+            "x": 44,
+            "y": 188,
+            "width": 680,
+            "height": 44,
+            "bottom": 232,
+            "right": 724,
+            "reading_index": 5
+        },
+        {
+            "label": "table-cell",
+            "text": "الكمية",
+            "x": 44,
+            "y": 232,
+            "width": 680,
+            "height": 44,
+            "bottom": 276,
+            "right": 724,
+            "reading_index": 6
+        },
+        {
+            "label": "table-cell",
+            "text": "السعر",
+            "x": 44,
+            "y": 276,
+            "width": 680,
+            "height": 44,
+            "bottom": 320,
+            "right": 724,
+            "reading_index": 7
+        },
+        {
+            "label": "table-cell",
+            "text": "المجموع",
+            "x": 44,
+            "y": 320,
+            "width": 680,
+            "height": 44,
+            "bottom": 364,
+            "right": 724,
+            "reading_index": 8
+        },
+        {
+            "label": "table-cell",
+            "text": "أَحَدُهُمَا: ((صَالِحُ",
+            "x": 44,
+            "y": 364,
+            "width": 680,
+            "height": 40,
+            "bottom": 404,
+            "right": 724,
+            "reading_index": 9
+        },
+        {
+            "label": "table-cell",
+            "text": "10",
+            "x": 44,
+            "y": 404,
+            "width": 680,
+            "height": 40,
+            "bottom": 444,
+            "right": 724,
+            "reading_index": 10
+        },
+        {
+            "label": "table-cell",
+            "text": "108.13",
+            "x": 44,
+            "y": 444,
+            "width": 680,
+            "height": 40,
+            "bottom": 484,
+            "right": 724,
+            "reading_index": 11
+        },
+        {
+            "label": "table-cell",
+            "text": "1,081.30",
+            "x": 44,
+            "y": 484,
+            "width": 680,
+            "height": 40,
+            "bottom": 524,
+            "right": 724,
+            "reading_index": 12
+        },
+        {
+            "label": "table-cell",
+            "text": "الْأَسَانِيدِ وَسَقَمَهَا-",
+            "x": 44,
+            "y": 524,
+            "width": 680,
+            "height": 40,
+            "bottom": 564,
+            "right": 724,
+            "reading_index": 13
+        },
+        {
+            "label": "table-cell",
+            "text": "2",
+            "x": 44,
+            "y": 564,
+            "width": 680,
+            "height": 40,
+            "bottom": 604,
+            "right": 724,
+            "reading_index": 14
+        },
+        {
+            "label": "table-cell",
+            "text": "157.91",
+            "x": 44,
+            "y": 604,
+            "width": 680,
+            "height": 40,
+            "bottom": 644,
+            "right": 724,
+            "reading_index": 15
+        },
+        {
+            "label": "table-cell",
+            "text": "315.82",
+            "x": 44,
+            "y": 644,
+            "width": 680,
+            "height": 40,
+            "bottom": 684,
+            "right": 724,
+            "reading_index": 16
+        },
+        {
+            "label": "table-cell",
+            "text": "البر (١٤/ ١٠٤). واختلف العلماء",
+            "x": 44,
+            "y": 684,
+            "width": 680,
+            "height": 40,
+            "bottom": 724,
+            "right": 724,
+            "reading_index": 17
+        },
+        {
+            "label": "table-cell",
+            "text": "11",
+            "x": 44,
+            "y": 724,
+            "width": 680,
+            "height": 40,
+            "bottom": 764,
+            "right": 724,
+            "reading_index": 18
+        },
+        {
+            "label": "table-cell",
+            "text": "254.49",
+            "x": 44,
+            "y": 764,
+            "width": 680,
+            "height": 40,
+            "bottom": 804,
+            "right": 724,
+            "reading_index": 19
+        },
+        {
+            "label": "table-cell",
+            "text": "2,799.39",
+            "x": 44,
+            "y": 804,
+            "width": 680,
+            "height": 40,
+            "bottom": 844,
+            "right": 724,
+            "reading_index": 20
+        },
+        {
+            "label": "table-cell",
+            "text": "يباع ويشترى لا",
+            "x": 44,
+            "y": 844,
+            "width": 680,
+            "height": 40,
+            "bottom": 884,
+            "right": 724,
+            "reading_index": 21
+        },
+        {
+            "label": "table-cell",
+            "text": "12",
+            "x": 44,
+            "y": 884,
+            "width": 680,
+            "height": 40,
+            "bottom": 924,
+            "right": 724,
+            "reading_index": 22
+        },
+        {
+            "label": "table-cell",
+            "text": "157.32",
+            "x": 44,
+            "y": 924,
+            "width": 680,
+            "height": 40,
+            "bottom": 964,
+            "right": 724,
+            "reading_index": 23
+        },
+        {
+            "label": "table-cell",
+            "text": "1,887.84",
+            "x": 44,
+            "y": 964,
+            "width": 680,
+            "height": 40,
+            "bottom": 1004,
+            "right": 724,
+            "reading_index": 24
+        },
+        {
+            "label": "total-line",
+            "text": "الإجمالي: 6,084.35",
+            "x": 44,
+            "y": 1018,
+            "width": 111,
+            "height": 24,
+            "bottom": 1042,
+            "right": 155,
+            "reading_index": 25
+        }
+    ],
+    "canvas": {
+        "width": 768,
+        "height": 1119
+    },
+    "template": "invoice",
+    "hybrid": "theorem"
+}

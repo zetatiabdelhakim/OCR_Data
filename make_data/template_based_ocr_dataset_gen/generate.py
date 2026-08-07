@@ -35,7 +35,7 @@ from templates import TEMPLATES
 # Config
 # ------------------------------------------------------------------
 
-NUM_SAMPLES = 100
+NUM_SAMPLES = 200
 HYBRID_PROBABILITY = 0.28
 
 

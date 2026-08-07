@@ -1,0 +1,186 @@
+{
+    "boxes": [
+        {
+            "label": "heading",
+            "text": "كما قال تعالى: {كَلاّ إِنَّهُمْ عَنْ رَبِّهِمْ",
+            "x": 40,
+            "y": 40,
+            "width": 668,
+            "height": 153,
+            "bottom": 193,
+            "right": 708,
+            "reading_index": 1
+        },
+        {
+            "label": "chart",
+            "text": "شكل إحصائي: فهو واجب مطلقاً، وهذه طريقة",
+            "x": 499,
+            "y": 213,
+            "width": 209,
+            "height": 867,
+            "bottom": 1080,
+            "right": 708,
+            "reading_index": 2
+        },
+        {
+            "label": "chart",
+            "text": "شكل إحصائي: الْأَوَّلِ) ) وهو قابيل",
+            "x": 269,
+            "y": 213,
+            "width": 209,
+            "height": 867,
+            "bottom": 1080,
+            "right": 479,
+            "reading_index": 3
+        },
+        {
+            "label": "table",
+            "text": "",
+            "x": 40,
+            "y": 213,
+            "width": 209,
+            "height": 867,
+            "bottom": 1080,
+            "right": 249,
+            "reading_index": -1
+        },
+        {
+            "label": "table-cell",
+            "text": "العلماء كالحنابلة (١)",
+            "x": 40,
+            "y": 213,
+            "width": 209,
+            "height": 46,
+            "bottom": 259,
+            "right": 249,
+            "reading_index": 4
+        },
+        {
+            "label": "table-cell",
+            "text": "رُمْحٍ عَنِ",
+            "x": 40,
+            "y": 259,
+            "width": 209,
+            "height": 46,
+            "bottom": 305,
+            "right": 249,
+            "reading_index": 5
+        },
+        {
+            "label": "table-cell",
+            "text": "رواية النسائي هذه فتكون",
+            "x": 40,
+            "y": 353,
+            "width": 209,
+            "height": 44,
+            "bottom": 397,
+            "right": 249,
+            "reading_index": 6
+        },
+        {
+            "label": "table-cell",
+            "text": "شيخ الإسلام ابن",
+            "x": 40,
+            "y": 397,
+            "width": 209,
+            "height": 44,
+            "bottom": 441,
+            "right": 249,
+            "reading_index": 7
+        },
+        {
+            "label": "table-cell",
+            "text": "فَقَالَ: ((يَرْحَمُهُ اللَّهُ، لَقَدْ أَذْكَرَنِي كَذَا وَكَذَا آيَةً،",
+            "x": 40,
+            "y": 486,
+            "width": 209,
+            "height": 60,
+            "bottom": 546,
+            "right": 249,
+            "reading_index": 8
+        },
+        {
+            "label": "table-cell",
+            "text": "الْأُمَوِيُّ، حَدَّثَنَا عَبْدُ الْعَزِيزِ بْنُ الْمُخْتَارِ",
+            "x": 40,
+            "y": 546,
+            "width": 209,
+            "height": 44,
+            "bottom": 590,
+            "right": 249,
+            "reading_index": 9
+        },
+        {
+            "label": "table-cell",
+            "text": "إلى من",
+            "x": 40,
+            "y": 645,
+            "width": 209,
+            "height": 44,
+            "bottom": 689,
+            "right": 249,
+            "reading_index": 10
+        },
+        {
+            "label": "table-cell",
+            "text": "جُلُوسٌ، فَلَمَّا أَتَمَّ صَلَاتَهُ، سَجَدَ",
+            "x": 40,
+            "y": 689,
+            "width": 209,
+            "height": 44,
+            "bottom": 733,
+            "right": 249,
+            "reading_index": 11
+        },
+        {
+            "label": "table-cell",
+            "text": "بْنُ مُوسَى عَنِ الحُسَيْنِ",
+            "x": 40,
+            "y": 778,
+            "width": 209,
+            "height": 44,
+            "bottom": 822,
+            "right": 249,
+            "reading_index": 12
+        },
+        {
+            "label": "table-cell",
+            "text": "صلى الله عليه",
+            "x": 40,
+            "y": 822,
+            "width": 209,
+            "height": 44,
+            "bottom": 866,
+            "right": 249,
+            "reading_index": 13
+        },
+        {
+            "label": "table-cell",
+            "text": "بِمِثْلِ حَدِيثِ",
+            "x": 40,
+            "y": 912,
+            "width": 209,
+            "height": 44,
+            "bottom": 956,
+            "right": 249,
+            "reading_index": 14
+        },
+        {
+            "label": "table-cell",
+            "text": "ينضَمَّ ويجتمع بعضه إلى بعض، كما تنضم الحيَّة",
+            "x": 40,
+            "y": 956,
+            "width": 209,
+            "height": 60,
+            "bottom": 1016,
+            "right": 249,
+            "reading_index": 15
+        }
+    ],
+    "canvas": {
+        "width": 748,
+        "height": 1100
+    },
+    "template": "a4_charts",
+    "hybrid": null
+}

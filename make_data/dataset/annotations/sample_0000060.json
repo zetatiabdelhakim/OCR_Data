@@ -1,0 +1,43 @@
+{
+    "boxes": [
+        {
+            "label": "logo",
+            "text": "",
+            "x": 470,
+            "y": 153,
+            "width": 64,
+            "height": 64,
+            "bottom": 217,
+            "right": 534,
+            "reading_index": -1
+        },
+        {
+            "label": "logo-mark",
+            "text": "لَمْ",
+            "x": 470,
+            "y": 153,
+            "width": 64,
+            "height": 41,
+            "bottom": 194,
+            "right": 534,
+            "reading_index": 1
+        },
+        {
+            "label": "minimalist-title",
+            "text": "بِهِ أَكْحَلَ جَعْدًا حَمْشَ السَّاقَيْنِ",
+            "x": 308,
+            "y": 239,
+            "width": 387,
+            "height": 55,
+            "bottom": 294,
+            "right": 695,
+            "reading_index": 2
+        }
+    ],
+    "canvas": {
+        "width": 1003,
+        "height": 447
+    },
+    "template": "minimalist",
+    "hybrid": null
+}

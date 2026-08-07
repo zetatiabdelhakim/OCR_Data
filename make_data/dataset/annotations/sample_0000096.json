@@ -1,0 +1,43 @@
+{
+    "boxes": [
+        {
+            "label": "logo",
+            "text": "",
+            "x": 331,
+            "y": 312,
+            "width": 64,
+            "height": 64,
+            "bottom": 376,
+            "right": 395,
+            "reading_index": -1
+        },
+        {
+            "label": "logo-mark",
+            "text": "سَأَلَ",
+            "x": 331,
+            "y": 312,
+            "width": 64,
+            "height": 34,
+            "bottom": 346,
+            "right": 395,
+            "reading_index": 1
+        },
+        {
+            "label": "minimalist-title",
+            "text": "إِلَى النَّبِيِّ صلى الله عليه",
+            "x": 248,
+            "y": 398,
+            "width": 230,
+            "height": 47,
+            "bottom": 445,
+            "right": 478,
+            "reading_index": 2
+        }
+    ],
+    "canvas": {
+        "width": 726,
+        "height": 757
+    },
+    "template": "minimalist",
+    "hybrid": null
+}

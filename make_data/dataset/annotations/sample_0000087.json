@@ -1,0 +1,32 @@
+{
+    "boxes": [
+        {
+            "label": "tagline",
+            "text": "عيب الطعام، وأن على الإنسان",
+            "x": 341,
+            "y": 509,
+            "width": 124,
+            "height": 16,
+            "bottom": 525,
+            "right": 464,
+            "reading_index": 1
+        },
+        {
+            "label": "author",
+            "text": "وقوله: ((فَإِنَّ بِهَا",
+            "x": 359,
+            "y": 990,
+            "width": 86,
+            "height": 18,
+            "bottom": 1008,
+            "right": 446,
+            "reading_index": 2
+        }
+    ],
+    "canvas": {
+        "width": 805,
+        "height": 1026
+    },
+    "template": "book_cover",
+    "hybrid": null
+}

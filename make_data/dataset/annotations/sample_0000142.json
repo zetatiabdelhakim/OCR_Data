@@ -1,0 +1,76 @@
+{
+    "boxes": [
+        {
+            "label": "logo",
+            "text": "",
+            "x": 14,
+            "y": 14,
+            "width": 46,
+            "height": 46,
+            "bottom": 60,
+            "right": 60,
+            "reading_index": -1
+        },
+        {
+            "label": "logo-mark",
+            "text": "من",
+            "x": 14,
+            "y": 14,
+            "width": 46,
+            "height": 31,
+            "bottom": 45,
+            "right": 60,
+            "reading_index": 1
+        },
+        {
+            "label": "card-title",
+            "text": "الْغُرَمَاءِ. وَحَدَّثَنِي",
+            "x": 14,
+            "y": 248,
+            "width": 196,
+            "height": 18,
+            "bottom": 266,
+            "right": 210,
+            "reading_index": 2
+        },
+        {
+            "label": "card-role",
+            "text": "على أن الحج له، ولوليه",
+            "x": 14,
+            "y": 268,
+            "width": 196,
+            "height": 12,
+            "bottom": 280,
+            "right": 210,
+            "reading_index": 3
+        },
+        {
+            "label": "contact-line",
+            "text": "0664143489",
+            "x": 14,
+            "y": 286,
+            "width": 196,
+            "height": 11,
+            "bottom": 297,
+            "right": 210,
+            "reading_index": 4
+        },
+        {
+            "label": "contact-line",
+            "text": "١٠٤٣] قوله: ((رَافِعٌ يَدَيْهِ",
+            "x": 14,
+            "y": 297,
+            "width": 196,
+            "height": 11,
+            "bottom": 308,
+            "right": 210,
+            "reading_index": 5
+        }
+    ],
+    "canvas": {
+        "width": 224,
+        "height": 322
+    },
+    "template": "business_card",
+    "hybrid": null
+}

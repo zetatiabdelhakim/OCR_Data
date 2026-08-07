@@ -1,0 +1,186 @@
+{
+    "boxes": [
+        {
+            "label": "heading",
+            "text": "لا بد من هذا القيد ((مُسْتَيْقِنًا بِهَا قَلْبُهُ)",
+            "x": 40,
+            "y": 40,
+            "width": 797,
+            "height": 115,
+            "bottom": 155,
+            "right": 837,
+            "reading_index": 1
+        },
+        {
+            "label": "multi-column",
+            "text": "",
+            "x": 40,
+            "y": 175,
+            "width": 797,
+            "height": 344,
+            "bottom": 519,
+            "right": 837,
+            "reading_index": -1
+        },
+        {
+            "label": "paragraph",
+            "text": "لا يزيد عليها ولا تنقص، فعلمت أن مراد النبي صلى الله عليه وسلم أن هذا العدد في الكتاب والسنن) ) (١) . ونقل النووي- أيضًا- عن أبي حاتم رحمه الله قوله: ((إن رواية من روى: ((بِضْعٌ وَسِتُّونَ شُعْبَةً) ) - أيضًا- صحيحة؛ فإن العرب قد تذكر للشيء عددًا، ولا",
+            "x": 40,
+            "y": 175,
+            "width": 797,
+            "height": 324,
+            "bottom": 499,
+            "right": 837,
+            "reading_index": 2
+        },
+        {
+            "label": "paragraph",
+            "text": "تريد نفي ما سواه، وله نظائر كثيرة)) (٢) . (١) شرح مسلم، للنووي (٢/ ٤). (٢) شرح مسلم، للنووي (٢/ ٥). وأما تعريف الحياء فهو: ((الخلق الذي يبعث ويحمل على ترك القبيح من الصفات والأفعال والأقوال، ويمنع من التقصير في حق الله المتفضل المنعم سبحانه، والتقصير في حق ذي",
+            "x": 40,
+            "y": 499,
+            "width": 797,
+            "height": 324,
+            "bottom": 823,
+            "right": 837,
+            "reading_index": 3
+        },
+        {
+            "label": "paragraph",
+            "text": "الحق) ) (١) . أما الخلق الذي يمنع الإنسان عن السؤال عما أشكل عليه، أو عن تعلم دينه، والتفقه فيه، أو يمنعه عن الأمر بالمعروف والنهي عن المنكر، وعن الدعوة إلى الله سبحانه- فهذا ليس بحياء، وإنما هو في الحقيقة جبنٌ وخَوَر وضعف؛ فأم سُليم رضي الله عنها لم يمنعها",
+            "x": 40,
+            "y": 823,
+            "width": 797,
+            "height": 324,
+            "bottom": 1147,
+            "right": 837,
+            "reading_index": 4
+        },
+        {
+            "label": "table",
+            "text": "",
+            "x": 40,
+            "y": 539,
+            "width": 797,
+            "height": 344,
+            "bottom": 883,
+            "right": 837,
+            "reading_index": -1
+        },
+        {
+            "label": "table-cell",
+            "text": "اللَّهِ، مَا",
+            "x": 40,
+            "y": 539,
+            "width": 797,
+            "height": 52,
+            "bottom": 591,
+            "right": 837,
+            "reading_index": 5
+        },
+        {
+            "label": "table-cell",
+            "text": "(٦٨٢١). الله",
+            "x": 40,
+            "y": 591,
+            "width": 797,
+            "height": 52,
+            "bottom": 643,
+            "right": 837,
+            "reading_index": 6
+        },
+        {
+            "label": "table-cell",
+            "text": "اللَّهِ صلى",
+            "x": 40,
+            "y": 643,
+            "width": 797,
+            "height": 52,
+            "bottom": 695,
+            "right": 837,
+            "reading_index": 7
+        },
+        {
+            "label": "table-cell",
+            "text": "يَحْيَى بْنُ أَيُّوبَ عَنْ جَعْفَرِ بْنِ رَبِيعَةَ عَنْ",
+            "x": 40,
+            "y": 720,
+            "width": 797,
+            "height": 44,
+            "bottom": 764,
+            "right": 837,
+            "reading_index": 8
+        },
+        {
+            "label": "table-cell",
+            "text": "مُحَمَّدُ بْنُ عَبْدِ اللَّهِ بْنِ نُمَيْرٍ،",
+            "x": 40,
+            "y": 764,
+            "width": 797,
+            "height": 44,
+            "bottom": 808,
+            "right": 837,
+            "reading_index": 9
+        },
+        {
+            "label": "table-cell",
+            "text": "عَلَى يَمِينٍ، فَأَرَى",
+            "x": 40,
+            "y": 808,
+            "width": 797,
+            "height": 44,
+            "bottom": 852,
+            "right": 837,
+            "reading_index": 10
+        },
+        {
+            "label": "table-cell",
+            "text": "للعلاج فلا",
+            "x": 40,
+            "y": 903,
+            "width": 259,
+            "height": 46,
+            "bottom": 949,
+            "right": 299,
+            "reading_index": 11
+        },
+        {
+            "label": "table-cell",
+            "text": "بيان فضل",
+            "x": 40,
+            "y": 949,
+            "width": 259,
+            "height": 46,
+            "bottom": 995,
+            "right": 299,
+            "reading_index": 12
+        },
+        {
+            "label": "table-cell",
+            "text": "وَحَدَّثَنَا عَلِيُّ",
+            "x": 40,
+            "y": 995,
+            "width": 259,
+            "height": 46,
+            "bottom": 1041,
+            "right": 299,
+            "reading_index": 13
+        },
+        {
+            "label": "table-cell",
+            "text": "يَقُولُ: ((لَا",
+            "x": 40,
+            "y": 1041,
+            "width": 259,
+            "height": 46,
+            "bottom": 1087,
+            "right": 299,
+            "reading_index": 14
+        }
+    ],
+    "canvas": {
+        "width": 877,
+        "height": 1227
+    },
+    "template": "a4_report",
+    "hybrid": null
+}

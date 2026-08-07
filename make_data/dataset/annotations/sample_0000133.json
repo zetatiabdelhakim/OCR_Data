@@ -1,0 +1,43 @@
+{
+    "boxes": [
+        {
+            "label": "logo",
+            "text": "",
+            "x": 270,
+            "y": 437,
+            "width": 64,
+            "height": 64,
+            "bottom": 501,
+            "right": 334,
+            "reading_index": -1
+        },
+        {
+            "label": "logo-mark",
+            "text": "يشتريه",
+            "x": 270,
+            "y": 437,
+            "width": 64,
+            "height": 102,
+            "bottom": 539,
+            "right": 334,
+            "reading_index": 1
+        },
+        {
+            "label": "minimalist-title",
+            "text": "بْنِ سَعْدٍ",
+            "x": 270,
+            "y": 523,
+            "width": 64,
+            "height": 47,
+            "bottom": 570,
+            "right": 334,
+            "reading_index": 2
+        }
+    ],
+    "canvas": {
+        "width": 604,
+        "height": 1006
+    },
+    "template": "minimalist",
+    "hybrid": null
+}

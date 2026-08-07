@@ -1,0 +1,197 @@
+{
+    "boxes": [
+        {
+            "label": "heading",
+            "text": "غُنْدَرٌ عَنْ شُعْبَةَ. ح،",
+            "x": 36,
+            "y": 36,
+            "width": 664,
+            "height": 106,
+            "bottom": 142,
+            "right": 700,
+            "reading_index": 1
+        },
+        {
+            "label": "figure",
+            "text": "",
+            "x": 36,
+            "y": 158,
+            "width": 664,
+            "height": 318,
+            "bottom": 476,
+            "right": 700,
+            "reading_index": -1
+        },
+        {
+            "label": "figure-image",
+            "text": "",
+            "x": 36,
+            "y": 158,
+            "width": 664,
+            "height": 444,
+            "bottom": 602,
+            "right": 700,
+            "reading_index": 2
+        },
+        {
+            "label": "figure-caption",
+            "text": "شكل: ويحفونهم بأجنحتهم. في هذا الحديث: فضل",
+            "x": 36,
+            "y": 608,
+            "width": 664,
+            "height": 16,
+            "bottom": 624,
+            "right": 700,
+            "reading_index": 3
+        },
+        {
+            "label": "paragraph",
+            "text": "",
+            "x": 484,
+            "y": 492,
+            "width": 216,
+            "height": 318,
+            "bottom": 810,
+            "right": 700,
+            "reading_index": -1
+        },
+        {
+            "label": "heading",
+            "text": "مَهْدِيٍّ، حَدَّثَنَا مَهْدِيُّ بْنُ",
+            "x": 484,
+            "y": 492,
+            "width": 216,
+            "height": 43,
+            "bottom": 535,
+            "right": 700,
+            "reading_index": 4
+        },
+        {
+            "label": "figure",
+            "text": "",
+            "x": 484,
+            "y": 545,
+            "width": 86,
+            "height": 108,
+            "bottom": 653,
+            "right": 570,
+            "reading_index": -1
+        },
+        {
+            "label": "figure-image",
+            "text": "",
+            "x": 489,
+            "y": 550,
+            "width": 76,
+            "height": 51,
+            "bottom": 601,
+            "right": 565,
+            "reading_index": 5
+        },
+        {
+            "label": "figure-caption",
+            "text": "شكل: والمراد به هنا: أن",
+            "x": 489,
+            "y": 605,
+            "width": 76,
+            "height": 43,
+            "bottom": 648,
+            "right": 565,
+            "reading_index": 6
+        },
+        {
+            "label": "paragraph",
+            "text": "العقد، بأن شرط تسليمه للمشتري، أو تبقية الثمرة على الشجر إلى أوان الجذاذ، أو الرد بالعيب، هذا مقتضى العقد. الثاني: شرط فيه مصلحة، وتدعو إليه الحاجة، كاشتراط الرهن، والتضمين، والخيار، وتأجيل الثمن ونحو ذلك، وهذان القسمان جائزان، ولا يؤثران في صحة العقد بلا خلاف. الثالث: اشتراط العتق في العبد المبيع، أو الأمة، وهذا جائز- أيضًا- عند الجمهور؛ لحديث عائشة رضي الله عنها، وترغيبًا في العتق لقوته. الرابع: ما",
+            "x": 484,
+            "y": 663,
+            "width": 216,
+            "height": 421,
+            "bottom": 1084,
+            "right": 700,
+            "reading_index": 7
+        },
+        {
+            "label": "table",
+            "text": "",
+            "x": 36,
+            "y": 492,
+            "width": 432,
+            "height": 318,
+            "bottom": 810,
+            "right": 468,
+            "reading_index": -1
+        },
+        {
+            "label": "table-cell",
+            "text": "في هذه الأحاديث:",
+            "x": 36,
+            "y": 492,
+            "width": 432,
+            "height": 56,
+            "bottom": 548,
+            "right": 468,
+            "reading_index": 8
+        },
+        {
+            "label": "table-cell",
+            "text": "في الدنيا لفسقهم،",
+            "x": 36,
+            "y": 548,
+            "width": 432,
+            "height": 56,
+            "bottom": 604,
+            "right": 468,
+            "reading_index": 9
+        },
+        {
+            "label": "table-cell",
+            "text": "صلى الله",
+            "x": 36,
+            "y": 604,
+            "width": 432,
+            "height": 56,
+            "bottom": 660,
+            "right": 468,
+            "reading_index": 10
+        },
+        {
+            "label": "figure-image",
+            "text": "",
+            "x": 484,
+            "y": 826,
+            "width": 216,
+            "height": 145,
+            "bottom": 971,
+            "right": 700,
+            "reading_index": 11
+        },
+        {
+            "label": "figure-image",
+            "text": "",
+            "x": 484,
+            "y": 971,
+            "width": 216,
+            "height": 145,
+            "bottom": 1115,
+            "right": 700,
+            "reading_index": 12
+        },
+        {
+            "label": "figure-image",
+            "text": "",
+            "x": 36,
+            "y": 826,
+            "width": 432,
+            "height": 289,
+            "bottom": 1115,
+            "right": 468,
+            "reading_index": 13
+        }
+    ],
+    "canvas": {
+        "width": 736,
+        "height": 1132
+    },
+    "template": "a4_image_gallery",
+    "hybrid": null
+}

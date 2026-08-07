@@ -1,0 +1,76 @@
+{
+    "boxes": [
+        {
+            "label": "logo",
+            "text": "",
+            "x": 14,
+            "y": 14,
+            "width": 46,
+            "height": 46,
+            "bottom": 60,
+            "right": 60,
+            "reading_index": -1
+        },
+        {
+            "label": "logo-mark",
+            "text": "المُزَارَعَةِ،",
+            "x": 14,
+            "y": 14,
+            "width": 46,
+            "height": 60,
+            "bottom": 74,
+            "right": 60,
+            "reading_index": 1
+        },
+        {
+            "label": "card-title",
+            "text": "رَسُولُ اللَّهِ- عِنْدَ",
+            "x": 14,
+            "y": 60,
+            "width": 276,
+            "height": 25,
+            "bottom": 85,
+            "right": 290,
+            "reading_index": 2
+        },
+        {
+            "label": "card-role",
+            "text": "تَبَاغَضُوا، وَلَا تَدَابَرُوا، وَكُونُوا",
+            "x": 14,
+            "y": 87,
+            "width": 276,
+            "height": 12,
+            "bottom": 99,
+            "right": 290,
+            "reading_index": 3
+        },
+        {
+            "label": "contact-line",
+            "text": "0620932835",
+            "x": 14,
+            "y": 105,
+            "width": 276,
+            "height": 11,
+            "bottom": 116,
+            "right": 290,
+            "reading_index": 4
+        },
+        {
+            "label": "contact-line",
+            "text": "قَالَ زُهَيْرٌ: حَدَّثَنَا سُفْيَانُ بْنُ عُيَيْنَةَ",
+            "x": 14,
+            "y": 116,
+            "width": 276,
+            "height": 11,
+            "bottom": 127,
+            "right": 290,
+            "reading_index": 5
+        }
+    ],
+    "canvas": {
+        "width": 304,
+        "height": 217
+    },
+    "template": "business_card",
+    "hybrid": "figure"
+}

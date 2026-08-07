@@ -1,0 +1,43 @@
+{
+    "boxes": [
+        {
+            "label": "equation",
+            "text": "∑ 𝑘 = 0 100 𝑧 𝑘 𝑘 ! = 𝑒 𝑧 k=0 ∑ 100 ​ k! z k ​ =e z",
+            "x": 20,
+            "y": 26,
+            "width": 595,
+            "height": 79,
+            "bottom": 105,
+            "right": 615,
+            "reading_index": 1
+        },
+        {
+            "label": "equation",
+            "text": "𝑃 ( 𝐴 ∣ 𝐵 ) = 𝑃 ( 𝐴 ∩ 𝐵 ) 𝑃 ( 𝐵 ) P(A∣B)= P(B) P(A∩B) ​",
+            "x": 20,
+            "y": 111,
+            "width": 595,
+            "height": 65,
+            "bottom": 176,
+            "right": 615,
+            "reading_index": 2
+        },
+        {
+            "label": "equation",
+            "text": "∏ 𝜎 = 1 𝑛 ( 1 ⋅ 𝑦 𝜎 ) = 0 σ=1 ∏ n ​ (1⋅y σ ​ )=0",
+            "x": 20,
+            "y": 182,
+            "width": 595,
+            "height": 70,
+            "bottom": 252,
+            "right": 615,
+            "reading_index": 3
+        }
+    ],
+    "canvas": {
+        "width": 635,
+        "height": 298
+    },
+    "template": "math_proof",
+    "hybrid": null
+}

@@ -1,0 +1,43 @@
+{
+    "boxes": [
+        {
+            "label": "heading",
+            "text": "حَتَّى يَمْشِيَ عَلَى ظَهْرِ",
+            "x": 40,
+            "y": 40,
+            "width": 628,
+            "height": 139,
+            "bottom": 179,
+            "right": 668,
+            "reading_index": 1
+        },
+        {
+            "label": "hybrid-insert",
+            "text": "",
+            "x": 40,
+            "y": 211,
+            "width": 628,
+            "height": 160,
+            "bottom": 371,
+            "right": 668,
+            "reading_index": -1
+        },
+        {
+            "label": "chart",
+            "text": "",
+            "x": 40,
+            "y": 211,
+            "width": 628,
+            "height": 160,
+            "bottom": 371,
+            "right": 668,
+            "reading_index": 2
+        }
+    ],
+    "canvas": {
+        "width": 708,
+        "height": 1004
+    },
+    "template": "a4_report",
+    "hybrid": "chart"
+}

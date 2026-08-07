@@ -1,0 +1,32 @@
+{
+    "boxes": [
+        {
+            "label": "heading",
+            "text": "حُلب له في إناء وشربه،",
+            "x": 40,
+            "y": 40,
+            "width": 731,
+            "height": 169,
+            "bottom": 209,
+            "right": 771,
+            "reading_index": 1
+        },
+        {
+            "label": "chart",
+            "text": "شكل إحصائي: للضارب، يعني: من فتح جعله",
+            "x": 40,
+            "y": 229,
+            "width": 731,
+            "height": 955,
+            "bottom": 1184,
+            "right": 771,
+            "reading_index": 2
+        }
+    ],
+    "canvas": {
+        "width": 811,
+        "height": 1204
+    },
+    "template": "a4_charts",
+    "hybrid": null
+}

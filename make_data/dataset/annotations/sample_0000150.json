@@ -1,0 +1,109 @@
+{
+    "boxes": [
+        {
+            "label": "heading",
+            "text": "نفل، ونسبه المرداوي والفتوحي",
+            "x": 36,
+            "y": 36,
+            "width": 782,
+            "height": 147,
+            "bottom": 183,
+            "right": 818,
+            "reading_index": 1
+        },
+        {
+            "label": "image-gallery",
+            "text": "",
+            "x": 435,
+            "y": 199,
+            "width": 383,
+            "height": 831,
+            "bottom": 1030,
+            "right": 818,
+            "reading_index": -1
+        },
+        {
+            "label": "figure-image",
+            "text": "",
+            "x": 435,
+            "y": 199,
+            "width": 383,
+            "height": 256,
+            "bottom": 455,
+            "right": 818,
+            "reading_index": 2
+        },
+        {
+            "label": "figure-image",
+            "text": "",
+            "x": 435,
+            "y": 455,
+            "width": 383,
+            "height": 256,
+            "bottom": 711,
+            "right": 818,
+            "reading_index": 3
+        },
+        {
+            "label": "figure-image",
+            "text": "",
+            "x": 435,
+            "y": 711,
+            "width": 383,
+            "height": 256,
+            "bottom": 967,
+            "right": 818,
+            "reading_index": 4
+        },
+        {
+            "label": "image-gallery",
+            "text": "",
+            "x": 36,
+            "y": 199,
+            "width": 383,
+            "height": 831,
+            "bottom": 1030,
+            "right": 419,
+            "reading_index": -1
+        },
+        {
+            "label": "figure-image",
+            "text": "",
+            "x": 36,
+            "y": 199,
+            "width": 383,
+            "height": 256,
+            "bottom": 455,
+            "right": 419,
+            "reading_index": 5
+        },
+        {
+            "label": "figure-image",
+            "text": "",
+            "x": 36,
+            "y": 455,
+            "width": 383,
+            "height": 256,
+            "bottom": 711,
+            "right": 419,
+            "reading_index": 6
+        },
+        {
+            "label": "figure-image",
+            "text": "",
+            "x": 36,
+            "y": 711,
+            "width": 383,
+            "height": 256,
+            "bottom": 967,
+            "right": 419,
+            "reading_index": 7
+        }
+    ],
+    "canvas": {
+        "width": 854,
+        "height": 1050
+    },
+    "template": "a4_image_gallery",
+    "hybrid": null
+}

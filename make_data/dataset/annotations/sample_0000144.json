@@ -1,0 +1,54 @@
+{
+    "boxes": [
+        {
+            "label": "logo",
+            "text": "",
+            "x": 343,
+            "y": 293,
+            "width": 64,
+            "height": 64,
+            "bottom": 357,
+            "right": 407,
+            "reading_index": -1
+        },
+        {
+            "label": "logo-mark",
+            "text": "البُخْتِ)",
+            "x": 343,
+            "y": 293,
+            "width": 64,
+            "height": 84,
+            "bottom": 377,
+            "right": 407,
+            "reading_index": 1
+        },
+        {
+            "label": "minimalist-title",
+            "text": "عليه وسلم: ((أَمَا",
+            "x": 304,
+            "y": 379,
+            "width": 141,
+            "height": 44,
+            "bottom": 423,
+            "right": 446,
+            "reading_index": 2
+        },
+        {
+            "label": "subtext",
+            "text": "عُذِّبَ قَوْمٌ بِالرِّيحِ، وَقَدْ رَأَى",
+            "x": 313,
+            "y": 433,
+            "width": 124,
+            "height": 17,
+            "bottom": 450,
+            "right": 437,
+            "reading_index": 3
+        }
+    ],
+    "canvas": {
+        "width": 750,
+        "height": 743
+    },
+    "template": "minimalist",
+    "hybrid": null
+}

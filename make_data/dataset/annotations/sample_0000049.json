@@ -1,0 +1,43 @@
+{
+    "boxes": [
+        {
+            "label": "logo",
+            "text": "",
+            "x": 443,
+            "y": 202,
+            "width": 64,
+            "height": 64,
+            "bottom": 266,
+            "right": 507,
+            "reading_index": -1
+        },
+        {
+            "label": "logo-mark",
+            "text": "يَوْمَ",
+            "x": 443,
+            "y": 202,
+            "width": 64,
+            "height": 51,
+            "bottom": 253,
+            "right": 507,
+            "reading_index": 1
+        },
+        {
+            "label": "minimalist-title",
+            "text": "قَدَمَيَّ مَوْضُوعٌ، وَدِمَاءُ الْجَاهِلِيَّةِ",
+            "x": 287,
+            "y": 288,
+            "width": 374,
+            "height": 47,
+            "bottom": 335,
+            "right": 662,
+            "reading_index": 2
+        }
+    ],
+    "canvas": {
+        "width": 949,
+        "height": 536
+    },
+    "template": "minimalist",
+    "hybrid": null
+}

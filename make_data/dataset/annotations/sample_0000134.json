@@ -1,0 +1,65 @@
+{
+    "boxes": [
+        {
+            "label": "org-name",
+            "text": "عليه، ويطيعونه في",
+            "x": 10,
+            "y": 10,
+            "width": 324,
+            "height": 21,
+            "bottom": 31,
+            "right": 334,
+            "reading_index": 1
+        },
+        {
+            "label": "photo-placeholder",
+            "text": "",
+            "x": 290,
+            "y": 68,
+            "width": 44,
+            "height": 56,
+            "bottom": 124,
+            "right": 334,
+            "reading_index": 2
+        },
+        {
+            "label": "card-title",
+            "text": "وَيَا أَهْلَ النَّارِ",
+            "x": 10,
+            "y": 73,
+            "width": 272,
+            "height": 23,
+            "bottom": 96,
+            "right": 282,
+            "reading_index": 3
+        },
+        {
+            "label": "id-number",
+            "text": "5134-2161",
+            "x": 10,
+            "y": 100,
+            "width": 272,
+            "height": 19,
+            "bottom": 119,
+            "right": 282,
+            "reading_index": 4
+        },
+        {
+            "label": "barcode",
+            "text": "",
+            "x": 10,
+            "y": 160,
+            "width": 324,
+            "height": 30,
+            "bottom": 190,
+            "right": 334,
+            "reading_index": 5
+        }
+    ],
+    "canvas": {
+        "width": 344,
+        "height": 200
+    },
+    "template": "id_card",
+    "hybrid": null
+}

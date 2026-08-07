@@ -1,0 +1,252 @@
+{
+    "boxes": [
+        {
+            "label": "heading",
+            "text": "وصلوا إلى مرتبة حق اليقين.",
+            "x": 40,
+            "y": 40,
+            "width": 681,
+            "height": 144,
+            "bottom": 184,
+            "right": 721,
+            "reading_index": 1
+        },
+        {
+            "label": "hybrid-insert",
+            "text": "",
+            "x": 501,
+            "y": 216,
+            "width": 220,
+            "height": 230,
+            "bottom": 446,
+            "right": 721,
+            "reading_index": -1
+        },
+        {
+            "label": "chart",
+            "text": "",
+            "x": 501,
+            "y": 216,
+            "width": 220,
+            "height": 230,
+            "bottom": 446,
+            "right": 721,
+            "reading_index": 2
+        },
+        {
+            "label": "table",
+            "text": "",
+            "x": 40,
+            "y": 204,
+            "width": 441,
+            "height": 814,
+            "bottom": 1018,
+            "right": 481,
+            "reading_index": -1
+        },
+        {
+            "label": "table-cell",
+            "text": "شِهَابٍ عَنْ",
+            "x": 40,
+            "y": 204,
+            "width": 441,
+            "height": 46,
+            "bottom": 250,
+            "right": 481,
+            "reading_index": 3
+        },
+        {
+            "label": "table-cell",
+            "text": "الكذب",
+            "x": 40,
+            "y": 250,
+            "width": 441,
+            "height": 46,
+            "bottom": 296,
+            "right": 481,
+            "reading_index": 4
+        },
+        {
+            "label": "table-cell",
+            "text": "(١/ ١٧١). بْنُ",
+            "x": 40,
+            "y": 296,
+            "width": 441,
+            "height": 46,
+            "bottom": 342,
+            "right": 481,
+            "reading_index": 5
+        },
+        {
+            "label": "table-cell",
+            "text": "دَعْوَتِي شَفَاعَةً لِأُمَّتِي يَوْمَ",
+            "x": 40,
+            "y": 343,
+            "width": 441,
+            "height": 44,
+            "bottom": 387,
+            "right": 481,
+            "reading_index": 6
+        },
+        {
+            "label": "table-cell",
+            "text": "عليه الصلاة والسلام رجالًا من قريش",
+            "x": 40,
+            "y": 387,
+            "width": 441,
+            "height": 44,
+            "bottom": 431,
+            "right": 481,
+            "reading_index": 7
+        },
+        {
+            "label": "table-cell",
+            "text": "فَقَالَ: يَا",
+            "x": 40,
+            "y": 431,
+            "width": 441,
+            "height": 44,
+            "bottom": 475,
+            "right": 481,
+            "reading_index": 8
+        },
+        {
+            "label": "table-cell",
+            "text": "في الركن الثاني ويتأخر المأموم،",
+            "x": 40,
+            "y": 476,
+            "width": 441,
+            "height": 44,
+            "bottom": 520,
+            "right": 481,
+            "reading_index": 9
+        },
+        {
+            "label": "table-cell",
+            "text": "عَنِ النُّعْمَانِ بْنِ بَشِيرٍ",
+            "x": 40,
+            "y": 520,
+            "width": 441,
+            "height": 44,
+            "bottom": 564,
+            "right": 481,
+            "reading_index": 10
+        },
+        {
+            "label": "table-cell",
+            "text": "فَقَالَ: ((سُبْحَانَ",
+            "x": 40,
+            "y": 564,
+            "width": 441,
+            "height": 44,
+            "bottom": 608,
+            "right": 481,
+            "reading_index": 11
+        },
+        {
+            "label": "table-cell",
+            "text": "ابْنَ مُفَضَّلٍ- عَنْ أَبِي مَسْلَمَةَ عَنْ أَبِي",
+            "x": 40,
+            "y": 609,
+            "width": 441,
+            "height": 44,
+            "bottom": 653,
+            "right": 481,
+            "reading_index": 12
+        },
+        {
+            "label": "table-cell",
+            "text": "عليه وسلم مِدْرًى",
+            "x": 40,
+            "y": 653,
+            "width": 441,
+            "height": 44,
+            "bottom": 697,
+            "right": 481,
+            "reading_index": 13
+        },
+        {
+            "label": "table-cell",
+            "text": "يسع؛ لأنه سعى مع طواف القدوم. ثم أقام",
+            "x": 40,
+            "y": 697,
+            "width": 441,
+            "height": 44,
+            "bottom": 741,
+            "right": 481,
+            "reading_index": 14
+        },
+        {
+            "label": "table-cell",
+            "text": "إليه بفرس يبشره، وسبقه",
+            "x": 40,
+            "y": 742,
+            "width": 441,
+            "height": 44,
+            "bottom": 786,
+            "right": 481,
+            "reading_index": 15
+        },
+        {
+            "label": "table-cell",
+            "text": "فَقُلْتُ مَا يَمْنَعُكَ أَنْ تَحِلَّ؟ قَالَ: ((إِنِّي",
+            "x": 40,
+            "y": 786,
+            "width": 441,
+            "height": 44,
+            "bottom": 830,
+            "right": 481,
+            "reading_index": 16
+        },
+        {
+            "label": "table-cell",
+            "text": "وَسُرَيْجُ بْنُ يُونُسَ قَالَا: حَدَّثَنَا هُشَيْمٌ،",
+            "x": 40,
+            "y": 830,
+            "width": 441,
+            "height": 44,
+            "bottom": 874,
+            "right": 481,
+            "reading_index": 17
+        },
+        {
+            "label": "table-cell",
+            "text": "الصلاة والسلام خَلْقًا، وخُلُقًا، وإيمانًا،",
+            "x": 40,
+            "y": 875,
+            "width": 441,
+            "height": 44,
+            "bottom": 919,
+            "right": 481,
+            "reading_index": 18
+        },
+        {
+            "label": "table-cell",
+            "text": "عَلَيْهِمُ الْقُرْآنَ)",
+            "x": 40,
+            "y": 919,
+            "width": 441,
+            "height": 44,
+            "bottom": 963,
+            "right": 481,
+            "reading_index": 19
+        },
+        {
+            "label": "table-cell",
+            "text": "في الظلمة التي",
+            "x": 40,
+            "y": 963,
+            "width": 441,
+            "height": 44,
+            "bottom": 1007,
+            "right": 481,
+            "reading_index": 20
+        }
+    ],
+    "canvas": {
+        "width": 761,
+        "height": 1038
+    },
+    "template": "a4_report",
+    "hybrid": "chart"
+}

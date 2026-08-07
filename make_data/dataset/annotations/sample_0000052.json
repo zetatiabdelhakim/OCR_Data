@@ -1,0 +1,32 @@
+{
+    "boxes": [
+        {
+            "label": "tagline",
+            "text": "رضي الله عنهما: ((أَتَأْذَنُ لِي أَنْ",
+            "x": 130,
+            "y": 331,
+            "width": 152,
+            "height": 18,
+            "bottom": 349,
+            "right": 282,
+            "reading_index": 1
+        },
+        {
+            "label": "author",
+            "text": "المتبادر. ودلت النصوص",
+            "x": 124,
+            "y": 630,
+            "width": 165,
+            "height": 24,
+            "bottom": 654,
+            "right": 288,
+            "reading_index": 2
+        }
+    ],
+    "canvas": {
+        "width": 412,
+        "height": 672
+    },
+    "template": "book_cover",
+    "hybrid": null
+}

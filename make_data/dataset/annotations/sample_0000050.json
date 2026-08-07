@@ -1,0 +1,43 @@
+{
+    "boxes": [
+        {
+            "label": "logo",
+            "text": "",
+            "x": 511,
+            "y": 166,
+            "width": 64,
+            "height": 64,
+            "bottom": 230,
+            "right": 575,
+            "reading_index": -1
+        },
+        {
+            "label": "logo-mark",
+            "text": "عنها",
+            "x": 511,
+            "y": 166,
+            "width": 64,
+            "height": 44,
+            "bottom": 210,
+            "right": 575,
+            "reading_index": 1
+        },
+        {
+            "label": "minimalist-title",
+            "text": "بِوَجْهِهِ، فَقَالَ: ((هَلْ رَأَى أَحَدٌ",
+            "x": 372,
+            "y": 252,
+            "width": 342,
+            "height": 47,
+            "bottom": 299,
+            "right": 714,
+            "reading_index": 2
+        }
+    ],
+    "canvas": {
+        "width": 1086,
+        "height": 464
+    },
+    "template": "minimalist",
+    "hybrid": null
+}

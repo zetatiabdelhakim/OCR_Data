@@ -1,0 +1,186 @@
+{
+    "boxes": [
+        {
+            "label": "store-name",
+            "text": "وما معه",
+            "x": 10,
+            "y": 14,
+            "width": 185,
+            "height": 21,
+            "bottom": 35,
+            "right": 195,
+            "reading_index": 1
+        },
+        {
+            "label": "date-line",
+            "text": "01/11/2023 - 22:54",
+            "x": 10,
+            "y": 35,
+            "width": 185,
+            "height": 15,
+            "bottom": 50,
+            "right": 195,
+            "reading_index": 2
+        },
+        {
+            "label": "item-line",
+            "text": "أَنَّ رَسُولَ اللَّهِ",
+            "x": 129,
+            "y": 63,
+            "width": 66,
+            "height": 40,
+            "bottom": 103,
+            "right": 195,
+            "reading_index": 3
+        },
+        {
+            "label": "price",
+            "text": "75.00",
+            "x": 10,
+            "y": 87,
+            "width": 33,
+            "height": 16,
+            "bottom": 103,
+            "right": 43,
+            "reading_index": 4
+        },
+        {
+            "label": "item-line",
+            "text": "ابْنِ شِهَابٍ",
+            "x": 142,
+            "y": 103,
+            "width": 53,
+            "height": 40,
+            "bottom": 143,
+            "right": 195,
+            "reading_index": 5
+        },
+        {
+            "label": "price",
+            "text": "32.00",
+            "x": 10,
+            "y": 127,
+            "width": 33,
+            "height": 16,
+            "bottom": 143,
+            "right": 43,
+            "reading_index": 6
+        },
+        {
+            "label": "item-line",
+            "text": "الفرج من قُبُل",
+            "x": 116,
+            "y": 143,
+            "width": 79,
+            "height": 40,
+            "bottom": 183,
+            "right": 195,
+            "reading_index": 7
+        },
+        {
+            "label": "price",
+            "text": "141.02",
+            "x": 10,
+            "y": 167,
+            "width": 40,
+            "height": 16,
+            "bottom": 183,
+            "right": 50,
+            "reading_index": 8
+        },
+        {
+            "label": "item-line",
+            "text": "وَضَعَ",
+            "x": 175,
+            "y": 183,
+            "width": 20,
+            "height": 40,
+            "bottom": 223,
+            "right": 195,
+            "reading_index": 9
+        },
+        {
+            "label": "price",
+            "text": "60.00",
+            "x": 10,
+            "y": 207,
+            "width": 33,
+            "height": 16,
+            "bottom": 223,
+            "right": 43,
+            "reading_index": 10
+        },
+        {
+            "label": "item-line",
+            "text": "وَسَبْعُونَ فِي",
+            "x": 136,
+            "y": 223,
+            "width": 59,
+            "height": 40,
+            "bottom": 263,
+            "right": 195,
+            "reading_index": 11
+        },
+        {
+            "label": "price",
+            "text": "25.00",
+            "x": 10,
+            "y": 247,
+            "width": 33,
+            "height": 16,
+            "bottom": 263,
+            "right": 43,
+            "reading_index": 12
+        },
+        {
+            "label": "total-label",
+            "text": "المجموع",
+            "x": 140,
+            "y": 276,
+            "width": 55,
+            "height": 46,
+            "bottom": 322,
+            "right": 195,
+            "reading_index": 13
+        },
+        {
+            "label": "total-line",
+            "text": "333.02",
+            "x": 10,
+            "y": 303,
+            "width": 47,
+            "height": 19,
+            "bottom": 322,
+            "right": 57,
+            "reading_index": 14
+        },
+        {
+            "label": "barcode",
+            "text": "",
+            "x": 10,
+            "y": 332,
+            "width": 185,
+            "height": 30,
+            "bottom": 362,
+            "right": 195,
+            "reading_index": 15
+        },
+        {
+            "label": "footer-note",
+            "text": "شكرا لزيارتكم",
+            "x": 10,
+            "y": 362,
+            "width": 185,
+            "height": 15,
+            "bottom": 377,
+            "right": 195,
+            "reading_index": 16
+        }
+    ],
+    "canvas": {
+        "width": 205,
+        "height": 411
+    },
+    "template": "receipt",
+    "hybrid": null
+}

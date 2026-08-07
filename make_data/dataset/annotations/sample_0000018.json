@@ -1,0 +1,175 @@
+{
+    "boxes": [
+        {
+            "label": "heading",
+            "text": "بَنِي فَزَارَةَ عَلَيْهَا قَشْعٌ مِنْ أَدَمٍ،",
+            "x": 40,
+            "y": 40,
+            "width": 657,
+            "height": 143,
+            "bottom": 183,
+            "right": 697,
+            "reading_index": 1
+        },
+        {
+            "label": "chart",
+            "text": "شكل إحصائي: الله تعالى: {لا",
+            "x": 40,
+            "y": 203,
+            "width": 657,
+            "height": 404,
+            "bottom": 606,
+            "right": 697,
+            "reading_index": 2
+        },
+        {
+            "label": "paragraph",
+            "text": "",
+            "x": 491,
+            "y": 626,
+            "width": 206,
+            "height": 404,
+            "bottom": 1030,
+            "right": 697,
+            "reading_index": -1
+        },
+        {
+            "label": "heading",
+            "text": "يَصْلَاهَا إِلَّا الْأَشْقَى الَّذِي",
+            "x": 491,
+            "y": 626,
+            "width": 206,
+            "height": 43,
+            "bottom": 669,
+            "right": 697,
+            "reading_index": 3
+        },
+        {
+            "label": "figure",
+            "text": "",
+            "x": 615,
+            "y": 679,
+            "width": 82,
+            "height": 84,
+            "bottom": 763,
+            "right": 697,
+            "reading_index": -1
+        },
+        {
+            "label": "figure-image",
+            "text": "",
+            "x": 620,
+            "y": 684,
+            "width": 72,
+            "height": 48,
+            "bottom": 733,
+            "right": 692,
+            "reading_index": 4
+        },
+        {
+            "label": "figure-caption",
+            "text": "شكل: جاء) ) (١)",
+            "x": 620,
+            "y": 737,
+            "width": 72,
+            "height": 22,
+            "bottom": 758,
+            "right": 692,
+            "reading_index": 5
+        },
+        {
+            "label": "table",
+            "text": "",
+            "x": 266,
+            "y": 626,
+            "width": 206,
+            "height": 404,
+            "bottom": 1030,
+            "right": 471,
+            "reading_index": -1
+        },
+        {
+            "label": "table-cell",
+            "text": "أَبُو",
+            "x": 266,
+            "y": 626,
+            "width": 206,
+            "height": 55,
+            "bottom": 681,
+            "right": 471,
+            "reading_index": 6
+        },
+        {
+            "label": "table-cell",
+            "text": "عاقبهم الله",
+            "x": 266,
+            "y": 681,
+            "width": 206,
+            "height": 55,
+            "bottom": 736,
+            "right": 471,
+            "reading_index": 7
+        },
+        {
+            "label": "table-cell",
+            "text": "أَنْ يُلِمَّ بِهَا)",
+            "x": 266,
+            "y": 761,
+            "width": 206,
+            "height": 53,
+            "bottom": 814,
+            "right": 471,
+            "reading_index": 8
+        },
+        {
+            "label": "table-cell",
+            "text": "طَلَعَتْ مِنْ مَغْرِبِهَا آمَنَ النَّاسُ",
+            "x": 266,
+            "y": 814,
+            "width": 206,
+            "height": 53,
+            "bottom": 867,
+            "right": 471,
+            "reading_index": 9
+        },
+        {
+            "label": "table-cell",
+            "text": "فَلَا يَبِعْهُ حَتَّى يَسْتَوْفِيَهُ",
+            "x": 266,
+            "y": 890,
+            "width": 206,
+            "height": 53,
+            "bottom": 943,
+            "right": 471,
+            "reading_index": 10
+        },
+        {
+            "label": "table-cell",
+            "text": "فقال النبي صلى الله عليه وسلم:",
+            "x": 266,
+            "y": 943,
+            "width": 206,
+            "height": 53,
+            "bottom": 996,
+            "right": 471,
+            "reading_index": 11
+        },
+        {
+            "label": "chart",
+            "text": "شكل إحصائي: أَبِي صَالِحٍ",
+            "x": 40,
+            "y": 626,
+            "width": 206,
+            "height": 404,
+            "bottom": 1030,
+            "right": 246,
+            "reading_index": 12
+        }
+    ],
+    "canvas": {
+        "width": 737,
+        "height": 1030
+    },
+    "template": "a4_charts",
+    "hybrid": null
+}
