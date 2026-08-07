@@ -6,7 +6,6 @@ import base64
 import mimetypes
 from playwright.async_api import async_playwright
 from tqdm import tqdm
-from functools import cmp_to_key
 
 # ==========================================
 # 1. DATA, FONTS, COLORS & ASSETS
@@ -272,8 +271,25 @@ def generate_random_template():
 
 
 # ==========================================
-# 4. PYTHON-SIDE SPATIAL SORT & EXTRACTION
+# 4. EXTRACTION ENGINE (DOM BLOCK PRESERVING)
 # ==========================================
+
+def assign_block_preserving_index(boxes):
+    """
+    Respects native DOM block order.
+    Parents get -1. Children get sequential 1, 2, 3...
+    """
+    counter = 1
+    for box in boxes:
+        if box.get('is_parent'):
+            box['reading_index'] = -1
+        else:
+            box['reading_index'] = counter
+            counter += 1
+        # Clean up temporary flag
+        box.pop('is_parent', None)
+    return boxes
+
 
 async def render_and_extract(html_content, output_image_path, output_json_path):
     async with async_playwright() as p:
@@ -320,16 +336,25 @@ async def render_and_extract(html_content, output_image_path, output_json_path):
             // STEP 4: EXTRACT EXACT BOUNDING BOXES AND TEXT
             const elements = document.querySelectorAll('.layout-node');
             const data = [];
+
             elements.forEach(el => {
                 const rect = el.getBoundingClientRect();
                 if (rect.width === 0 || rect.height === 0) return;
 
-                let extractedText = el.innerText ? el.innerText.trim().replace(/\\s+/g, ' ') : "";
-                if (el.getAttribute('data-label') === 'figure') extractedText = "";
+                // Intelligently identify parents: if it contains inner layout-nodes, it's a wrapper.
+                const children = el.querySelectorAll('.layout-node');
+                const isParent = children.length > 0;
+
+                // Extract text only if it's a leaf node.
+                let extractedText = "";
+                if (!isParent && el.getAttribute('data-label') !== 'figure') {
+                    extractedText = el.innerText ? el.innerText.trim().replace(/\\s+/g, ' ') : "";
+                }
 
                 data.push({
                     label: el.getAttribute('data-label'),
                     text: extractedText,
+                    is_parent: isParent, // Consumed by Python
                     x: rect.x,
                     y: rect.y,
                     width: rect.width,
@@ -342,50 +367,20 @@ async def render_and_extract(html_content, output_image_path, output_json_path):
         }
         """
         bounding_boxes = await page.evaluate(script)
+
+        # Apply block-preserving indexing (-1 for parents, 1..N for children)
+        bounding_boxes = assign_block_preserving_index(bounding_boxes)
+
         await page.screenshot(path=output_image_path)
 
-        # -------------------------------------------------------------
-        # STEP 5: FLAT ARABIC RTL READING INDEX (Python-Side Spatial Sort)
-        # -------------------------------------------------------------
-        def cmp_boxes(a, b):
-            # Evaluate horizontal overlap to determine if boxes are in the same visual column
-            overlap_x = max(0, min(a['right'], b['right']) - max(a['x'], b['x']))
-            min_w = min(a['width'], b['width'])
-
-            # Rule 1: If they heavily overlap horizontally (Same Column block)
-            if min_w > 0 and overlap_x > 0.1 * min_w:
-                # Top to Bottom Sort
-                if abs(a['y'] - b['y']) > 5:
-                    return -1 if a['y'] < b['y'] else 1
-
-                # Tie-breaker 1: Largest Area first (Ensures Parent wrappers come before their children)
-                area_a = a['width'] * a['height']
-                area_b = b['width'] * b['height']
-                if area_a != area_b:
-                    return -1 if area_a > area_b else 1
-
-                # Tie-breaker 2: Right-to-Left fallback
-                return -1 if a['right'] > b['right'] else 1
-
-            # Rule 2: If they are distinct columns, strictly sort Right-to-Left
-            else:
-                return -1 if a['right'] > b['right'] else 1
-
-        # Apply spatial sort based on our rules
-        sorted_boxes = sorted(bounding_boxes, key=cmp_to_key(cmp_boxes))
-
-        # Sequentially map the sorted array to create the flat reading index format
-        for i, box in enumerate(sorted_boxes):
-            box['reading_index'] = i + 1
-
         with open(output_json_path, 'w', encoding='utf-8') as f:
-            json.dump({"boxes": sorted_boxes}, f, ensure_ascii=False, indent=4)
+            json.dump({"boxes": bounding_boxes}, f, ensure_ascii=False, indent=4)
 
         await browser.close()
 
 
 # ==========================================
-# 6. EXECUTION PIPELINE
+# 5. EXECUTION PIPELINE
 # ==========================================
 
 async def main():
@@ -396,7 +391,7 @@ async def main():
 
     NUM_SAMPLES = 20
 
-    print(f"Generating {NUM_SAMPLES} Advanced A4 templates (Flat Python-Side Spatial Extraction)...")
+    print(f"Generating {NUM_SAMPLES} Advanced A4 templates (DOM Block-Preserving Extraction)...")
     for i in tqdm(range(NUM_SAMPLES)):
         html_string = generate_random_template()
         img_path = os.path.join(DATASET_IMAGES_PATH, f"sample_{i:07d}.png")

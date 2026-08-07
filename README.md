@@ -1,30 +1,40 @@
-# Open Arabic Document-Layout Datasets & Randomized-Layout Data Generation
+# Open Arabic Document-Layout Datasets & Unified Randomized-Layout Generation
 
-This repository brings together the Arabic document-layout resources used to train and evaluate our OCR / document-understanding models. It combines three established, third-party benchmarks with a home-grown synthetic generation pipeline (`make_data/`) that produces fully-Arabic, randomly-laid-out page images with pixel-accurate bounding-box ground truth — heading, paragraph, table, and figure blocks, in dozens of fonts and colors.
+This repository brings together the Arabic document-layout resources we have assembled to train and evaluate our OCR and document-understanding models . We have combined established, third-party benchmarks with our home-grown synthetic generation pipelines—including our newly integrated unified template generator—that produce fully-Arabic, randomly-laid-out page images with pixel-accurate bounding-box ground truth .
 
-## 📁 Repository structure
+## 📁 Repository Structure
 
-```
+```text
 .
 ├── BCE-Arabic-v1/                  # Public DLA benchmark (scanned book pages)
 ├── SDADDS-Guelma_Handwritten/      # Synthetic degraded handwritten Arabic pages
 ├── SDADDS-Guelma_Printed/          # Synthetic degraded printed Arabic pages
 ├── ahmedheakl.ipynb                # Loads the BCE-layout split from Hugging Face
-└── make_data/                      # Our own synthetic layout generator
-    ├── scrape_arabic.py
-    ├── scrape_images.py
-    ├── script.py
-    ├── visual.ipynb
-    └── dataset/
-        ├── images/
-        └── annotations/
+├── make_data/                      # Legacy synthetic layout generator
+│   ├── dataset/                    
+│   ├── nature_images/
+│   ├── readme_image_ref/
+│   ├── scrape_arabic.py
+│   ├── scrape_images.py
+│   ├── script.py                   # Original A4 grid generator
+│   ├── script_charts_focus.py      # A4 charts layout
+│   ├── script_equation_focus.py    # A4 equations layout
+│   ├── script_image_focus.py       # A4 image gallery layout
+│   ├── script_text_focus.py        # A4 dense text layout
+│   ├── shamela_1M_words.txt
+│   ├── visual.ipynb
+│   └── template_based_ocr_dataset_gen/ # NEW: Unified Template-Based Generator
+│       ├── core/                       # Shared rendering engine
+│       ├── templates/                  # 13 diverse document genre definitions
+│       ├── generate.py                 # Single unified launcher
+│       └── README.md
 ```
 
 ---
 
 ## 1. `BCE-Arabic-v1/`
 
-A published Arabic Document Layout Analysis (DLA) benchmark, originally introduced by Saad et al. (2016), built from 1,833 scanned pages drawn from 180 books to cover a wide range of real Arabic page layouts — multi-column text, tables, embedded photos, and mixed typefaces. This folder holds a working subset of roughly 1,200 sample page images used here for layout-detection experiments. It also ships a small notebook that lets you pick a target block type (heading / paragraph / table / figure) and a sample image, then renders that sample's ground-truth bounding boxes on top for a quick visual check.
+A published Arabic Document Layout Analysis (DLA) benchmark, originally introduced by Saad et al. (2016), built from 1,833 scanned pages drawn from 180 books to cover a wide range of real Arabic page layouts — multi-column text, tables, embedded photos, and mixed typefaces . This folder holds a working subset of roughly 1,200 sample page images used here for layout-detection experiments . It also ships a small notebook that lets you pick a target block type (heading / paragraph / table / figure) and a sample image, then renders that sample's ground-truth bounding boxes on top for a quick visual check .
 
 <p align="center">
   <img src="BCE-Arabic v1\multi-columns\d-0.jpg" alt="BCE-Arabic-v1 sample page" width="420"><br>
@@ -32,87 +42,103 @@ A published Arabic Document Layout Analysis (DLA) benchmark, originally introduc
 
 ## 2. `SDADDS-Guelma_Handwritten/`
 
-The handwritten half of **SDADDS-Guelma** (Synthetic Degraded Arabic Document Data Set), created by Dr. Abderrahmane Kefali's team at the University of Guelma. Real handwritten Arabic page images are synthetically degraded and composited over a variety of paper textures and historical backgrounds (stains, folds, faded ink, uneven lighting) to mimic real archival wear. Each generated image ships with ground truth at the text-line, word, and connected-component level. The handwritten and printed halves together scale into the millions of synthetic samples in the dataset's full release.
+The handwritten half of **SDADDS-Guelma** (Synthetic Degraded Arabic Document Data Set), created by Dr. Abderrahmane Kefali's team at the University of Guelma . Real handwritten Arabic page images are synthetically degraded and composited over a variety of paper textures and historical backgrounds (stains, folds, faded ink, uneven lighting) to mimic real archival wear . Each generated image ships with ground truth at the text-line, word, and connected-component level . 
 
-🔗 **[Download SDADDS-Guelma](https://zenodo.org/records/10896124)** — official dataset page (Zenodo).
+🔗 **[Download SDADDS-Guelma](https://zenodo.org/records/10896124)** — official dataset page (Zenodo) .
 
 <p align="center">
-  <img src="SDADDS-Guelma_Handwritten\Degraded_IMG\Comb+Curvature\HW1Uni_BG1-CU.jpg" alt="SDADDS-Guelma handwritten sample" width="420"><br>
+  <img src="SDADDS-Guelma_Handwritten\HW1Fix_BG15-CU.jpg" alt="SDADDS-Guelma handwritten sample" width="420"><br>
 </p>
 
 ## 3. `SDADDS-Guelma_Printed/`
 
-The printed-text counterpart of the same SDADDS-Guelma pipeline: clean, machine-set Arabic pages in different fonts and layouts, run through the same degradation and background-compositing process as the handwritten set. The result is large volumes of paired (degraded image → ground truth) samples, useful for training denoising, binarization, and recognition models that need to be robust to real scan artifacts. Ground truth is again provided at multiple granularities, matching the handwritten subset's format so both can be trained on side by side.
+The printed-text counterpart of the same SDADDS-Guelma pipeline: clean, machine-set Arabic pages in different fonts and layouts, run through the same degradation and background-compositing process as the handwritten set . The result is large volumes of paired (degraded image → ground truth) samples, useful for training denoising, binarization, and recognition models that need to be robust to real scan artifacts . 
 
-🔗 **[Download SDADDS-Guelma](https://zenodo.org/records/10896124)** — official dataset page (Zenodo).
+🔗 **[Download SDADDS-Guelma](https://zenodo.org/records/10896124)** — official dataset page (Zenodo) .
 
 <p align="center">
-  <img src="SDADDS-Guelma_Printed\Degraded_IMG\Comb+Show_through\PR1Kufi_BG24-ST.jpg" alt="SDADDS-Guelma printed sample" width="420"><br>
+  <img src="SDADDS-Guelma_Printed\PR1Kufi_BG14-ST.jpg" alt="SDADDS-Guelma printed sample" width="420"><br>
 </p>
 
 ## 4. `ahmedheakl.ipynb`
 
-Pulls the BCE-layout split of `ahmedheakl`'s **KITAB-Bench** project straight from the Hugging Face Hub with `load_dataset("ahmedheakl/arocrbench_bcelayout")`. KITAB-Bench (ACL 2025) is a multi-domain Arabic OCR / document-understanding benchmark that repackages BCE-Arabic-v1 (alongside DocLayNet) specifically for layout-detection evaluation. The notebook loads a handful of samples and draws their ground-truth boxes over the page images — the same visual sanity-check approach used by `make_data/visual.ipynb` below, just against an external, already-published benchmark instead of our own generated data.
+Pulls the BCE-layout split of `ahmedheakl`'s **KITAB-Bench** project straight from the Hugging Face Hub with `load_dataset("ahmedheakl/arocrbench_bcelayout")` . KITAB-Bench (ACL 2025) is a multi-domain Arabic OCR / document-understanding benchmark that repackages BCE-Arabic-v1 (alongside DocLayNet) specifically for layout-detection evaluation . The notebook loads a handful of samples and draws their ground-truth boxes over the page images .
 
 ---
 
-## 5. `make_data/` — our synthetic layout generator
+## 5. `make_data/` — Legacy Layout Generator
 
-The goal of this folder is to generate large numbers of `(image, layout-annotation)` pairs for OCR training — content that is entirely in Arabic, spread across dozens of fonts and colors and at least twenty distinct page structures (multi-column tables, merged cells, charts, mixed headings, etc.), so downstream models see genuine layout diversity rather than a handful of repeated templates.
+*(Note: The older scripts listed below remain fully functional for generating specific,  A4 layouts  .)*
+
+The goal of this folder is to generate large numbers of `(image, layout-annotation)` pairs for OCR training — content that is entirely in Arabic, spread across dozens of fonts and colors . We initially split this across five targeted scripts before moving to the new unified pipeline  .
 
 | File | What it does |
 |---|---|
-| **`scrape_arabic.py`** | Crawls page by page through books on `shamela.ws`, pulling the raw Arabic text out of each page (falling back to `<p>` tags if the main content block isn't found) and appending it to one flat corpus file, `shamela_1M_words.txt`, until roughly a million words have been collected. On a failed page or empty result it just moves to the next book. This is a one-off step, re-run only to refresh or grow the corpus. |
-| **`scrape_images.py`** | Downloads a thousand placeholder photographs from the Picsum random-image API into `nature_images/`, one file per index. These stand in for the photos that get dropped into any "figure" blocks the generator produces, and the folder can be swapped for any other image collection as long as the formats are Pillow-readable (png/jpg/jpeg/webp/gif). |
-| **`script.py`** | The core generator. For every sample it randomly composes an A4-page grid (2–4 rows, 1–3 columns per row) and fills each cell with a heading, a justified paragraph (optionally in 2–3 newspaper-style columns), a table, or a figure, each drawn from a pool of 26 Arabic web fonts and ~28 colors. Playwright renders the resulting HTML/CSS and screenshots it, an in-browser pass auto-shrinks any text or table that overflows its cell, and finally every layout element's exact bounding box and recognized text is written out to a matching JSON file next to the PNG. |
-| **`visual.ipynb`** | A quick QA notebook: given a sample name, it loads the matching PNG/JSON pair and draws every element's bounding box on top of the page in a distinct color (heading = red, paragraph = blue, figure = green, caption = amber, table = purple, table-cell = pink) with matplotlib — the fastest way to confirm the generator's boxes actually line up with the visible content before trusting a full batch. |
+| **`scrape_arabic.py`** | Crawls page by page through books on `shamela.ws`, pulling raw Arabic text into `shamela_1M_words.txt` . |
+| **`scrape_images.py`** | Downloads a thousand placeholder photographs from the Picsum random-image API into `nature_images/` . |
+| **`script.py`** | The core legacy generator. It randomly composes an A4-page grid (2–4 rows, 1–3 columns per row) and fills each cell with headings, paragraphs, tables, or figures . |
+| **`script_charts_focus.py`** | A specialized script  to produce A4 layouts heavily focused on statistical charts  . |
+| **`script_equation_focus.py`** | A specialized script  to produce A4 layouts heavily focused on mathematical equations  . |
+| **`script_image_focus.py`** | A specialized script  to produce A4 layouts heavily focused on image galleries and figures  . |
+| **`script_text_focus.py`** | A specialized script  to produce A4 layouts focusing on dense, multi-column Arabic text blocks  . |
+| **`visual.ipynb`** | A quick QA notebook that draws every element's bounding box on top of the page in a distinct color to visually confirm alignment . |
 
-### Sample output
+### Sample output (Legacy Pipeline)
 
-Five pages generated end-to-end by `script.py`, showing the range of headings, multi-column paragraphs, tables, and figure blocks the pipeline produces:
+Five pages generated end-to-end by `script.py`:
 
 <table>
 <tr>
-<td><img src="make_data\dataset\images\sample_0000018.png" width="180"></td>
-<td><img src="make_data\dataset\images\sample_0000019.png" width="180"></td>
-<td><img src="make_data\dataset\images\sample_0000077.png" width="180"></td>
-<td><img src="make_data\dataset\images\sample_0000023.png" width="180"></td>
-<td><img src="make_data\dataset\images\sample_0000011.png" width="180"></td>
+<td><img src="make_data\readme_image_ref\1.png" width="180"></td>
+<td><img src="make_data\readme_image_ref\2.png" width="180"></td>
+<td><img src="make_data\readme_image_ref\3.png" width="180"></td>
+<td><img src="make_data\readme_image_ref\4.png" width="180"></td>
+<td><img src="make_data\readme_image_ref\5.png" width="180"></td>
 </tr>
 </table>
 
-And the same idea `visual.ipynb` is built for — one of the samples above with its ground-truth boxes drawn on top:
+And the matching `visual.ipynb` ground-truth output:
 
 <p align="center">
-  <img src="make_data\dataset\images\output.png" width="360">
+  <img src="make_data\readme_image_ref\visual_ref.png" width="360">
 </p>
 
-Each generated sample is a pair of files:
+---
 
-```
-dataset/images/sample_0000004.png        # the rendered A4 page
-dataset/annotations/sample_0000004.json  # every layout-node's label, text, and bbox
-```
+## 6. `template_based_ocr_dataset_gen/` — New Unified Generator
 
-```json
-{
-  "boxes": [
-    {
-      "label": "heading",
-      "text": "تلعب التكنولوجيا الحديثة دورا ...",
-      "x": 40, "y": 40, "width": 714, "height": 104.3,
-      "bottom": 144.3, "right": 754
-    },
-    { "label": "paragraph", "text": "...", "x": 529.3, "y": 164.3, "width": 224.7, "height": 312.9 }
-  ]
-}
-```
+To dramatically scale our capabilities, we have introduced a new, unified rendering engine  . The previous setup required maintaining the 5 separate scripts described above, each  to one specific A4 style  . We have entirely replaced this approach with a single shared rendering engine (`core/`) and a unified launcher  .
 
-## Requirements
+This new methodology leverages `generate.py` to produce the exact same PNG and JSON annotation formats our downstream OCR pipeline already expects, but with vastly improved data diversity and architectural stability  .
 
-The `make_data/` scripts and notebook need the following installed via pip: `playwright`, `tqdm`, `requests`, `beautifulsoup4`, `matplotlib`, `pillow`, and `nest_asyncio`. After installing, run `playwright install chromium` once to download the actual browser binary that `script.py` uses to render and screenshot each page — pip alone doesn't include it, so generation will fail until this step is done.
+### 🌟 Unmatched Document Diversity
+*   **13 Distinct Document Genres:** We now generate far more than just A4 grids  . The templates support A4 reports, business cards, book covers, receipts, letters, minimalist posters, invoices, ID cards, and dense math-proof pages  .
+*   **Dynamic, Real-World Sizing:** Each template declares its own real-world canvas size  . We apply an independent +/- 12% jitter to the width and height of every single generated canvas, ensuring authentic size variety even within the same genre  .
+*   **Hybrid Snippet Injection:** Approximately 28% of all samples receive a random "foreign" snippet (such as a chart, an equation, a quote, or a theorem box) dropped directly into the selected template—for example, a chart inside a receipt or an equation on a book cover  .
+*   **Uniform Randomization:** The launcher picks a template uniformly at random for every sample to ensure the final dataset mix feels highly organic rather than synthetically bucketed  .
 
+### ⚙️ Setup & Team Execution Flow
+Because our pipeline is collaborative and will be utilized by multiple team members, please follow this flow to ensure it runs properly on your local environment.
+
+**Step 1: Install Dependencies**
+We use Playwright to handle the complex headless HTML/CSS rendering  .
 ```bash
-pip install playwright tqdm requests beautifulsoup4 matplotlib pillow nest_asyncio
-playwright install chromium
+pip install playwright tqdm nest_asyncio
+playwright install chromium --with-deps
 ```
+
+**Step 2: Asset Prerequisites**
+Ensure you have our shared assets in place at the root level before running:
+*   `../shamela_1M_words.txt`: Our scraped Arabic text corpus  .
+*   `../nature_images/`: Our downloaded photos for book covers and figures  .
+
+**Step 3: Run the Generator**
+Simply execute the unified launcher. The system will automatically handle the asynchronous generation, uniform template selection, and JSON annotation extraction  .
+```bash
+cd template_based_ocr_dataset_gen
+python generate.py
+```
+
+Output files will automatically route to `../dataset/images/sample_XXXXXXX.png` and `../dataset/annotations/sample_XXXXXXX.json` (maintaining the identical convention as our earlier scripts so all downstream code remains fully compatible)  .
+
+*(Note: Ensure you have an active internet connection during execution. The rendering engine fetches Google Fonts, KaTeX, and Chart.js from their public CDNs  . If you are in a locked-down sandbox or CI environment, math and charts will gracefully render empty rather than crashing the generation run, and everything else will render correctly  .)*
