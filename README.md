@@ -139,6 +139,11 @@ cd template_based_ocr_dataset_gen
 python generate.py
 ```
 
+
+>> **IMPORTANT FOR ALL TEAM MEMBERS:**
+> Before running the generation scripts or adding new document genres, you **must read** the dedicated README file located inside the template directory:
+> 📄 **[`template_based_ocr_dataset_gen/README.md`](make_data\template_based_ocr_dataset_gen\README.md)**
+
 Output files will automatically route to `../dataset/images/sample_XXXXXXX.png` and `../dataset/annotations/sample_XXXXXXX.json` (maintaining the identical convention as our earlier scripts so all downstream code remains fully compatible)  .
 
 *(Note: Ensure you have an active internet connection during execution. The rendering engine fetches Google Fonts, KaTeX, and Chart.js from their public CDNs  . If you are in a locked-down sandbox or CI environment, math and charts will gracefully render empty rather than crashing the generation run, and everything else will render correctly  .)*
