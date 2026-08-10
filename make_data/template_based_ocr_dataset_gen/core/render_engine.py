@@ -221,7 +221,17 @@ EXTRACTION_SCRIPT = r"""
 
         let extractedText = "";
         if (!isParent && el.getAttribute('data-no-text') !== 'true') {
-            extractedText = el.innerText ? el.innerText.trim().replace(/\s+/g, ' ') : "";
+            // For equation nodes, decode the original LaTeX from data-math
+            const mathB64 = el.getAttribute('data-math');
+            if (mathB64) {
+                try {
+                    extractedText = decodeURIComponent(escape(atob(mathB64)));
+                } catch (e) {
+                    extractedText = el.innerText ? el.innerText.trim().replace(/\s+/g, ' ') : "";
+                }
+            } else {
+                extractedText = el.innerText ? el.innerText.trim().replace(/\s+/g, ' ') : "";
+            }
         }
 
         data.push({
