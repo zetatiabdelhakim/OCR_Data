@@ -1,0 +1,89 @@
+{
+    "markdown": "\n![image](img-0)\n\nعليه\nالله عليه وسلم:",
+    "images": [
+        {
+            "id": "img-0",
+            "top_left_x": 359,
+            "top_left_y": 261,
+            "bottom_right_x": 423,
+            "bottom_right_y": 325,
+            "reading_index": 1
+        }
+    ],
+    "tables": [],
+    "hyperlinks": [],
+    "header": null,
+    "footer": null,
+    "dimensions": {
+        "dpi": 96,
+        "height": 652,
+        "width": 781
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "![image](img-0)",
+                "confidence": 1.0,
+                "start_index": 1
+            },
+            {
+                "text": "عليه",
+                "confidence": 1.0,
+                "start_index": 18
+            },
+            {
+                "text": "الله",
+                "confidence": 1.0,
+                "start_index": 23
+            },
+            {
+                "text": "عليه",
+                "confidence": 1.0,
+                "start_index": 28
+            },
+            {
+                "text": "وسلم:",
+                "confidence": 1.0,
+                "start_index": 33
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 359,
+            "top_left_y": 261,
+            "bottom_right_x": 423,
+            "bottom_right_y": 325,
+            "content": "![image](img-0)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 1
+        },
+        {
+            "top_left_x": 359,
+            "top_left_y": 261,
+            "bottom_right_x": 423,
+            "bottom_right_y": 312,
+            "content": "عليه",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 2
+        },
+        {
+            "top_left_x": 324,
+            "top_left_y": 347,
+            "bottom_right_x": 457,
+            "bottom_right_y": 391,
+            "content": "الله عليه وسلم:",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 3
+        }
+    ],
+    "meta": {
+        "template": "minimalist",
+        "hybrid": null
+    }
+}

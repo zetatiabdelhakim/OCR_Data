@@ -1,0 +1,185 @@
+{
+    "markdown": "جَمِيعًا عَنِ ابْنِ عُيَيْنَةَ، قَالَ\nوَأَخْبَرَنَا سُلَيْمَانُ التَّيْمِيُّ، حَدَّثَنَا\n\\nabla_{t} J(t) = \\frac{1}{m} X^T ( \\sigma(X t) - Y ) + \\frac{j}{\\sigma^2}\nفَقَالَ: لَيْسَ",
+    "images": [],
+    "tables": [],
+    "hyperlinks": [],
+    "header": null,
+    "footer": null,
+    "dimensions": {
+        "dpi": 96,
+        "height": 689,
+        "width": 369
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "جَمِيعًا",
+                "confidence": 1.0,
+                "start_index": 0
+            },
+            {
+                "text": "عَنِ",
+                "confidence": 1.0,
+                "start_index": 9
+            },
+            {
+                "text": "ابْنِ",
+                "confidence": 1.0,
+                "start_index": 14
+            },
+            {
+                "text": "عُيَيْنَةَ،",
+                "confidence": 1.0,
+                "start_index": 20
+            },
+            {
+                "text": "قَالَ",
+                "confidence": 1.0,
+                "start_index": 32
+            },
+            {
+                "text": "وَأَخْبَرَنَا",
+                "confidence": 1.0,
+                "start_index": 38
+            },
+            {
+                "text": "سُلَيْمَانُ",
+                "confidence": 1.0,
+                "start_index": 52
+            },
+            {
+                "text": "التَّيْمِيُّ،",
+                "confidence": 1.0,
+                "start_index": 64
+            },
+            {
+                "text": "حَدَّثَنَا",
+                "confidence": 1.0,
+                "start_index": 78
+            },
+            {
+                "text": "\\nabla_{t}",
+                "confidence": 1.0,
+                "start_index": 89
+            },
+            {
+                "text": "J(t)",
+                "confidence": 1.0,
+                "start_index": 100
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 105
+            },
+            {
+                "text": "\\frac{1}{m}",
+                "confidence": 1.0,
+                "start_index": 107
+            },
+            {
+                "text": "X^T",
+                "confidence": 1.0,
+                "start_index": 119
+            },
+            {
+                "text": "(",
+                "confidence": 1.0,
+                "start_index": 123
+            },
+            {
+                "text": "\\sigma(X",
+                "confidence": 1.0,
+                "start_index": 125
+            },
+            {
+                "text": "t)",
+                "confidence": 1.0,
+                "start_index": 134
+            },
+            {
+                "text": "-",
+                "confidence": 1.0,
+                "start_index": 137
+            },
+            {
+                "text": "Y",
+                "confidence": 1.0,
+                "start_index": 139
+            },
+            {
+                "text": ")",
+                "confidence": 1.0,
+                "start_index": 141
+            },
+            {
+                "text": "+",
+                "confidence": 1.0,
+                "start_index": 143
+            },
+            {
+                "text": "\\frac{j}{\\sigma^2}",
+                "confidence": 1.0,
+                "start_index": 145
+            },
+            {
+                "text": "فَقَالَ:",
+                "confidence": 1.0,
+                "start_index": 164
+            },
+            {
+                "text": "لَيْسَ",
+                "confidence": 1.0,
+                "start_index": 173
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 63,
+            "top_left_y": 270,
+            "bottom_right_x": 306,
+            "bottom_right_y": 314,
+            "content": "جَمِيعًا عَنِ ابْنِ عُيَيْنَةَ، قَالَ",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 1
+        },
+        {
+            "top_left_x": 112,
+            "top_left_y": 322,
+            "bottom_right_x": 258,
+            "bottom_right_y": 340,
+            "content": "وَأَخْبَرَنَا سُلَيْمَانُ التَّيْمِيُّ، حَدَّثَنَا",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 2
+        },
+        {
+            "top_left_x": 56,
+            "top_left_y": 362,
+            "bottom_right_x": 313,
+            "bottom_right_y": 407,
+            "content": "\\nabla_{t} J(t) = \\frac{1}{m} X^T ( \\sigma(X t) - Y ) + \\frac{j}{\\sigma^2}",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 3
+        },
+        {
+            "top_left_x": 145,
+            "top_left_y": 647,
+            "bottom_right_x": 224,
+            "bottom_right_y": 671,
+            "content": "فَقَالَ: لَيْسَ",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 4
+        }
+    ],
+    "meta": {
+        "template": "book_cover",
+        "hybrid": "equation"
+    }
+}

@@ -1,0 +1,169 @@
+{
+    "markdown": "\n![image](img-0)\n\nعمر\nوقوله: ((فَقُلْتُ لَهُ: مَا\nالله عنه، والحسن البصري رحمه\n0676640430\nالسَّائِبَ ابْنَ يَزِيدَ",
+    "images": [
+        {
+            "id": "img-0",
+            "top_left_x": 14,
+            "top_left_y": 14,
+            "bottom_right_x": 60,
+            "bottom_right_y": 60,
+            "reading_index": 1
+        }
+    ],
+    "tables": [],
+    "hyperlinks": [],
+    "header": null,
+    "footer": null,
+    "dimensions": {
+        "dpi": 96,
+        "height": 224,
+        "width": 347
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "![image](img-0)",
+                "confidence": 1.0,
+                "start_index": 1
+            },
+            {
+                "text": "عمر",
+                "confidence": 1.0,
+                "start_index": 18
+            },
+            {
+                "text": "وقوله:",
+                "confidence": 1.0,
+                "start_index": 22
+            },
+            {
+                "text": "((فَقُلْتُ",
+                "confidence": 1.0,
+                "start_index": 29
+            },
+            {
+                "text": "لَهُ:",
+                "confidence": 1.0,
+                "start_index": 40
+            },
+            {
+                "text": "مَا",
+                "confidence": 1.0,
+                "start_index": 46
+            },
+            {
+                "text": "الله",
+                "confidence": 1.0,
+                "start_index": 50
+            },
+            {
+                "text": "عنه،",
+                "confidence": 1.0,
+                "start_index": 55
+            },
+            {
+                "text": "والحسن",
+                "confidence": 1.0,
+                "start_index": 60
+            },
+            {
+                "text": "البصري",
+                "confidence": 1.0,
+                "start_index": 67
+            },
+            {
+                "text": "رحمه",
+                "confidence": 1.0,
+                "start_index": 74
+            },
+            {
+                "text": "0676640430",
+                "confidence": 1.0,
+                "start_index": 79
+            },
+            {
+                "text": "السَّائِبَ",
+                "confidence": 1.0,
+                "start_index": 90
+            },
+            {
+                "text": "ابْنَ",
+                "confidence": 1.0,
+                "start_index": 101
+            },
+            {
+                "text": "يَزِيدَ",
+                "confidence": 1.0,
+                "start_index": 107
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 14,
+            "top_left_y": 14,
+            "bottom_right_x": 60,
+            "bottom_right_y": 60,
+            "content": "![image](img-0)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 1
+        },
+        {
+            "top_left_x": 14,
+            "top_left_y": 14,
+            "bottom_right_x": 60,
+            "bottom_right_y": 51,
+            "content": "عمر",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 2
+        },
+        {
+            "top_left_x": 14,
+            "top_left_y": 146,
+            "bottom_right_x": 333,
+            "bottom_right_y": 165,
+            "content": "وقوله: ((فَقُلْتُ لَهُ: مَا",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 3
+        },
+        {
+            "top_left_x": 14,
+            "top_left_y": 167,
+            "bottom_right_x": 333,
+            "bottom_right_y": 180,
+            "content": "الله عنه، والحسن البصري رحمه",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 4
+        },
+        {
+            "top_left_x": 14,
+            "top_left_y": 186,
+            "bottom_right_x": 333,
+            "bottom_right_y": 198,
+            "content": "0676640430",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 5
+        },
+        {
+            "top_left_x": 14,
+            "top_left_y": 198,
+            "bottom_right_x": 333,
+            "bottom_right_y": 210,
+            "content": "السَّائِبَ ابْنَ يَزِيدَ",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 6
+        }
+    ],
+    "meta": {
+        "template": "business_card",
+        "hybrid": null
+    }
+}

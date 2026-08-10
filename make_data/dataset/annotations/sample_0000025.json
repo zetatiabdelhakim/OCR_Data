@@ -1,0 +1,100 @@
+{
+    "markdown": "## الله: ((قوله صلى\n\\sigma_{n+1} = \\sigma_n - \\alpha \\nabla f(\\sigma_n)",
+    "images": [],
+    "tables": [],
+    "hyperlinks": [],
+    "header": null,
+    "footer": null,
+    "dimensions": {
+        "dpi": 96,
+        "height": 1068,
+        "width": 766
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "##",
+                "confidence": 1.0,
+                "start_index": 0
+            },
+            {
+                "text": "الله:",
+                "confidence": 1.0,
+                "start_index": 3
+            },
+            {
+                "text": "((قوله",
+                "confidence": 1.0,
+                "start_index": 9
+            },
+            {
+                "text": "صلى",
+                "confidence": 1.0,
+                "start_index": 16
+            },
+            {
+                "text": "\\sigma_{n+1}",
+                "confidence": 1.0,
+                "start_index": 20
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 33
+            },
+            {
+                "text": "\\sigma_n",
+                "confidence": 1.0,
+                "start_index": 35
+            },
+            {
+                "text": "-",
+                "confidence": 1.0,
+                "start_index": 44
+            },
+            {
+                "text": "\\alpha",
+                "confidence": 1.0,
+                "start_index": 46
+            },
+            {
+                "text": "\\nabla",
+                "confidence": 1.0,
+                "start_index": 53
+            },
+            {
+                "text": "f(\\sigma_n)",
+                "confidence": 1.0,
+                "start_index": 60
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 40,
+            "top_left_y": 40,
+            "bottom_right_x": 726,
+            "bottom_right_y": 188,
+            "content": "الله: ((قوله صلى",
+            "type": "title",
+            "confidence_scores": null,
+            "reading_index": 1
+        },
+        {
+            "top_left_x": 40,
+            "top_left_y": 226,
+            "bottom_right_x": 726,
+            "bottom_right_y": 263,
+            "content": "\\sigma_{n+1} = \\sigma_n - \\alpha \\nabla f(\\sigma_n)",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 2
+        }
+    ],
+    "meta": {
+        "template": "a4_literary",
+        "hybrid": "equation"
+    }
+}

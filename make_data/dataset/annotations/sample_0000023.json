@@ -1,0 +1,144 @@
+{
+    "markdown": "\n![image](img-0)\n\nالْفَاجِرِ.\nكتاب التوحيد، لمحمد بن عبد\nوَكَذَلِكَ الرُّسُلُ تُبْتَلَى، ثُمَّ تَكُونُ لَهُمُ الْعَاقِبَةُ،",
+    "images": [
+        {
+            "id": "img-0",
+            "top_left_x": 280,
+            "top_left_y": 349,
+            "bottom_right_x": 344,
+            "bottom_right_y": 413,
+            "reading_index": 1
+        }
+    ],
+    "tables": [],
+    "hyperlinks": [],
+    "header": null,
+    "footer": null,
+    "dimensions": {
+        "dpi": 96,
+        "height": 856,
+        "width": 623
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "![image](img-0)",
+                "confidence": 1.0,
+                "start_index": 1
+            },
+            {
+                "text": "الْفَاجِرِ.",
+                "confidence": 1.0,
+                "start_index": 18
+            },
+            {
+                "text": "كتاب",
+                "confidence": 1.0,
+                "start_index": 30
+            },
+            {
+                "text": "التوحيد،",
+                "confidence": 1.0,
+                "start_index": 35
+            },
+            {
+                "text": "لمحمد",
+                "confidence": 1.0,
+                "start_index": 44
+            },
+            {
+                "text": "بن",
+                "confidence": 1.0,
+                "start_index": 50
+            },
+            {
+                "text": "عبد",
+                "confidence": 1.0,
+                "start_index": 53
+            },
+            {
+                "text": "وَكَذَلِكَ",
+                "confidence": 1.0,
+                "start_index": 57
+            },
+            {
+                "text": "الرُّسُلُ",
+                "confidence": 1.0,
+                "start_index": 68
+            },
+            {
+                "text": "تُبْتَلَى،",
+                "confidence": 1.0,
+                "start_index": 78
+            },
+            {
+                "text": "ثُمَّ",
+                "confidence": 1.0,
+                "start_index": 89
+            },
+            {
+                "text": "تَكُونُ",
+                "confidence": 1.0,
+                "start_index": 95
+            },
+            {
+                "text": "لَهُمُ",
+                "confidence": 1.0,
+                "start_index": 103
+            },
+            {
+                "text": "الْعَاقِبَةُ،",
+                "confidence": 1.0,
+                "start_index": 110
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 280,
+            "top_left_y": 349,
+            "bottom_right_x": 344,
+            "bottom_right_y": 413,
+            "content": "![image](img-0)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 1
+        },
+        {
+            "top_left_x": 280,
+            "top_left_y": 349,
+            "bottom_right_x": 344,
+            "bottom_right_y": 393,
+            "content": "الْفَاجِرِ.",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 2
+        },
+        {
+            "top_left_x": 187,
+            "top_left_y": 435,
+            "bottom_right_x": 436,
+            "bottom_right_y": 479,
+            "content": "كتاب التوحيد، لمحمد بن عبد",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 3
+        },
+        {
+            "top_left_x": 201,
+            "top_left_y": 489,
+            "bottom_right_x": 422,
+            "bottom_right_y": 508,
+            "content": "وَكَذَلِكَ الرُّسُلُ تُبْتَلَى، ثُمَّ تَكُونُ لَهُمُ الْعَاقِبَةُ،",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 4
+        }
+    ],
+    "meta": {
+        "template": "minimalist",
+        "hybrid": null
+    }
+}

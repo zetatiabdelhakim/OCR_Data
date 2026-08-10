@@ -220,6 +220,12 @@ EXTRACTION_SCRIPT = r"""
         const isParent = children.length > 0;
 
         let extractedText = "";
+        let extractedHtml = "";
+        if (label === 'table') {
+            const tbl = el.querySelector('table');
+            if (tbl) extractedHtml = tbl.outerHTML;
+        }
+
         if (!isParent && el.getAttribute('data-no-text') !== 'true') {
             // For equation nodes, decode the original LaTeX from data-math
             const mathB64 = el.getAttribute('data-math');
@@ -237,6 +243,7 @@ EXTRACTION_SCRIPT = r"""
         data.push({
             label: label,
             text: extractedText,
+            html: extractedHtml,
             is_parent: isParent,
             x: Math.max(0, Math.round(rect.x)),
             y: Math.max(0, Math.round(rect.y)),
@@ -252,19 +259,6 @@ EXTRACTION_SCRIPT = r"""
 """
 
 
-def assign_block_preserving_index(boxes):
-    """Assign reading order indices to leaf nodes, setting parent nodes to -1."""
-    counter = 1
-    for box in boxes:
-        if box.get('is_parent'):
-            box['reading_index'] = -1
-        else:
-            box['reading_index'] = counter
-            counter += 1
-        box.pop('is_parent', None)
-    return boxes
-
-
 async def render_and_extract(html_content, width, height, output_image_path, output_json_path,
                               auto_height=False, meta=None, initial_auto_height_viewport=3200):
     """Render HTML and export (image, JSON annotation) pair."""
@@ -276,7 +270,7 @@ async def render_and_extract(html_content, width, height, output_image_path, out
         await page.set_content(html_content, wait_until="networkidle")
 
         result = await page.evaluate(EXTRACTION_SCRIPT, {"autoHeight": auto_height})
-        boxes = assign_block_preserving_index(result["boxes"])
+        boxes = result["boxes"]
 
         final_height = height
         if auto_height and result.get("measuredHeight"):
@@ -286,9 +280,143 @@ async def render_and_extract(html_content, width, height, output_image_path, out
         await page.screenshot(path=output_image_path)
         await browser.close()
 
-        payload = {"boxes": boxes, "canvas": {"width": width, "height": final_height}}
+        blocks = []
+        tables = []
+        images = []
+        markdown_lines = []
+        
+        table_counter = 0
+        img_counter = 0
+        reading_idx = 1
+        
+        def get_block_type(lbl):
+            if lbl in ['heading', 'theorem-title']: return 'title'
+            if lbl == 'table': return 'table'
+            if lbl in ['logo', 'barcode', 'figure-image', 'image-gallery']: return 'image'
+            return 'text'
+
+        for box in boxes:
+            label = box.get("label", "unknown")
+            is_parent = box.get("is_parent", False)
+            content = box.get("text", "")
+            
+            blk_type = get_block_type(label)
+            
+            if label == "table":
+                table_id = f"tbl-{table_counter}.html"
+                table_html = box.get("html", "")
+                
+                table_word_scores = []
+                import re
+                tokens = re.split(r'(<[^>]+>)', table_html)
+                current_pos = 0
+                for token in tokens:
+                    if token.startswith('<') and token.endswith('>'):
+                        current_pos += len(token)
+                    else:
+                        for match in re.finditer(r'\s*\S+', token):
+                            word = match.group()
+                            idx = current_pos + match.start()
+                            table_word_scores.append({
+                                "text": word,
+                                "confidence": 1.0,
+                                "start_index": idx
+                            })
+                        current_pos += len(token)
+
+                tables.append({
+                    "id": table_id,
+                    "content": table_html,
+                    "format": "html",
+                    "word_confidence_scores": table_word_scores
+                })
+                blocks.append({
+                    "top_left_x": box["x"], "top_left_y": box["y"],
+                    "bottom_right_x": box["right"], "bottom_right_y": box["bottom"],
+                    "content": box.get("html", ""),
+                    "type": "table",
+                    "table_id": table_id,
+                    "confidence_scores": None,
+                    "reading_index": reading_idx
+                })
+                markdown_lines.append(f"\n[{table_id}]({table_id})\n")
+                table_counter += 1
+                reading_idx += 1
+            elif blk_type == "image":
+                # Include image bounding box; if it's a parent wrapper, we still want it
+                if is_parent and label not in ['logo', 'image-gallery', 'figure-image']:
+                    continue
+                
+                img_id = f"img-{img_counter}"
+                images.append({
+                    "id": img_id,
+                    "top_left_x": box["x"], "top_left_y": box["y"],
+                    "bottom_right_x": box["right"], "bottom_right_y": box["bottom"],
+                    "reading_index": reading_idx
+                })
+                blocks.append({
+                    "top_left_x": box["x"], "top_left_y": box["y"],
+                    "bottom_right_x": box["right"], "bottom_right_y": box["bottom"],
+                    "content": f"![image]({img_id})",
+                    "type": "image",
+                    "confidence_scores": None,
+                    "reading_index": reading_idx
+                })
+                markdown_lines.append(f"\n![image]({img_id})\n")
+                img_counter += 1
+                reading_idx += 1
+            elif not is_parent:
+                if not content: continue
+                blocks.append({
+                    "top_left_x": box["x"], "top_left_y": box["y"],
+                    "bottom_right_x": box["right"], "bottom_right_y": box["bottom"],
+                    "content": content,
+                    "type": blk_type,
+                    "confidence_scores": None,
+                    "reading_index": reading_idx
+                })
+                if blk_type == "title":
+                    markdown_lines.append(f"## {content}")
+                else:
+                    markdown_lines.append(content)
+                reading_idx += 1
+
+        markdown_text = "\n".join(markdown_lines)
+        
+        mock_word_scores = []
+        current_idx = 0
+        for word in markdown_text.split():
+            idx = markdown_text.find(word, current_idx)
+            if idx != -1:
+                mock_word_scores.append({
+                    "text": word,
+                    "confidence": 1.0,
+                    "start_index": idx
+                })
+                current_idx = idx + len(word)
+
+        payload = {
+            "markdown": markdown_text,
+            "images": images,
+            "tables": tables,
+            "hyperlinks": [],
+            "header": None,
+            "footer": None,
+            "dimensions": {
+                "dpi": 96,
+                "height": final_height,
+                "width": width
+            },
+            "confidence_scores": {
+                "word_confidence_scores": mock_word_scores,
+                "average_page_confidence_score": 1.0,
+                "minimum_page_confidence_score": 1.0
+            },
+            "blocks": blocks
+        }
+        
         if meta:
-            payload.update(meta)
+            payload["meta"] = meta
 
         with open(output_json_path, 'w', encoding='utf-8') as f:
             json.dump(payload, f, ensure_ascii=False, indent=4)

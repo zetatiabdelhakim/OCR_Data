@@ -1,0 +1,210 @@
+{
+    "markdown": "بهذا الحديث على:\nINV-52147\n22/07/2024\nفاتورة إلى: رَسُولَ اللَّهِ صلى الله\n\\frac{\\partial x}{\\partial z} = \\lim_{h \\to 0} \\frac{\\cos(z + h) - \\cos(z)}{h}\nالإجمالي: 5,975.55",
+    "images": [],
+    "tables": [],
+    "hyperlinks": [],
+    "header": null,
+    "footer": null,
+    "dimensions": {
+        "dpi": 96,
+        "height": 1163,
+        "width": 728
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "بهذا",
+                "confidence": 1.0,
+                "start_index": 0
+            },
+            {
+                "text": "الحديث",
+                "confidence": 1.0,
+                "start_index": 5
+            },
+            {
+                "text": "على:",
+                "confidence": 1.0,
+                "start_index": 12
+            },
+            {
+                "text": "INV-52147",
+                "confidence": 1.0,
+                "start_index": 17
+            },
+            {
+                "text": "22/07/2024",
+                "confidence": 1.0,
+                "start_index": 27
+            },
+            {
+                "text": "فاتورة",
+                "confidence": 1.0,
+                "start_index": 38
+            },
+            {
+                "text": "إلى:",
+                "confidence": 1.0,
+                "start_index": 45
+            },
+            {
+                "text": "رَسُولَ",
+                "confidence": 1.0,
+                "start_index": 50
+            },
+            {
+                "text": "اللَّهِ",
+                "confidence": 1.0,
+                "start_index": 58
+            },
+            {
+                "text": "صلى",
+                "confidence": 1.0,
+                "start_index": 66
+            },
+            {
+                "text": "الله",
+                "confidence": 1.0,
+                "start_index": 70
+            },
+            {
+                "text": "\\frac{\\partial",
+                "confidence": 1.0,
+                "start_index": 75
+            },
+            {
+                "text": "x}{\\partial",
+                "confidence": 1.0,
+                "start_index": 90
+            },
+            {
+                "text": "z}",
+                "confidence": 1.0,
+                "start_index": 102
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 105
+            },
+            {
+                "text": "\\lim_{h",
+                "confidence": 1.0,
+                "start_index": 107
+            },
+            {
+                "text": "\\to",
+                "confidence": 1.0,
+                "start_index": 115
+            },
+            {
+                "text": "0}",
+                "confidence": 1.0,
+                "start_index": 119
+            },
+            {
+                "text": "\\frac{\\cos(z",
+                "confidence": 1.0,
+                "start_index": 122
+            },
+            {
+                "text": "+",
+                "confidence": 1.0,
+                "start_index": 135
+            },
+            {
+                "text": "h)",
+                "confidence": 1.0,
+                "start_index": 137
+            },
+            {
+                "text": "-",
+                "confidence": 1.0,
+                "start_index": 140
+            },
+            {
+                "text": "\\cos(z)}{h}",
+                "confidence": 1.0,
+                "start_index": 142
+            },
+            {
+                "text": "الإجمالي:",
+                "confidence": 1.0,
+                "start_index": 154
+            },
+            {
+                "text": "5,975.55",
+                "confidence": 1.0,
+                "start_index": 164
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 44,
+            "top_left_y": 44,
+            "bottom_right_x": 684,
+            "bottom_right_y": 79,
+            "content": "بهذا الحديث على:",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 1
+        },
+        {
+            "top_left_x": 629,
+            "top_left_y": 87,
+            "bottom_right_x": 684,
+            "bottom_right_y": 137,
+            "content": "INV-52147",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 2
+        },
+        {
+            "top_left_x": 44,
+            "top_left_y": 116,
+            "bottom_right_x": 110,
+            "bottom_right_y": 137,
+            "content": "22/07/2024",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 3
+        },
+        {
+            "top_left_x": 44,
+            "top_left_y": 159,
+            "bottom_right_x": 684,
+            "bottom_right_y": 181,
+            "content": "فاتورة إلى: رَسُولَ اللَّهِ صلى الله",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 4
+        },
+        {
+            "top_left_x": 44,
+            "top_left_y": 199,
+            "bottom_right_x": 684,
+            "bottom_right_y": 250,
+            "content": "\\frac{\\partial x}{\\partial z} = \\lim_{h \\to 0} \\frac{\\cos(z + h) - \\cos(z)}{h}",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 5
+        },
+        {
+            "top_left_x": 44,
+            "top_left_y": 268,
+            "bottom_right_x": 154,
+            "bottom_right_y": 293,
+            "content": "الإجمالي: 5,975.55",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 6
+        }
+    ],
+    "meta": {
+        "template": "invoice",
+        "hybrid": "equation"
+    }
+}

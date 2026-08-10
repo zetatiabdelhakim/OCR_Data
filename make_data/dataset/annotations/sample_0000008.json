@@ -1,0 +1,135 @@
+{
+    "markdown": "صَلَّى رَسُولُ\nINV-81641\n04/10/2025\nفاتورة إلى: الله لي، أو استغفر\nالإجمالي: 6,740.25",
+    "images": [],
+    "tables": [],
+    "hyperlinks": [],
+    "header": null,
+    "footer": null,
+    "dimensions": {
+        "dpi": 96,
+        "height": 1067,
+        "width": 804
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "صَلَّى",
+                "confidence": 1.0,
+                "start_index": 0
+            },
+            {
+                "text": "رَسُولُ",
+                "confidence": 1.0,
+                "start_index": 7
+            },
+            {
+                "text": "INV-81641",
+                "confidence": 1.0,
+                "start_index": 15
+            },
+            {
+                "text": "04/10/2025",
+                "confidence": 1.0,
+                "start_index": 25
+            },
+            {
+                "text": "فاتورة",
+                "confidence": 1.0,
+                "start_index": 36
+            },
+            {
+                "text": "إلى:",
+                "confidence": 1.0,
+                "start_index": 43
+            },
+            {
+                "text": "الله",
+                "confidence": 1.0,
+                "start_index": 48
+            },
+            {
+                "text": "لي،",
+                "confidence": 1.0,
+                "start_index": 53
+            },
+            {
+                "text": "أو",
+                "confidence": 1.0,
+                "start_index": 57
+            },
+            {
+                "text": "استغفر",
+                "confidence": 1.0,
+                "start_index": 60
+            },
+            {
+                "text": "الإجمالي:",
+                "confidence": 1.0,
+                "start_index": 67
+            },
+            {
+                "text": "6,740.25",
+                "confidence": 1.0,
+                "start_index": 77
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 44,
+            "top_left_y": 44,
+            "bottom_right_x": 760,
+            "bottom_right_y": 70,
+            "content": "صَلَّى رَسُولُ",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 1
+        },
+        {
+            "top_left_x": 701,
+            "top_left_y": 78,
+            "bottom_right_x": 760,
+            "bottom_right_y": 118,
+            "content": "INV-81641",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 2
+        },
+        {
+            "top_left_x": 44,
+            "top_left_y": 102,
+            "bottom_right_x": 103,
+            "bottom_right_y": 118,
+            "content": "04/10/2025",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 3
+        },
+        {
+            "top_left_x": 44,
+            "top_left_y": 140,
+            "bottom_right_x": 760,
+            "bottom_right_y": 156,
+            "content": "فاتورة إلى: الله لي، أو استغفر",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 4
+        },
+        {
+            "top_left_x": 44,
+            "top_left_y": 164,
+            "bottom_right_x": 152,
+            "bottom_right_y": 182,
+            "content": "الإجمالي: 6,740.25",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 5
+        }
+    ],
+    "meta": {
+        "template": "invoice",
+        "hybrid": null
+    }
+}

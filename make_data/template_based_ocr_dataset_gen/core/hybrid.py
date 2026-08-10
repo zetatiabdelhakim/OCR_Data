@@ -16,7 +16,7 @@ HYBRID_GENERATORS = {
     "chart": lambda: components.gen_chart(compact=True),
     "equation": lambda: components.gen_display_equation(compact=True),
     "quote": lambda: components.gen_quote(),
-    "mini-table": lambda: components.gen_table(rows=random.randint(3, 4), cols=random.randint(2, 3), compact=True),
+    "mini-table": lambda: components.gen_table(rows=random.randint(3, 5), cols=random.randint(2, 4), compact=True),
     "figure": lambda: components.gen_figure(compact=True),
     "theorem": lambda: components.gen_theorem_box(compact=True),
 }
