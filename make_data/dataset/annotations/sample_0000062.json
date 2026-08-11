@@ -1,0 +1,149 @@
+{
+    "markdown": "\n![image](img-0)\n\nهِلَالَ الْمُحَرَّمِ فَاعْدُدْ،\nإِذَا خَرَجُوا إِلَى\n0667915204\nصلى الله عليه وسلم على",
+    "images": [
+        {
+            "id": "img-0",
+            "top_left_x": 232,
+            "top_left_y": 14,
+            "bottom_right_x": 278,
+            "bottom_right_y": 60,
+            "reading_index": 1
+        }
+    ],
+    "tables": [],
+    "hyperlinks": [],
+    "header": null,
+    "footer": null,
+    "dimensions": {
+        "dpi": 96,
+        "height": 219,
+        "width": 292
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "![image](img-0)",
+                "confidence": 1.0,
+                "start_index": 1
+            },
+            {
+                "text": "هِلَالَ",
+                "confidence": 1.0,
+                "start_index": 18
+            },
+            {
+                "text": "الْمُحَرَّمِ",
+                "confidence": 1.0,
+                "start_index": 26
+            },
+            {
+                "text": "فَاعْدُدْ،",
+                "confidence": 1.0,
+                "start_index": 39
+            },
+            {
+                "text": "إِذَا",
+                "confidence": 1.0,
+                "start_index": 50
+            },
+            {
+                "text": "خَرَجُوا",
+                "confidence": 1.0,
+                "start_index": 56
+            },
+            {
+                "text": "إِلَى",
+                "confidence": 1.0,
+                "start_index": 65
+            },
+            {
+                "text": "0667915204",
+                "confidence": 1.0,
+                "start_index": 71
+            },
+            {
+                "text": "صلى",
+                "confidence": 1.0,
+                "start_index": 82
+            },
+            {
+                "text": "الله",
+                "confidence": 1.0,
+                "start_index": 86
+            },
+            {
+                "text": "عليه",
+                "confidence": 1.0,
+                "start_index": 91
+            },
+            {
+                "text": "وسلم",
+                "confidence": 1.0,
+                "start_index": 96
+            },
+            {
+                "text": "على",
+                "confidence": 1.0,
+                "start_index": 101
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 232,
+            "top_left_y": 14,
+            "bottom_right_x": 278,
+            "bottom_right_y": 60,
+            "content": "![image](img-0)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 1
+        },
+        {
+            "top_left_x": 14,
+            "top_left_y": 134,
+            "bottom_right_x": 278,
+            "bottom_right_y": 155,
+            "content": "هِلَالَ الْمُحَرَّمِ فَاعْدُدْ،",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 2
+        },
+        {
+            "top_left_x": 14,
+            "top_left_y": 157,
+            "bottom_right_x": 278,
+            "bottom_right_y": 171,
+            "content": "إِذَا خَرَجُوا إِلَى",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 3
+        },
+        {
+            "top_left_x": 14,
+            "top_left_y": 177,
+            "bottom_right_x": 278,
+            "bottom_right_y": 191,
+            "content": "0667915204",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 4
+        },
+        {
+            "top_left_x": 14,
+            "top_left_y": 191,
+            "bottom_right_x": 278,
+            "bottom_right_y": 205,
+            "content": "صلى الله عليه وسلم على",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 5
+        }
+    ],
+    "meta": {
+        "template": "business_card",
+        "hybrid": null
+    }
+}

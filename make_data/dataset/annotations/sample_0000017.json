@@ -1,13 +1,13 @@
 {
-    "markdown": "أَبِي سُفْيَانَ، وَبِأَخِي مُعَاوِيَةَ)\nوَصَاعًا مِنْ تَمْرٍ،\n7349-2508\n\n![image](img-0)\n",
+    "markdown": "\n![image](img-0)\n\nالله عليه وسلم وعلى\nبْنِ نُفَيْرٍ عَنْ أَبِيهِ",
     "images": [
         {
             "id": "img-0",
-            "top_left_x": 10,
-            "top_left_y": 166,
-            "bottom_right_x": 334,
-            "bottom_right_y": 196,
-            "reading_index": 4
+            "top_left_x": 298,
+            "top_left_y": 373,
+            "bottom_right_x": 362,
+            "bottom_right_y": 437,
+            "reading_index": 1
         }
     ],
     "tables": [],
@@ -16,55 +16,55 @@
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 206,
-        "width": 344
+        "height": 903,
+        "width": 660
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "أَبِي",
-                "confidence": 1.0,
-                "start_index": 0
-            },
-            {
-                "text": "سُفْيَانَ،",
-                "confidence": 1.0,
-                "start_index": 6
-            },
-            {
-                "text": "وَبِأَخِي",
-                "confidence": 1.0,
-                "start_index": 17
-            },
-            {
-                "text": "مُعَاوِيَةَ)",
-                "confidence": 1.0,
-                "start_index": 27
-            },
-            {
-                "text": "وَصَاعًا",
-                "confidence": 1.0,
-                "start_index": 40
-            },
-            {
-                "text": "مِنْ",
-                "confidence": 1.0,
-                "start_index": 49
-            },
-            {
-                "text": "تَمْرٍ،",
-                "confidence": 1.0,
-                "start_index": 54
-            },
-            {
-                "text": "7349-2508",
-                "confidence": 1.0,
-                "start_index": 62
-            },
-            {
                 "text": "![image](img-0)",
                 "confidence": 1.0,
-                "start_index": 73
+                "start_index": 1
+            },
+            {
+                "text": "الله",
+                "confidence": 1.0,
+                "start_index": 18
+            },
+            {
+                "text": "عليه",
+                "confidence": 1.0,
+                "start_index": 23
+            },
+            {
+                "text": "وسلم",
+                "confidence": 1.0,
+                "start_index": 28
+            },
+            {
+                "text": "وعلى",
+                "confidence": 1.0,
+                "start_index": 33
+            },
+            {
+                "text": "بْنِ",
+                "confidence": 1.0,
+                "start_index": 38
+            },
+            {
+                "text": "نُفَيْرٍ",
+                "confidence": 1.0,
+                "start_index": 43
+            },
+            {
+                "text": "عَنْ",
+                "confidence": 1.0,
+                "start_index": 52
+            },
+            {
+                "text": "أَبِيهِ",
+                "confidence": 1.0,
+                "start_index": 57
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -72,48 +72,38 @@
     },
     "blocks": [
         {
-            "top_left_x": 10,
-            "top_left_y": 10,
-            "bottom_right_x": 334,
-            "bottom_right_y": 28,
-            "content": "أَبِي سُفْيَانَ، وَبِأَخِي مُعَاوِيَةَ)",
-            "type": "text",
+            "top_left_x": 298,
+            "top_left_y": 373,
+            "bottom_right_x": 362,
+            "bottom_right_y": 437,
+            "content": "![image](img-0)",
+            "type": "image",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 10,
-            "top_left_y": 78,
-            "bottom_right_x": 282,
-            "bottom_right_y": 97,
-            "content": "وَصَاعًا مِنْ تَمْرٍ،",
+            "top_left_x": 238,
+            "top_left_y": 459,
+            "bottom_right_x": 422,
+            "bottom_right_y": 503,
+            "content": "الله عليه وسلم وعلى",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 2
         },
         {
-            "top_left_x": 10,
-            "top_left_y": 101,
-            "bottom_right_x": 282,
-            "bottom_right_y": 116,
-            "content": "7349-2508",
+            "top_left_x": 293,
+            "top_left_y": 513,
+            "bottom_right_x": 367,
+            "bottom_right_y": 530,
+            "content": "بْنِ نُفَيْرٍ عَنْ أَبِيهِ",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 3
-        },
-        {
-            "top_left_x": 10,
-            "top_left_y": 166,
-            "bottom_right_x": 334,
-            "bottom_right_y": 196,
-            "content": "![image](img-0)",
-            "type": "image",
-            "confidence_scores": null,
-            "reading_index": 4
         }
     ],
     "meta": {
-        "template": "id_card",
+        "template": "minimalist",
         "hybrid": null
     }
 }

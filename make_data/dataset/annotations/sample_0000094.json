@@ -1,0 +1,245 @@
+{
+    "markdown": "## نظرية\nإذا تلف بجائحة قبل القطع، فتسقط زكاتها اتفاقاً. وعن أحمد رواية ثانية: بالسقوط. فمن الأصحاب\n\\prod_{\\alpha=1}^{n} (1 \\geq \\lambda_\\alpha) = 0 + \\frac{\\beta}{\\alpha^2}\n\\nabla_{j} J(j) = \\frac{1}{m} X^T ( \\sigma(X j) - Y )",
+    "images": [],
+    "tables": [],
+    "hyperlinks": [],
+    "header": null,
+    "footer": null,
+    "dimensions": {
+        "dpi": 96,
+        "height": 284,
+        "width": 704
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "##",
+                "confidence": 1.0,
+                "start_index": 0
+            },
+            {
+                "text": "نظرية",
+                "confidence": 1.0,
+                "start_index": 3
+            },
+            {
+                "text": "إذا",
+                "confidence": 1.0,
+                "start_index": 9
+            },
+            {
+                "text": "تلف",
+                "confidence": 1.0,
+                "start_index": 13
+            },
+            {
+                "text": "بجائحة",
+                "confidence": 1.0,
+                "start_index": 17
+            },
+            {
+                "text": "قبل",
+                "confidence": 1.0,
+                "start_index": 24
+            },
+            {
+                "text": "القطع،",
+                "confidence": 1.0,
+                "start_index": 28
+            },
+            {
+                "text": "فتسقط",
+                "confidence": 1.0,
+                "start_index": 35
+            },
+            {
+                "text": "زكاتها",
+                "confidence": 1.0,
+                "start_index": 41
+            },
+            {
+                "text": "اتفاقاً.",
+                "confidence": 1.0,
+                "start_index": 48
+            },
+            {
+                "text": "وعن",
+                "confidence": 1.0,
+                "start_index": 57
+            },
+            {
+                "text": "أحمد",
+                "confidence": 1.0,
+                "start_index": 61
+            },
+            {
+                "text": "رواية",
+                "confidence": 1.0,
+                "start_index": 66
+            },
+            {
+                "text": "ثانية:",
+                "confidence": 1.0,
+                "start_index": 72
+            },
+            {
+                "text": "بالسقوط.",
+                "confidence": 1.0,
+                "start_index": 79
+            },
+            {
+                "text": "فمن",
+                "confidence": 1.0,
+                "start_index": 88
+            },
+            {
+                "text": "الأصحاب",
+                "confidence": 1.0,
+                "start_index": 92
+            },
+            {
+                "text": "\\prod_{\\alpha=1}^{n}",
+                "confidence": 1.0,
+                "start_index": 100
+            },
+            {
+                "text": "(1",
+                "confidence": 1.0,
+                "start_index": 121
+            },
+            {
+                "text": "\\geq",
+                "confidence": 1.0,
+                "start_index": 124
+            },
+            {
+                "text": "\\lambda_\\alpha)",
+                "confidence": 1.0,
+                "start_index": 129
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 145
+            },
+            {
+                "text": "0",
+                "confidence": 1.0,
+                "start_index": 147
+            },
+            {
+                "text": "+",
+                "confidence": 1.0,
+                "start_index": 149
+            },
+            {
+                "text": "\\frac{\\beta}{\\alpha^2}",
+                "confidence": 1.0,
+                "start_index": 151
+            },
+            {
+                "text": "\\nabla_{j}",
+                "confidence": 1.0,
+                "start_index": 174
+            },
+            {
+                "text": "J(j)",
+                "confidence": 1.0,
+                "start_index": 185
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 190
+            },
+            {
+                "text": "\\frac{1}{m}",
+                "confidence": 1.0,
+                "start_index": 192
+            },
+            {
+                "text": "X^T",
+                "confidence": 1.0,
+                "start_index": 204
+            },
+            {
+                "text": "(",
+                "confidence": 1.0,
+                "start_index": 208
+            },
+            {
+                "text": "\\sigma(X",
+                "confidence": 1.0,
+                "start_index": 210
+            },
+            {
+                "text": "j)",
+                "confidence": 1.0,
+                "start_index": 219
+            },
+            {
+                "text": "-",
+                "confidence": 1.0,
+                "start_index": 222
+            },
+            {
+                "text": "Y",
+                "confidence": 1.0,
+                "start_index": 224
+            },
+            {
+                "text": ")",
+                "confidence": 1.0,
+                "start_index": 226
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 32,
+            "top_left_y": 32,
+            "bottom_right_x": 668,
+            "bottom_right_y": 57,
+            "content": "نظرية",
+            "type": "title",
+            "confidence_scores": null,
+            "reading_index": 1
+        },
+        {
+            "top_left_x": 32,
+            "top_left_y": 62,
+            "bottom_right_x": 668,
+            "bottom_right_y": 84,
+            "content": "إذا تلف بجائحة قبل القطع، فتسقط زكاتها اتفاقاً. وعن أحمد رواية ثانية: بالسقوط. فمن الأصحاب",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 2
+        },
+        {
+            "top_left_x": 32,
+            "top_left_y": 90,
+            "bottom_right_x": 668,
+            "bottom_right_y": 155,
+            "content": "\\prod_{\\alpha=1}^{n} (1 \\geq \\lambda_\\alpha) = 0 + \\frac{\\beta}{\\alpha^2}",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 3
+        },
+        {
+            "top_left_x": 20,
+            "top_left_y": 187,
+            "bottom_right_x": 684,
+            "bottom_right_y": 238,
+            "content": "\\nabla_{j} J(j) = \\frac{1}{m} X^T ( \\sigma(X j) - Y )",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 4
+        }
+    ],
+    "meta": {
+        "template": "math_proof",
+        "hybrid": null
+    }
+}

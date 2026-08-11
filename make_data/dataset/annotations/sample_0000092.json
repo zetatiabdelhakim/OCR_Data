@@ -1,0 +1,114 @@
+{
+    "markdown": "\n![image](img-0)\n\nرضي الله عنه أنه\nبه الشر، ومثله- أيضا- قوله:",
+    "images": [
+        {
+            "id": "img-0",
+            "top_left_x": 14,
+            "top_left_y": 14,
+            "bottom_right_x": 60,
+            "bottom_right_y": 60,
+            "reading_index": 1
+        }
+    ],
+    "tables": [],
+    "hyperlinks": [],
+    "header": null,
+    "footer": null,
+    "dimensions": {
+        "dpi": 96,
+        "height": 211,
+        "width": 352
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "![image](img-0)",
+                "confidence": 1.0,
+                "start_index": 1
+            },
+            {
+                "text": "رضي",
+                "confidence": 1.0,
+                "start_index": 18
+            },
+            {
+                "text": "الله",
+                "confidence": 1.0,
+                "start_index": 22
+            },
+            {
+                "text": "عنه",
+                "confidence": 1.0,
+                "start_index": 27
+            },
+            {
+                "text": "أنه",
+                "confidence": 1.0,
+                "start_index": 31
+            },
+            {
+                "text": "به",
+                "confidence": 1.0,
+                "start_index": 35
+            },
+            {
+                "text": "الشر،",
+                "confidence": 1.0,
+                "start_index": 38
+            },
+            {
+                "text": "ومثله-",
+                "confidence": 1.0,
+                "start_index": 44
+            },
+            {
+                "text": "أيضا-",
+                "confidence": 1.0,
+                "start_index": 51
+            },
+            {
+                "text": "قوله:",
+                "confidence": 1.0,
+                "start_index": 57
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 14,
+            "top_left_y": 14,
+            "bottom_right_x": 60,
+            "bottom_right_y": 60,
+            "content": "![image](img-0)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 1
+        },
+        {
+            "top_left_x": 14,
+            "top_left_y": 165,
+            "bottom_right_x": 338,
+            "bottom_right_y": 183,
+            "content": "رضي الله عنه أنه",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 2
+        },
+        {
+            "top_left_x": 14,
+            "top_left_y": 185,
+            "bottom_right_x": 338,
+            "bottom_right_y": 197,
+            "content": "به الشر، ومثله- أيضا- قوله:",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 3
+        }
+    ],
+    "meta": {
+        "template": "business_card",
+        "hybrid": null
+    }
+}

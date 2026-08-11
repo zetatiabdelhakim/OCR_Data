@@ -1,0 +1,79 @@
+{
+    "markdown": "\n![image](img-0)\n\nبْنِ حُنَيْنٍ عَنْ أَبِي",
+    "images": [
+        {
+            "id": "img-0",
+            "top_left_x": 337,
+            "top_left_y": 261,
+            "bottom_right_x": 401,
+            "bottom_right_y": 325,
+            "reading_index": 1
+        }
+    ],
+    "tables": [],
+    "hyperlinks": [],
+    "header": null,
+    "footer": null,
+    "dimensions": {
+        "dpi": 96,
+        "height": 652,
+        "width": 737
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "![image](img-0)",
+                "confidence": 1.0,
+                "start_index": 1
+            },
+            {
+                "text": "بْنِ",
+                "confidence": 1.0,
+                "start_index": 18
+            },
+            {
+                "text": "حُنَيْنٍ",
+                "confidence": 1.0,
+                "start_index": 23
+            },
+            {
+                "text": "عَنْ",
+                "confidence": 1.0,
+                "start_index": 32
+            },
+            {
+                "text": "أَبِي",
+                "confidence": 1.0,
+                "start_index": 37
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 337,
+            "top_left_y": 261,
+            "bottom_right_x": 401,
+            "bottom_right_y": 325,
+            "content": "![image](img-0)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 1
+        },
+        {
+            "top_left_x": 292,
+            "top_left_y": 347,
+            "bottom_right_x": 445,
+            "bottom_right_y": 392,
+            "content": "بْنِ حُنَيْنٍ عَنْ أَبِي",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 2
+        }
+    ],
+    "meta": {
+        "template": "minimalist",
+        "hybrid": null
+    }
+}

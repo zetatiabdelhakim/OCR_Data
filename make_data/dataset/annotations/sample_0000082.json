@@ -1,0 +1,109 @@
+{
+    "markdown": "\n![image](img-0)\n\nفي الحديث دليل على\nبالورق- يعني: الفضة بالفضة-",
+    "images": [
+        {
+            "id": "img-0",
+            "top_left_x": 243,
+            "top_left_y": 373,
+            "bottom_right_x": 307,
+            "bottom_right_y": 437,
+            "reading_index": 1
+        }
+    ],
+    "tables": [],
+    "hyperlinks": [],
+    "header": null,
+    "footer": null,
+    "dimensions": {
+        "dpi": 96,
+        "height": 910,
+        "width": 550
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "![image](img-0)",
+                "confidence": 1.0,
+                "start_index": 1
+            },
+            {
+                "text": "في",
+                "confidence": 1.0,
+                "start_index": 18
+            },
+            {
+                "text": "الحديث",
+                "confidence": 1.0,
+                "start_index": 21
+            },
+            {
+                "text": "دليل",
+                "confidence": 1.0,
+                "start_index": 28
+            },
+            {
+                "text": "على",
+                "confidence": 1.0,
+                "start_index": 33
+            },
+            {
+                "text": "بالورق-",
+                "confidence": 1.0,
+                "start_index": 37
+            },
+            {
+                "text": "يعني:",
+                "confidence": 1.0,
+                "start_index": 45
+            },
+            {
+                "text": "الفضة",
+                "confidence": 1.0,
+                "start_index": 51
+            },
+            {
+                "text": "بالفضة-",
+                "confidence": 1.0,
+                "start_index": 57
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 243,
+            "top_left_y": 373,
+            "bottom_right_x": 307,
+            "bottom_right_y": 437,
+            "content": "![image](img-0)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 1
+        },
+        {
+            "top_left_x": 156,
+            "top_left_y": 459,
+            "bottom_right_x": 394,
+            "bottom_right_y": 504,
+            "content": "في الحديث دليل على",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 2
+        },
+        {
+            "top_left_x": 211,
+            "top_left_y": 514,
+            "bottom_right_x": 339,
+            "bottom_right_y": 537,
+            "content": "بالورق- يعني: الفضة بالفضة-",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 3
+        }
+    ],
+    "meta": {
+        "template": "minimalist",
+        "hybrid": null
+    }
+}

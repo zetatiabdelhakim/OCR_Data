@@ -1,0 +1,424 @@
+{
+    "markdown": "أُسَامَةَ بْنِ\nINV-24492\n28/09/2024\nفاتورة إلى: فَقَالَ: ((إِنَّ اللَّهَ يَأْمُرُكَ\n\n[tbl-0.html](tbl-0.html)\n\nالإجمالي: 4,603.79",
+    "images": [],
+    "tables": [
+        {
+            "id": "tbl-0.html",
+            "content": "<table><tbody><tr><th>البيان</th><th>الكمية</th><th>السعر</th><th>المجموع</th></tr><tr><td>غَيْرَ رَمَضَانَ قَالَ:</td><td>1</td><td>190.38</td><td>190.38</td></tr><tr><td>فى باب الخير والعلم، إذا</td><td>12</td><td>84.12</td><td>1,009.44</td></tr><tr><td>وسلم: ((بَلْ هُوَ مِنْ أَهْلِ</td><td>8</td><td>15.35</td><td>122.80</td></tr><tr><td>أَجْرِهِ قِيرَاطَانِ كُلَّ يَوْمٍ)</td><td>7</td><td>113.13</td><td>791.91</td></tr><tr><td>الله عليه وسلم في الحديث</td><td>5</td><td>217.41</td><td>1,087.05</td></tr><tr><td>عبد القاهر البغدادي</td><td>3</td><td>294.31</td><td>882.93</td></tr><tr><td>مالك في الموطأ</td><td>2</td><td>259.64</td><td>519.28</td></tr></tbody></table>",
+            "format": "html",
+            "word_confidence_scores": [
+                {
+                    "text": "البيان",
+                    "confidence": 1.0,
+                    "start_index": 22
+                },
+                {
+                    "text": "الكمية",
+                    "confidence": 1.0,
+                    "start_index": 37
+                },
+                {
+                    "text": "السعر",
+                    "confidence": 1.0,
+                    "start_index": 52
+                },
+                {
+                    "text": "المجموع",
+                    "confidence": 1.0,
+                    "start_index": 66
+                },
+                {
+                    "text": "غَيْرَ",
+                    "confidence": 1.0,
+                    "start_index": 91
+                },
+                {
+                    "text": " رَمَضَانَ",
+                    "confidence": 1.0,
+                    "start_index": 97
+                },
+                {
+                    "text": " قَالَ:",
+                    "confidence": 1.0,
+                    "start_index": 107
+                },
+                {
+                    "text": "1",
+                    "confidence": 1.0,
+                    "start_index": 123
+                },
+                {
+                    "text": "190.38",
+                    "confidence": 1.0,
+                    "start_index": 133
+                },
+                {
+                    "text": "190.38",
+                    "confidence": 1.0,
+                    "start_index": 148
+                },
+                {
+                    "text": "فى",
+                    "confidence": 1.0,
+                    "start_index": 172
+                },
+                {
+                    "text": " باب",
+                    "confidence": 1.0,
+                    "start_index": 174
+                },
+                {
+                    "text": " الخير",
+                    "confidence": 1.0,
+                    "start_index": 178
+                },
+                {
+                    "text": " والعلم،",
+                    "confidence": 1.0,
+                    "start_index": 184
+                },
+                {
+                    "text": " إذا",
+                    "confidence": 1.0,
+                    "start_index": 192
+                },
+                {
+                    "text": "12",
+                    "confidence": 1.0,
+                    "start_index": 205
+                },
+                {
+                    "text": "84.12",
+                    "confidence": 1.0,
+                    "start_index": 216
+                },
+                {
+                    "text": "1,009.44",
+                    "confidence": 1.0,
+                    "start_index": 230
+                },
+                {
+                    "text": "وسلم:",
+                    "confidence": 1.0,
+                    "start_index": 256
+                },
+                {
+                    "text": " ((بَلْ",
+                    "confidence": 1.0,
+                    "start_index": 261
+                },
+                {
+                    "text": " هُوَ",
+                    "confidence": 1.0,
+                    "start_index": 268
+                },
+                {
+                    "text": " مِنْ",
+                    "confidence": 1.0,
+                    "start_index": 273
+                },
+                {
+                    "text": " أَهْلِ",
+                    "confidence": 1.0,
+                    "start_index": 278
+                },
+                {
+                    "text": "8",
+                    "confidence": 1.0,
+                    "start_index": 294
+                },
+                {
+                    "text": "15.35",
+                    "confidence": 1.0,
+                    "start_index": 304
+                },
+                {
+                    "text": "122.80",
+                    "confidence": 1.0,
+                    "start_index": 318
+                },
+                {
+                    "text": "أَجْرِهِ",
+                    "confidence": 1.0,
+                    "start_index": 342
+                },
+                {
+                    "text": " قِيرَاطَانِ",
+                    "confidence": 1.0,
+                    "start_index": 350
+                },
+                {
+                    "text": " كُلَّ",
+                    "confidence": 1.0,
+                    "start_index": 362
+                },
+                {
+                    "text": " يَوْمٍ)",
+                    "confidence": 1.0,
+                    "start_index": 368
+                },
+                {
+                    "text": "7",
+                    "confidence": 1.0,
+                    "start_index": 385
+                },
+                {
+                    "text": "113.13",
+                    "confidence": 1.0,
+                    "start_index": 395
+                },
+                {
+                    "text": "791.91",
+                    "confidence": 1.0,
+                    "start_index": 410
+                },
+                {
+                    "text": "الله",
+                    "confidence": 1.0,
+                    "start_index": 434
+                },
+                {
+                    "text": " عليه",
+                    "confidence": 1.0,
+                    "start_index": 438
+                },
+                {
+                    "text": " وسلم",
+                    "confidence": 1.0,
+                    "start_index": 443
+                },
+                {
+                    "text": " في",
+                    "confidence": 1.0,
+                    "start_index": 448
+                },
+                {
+                    "text": " الحديث",
+                    "confidence": 1.0,
+                    "start_index": 451
+                },
+                {
+                    "text": "5",
+                    "confidence": 1.0,
+                    "start_index": 467
+                },
+                {
+                    "text": "217.41",
+                    "confidence": 1.0,
+                    "start_index": 477
+                },
+                {
+                    "text": "1,087.05",
+                    "confidence": 1.0,
+                    "start_index": 492
+                },
+                {
+                    "text": "عبد",
+                    "confidence": 1.0,
+                    "start_index": 518
+                },
+                {
+                    "text": " القاهر",
+                    "confidence": 1.0,
+                    "start_index": 521
+                },
+                {
+                    "text": " البغدادي",
+                    "confidence": 1.0,
+                    "start_index": 528
+                },
+                {
+                    "text": "3",
+                    "confidence": 1.0,
+                    "start_index": 546
+                },
+                {
+                    "text": "294.31",
+                    "confidence": 1.0,
+                    "start_index": 556
+                },
+                {
+                    "text": "882.93",
+                    "confidence": 1.0,
+                    "start_index": 571
+                },
+                {
+                    "text": "مالك",
+                    "confidence": 1.0,
+                    "start_index": 595
+                },
+                {
+                    "text": " في",
+                    "confidence": 1.0,
+                    "start_index": 599
+                },
+                {
+                    "text": " الموطأ",
+                    "confidence": 1.0,
+                    "start_index": 602
+                },
+                {
+                    "text": "2",
+                    "confidence": 1.0,
+                    "start_index": 618
+                },
+                {
+                    "text": "259.64",
+                    "confidence": 1.0,
+                    "start_index": 628
+                },
+                {
+                    "text": "519.28",
+                    "confidence": 1.0,
+                    "start_index": 643
+                }
+            ]
+        }
+    ],
+    "hyperlinks": [],
+    "header": null,
+    "footer": null,
+    "dimensions": {
+        "dpi": 96,
+        "height": 1000,
+        "width": 782
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "أُسَامَةَ",
+                "confidence": 1.0,
+                "start_index": 0
+            },
+            {
+                "text": "بْنِ",
+                "confidence": 1.0,
+                "start_index": 10
+            },
+            {
+                "text": "INV-24492",
+                "confidence": 1.0,
+                "start_index": 15
+            },
+            {
+                "text": "28/09/2024",
+                "confidence": 1.0,
+                "start_index": 25
+            },
+            {
+                "text": "فاتورة",
+                "confidence": 1.0,
+                "start_index": 36
+            },
+            {
+                "text": "إلى:",
+                "confidence": 1.0,
+                "start_index": 43
+            },
+            {
+                "text": "فَقَالَ:",
+                "confidence": 1.0,
+                "start_index": 48
+            },
+            {
+                "text": "((إِنَّ",
+                "confidence": 1.0,
+                "start_index": 57
+            },
+            {
+                "text": "اللَّهَ",
+                "confidence": 1.0,
+                "start_index": 65
+            },
+            {
+                "text": "يَأْمُرُكَ",
+                "confidence": 1.0,
+                "start_index": 73
+            },
+            {
+                "text": "[tbl-0.html](tbl-0.html)",
+                "confidence": 1.0,
+                "start_index": 85
+            },
+            {
+                "text": "الإجمالي:",
+                "confidence": 1.0,
+                "start_index": 111
+            },
+            {
+                "text": "4,603.79",
+                "confidence": 1.0,
+                "start_index": 121
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 44,
+            "top_left_y": 44,
+            "bottom_right_x": 738,
+            "bottom_right_y": 70,
+            "content": "أُسَامَةَ بْنِ",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 1
+        },
+        {
+            "top_left_x": 679,
+            "top_left_y": 78,
+            "bottom_right_x": 738,
+            "bottom_right_y": 94,
+            "content": "INV-24492",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 2
+        },
+        {
+            "top_left_x": 44,
+            "top_left_y": 78,
+            "bottom_right_x": 103,
+            "bottom_right_y": 94,
+            "content": "28/09/2024",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 3
+        },
+        {
+            "top_left_x": 44,
+            "top_left_y": 116,
+            "bottom_right_x": 738,
+            "bottom_right_y": 132,
+            "content": "فاتورة إلى: فَقَالَ: ((إِنَّ اللَّهَ يَأْمُرُكَ",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 4
+        },
+        {
+            "top_left_x": 44,
+            "top_left_y": 146,
+            "bottom_right_x": 738,
+            "bottom_right_y": 406,
+            "content": "<table><tbody><tr><th>البيان</th><th>الكمية</th><th>السعر</th><th>المجموع</th></tr><tr><td>غَيْرَ رَمَضَانَ قَالَ:</td><td>1</td><td>190.38</td><td>190.38</td></tr><tr><td>فى باب الخير والعلم، إذا</td><td>12</td><td>84.12</td><td>1,009.44</td></tr><tr><td>وسلم: ((بَلْ هُوَ مِنْ أَهْلِ</td><td>8</td><td>15.35</td><td>122.80</td></tr><tr><td>أَجْرِهِ قِيرَاطَانِ كُلَّ يَوْمٍ)</td><td>7</td><td>113.13</td><td>791.91</td></tr><tr><td>الله عليه وسلم في الحديث</td><td>5</td><td>217.41</td><td>1,087.05</td></tr><tr><td>عبد القاهر البغدادي</td><td>3</td><td>294.31</td><td>882.93</td></tr><tr><td>مالك في الموطأ</td><td>2</td><td>259.64</td><td>519.28</td></tr></tbody></table>",
+            "type": "table",
+            "table_id": "tbl-0.html",
+            "confidence_scores": null,
+            "reading_index": 5
+        },
+        {
+            "top_left_x": 44,
+            "top_left_y": 420,
+            "bottom_right_x": 152,
+            "bottom_right_y": 438,
+            "content": "الإجمالي: 4,603.79",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 6
+        }
+    ],
+    "meta": {
+        "template": "invoice",
+        "hybrid": null
+    }
+}

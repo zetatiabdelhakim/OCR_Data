@@ -1,0 +1,45 @@
+{
+    "markdown": "عَلَيْهِنَّ شَهْرًا",
+    "images": [],
+    "tables": [],
+    "hyperlinks": [],
+    "header": null,
+    "footer": null,
+    "dimensions": {
+        "dpi": 96,
+        "height": 1090,
+        "width": 865
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "عَلَيْهِنَّ",
+                "confidence": 1.0,
+                "start_index": 0
+            },
+            {
+                "text": "شَهْرًا",
+                "confidence": 1.0,
+                "start_index": 12
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 401,
+            "top_left_y": 1054,
+            "bottom_right_x": 464,
+            "bottom_right_y": 1072,
+            "content": "عَلَيْهِنَّ شَهْرًا",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 1
+        }
+    ],
+    "meta": {
+        "template": "book_cover",
+        "hybrid": null
+    }
+}

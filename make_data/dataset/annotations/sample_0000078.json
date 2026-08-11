@@ -1,0 +1,94 @@
+{
+    "markdown": "\n![image](img-0)\n\n)، وفي\n\\vec{F} = m\\vec{a}",
+    "images": [
+        {
+            "id": "img-0",
+            "top_left_x": 283,
+            "top_left_y": 352,
+            "bottom_right_x": 347,
+            "bottom_right_y": 416,
+            "reading_index": 1
+        }
+    ],
+    "tables": [],
+    "hyperlinks": [],
+    "header": null,
+    "footer": null,
+    "dimensions": {
+        "dpi": 96,
+        "height": 900,
+        "width": 630
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "![image](img-0)",
+                "confidence": 1.0,
+                "start_index": 1
+            },
+            {
+                "text": ")،",
+                "confidence": 1.0,
+                "start_index": 18
+            },
+            {
+                "text": "وفي",
+                "confidence": 1.0,
+                "start_index": 21
+            },
+            {
+                "text": "\\vec{F}",
+                "confidence": 1.0,
+                "start_index": 25
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 33
+            },
+            {
+                "text": "m\\vec{a}",
+                "confidence": 1.0,
+                "start_index": 35
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 283,
+            "top_left_y": 352,
+            "bottom_right_x": 347,
+            "bottom_right_y": 416,
+            "content": "![image](img-0)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 1
+        },
+        {
+            "top_left_x": 289,
+            "top_left_y": 438,
+            "bottom_right_x": 341,
+            "bottom_right_y": 482,
+            "content": ")، وفي",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 2
+        },
+        {
+            "top_left_x": 293,
+            "top_left_y": 504,
+            "bottom_right_x": 337,
+            "bottom_right_y": 542,
+            "content": "\\vec{F} = m\\vec{a}",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 3
+        }
+    ],
+    "meta": {
+        "template": "minimalist",
+        "hybrid": "equation"
+    }
+}

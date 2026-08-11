@@ -1,0 +1,109 @@
+{
+    "markdown": "طلاق زوجته الأولى فهذا لا\n\n![image](img-0)\n\nبه، بخلاف نظرها",
+    "images": [
+        {
+            "id": "img-0",
+            "top_left_x": 74,
+            "top_left_y": 322,
+            "bottom_right_x": 471,
+            "bottom_right_y": 482,
+            "reading_index": 2
+        }
+    ],
+    "tables": [],
+    "hyperlinks": [],
+    "header": null,
+    "footer": null,
+    "dimensions": {
+        "dpi": 96,
+        "height": 768,
+        "width": 545
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "طلاق",
+                "confidence": 1.0,
+                "start_index": 0
+            },
+            {
+                "text": "زوجته",
+                "confidence": 1.0,
+                "start_index": 5
+            },
+            {
+                "text": "الأولى",
+                "confidence": 1.0,
+                "start_index": 11
+            },
+            {
+                "text": "فهذا",
+                "confidence": 1.0,
+                "start_index": 18
+            },
+            {
+                "text": "لا",
+                "confidence": 1.0,
+                "start_index": 23
+            },
+            {
+                "text": "![image](img-0)",
+                "confidence": 1.0,
+                "start_index": 27
+            },
+            {
+                "text": "به،",
+                "confidence": 1.0,
+                "start_index": 44
+            },
+            {
+                "text": "بخلاف",
+                "confidence": 1.0,
+                "start_index": 48
+            },
+            {
+                "text": "نظرها",
+                "confidence": 1.0,
+                "start_index": 54
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 205,
+            "top_left_y": 288,
+            "bottom_right_x": 340,
+            "bottom_right_y": 306,
+            "content": "طلاق زوجته الأولى فهذا لا",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 1
+        },
+        {
+            "top_left_x": 74,
+            "top_left_y": 322,
+            "bottom_right_x": 471,
+            "bottom_right_y": 482,
+            "content": "![image](img-0)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 2
+        },
+        {
+            "top_left_x": 216,
+            "top_left_y": 726,
+            "bottom_right_x": 329,
+            "bottom_right_y": 750,
+            "content": "به، بخلاف نظرها",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 3
+        }
+    ],
+    "meta": {
+        "template": "book_cover",
+        "hybrid": "chart"
+    }
+}

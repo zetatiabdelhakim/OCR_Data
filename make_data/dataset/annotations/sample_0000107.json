@@ -1,0 +1,124 @@
+{
+    "markdown": "\n![image](img-0)\n\nلَهُ ثَلَاثِينَ) ). [خ:\nعز وجل لا يضيع عنده شيء، ولا",
+    "images": [
+        {
+            "id": "img-0",
+            "top_left_x": 234,
+            "top_left_y": 352,
+            "bottom_right_x": 298,
+            "bottom_right_y": 416,
+            "reading_index": 1
+        }
+    ],
+    "tables": [],
+    "hyperlinks": [],
+    "header": null,
+    "footer": null,
+    "dimensions": {
+        "dpi": 96,
+        "height": 872,
+        "width": 531
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "![image](img-0)",
+                "confidence": 1.0,
+                "start_index": 1
+            },
+            {
+                "text": "لَهُ",
+                "confidence": 1.0,
+                "start_index": 18
+            },
+            {
+                "text": "ثَلَاثِينَ)",
+                "confidence": 1.0,
+                "start_index": 23
+            },
+            {
+                "text": ").",
+                "confidence": 1.0,
+                "start_index": 35
+            },
+            {
+                "text": "[خ:",
+                "confidence": 1.0,
+                "start_index": 38
+            },
+            {
+                "text": "عز",
+                "confidence": 1.0,
+                "start_index": 42
+            },
+            {
+                "text": "وجل",
+                "confidence": 1.0,
+                "start_index": 45
+            },
+            {
+                "text": "لا",
+                "confidence": 1.0,
+                "start_index": 49
+            },
+            {
+                "text": "يضيع",
+                "confidence": 1.0,
+                "start_index": 52
+            },
+            {
+                "text": "عنده",
+                "confidence": 1.0,
+                "start_index": 57
+            },
+            {
+                "text": "شيء،",
+                "confidence": 1.0,
+                "start_index": 62
+            },
+            {
+                "text": "ولا",
+                "confidence": 1.0,
+                "start_index": 67
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 234,
+            "top_left_y": 352,
+            "bottom_right_x": 298,
+            "bottom_right_y": 416,
+            "content": "![image](img-0)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 1
+        },
+        {
+            "top_left_x": 194,
+            "top_left_y": 438,
+            "bottom_right_x": 337,
+            "bottom_right_y": 483,
+            "content": "لَهُ ثَلَاثِينَ) ). [خ:",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 2
+        },
+        {
+            "top_left_x": 171,
+            "top_left_y": 493,
+            "bottom_right_x": 360,
+            "bottom_right_y": 520,
+            "content": "عز وجل لا يضيع عنده شيء، ولا",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 3
+        }
+    ],
+    "meta": {
+        "template": "minimalist",
+        "hybrid": null
+    }
+}

@@ -1,0 +1,99 @@
+{
+    "markdown": "\n![image](img-0)\n\nسَعِيدٍ، وَابْنُ\nبه تصان الحرمات، وبه",
+    "images": [
+        {
+            "id": "img-0",
+            "top_left_x": 257,
+            "top_left_y": 14,
+            "bottom_right_x": 303,
+            "bottom_right_y": 60,
+            "reading_index": 1
+        }
+    ],
+    "tables": [],
+    "hyperlinks": [],
+    "header": null,
+    "footer": null,
+    "dimensions": {
+        "dpi": 96,
+        "height": 219,
+        "width": 317
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "![image](img-0)",
+                "confidence": 1.0,
+                "start_index": 1
+            },
+            {
+                "text": "سَعِيدٍ،",
+                "confidence": 1.0,
+                "start_index": 18
+            },
+            {
+                "text": "وَابْنُ",
+                "confidence": 1.0,
+                "start_index": 27
+            },
+            {
+                "text": "به",
+                "confidence": 1.0,
+                "start_index": 35
+            },
+            {
+                "text": "تصان",
+                "confidence": 1.0,
+                "start_index": 38
+            },
+            {
+                "text": "الحرمات،",
+                "confidence": 1.0,
+                "start_index": 43
+            },
+            {
+                "text": "وبه",
+                "confidence": 1.0,
+                "start_index": 52
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 257,
+            "top_left_y": 14,
+            "bottom_right_x": 303,
+            "bottom_right_y": 60,
+            "content": "![image](img-0)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 1
+        },
+        {
+            "top_left_x": 14,
+            "top_left_y": 173,
+            "bottom_right_x": 303,
+            "bottom_right_y": 191,
+            "content": "سَعِيدٍ، وَابْنُ",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 2
+        },
+        {
+            "top_left_x": 14,
+            "top_left_y": 193,
+            "bottom_right_x": 303,
+            "bottom_right_y": 205,
+            "content": "به تصان الحرمات، وبه",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 3
+        }
+    ],
+    "meta": {
+        "template": "business_card",
+        "hybrid": null
+    }
+}

@@ -1,0 +1,329 @@
+{
+    "markdown": "هذا الباب، فقالوا\nINV-48316\n04/02/2026\nفاتورة إلى: عَنْ أَبِي هُرَيْرَةَ عَنِ\n\n[tbl-0.html](tbl-0.html)\n\nالإجمالي: 6,349.94",
+    "images": [],
+    "tables": [
+        {
+            "id": "tbl-0.html",
+            "content": "<table><tbody><tr><th>البيان</th><th>الكمية</th><th>السعر</th><th>المجموع</th></tr><tr><td>ثُمَّ نَزَلْنَا</td><td>11</td><td>295.16</td><td>3,246.76</td></tr><tr><td>عليه وسلم</td><td>2</td><td>130.41</td><td>260.82</td></tr><tr><td>تنضبط الصفات، ويكون الأجل محددًا،</td><td>9</td><td>193.29</td><td>1,739.61</td></tr><tr><td>لَا يُورِدُ</td><td>3</td><td>177.85</td><td>533.55</td></tr><tr><td>صلى الله عليه</td><td>2</td><td>284.60</td><td>569.20</td></tr></tbody></table>",
+            "format": "html",
+            "word_confidence_scores": [
+                {
+                    "text": "البيان",
+                    "confidence": 1.0,
+                    "start_index": 22
+                },
+                {
+                    "text": "الكمية",
+                    "confidence": 1.0,
+                    "start_index": 37
+                },
+                {
+                    "text": "السعر",
+                    "confidence": 1.0,
+                    "start_index": 52
+                },
+                {
+                    "text": "المجموع",
+                    "confidence": 1.0,
+                    "start_index": 66
+                },
+                {
+                    "text": "ثُمَّ",
+                    "confidence": 1.0,
+                    "start_index": 91
+                },
+                {
+                    "text": " نَزَلْنَا",
+                    "confidence": 1.0,
+                    "start_index": 96
+                },
+                {
+                    "text": "11",
+                    "confidence": 1.0,
+                    "start_index": 115
+                },
+                {
+                    "text": "295.16",
+                    "confidence": 1.0,
+                    "start_index": 126
+                },
+                {
+                    "text": "3,246.76",
+                    "confidence": 1.0,
+                    "start_index": 141
+                },
+                {
+                    "text": "عليه",
+                    "confidence": 1.0,
+                    "start_index": 167
+                },
+                {
+                    "text": " وسلم",
+                    "confidence": 1.0,
+                    "start_index": 171
+                },
+                {
+                    "text": "2",
+                    "confidence": 1.0,
+                    "start_index": 185
+                },
+                {
+                    "text": "130.41",
+                    "confidence": 1.0,
+                    "start_index": 195
+                },
+                {
+                    "text": "260.82",
+                    "confidence": 1.0,
+                    "start_index": 210
+                },
+                {
+                    "text": "تنضبط",
+                    "confidence": 1.0,
+                    "start_index": 234
+                },
+                {
+                    "text": " الصفات،",
+                    "confidence": 1.0,
+                    "start_index": 239
+                },
+                {
+                    "text": " ويكون",
+                    "confidence": 1.0,
+                    "start_index": 247
+                },
+                {
+                    "text": " الأجل",
+                    "confidence": 1.0,
+                    "start_index": 253
+                },
+                {
+                    "text": " محددًا،",
+                    "confidence": 1.0,
+                    "start_index": 259
+                },
+                {
+                    "text": "9",
+                    "confidence": 1.0,
+                    "start_index": 276
+                },
+                {
+                    "text": "193.29",
+                    "confidence": 1.0,
+                    "start_index": 286
+                },
+                {
+                    "text": "1,739.61",
+                    "confidence": 1.0,
+                    "start_index": 301
+                },
+                {
+                    "text": "لَا",
+                    "confidence": 1.0,
+                    "start_index": 327
+                },
+                {
+                    "text": " يُورِدُ",
+                    "confidence": 1.0,
+                    "start_index": 330
+                },
+                {
+                    "text": "3",
+                    "confidence": 1.0,
+                    "start_index": 347
+                },
+                {
+                    "text": "177.85",
+                    "confidence": 1.0,
+                    "start_index": 357
+                },
+                {
+                    "text": "533.55",
+                    "confidence": 1.0,
+                    "start_index": 372
+                },
+                {
+                    "text": "صلى",
+                    "confidence": 1.0,
+                    "start_index": 396
+                },
+                {
+                    "text": " الله",
+                    "confidence": 1.0,
+                    "start_index": 399
+                },
+                {
+                    "text": " عليه",
+                    "confidence": 1.0,
+                    "start_index": 404
+                },
+                {
+                    "text": "2",
+                    "confidence": 1.0,
+                    "start_index": 418
+                },
+                {
+                    "text": "284.60",
+                    "confidence": 1.0,
+                    "start_index": 428
+                },
+                {
+                    "text": "569.20",
+                    "confidence": 1.0,
+                    "start_index": 443
+                }
+            ]
+        }
+    ],
+    "hyperlinks": [],
+    "header": null,
+    "footer": null,
+    "dimensions": {
+        "dpi": 96,
+        "height": 1185,
+        "width": 878
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "هذا",
+                "confidence": 1.0,
+                "start_index": 0
+            },
+            {
+                "text": "الباب،",
+                "confidence": 1.0,
+                "start_index": 4
+            },
+            {
+                "text": "فقالوا",
+                "confidence": 1.0,
+                "start_index": 11
+            },
+            {
+                "text": "INV-48316",
+                "confidence": 1.0,
+                "start_index": 18
+            },
+            {
+                "text": "04/02/2026",
+                "confidence": 1.0,
+                "start_index": 28
+            },
+            {
+                "text": "فاتورة",
+                "confidence": 1.0,
+                "start_index": 39
+            },
+            {
+                "text": "إلى:",
+                "confidence": 1.0,
+                "start_index": 46
+            },
+            {
+                "text": "عَنْ",
+                "confidence": 1.0,
+                "start_index": 51
+            },
+            {
+                "text": "أَبِي",
+                "confidence": 1.0,
+                "start_index": 56
+            },
+            {
+                "text": "هُرَيْرَةَ",
+                "confidence": 1.0,
+                "start_index": 62
+            },
+            {
+                "text": "عَنِ",
+                "confidence": 1.0,
+                "start_index": 73
+            },
+            {
+                "text": "[tbl-0.html](tbl-0.html)",
+                "confidence": 1.0,
+                "start_index": 79
+            },
+            {
+                "text": "الإجمالي:",
+                "confidence": 1.0,
+                "start_index": 105
+            },
+            {
+                "text": "6,349.94",
+                "confidence": 1.0,
+                "start_index": 115
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 44,
+            "top_left_y": 44,
+            "bottom_right_x": 834,
+            "bottom_right_y": 78,
+            "content": "هذا الباب، فقالوا",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 1
+        },
+        {
+            "top_left_x": 776,
+            "top_left_y": 86,
+            "bottom_right_x": 834,
+            "bottom_right_y": 106,
+            "content": "INV-48316",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 2
+        },
+        {
+            "top_left_x": 44,
+            "top_left_y": 86,
+            "bottom_right_x": 113,
+            "bottom_right_y": 106,
+            "content": "04/02/2026",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 3
+        },
+        {
+            "top_left_x": 44,
+            "top_left_y": 128,
+            "bottom_right_x": 834,
+            "bottom_right_y": 150,
+            "content": "فاتورة إلى: عَنْ أَبِي هُرَيْرَةَ عَنِ",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 4
+        },
+        {
+            "top_left_x": 44,
+            "top_left_y": 164,
+            "bottom_right_x": 834,
+            "bottom_right_y": 379,
+            "content": "<table><tbody><tr><th>البيان</th><th>الكمية</th><th>السعر</th><th>المجموع</th></tr><tr><td>ثُمَّ نَزَلْنَا</td><td>11</td><td>295.16</td><td>3,246.76</td></tr><tr><td>عليه وسلم</td><td>2</td><td>130.41</td><td>260.82</td></tr><tr><td>تنضبط الصفات، ويكون الأجل محددًا،</td><td>9</td><td>193.29</td><td>1,739.61</td></tr><tr><td>لَا يُورِدُ</td><td>3</td><td>177.85</td><td>533.55</td></tr><tr><td>صلى الله عليه</td><td>2</td><td>284.60</td><td>569.20</td></tr></tbody></table>",
+            "type": "table",
+            "table_id": "tbl-0.html",
+            "confidence_scores": null,
+            "reading_index": 5
+        },
+        {
+            "top_left_x": 44,
+            "top_left_y": 393,
+            "bottom_right_x": 171,
+            "bottom_right_y": 418,
+            "content": "الإجمالي: 6,349.94",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 6
+        }
+    ],
+    "meta": {
+        "template": "invoice",
+        "hybrid": null
+    }
+}

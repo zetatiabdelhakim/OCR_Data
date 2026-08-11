@@ -1,80 +1,596 @@
 {
-    "markdown": "## ذَكَرَهُ بِيَمِينِهِ، وَأَنْ يَسْتَطِيبَ بِيَمِينِهِ. وهذا\n\n![image](img-0)\n\nشكل: الأعمال، كما",
-    "images": [
-        {
-            "id": "img-0",
-            "top_left_x": 40,
-            "top_left_y": 229,
-            "bottom_right_x": 393,
-            "bottom_right_y": 465,
-            "reading_index": 2
-        }
-    ],
+    "markdown": "ابنة ثمانية\nمراكش، في 07/12/2025\nحضرة السيد المدير المحترم،\nالموضوع: أَبُو بَكْرِ بْنُ أَبِي شَيْبَةَ، حَدَّثَنَا وَكِيعٌ عَنْ\nتحية طيبة وبعد،\n((لاعَدْوَى، وَلَاصَفَرَ، (١) أخرجه البخاري (٥٧٠٧). (٢) أخرجه أبو داود (٣٩٢٥)، والترمذي (١٨١٧)، وابن ماجه (٣٥٤٢). (٣) أخرجه ابن جرير في تهذيب الآثار (٨٢)، وابن أبي شيبه في المصنف (٢٤٥٤١). وَلَاهَامَةَ))، أي: لا عدوى على الوجه الذي كان يعتقده أهل الجاهلية، وهو أن المرض يُعدي بطبعه وذاته من غير مشيئة الله وقدره وإرادته. وأما حديث: ((لَا يُورِدُ مُمْرِضٌ عَلَى مُصِحٍّ) ) وحديث: ((فِرَّ مِنَ الْمَجْذُومِ فِرَارَكَ مِنَ الْأَسَد) ) (١) وحديث وفد ثقيف ((إِنَّا قَدْ بَايَعْنَاكَ فَارْجِعْ) )، وحديث الطاعون: ((فَإِذَا سَمِعْتُمْ بِهِ بِأَرْضٍ فَلَا\nوفي انتظار ردكم، تقبلوا أسمى عبارات التقدير.\nلِمَا جعل الله",
+    "images": [],
     "tables": [],
     "hyperlinks": [],
     "header": null,
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 1207,
-        "width": 805
+        "height": 1245,
+        "width": 808
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "##",
+                "text": "ابنة",
                 "confidence": 1.0,
                 "start_index": 0
             },
             {
-                "text": "ذَكَرَهُ",
+                "text": "ثمانية",
                 "confidence": 1.0,
-                "start_index": 3
+                "start_index": 5
             },
             {
-                "text": "بِيَمِينِهِ،",
+                "text": "مراكش،",
                 "confidence": 1.0,
                 "start_index": 12
             },
             {
-                "text": "وَأَنْ",
+                "text": "في",
                 "confidence": 1.0,
-                "start_index": 25
+                "start_index": 19
             },
             {
-                "text": "يَسْتَطِيبَ",
+                "text": "07/12/2025",
                 "confidence": 1.0,
-                "start_index": 32
+                "start_index": 22
             },
             {
-                "text": "بِيَمِينِهِ.",
+                "text": "حضرة",
+                "confidence": 1.0,
+                "start_index": 33
+            },
+            {
+                "text": "السيد",
+                "confidence": 1.0,
+                "start_index": 38
+            },
+            {
+                "text": "المدير",
                 "confidence": 1.0,
                 "start_index": 44
             },
             {
-                "text": "وهذا",
+                "text": "المحترم،",
                 "confidence": 1.0,
-                "start_index": 57
+                "start_index": 51
             },
             {
-                "text": "![image](img-0)",
+                "text": "الموضوع:",
                 "confidence": 1.0,
-                "start_index": 63
+                "start_index": 60
             },
             {
-                "text": "شكل:",
+                "text": "أَبُو",
                 "confidence": 1.0,
-                "start_index": 80
+                "start_index": 69
             },
             {
-                "text": "الأعمال،",
+                "text": "بَكْرِ",
                 "confidence": 1.0,
-                "start_index": 85
+                "start_index": 75
             },
             {
-                "text": "كما",
+                "text": "بْنُ",
                 "confidence": 1.0,
-                "start_index": 94
+                "start_index": 82
+            },
+            {
+                "text": "أَبِي",
+                "confidence": 1.0,
+                "start_index": 87
+            },
+            {
+                "text": "شَيْبَةَ،",
+                "confidence": 1.0,
+                "start_index": 93
+            },
+            {
+                "text": "حَدَّثَنَا",
+                "confidence": 1.0,
+                "start_index": 103
+            },
+            {
+                "text": "وَكِيعٌ",
+                "confidence": 1.0,
+                "start_index": 114
+            },
+            {
+                "text": "عَنْ",
+                "confidence": 1.0,
+                "start_index": 122
+            },
+            {
+                "text": "تحية",
+                "confidence": 1.0,
+                "start_index": 127
+            },
+            {
+                "text": "طيبة",
+                "confidence": 1.0,
+                "start_index": 132
+            },
+            {
+                "text": "وبعد،",
+                "confidence": 1.0,
+                "start_index": 137
+            },
+            {
+                "text": "((لاعَدْوَى،",
+                "confidence": 1.0,
+                "start_index": 143
+            },
+            {
+                "text": "وَلَاصَفَرَ،",
+                "confidence": 1.0,
+                "start_index": 156
+            },
+            {
+                "text": "(١)",
+                "confidence": 1.0,
+                "start_index": 169
+            },
+            {
+                "text": "أخرجه",
+                "confidence": 1.0,
+                "start_index": 173
+            },
+            {
+                "text": "البخاري",
+                "confidence": 1.0,
+                "start_index": 179
+            },
+            {
+                "text": "(٥٧٠٧).",
+                "confidence": 1.0,
+                "start_index": 187
+            },
+            {
+                "text": "(٢)",
+                "confidence": 1.0,
+                "start_index": 195
+            },
+            {
+                "text": "أخرجه",
+                "confidence": 1.0,
+                "start_index": 199
+            },
+            {
+                "text": "أبو",
+                "confidence": 1.0,
+                "start_index": 205
+            },
+            {
+                "text": "داود",
+                "confidence": 1.0,
+                "start_index": 209
+            },
+            {
+                "text": "(٣٩٢٥)،",
+                "confidence": 1.0,
+                "start_index": 214
+            },
+            {
+                "text": "والترمذي",
+                "confidence": 1.0,
+                "start_index": 222
+            },
+            {
+                "text": "(١٨١٧)،",
+                "confidence": 1.0,
+                "start_index": 231
+            },
+            {
+                "text": "وابن",
+                "confidence": 1.0,
+                "start_index": 239
+            },
+            {
+                "text": "ماجه",
+                "confidence": 1.0,
+                "start_index": 244
+            },
+            {
+                "text": "(٣٥٤٢).",
+                "confidence": 1.0,
+                "start_index": 249
+            },
+            {
+                "text": "(٣)",
+                "confidence": 1.0,
+                "start_index": 257
+            },
+            {
+                "text": "أخرجه",
+                "confidence": 1.0,
+                "start_index": 261
+            },
+            {
+                "text": "ابن",
+                "confidence": 1.0,
+                "start_index": 267
+            },
+            {
+                "text": "جرير",
+                "confidence": 1.0,
+                "start_index": 271
+            },
+            {
+                "text": "في",
+                "confidence": 1.0,
+                "start_index": 276
+            },
+            {
+                "text": "تهذيب",
+                "confidence": 1.0,
+                "start_index": 279
+            },
+            {
+                "text": "الآثار",
+                "confidence": 1.0,
+                "start_index": 285
+            },
+            {
+                "text": "(٨٢)،",
+                "confidence": 1.0,
+                "start_index": 292
+            },
+            {
+                "text": "وابن",
+                "confidence": 1.0,
+                "start_index": 298
+            },
+            {
+                "text": "أبي",
+                "confidence": 1.0,
+                "start_index": 303
+            },
+            {
+                "text": "شيبه",
+                "confidence": 1.0,
+                "start_index": 307
+            },
+            {
+                "text": "في",
+                "confidence": 1.0,
+                "start_index": 312
+            },
+            {
+                "text": "المصنف",
+                "confidence": 1.0,
+                "start_index": 315
+            },
+            {
+                "text": "(٢٤٥٤١).",
+                "confidence": 1.0,
+                "start_index": 322
+            },
+            {
+                "text": "وَلَاهَامَةَ))،",
+                "confidence": 1.0,
+                "start_index": 331
+            },
+            {
+                "text": "أي:",
+                "confidence": 1.0,
+                "start_index": 347
+            },
+            {
+                "text": "لا",
+                "confidence": 1.0,
+                "start_index": 351
+            },
+            {
+                "text": "عدوى",
+                "confidence": 1.0,
+                "start_index": 354
+            },
+            {
+                "text": "على",
+                "confidence": 1.0,
+                "start_index": 359
+            },
+            {
+                "text": "الوجه",
+                "confidence": 1.0,
+                "start_index": 363
+            },
+            {
+                "text": "الذي",
+                "confidence": 1.0,
+                "start_index": 369
+            },
+            {
+                "text": "كان",
+                "confidence": 1.0,
+                "start_index": 374
+            },
+            {
+                "text": "يعتقده",
+                "confidence": 1.0,
+                "start_index": 378
+            },
+            {
+                "text": "أهل",
+                "confidence": 1.0,
+                "start_index": 385
+            },
+            {
+                "text": "الجاهلية،",
+                "confidence": 1.0,
+                "start_index": 389
+            },
+            {
+                "text": "وهو",
+                "confidence": 1.0,
+                "start_index": 399
+            },
+            {
+                "text": "أن",
+                "confidence": 1.0,
+                "start_index": 403
+            },
+            {
+                "text": "المرض",
+                "confidence": 1.0,
+                "start_index": 406
+            },
+            {
+                "text": "يُعدي",
+                "confidence": 1.0,
+                "start_index": 412
+            },
+            {
+                "text": "بطبعه",
+                "confidence": 1.0,
+                "start_index": 418
+            },
+            {
+                "text": "وذاته",
+                "confidence": 1.0,
+                "start_index": 424
+            },
+            {
+                "text": "من",
+                "confidence": 1.0,
+                "start_index": 430
+            },
+            {
+                "text": "غير",
+                "confidence": 1.0,
+                "start_index": 433
+            },
+            {
+                "text": "مشيئة",
+                "confidence": 1.0,
+                "start_index": 437
+            },
+            {
+                "text": "الله",
+                "confidence": 1.0,
+                "start_index": 443
+            },
+            {
+                "text": "وقدره",
+                "confidence": 1.0,
+                "start_index": 448
+            },
+            {
+                "text": "وإرادته.",
+                "confidence": 1.0,
+                "start_index": 454
+            },
+            {
+                "text": "وأما",
+                "confidence": 1.0,
+                "start_index": 463
+            },
+            {
+                "text": "حديث:",
+                "confidence": 1.0,
+                "start_index": 468
+            },
+            {
+                "text": "((لَا",
+                "confidence": 1.0,
+                "start_index": 474
+            },
+            {
+                "text": "يُورِدُ",
+                "confidence": 1.0,
+                "start_index": 480
+            },
+            {
+                "text": "مُمْرِضٌ",
+                "confidence": 1.0,
+                "start_index": 488
+            },
+            {
+                "text": "عَلَى",
+                "confidence": 1.0,
+                "start_index": 497
+            },
+            {
+                "text": "مُصِحٍّ)",
+                "confidence": 1.0,
+                "start_index": 503
+            },
+            {
+                "text": ")",
+                "confidence": 1.0,
+                "start_index": 512
+            },
+            {
+                "text": "وحديث:",
+                "confidence": 1.0,
+                "start_index": 514
+            },
+            {
+                "text": "((فِرَّ",
+                "confidence": 1.0,
+                "start_index": 521
+            },
+            {
+                "text": "مِنَ",
+                "confidence": 1.0,
+                "start_index": 529
+            },
+            {
+                "text": "الْمَجْذُومِ",
+                "confidence": 1.0,
+                "start_index": 534
+            },
+            {
+                "text": "فِرَارَكَ",
+                "confidence": 1.0,
+                "start_index": 547
+            },
+            {
+                "text": "مِنَ",
+                "confidence": 1.0,
+                "start_index": 557
+            },
+            {
+                "text": "الْأَسَد)",
+                "confidence": 1.0,
+                "start_index": 562
+            },
+            {
+                "text": ")",
+                "confidence": 1.0,
+                "start_index": 572
+            },
+            {
+                "text": "(١)",
+                "confidence": 1.0,
+                "start_index": 574
+            },
+            {
+                "text": "وحديث",
+                "confidence": 1.0,
+                "start_index": 578
+            },
+            {
+                "text": "وفد",
+                "confidence": 1.0,
+                "start_index": 584
+            },
+            {
+                "text": "ثقيف",
+                "confidence": 1.0,
+                "start_index": 588
+            },
+            {
+                "text": "((إِنَّا",
+                "confidence": 1.0,
+                "start_index": 593
+            },
+            {
+                "text": "قَدْ",
+                "confidence": 1.0,
+                "start_index": 602
+            },
+            {
+                "text": "بَايَعْنَاكَ",
+                "confidence": 1.0,
+                "start_index": 607
+            },
+            {
+                "text": "فَارْجِعْ)",
+                "confidence": 1.0,
+                "start_index": 620
+            },
+            {
+                "text": ")،",
+                "confidence": 1.0,
+                "start_index": 631
+            },
+            {
+                "text": "وحديث",
+                "confidence": 1.0,
+                "start_index": 634
+            },
+            {
+                "text": "الطاعون:",
+                "confidence": 1.0,
+                "start_index": 640
+            },
+            {
+                "text": "((فَإِذَا",
+                "confidence": 1.0,
+                "start_index": 649
+            },
+            {
+                "text": "سَمِعْتُمْ",
+                "confidence": 1.0,
+                "start_index": 659
+            },
+            {
+                "text": "بِهِ",
+                "confidence": 1.0,
+                "start_index": 670
+            },
+            {
+                "text": "بِأَرْضٍ",
+                "confidence": 1.0,
+                "start_index": 675
+            },
+            {
+                "text": "فَلَا",
+                "confidence": 1.0,
+                "start_index": 684
+            },
+            {
+                "text": "وفي",
+                "confidence": 1.0,
+                "start_index": 690
+            },
+            {
+                "text": "انتظار",
+                "confidence": 1.0,
+                "start_index": 694
+            },
+            {
+                "text": "ردكم،",
+                "confidence": 1.0,
+                "start_index": 701
+            },
+            {
+                "text": "تقبلوا",
+                "confidence": 1.0,
+                "start_index": 707
+            },
+            {
+                "text": "أسمى",
+                "confidence": 1.0,
+                "start_index": 714
+            },
+            {
+                "text": "عبارات",
+                "confidence": 1.0,
+                "start_index": 719
+            },
+            {
+                "text": "التقدير.",
+                "confidence": 1.0,
+                "start_index": 726
+            },
+            {
+                "text": "لِمَا",
+                "confidence": 1.0,
+                "start_index": 735
+            },
+            {
+                "text": "جعل",
+                "confidence": 1.0,
+                "start_index": 741
+            },
+            {
+                "text": "الله",
+                "confidence": 1.0,
+                "start_index": 745
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -82,38 +598,88 @@
     },
     "blocks": [
         {
-            "top_left_x": 40,
-            "top_left_y": 40,
-            "bottom_right_x": 765,
-            "bottom_right_y": 209,
-            "content": "ذَكَرَهُ بِيَمِينِهِ، وَأَنْ يَسْتَطِيبَ بِيَمِينِهِ. وهذا",
-            "type": "title",
+            "top_left_x": 50,
+            "top_left_y": 50,
+            "bottom_right_x": 758,
+            "bottom_right_y": 86,
+            "content": "ابنة ثمانية",
+            "type": "text",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 40,
-            "top_left_y": 229,
-            "bottom_right_x": 393,
-            "bottom_right_y": 465,
-            "content": "![image](img-0)",
-            "type": "image",
+            "top_left_x": 50,
+            "top_left_y": 98,
+            "bottom_right_x": 758,
+            "bottom_right_y": 121,
+            "content": "مراكش، في 07/12/2025",
+            "type": "text",
             "confidence_scores": null,
             "reading_index": 2
         },
         {
-            "top_left_x": 40,
-            "top_left_y": 471,
-            "bottom_right_x": 393,
-            "bottom_right_y": 487,
-            "content": "شكل: الأعمال، كما",
+            "top_left_x": 50,
+            "top_left_y": 133,
+            "bottom_right_x": 758,
+            "bottom_right_y": 159,
+            "content": "حضرة السيد المدير المحترم،",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 3
+        },
+        {
+            "top_left_x": 50,
+            "top_left_y": 171,
+            "bottom_right_x": 758,
+            "bottom_right_y": 194,
+            "content": "الموضوع: أَبُو بَكْرِ بْنُ أَبِي شَيْبَةَ، حَدَّثَنَا وَكِيعٌ عَنْ",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 4
+        },
+        {
+            "top_left_x": 50,
+            "top_left_y": 206,
+            "bottom_right_x": 758,
+            "bottom_right_y": 231,
+            "content": "تحية طيبة وبعد،",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 5
+        },
+        {
+            "top_left_x": 50,
+            "top_left_y": 243,
+            "bottom_right_x": 758,
+            "bottom_right_y": 344,
+            "content": "((لاعَدْوَى، وَلَاصَفَرَ، (١) أخرجه البخاري (٥٧٠٧). (٢) أخرجه أبو داود (٣٩٢٥)، والترمذي (١٨١٧)، وابن ماجه (٣٥٤٢). (٣) أخرجه ابن جرير في تهذيب الآثار (٨٢)، وابن أبي شيبه في المصنف (٢٤٥٤١). وَلَاهَامَةَ))، أي: لا عدوى على الوجه الذي كان يعتقده أهل الجاهلية، وهو أن المرض يُعدي بطبعه وذاته من غير مشيئة الله وقدره وإرادته. وأما حديث: ((لَا يُورِدُ مُمْرِضٌ عَلَى مُصِحٍّ) ) وحديث: ((فِرَّ مِنَ الْمَجْذُومِ فِرَارَكَ مِنَ الْأَسَد) ) (١) وحديث وفد ثقيف ((إِنَّا قَدْ بَايَعْنَاكَ فَارْجِعْ) )، وحديث الطاعون: ((فَإِذَا سَمِعْتُمْ بِهِ بِأَرْضٍ فَلَا",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 6
+        },
+        {
+            "top_left_x": 50,
+            "top_left_y": 356,
+            "bottom_right_x": 758,
+            "bottom_right_y": 381,
+            "content": "وفي انتظار ردكم، تقبلوا أسمى عبارات التقدير.",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 7
+        },
+        {
+            "top_left_x": 50,
+            "top_left_y": 411,
+            "bottom_right_x": 758,
+            "bottom_right_y": 427,
+            "content": "لِمَا جعل الله",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 8
         }
     ],
     "meta": {
-        "template": "a4_report",
-        "hybrid": "chart"
+        "template": "letter",
+        "hybrid": null
     }
 }

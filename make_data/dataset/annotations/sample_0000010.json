@@ -1,81 +1,65 @@
 {
-    "markdown": "عَنِ النَّبِيِّ صَلَّى اللَّهُ\nINV-62355\n19/02/2024\nفاتورة إلى: عليه وسلم: ((إِنَّكُنَّ\nالإجمالي: 3,811.35",
-    "images": [],
+    "markdown": "\n![image](img-0)\n\nإِبْرَاهِيمَ، أَخْبَرَنَا\nالباب: بيان مشروعية صلاة العيد",
+    "images": [
+        {
+            "id": "img-0",
+            "top_left_x": 272,
+            "top_left_y": 14,
+            "bottom_right_x": 318,
+            "bottom_right_y": 60,
+            "reading_index": 1
+        }
+    ],
     "tables": [],
     "hyperlinks": [],
     "header": null,
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 1025,
-        "width": 883
+        "height": 221,
+        "width": 332
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "عَنِ",
+                "text": "![image](img-0)",
                 "confidence": 1.0,
-                "start_index": 0
+                "start_index": 1
             },
             {
-                "text": "النَّبِيِّ",
+                "text": "إِبْرَاهِيمَ،",
                 "confidence": 1.0,
-                "start_index": 5
+                "start_index": 18
             },
             {
-                "text": "صَلَّى",
+                "text": "أَخْبَرَنَا",
                 "confidence": 1.0,
-                "start_index": 16
+                "start_index": 32
             },
             {
-                "text": "اللَّهُ",
+                "text": "الباب:",
                 "confidence": 1.0,
-                "start_index": 23
+                "start_index": 44
             },
             {
-                "text": "INV-62355",
+                "text": "بيان",
                 "confidence": 1.0,
-                "start_index": 31
+                "start_index": 51
             },
             {
-                "text": "19/02/2024",
+                "text": "مشروعية",
                 "confidence": 1.0,
-                "start_index": 41
+                "start_index": 56
             },
             {
-                "text": "فاتورة",
-                "confidence": 1.0,
-                "start_index": 52
-            },
-            {
-                "text": "إلى:",
-                "confidence": 1.0,
-                "start_index": 59
-            },
-            {
-                "text": "عليه",
+                "text": "صلاة",
                 "confidence": 1.0,
                 "start_index": 64
             },
             {
-                "text": "وسلم:",
+                "text": "العيد",
                 "confidence": 1.0,
                 "start_index": 69
-            },
-            {
-                "text": "((إِنَّكُنَّ",
-                "confidence": 1.0,
-                "start_index": 75
-            },
-            {
-                "text": "الإجمالي:",
-                "confidence": 1.0,
-                "start_index": 88
-            },
-            {
-                "text": "3,811.35",
-                "confidence": 1.0,
-                "start_index": 98
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -83,58 +67,38 @@
     },
     "blocks": [
         {
-            "top_left_x": 44,
-            "top_left_y": 44,
-            "bottom_right_x": 839,
-            "bottom_right_y": 77,
-            "content": "عَنِ النَّبِيِّ صَلَّى اللَّهُ",
-            "type": "text",
+            "top_left_x": 272,
+            "top_left_y": 14,
+            "bottom_right_x": 318,
+            "bottom_right_y": 60,
+            "content": "![image](img-0)",
+            "type": "image",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 779,
-            "top_left_y": 85,
-            "bottom_right_x": 839,
-            "bottom_right_y": 133,
-            "content": "INV-62355",
+            "top_left_x": 14,
+            "top_left_y": 175,
+            "bottom_right_x": 318,
+            "bottom_right_y": 193,
+            "content": "إِبْرَاهِيمَ، أَخْبَرَنَا",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 2
         },
         {
-            "top_left_x": 44,
-            "top_left_y": 113,
-            "bottom_right_x": 109,
-            "bottom_right_y": 133,
-            "content": "19/02/2024",
+            "top_left_x": 14,
+            "top_left_y": 195,
+            "bottom_right_x": 318,
+            "bottom_right_y": 207,
+            "content": "الباب: بيان مشروعية صلاة العيد",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 3
-        },
-        {
-            "top_left_x": 44,
-            "top_left_y": 155,
-            "bottom_right_x": 839,
-            "bottom_right_y": 176,
-            "content": "فاتورة إلى: عليه وسلم: ((إِنَّكُنَّ",
-            "type": "text",
-            "confidence_scores": null,
-            "reading_index": 4
-        },
-        {
-            "top_left_x": 44,
-            "top_left_y": 184,
-            "bottom_right_x": 145,
-            "bottom_right_y": 208,
-            "content": "الإجمالي: 3,811.35",
-            "type": "text",
-            "confidence_scores": null,
-            "reading_index": 5
         }
     ],
     "meta": {
-        "template": "invoice",
+        "template": "business_card",
         "hybrid": null
     }
 }

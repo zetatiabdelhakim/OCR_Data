@@ -1,0 +1,417 @@
+{
+    "markdown": "صَوْتِي، فَقُلْتُ: يَا رَبَاحُ،\n04/10/2025 - 22:48\nكل\n197.77\nأَحَدِهِمْ، فَمَا\n11.23\nإِقْبَالُ\n77.50\nالله عنها، فالنبي\n5.00\nرضي الله عنه:\n11.35\nإلا\n66.00\nالمجموع\n368.85\n\n![image](img-0)\n\nشكل: يَوْمِ بَدْرٍ) )، أي:\n\n![image](img-1)\n\nشكرا لزيارتكم",
+    "images": [
+        {
+            "id": "img-0",
+            "top_left_x": 10,
+            "top_left_y": 197,
+            "bottom_right_x": 209,
+            "bottom_right_y": 331,
+            "reading_index": 17
+        },
+        {
+            "id": "img-1",
+            "top_left_x": 10,
+            "top_left_y": 374,
+            "bottom_right_x": 209,
+            "bottom_right_y": 404,
+            "reading_index": 19
+        }
+    ],
+    "tables": [],
+    "hyperlinks": [],
+    "header": null,
+    "footer": null,
+    "dimensions": {
+        "dpi": 96,
+        "height": 453,
+        "width": 219
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "صَوْتِي،",
+                "confidence": 1.0,
+                "start_index": 0
+            },
+            {
+                "text": "فَقُلْتُ:",
+                "confidence": 1.0,
+                "start_index": 9
+            },
+            {
+                "text": "يَا",
+                "confidence": 1.0,
+                "start_index": 19
+            },
+            {
+                "text": "رَبَاحُ،",
+                "confidence": 1.0,
+                "start_index": 23
+            },
+            {
+                "text": "04/10/2025",
+                "confidence": 1.0,
+                "start_index": 32
+            },
+            {
+                "text": "-",
+                "confidence": 1.0,
+                "start_index": 43
+            },
+            {
+                "text": "22:48",
+                "confidence": 1.0,
+                "start_index": 45
+            },
+            {
+                "text": "كل",
+                "confidence": 1.0,
+                "start_index": 51
+            },
+            {
+                "text": "197.77",
+                "confidence": 1.0,
+                "start_index": 54
+            },
+            {
+                "text": "أَحَدِهِمْ،",
+                "confidence": 1.0,
+                "start_index": 61
+            },
+            {
+                "text": "فَمَا",
+                "confidence": 1.0,
+                "start_index": 73
+            },
+            {
+                "text": "11.23",
+                "confidence": 1.0,
+                "start_index": 79
+            },
+            {
+                "text": "إِقْبَالُ",
+                "confidence": 1.0,
+                "start_index": 85
+            },
+            {
+                "text": "77.50",
+                "confidence": 1.0,
+                "start_index": 95
+            },
+            {
+                "text": "الله",
+                "confidence": 1.0,
+                "start_index": 101
+            },
+            {
+                "text": "عنها،",
+                "confidence": 1.0,
+                "start_index": 106
+            },
+            {
+                "text": "فالنبي",
+                "confidence": 1.0,
+                "start_index": 112
+            },
+            {
+                "text": "5.00",
+                "confidence": 1.0,
+                "start_index": 119
+            },
+            {
+                "text": "رضي",
+                "confidence": 1.0,
+                "start_index": 124
+            },
+            {
+                "text": "الله",
+                "confidence": 1.0,
+                "start_index": 128
+            },
+            {
+                "text": "عنه:",
+                "confidence": 1.0,
+                "start_index": 133
+            },
+            {
+                "text": "11.35",
+                "confidence": 1.0,
+                "start_index": 138
+            },
+            {
+                "text": "إلا",
+                "confidence": 1.0,
+                "start_index": 144
+            },
+            {
+                "text": "66.00",
+                "confidence": 1.0,
+                "start_index": 148
+            },
+            {
+                "text": "المجموع",
+                "confidence": 1.0,
+                "start_index": 154
+            },
+            {
+                "text": "368.85",
+                "confidence": 1.0,
+                "start_index": 162
+            },
+            {
+                "text": "![image](img-0)",
+                "confidence": 1.0,
+                "start_index": 170
+            },
+            {
+                "text": "شكل:",
+                "confidence": 1.0,
+                "start_index": 187
+            },
+            {
+                "text": "يَوْمِ",
+                "confidence": 1.0,
+                "start_index": 192
+            },
+            {
+                "text": "بَدْرٍ)",
+                "confidence": 1.0,
+                "start_index": 199
+            },
+            {
+                "text": ")،",
+                "confidence": 1.0,
+                "start_index": 207
+            },
+            {
+                "text": "أي:",
+                "confidence": 1.0,
+                "start_index": 210
+            },
+            {
+                "text": "![image](img-1)",
+                "confidence": 1.0,
+                "start_index": 215
+            },
+            {
+                "text": "شكرا",
+                "confidence": 1.0,
+                "start_index": 232
+            },
+            {
+                "text": "لزيارتكم",
+                "confidence": 1.0,
+                "start_index": 237
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 10,
+            "top_left_y": 14,
+            "bottom_right_x": 209,
+            "bottom_right_y": 35,
+            "content": "صَوْتِي، فَقُلْتُ: يَا رَبَاحُ،",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 1
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 35,
+            "bottom_right_x": 209,
+            "bottom_right_y": 50,
+            "content": "04/10/2025 - 22:48",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 2
+        },
+        {
+            "top_left_x": 196,
+            "top_left_y": 63,
+            "bottom_right_x": 209,
+            "bottom_right_y": 79,
+            "content": "كل",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 3
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 63,
+            "bottom_right_x": 50,
+            "bottom_right_y": 79,
+            "content": "197.77",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 4
+        },
+        {
+            "top_left_x": 143,
+            "top_left_y": 79,
+            "bottom_right_x": 209,
+            "bottom_right_y": 95,
+            "content": "أَحَدِهِمْ، فَمَا",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 5
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 79,
+            "bottom_right_x": 43,
+            "bottom_right_y": 95,
+            "content": "11.23",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 6
+        },
+        {
+            "top_left_x": 176,
+            "top_left_y": 95,
+            "bottom_right_x": 209,
+            "bottom_right_y": 111,
+            "content": "إِقْبَالُ",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 7
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 95,
+            "bottom_right_x": 43,
+            "bottom_right_y": 111,
+            "content": "77.50",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 8
+        },
+        {
+            "top_left_x": 117,
+            "top_left_y": 111,
+            "bottom_right_x": 209,
+            "bottom_right_y": 127,
+            "content": "الله عنها، فالنبي",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 9
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 111,
+            "bottom_right_x": 36,
+            "bottom_right_y": 127,
+            "content": "5.00",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 10
+        },
+        {
+            "top_left_x": 143,
+            "top_left_y": 127,
+            "bottom_right_x": 209,
+            "bottom_right_y": 143,
+            "content": "رضي الله عنه:",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 11
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 127,
+            "bottom_right_x": 43,
+            "bottom_right_y": 143,
+            "content": "11.35",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 12
+        },
+        {
+            "top_left_x": 196,
+            "top_left_y": 143,
+            "bottom_right_x": 209,
+            "bottom_right_y": 159,
+            "content": "إلا",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 13
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 143,
+            "bottom_right_x": 43,
+            "bottom_right_y": 159,
+            "content": "66.00",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 14
+        },
+        {
+            "top_left_x": 154,
+            "top_left_y": 172,
+            "bottom_right_x": 209,
+            "bottom_right_y": 191,
+            "content": "المجموع",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 15
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 172,
+            "bottom_right_x": 57,
+            "bottom_right_y": 191,
+            "content": "368.85",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 16
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 197,
+            "bottom_right_x": 209,
+            "bottom_right_y": 331,
+            "content": "![image](img-0)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 17
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 337,
+            "bottom_right_x": 209,
+            "bottom_right_y": 354,
+            "content": "شكل: يَوْمِ بَدْرٍ) )، أي:",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 18
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 374,
+            "bottom_right_x": 209,
+            "bottom_right_y": 404,
+            "content": "![image](img-1)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 19
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 404,
+            "bottom_right_x": 209,
+            "bottom_right_y": 419,
+            "content": "شكرا لزيارتكم",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 20
+        }
+    ],
+    "meta": {
+        "template": "receipt",
+        "hybrid": "figure"
+    }
+}

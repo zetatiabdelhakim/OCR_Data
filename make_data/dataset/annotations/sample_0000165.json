@@ -1,0 +1,359 @@
+{
+    "markdown": "سِتْرٌ فِيهِ\nINV-44454\n11/07/2023\nفاتورة إلى: اللَّهِ صلى\n\n[tbl-0.html](tbl-0.html)\n\nالإجمالي: 5,403.26",
+    "images": [],
+    "tables": [
+        {
+            "id": "tbl-0.html",
+            "content": "<table><tbody><tr><th>البيان</th><th>الكمية</th><th>السعر</th><th>المجموع</th></tr><tr><td>الحديث: دليل على أن النبي</td><td>2</td><td>225.15</td><td>450.30</td></tr><tr><td>الصَّلَاةَ أَيَّامَ مَحِيضِهَا؟ فَقَالَتْ عَائِشَةُ:</td><td>10</td><td>115.44</td><td>1,154.40</td></tr><tr><td>بأخواته، فتزوج</td><td>12</td><td>217.91</td><td>2,614.92</td></tr><tr><td>هذا، والمعنى: أن كل</td><td>4</td><td>221.46</td><td>885.84</td></tr><tr><td>والحاصل: أن</td><td>9</td><td>23.78</td><td>214.02</td></tr><tr><td>قَالَ ابْنُ</td><td>1</td><td>83.78</td><td>83.78</td></tr></tbody></table>",
+            "format": "html",
+            "word_confidence_scores": [
+                {
+                    "text": "البيان",
+                    "confidence": 1.0,
+                    "start_index": 22
+                },
+                {
+                    "text": "الكمية",
+                    "confidence": 1.0,
+                    "start_index": 37
+                },
+                {
+                    "text": "السعر",
+                    "confidence": 1.0,
+                    "start_index": 52
+                },
+                {
+                    "text": "المجموع",
+                    "confidence": 1.0,
+                    "start_index": 66
+                },
+                {
+                    "text": "الحديث:",
+                    "confidence": 1.0,
+                    "start_index": 91
+                },
+                {
+                    "text": " دليل",
+                    "confidence": 1.0,
+                    "start_index": 98
+                },
+                {
+                    "text": " على",
+                    "confidence": 1.0,
+                    "start_index": 103
+                },
+                {
+                    "text": " أن",
+                    "confidence": 1.0,
+                    "start_index": 107
+                },
+                {
+                    "text": " النبي",
+                    "confidence": 1.0,
+                    "start_index": 110
+                },
+                {
+                    "text": "2",
+                    "confidence": 1.0,
+                    "start_index": 125
+                },
+                {
+                    "text": "225.15",
+                    "confidence": 1.0,
+                    "start_index": 135
+                },
+                {
+                    "text": "450.30",
+                    "confidence": 1.0,
+                    "start_index": 150
+                },
+                {
+                    "text": "الصَّلَاةَ",
+                    "confidence": 1.0,
+                    "start_index": 174
+                },
+                {
+                    "text": " أَيَّامَ",
+                    "confidence": 1.0,
+                    "start_index": 184
+                },
+                {
+                    "text": " مَحِيضِهَا؟",
+                    "confidence": 1.0,
+                    "start_index": 193
+                },
+                {
+                    "text": " فَقَالَتْ",
+                    "confidence": 1.0,
+                    "start_index": 205
+                },
+                {
+                    "text": " عَائِشَةُ:",
+                    "confidence": 1.0,
+                    "start_index": 215
+                },
+                {
+                    "text": "10",
+                    "confidence": 1.0,
+                    "start_index": 235
+                },
+                {
+                    "text": "115.44",
+                    "confidence": 1.0,
+                    "start_index": 246
+                },
+                {
+                    "text": "1,154.40",
+                    "confidence": 1.0,
+                    "start_index": 261
+                },
+                {
+                    "text": "بأخواته،",
+                    "confidence": 1.0,
+                    "start_index": 287
+                },
+                {
+                    "text": " فتزوج",
+                    "confidence": 1.0,
+                    "start_index": 295
+                },
+                {
+                    "text": "12",
+                    "confidence": 1.0,
+                    "start_index": 310
+                },
+                {
+                    "text": "217.91",
+                    "confidence": 1.0,
+                    "start_index": 321
+                },
+                {
+                    "text": "2,614.92",
+                    "confidence": 1.0,
+                    "start_index": 336
+                },
+                {
+                    "text": "هذا،",
+                    "confidence": 1.0,
+                    "start_index": 362
+                },
+                {
+                    "text": " والمعنى:",
+                    "confidence": 1.0,
+                    "start_index": 366
+                },
+                {
+                    "text": " أن",
+                    "confidence": 1.0,
+                    "start_index": 375
+                },
+                {
+                    "text": " كل",
+                    "confidence": 1.0,
+                    "start_index": 378
+                },
+                {
+                    "text": "4",
+                    "confidence": 1.0,
+                    "start_index": 390
+                },
+                {
+                    "text": "221.46",
+                    "confidence": 1.0,
+                    "start_index": 400
+                },
+                {
+                    "text": "885.84",
+                    "confidence": 1.0,
+                    "start_index": 415
+                },
+                {
+                    "text": "والحاصل:",
+                    "confidence": 1.0,
+                    "start_index": 439
+                },
+                {
+                    "text": " أن",
+                    "confidence": 1.0,
+                    "start_index": 447
+                },
+                {
+                    "text": "9",
+                    "confidence": 1.0,
+                    "start_index": 459
+                },
+                {
+                    "text": "23.78",
+                    "confidence": 1.0,
+                    "start_index": 469
+                },
+                {
+                    "text": "214.02",
+                    "confidence": 1.0,
+                    "start_index": 483
+                },
+                {
+                    "text": "قَالَ",
+                    "confidence": 1.0,
+                    "start_index": 507
+                },
+                {
+                    "text": " ابْنُ",
+                    "confidence": 1.0,
+                    "start_index": 512
+                },
+                {
+                    "text": "1",
+                    "confidence": 1.0,
+                    "start_index": 527
+                },
+                {
+                    "text": "83.78",
+                    "confidence": 1.0,
+                    "start_index": 537
+                },
+                {
+                    "text": "83.78",
+                    "confidence": 1.0,
+                    "start_index": 551
+                }
+            ]
+        }
+    ],
+    "hyperlinks": [],
+    "header": null,
+    "footer": null,
+    "dimensions": {
+        "dpi": 96,
+        "height": 1047,
+        "width": 745
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "سِتْرٌ",
+                "confidence": 1.0,
+                "start_index": 0
+            },
+            {
+                "text": "فِيهِ",
+                "confidence": 1.0,
+                "start_index": 7
+            },
+            {
+                "text": "INV-44454",
+                "confidence": 1.0,
+                "start_index": 13
+            },
+            {
+                "text": "11/07/2023",
+                "confidence": 1.0,
+                "start_index": 23
+            },
+            {
+                "text": "فاتورة",
+                "confidence": 1.0,
+                "start_index": 34
+            },
+            {
+                "text": "إلى:",
+                "confidence": 1.0,
+                "start_index": 41
+            },
+            {
+                "text": "اللَّهِ",
+                "confidence": 1.0,
+                "start_index": 46
+            },
+            {
+                "text": "صلى",
+                "confidence": 1.0,
+                "start_index": 54
+            },
+            {
+                "text": "[tbl-0.html](tbl-0.html)",
+                "confidence": 1.0,
+                "start_index": 59
+            },
+            {
+                "text": "الإجمالي:",
+                "confidence": 1.0,
+                "start_index": 85
+            },
+            {
+                "text": "5,403.26",
+                "confidence": 1.0,
+                "start_index": 95
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 44,
+            "top_left_y": 44,
+            "bottom_right_x": 701,
+            "bottom_right_y": 78,
+            "content": "سِتْرٌ فِيهِ",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 1
+        },
+        {
+            "top_left_x": 640,
+            "top_left_y": 86,
+            "bottom_right_x": 701,
+            "bottom_right_y": 106,
+            "content": "INV-44454",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 2
+        },
+        {
+            "top_left_x": 44,
+            "top_left_y": 86,
+            "bottom_right_x": 105,
+            "bottom_right_y": 106,
+            "content": "11/07/2023",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 3
+        },
+        {
+            "top_left_x": 44,
+            "top_left_y": 128,
+            "bottom_right_x": 701,
+            "bottom_right_y": 150,
+            "content": "فاتورة إلى: اللَّهِ صلى",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 4
+        },
+        {
+            "top_left_x": 44,
+            "top_left_y": 164,
+            "bottom_right_x": 701,
+            "bottom_right_y": 392,
+            "content": "<table><tbody><tr><th>البيان</th><th>الكمية</th><th>السعر</th><th>المجموع</th></tr><tr><td>الحديث: دليل على أن النبي</td><td>2</td><td>225.15</td><td>450.30</td></tr><tr><td>الصَّلَاةَ أَيَّامَ مَحِيضِهَا؟ فَقَالَتْ عَائِشَةُ:</td><td>10</td><td>115.44</td><td>1,154.40</td></tr><tr><td>بأخواته، فتزوج</td><td>12</td><td>217.91</td><td>2,614.92</td></tr><tr><td>هذا، والمعنى: أن كل</td><td>4</td><td>221.46</td><td>885.84</td></tr><tr><td>والحاصل: أن</td><td>9</td><td>23.78</td><td>214.02</td></tr><tr><td>قَالَ ابْنُ</td><td>1</td><td>83.78</td><td>83.78</td></tr></tbody></table>",
+            "type": "table",
+            "table_id": "tbl-0.html",
+            "confidence_scores": null,
+            "reading_index": 5
+        },
+        {
+            "top_left_x": 44,
+            "top_left_y": 406,
+            "bottom_right_x": 172,
+            "bottom_right_y": 431,
+            "content": "الإجمالي: 5,403.26",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 6
+        }
+    ],
+    "meta": {
+        "template": "invoice",
+        "hybrid": null
+    }
+}

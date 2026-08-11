@@ -1,0 +1,90 @@
+{
+    "markdown": "صلى الله عليه وسلم نَحْوَ حَدِيثِ\nباب التمرين، كما",
+    "images": [],
+    "tables": [],
+    "hyperlinks": [],
+    "header": null,
+    "footer": null,
+    "dimensions": {
+        "dpi": 96,
+        "height": 1085,
+        "width": 769
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "صلى",
+                "confidence": 1.0,
+                "start_index": 0
+            },
+            {
+                "text": "الله",
+                "confidence": 1.0,
+                "start_index": 4
+            },
+            {
+                "text": "عليه",
+                "confidence": 1.0,
+                "start_index": 9
+            },
+            {
+                "text": "وسلم",
+                "confidence": 1.0,
+                "start_index": 14
+            },
+            {
+                "text": "نَحْوَ",
+                "confidence": 1.0,
+                "start_index": 19
+            },
+            {
+                "text": "حَدِيثِ",
+                "confidence": 1.0,
+                "start_index": 26
+            },
+            {
+                "text": "باب",
+                "confidence": 1.0,
+                "start_index": 34
+            },
+            {
+                "text": "التمرين،",
+                "confidence": 1.0,
+                "start_index": 38
+            },
+            {
+                "text": "كما",
+                "confidence": 1.0,
+                "start_index": 47
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 322,
+            "top_left_y": 539,
+            "bottom_right_x": 447,
+            "bottom_right_y": 555,
+            "content": "صلى الله عليه وسلم نَحْوَ حَدِيثِ",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 1
+        },
+        {
+            "top_left_x": 342,
+            "top_left_y": 1049,
+            "bottom_right_x": 427,
+            "bottom_right_y": 1067,
+            "content": "باب التمرين، كما",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 2
+        }
+    ],
+    "meta": {
+        "template": "book_cover",
+        "hybrid": null
+    }
+}

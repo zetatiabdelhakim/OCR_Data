@@ -1,0 +1,425 @@
+{
+    "markdown": "## برهان\nالسعودية، فهُدم وأُزيل، ثم بعد ذلك أعيد مرة أخرى، وهُدِم في زمن الأمير محمد بن سعود، والشيخ محمد بن عبد الوهاب رحمه الله،\n\\iint_{D} \\lambda^2 \\cdot \\alpha^2 \\, dx \\, dy\n## برهان\nالحرام، ومسجد النبي صلى الله عليه وسلم، والمسجد الأقصى. ولهذا لما\n\\prod_{x=1}^{n} (1 \\leq x_x) = 0\n\\sum_{n=0}^{N} \\frac{x^n}{n!} = e^{x} + \\frac{k}{\\sigma^2}\n\\prod_{j=1}^{n} (1 \\geq \\sigma_j) = 0",
+    "images": [],
+    "tables": [],
+    "hyperlinks": [],
+    "header": null,
+    "footer": null,
+    "dimensions": {
+        "dpi": 96,
+        "height": 573,
+        "width": 545
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "##",
+                "confidence": 1.0,
+                "start_index": 0
+            },
+            {
+                "text": "برهان",
+                "confidence": 1.0,
+                "start_index": 3
+            },
+            {
+                "text": "السعودية،",
+                "confidence": 1.0,
+                "start_index": 9
+            },
+            {
+                "text": "فهُدم",
+                "confidence": 1.0,
+                "start_index": 19
+            },
+            {
+                "text": "وأُزيل،",
+                "confidence": 1.0,
+                "start_index": 25
+            },
+            {
+                "text": "ثم",
+                "confidence": 1.0,
+                "start_index": 33
+            },
+            {
+                "text": "بعد",
+                "confidence": 1.0,
+                "start_index": 36
+            },
+            {
+                "text": "ذلك",
+                "confidence": 1.0,
+                "start_index": 40
+            },
+            {
+                "text": "أعيد",
+                "confidence": 1.0,
+                "start_index": 44
+            },
+            {
+                "text": "مرة",
+                "confidence": 1.0,
+                "start_index": 49
+            },
+            {
+                "text": "أخرى،",
+                "confidence": 1.0,
+                "start_index": 53
+            },
+            {
+                "text": "وهُدِم",
+                "confidence": 1.0,
+                "start_index": 59
+            },
+            {
+                "text": "في",
+                "confidence": 1.0,
+                "start_index": 66
+            },
+            {
+                "text": "زمن",
+                "confidence": 1.0,
+                "start_index": 69
+            },
+            {
+                "text": "الأمير",
+                "confidence": 1.0,
+                "start_index": 73
+            },
+            {
+                "text": "محمد",
+                "confidence": 1.0,
+                "start_index": 80
+            },
+            {
+                "text": "بن",
+                "confidence": 1.0,
+                "start_index": 85
+            },
+            {
+                "text": "سعود،",
+                "confidence": 1.0,
+                "start_index": 88
+            },
+            {
+                "text": "والشيخ",
+                "confidence": 1.0,
+                "start_index": 94
+            },
+            {
+                "text": "محمد",
+                "confidence": 1.0,
+                "start_index": 101
+            },
+            {
+                "text": "بن",
+                "confidence": 1.0,
+                "start_index": 106
+            },
+            {
+                "text": "عبد",
+                "confidence": 1.0,
+                "start_index": 109
+            },
+            {
+                "text": "الوهاب",
+                "confidence": 1.0,
+                "start_index": 113
+            },
+            {
+                "text": "رحمه",
+                "confidence": 1.0,
+                "start_index": 120
+            },
+            {
+                "text": "الله،",
+                "confidence": 1.0,
+                "start_index": 125
+            },
+            {
+                "text": "\\iint_{D}",
+                "confidence": 1.0,
+                "start_index": 131
+            },
+            {
+                "text": "\\lambda^2",
+                "confidence": 1.0,
+                "start_index": 141
+            },
+            {
+                "text": "\\cdot",
+                "confidence": 1.0,
+                "start_index": 151
+            },
+            {
+                "text": "\\alpha^2",
+                "confidence": 1.0,
+                "start_index": 157
+            },
+            {
+                "text": "\\,",
+                "confidence": 1.0,
+                "start_index": 166
+            },
+            {
+                "text": "dx",
+                "confidence": 1.0,
+                "start_index": 169
+            },
+            {
+                "text": "\\,",
+                "confidence": 1.0,
+                "start_index": 172
+            },
+            {
+                "text": "dy",
+                "confidence": 1.0,
+                "start_index": 175
+            },
+            {
+                "text": "##",
+                "confidence": 1.0,
+                "start_index": 178
+            },
+            {
+                "text": "برهان",
+                "confidence": 1.0,
+                "start_index": 181
+            },
+            {
+                "text": "الحرام،",
+                "confidence": 1.0,
+                "start_index": 187
+            },
+            {
+                "text": "ومسجد",
+                "confidence": 1.0,
+                "start_index": 195
+            },
+            {
+                "text": "النبي",
+                "confidence": 1.0,
+                "start_index": 201
+            },
+            {
+                "text": "صلى",
+                "confidence": 1.0,
+                "start_index": 207
+            },
+            {
+                "text": "الله",
+                "confidence": 1.0,
+                "start_index": 211
+            },
+            {
+                "text": "عليه",
+                "confidence": 1.0,
+                "start_index": 216
+            },
+            {
+                "text": "وسلم،",
+                "confidence": 1.0,
+                "start_index": 221
+            },
+            {
+                "text": "والمسجد",
+                "confidence": 1.0,
+                "start_index": 227
+            },
+            {
+                "text": "الأقصى.",
+                "confidence": 1.0,
+                "start_index": 235
+            },
+            {
+                "text": "ولهذا",
+                "confidence": 1.0,
+                "start_index": 243
+            },
+            {
+                "text": "لما",
+                "confidence": 1.0,
+                "start_index": 249
+            },
+            {
+                "text": "\\prod_{x=1}^{n}",
+                "confidence": 1.0,
+                "start_index": 253
+            },
+            {
+                "text": "(1",
+                "confidence": 1.0,
+                "start_index": 269
+            },
+            {
+                "text": "\\leq",
+                "confidence": 1.0,
+                "start_index": 272
+            },
+            {
+                "text": "x_x)",
+                "confidence": 1.0,
+                "start_index": 277
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 282
+            },
+            {
+                "text": "0",
+                "confidence": 1.0,
+                "start_index": 284
+            },
+            {
+                "text": "\\sum_{n=0}^{N}",
+                "confidence": 1.0,
+                "start_index": 286
+            },
+            {
+                "text": "\\frac{x^n}{n!}",
+                "confidence": 1.0,
+                "start_index": 301
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 316
+            },
+            {
+                "text": "e^{x}",
+                "confidence": 1.0,
+                "start_index": 318
+            },
+            {
+                "text": "+",
+                "confidence": 1.0,
+                "start_index": 324
+            },
+            {
+                "text": "\\frac{k}{\\sigma^2}",
+                "confidence": 1.0,
+                "start_index": 326
+            },
+            {
+                "text": "\\prod_{j=1}^{n}",
+                "confidence": 1.0,
+                "start_index": 345
+            },
+            {
+                "text": "(1",
+                "confidence": 1.0,
+                "start_index": 361
+            },
+            {
+                "text": "\\geq",
+                "confidence": 1.0,
+                "start_index": 364
+            },
+            {
+                "text": "\\sigma_j)",
+                "confidence": 1.0,
+                "start_index": 369
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 379
+            },
+            {
+                "text": "0",
+                "confidence": 1.0,
+                "start_index": 381
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 32,
+            "top_left_y": 32,
+            "bottom_right_x": 509,
+            "bottom_right_y": 59,
+            "content": "برهان",
+            "type": "title",
+            "confidence_scores": null,
+            "reading_index": 1
+        },
+        {
+            "top_left_x": 32,
+            "top_left_y": 64,
+            "bottom_right_x": 509,
+            "bottom_right_y": 109,
+            "content": "السعودية، فهُدم وأُزيل، ثم بعد ذلك أعيد مرة أخرى، وهُدِم في زمن الأمير محمد بن سعود، والشيخ محمد بن عبد الوهاب رحمه الله،",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 2
+        },
+        {
+            "top_left_x": 32,
+            "top_left_y": 115,
+            "bottom_right_x": 509,
+            "bottom_right_y": 169,
+            "content": "\\iint_{D} \\lambda^2 \\cdot \\alpha^2 \\, dx \\, dy",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 3
+        },
+        {
+            "top_left_x": 32,
+            "top_left_y": 213,
+            "bottom_right_x": 509,
+            "bottom_right_y": 239,
+            "content": "برهان",
+            "type": "title",
+            "confidence_scores": null,
+            "reading_index": 4
+        },
+        {
+            "top_left_x": 32,
+            "top_left_y": 244,
+            "bottom_right_x": 509,
+            "bottom_right_y": 267,
+            "content": "الحرام، ومسجد النبي صلى الله عليه وسلم، والمسجد الأقصى. ولهذا لما",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 5
+        },
+        {
+            "top_left_x": 32,
+            "top_left_y": 273,
+            "bottom_right_x": 509,
+            "bottom_right_y": 337,
+            "content": "\\prod_{x=1}^{n} (1 \\leq x_x) = 0",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 6
+        },
+        {
+            "top_left_x": 20,
+            "top_left_y": 369,
+            "bottom_right_x": 525,
+            "bottom_right_y": 448,
+            "content": "\\sum_{n=0}^{N} \\frac{x^n}{n!} = e^{x} + \\frac{k}{\\sigma^2}",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 7
+        },
+        {
+            "top_left_x": 20,
+            "top_left_y": 454,
+            "bottom_right_x": 525,
+            "bottom_right_y": 526,
+            "content": "\\prod_{j=1}^{n} (1 \\geq \\sigma_j) = 0",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 8
+        }
+    ],
+    "meta": {
+        "template": "math_proof",
+        "hybrid": null
+    }
+}

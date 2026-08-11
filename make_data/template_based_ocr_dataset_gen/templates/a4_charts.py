@@ -18,7 +18,7 @@ def generate(hybrid_html=""):
     for r in range(num_rows):
         col_layout = "1fr" if r == 0 else random.choice(["1fr", "1fr 1fr", "1fr 2fr", "2fr 1fr", "1fr 1fr 1fr"])
         cols = col_layout.split()
-        rows_html += f'<div style="display: grid; gap: 20px; grid-template-columns: {col_layout}; height: 100%;">'
+        rows_html += f'<div style="display: grid; gap: 20px; grid-template-columns: {col_layout}; height: 100%; min-height: 0; overflow: hidden;">'
         placed_hybrid = False
         for _ in range(len(cols)):
             if r == 0:
@@ -27,17 +27,19 @@ def generate(hybrid_html=""):
                 comp = hybrid.wrap_hybrid_block(hybrid_html)
                 placed_hybrid = True
             else:
-                comp_type = random.choices(["complex_para", "table", "chart"], weights=[0.45, 0.2, 0.35])[0]
+                comp_type = random.choices(["complex_para", "table", "chart"], weights=[0.5, 0.15, 0.35])[0]
                 if comp_type == "complex_para":
                     comp = components.gen_complex_paragraph()
                 elif comp_type == "table":
-                    comp = components.gen_table(rows=random.randint(5, 10), cols=random.randint(2, 4))
+                    comp = components.gen_table(rows=random.randint(4, 7), cols=random.randint(2, 4))
                 else:
                     comp = components.gen_chart()
-            rows_html += f'<div style="height: 100%; overflow: hidden; display: flex; flex-direction: column;">{comp}</div>'
+            rows_html += f'<div style="height: 100%; overflow: hidden; display: flex; flex-direction: column; min-height: 0;">{comp}</div>'
         rows_html += "</div>"
 
     body = (f'<div id="page-grid" style="width:100%; height:100%; padding:40px; box-sizing:border-box; '
             f'display: grid; gap: 20px; grid-template-rows: {" ".join(row_heights)};">{rows_html}</div>')
+
+    body = components.wrap_a4_page(body)
 
     return {"width": width, "height": height, "body": body, "auto_height": False}

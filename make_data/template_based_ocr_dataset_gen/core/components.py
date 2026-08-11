@@ -61,7 +61,7 @@ def gen_paragraph(text=None, columns=1, label="paragraph", font=None, color=None
         chunks = chunks[:columns]
 
     col_gap = random.randint(15, 30)
-    html = f'<div class="layout-node" data-label="multi-column" style="display: grid; grid-template-columns: repeat({columns}, 1fr); gap: {col_gap}px; height: 100%; width: 100%; box-sizing: border-box; padding-bottom: 20px;">'
+    html = f'<div class="layout-node" data-label="multi-column" style="display: grid; grid-template-columns: repeat({columns}, 1fr); gap: {col_gap}px; height: 100%; width: 100%; box-sizing: border-box; padding-bottom: 20px; min-height: 0; overflow: hidden;">'
     for chunk in chunks:
         html += f"""
         <div class="layout-node autofit-text" data-label="{label}"
@@ -98,10 +98,11 @@ def gen_complex_paragraph(compact=False):
     return f"""
     <div class="layout-node" data-label="paragraph"
          style="height: 100%; width: 100%; font-family: '{font}'; color: {color}; font-size:{font_size}px;
-                text-align: justify; overflow: hidden; line-height: 1.8; box-sizing: border-box; padding-bottom: 15px;">
-        <div class="layout-node autofit-text" data-label="heading" style="margin-top: 0; margin-bottom: 10px; font-size: {h_level_size}px; color: {random.choice(assets.COLORS)}; font-weight: bold;">{assets.get_real_arabic_text(2, 6)}</div>
+                text-align: justify; overflow: hidden; line-height: 1.8; box-sizing: border-box; padding-bottom: 15px;
+                display: flex; flex-direction: column; min-height: 0;">
+        <div class="layout-node autofit-text" data-label="heading" style="margin-top: 0; margin-bottom: 10px; font-size: {h_level_size}px; color: {random.choice(assets.COLORS)}; font-weight: bold; flex-shrink: 0; overflow: hidden;">{assets.get_real_arabic_text(2, 6)}</div>
         {img_html}
-        <span class="layout-node autofit-text" data-label="paragraph">{text}</span>
+        <div class="layout-node autofit-text" data-label="paragraph" style="flex: 1; min-height: 0; overflow: hidden;">{text}</div>
     </div>
     """
 
@@ -113,10 +114,10 @@ def gen_quote():
     return f"""
     <div class="layout-node" data-label="quote-block"
          style="height: 100%; width: 100%; display: flex; flex-direction: column; justify-content: center;
-                border-right: 4px solid {color}; padding: 10px 20px; box-sizing: border-box;">
+                border-right: 4px solid {color}; padding: 10px 20px; box-sizing: border-box; min-height: 0; overflow: hidden;">
         <div class="layout-node autofit-text" data-label="quote"
              style="font-family: '{font}'; font-style: italic; font-size: 20px; color: {color};
-                    line-height: 1.8; overflow: hidden;">
+                    line-height: 1.8; overflow: hidden; flex: 1; min-height: 0;">
             "{text}"
         </div>
     </div>
@@ -135,7 +136,7 @@ def gen_poetry():
     )
     return f"""
     <div class="layout-node" data-label="poetry-block" style="height: 100%; width: 100%; display: flex;
-         flex-direction: column; justify-content: center; box-sizing: border-box;">
+         flex-direction: column; justify-content: center; box-sizing: border-box; min-height: 0; overflow: hidden;">
         {lines_html}
     </div>
     """
@@ -157,9 +158,9 @@ def gen_table(rows=6, cols=3, compact=False):
         html += "<tr>"
         for c in range(cols):
             if r == 0:
-                html += f'<th class="layout-node autofit-text" data-label="table-cell" style="border: 2px solid {color}; background-color: #f8fafc; padding: {pad}; font-size: {fsize}px; overflow: hidden; box-sizing: border-box;">{assets.get_real_arabic_text(1, 3)}</th>'
+                html += f'<th class="autofit-text" data-label="table-cell" style="border: 2px solid {color}; background-color: #f8fafc; padding: {pad}; font-size: {fsize}px; overflow: hidden; box-sizing: border-box;">{assets.get_real_arabic_text(1, 3)}</th>'
             else:
-                html += f'<td class="layout-node autofit-text" data-label="table-cell" style="border: 1px solid {color}; padding: {pad}; font-size: {fsize}px; overflow: hidden; box-sizing: border-box;">{assets.get_real_arabic_text(2, 8)}</td>'
+                html += f'<td class="autofit-text" data-label="table-cell" style="border: 1px solid {color}; padding: {pad}; font-size: {fsize}px; overflow: hidden; box-sizing: border-box;">{assets.get_real_arabic_text(2, 8)}</td>'
         html += "</tr>"
     html += "</table></div>"
     return html
@@ -352,5 +353,43 @@ def gen_barcode(compact=False):
     <div class="layout-node" data-label="barcode" data-no-text="true"
          style="height:{height}px; width:100%; display:flex; flex-direction:row-reverse; align-items:stretch; overflow:hidden; box-sizing:border-box;">
         {bars}
+    </div>
+    """
+
+
+# ------------------------------------------------------------------
+# Headers and Footers (for A4 pages)
+# ------------------------------------------------------------------
+
+def gen_header():
+    font = random.choice(assets.FONTS)
+    text = assets.get_real_arabic_text(2, 6)
+    return f"""
+    <div class="layout-node" data-label="header" style="width: 100%; padding: 10px 40px; border-bottom: 2px solid #ccc; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; font-family: '{font}'; font-size: 14px; font-weight: bold; color: #333;">
+        <span class="layout-node autofit-text" data-label="header" style="overflow: hidden; max-width: 80%;">{text}</span>
+        <span class="layout-node autofit-text" data-label="header" style="overflow: hidden;">{random.randint(1, 100)}</span>
+    </div>
+    """
+
+def gen_footer():
+    font = random.choice(assets.FONTS)
+    return f"""
+    <div class="layout-node" data-label="footer" style="width: 100%; padding: 10px 40px; border-top: 1px solid #ccc; box-sizing: border-box; display: flex; justify-content: center; align-items: center; font-family: '{font}'; font-size: 12px; color: #666;">
+        <span class="layout-node autofit-text" data-label="footer" style="overflow: hidden;">الصفحة {random.randint(1, 99)}</span>
+    </div>
+    """
+
+def wrap_a4_page(inner_body_html):
+    """Wraps the inner content-flow of an A4 template in a flex column to safely inject headers and footers without breaking the flow."""
+    header_html = gen_header() if random.random() < 0.2 else ""
+    footer_html = gen_footer() if random.random() < 0.2 else ""
+    
+    return f"""
+    <div style="display:flex; flex-direction:column; width:100%; height:100%; background:white; overflow:hidden; box-sizing:border-box;">
+        {header_html}
+        <div style="flex:1; position:relative; overflow:hidden; box-sizing:border-box; min-height: 0;">
+            {inner_body_html}
+        </div>
+        {footer_html}
     </div>
     """

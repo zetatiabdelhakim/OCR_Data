@@ -1,0 +1,45 @@
+{
+    "markdown": "هَذَا اللَّبَنَ",
+    "images": [],
+    "tables": [],
+    "hyperlinks": [],
+    "header": null,
+    "footer": null,
+    "dimensions": {
+        "dpi": 96,
+        "height": 856,
+        "width": 520
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "هَذَا",
+                "confidence": 1.0,
+                "start_index": 0
+            },
+            {
+                "text": "اللَّبَنَ",
+                "confidence": 1.0,
+                "start_index": 6
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 238,
+            "top_left_y": 811,
+            "bottom_right_x": 282,
+            "bottom_right_y": 838,
+            "content": "هَذَا اللَّبَنَ",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 1
+        }
+    ],
+    "meta": {
+        "template": "book_cover",
+        "hybrid": null
+    }
+}

@@ -1,0 +1,389 @@
+{
+    "markdown": "الَّتِي رَأَيْتَ عَنْ يَسَارِكَ،\n18/11/2025 - 13:06\nهَدَّابُ\n142.00\nفهو\n19.00\nالإشارة\n43.00\nولا تُستحدث،\n178.28\nألوان من الله،\n135.00\nفي المطر\n126.31\nولا يسبهما\n34.00\nالمجموع\n677.59\n\n![image](img-0)\n\nشكرا لزيارتكم",
+    "images": [
+        {
+            "id": "img-0",
+            "top_left_x": 10,
+            "top_left_y": 217,
+            "bottom_right_x": 211,
+            "bottom_right_y": 247,
+            "reading_index": 19
+        }
+    ],
+    "tables": [],
+    "hyperlinks": [],
+    "header": null,
+    "footer": null,
+    "dimensions": {
+        "dpi": 96,
+        "height": 296,
+        "width": 221
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "الَّتِي",
+                "confidence": 1.0,
+                "start_index": 0
+            },
+            {
+                "text": "رَأَيْتَ",
+                "confidence": 1.0,
+                "start_index": 8
+            },
+            {
+                "text": "عَنْ",
+                "confidence": 1.0,
+                "start_index": 17
+            },
+            {
+                "text": "يَسَارِكَ،",
+                "confidence": 1.0,
+                "start_index": 22
+            },
+            {
+                "text": "18/11/2025",
+                "confidence": 1.0,
+                "start_index": 33
+            },
+            {
+                "text": "-",
+                "confidence": 1.0,
+                "start_index": 44
+            },
+            {
+                "text": "13:06",
+                "confidence": 1.0,
+                "start_index": 46
+            },
+            {
+                "text": "هَدَّابُ",
+                "confidence": 1.0,
+                "start_index": 52
+            },
+            {
+                "text": "142.00",
+                "confidence": 1.0,
+                "start_index": 61
+            },
+            {
+                "text": "فهو",
+                "confidence": 1.0,
+                "start_index": 68
+            },
+            {
+                "text": "19.00",
+                "confidence": 1.0,
+                "start_index": 72
+            },
+            {
+                "text": "الإشارة",
+                "confidence": 1.0,
+                "start_index": 78
+            },
+            {
+                "text": "43.00",
+                "confidence": 1.0,
+                "start_index": 86
+            },
+            {
+                "text": "ولا",
+                "confidence": 1.0,
+                "start_index": 92
+            },
+            {
+                "text": "تُستحدث،",
+                "confidence": 1.0,
+                "start_index": 96
+            },
+            {
+                "text": "178.28",
+                "confidence": 1.0,
+                "start_index": 105
+            },
+            {
+                "text": "ألوان",
+                "confidence": 1.0,
+                "start_index": 112
+            },
+            {
+                "text": "من",
+                "confidence": 1.0,
+                "start_index": 118
+            },
+            {
+                "text": "الله،",
+                "confidence": 1.0,
+                "start_index": 121
+            },
+            {
+                "text": "135.00",
+                "confidence": 1.0,
+                "start_index": 127
+            },
+            {
+                "text": "في",
+                "confidence": 1.0,
+                "start_index": 134
+            },
+            {
+                "text": "المطر",
+                "confidence": 1.0,
+                "start_index": 137
+            },
+            {
+                "text": "126.31",
+                "confidence": 1.0,
+                "start_index": 143
+            },
+            {
+                "text": "ولا",
+                "confidence": 1.0,
+                "start_index": 150
+            },
+            {
+                "text": "يسبهما",
+                "confidence": 1.0,
+                "start_index": 154
+            },
+            {
+                "text": "34.00",
+                "confidence": 1.0,
+                "start_index": 161
+            },
+            {
+                "text": "المجموع",
+                "confidence": 1.0,
+                "start_index": 167
+            },
+            {
+                "text": "677.59",
+                "confidence": 1.0,
+                "start_index": 175
+            },
+            {
+                "text": "![image](img-0)",
+                "confidence": 1.0,
+                "start_index": 183
+            },
+            {
+                "text": "شكرا",
+                "confidence": 1.0,
+                "start_index": 200
+            },
+            {
+                "text": "لزيارتكم",
+                "confidence": 1.0,
+                "start_index": 205
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 10,
+            "top_left_y": 14,
+            "bottom_right_x": 211,
+            "bottom_right_y": 35,
+            "content": "الَّتِي رَأَيْتَ عَنْ يَسَارِكَ،",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 1
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 35,
+            "bottom_right_x": 211,
+            "bottom_right_y": 50,
+            "content": "18/11/2025 - 13:06",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 2
+        },
+        {
+            "top_left_x": 185,
+            "top_left_y": 63,
+            "bottom_right_x": 211,
+            "bottom_right_y": 79,
+            "content": "هَدَّابُ",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 3
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 63,
+            "bottom_right_x": 50,
+            "bottom_right_y": 79,
+            "content": "142.00",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 4
+        },
+        {
+            "top_left_x": 191,
+            "top_left_y": 79,
+            "bottom_right_x": 211,
+            "bottom_right_y": 95,
+            "content": "فهو",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 5
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 79,
+            "bottom_right_x": 43,
+            "bottom_right_y": 95,
+            "content": "19.00",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 6
+        },
+        {
+            "top_left_x": 171,
+            "top_left_y": 95,
+            "bottom_right_x": 211,
+            "bottom_right_y": 111,
+            "content": "الإشارة",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 7
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 95,
+            "bottom_right_x": 43,
+            "bottom_right_y": 111,
+            "content": "43.00",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 8
+        },
+        {
+            "top_left_x": 145,
+            "top_left_y": 111,
+            "bottom_right_x": 211,
+            "bottom_right_y": 127,
+            "content": "ولا تُستحدث،",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 9
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 111,
+            "bottom_right_x": 50,
+            "bottom_right_y": 127,
+            "content": "178.28",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 10
+        },
+        {
+            "top_left_x": 138,
+            "top_left_y": 127,
+            "bottom_right_x": 211,
+            "bottom_right_y": 143,
+            "content": "ألوان من الله،",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 11
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 127,
+            "bottom_right_x": 50,
+            "bottom_right_y": 143,
+            "content": "135.00",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 12
+        },
+        {
+            "top_left_x": 158,
+            "top_left_y": 143,
+            "bottom_right_x": 211,
+            "bottom_right_y": 159,
+            "content": "في المطر",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 13
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 143,
+            "bottom_right_x": 50,
+            "bottom_right_y": 159,
+            "content": "126.31",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 14
+        },
+        {
+            "top_left_x": 152,
+            "top_left_y": 159,
+            "bottom_right_x": 211,
+            "bottom_right_y": 175,
+            "content": "ولا يسبهما",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 15
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 159,
+            "bottom_right_x": 43,
+            "bottom_right_y": 175,
+            "content": "34.00",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 16
+        },
+        {
+            "top_left_x": 156,
+            "top_left_y": 188,
+            "bottom_right_x": 211,
+            "bottom_right_y": 207,
+            "content": "المجموع",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 17
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 188,
+            "bottom_right_x": 57,
+            "bottom_right_y": 207,
+            "content": "677.59",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 18
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 217,
+            "bottom_right_x": 211,
+            "bottom_right_y": 247,
+            "content": "![image](img-0)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 19
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 247,
+            "bottom_right_x": 211,
+            "bottom_right_y": 262,
+            "content": "شكرا لزيارتكم",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 20
+        }
+    ],
+    "meta": {
+        "template": "receipt",
+        "hybrid": null
+    }
+}

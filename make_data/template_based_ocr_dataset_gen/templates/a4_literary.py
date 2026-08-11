@@ -18,7 +18,7 @@ def generate(hybrid_html=""):
     for r in range(num_rows):
         col_layout = "1fr" if r == 0 else random.choice(["1fr", "1fr 1fr"])
         cols = col_layout.split()
-        rows_html += f'<div style="display: grid; gap: 20px; grid-template-columns: {col_layout}; height: 100%;">'
+        rows_html += f'<div style="display: grid; gap: 20px; grid-template-columns: {col_layout}; height: 100%; min-height: 0; overflow: hidden;">'
         placed_hybrid = False
         for _ in range(len(cols)):
             if r == 0:
@@ -39,10 +39,12 @@ def generate(hybrid_html=""):
                     comp = components.gen_poetry()
                 else:
                     comp = components.gen_figure()
-            rows_html += f'<div style="height: 100%; overflow: hidden; display: flex; flex-direction: column;">{comp}</div>'
+            rows_html += f'<div style="height: 100%; overflow: hidden; display: flex; flex-direction: column; min-height: 0;">{comp}</div>'
         rows_html += "</div>"
 
     body = (f'<div id="page-grid" style="width:100%; height:100%; padding:40px; box-sizing:border-box; '
             f'display: grid; gap: 20px; grid-template-rows: {" ".join(row_heights)};">{rows_html}</div>')
+
+    body = components.wrap_a4_page(body)
 
     return {"width": width, "height": height, "body": body, "auto_height": False}

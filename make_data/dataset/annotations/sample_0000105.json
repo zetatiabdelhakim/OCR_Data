@@ -1,0 +1,134 @@
+{
+    "markdown": "\n![image](img-0)\n\nأَيُّوبَ، وَخَالِدٍ\nيعبدونهم معه، ويحبونهم\n0641730274\nقَالَ: قَالَ رَسُولُ",
+    "images": [
+        {
+            "id": "img-0",
+            "top_left_x": 14,
+            "top_left_y": 14,
+            "bottom_right_x": 60,
+            "bottom_right_y": 60,
+            "reading_index": 1
+        }
+    ],
+    "tables": [],
+    "hyperlinks": [],
+    "header": null,
+    "footer": null,
+    "dimensions": {
+        "dpi": 96,
+        "height": 204,
+        "width": 353
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "![image](img-0)",
+                "confidence": 1.0,
+                "start_index": 1
+            },
+            {
+                "text": "أَيُّوبَ،",
+                "confidence": 1.0,
+                "start_index": 18
+            },
+            {
+                "text": "وَخَالِدٍ",
+                "confidence": 1.0,
+                "start_index": 28
+            },
+            {
+                "text": "يعبدونهم",
+                "confidence": 1.0,
+                "start_index": 38
+            },
+            {
+                "text": "معه،",
+                "confidence": 1.0,
+                "start_index": 47
+            },
+            {
+                "text": "ويحبونهم",
+                "confidence": 1.0,
+                "start_index": 52
+            },
+            {
+                "text": "0641730274",
+                "confidence": 1.0,
+                "start_index": 61
+            },
+            {
+                "text": "قَالَ:",
+                "confidence": 1.0,
+                "start_index": 72
+            },
+            {
+                "text": "قَالَ",
+                "confidence": 1.0,
+                "start_index": 79
+            },
+            {
+                "text": "رَسُولُ",
+                "confidence": 1.0,
+                "start_index": 85
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 14,
+            "top_left_y": 14,
+            "bottom_right_x": 60,
+            "bottom_right_y": 60,
+            "content": "![image](img-0)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 1
+        },
+        {
+            "top_left_x": 14,
+            "top_left_y": 113,
+            "bottom_right_x": 339,
+            "bottom_right_y": 137,
+            "content": "أَيُّوبَ، وَخَالِدٍ",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 2
+        },
+        {
+            "top_left_x": 14,
+            "top_left_y": 139,
+            "bottom_right_x": 339,
+            "bottom_right_y": 156,
+            "content": "يعبدونهم معه، ويحبونهم",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 3
+        },
+        {
+            "top_left_x": 14,
+            "top_left_y": 162,
+            "bottom_right_x": 339,
+            "bottom_right_y": 176,
+            "content": "0641730274",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 4
+        },
+        {
+            "top_left_x": 14,
+            "top_left_y": 176,
+            "bottom_right_x": 339,
+            "bottom_right_y": 190,
+            "content": "قَالَ: قَالَ رَسُولُ",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 5
+        }
+    ],
+    "meta": {
+        "template": "business_card",
+        "hybrid": null
+    }
+}

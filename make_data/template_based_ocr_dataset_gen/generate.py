@@ -35,7 +35,7 @@ from templates import TEMPLATES
 # Config
 # ------------------------------------------------------------------
 
-NUM_SAMPLES = 20
+NUM_SAMPLES = 200
 HYBRID_PROBABILITY = 0.28
 
 
@@ -43,7 +43,11 @@ async def generate_one(index):
     template_name = random.choice(list(TEMPLATES))
     generate_fn = TEMPLATES[template_name]
 
-    hybrid_name, hybrid_html = maybe_pick_hybrid(probability=HYBRID_PROBABILITY)
+    # Do not inject large hybrid blocks into tiny cards, it ruins their layouts
+    if template_name in ["id_card", "business_card"]:
+        hybrid_name, hybrid_html = None, ""
+    else:
+        hybrid_name, hybrid_html = maybe_pick_hybrid(probability=HYBRID_PROBABILITY)
 
     spec = generate_fn(hybrid_html=hybrid_html)
     html_page = build_html_page(spec["width"], spec["height"], spec["body"], auto_height=spec["auto_height"])

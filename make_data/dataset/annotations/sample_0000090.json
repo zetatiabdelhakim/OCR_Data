@@ -1,0 +1,144 @@
+{
+    "markdown": "\n![image](img-0)\n\nمِنْ آيَاتِ اللَّهِ)\nكانت محرما له\n0790966041\nالظُّهْرَ، وَعَجَّلَ الْعَصْرَ، وَأَخَّرَ",
+    "images": [
+        {
+            "id": "img-0",
+            "top_left_x": 14,
+            "top_left_y": 14,
+            "bottom_right_x": 60,
+            "bottom_right_y": 60,
+            "reading_index": 1
+        }
+    ],
+    "tables": [],
+    "hyperlinks": [],
+    "header": null,
+    "footer": null,
+    "dimensions": {
+        "dpi": 96,
+        "height": 345,
+        "width": 223
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "![image](img-0)",
+                "confidence": 1.0,
+                "start_index": 1
+            },
+            {
+                "text": "مِنْ",
+                "confidence": 1.0,
+                "start_index": 18
+            },
+            {
+                "text": "آيَاتِ",
+                "confidence": 1.0,
+                "start_index": 23
+            },
+            {
+                "text": "اللَّهِ)",
+                "confidence": 1.0,
+                "start_index": 30
+            },
+            {
+                "text": "كانت",
+                "confidence": 1.0,
+                "start_index": 39
+            },
+            {
+                "text": "محرما",
+                "confidence": 1.0,
+                "start_index": 44
+            },
+            {
+                "text": "له",
+                "confidence": 1.0,
+                "start_index": 50
+            },
+            {
+                "text": "0790966041",
+                "confidence": 1.0,
+                "start_index": 53
+            },
+            {
+                "text": "الظُّهْرَ،",
+                "confidence": 1.0,
+                "start_index": 64
+            },
+            {
+                "text": "وَعَجَّلَ",
+                "confidence": 1.0,
+                "start_index": 75
+            },
+            {
+                "text": "الْعَصْرَ،",
+                "confidence": 1.0,
+                "start_index": 85
+            },
+            {
+                "text": "وَأَخَّرَ",
+                "confidence": 1.0,
+                "start_index": 96
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 14,
+            "top_left_y": 14,
+            "bottom_right_x": 60,
+            "bottom_right_y": 60,
+            "content": "![image](img-0)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 1
+        },
+        {
+            "top_left_x": 14,
+            "top_left_y": 267,
+            "bottom_right_x": 209,
+            "bottom_right_y": 286,
+            "content": "مِنْ آيَاتِ اللَّهِ)",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 2
+        },
+        {
+            "top_left_x": 14,
+            "top_left_y": 288,
+            "bottom_right_x": 209,
+            "bottom_right_y": 301,
+            "content": "كانت محرما له",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 3
+        },
+        {
+            "top_left_x": 14,
+            "top_left_y": 307,
+            "bottom_right_x": 209,
+            "bottom_right_y": 319,
+            "content": "0790966041",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 4
+        },
+        {
+            "top_left_x": 14,
+            "top_left_y": 319,
+            "bottom_right_x": 209,
+            "bottom_right_y": 331,
+            "content": "الظُّهْرَ، وَعَجَّلَ الْعَصْرَ، وَأَخَّرَ",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 5
+        }
+    ],
+    "meta": {
+        "template": "business_card",
+        "hybrid": null
+    }
+}

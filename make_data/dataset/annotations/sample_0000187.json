@@ -1,0 +1,340 @@
+{
+    "markdown": "t_{n+1} = t_n - \\alpha \\nabla f(t_n)\n\\nabla_{i} J(i) = \\frac{1}{m} X^T ( \\sigma(X i) - Y )\n## ملاحظة\nأن يتفل عن يساره ثلاثًا، ويقول: أعوذ بالله من الشيطان، حتى ولو كان في الصلاة، ولوكان مع جماعة يميل إلى يساره قليلًا وينفث نفثًا خفيفًا\n\\int_{2}^{M} \\log(\\beta) \\, d\\beta = \\theta^2 \\times C",
+    "images": [],
+    "tables": [],
+    "hyperlinks": [],
+    "header": null,
+    "footer": null,
+    "dimensions": {
+        "dpi": 96,
+        "height": 355,
+        "width": 483
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "t_{n+1}",
+                "confidence": 1.0,
+                "start_index": 0
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 8
+            },
+            {
+                "text": "t_n",
+                "confidence": 1.0,
+                "start_index": 10
+            },
+            {
+                "text": "-",
+                "confidence": 1.0,
+                "start_index": 14
+            },
+            {
+                "text": "\\alpha",
+                "confidence": 1.0,
+                "start_index": 16
+            },
+            {
+                "text": "\\nabla",
+                "confidence": 1.0,
+                "start_index": 23
+            },
+            {
+                "text": "f(t_n)",
+                "confidence": 1.0,
+                "start_index": 30
+            },
+            {
+                "text": "\\nabla_{i}",
+                "confidence": 1.0,
+                "start_index": 37
+            },
+            {
+                "text": "J(i)",
+                "confidence": 1.0,
+                "start_index": 48
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 53
+            },
+            {
+                "text": "\\frac{1}{m}",
+                "confidence": 1.0,
+                "start_index": 55
+            },
+            {
+                "text": "X^T",
+                "confidence": 1.0,
+                "start_index": 67
+            },
+            {
+                "text": "(",
+                "confidence": 1.0,
+                "start_index": 71
+            },
+            {
+                "text": "\\sigma(X",
+                "confidence": 1.0,
+                "start_index": 73
+            },
+            {
+                "text": "i)",
+                "confidence": 1.0,
+                "start_index": 82
+            },
+            {
+                "text": "-",
+                "confidence": 1.0,
+                "start_index": 85
+            },
+            {
+                "text": "Y",
+                "confidence": 1.0,
+                "start_index": 87
+            },
+            {
+                "text": ")",
+                "confidence": 1.0,
+                "start_index": 89
+            },
+            {
+                "text": "##",
+                "confidence": 1.0,
+                "start_index": 91
+            },
+            {
+                "text": "ملاحظة",
+                "confidence": 1.0,
+                "start_index": 94
+            },
+            {
+                "text": "أن",
+                "confidence": 1.0,
+                "start_index": 101
+            },
+            {
+                "text": "يتفل",
+                "confidence": 1.0,
+                "start_index": 104
+            },
+            {
+                "text": "عن",
+                "confidence": 1.0,
+                "start_index": 109
+            },
+            {
+                "text": "يساره",
+                "confidence": 1.0,
+                "start_index": 112
+            },
+            {
+                "text": "ثلاثًا،",
+                "confidence": 1.0,
+                "start_index": 118
+            },
+            {
+                "text": "ويقول:",
+                "confidence": 1.0,
+                "start_index": 126
+            },
+            {
+                "text": "أعوذ",
+                "confidence": 1.0,
+                "start_index": 133
+            },
+            {
+                "text": "بالله",
+                "confidence": 1.0,
+                "start_index": 138
+            },
+            {
+                "text": "من",
+                "confidence": 1.0,
+                "start_index": 144
+            },
+            {
+                "text": "الشيطان،",
+                "confidence": 1.0,
+                "start_index": 147
+            },
+            {
+                "text": "حتى",
+                "confidence": 1.0,
+                "start_index": 156
+            },
+            {
+                "text": "ولو",
+                "confidence": 1.0,
+                "start_index": 160
+            },
+            {
+                "text": "كان",
+                "confidence": 1.0,
+                "start_index": 164
+            },
+            {
+                "text": "في",
+                "confidence": 1.0,
+                "start_index": 168
+            },
+            {
+                "text": "الصلاة،",
+                "confidence": 1.0,
+                "start_index": 171
+            },
+            {
+                "text": "ولوكان",
+                "confidence": 1.0,
+                "start_index": 179
+            },
+            {
+                "text": "مع",
+                "confidence": 1.0,
+                "start_index": 186
+            },
+            {
+                "text": "جماعة",
+                "confidence": 1.0,
+                "start_index": 189
+            },
+            {
+                "text": "يميل",
+                "confidence": 1.0,
+                "start_index": 195
+            },
+            {
+                "text": "إلى",
+                "confidence": 1.0,
+                "start_index": 200
+            },
+            {
+                "text": "يساره",
+                "confidence": 1.0,
+                "start_index": 204
+            },
+            {
+                "text": "قليلًا",
+                "confidence": 1.0,
+                "start_index": 210
+            },
+            {
+                "text": "وينفث",
+                "confidence": 1.0,
+                "start_index": 217
+            },
+            {
+                "text": "نفثًا",
+                "confidence": 1.0,
+                "start_index": 223
+            },
+            {
+                "text": "خفيفًا",
+                "confidence": 1.0,
+                "start_index": 229
+            },
+            {
+                "text": "\\int_{2}^{M}",
+                "confidence": 1.0,
+                "start_index": 236
+            },
+            {
+                "text": "\\log(\\beta)",
+                "confidence": 1.0,
+                "start_index": 249
+            },
+            {
+                "text": "\\,",
+                "confidence": 1.0,
+                "start_index": 261
+            },
+            {
+                "text": "d\\beta",
+                "confidence": 1.0,
+                "start_index": 264
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 271
+            },
+            {
+                "text": "\\theta^2",
+                "confidence": 1.0,
+                "start_index": 273
+            },
+            {
+                "text": "\\times",
+                "confidence": 1.0,
+                "start_index": 282
+            },
+            {
+                "text": "C",
+                "confidence": 1.0,
+                "start_index": 289
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 20,
+            "top_left_y": 26,
+            "bottom_right_x": 463,
+            "bottom_right_y": 69,
+            "content": "t_{n+1} = t_n - \\alpha \\nabla f(t_n)",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 1
+        },
+        {
+            "top_left_x": 20,
+            "top_left_y": 75,
+            "bottom_right_x": 463,
+            "bottom_right_y": 125,
+            "content": "\\nabla_{i} J(i) = \\frac{1}{m} X^T ( \\sigma(X i) - Y )",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 2
+        },
+        {
+            "top_left_x": 32,
+            "top_left_y": 143,
+            "bottom_right_x": 447,
+            "bottom_right_y": 168,
+            "content": "ملاحظة",
+            "type": "title",
+            "confidence_scores": null,
+            "reading_index": 3
+        },
+        {
+            "top_left_x": 32,
+            "top_left_y": 173,
+            "bottom_right_x": 447,
+            "bottom_right_y": 218,
+            "content": "أن يتفل عن يساره ثلاثًا، ويقول: أعوذ بالله من الشيطان، حتى ولو كان في الصلاة، ولوكان مع جماعة يميل إلى يساره قليلًا وينفث نفثًا خفيفًا",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 4
+        },
+        {
+            "top_left_x": 32,
+            "top_left_y": 224,
+            "bottom_right_x": 447,
+            "bottom_right_y": 282,
+            "content": "\\int_{2}^{M} \\log(\\beta) \\, d\\beta = \\theta^2 \\times C",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 5
+        }
+    ],
+    "meta": {
+        "template": "math_proof",
+        "hybrid": null
+    }
+}
