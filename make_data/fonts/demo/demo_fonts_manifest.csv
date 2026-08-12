@@ -1,0 +1,7 @@
+"font_id","font_name","file_path","category","era_style","weight","has_tashkeel_diacritics","complexity_notes"
+"D001","Amiri-Regular","./Amiri-Regular.ttf","Naskh","Manuscript","Regular",True,"Classic Naskh revival, strong diacritic support."
+"D002","AmiriQuran-Regular","./AmiriQuran-Regular.ttf","Naskh","Calligraphic","Regular",True,"Naskh variant tuned for full tashkeel rendering."
+"D003","ReemKufi-Regular","./ReemKufi-Regular.ttf","Kufic","Modern Geometric","Regular",False,"Simplified modern Kufic-inspired display font."
+"D004","Lateef-Regular","./Lateef-Regular.ttf","Naskh","Manuscript","Regular",True,"Traditional manuscript-style Naskh, SIL font."
+"D005","ArefRuqaa-Regular","./ArefRuqaa-Regular.ttf","Ruq'ah","Calligraphic","Regular",False,"Ruq'ah-inspired calligraphic display font."
+"D006","Jomhuria-Regular","./Jomhuria-Regular.ttf","Modern Display","Modern Geometric","Regular",False,"Bold modern Arabic display font, for contrast in the demo set."

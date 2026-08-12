@@ -7,6 +7,7 @@ KaTeX auto-scaling, overlap resolution, and precision bounding-box extraction.
 
 import json
 from playwright.async_api import async_playwright
+from core import assets
 
 FONT_IMPORT_URL = (
     "https://fonts.googleapis.com/css2?"
@@ -20,6 +21,8 @@ FONT_IMPORT_URL = (
 
 def build_html_page(width, height, body_html, auto_height=False):
     """Wrap template HTML in a structured document with layout isolation rules."""
+    used_fonts_css = "".join([assets.FONT_FACE_DICT.get(f, "") for f in assets.FONTS if f in body_html])
+
     height_css = f"min-height: {height}px;" if auto_height else f"height: {height}px;"
     overflow_css = "overflow: visible;" if auto_height else "overflow: hidden;"
 
@@ -32,6 +35,7 @@ def build_html_page(width, height, body_html, auto_height=False):
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <style>
 @import url('{FONT_IMPORT_URL}');
+{used_fonts_css}
 
 * {{ 
     box-sizing: border-box; 

@@ -9,6 +9,7 @@ import os
 import random
 import base64
 import mimetypes
+import pandas as pd
 
 # ------------------------------------------------------------------
 # Paths (edit these to match your local setup)
@@ -20,24 +21,13 @@ IMAGE_FOLDER_PATH = "../nature_images"
 DATASET_IMAGES_PATH = "../dataset/images"
 DATASET_ANNOTATIONS_PATH = "../dataset/annotations"
 
+FONTS_FOLDER_PATH = "./../fonts"
+
 CORPUS_WORDS = []
 IMAGE_PATHS = []
-
-# ------------------------------------------------------------------
-# Fonts & colors (same pool used across all 5 original scripts)
-# ------------------------------------------------------------------
-
-FONTS = [
-    'Amiri', 'Cairo', 'Tajawal', 'Almarai', 'Aref Ruqaa', 'Changa',
-    'Noto Naskh Arabic', 'Noto Kufi Arabic', 'IBM Plex Sans Arabic',
-    'Alexandria', 'El Messiri', 'Markazi Text', 'Lateef', 'Reem Kufi',
-    'Scheherazade New', 'Mada', 'Mirza', 'Harmattan', 'Baloo Bhaijaan 2',
-    'Readex Pro', 'Rakkas', 'Katibeh', 'Lalezar', 'Vazirmatn', 'Rubik Arabic', 'Noto Sans Arabic'
-]
-
-# Fonts that read as more "display / branding" faces - handy for logos,
-# book titles, card names, poster titles etc.
-DISPLAY_FONTS = ['Rakkas', 'Lalezar', 'Katibeh', 'Reem Kufi', 'Changa', 'El Messiri', 'Aref Ruqaa']
+FONTS = []
+DISPLAY_FONTS = []
+FONT_FACE_DICT = {}
 
 COLORS = [
     "#000000", "#111111", "#1f1f1f", "#2d2d2d", "#404040", "#555555", "#666666",
@@ -63,7 +53,7 @@ RECEIPT_HEADER_WORDS_MIN, RECEIPT_HEADER_WORDS_MAX = 2, 4
 # ------------------------------------------------------------------
 
 def load_assets():
-    global CORPUS_WORDS, IMAGE_PATHS
+    global CORPUS_WORDS, IMAGE_PATHS, FONTS, DISPLAY_FONTS, FONT_FACE_DICT
     if os.path.exists(TEXT_FILE_PATH):
         print(f"Loading text from {TEXT_FILE_PATH}...")
         with open(TEXT_FILE_PATH, 'r', encoding='utf-8') as f:
@@ -80,6 +70,37 @@ def load_assets():
         ]
     else:
         raise FileNotFoundError(f"{IMAGE_FOLDER_PATH} not found.")
+
+    if os.path.exists(FONTS_FOLDER_PATH):
+        print(f'Loading fonts from {FONTS_FOLDER_PATH}...')
+        file_path = f"{FONTS_FOLDER_PATH}/fonts_manifest_all_with_images.xlsx"
+        df = pd.read_excel(file_path)
+        valid_fonts = df[df["blacklisted"] == False]
+        if valid_fonts.empty:
+            raise ValueError("Aucune police valide trouvée.")
+
+        for i, valid_font in enumerate(valid_fonts['file_path'].tolist()):
+            font_path = valid_font.replace("./fonts", FONTS_FOLDER_PATH, 1)
+            if not os.path.exists(font_path):
+                continue
+                
+            font_name = f"CustomFont_{i}"
+            FONTS.append(font_name)
+            
+            mime_type, _ = mimetypes.guess_type(font_path)
+            if not mime_type:
+                mime_type = "font/ttf"
+                
+            with open(font_path, "rb") as font_file:
+                encoded_font = base64.b64encode(font_file.read()).decode('utf-8')
+                
+            FONT_FACE_DICT[font_name] = f"@font-face {{ font-family: '{font_name}'; src: url('data:{mime_type};base64,{encoded_font}'); }}\n"
+
+        DISPLAY_FONTS = FONTS
+    else:
+        raise FileNotFoundError(f"{FONTS_FOLDER_PATH} not found.")
+
+
 
 
 def get_real_arabic_text(min_words=30, max_words=300):
