@@ -1,748 +1,76 @@
 {
-    "markdown": ") قَالَ:\n## أَبُو كُرَيْبٍ مُحَمَّدُ بْنُ الْعَلَاءِ، حَدَّثَنَا\n\n![image](img-0)\n\nشكل: بْنِ حِمَارٍ أَنَّ\n## تيمية (٣/ ٣٥٥). كِتَابُ الزُّهْدِ\n\n![image](img-1)\n\nشكل: وَإِنَّ فَاطِمَةَ\nفيها أحدًا من خلقه، فالغيرة والمحبة والغضب والسخط والرضا والعَجب كل هذه من الصفات الفعلية التي تليق بجلاله تعالى. وليست الغيرة تحريم الفواحش كما قال النووي (١) ، وإنما الغيرة وصف يليق بالله، ومن آثاره: تحريم الفواحش؛ ولهذا قال النبي صلى الله عليه وسلم: ((مِنْ أَجْلِ ذَلِكَ حَرَّمَ الْفَوَاحِشَ) ). وكذلك أول الأشاعرة الغضب بالانتقام، والانتقام إنما هو أثر من آثار الغضب، والغضب وصف يليق بالله، وكذلك تأويلهم الرضا بالثواب، والرضا وصف يليق بالله، ومن آثاره: ثواب المؤمنين. وقوله صلى الله عليه وسلم: ((وَلَيْسَ أَحَدٌ أَحَبَّ إِلَيْهِ الْعُذْرُ مِنَ اللَّهِ) ): يعني: أن الله سبحانه وتعالى قطع العذر؛ ولهذا أرسل الرسل مبشرين ومنذرين؛ لئلَّا يكون للناس على الله حجة بعد الرسل. قال النووي: ((قال القاضي: يحتمل أن المراد: اعتذار",
-    "images": [
-        {
-            "id": "img-0",
-            "top_left_x": 293,
-            "top_left_y": 264,
-            "bottom_right_x": 758,
-            "bottom_right_y": 576,
-            "reading_index": 3
-        },
-        {
-            "id": "img-1",
-            "top_left_x": 185,
-            "top_left_y": 346,
-            "bottom_right_x": 268,
-            "bottom_right_y": 402,
-            "reading_index": 6
-        }
-    ],
+    "markdown": "عَمْرٌو النَّاقِدُ، وَإِسْحَاقُ بْنُ إِبْرَاهِيمَ، وَابْنُ أَبِي عُمَرَ، كُلُّهُمْ عَنْ\nالله عليه",
+    "images": [],
     "tables": [],
     "hyperlinks": [],
-    "header": ") قَالَ:",
+    "header": null,
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 1111,
-        "width": 798
+        "height": 1057,
+        "width": 708
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": ")",
+                "text": "عَمْرٌو",
                 "confidence": 1.0,
                 "start_index": 0
             },
             {
-                "text": "قَالَ:",
+                "text": "النَّاقِدُ،",
                 "confidence": 1.0,
-                "start_index": 2
+                "start_index": 8
             },
             {
-                "text": "##",
+                "text": "وَإِسْحَاقُ",
                 "confidence": 1.0,
-                "start_index": 9
-            },
-            {
-                "text": "أَبُو",
-                "confidence": 1.0,
-                "start_index": 12
-            },
-            {
-                "text": "كُرَيْبٍ",
-                "confidence": 1.0,
-                "start_index": 18
-            },
-            {
-                "text": "مُحَمَّدُ",
-                "confidence": 1.0,
-                "start_index": 27
+                "start_index": 20
             },
             {
                 "text": "بْنُ",
                 "confidence": 1.0,
+                "start_index": 32
+            },
+            {
+                "text": "إِبْرَاهِيمَ،",
+                "confidence": 1.0,
                 "start_index": 37
             },
             {
-                "text": "الْعَلَاءِ،",
+                "text": "وَابْنُ",
                 "confidence": 1.0,
-                "start_index": 42
+                "start_index": 51
             },
             {
-                "text": "حَدَّثَنَا",
+                "text": "أَبِي",
                 "confidence": 1.0,
-                "start_index": 54
+                "start_index": 59
             },
             {
-                "text": "![image](img-0)",
+                "text": "عُمَرَ،",
                 "confidence": 1.0,
-                "start_index": 66
+                "start_index": 65
             },
             {
-                "text": "شكل:",
+                "text": "كُلُّهُمْ",
+                "confidence": 1.0,
+                "start_index": 73
+            },
+            {
+                "text": "عَنْ",
                 "confidence": 1.0,
                 "start_index": 83
             },
             {
-                "text": "بْنِ",
+                "text": "الله",
                 "confidence": 1.0,
                 "start_index": 88
             },
             {
-                "text": "حِمَارٍ",
+                "text": "عليه",
                 "confidence": 1.0,
                 "start_index": 93
-            },
-            {
-                "text": "أَنَّ",
-                "confidence": 1.0,
-                "start_index": 101
-            },
-            {
-                "text": "##",
-                "confidence": 1.0,
-                "start_index": 107
-            },
-            {
-                "text": "تيمية",
-                "confidence": 1.0,
-                "start_index": 110
-            },
-            {
-                "text": "(٣/",
-                "confidence": 1.0,
-                "start_index": 116
-            },
-            {
-                "text": "٣٥٥).",
-                "confidence": 1.0,
-                "start_index": 120
-            },
-            {
-                "text": "كِتَابُ",
-                "confidence": 1.0,
-                "start_index": 126
-            },
-            {
-                "text": "الزُّهْدِ",
-                "confidence": 1.0,
-                "start_index": 134
-            },
-            {
-                "text": "![image](img-1)",
-                "confidence": 1.0,
-                "start_index": 145
-            },
-            {
-                "text": "شكل:",
-                "confidence": 1.0,
-                "start_index": 162
-            },
-            {
-                "text": "وَإِنَّ",
-                "confidence": 1.0,
-                "start_index": 167
-            },
-            {
-                "text": "فَاطِمَةَ",
-                "confidence": 1.0,
-                "start_index": 175
-            },
-            {
-                "text": "فيها",
-                "confidence": 1.0,
-                "start_index": 185
-            },
-            {
-                "text": "أحدًا",
-                "confidence": 1.0,
-                "start_index": 190
-            },
-            {
-                "text": "من",
-                "confidence": 1.0,
-                "start_index": 196
-            },
-            {
-                "text": "خلقه،",
-                "confidence": 1.0,
-                "start_index": 199
-            },
-            {
-                "text": "فالغيرة",
-                "confidence": 1.0,
-                "start_index": 205
-            },
-            {
-                "text": "والمحبة",
-                "confidence": 1.0,
-                "start_index": 213
-            },
-            {
-                "text": "والغضب",
-                "confidence": 1.0,
-                "start_index": 221
-            },
-            {
-                "text": "والسخط",
-                "confidence": 1.0,
-                "start_index": 228
-            },
-            {
-                "text": "والرضا",
-                "confidence": 1.0,
-                "start_index": 235
-            },
-            {
-                "text": "والعَجب",
-                "confidence": 1.0,
-                "start_index": 242
-            },
-            {
-                "text": "كل",
-                "confidence": 1.0,
-                "start_index": 250
-            },
-            {
-                "text": "هذه",
-                "confidence": 1.0,
-                "start_index": 253
-            },
-            {
-                "text": "من",
-                "confidence": 1.0,
-                "start_index": 257
-            },
-            {
-                "text": "الصفات",
-                "confidence": 1.0,
-                "start_index": 260
-            },
-            {
-                "text": "الفعلية",
-                "confidence": 1.0,
-                "start_index": 267
-            },
-            {
-                "text": "التي",
-                "confidence": 1.0,
-                "start_index": 275
-            },
-            {
-                "text": "تليق",
-                "confidence": 1.0,
-                "start_index": 280
-            },
-            {
-                "text": "بجلاله",
-                "confidence": 1.0,
-                "start_index": 285
-            },
-            {
-                "text": "تعالى.",
-                "confidence": 1.0,
-                "start_index": 292
-            },
-            {
-                "text": "وليست",
-                "confidence": 1.0,
-                "start_index": 299
-            },
-            {
-                "text": "الغيرة",
-                "confidence": 1.0,
-                "start_index": 305
-            },
-            {
-                "text": "تحريم",
-                "confidence": 1.0,
-                "start_index": 312
-            },
-            {
-                "text": "الفواحش",
-                "confidence": 1.0,
-                "start_index": 318
-            },
-            {
-                "text": "كما",
-                "confidence": 1.0,
-                "start_index": 326
-            },
-            {
-                "text": "قال",
-                "confidence": 1.0,
-                "start_index": 330
-            },
-            {
-                "text": "النووي",
-                "confidence": 1.0,
-                "start_index": 334
-            },
-            {
-                "text": "(١)",
-                "confidence": 1.0,
-                "start_index": 341
-            },
-            {
-                "text": "،",
-                "confidence": 1.0,
-                "start_index": 345
-            },
-            {
-                "text": "وإنما",
-                "confidence": 1.0,
-                "start_index": 347
-            },
-            {
-                "text": "الغيرة",
-                "confidence": 1.0,
-                "start_index": 353
-            },
-            {
-                "text": "وصف",
-                "confidence": 1.0,
-                "start_index": 360
-            },
-            {
-                "text": "يليق",
-                "confidence": 1.0,
-                "start_index": 364
-            },
-            {
-                "text": "بالله،",
-                "confidence": 1.0,
-                "start_index": 369
-            },
-            {
-                "text": "ومن",
-                "confidence": 1.0,
-                "start_index": 376
-            },
-            {
-                "text": "آثاره:",
-                "confidence": 1.0,
-                "start_index": 380
-            },
-            {
-                "text": "تحريم",
-                "confidence": 1.0,
-                "start_index": 387
-            },
-            {
-                "text": "الفواحش؛",
-                "confidence": 1.0,
-                "start_index": 393
-            },
-            {
-                "text": "ولهذا",
-                "confidence": 1.0,
-                "start_index": 402
-            },
-            {
-                "text": "قال",
-                "confidence": 1.0,
-                "start_index": 408
-            },
-            {
-                "text": "النبي",
-                "confidence": 1.0,
-                "start_index": 412
-            },
-            {
-                "text": "صلى",
-                "confidence": 1.0,
-                "start_index": 418
-            },
-            {
-                "text": "الله",
-                "confidence": 1.0,
-                "start_index": 422
-            },
-            {
-                "text": "عليه",
-                "confidence": 1.0,
-                "start_index": 427
-            },
-            {
-                "text": "وسلم:",
-                "confidence": 1.0,
-                "start_index": 432
-            },
-            {
-                "text": "((مِنْ",
-                "confidence": 1.0,
-                "start_index": 438
-            },
-            {
-                "text": "أَجْلِ",
-                "confidence": 1.0,
-                "start_index": 445
-            },
-            {
-                "text": "ذَلِكَ",
-                "confidence": 1.0,
-                "start_index": 452
-            },
-            {
-                "text": "حَرَّمَ",
-                "confidence": 1.0,
-                "start_index": 459
-            },
-            {
-                "text": "الْفَوَاحِشَ)",
-                "confidence": 1.0,
-                "start_index": 467
-            },
-            {
-                "text": ").",
-                "confidence": 1.0,
-                "start_index": 481
-            },
-            {
-                "text": "وكذلك",
-                "confidence": 1.0,
-                "start_index": 484
-            },
-            {
-                "text": "أول",
-                "confidence": 1.0,
-                "start_index": 490
-            },
-            {
-                "text": "الأشاعرة",
-                "confidence": 1.0,
-                "start_index": 494
-            },
-            {
-                "text": "الغضب",
-                "confidence": 1.0,
-                "start_index": 503
-            },
-            {
-                "text": "بالانتقام،",
-                "confidence": 1.0,
-                "start_index": 509
-            },
-            {
-                "text": "والانتقام",
-                "confidence": 1.0,
-                "start_index": 520
-            },
-            {
-                "text": "إنما",
-                "confidence": 1.0,
-                "start_index": 530
-            },
-            {
-                "text": "هو",
-                "confidence": 1.0,
-                "start_index": 535
-            },
-            {
-                "text": "أثر",
-                "confidence": 1.0,
-                "start_index": 538
-            },
-            {
-                "text": "من",
-                "confidence": 1.0,
-                "start_index": 542
-            },
-            {
-                "text": "آثار",
-                "confidence": 1.0,
-                "start_index": 545
-            },
-            {
-                "text": "الغضب،",
-                "confidence": 1.0,
-                "start_index": 550
-            },
-            {
-                "text": "والغضب",
-                "confidence": 1.0,
-                "start_index": 557
-            },
-            {
-                "text": "وصف",
-                "confidence": 1.0,
-                "start_index": 564
-            },
-            {
-                "text": "يليق",
-                "confidence": 1.0,
-                "start_index": 568
-            },
-            {
-                "text": "بالله،",
-                "confidence": 1.0,
-                "start_index": 573
-            },
-            {
-                "text": "وكذلك",
-                "confidence": 1.0,
-                "start_index": 580
-            },
-            {
-                "text": "تأويلهم",
-                "confidence": 1.0,
-                "start_index": 586
-            },
-            {
-                "text": "الرضا",
-                "confidence": 1.0,
-                "start_index": 594
-            },
-            {
-                "text": "بالثواب،",
-                "confidence": 1.0,
-                "start_index": 600
-            },
-            {
-                "text": "والرضا",
-                "confidence": 1.0,
-                "start_index": 609
-            },
-            {
-                "text": "وصف",
-                "confidence": 1.0,
-                "start_index": 616
-            },
-            {
-                "text": "يليق",
-                "confidence": 1.0,
-                "start_index": 620
-            },
-            {
-                "text": "بالله،",
-                "confidence": 1.0,
-                "start_index": 625
-            },
-            {
-                "text": "ومن",
-                "confidence": 1.0,
-                "start_index": 632
-            },
-            {
-                "text": "آثاره:",
-                "confidence": 1.0,
-                "start_index": 636
-            },
-            {
-                "text": "ثواب",
-                "confidence": 1.0,
-                "start_index": 643
-            },
-            {
-                "text": "المؤمنين.",
-                "confidence": 1.0,
-                "start_index": 648
-            },
-            {
-                "text": "وقوله",
-                "confidence": 1.0,
-                "start_index": 658
-            },
-            {
-                "text": "صلى",
-                "confidence": 1.0,
-                "start_index": 664
-            },
-            {
-                "text": "الله",
-                "confidence": 1.0,
-                "start_index": 668
-            },
-            {
-                "text": "عليه",
-                "confidence": 1.0,
-                "start_index": 673
-            },
-            {
-                "text": "وسلم:",
-                "confidence": 1.0,
-                "start_index": 678
-            },
-            {
-                "text": "((وَلَيْسَ",
-                "confidence": 1.0,
-                "start_index": 684
-            },
-            {
-                "text": "أَحَدٌ",
-                "confidence": 1.0,
-                "start_index": 695
-            },
-            {
-                "text": "أَحَبَّ",
-                "confidence": 1.0,
-                "start_index": 702
-            },
-            {
-                "text": "إِلَيْهِ",
-                "confidence": 1.0,
-                "start_index": 710
-            },
-            {
-                "text": "الْعُذْرُ",
-                "confidence": 1.0,
-                "start_index": 719
-            },
-            {
-                "text": "مِنَ",
-                "confidence": 1.0,
-                "start_index": 729
-            },
-            {
-                "text": "اللَّهِ)",
-                "confidence": 1.0,
-                "start_index": 734
-            },
-            {
-                "text": "):",
-                "confidence": 1.0,
-                "start_index": 743
-            },
-            {
-                "text": "يعني:",
-                "confidence": 1.0,
-                "start_index": 746
-            },
-            {
-                "text": "أن",
-                "confidence": 1.0,
-                "start_index": 752
-            },
-            {
-                "text": "الله",
-                "confidence": 1.0,
-                "start_index": 755
-            },
-            {
-                "text": "سبحانه",
-                "confidence": 1.0,
-                "start_index": 760
-            },
-            {
-                "text": "وتعالى",
-                "confidence": 1.0,
-                "start_index": 767
-            },
-            {
-                "text": "قطع",
-                "confidence": 1.0,
-                "start_index": 774
-            },
-            {
-                "text": "العذر؛",
-                "confidence": 1.0,
-                "start_index": 778
-            },
-            {
-                "text": "ولهذا",
-                "confidence": 1.0,
-                "start_index": 785
-            },
-            {
-                "text": "أرسل",
-                "confidence": 1.0,
-                "start_index": 791
-            },
-            {
-                "text": "الرسل",
-                "confidence": 1.0,
-                "start_index": 796
-            },
-            {
-                "text": "مبشرين",
-                "confidence": 1.0,
-                "start_index": 802
-            },
-            {
-                "text": "ومنذرين؛",
-                "confidence": 1.0,
-                "start_index": 809
-            },
-            {
-                "text": "لئلَّا",
-                "confidence": 1.0,
-                "start_index": 818
-            },
-            {
-                "text": "يكون",
-                "confidence": 1.0,
-                "start_index": 825
-            },
-            {
-                "text": "للناس",
-                "confidence": 1.0,
-                "start_index": 830
-            },
-            {
-                "text": "على",
-                "confidence": 1.0,
-                "start_index": 836
-            },
-            {
-                "text": "الله",
-                "confidence": 1.0,
-                "start_index": 840
-            },
-            {
-                "text": "حجة",
-                "confidence": 1.0,
-                "start_index": 845
-            },
-            {
-                "text": "بعد",
-                "confidence": 1.0,
-                "start_index": 849
-            },
-            {
-                "text": "الرسل.",
-                "confidence": 1.0,
-                "start_index": 853
-            },
-            {
-                "text": "قال",
-                "confidence": 1.0,
-                "start_index": 860
-            },
-            {
-                "text": "النووي:",
-                "confidence": 1.0,
-                "start_index": 864
-            },
-            {
-                "text": "((قال",
-                "confidence": 1.0,
-                "start_index": 872
-            },
-            {
-                "text": "القاضي:",
-                "confidence": 1.0,
-                "start_index": 878
-            },
-            {
-                "text": "يحتمل",
-                "confidence": 1.0,
-                "start_index": 886
-            },
-            {
-                "text": "أن",
-                "confidence": 1.0,
-                "start_index": 892
-            },
-            {
-                "text": "المراد:",
-                "confidence": 1.0,
-                "start_index": 895
-            },
-            {
-                "text": "اعتذار",
-                "confidence": 1.0,
-                "start_index": 903
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -750,88 +78,28 @@
     },
     "blocks": [
         {
-            "top_left_x": 725,
-            "top_left_y": 10,
-            "bottom_right_x": 758,
-            "bottom_right_y": 32,
-            "content": ") قَالَ:",
-            "type": "header",
+            "top_left_x": 213,
+            "top_left_y": 524,
+            "bottom_right_x": 495,
+            "bottom_right_y": 542,
+            "content": "عَمْرٌو النَّاقِدُ، وَإِسْحَاقُ بْنُ إِبْرَاهِيمَ، وَابْنُ أَبِي عُمَرَ، كُلُّهُمْ عَنْ",
+            "type": "text",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 40,
-            "top_left_y": 84,
-            "bottom_right_x": 758,
-            "bottom_right_y": 232,
-            "content": "أَبُو كُرَيْبٍ مُحَمَّدُ بْنُ الْعَلَاءِ، حَدَّثَنَا",
-            "type": "title",
+            "top_left_x": 327,
+            "top_left_y": 1017,
+            "bottom_right_x": 381,
+            "bottom_right_y": 1039,
+            "content": "الله عليه",
+            "type": "text",
             "confidence_scores": null,
             "reading_index": 2
-        },
-        {
-            "top_left_x": 293,
-            "top_left_y": 264,
-            "bottom_right_x": 758,
-            "bottom_right_y": 576,
-            "content": "![image](img-0)",
-            "type": "image",
-            "confidence_scores": null,
-            "reading_index": 3
-        },
-        {
-            "top_left_x": 293,
-            "top_left_y": 582,
-            "bottom_right_x": 758,
-            "bottom_right_y": 594,
-            "content": "شكل: بْنِ حِمَارٍ أَنَّ",
-            "type": "text",
-            "confidence_scores": null,
-            "reading_index": 4
-        },
-        {
-            "top_left_x": 40,
-            "top_left_y": 252,
-            "bottom_right_x": 273,
-            "bottom_right_y": 331,
-            "content": "تيمية (٣/ ٣٥٥). كِتَابُ الزُّهْدِ",
-            "type": "title",
-            "confidence_scores": null,
-            "reading_index": 5
-        },
-        {
-            "top_left_x": 185,
-            "top_left_y": 346,
-            "bottom_right_x": 268,
-            "bottom_right_y": 402,
-            "content": "![image](img-1)",
-            "type": "image",
-            "confidence_scores": null,
-            "reading_index": 6
-        },
-        {
-            "top_left_x": 185,
-            "top_left_y": 406,
-            "bottom_right_x": 268,
-            "bottom_right_y": 449,
-            "content": "شكل: وَإِنَّ فَاطِمَةَ",
-            "type": "text",
-            "confidence_scores": null,
-            "reading_index": 7
-        },
-        {
-            "top_left_x": 40,
-            "top_left_y": 464,
-            "bottom_right_x": 273,
-            "bottom_right_y": 1076,
-            "content": "فيها أحدًا من خلقه، فالغيرة والمحبة والغضب والسخط والرضا والعَجب كل هذه من الصفات الفعلية التي تليق بجلاله تعالى. وليست الغيرة تحريم الفواحش كما قال النووي (١) ، وإنما الغيرة وصف يليق بالله، ومن آثاره: تحريم الفواحش؛ ولهذا قال النبي صلى الله عليه وسلم: ((مِنْ أَجْلِ ذَلِكَ حَرَّمَ الْفَوَاحِشَ) ). وكذلك أول الأشاعرة الغضب بالانتقام، والانتقام إنما هو أثر من آثار الغضب، والغضب وصف يليق بالله، وكذلك تأويلهم الرضا بالثواب، والرضا وصف يليق بالله، ومن آثاره: ثواب المؤمنين. وقوله صلى الله عليه وسلم: ((وَلَيْسَ أَحَدٌ أَحَبَّ إِلَيْهِ الْعُذْرُ مِنَ اللَّهِ) ): يعني: أن الله سبحانه وتعالى قطع العذر؛ ولهذا أرسل الرسل مبشرين ومنذرين؛ لئلَّا يكون للناس على الله حجة بعد الرسل. قال النووي: ((قال القاضي: يحتمل أن المراد: اعتذار",
-            "type": "text",
-            "confidence_scores": null,
-            "reading_index": 8
         }
     ],
     "meta": {
-        "template": "a4_charts",
-        "hybrid": "figure"
+        "template": "book_cover",
+        "hybrid": null
     }
 }

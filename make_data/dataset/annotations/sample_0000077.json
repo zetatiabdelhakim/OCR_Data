@@ -1,70 +1,379 @@
 {
-    "markdown": "\n![image](img-0)\n\nمحرم على رجال أهل\nالنَّوَى بَيْنَ الْإِصْبَعَيْنِ. قوله:",
-    "images": [
+    "markdown": "في الناس حتى\nINV-90288\n22/12/2023\nفاتورة إلى: عَنْ يَزِيدَ بْنِ\n\n[tbl-0.html](tbl-0.html)\n\nالإجمالي: 9,144.00",
+    "images": [],
+    "tables": [
         {
-            "id": "img-0",
-            "top_left_x": 14,
-            "top_left_y": 14,
-            "bottom_right_x": 60,
-            "bottom_right_y": 60,
-            "reading_index": 1
+            "id": "tbl-0.html",
+            "content": "<table><tbody><tr><th>البيان</th><th>الكمية</th><th>السعر</th><th>المجموع</th></tr><tr><td>للحاجة. وَحَدَّثَنَا ابْنُ نُمَيْرٍ،</td><td>4</td><td>178.59</td><td>714.36</td></tr><tr><td>عُثْمَانَ- كِلَاهُمَا</td><td>6</td><td>149.67</td><td>898.02</td></tr><tr><td>). [خ: ٣٠٧٣] وَحَدَّثَنَا أَبُو</td><td>3</td><td>172.18</td><td>516.54</td></tr><tr><td>رَسُولَ اللهِ</td><td>9</td><td>170.58</td><td>1,535.22</td></tr><tr><td>كثرة الجهل، وقلة</td><td>9</td><td>295.05</td><td>2,655.45</td></tr><tr><td>النبي صلى الله عليه وسلم</td><td>12</td><td>141.89</td><td>1,702.68</td></tr><tr><td>واللباس نوع، وقيل: المراد</td><td>9</td><td>40.01</td><td>360.09</td></tr><tr><td>حَتَّى أَدْخُلَ عَلَى حَفْصَةَ) ):</td><td>4</td><td>190.41</td><td>761.64</td></tr></tbody></table>",
+            "format": "html",
+            "word_confidence_scores": [
+                {
+                    "text": "البيان",
+                    "confidence": 1.0,
+                    "start_index": 22
+                },
+                {
+                    "text": "الكمية",
+                    "confidence": 1.0,
+                    "start_index": 37
+                },
+                {
+                    "text": "السعر",
+                    "confidence": 1.0,
+                    "start_index": 52
+                },
+                {
+                    "text": "المجموع",
+                    "confidence": 1.0,
+                    "start_index": 66
+                },
+                {
+                    "text": "للحاجة.",
+                    "confidence": 1.0,
+                    "start_index": 91
+                },
+                {
+                    "text": " وَحَدَّثَنَا",
+                    "confidence": 1.0,
+                    "start_index": 98
+                },
+                {
+                    "text": " ابْنُ",
+                    "confidence": 1.0,
+                    "start_index": 111
+                },
+                {
+                    "text": " نُمَيْرٍ،",
+                    "confidence": 1.0,
+                    "start_index": 117
+                },
+                {
+                    "text": "4",
+                    "confidence": 1.0,
+                    "start_index": 136
+                },
+                {
+                    "text": "178.59",
+                    "confidence": 1.0,
+                    "start_index": 146
+                },
+                {
+                    "text": "714.36",
+                    "confidence": 1.0,
+                    "start_index": 161
+                },
+                {
+                    "text": "عُثْمَانَ-",
+                    "confidence": 1.0,
+                    "start_index": 185
+                },
+                {
+                    "text": " كِلَاهُمَا",
+                    "confidence": 1.0,
+                    "start_index": 195
+                },
+                {
+                    "text": "6",
+                    "confidence": 1.0,
+                    "start_index": 215
+                },
+                {
+                    "text": "149.67",
+                    "confidence": 1.0,
+                    "start_index": 225
+                },
+                {
+                    "text": "898.02",
+                    "confidence": 1.0,
+                    "start_index": 240
+                },
+                {
+                    "text": ").",
+                    "confidence": 1.0,
+                    "start_index": 264
+                },
+                {
+                    "text": " [خ:",
+                    "confidence": 1.0,
+                    "start_index": 266
+                },
+                {
+                    "text": " ٣٠٧٣]",
+                    "confidence": 1.0,
+                    "start_index": 270
+                },
+                {
+                    "text": " وَحَدَّثَنَا",
+                    "confidence": 1.0,
+                    "start_index": 276
+                },
+                {
+                    "text": " أَبُو",
+                    "confidence": 1.0,
+                    "start_index": 289
+                },
+                {
+                    "text": "3",
+                    "confidence": 1.0,
+                    "start_index": 304
+                },
+                {
+                    "text": "172.18",
+                    "confidence": 1.0,
+                    "start_index": 314
+                },
+                {
+                    "text": "516.54",
+                    "confidence": 1.0,
+                    "start_index": 329
+                },
+                {
+                    "text": "رَسُولَ",
+                    "confidence": 1.0,
+                    "start_index": 353
+                },
+                {
+                    "text": " اللهِ",
+                    "confidence": 1.0,
+                    "start_index": 360
+                },
+                {
+                    "text": "9",
+                    "confidence": 1.0,
+                    "start_index": 375
+                },
+                {
+                    "text": "170.58",
+                    "confidence": 1.0,
+                    "start_index": 385
+                },
+                {
+                    "text": "1,535.22",
+                    "confidence": 1.0,
+                    "start_index": 400
+                },
+                {
+                    "text": "كثرة",
+                    "confidence": 1.0,
+                    "start_index": 426
+                },
+                {
+                    "text": " الجهل،",
+                    "confidence": 1.0,
+                    "start_index": 430
+                },
+                {
+                    "text": " وقلة",
+                    "confidence": 1.0,
+                    "start_index": 437
+                },
+                {
+                    "text": "9",
+                    "confidence": 1.0,
+                    "start_index": 451
+                },
+                {
+                    "text": "295.05",
+                    "confidence": 1.0,
+                    "start_index": 461
+                },
+                {
+                    "text": "2,655.45",
+                    "confidence": 1.0,
+                    "start_index": 476
+                },
+                {
+                    "text": "النبي",
+                    "confidence": 1.0,
+                    "start_index": 502
+                },
+                {
+                    "text": " صلى",
+                    "confidence": 1.0,
+                    "start_index": 507
+                },
+                {
+                    "text": " الله",
+                    "confidence": 1.0,
+                    "start_index": 511
+                },
+                {
+                    "text": " عليه",
+                    "confidence": 1.0,
+                    "start_index": 516
+                },
+                {
+                    "text": " وسلم",
+                    "confidence": 1.0,
+                    "start_index": 521
+                },
+                {
+                    "text": "12",
+                    "confidence": 1.0,
+                    "start_index": 535
+                },
+                {
+                    "text": "141.89",
+                    "confidence": 1.0,
+                    "start_index": 546
+                },
+                {
+                    "text": "1,702.68",
+                    "confidence": 1.0,
+                    "start_index": 561
+                },
+                {
+                    "text": "واللباس",
+                    "confidence": 1.0,
+                    "start_index": 587
+                },
+                {
+                    "text": " نوع،",
+                    "confidence": 1.0,
+                    "start_index": 594
+                },
+                {
+                    "text": " وقيل:",
+                    "confidence": 1.0,
+                    "start_index": 599
+                },
+                {
+                    "text": " المراد",
+                    "confidence": 1.0,
+                    "start_index": 605
+                },
+                {
+                    "text": "9",
+                    "confidence": 1.0,
+                    "start_index": 621
+                },
+                {
+                    "text": "40.01",
+                    "confidence": 1.0,
+                    "start_index": 631
+                },
+                {
+                    "text": "360.09",
+                    "confidence": 1.0,
+                    "start_index": 645
+                },
+                {
+                    "text": "حَتَّى",
+                    "confidence": 1.0,
+                    "start_index": 669
+                },
+                {
+                    "text": " أَدْخُلَ",
+                    "confidence": 1.0,
+                    "start_index": 675
+                },
+                {
+                    "text": " عَلَى",
+                    "confidence": 1.0,
+                    "start_index": 684
+                },
+                {
+                    "text": " حَفْصَةَ)",
+                    "confidence": 1.0,
+                    "start_index": 690
+                },
+                {
+                    "text": " ):",
+                    "confidence": 1.0,
+                    "start_index": 700
+                },
+                {
+                    "text": "4",
+                    "confidence": 1.0,
+                    "start_index": 712
+                },
+                {
+                    "text": "190.41",
+                    "confidence": 1.0,
+                    "start_index": 722
+                },
+                {
+                    "text": "761.64",
+                    "confidence": 1.0,
+                    "start_index": 737
+                }
+            ]
         }
     ],
-    "tables": [],
     "hyperlinks": [],
     "header": null,
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 219,
-        "width": 336
+        "height": 988,
+        "width": 798
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "![image](img-0)",
+                "text": "في",
                 "confidence": 1.0,
-                "start_index": 1
+                "start_index": 0
             },
             {
-                "text": "محرم",
+                "text": "الناس",
                 "confidence": 1.0,
-                "start_index": 18
+                "start_index": 3
             },
             {
-                "text": "على",
+                "text": "حتى",
+                "confidence": 1.0,
+                "start_index": 9
+            },
+            {
+                "text": "INV-90288",
+                "confidence": 1.0,
+                "start_index": 13
+            },
+            {
+                "text": "22/12/2023",
                 "confidence": 1.0,
                 "start_index": 23
             },
             {
-                "text": "رجال",
+                "text": "فاتورة",
                 "confidence": 1.0,
-                "start_index": 27
+                "start_index": 34
             },
             {
-                "text": "أهل",
+                "text": "إلى:",
                 "confidence": 1.0,
-                "start_index": 32
+                "start_index": 41
             },
             {
-                "text": "النَّوَى",
+                "text": "عَنْ",
                 "confidence": 1.0,
-                "start_index": 36
+                "start_index": 46
             },
             {
-                "text": "بَيْنَ",
+                "text": "يَزِيدَ",
                 "confidence": 1.0,
-                "start_index": 45
+                "start_index": 51
             },
             {
-                "text": "الْإِصْبَعَيْنِ.",
+                "text": "بْنِ",
                 "confidence": 1.0,
-                "start_index": 52
+                "start_index": 59
             },
             {
-                "text": "قوله:",
+                "text": "[tbl-0.html](tbl-0.html)",
                 "confidence": 1.0,
-                "start_index": 69
+                "start_index": 65
+            },
+            {
+                "text": "الإجمالي:",
+                "confidence": 1.0,
+                "start_index": 91
+            },
+            {
+                "text": "9,144.00",
+                "confidence": 1.0,
+                "start_index": 101
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -72,38 +381,69 @@
     },
     "blocks": [
         {
-            "top_left_x": 14,
-            "top_left_y": 14,
-            "bottom_right_x": 60,
-            "bottom_right_y": 60,
-            "content": "![image](img-0)",
-            "type": "image",
+            "top_left_x": 44,
+            "top_left_y": 44,
+            "bottom_right_x": 754,
+            "bottom_right_y": 74,
+            "content": "في الناس حتى",
+            "type": "text",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 14,
-            "top_left_y": 173,
-            "bottom_right_x": 322,
-            "bottom_right_y": 191,
-            "content": "محرم على رجال أهل",
+            "top_left_x": 691,
+            "top_left_y": 82,
+            "bottom_right_x": 754,
+            "bottom_right_y": 100,
+            "content": "INV-90288",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 2
         },
         {
-            "top_left_x": 14,
-            "top_left_y": 193,
-            "bottom_right_x": 322,
-            "bottom_right_y": 205,
-            "content": "النَّوَى بَيْنَ الْإِصْبَعَيْنِ. قوله:",
+            "top_left_x": 44,
+            "top_left_y": 82,
+            "bottom_right_x": 112,
+            "bottom_right_y": 100,
+            "content": "22/12/2023",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 3
+        },
+        {
+            "top_left_x": 44,
+            "top_left_y": 122,
+            "bottom_right_x": 754,
+            "bottom_right_y": 141,
+            "content": "فاتورة إلى: عَنْ يَزِيدَ بْنِ",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 4
+        },
+        {
+            "top_left_x": 44,
+            "top_left_y": 155,
+            "bottom_right_x": 754,
+            "bottom_right_y": 484,
+            "content": "<table><tbody><tr><th>البيان</th><th>الكمية</th><th>السعر</th><th>المجموع</th></tr><tr><td>للحاجة. وَحَدَّثَنَا ابْنُ نُمَيْرٍ،</td><td>4</td><td>178.59</td><td>714.36</td></tr><tr><td>عُثْمَانَ- كِلَاهُمَا</td><td>6</td><td>149.67</td><td>898.02</td></tr><tr><td>). [خ: ٣٠٧٣] وَحَدَّثَنَا أَبُو</td><td>3</td><td>172.18</td><td>516.54</td></tr><tr><td>رَسُولَ اللهِ</td><td>9</td><td>170.58</td><td>1,535.22</td></tr><tr><td>كثرة الجهل، وقلة</td><td>9</td><td>295.05</td><td>2,655.45</td></tr><tr><td>النبي صلى الله عليه وسلم</td><td>12</td><td>141.89</td><td>1,702.68</td></tr><tr><td>واللباس نوع، وقيل: المراد</td><td>9</td><td>40.01</td><td>360.09</td></tr><tr><td>حَتَّى أَدْخُلَ عَلَى حَفْصَةَ) ):</td><td>4</td><td>190.41</td><td>761.64</td></tr></tbody></table>",
+            "type": "table",
+            "table_id": "tbl-0.html",
+            "confidence_scores": null,
+            "reading_index": 5
+        },
+        {
+            "top_left_x": 44,
+            "top_left_y": 498,
+            "bottom_right_x": 157,
+            "bottom_right_y": 520,
+            "content": "الإجمالي: 9,144.00",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 6
         }
     ],
     "meta": {
-        "template": "business_card",
+        "template": "invoice",
         "hybrid": null
     }
 }

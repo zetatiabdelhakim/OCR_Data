@@ -1,61 +1,344 @@
 {
-    "markdown": "صلى الله عليه وسلم نَحْوَ حَدِيثِ\nباب التمرين، كما",
+    "markdown": "((أَيْنَ الْمُحْتَرِقُ\nINV-70305\n01/06/2023\nفاتورة إلى: يَنْهَ عنه.\n\n[tbl-0.html](tbl-0.html)\n\nالإجمالي: 9,650.93",
     "images": [],
-    "tables": [],
+    "tables": [
+        {
+            "id": "tbl-0.html",
+            "content": "<table><tbody><tr><th>البيان</th><th>الكمية</th><th>السعر</th><th>المجموع</th></tr><tr><td>فيه جواز المخالفة بين أعضاء</td><td>2</td><td>42.78</td><td>85.56</td></tr><tr><td>وجل) ). [٢٧٦١]</td><td>9</td><td>289.53</td><td>2,605.77</td></tr><tr><td>الْحَيُّ الَّذِي لَا يَمُوتُ</td><td>10</td><td>245.39</td><td>2,453.90</td></tr><tr><td>عنه قَالَ: ذَكَرَ</td><td>7</td><td>256.03</td><td>1,792.21</td></tr><tr><td>الرُّبَيِّعَ بِنْتَ مُعَوِّذٍ عَنْ صَوْمِ</td><td>12</td><td>135.79</td><td>1,629.48</td></tr><tr><td>[خ: ١٩٣٣] في هذا الحديث:</td><td>3</td><td>225.89</td><td>677.67</td></tr><tr><td>عنه رأى أنه</td><td>11</td><td>36.94</td><td>406.34</td></tr></tbody></table>",
+            "format": "html",
+            "word_confidence_scores": [
+                {
+                    "text": "البيان",
+                    "confidence": 1.0,
+                    "start_index": 22
+                },
+                {
+                    "text": "الكمية",
+                    "confidence": 1.0,
+                    "start_index": 37
+                },
+                {
+                    "text": "السعر",
+                    "confidence": 1.0,
+                    "start_index": 52
+                },
+                {
+                    "text": "المجموع",
+                    "confidence": 1.0,
+                    "start_index": 66
+                },
+                {
+                    "text": "فيه",
+                    "confidence": 1.0,
+                    "start_index": 91
+                },
+                {
+                    "text": " جواز",
+                    "confidence": 1.0,
+                    "start_index": 94
+                },
+                {
+                    "text": " المخالفة",
+                    "confidence": 1.0,
+                    "start_index": 99
+                },
+                {
+                    "text": " بين",
+                    "confidence": 1.0,
+                    "start_index": 108
+                },
+                {
+                    "text": " أعضاء",
+                    "confidence": 1.0,
+                    "start_index": 112
+                },
+                {
+                    "text": "2",
+                    "confidence": 1.0,
+                    "start_index": 127
+                },
+                {
+                    "text": "42.78",
+                    "confidence": 1.0,
+                    "start_index": 137
+                },
+                {
+                    "text": "85.56",
+                    "confidence": 1.0,
+                    "start_index": 151
+                },
+                {
+                    "text": "وجل)",
+                    "confidence": 1.0,
+                    "start_index": 174
+                },
+                {
+                    "text": " ).",
+                    "confidence": 1.0,
+                    "start_index": 178
+                },
+                {
+                    "text": " [٢٧٦١]",
+                    "confidence": 1.0,
+                    "start_index": 181
+                },
+                {
+                    "text": "9",
+                    "confidence": 1.0,
+                    "start_index": 197
+                },
+                {
+                    "text": "289.53",
+                    "confidence": 1.0,
+                    "start_index": 207
+                },
+                {
+                    "text": "2,605.77",
+                    "confidence": 1.0,
+                    "start_index": 222
+                },
+                {
+                    "text": "الْحَيُّ",
+                    "confidence": 1.0,
+                    "start_index": 248
+                },
+                {
+                    "text": " الَّذِي",
+                    "confidence": 1.0,
+                    "start_index": 256
+                },
+                {
+                    "text": " لَا",
+                    "confidence": 1.0,
+                    "start_index": 264
+                },
+                {
+                    "text": " يَمُوتُ",
+                    "confidence": 1.0,
+                    "start_index": 268
+                },
+                {
+                    "text": "10",
+                    "confidence": 1.0,
+                    "start_index": 285
+                },
+                {
+                    "text": "245.39",
+                    "confidence": 1.0,
+                    "start_index": 296
+                },
+                {
+                    "text": "2,453.90",
+                    "confidence": 1.0,
+                    "start_index": 311
+                },
+                {
+                    "text": "عنه",
+                    "confidence": 1.0,
+                    "start_index": 337
+                },
+                {
+                    "text": " قَالَ:",
+                    "confidence": 1.0,
+                    "start_index": 340
+                },
+                {
+                    "text": " ذَكَرَ",
+                    "confidence": 1.0,
+                    "start_index": 347
+                },
+                {
+                    "text": "7",
+                    "confidence": 1.0,
+                    "start_index": 363
+                },
+                {
+                    "text": "256.03",
+                    "confidence": 1.0,
+                    "start_index": 373
+                },
+                {
+                    "text": "1,792.21",
+                    "confidence": 1.0,
+                    "start_index": 388
+                },
+                {
+                    "text": "الرُّبَيِّعَ",
+                    "confidence": 1.0,
+                    "start_index": 414
+                },
+                {
+                    "text": " بِنْتَ",
+                    "confidence": 1.0,
+                    "start_index": 426
+                },
+                {
+                    "text": " مُعَوِّذٍ",
+                    "confidence": 1.0,
+                    "start_index": 433
+                },
+                {
+                    "text": " عَنْ",
+                    "confidence": 1.0,
+                    "start_index": 443
+                },
+                {
+                    "text": " صَوْمِ",
+                    "confidence": 1.0,
+                    "start_index": 448
+                },
+                {
+                    "text": "12",
+                    "confidence": 1.0,
+                    "start_index": 464
+                },
+                {
+                    "text": "135.79",
+                    "confidence": 1.0,
+                    "start_index": 475
+                },
+                {
+                    "text": "1,629.48",
+                    "confidence": 1.0,
+                    "start_index": 490
+                },
+                {
+                    "text": "[خ:",
+                    "confidence": 1.0,
+                    "start_index": 516
+                },
+                {
+                    "text": " ١٩٣٣]",
+                    "confidence": 1.0,
+                    "start_index": 519
+                },
+                {
+                    "text": " في",
+                    "confidence": 1.0,
+                    "start_index": 525
+                },
+                {
+                    "text": " هذا",
+                    "confidence": 1.0,
+                    "start_index": 528
+                },
+                {
+                    "text": " الحديث:",
+                    "confidence": 1.0,
+                    "start_index": 532
+                },
+                {
+                    "text": "3",
+                    "confidence": 1.0,
+                    "start_index": 549
+                },
+                {
+                    "text": "225.89",
+                    "confidence": 1.0,
+                    "start_index": 559
+                },
+                {
+                    "text": "677.67",
+                    "confidence": 1.0,
+                    "start_index": 574
+                },
+                {
+                    "text": "عنه",
+                    "confidence": 1.0,
+                    "start_index": 598
+                },
+                {
+                    "text": " رأى",
+                    "confidence": 1.0,
+                    "start_index": 601
+                },
+                {
+                    "text": " أنه",
+                    "confidence": 1.0,
+                    "start_index": 605
+                },
+                {
+                    "text": "11",
+                    "confidence": 1.0,
+                    "start_index": 618
+                },
+                {
+                    "text": "36.94",
+                    "confidence": 1.0,
+                    "start_index": 629
+                },
+                {
+                    "text": "406.34",
+                    "confidence": 1.0,
+                    "start_index": 643
+                }
+            ]
+        }
+    ],
     "hyperlinks": [],
     "header": null,
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 1085,
-        "width": 769
+        "height": 1009,
+        "width": 712
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "صلى",
+                "text": "((أَيْنَ",
                 "confidence": 1.0,
                 "start_index": 0
             },
             {
-                "text": "الله",
-                "confidence": 1.0,
-                "start_index": 4
-            },
-            {
-                "text": "عليه",
+                "text": "الْمُحْتَرِقُ",
                 "confidence": 1.0,
                 "start_index": 9
             },
             {
-                "text": "وسلم",
+                "text": "INV-70305",
                 "confidence": 1.0,
-                "start_index": 14
+                "start_index": 23
             },
             {
-                "text": "نَحْوَ",
+                "text": "01/06/2023",
                 "confidence": 1.0,
-                "start_index": 19
+                "start_index": 33
             },
             {
-                "text": "حَدِيثِ",
+                "text": "فاتورة",
                 "confidence": 1.0,
-                "start_index": 26
+                "start_index": 44
             },
             {
-                "text": "باب",
+                "text": "إلى:",
                 "confidence": 1.0,
-                "start_index": 34
+                "start_index": 51
             },
             {
-                "text": "التمرين،",
+                "text": "يَنْهَ",
                 "confidence": 1.0,
-                "start_index": 38
+                "start_index": 56
             },
             {
-                "text": "كما",
+                "text": "عنه.",
                 "confidence": 1.0,
-                "start_index": 47
+                "start_index": 63
+            },
+            {
+                "text": "[tbl-0.html](tbl-0.html)",
+                "confidence": 1.0,
+                "start_index": 69
+            },
+            {
+                "text": "الإجمالي:",
+                "confidence": 1.0,
+                "start_index": 95
+            },
+            {
+                "text": "9,650.93",
+                "confidence": 1.0,
+                "start_index": 105
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -63,28 +346,69 @@
     },
     "blocks": [
         {
-            "top_left_x": 322,
-            "top_left_y": 539,
-            "bottom_right_x": 447,
-            "bottom_right_y": 555,
-            "content": "صلى الله عليه وسلم نَحْوَ حَدِيثِ",
+            "top_left_x": 44,
+            "top_left_y": 44,
+            "bottom_right_x": 668,
+            "bottom_right_y": 80,
+            "content": "((أَيْنَ الْمُحْتَرِقُ",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 342,
-            "top_left_y": 1049,
-            "bottom_right_x": 427,
-            "bottom_right_y": 1067,
-            "content": "باب التمرين، كما",
+            "top_left_x": 618,
+            "top_left_y": 88,
+            "bottom_right_x": 668,
+            "bottom_right_y": 109,
+            "content": "INV-70305",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 2
+        },
+        {
+            "top_left_x": 44,
+            "top_left_y": 88,
+            "bottom_right_x": 97,
+            "bottom_right_y": 109,
+            "content": "01/06/2023",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 3
+        },
+        {
+            "top_left_x": 44,
+            "top_left_y": 131,
+            "bottom_right_x": 668,
+            "bottom_right_y": 154,
+            "content": "فاتورة إلى: يَنْهَ عنه.",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 4
+        },
+        {
+            "top_left_x": 44,
+            "top_left_y": 168,
+            "bottom_right_x": 668,
+            "bottom_right_y": 426,
+            "content": "<table><tbody><tr><th>البيان</th><th>الكمية</th><th>السعر</th><th>المجموع</th></tr><tr><td>فيه جواز المخالفة بين أعضاء</td><td>2</td><td>42.78</td><td>85.56</td></tr><tr><td>وجل) ). [٢٧٦١]</td><td>9</td><td>289.53</td><td>2,605.77</td></tr><tr><td>الْحَيُّ الَّذِي لَا يَمُوتُ</td><td>10</td><td>245.39</td><td>2,453.90</td></tr><tr><td>عنه قَالَ: ذَكَرَ</td><td>7</td><td>256.03</td><td>1,792.21</td></tr><tr><td>الرُّبَيِّعَ بِنْتَ مُعَوِّذٍ عَنْ صَوْمِ</td><td>12</td><td>135.79</td><td>1,629.48</td></tr><tr><td>[خ: ١٩٣٣] في هذا الحديث:</td><td>3</td><td>225.89</td><td>677.67</td></tr><tr><td>عنه رأى أنه</td><td>11</td><td>36.94</td><td>406.34</td></tr></tbody></table>",
+            "type": "table",
+            "table_id": "tbl-0.html",
+            "confidence_scores": null,
+            "reading_index": 5
+        },
+        {
+            "top_left_x": 44,
+            "top_left_y": 440,
+            "bottom_right_x": 134,
+            "bottom_right_y": 466,
+            "content": "الإجمالي: 9,650.93",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 6
         }
     ],
     "meta": {
-        "template": "book_cover",
+        "template": "invoice",
         "hybrid": null
     }
 }

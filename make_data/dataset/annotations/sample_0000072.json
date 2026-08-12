@@ -1,12 +1,12 @@
 {
-    "markdown": "\n![image](img-0)\n\nحَدَّثَنَا هِشَامُ بْنُ سُلَيْمَانَ الْمَخْزُومِيُّ،\nوحَدَّثَنَا أَبُو بَكْرِ بْنُ نَافِعٍ، حَدَّثَنَا",
+    "markdown": "\n![image](img-0)\n\nشكل: بَعْلِهَا وَوَلَدِهِ، وَهِيَ مَسْئُولَةٌ\n## ملاحظة\nالله عليه وسلم عَلَى رَاحِلَتِهِ، فَطَفِقَ نَاسٌ يَسْأَلُونَهُ، فَيَقُولُ الْقَائِلُ مِنْهُمْ:\n\\frac{\\partial \\mu}{\\partial i} = \\lim_{h \\to 0} \\frac{\\cos(i + h) - \\cos(i)}{h} + \\frac{\\beta}{x^2}\nx_{n+1} = x_n - \\alpha \\nabla f(x_n) + \\frac{x}{\\mu^2}\n## نظرية\nوسلم قَالَ: ((قَدْرُ حَوْضِي كَمَا بَيْنَ أَيْلَةَ، وَصَنْعَاءَ مِنْ الْيَمَنِ، وَإِنَّ فِيهِ مِنَ الْأَبَارِيقِ كَعَدَدِ نُجُومِ السَّمَاءِ) ). [خ: ٦٥٨٠] [٢٣٠٤] وَحَدَّثَنِي مُحَمَّدُ بْنُ حَاتِمٍ، حَدَّثَنَا عَفَّانُ بْنُ\n\\sum_{j=0}^{N} \\frac{t^j}{j!} = e^{t}\n\\vec{F} = m\\vec{a} + \\frac{\\theta}{k^2}",
     "images": [
         {
             "id": "img-0",
-            "top_left_x": 342,
-            "top_left_y": 242,
-            "bottom_right_x": 406,
-            "bottom_right_y": 306,
+            "top_left_x": 20,
+            "top_left_y": 32,
+            "bottom_right_x": 523,
+            "bottom_right_y": 369,
             "reading_index": 1
         }
     ],
@@ -16,8 +16,8 @@
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 652,
-        "width": 747
+        "height": 910,
+        "width": 543
     },
     "confidence_scores": {
         "word_confidence_scores": [
@@ -27,59 +27,404 @@
                 "start_index": 1
             },
             {
-                "text": "حَدَّثَنَا",
+                "text": "شكل:",
                 "confidence": 1.0,
                 "start_index": 18
             },
             {
-                "text": "هِشَامُ",
+                "text": "بَعْلِهَا",
                 "confidence": 1.0,
-                "start_index": 29
+                "start_index": 23
             },
             {
-                "text": "بْنُ",
+                "text": "وَوَلَدِهِ،",
                 "confidence": 1.0,
-                "start_index": 37
+                "start_index": 33
             },
             {
-                "text": "سُلَيْمَانَ",
+                "text": "وَهِيَ",
                 "confidence": 1.0,
-                "start_index": 42
+                "start_index": 45
             },
             {
-                "text": "الْمَخْزُومِيُّ،",
+                "text": "مَسْئُولَةٌ",
                 "confidence": 1.0,
-                "start_index": 54
+                "start_index": 52
             },
             {
-                "text": "وحَدَّثَنَا",
+                "text": "##",
                 "confidence": 1.0,
-                "start_index": 71
+                "start_index": 64
             },
             {
-                "text": "أَبُو",
+                "text": "ملاحظة",
                 "confidence": 1.0,
-                "start_index": 83
+                "start_index": 67
             },
             {
-                "text": "بَكْرِ",
+                "text": "الله",
+                "confidence": 1.0,
+                "start_index": 74
+            },
+            {
+                "text": "عليه",
+                "confidence": 1.0,
+                "start_index": 79
+            },
+            {
+                "text": "وسلم",
+                "confidence": 1.0,
+                "start_index": 84
+            },
+            {
+                "text": "عَلَى",
                 "confidence": 1.0,
                 "start_index": 89
             },
             {
-                "text": "بْنُ",
+                "text": "رَاحِلَتِهِ،",
                 "confidence": 1.0,
-                "start_index": 96
+                "start_index": 95
             },
             {
-                "text": "نَافِعٍ،",
+                "text": "فَطَفِقَ",
                 "confidence": 1.0,
-                "start_index": 101
+                "start_index": 108
+            },
+            {
+                "text": "نَاسٌ",
+                "confidence": 1.0,
+                "start_index": 117
+            },
+            {
+                "text": "يَسْأَلُونَهُ،",
+                "confidence": 1.0,
+                "start_index": 123
+            },
+            {
+                "text": "فَيَقُولُ",
+                "confidence": 1.0,
+                "start_index": 138
+            },
+            {
+                "text": "الْقَائِلُ",
+                "confidence": 1.0,
+                "start_index": 148
+            },
+            {
+                "text": "مِنْهُمْ:",
+                "confidence": 1.0,
+                "start_index": 159
+            },
+            {
+                "text": "\\frac{\\partial",
+                "confidence": 1.0,
+                "start_index": 169
+            },
+            {
+                "text": "\\mu}{\\partial",
+                "confidence": 1.0,
+                "start_index": 184
+            },
+            {
+                "text": "i}",
+                "confidence": 1.0,
+                "start_index": 198
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 201
+            },
+            {
+                "text": "\\lim_{h",
+                "confidence": 1.0,
+                "start_index": 203
+            },
+            {
+                "text": "\\to",
+                "confidence": 1.0,
+                "start_index": 211
+            },
+            {
+                "text": "0}",
+                "confidence": 1.0,
+                "start_index": 215
+            },
+            {
+                "text": "\\frac{\\cos(i",
+                "confidence": 1.0,
+                "start_index": 218
+            },
+            {
+                "text": "+",
+                "confidence": 1.0,
+                "start_index": 231
+            },
+            {
+                "text": "h)",
+                "confidence": 1.0,
+                "start_index": 233
+            },
+            {
+                "text": "-",
+                "confidence": 1.0,
+                "start_index": 236
+            },
+            {
+                "text": "\\cos(i)}{h}",
+                "confidence": 1.0,
+                "start_index": 238
+            },
+            {
+                "text": "+",
+                "confidence": 1.0,
+                "start_index": 250
+            },
+            {
+                "text": "\\frac{\\beta}{x^2}",
+                "confidence": 1.0,
+                "start_index": 252
+            },
+            {
+                "text": "x_{n+1}",
+                "confidence": 1.0,
+                "start_index": 270
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 278
+            },
+            {
+                "text": "x_n",
+                "confidence": 1.0,
+                "start_index": 280
+            },
+            {
+                "text": "-",
+                "confidence": 1.0,
+                "start_index": 284
+            },
+            {
+                "text": "\\alpha",
+                "confidence": 1.0,
+                "start_index": 286
+            },
+            {
+                "text": "\\nabla",
+                "confidence": 1.0,
+                "start_index": 293
+            },
+            {
+                "text": "f(x_n)",
+                "confidence": 1.0,
+                "start_index": 300
+            },
+            {
+                "text": "+",
+                "confidence": 1.0,
+                "start_index": 307
+            },
+            {
+                "text": "\\frac{x}{\\mu^2}",
+                "confidence": 1.0,
+                "start_index": 309
+            },
+            {
+                "text": "##",
+                "confidence": 1.0,
+                "start_index": 325
+            },
+            {
+                "text": "نظرية",
+                "confidence": 1.0,
+                "start_index": 328
+            },
+            {
+                "text": "وسلم",
+                "confidence": 1.0,
+                "start_index": 334
+            },
+            {
+                "text": "قَالَ:",
+                "confidence": 1.0,
+                "start_index": 339
+            },
+            {
+                "text": "((قَدْرُ",
+                "confidence": 1.0,
+                "start_index": 346
+            },
+            {
+                "text": "حَوْضِي",
+                "confidence": 1.0,
+                "start_index": 355
+            },
+            {
+                "text": "كَمَا",
+                "confidence": 1.0,
+                "start_index": 363
+            },
+            {
+                "text": "بَيْنَ",
+                "confidence": 1.0,
+                "start_index": 369
+            },
+            {
+                "text": "أَيْلَةَ،",
+                "confidence": 1.0,
+                "start_index": 376
+            },
+            {
+                "text": "وَصَنْعَاءَ",
+                "confidence": 1.0,
+                "start_index": 386
+            },
+            {
+                "text": "مِنْ",
+                "confidence": 1.0,
+                "start_index": 398
+            },
+            {
+                "text": "الْيَمَنِ،",
+                "confidence": 1.0,
+                "start_index": 403
+            },
+            {
+                "text": "وَإِنَّ",
+                "confidence": 1.0,
+                "start_index": 414
+            },
+            {
+                "text": "فِيهِ",
+                "confidence": 1.0,
+                "start_index": 422
+            },
+            {
+                "text": "مِنَ",
+                "confidence": 1.0,
+                "start_index": 428
+            },
+            {
+                "text": "الْأَبَارِيقِ",
+                "confidence": 1.0,
+                "start_index": 433
+            },
+            {
+                "text": "كَعَدَدِ",
+                "confidence": 1.0,
+                "start_index": 447
+            },
+            {
+                "text": "نُجُومِ",
+                "confidence": 1.0,
+                "start_index": 456
+            },
+            {
+                "text": "السَّمَاءِ)",
+                "confidence": 1.0,
+                "start_index": 464
+            },
+            {
+                "text": ").",
+                "confidence": 1.0,
+                "start_index": 476
+            },
+            {
+                "text": "[خ:",
+                "confidence": 1.0,
+                "start_index": 479
+            },
+            {
+                "text": "٦٥٨٠]",
+                "confidence": 1.0,
+                "start_index": 483
+            },
+            {
+                "text": "[٢٣٠٤]",
+                "confidence": 1.0,
+                "start_index": 489
+            },
+            {
+                "text": "وَحَدَّثَنِي",
+                "confidence": 1.0,
+                "start_index": 496
+            },
+            {
+                "text": "مُحَمَّدُ",
+                "confidence": 1.0,
+                "start_index": 509
+            },
+            {
+                "text": "بْنُ",
+                "confidence": 1.0,
+                "start_index": 519
+            },
+            {
+                "text": "حَاتِمٍ،",
+                "confidence": 1.0,
+                "start_index": 524
             },
             {
                 "text": "حَدَّثَنَا",
                 "confidence": 1.0,
-                "start_index": 110
+                "start_index": 533
+            },
+            {
+                "text": "عَفَّانُ",
+                "confidence": 1.0,
+                "start_index": 544
+            },
+            {
+                "text": "بْنُ",
+                "confidence": 1.0,
+                "start_index": 553
+            },
+            {
+                "text": "\\sum_{j=0}^{N}",
+                "confidence": 1.0,
+                "start_index": 558
+            },
+            {
+                "text": "\\frac{t^j}{j!}",
+                "confidence": 1.0,
+                "start_index": 573
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 588
+            },
+            {
+                "text": "e^{t}",
+                "confidence": 1.0,
+                "start_index": 590
+            },
+            {
+                "text": "\\vec{F}",
+                "confidence": 1.0,
+                "start_index": 596
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 604
+            },
+            {
+                "text": "m\\vec{a}",
+                "confidence": 1.0,
+                "start_index": 606
+            },
+            {
+                "text": "+",
+                "confidence": 1.0,
+                "start_index": 615
+            },
+            {
+                "text": "\\frac{\\theta}{k^2}",
+                "confidence": 1.0,
+                "start_index": 617
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -87,38 +432,108 @@
     },
     "blocks": [
         {
-            "top_left_x": 342,
-            "top_left_y": 242,
-            "bottom_right_x": 406,
-            "bottom_right_y": 306,
+            "top_left_x": 20,
+            "top_left_y": 32,
+            "bottom_right_x": 523,
+            "bottom_right_y": 369,
             "content": "![image](img-0)",
             "type": "image",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 234,
-            "top_left_y": 328,
-            "bottom_right_x": 513,
-            "bottom_right_y": 375,
-            "content": "حَدَّثَنَا هِشَامُ بْنُ سُلَيْمَانَ الْمَخْزُومِيُّ،",
+            "top_left_x": 20,
+            "top_left_y": 375,
+            "bottom_right_x": 523,
+            "bottom_right_y": 392,
+            "content": "شكل: بَعْلِهَا وَوَلَدِهِ، وَهِيَ مَسْئُولَةٌ",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 2
         },
         {
-            "top_left_x": 306,
-            "top_left_y": 385,
-            "bottom_right_x": 441,
-            "bottom_right_y": 411,
-            "content": "وحَدَّثَنَا أَبُو بَكْرِ بْنُ نَافِعٍ، حَدَّثَنَا",
-            "type": "text",
+            "top_left_x": 32,
+            "top_left_y": 426,
+            "bottom_right_x": 507,
+            "bottom_right_y": 448,
+            "content": "ملاحظة",
+            "type": "title",
             "confidence_scores": null,
             "reading_index": 3
+        },
+        {
+            "top_left_x": 32,
+            "top_left_y": 453,
+            "bottom_right_x": 507,
+            "bottom_right_y": 475,
+            "content": "الله عليه وسلم عَلَى رَاحِلَتِهِ، فَطَفِقَ نَاسٌ يَسْأَلُونَهُ، فَيَقُولُ الْقَائِلُ مِنْهُمْ:",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 4
+        },
+        {
+            "top_left_x": 32,
+            "top_left_y": 481,
+            "bottom_right_x": 507,
+            "bottom_right_y": 534,
+            "content": "\\frac{\\partial \\mu}{\\partial i} = \\lim_{h \\to 0} \\frac{\\cos(i + h) - \\cos(i)}{h} + \\frac{\\beta}{x^2}",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 5
+        },
+        {
+            "top_left_x": 20,
+            "top_left_y": 566,
+            "bottom_right_x": 523,
+            "bottom_right_y": 620,
+            "content": "x_{n+1} = x_n - \\alpha \\nabla f(x_n) + \\frac{x}{\\mu^2}",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 6
+        },
+        {
+            "top_left_x": 32,
+            "top_left_y": 638,
+            "bottom_right_x": 507,
+            "bottom_right_y": 657,
+            "content": "نظرية",
+            "type": "title",
+            "confidence_scores": null,
+            "reading_index": 7
+        },
+        {
+            "top_left_x": 32,
+            "top_left_y": 662,
+            "bottom_right_x": 507,
+            "bottom_right_y": 707,
+            "content": "وسلم قَالَ: ((قَدْرُ حَوْضِي كَمَا بَيْنَ أَيْلَةَ، وَصَنْعَاءَ مِنْ الْيَمَنِ، وَإِنَّ فِيهِ مِنَ الْأَبَارِيقِ كَعَدَدِ نُجُومِ السَّمَاءِ) ). [خ: ٦٥٨٠] [٢٣٠٤] وَحَدَّثَنِي مُحَمَّدُ بْنُ حَاتِمٍ، حَدَّثَنَا عَفَّانُ بْنُ",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 8
+        },
+        {
+            "top_left_x": 32,
+            "top_left_y": 713,
+            "bottom_right_x": 507,
+            "bottom_right_y": 782,
+            "content": "\\sum_{j=0}^{N} \\frac{t^j}{j!} = e^{t}",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 9
+        },
+        {
+            "top_left_x": 20,
+            "top_left_y": 814,
+            "bottom_right_x": 523,
+            "bottom_right_y": 864,
+            "content": "\\vec{F} = m\\vec{a} + \\frac{\\theta}{k^2}",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 10
         }
     ],
     "meta": {
-        "template": "minimalist",
-        "hybrid": null
+        "template": "math_proof",
+        "hybrid": "figure"
     }
 }

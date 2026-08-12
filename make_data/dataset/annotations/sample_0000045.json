@@ -1,241 +1,55 @@
 {
-    "markdown": "## نظرية\nعَنْ سُلَيْمٍ، قَالَ يَحْيَى: أَخْبَرَنَا سُلَيْمُ بْنُ أَخْضَرَ عَنْ عُبَيْدِ اللَّهِ بْنِ عُمَرَ، حَدَّثَنَا نَافِعٌ عَنْ عَبْدِ اللَّهِ بْنِ عُمَرَ أَنَّ رَسُولَ اللَّهِ\n\\int_{5}^{N} \\min(y) \\, dy = \\lambda^2 \\geq C\n\\frac{\\partial t}{\\partial \\sigma} = \\lim_{h \\to 0} \\frac{\\exp(\\sigma + h) - \\exp(\\sigma)}{h}",
-    "images": [],
+    "markdown": "\n![image](img-0)\n\nمَرَّاتٍ، وَلْيَتَعَوَّذْ بِاللَّهِ مِنْ شَرِّهَا؛",
+    "images": [
+        {
+            "id": "img-0",
+            "top_left_x": 241,
+            "top_left_y": 342,
+            "bottom_right_x": 305,
+            "bottom_right_y": 406,
+            "reading_index": 1
+        }
+    ],
     "tables": [],
     "hyperlinks": [],
     "header": null,
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 273,
-        "width": 661
+        "height": 801,
+        "width": 546
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "##",
+                "text": "![image](img-0)",
                 "confidence": 1.0,
-                "start_index": 0
+                "start_index": 1
             },
             {
-                "text": "نظرية",
+                "text": "مَرَّاتٍ،",
                 "confidence": 1.0,
-                "start_index": 3
+                "start_index": 18
             },
             {
-                "text": "عَنْ",
+                "text": "وَلْيَتَعَوَّذْ",
                 "confidence": 1.0,
-                "start_index": 9
+                "start_index": 28
             },
             {
-                "text": "سُلَيْمٍ،",
+                "text": "بِاللَّهِ",
                 "confidence": 1.0,
-                "start_index": 14
+                "start_index": 44
             },
             {
-                "text": "قَالَ",
+                "text": "مِنْ",
                 "confidence": 1.0,
-                "start_index": 24
+                "start_index": 54
             },
             {
-                "text": "يَحْيَى:",
+                "text": "شَرِّهَا؛",
                 "confidence": 1.0,
-                "start_index": 30
-            },
-            {
-                "text": "أَخْبَرَنَا",
-                "confidence": 1.0,
-                "start_index": 39
-            },
-            {
-                "text": "سُلَيْمُ",
-                "confidence": 1.0,
-                "start_index": 51
-            },
-            {
-                "text": "بْنُ",
-                "confidence": 1.0,
-                "start_index": 60
-            },
-            {
-                "text": "أَخْضَرَ",
-                "confidence": 1.0,
-                "start_index": 65
-            },
-            {
-                "text": "عَنْ",
-                "confidence": 1.0,
-                "start_index": 74
-            },
-            {
-                "text": "عُبَيْدِ",
-                "confidence": 1.0,
-                "start_index": 79
-            },
-            {
-                "text": "اللَّهِ",
-                "confidence": 1.0,
-                "start_index": 88
-            },
-            {
-                "text": "بْنِ",
-                "confidence": 1.0,
-                "start_index": 96
-            },
-            {
-                "text": "عُمَرَ،",
-                "confidence": 1.0,
-                "start_index": 101
-            },
-            {
-                "text": "حَدَّثَنَا",
-                "confidence": 1.0,
-                "start_index": 109
-            },
-            {
-                "text": "نَافِعٌ",
-                "confidence": 1.0,
-                "start_index": 120
-            },
-            {
-                "text": "عَنْ",
-                "confidence": 1.0,
-                "start_index": 128
-            },
-            {
-                "text": "عَبْدِ",
-                "confidence": 1.0,
-                "start_index": 133
-            },
-            {
-                "text": "اللَّهِ",
-                "confidence": 1.0,
-                "start_index": 140
-            },
-            {
-                "text": "بْنِ",
-                "confidence": 1.0,
-                "start_index": 148
-            },
-            {
-                "text": "عُمَرَ",
-                "confidence": 1.0,
-                "start_index": 153
-            },
-            {
-                "text": "أَنَّ",
-                "confidence": 1.0,
-                "start_index": 160
-            },
-            {
-                "text": "رَسُولَ",
-                "confidence": 1.0,
-                "start_index": 166
-            },
-            {
-                "text": "اللَّهِ",
-                "confidence": 1.0,
-                "start_index": 174
-            },
-            {
-                "text": "\\int_{5}^{N}",
-                "confidence": 1.0,
-                "start_index": 182
-            },
-            {
-                "text": "\\min(y)",
-                "confidence": 1.0,
-                "start_index": 195
-            },
-            {
-                "text": "\\,",
-                "confidence": 1.0,
-                "start_index": 203
-            },
-            {
-                "text": "dy",
-                "confidence": 1.0,
-                "start_index": 206
-            },
-            {
-                "text": "=",
-                "confidence": 1.0,
-                "start_index": 209
-            },
-            {
-                "text": "\\lambda^2",
-                "confidence": 1.0,
-                "start_index": 211
-            },
-            {
-                "text": "\\geq",
-                "confidence": 1.0,
-                "start_index": 221
-            },
-            {
-                "text": "C",
-                "confidence": 1.0,
-                "start_index": 226
-            },
-            {
-                "text": "\\frac{\\partial",
-                "confidence": 1.0,
-                "start_index": 228
-            },
-            {
-                "text": "t}{\\partial",
-                "confidence": 1.0,
-                "start_index": 243
-            },
-            {
-                "text": "\\sigma}",
-                "confidence": 1.0,
-                "start_index": 255
-            },
-            {
-                "text": "=",
-                "confidence": 1.0,
-                "start_index": 263
-            },
-            {
-                "text": "\\lim_{h",
-                "confidence": 1.0,
-                "start_index": 265
-            },
-            {
-                "text": "\\to",
-                "confidence": 1.0,
-                "start_index": 273
-            },
-            {
-                "text": "0}",
-                "confidence": 1.0,
-                "start_index": 277
-            },
-            {
-                "text": "\\frac{\\exp(\\sigma",
-                "confidence": 1.0,
-                "start_index": 280
-            },
-            {
-                "text": "+",
-                "confidence": 1.0,
-                "start_index": 298
-            },
-            {
-                "text": "h)",
-                "confidence": 1.0,
-                "start_index": 300
-            },
-            {
-                "text": "-",
-                "confidence": 1.0,
-                "start_index": 303
-            },
-            {
-                "text": "\\exp(\\sigma)}{h}",
-                "confidence": 1.0,
-                "start_index": 305
+                "start_index": 59
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -243,48 +57,28 @@
     },
     "blocks": [
         {
-            "top_left_x": 32,
-            "top_left_y": 32,
-            "bottom_right_x": 625,
-            "bottom_right_y": 50,
-            "content": "نظرية",
-            "type": "title",
+            "top_left_x": 241,
+            "top_left_y": 342,
+            "bottom_right_x": 305,
+            "bottom_right_y": 406,
+            "content": "![image](img-0)",
+            "type": "image",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 32,
-            "top_left_y": 55,
-            "bottom_right_x": 625,
-            "bottom_right_y": 77,
-            "content": "عَنْ سُلَيْمٍ، قَالَ يَحْيَى: أَخْبَرَنَا سُلَيْمُ بْنُ أَخْضَرَ عَنْ عُبَيْدِ اللَّهِ بْنِ عُمَرَ، حَدَّثَنَا نَافِعٌ عَنْ عَبْدِ اللَّهِ بْنِ عُمَرَ أَنَّ رَسُولَ اللَّهِ",
+            "top_left_x": 146,
+            "top_left_y": 428,
+            "bottom_right_x": 400,
+            "bottom_right_y": 459,
+            "content": "مَرَّاتٍ، وَلْيَتَعَوَّذْ بِاللَّهِ مِنْ شَرِّهَا؛",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 2
-        },
-        {
-            "top_left_x": 32,
-            "top_left_y": 83,
-            "bottom_right_x": 625,
-            "bottom_right_y": 141,
-            "content": "\\int_{5}^{N} \\min(y) \\, dy = \\lambda^2 \\geq C",
-            "type": "text",
-            "confidence_scores": null,
-            "reading_index": 3
-        },
-        {
-            "top_left_x": 20,
-            "top_left_y": 173,
-            "bottom_right_x": 641,
-            "bottom_right_y": 227,
-            "content": "\\frac{\\partial t}{\\partial \\sigma} = \\lim_{h \\to 0} \\frac{\\exp(\\sigma + h) - \\exp(\\sigma)}{h}",
-            "type": "text",
-            "confidence_scores": null,
-            "reading_index": 4
         }
     ],
     "meta": {
-        "template": "math_proof",
+        "template": "minimalist",
         "hybrid": null
     }
 }

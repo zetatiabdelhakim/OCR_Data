@@ -1,68 +1,36 @@
 {
-    "markdown": "ذلك تعليمَ\n\n![image](img-0)\n\nحُصَيْنٍ: أَنَّ\n1729-1617\n\n![image](img-1)\n",
-    "images": [
-        {
-            "id": "img-0",
-            "top_left_x": 312,
-            "top_left_y": 73,
-            "bottom_right_x": 356,
-            "bottom_right_y": 129,
-            "reading_index": 2
-        },
-        {
-            "id": "img-1",
-            "top_left_x": 10,
-            "top_left_y": 177,
-            "bottom_right_x": 356,
-            "bottom_right_y": 207,
-            "reading_index": 5
-        }
-    ],
+    "markdown": "## لأن أهل الذمة",
+    "images": [],
     "tables": [],
     "hyperlinks": [],
     "header": null,
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 217,
-        "width": 366
+        "height": 1228,
+        "width": 738
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "ذلك",
+                "text": "##",
                 "confidence": 1.0,
                 "start_index": 0
             },
             {
-                "text": "تعليمَ",
+                "text": "لأن",
                 "confidence": 1.0,
-                "start_index": 4
+                "start_index": 3
             },
             {
-                "text": "![image](img-0)",
+                "text": "أهل",
                 "confidence": 1.0,
-                "start_index": 12
+                "start_index": 7
             },
             {
-                "text": "حُصَيْنٍ:",
+                "text": "الذمة",
                 "confidence": 1.0,
-                "start_index": 29
-            },
-            {
-                "text": "أَنَّ",
-                "confidence": 1.0,
-                "start_index": 39
-            },
-            {
-                "text": "1729-1617",
-                "confidence": 1.0,
-                "start_index": 45
-            },
-            {
-                "text": "![image](img-1)",
-                "confidence": 1.0,
-                "start_index": 56
+                "start_index": 11
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -70,58 +38,18 @@
     },
     "blocks": [
         {
-            "top_left_x": 10,
-            "top_left_y": 10,
-            "bottom_right_x": 356,
-            "bottom_right_y": 25,
-            "content": "ذلك تعليمَ",
-            "type": "text",
+            "top_left_x": 40,
+            "top_left_y": 40,
+            "bottom_right_x": 698,
+            "bottom_right_y": 1088,
+            "content": "لأن أهل الذمة",
+            "type": "title",
             "confidence_scores": null,
             "reading_index": 1
-        },
-        {
-            "top_left_x": 312,
-            "top_left_y": 73,
-            "bottom_right_x": 356,
-            "bottom_right_y": 129,
-            "content": "![image](img-0)",
-            "type": "image",
-            "confidence_scores": null,
-            "reading_index": 2
-        },
-        {
-            "top_left_x": 10,
-            "top_left_y": 85,
-            "bottom_right_x": 304,
-            "bottom_right_y": 101,
-            "content": "حُصَيْنٍ: أَنَّ",
-            "type": "text",
-            "confidence_scores": null,
-            "reading_index": 3
-        },
-        {
-            "top_left_x": 10,
-            "top_left_y": 105,
-            "bottom_right_x": 304,
-            "bottom_right_y": 117,
-            "content": "1729-1617",
-            "type": "text",
-            "confidence_scores": null,
-            "reading_index": 4
-        },
-        {
-            "top_left_x": 10,
-            "top_left_y": 177,
-            "bottom_right_x": 356,
-            "bottom_right_y": 207,
-            "content": "![image](img-1)",
-            "type": "image",
-            "confidence_scores": null,
-            "reading_index": 5
         }
     ],
     "meta": {
-        "template": "id_card",
+        "template": "a4_tables",
         "hybrid": null
     }
 }

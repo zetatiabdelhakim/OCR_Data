@@ -1,20 +1,20 @@
 {
-    "markdown": "مِنَ الْحَقِّ} ،\n\n![image](img-0)\n\nحَجَرًا بِمَكَّةَ\n2484-8829\n\n![image](img-1)\n",
+    "markdown": "ولذلك شفع النبي صلى\n\n![image](img-0)\n\nعائشة رضي الله\n7927-1471\n\n![image](img-1)\n",
     "images": [
         {
             "id": "img-0",
-            "top_left_x": 281,
-            "top_left_y": 72,
-            "bottom_right_x": 325,
-            "bottom_right_y": 128,
+            "top_left_x": 278,
+            "top_left_y": 61,
+            "bottom_right_x": 322,
+            "bottom_right_y": 117,
             "reading_index": 2
         },
         {
             "id": "img-1",
             "top_left_x": 10,
-            "top_left_y": 172,
-            "bottom_right_x": 325,
-            "bottom_right_y": 202,
+            "top_left_y": 153,
+            "bottom_right_x": 322,
+            "bottom_right_y": 183,
             "reading_index": 5
         }
     ],
@@ -24,43 +24,53 @@
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 212,
-        "width": 335
+        "height": 193,
+        "width": 332
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "مِنَ",
+                "text": "ولذلك",
                 "confidence": 1.0,
                 "start_index": 0
             },
             {
-                "text": "الْحَقِّ}",
+                "text": "شفع",
                 "confidence": 1.0,
-                "start_index": 5
+                "start_index": 6
             },
             {
-                "text": "،",
+                "text": "النبي",
                 "confidence": 1.0,
-                "start_index": 15
+                "start_index": 10
+            },
+            {
+                "text": "صلى",
+                "confidence": 1.0,
+                "start_index": 16
             },
             {
                 "text": "![image](img-0)",
                 "confidence": 1.0,
-                "start_index": 18
+                "start_index": 21
             },
             {
-                "text": "حَجَرًا",
+                "text": "عائشة",
                 "confidence": 1.0,
-                "start_index": 35
+                "start_index": 38
             },
             {
-                "text": "بِمَكَّةَ",
+                "text": "رضي",
                 "confidence": 1.0,
-                "start_index": 43
+                "start_index": 44
             },
             {
-                "text": "2484-8829",
+                "text": "الله",
+                "confidence": 1.0,
+                "start_index": 48
+            },
+            {
+                "text": "7927-1471",
                 "confidence": 1.0,
                 "start_index": 53
             },
@@ -77,18 +87,18 @@
         {
             "top_left_x": 10,
             "top_left_y": 10,
-            "bottom_right_x": 325,
-            "bottom_right_y": 28,
-            "content": "مِنَ الْحَقِّ} ،",
+            "bottom_right_x": 322,
+            "bottom_right_y": 24,
+            "content": "ولذلك شفع النبي صلى",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 281,
-            "top_left_y": 72,
-            "bottom_right_x": 325,
-            "bottom_right_y": 128,
+            "top_left_x": 278,
+            "top_left_y": 61,
+            "bottom_right_x": 322,
+            "bottom_right_y": 117,
             "content": "![image](img-0)",
             "type": "image",
             "confidence_scores": null,
@@ -96,29 +106,29 @@
         },
         {
             "top_left_x": 10,
-            "top_left_y": 80,
-            "bottom_right_x": 273,
-            "bottom_right_y": 100,
-            "content": "حَجَرًا بِمَكَّةَ",
+            "top_left_y": 73,
+            "bottom_right_x": 270,
+            "bottom_right_y": 87,
+            "content": "عائشة رضي الله",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 3
         },
         {
             "top_left_x": 10,
-            "top_left_y": 104,
-            "bottom_right_x": 273,
-            "bottom_right_y": 121,
-            "content": "2484-8829",
+            "top_left_y": 91,
+            "bottom_right_x": 270,
+            "bottom_right_y": 104,
+            "content": "7927-1471",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 4
         },
         {
             "top_left_x": 10,
-            "top_left_y": 172,
-            "bottom_right_x": 325,
-            "bottom_right_y": 202,
+            "top_left_y": 153,
+            "bottom_right_x": 322,
+            "bottom_right_y": 183,
             "content": "![image](img-1)",
             "type": "image",
             "confidence_scores": null,

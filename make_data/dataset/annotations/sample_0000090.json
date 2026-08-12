@@ -1,85 +1,419 @@
 {
-    "markdown": "\n![image](img-0)\n\nمِنْ آيَاتِ اللَّهِ)\nكانت محرما له\n0790966041\nالظُّهْرَ، وَعَجَّلَ الْعَصْرَ، وَأَخَّرَ",
-    "images": [
+    "markdown": "لأن هذه المدة مدة طويلة، فمقدار\n## في الحج، فقيل: هي فسخ الحج\n\n[tbl-0.html](tbl-0.html)\n",
+    "images": [],
+    "tables": [
         {
-            "id": "img-0",
-            "top_left_x": 14,
-            "top_left_y": 14,
-            "bottom_right_x": 60,
-            "bottom_right_y": 60,
-            "reading_index": 1
+            "id": "tbl-0.html",
+            "content": "<table><tbody><tr><th>بالزبد فيتخمر، فربما</th><th>حرامًا لم يعطه</th><th>السابق، فإن</th><th>وسلم؟ !</th></tr><tr><td>شَيْبَةَ، وَهَنَّادُ بْنُ</td><td>قوله: ((أَرْمَلُوا فِي الْغَزْوِ) ):</td><td>عَبْدُ اللَّهِ بْنُ</td><td>زُهَيْرٌ: حَدَّثَنَا إِسْمَاعِيلُ بْنُ إِبْرَاهِيمَ، حَدَّثَنِي</td></tr><tr><td>الْجَاهِلِيَّةِ أَنْ أَعْتَكِفَ</td><td>كانوا يؤاجرون</td><td>وَالْمُؤْمِنُونَ إِلَّا أَبَا بَكْرٍ) ).</td><td>عُمَرُ: لَيْسَ هَذَا أُرِيدُ، إِنَّمَا</td></tr><tr><td>إليها إذا حصلت مشكلة، وإن كان</td><td>ثَلَاثَ لَيَالٍ) ) (١) . وقال ابن</td><td>كان في آخر الزمان، وظهر</td><td>قوة إلا بالله، فالواجب الحذر</td></tr></tbody></table>",
+            "format": "html",
+            "word_confidence_scores": [
+                {
+                    "text": "بالزبد",
+                    "confidence": 1.0,
+                    "start_index": 22
+                },
+                {
+                    "text": " فيتخمر،",
+                    "confidence": 1.0,
+                    "start_index": 28
+                },
+                {
+                    "text": " فربما",
+                    "confidence": 1.0,
+                    "start_index": 36
+                },
+                {
+                    "text": "حرامًا",
+                    "confidence": 1.0,
+                    "start_index": 51
+                },
+                {
+                    "text": " لم",
+                    "confidence": 1.0,
+                    "start_index": 57
+                },
+                {
+                    "text": " يعطه",
+                    "confidence": 1.0,
+                    "start_index": 60
+                },
+                {
+                    "text": "السابق،",
+                    "confidence": 1.0,
+                    "start_index": 74
+                },
+                {
+                    "text": " فإن",
+                    "confidence": 1.0,
+                    "start_index": 81
+                },
+                {
+                    "text": "وسلم؟",
+                    "confidence": 1.0,
+                    "start_index": 94
+                },
+                {
+                    "text": " !",
+                    "confidence": 1.0,
+                    "start_index": 99
+                },
+                {
+                    "text": "شَيْبَةَ،",
+                    "confidence": 1.0,
+                    "start_index": 119
+                },
+                {
+                    "text": " وَهَنَّادُ",
+                    "confidence": 1.0,
+                    "start_index": 128
+                },
+                {
+                    "text": " بْنُ",
+                    "confidence": 1.0,
+                    "start_index": 139
+                },
+                {
+                    "text": "قوله:",
+                    "confidence": 1.0,
+                    "start_index": 153
+                },
+                {
+                    "text": " ((أَرْمَلُوا",
+                    "confidence": 1.0,
+                    "start_index": 158
+                },
+                {
+                    "text": " فِي",
+                    "confidence": 1.0,
+                    "start_index": 171
+                },
+                {
+                    "text": " الْغَزْوِ)",
+                    "confidence": 1.0,
+                    "start_index": 175
+                },
+                {
+                    "text": " ):",
+                    "confidence": 1.0,
+                    "start_index": 186
+                },
+                {
+                    "text": "عَبْدُ",
+                    "confidence": 1.0,
+                    "start_index": 198
+                },
+                {
+                    "text": " اللَّهِ",
+                    "confidence": 1.0,
+                    "start_index": 204
+                },
+                {
+                    "text": " بْنُ",
+                    "confidence": 1.0,
+                    "start_index": 212
+                },
+                {
+                    "text": "زُهَيْرٌ:",
+                    "confidence": 1.0,
+                    "start_index": 226
+                },
+                {
+                    "text": " حَدَّثَنَا",
+                    "confidence": 1.0,
+                    "start_index": 235
+                },
+                {
+                    "text": " إِسْمَاعِيلُ",
+                    "confidence": 1.0,
+                    "start_index": 246
+                },
+                {
+                    "text": " بْنُ",
+                    "confidence": 1.0,
+                    "start_index": 259
+                },
+                {
+                    "text": " إِبْرَاهِيمَ،",
+                    "confidence": 1.0,
+                    "start_index": 264
+                },
+                {
+                    "text": " حَدَّثَنِي",
+                    "confidence": 1.0,
+                    "start_index": 278
+                },
+                {
+                    "text": "الْجَاهِلِيَّةِ",
+                    "confidence": 1.0,
+                    "start_index": 307
+                },
+                {
+                    "text": " أَنْ",
+                    "confidence": 1.0,
+                    "start_index": 322
+                },
+                {
+                    "text": " أَعْتَكِفَ",
+                    "confidence": 1.0,
+                    "start_index": 327
+                },
+                {
+                    "text": "كانوا",
+                    "confidence": 1.0,
+                    "start_index": 347
+                },
+                {
+                    "text": " يؤاجرون",
+                    "confidence": 1.0,
+                    "start_index": 352
+                },
+                {
+                    "text": "وَالْمُؤْمِنُونَ",
+                    "confidence": 1.0,
+                    "start_index": 369
+                },
+                {
+                    "text": " إِلَّا",
+                    "confidence": 1.0,
+                    "start_index": 385
+                },
+                {
+                    "text": " أَبَا",
+                    "confidence": 1.0,
+                    "start_index": 392
+                },
+                {
+                    "text": " بَكْرٍ)",
+                    "confidence": 1.0,
+                    "start_index": 398
+                },
+                {
+                    "text": " ).",
+                    "confidence": 1.0,
+                    "start_index": 406
+                },
+                {
+                    "text": "عُمَرُ:",
+                    "confidence": 1.0,
+                    "start_index": 418
+                },
+                {
+                    "text": " لَيْسَ",
+                    "confidence": 1.0,
+                    "start_index": 425
+                },
+                {
+                    "text": " هَذَا",
+                    "confidence": 1.0,
+                    "start_index": 432
+                },
+                {
+                    "text": " أُرِيدُ،",
+                    "confidence": 1.0,
+                    "start_index": 438
+                },
+                {
+                    "text": " إِنَّمَا",
+                    "confidence": 1.0,
+                    "start_index": 447
+                },
+                {
+                    "text": "إليها",
+                    "confidence": 1.0,
+                    "start_index": 474
+                },
+                {
+                    "text": " إذا",
+                    "confidence": 1.0,
+                    "start_index": 479
+                },
+                {
+                    "text": " حصلت",
+                    "confidence": 1.0,
+                    "start_index": 483
+                },
+                {
+                    "text": " مشكلة،",
+                    "confidence": 1.0,
+                    "start_index": 488
+                },
+                {
+                    "text": " وإن",
+                    "confidence": 1.0,
+                    "start_index": 495
+                },
+                {
+                    "text": " كان",
+                    "confidence": 1.0,
+                    "start_index": 499
+                },
+                {
+                    "text": "ثَلَاثَ",
+                    "confidence": 1.0,
+                    "start_index": 512
+                },
+                {
+                    "text": " لَيَالٍ)",
+                    "confidence": 1.0,
+                    "start_index": 519
+                },
+                {
+                    "text": " )",
+                    "confidence": 1.0,
+                    "start_index": 528
+                },
+                {
+                    "text": " (١)",
+                    "confidence": 1.0,
+                    "start_index": 530
+                },
+                {
+                    "text": " .",
+                    "confidence": 1.0,
+                    "start_index": 534
+                },
+                {
+                    "text": " وقال",
+                    "confidence": 1.0,
+                    "start_index": 536
+                },
+                {
+                    "text": " ابن",
+                    "confidence": 1.0,
+                    "start_index": 541
+                },
+                {
+                    "text": "كان",
+                    "confidence": 1.0,
+                    "start_index": 554
+                },
+                {
+                    "text": " في",
+                    "confidence": 1.0,
+                    "start_index": 557
+                },
+                {
+                    "text": " آخر",
+                    "confidence": 1.0,
+                    "start_index": 560
+                },
+                {
+                    "text": " الزمان،",
+                    "confidence": 1.0,
+                    "start_index": 564
+                },
+                {
+                    "text": " وظهر",
+                    "confidence": 1.0,
+                    "start_index": 572
+                },
+                {
+                    "text": "قوة",
+                    "confidence": 1.0,
+                    "start_index": 586
+                },
+                {
+                    "text": " إلا",
+                    "confidence": 1.0,
+                    "start_index": 589
+                },
+                {
+                    "text": " بالله،",
+                    "confidence": 1.0,
+                    "start_index": 593
+                },
+                {
+                    "text": " فالواجب",
+                    "confidence": 1.0,
+                    "start_index": 600
+                },
+                {
+                    "text": " الحذر",
+                    "confidence": 1.0,
+                    "start_index": 608
+                }
+            ]
         }
     ],
-    "tables": [],
     "hyperlinks": [],
-    "header": null,
+    "header": "لأن هذه المدة مدة طويلة، فمقدار",
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 345,
-        "width": 223
+        "height": 1080,
+        "width": 737
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "![image](img-0)",
+                "text": "لأن",
                 "confidence": 1.0,
-                "start_index": 1
+                "start_index": 0
             },
             {
-                "text": "مِنْ",
+                "text": "هذه",
+                "confidence": 1.0,
+                "start_index": 4
+            },
+            {
+                "text": "المدة",
+                "confidence": 1.0,
+                "start_index": 8
+            },
+            {
+                "text": "مدة",
+                "confidence": 1.0,
+                "start_index": 14
+            },
+            {
+                "text": "طويلة،",
                 "confidence": 1.0,
                 "start_index": 18
             },
             {
-                "text": "آيَاتِ",
+                "text": "فمقدار",
                 "confidence": 1.0,
-                "start_index": 23
+                "start_index": 25
             },
             {
-                "text": "اللَّهِ)",
+                "text": "##",
                 "confidence": 1.0,
-                "start_index": 30
+                "start_index": 32
             },
             {
-                "text": "كانت",
+                "text": "في",
                 "confidence": 1.0,
-                "start_index": 39
+                "start_index": 35
             },
             {
-                "text": "محرما",
+                "text": "الحج،",
+                "confidence": 1.0,
+                "start_index": 38
+            },
+            {
+                "text": "فقيل:",
                 "confidence": 1.0,
                 "start_index": 44
             },
             {
-                "text": "له",
+                "text": "هي",
                 "confidence": 1.0,
                 "start_index": 50
             },
             {
-                "text": "0790966041",
+                "text": "فسخ",
                 "confidence": 1.0,
                 "start_index": 53
             },
             {
-                "text": "الظُّهْرَ،",
+                "text": "الحج",
                 "confidence": 1.0,
-                "start_index": 64
+                "start_index": 57
             },
             {
-                "text": "وَعَجَّلَ",
+                "text": "[tbl-0.html](tbl-0.html)",
                 "confidence": 1.0,
-                "start_index": 75
-            },
-            {
-                "text": "الْعَصْرَ،",
-                "confidence": 1.0,
-                "start_index": 85
-            },
-            {
-                "text": "وَأَخَّرَ",
-                "confidence": 1.0,
-                "start_index": 96
+                "start_index": 63
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -87,58 +421,39 @@
     },
     "blocks": [
         {
-            "top_left_x": 14,
-            "top_left_y": 14,
-            "bottom_right_x": 60,
-            "bottom_right_y": 60,
-            "content": "![image](img-0)",
-            "type": "image",
+            "top_left_x": 560,
+            "top_left_y": 10,
+            "bottom_right_x": 697,
+            "bottom_right_y": 37,
+            "content": "لأن هذه المدة مدة طويلة، فمقدار",
+            "type": "header",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 14,
-            "top_left_y": 267,
-            "bottom_right_x": 209,
-            "bottom_right_y": 286,
-            "content": "مِنْ آيَاتِ اللَّهِ)",
-            "type": "text",
+            "top_left_x": 40,
+            "top_left_y": 89,
+            "bottom_right_x": 697,
+            "bottom_right_y": 232,
+            "content": "في الحج، فقيل: هي فسخ الحج",
+            "type": "title",
             "confidence_scores": null,
             "reading_index": 2
         },
         {
-            "top_left_x": 14,
-            "top_left_y": 288,
-            "bottom_right_x": 209,
-            "bottom_right_y": 301,
-            "content": "كانت محرما له",
-            "type": "text",
+            "top_left_x": 40,
+            "top_left_y": 264,
+            "bottom_right_x": 697,
+            "bottom_right_y": 365,
+            "content": "<table><tbody><tr><th>بالزبد فيتخمر، فربما</th><th>حرامًا لم يعطه</th><th>السابق، فإن</th><th>وسلم؟ !</th></tr><tr><td>شَيْبَةَ، وَهَنَّادُ بْنُ</td><td>قوله: ((أَرْمَلُوا فِي الْغَزْوِ) ):</td><td>عَبْدُ اللَّهِ بْنُ</td><td>زُهَيْرٌ: حَدَّثَنَا إِسْمَاعِيلُ بْنُ إِبْرَاهِيمَ، حَدَّثَنِي</td></tr><tr><td>الْجَاهِلِيَّةِ أَنْ أَعْتَكِفَ</td><td>كانوا يؤاجرون</td><td>وَالْمُؤْمِنُونَ إِلَّا أَبَا بَكْرٍ) ).</td><td>عُمَرُ: لَيْسَ هَذَا أُرِيدُ، إِنَّمَا</td></tr><tr><td>إليها إذا حصلت مشكلة، وإن كان</td><td>ثَلَاثَ لَيَالٍ) ) (١) . وقال ابن</td><td>كان في آخر الزمان، وظهر</td><td>قوة إلا بالله، فالواجب الحذر</td></tr></tbody></table>",
+            "type": "table",
+            "table_id": "tbl-0.html",
             "confidence_scores": null,
             "reading_index": 3
-        },
-        {
-            "top_left_x": 14,
-            "top_left_y": 307,
-            "bottom_right_x": 209,
-            "bottom_right_y": 319,
-            "content": "0790966041",
-            "type": "text",
-            "confidence_scores": null,
-            "reading_index": 4
-        },
-        {
-            "top_left_x": 14,
-            "top_left_y": 319,
-            "bottom_right_x": 209,
-            "bottom_right_y": 331,
-            "content": "الظُّهْرَ، وَعَجَّلَ الْعَصْرَ، وَأَخَّرَ",
-            "type": "text",
-            "confidence_scores": null,
-            "reading_index": 5
         }
     ],
     "meta": {
-        "template": "business_card",
-        "hybrid": null
+        "template": "a4_literary",
+        "hybrid": "mini-table"
     }
 }

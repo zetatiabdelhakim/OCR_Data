@@ -1,78 +1,141 @@
 {
-    "markdown": "الْبَحْرِ، فَوَاللَّهِ لَئِنْ\n\n![image](img-0)\n\nبإعداده، وقد يكون\n8567-3771\n\n![image](img-1)\n",
-    "images": [
-        {
-            "id": "img-0",
-            "top_left_x": 275,
-            "top_left_y": 61,
-            "bottom_right_x": 319,
-            "bottom_right_y": 117,
-            "reading_index": 2
-        },
-        {
-            "id": "img-1",
-            "top_left_x": 10,
-            "top_left_y": 154,
-            "bottom_right_x": 319,
-            "bottom_right_y": 184,
-            "reading_index": 5
-        }
-    ],
+    "markdown": "## بْنَ الْخَطَّابِ يَقُولُ: سَمِعْتُ هِشَامَ\n## نظرية\nالآخر بأنه من ليس بعده شيء، وفسر الظاهر بأنه من ليس فوقه\n\\vec{F} = m\\vec{a} + \\frac{k}{\\alpha^2}",
+    "images": [],
     "tables": [],
     "hyperlinks": [],
     "header": null,
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 194,
-        "width": 329
+        "height": 1209,
+        "width": 751
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "الْبَحْرِ،",
+                "text": "##",
                 "confidence": 1.0,
                 "start_index": 0
             },
             {
-                "text": "فَوَاللَّهِ",
+                "text": "بْنَ",
                 "confidence": 1.0,
-                "start_index": 11
+                "start_index": 3
             },
             {
-                "text": "لَئِنْ",
+                "text": "الْخَطَّابِ",
                 "confidence": 1.0,
-                "start_index": 23
+                "start_index": 8
             },
             {
-                "text": "![image](img-0)",
+                "text": "يَقُولُ:",
                 "confidence": 1.0,
-                "start_index": 31
+                "start_index": 20
             },
             {
-                "text": "بإعداده،",
+                "text": "سَمِعْتُ",
                 "confidence": 1.0,
-                "start_index": 48
+                "start_index": 29
             },
             {
-                "text": "وقد",
+                "text": "هِشَامَ",
                 "confidence": 1.0,
-                "start_index": 57
+                "start_index": 38
             },
             {
-                "text": "يكون",
+                "text": "##",
+                "confidence": 1.0,
+                "start_index": 46
+            },
+            {
+                "text": "نظرية",
+                "confidence": 1.0,
+                "start_index": 49
+            },
+            {
+                "text": "الآخر",
+                "confidence": 1.0,
+                "start_index": 55
+            },
+            {
+                "text": "بأنه",
                 "confidence": 1.0,
                 "start_index": 61
             },
             {
-                "text": "8567-3771",
+                "text": "من",
                 "confidence": 1.0,
                 "start_index": 66
             },
             {
-                "text": "![image](img-1)",
+                "text": "ليس",
                 "confidence": 1.0,
-                "start_index": 77
+                "start_index": 69
+            },
+            {
+                "text": "بعده",
+                "confidence": 1.0,
+                "start_index": 73
+            },
+            {
+                "text": "شيء،",
+                "confidence": 1.0,
+                "start_index": 78
+            },
+            {
+                "text": "وفسر",
+                "confidence": 1.0,
+                "start_index": 83
+            },
+            {
+                "text": "الظاهر",
+                "confidence": 1.0,
+                "start_index": 88
+            },
+            {
+                "text": "بأنه",
+                "confidence": 1.0,
+                "start_index": 95
+            },
+            {
+                "text": "من",
+                "confidence": 1.0,
+                "start_index": 100
+            },
+            {
+                "text": "ليس",
+                "confidence": 1.0,
+                "start_index": 103
+            },
+            {
+                "text": "فوقه",
+                "confidence": 1.0,
+                "start_index": 107
+            },
+            {
+                "text": "\\vec{F}",
+                "confidence": 1.0,
+                "start_index": 112
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 120
+            },
+            {
+                "text": "m\\vec{a}",
+                "confidence": 1.0,
+                "start_index": 122
+            },
+            {
+                "text": "+",
+                "confidence": 1.0,
+                "start_index": 131
+            },
+            {
+                "text": "\\frac{k}{\\alpha^2}",
+                "confidence": 1.0,
+                "start_index": 133
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -80,58 +143,48 @@
     },
     "blocks": [
         {
-            "top_left_x": 10,
-            "top_left_y": 10,
-            "bottom_right_x": 319,
-            "bottom_right_y": 24,
-            "content": "الْبَحْرِ، فَوَاللَّهِ لَئِنْ",
-            "type": "text",
+            "top_left_x": 40,
+            "top_left_y": 40,
+            "bottom_right_x": 711,
+            "bottom_right_y": 957,
+            "content": "بْنَ الْخَطَّابِ يَقُولُ: سَمِعْتُ هِشَامَ",
+            "type": "title",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 275,
-            "top_left_y": 61,
-            "bottom_right_x": 319,
-            "bottom_right_y": 117,
-            "content": "![image](img-0)",
-            "type": "image",
+            "top_left_x": 52,
+            "top_left_y": 1051,
+            "bottom_right_x": 695,
+            "bottom_right_y": 1070,
+            "content": "نظرية",
+            "type": "title",
             "confidence_scores": null,
             "reading_index": 2
         },
         {
-            "top_left_x": 10,
-            "top_left_y": 73,
-            "bottom_right_x": 267,
-            "bottom_right_y": 89,
-            "content": "بإعداده، وقد يكون",
+            "top_left_x": 52,
+            "top_left_y": 1075,
+            "bottom_right_x": 695,
+            "bottom_right_y": 1097,
+            "content": "الآخر بأنه من ليس بعده شيء، وفسر الظاهر بأنه من ليس فوقه",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 3
         },
         {
-            "top_left_x": 10,
-            "top_left_y": 93,
-            "bottom_right_x": 267,
-            "bottom_right_y": 106,
-            "content": "8567-3771",
+            "top_left_x": 52,
+            "top_left_y": 1103,
+            "bottom_right_x": 695,
+            "bottom_right_y": 1153,
+            "content": "\\vec{F} = m\\vec{a} + \\frac{k}{\\alpha^2}",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 4
-        },
-        {
-            "top_left_x": 10,
-            "top_left_y": 154,
-            "bottom_right_x": 319,
-            "bottom_right_y": 184,
-            "content": "![image](img-1)",
-            "type": "image",
-            "confidence_scores": null,
-            "reading_index": 5
         }
     ],
     "meta": {
-        "template": "id_card",
-        "hybrid": null
+        "template": "a4_tables",
+        "hybrid": "theorem"
     }
 }

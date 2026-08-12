@@ -1,56 +1,85 @@
 {
-    "markdown": "الله عليه وسلم: ((أَيُّمَا امْرِئٍ قَالَ\nوَانْطَلَقَ مَعَهُ",
-    "images": [],
+    "markdown": "\n![image](img-0)\n\nمَدِينَتِنَا، اللهُمَّ اجْعَلْ مَعَ\nعُرْوَةَ بْنِ الْمُغِيرَةِ بْنِ شُعْبَةَ عَنْ أَبِيهِ،",
+    "images": [
+        {
+            "id": "img-0",
+            "top_left_x": 304,
+            "top_left_y": 242,
+            "bottom_right_x": 368,
+            "bottom_right_y": 306,
+            "reading_index": 1
+        }
+    ],
     "tables": [],
     "hyperlinks": [],
     "header": null,
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 904,
-        "width": 528
+        "height": 631,
+        "width": 672
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "الله",
+                "text": "![image](img-0)",
                 "confidence": 1.0,
-                "start_index": 0
+                "start_index": 1
             },
             {
-                "text": "عليه",
+                "text": "مَدِينَتِنَا،",
                 "confidence": 1.0,
-                "start_index": 5
+                "start_index": 18
             },
             {
-                "text": "وسلم:",
+                "text": "اللهُمَّ",
                 "confidence": 1.0,
-                "start_index": 10
+                "start_index": 32
             },
             {
-                "text": "((أَيُّمَا",
-                "confidence": 1.0,
-                "start_index": 16
-            },
-            {
-                "text": "امْرِئٍ",
-                "confidence": 1.0,
-                "start_index": 27
-            },
-            {
-                "text": "قَالَ",
-                "confidence": 1.0,
-                "start_index": 35
-            },
-            {
-                "text": "وَانْطَلَقَ",
+                "text": "اجْعَلْ",
                 "confidence": 1.0,
                 "start_index": 41
             },
             {
-                "text": "مَعَهُ",
+                "text": "مَعَ",
                 "confidence": 1.0,
-                "start_index": 53
+                "start_index": 49
+            },
+            {
+                "text": "عُرْوَةَ",
+                "confidence": 1.0,
+                "start_index": 54
+            },
+            {
+                "text": "بْنِ",
+                "confidence": 1.0,
+                "start_index": 63
+            },
+            {
+                "text": "الْمُغِيرَةِ",
+                "confidence": 1.0,
+                "start_index": 68
+            },
+            {
+                "text": "بْنِ",
+                "confidence": 1.0,
+                "start_index": 81
+            },
+            {
+                "text": "شُعْبَةَ",
+                "confidence": 1.0,
+                "start_index": 86
+            },
+            {
+                "text": "عَنْ",
+                "confidence": 1.0,
+                "start_index": 95
+            },
+            {
+                "text": "أَبِيهِ،",
+                "confidence": 1.0,
+                "start_index": 100
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -58,28 +87,38 @@
     },
     "blocks": [
         {
-            "top_left_x": 204,
-            "top_left_y": 448,
-            "bottom_right_x": 324,
-            "bottom_right_y": 464,
-            "content": "الله عليه وسلم: ((أَيُّمَا امْرِئٍ قَالَ",
-            "type": "text",
+            "top_left_x": 304,
+            "top_left_y": 242,
+            "bottom_right_x": 368,
+            "bottom_right_y": 306,
+            "content": "![image](img-0)",
+            "type": "image",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 233,
-            "top_left_y": 867,
-            "bottom_right_x": 295,
-            "bottom_right_y": 886,
-            "content": "وَانْطَلَقَ مَعَهُ",
+            "top_left_x": 234,
+            "top_left_y": 328,
+            "bottom_right_x": 438,
+            "bottom_right_y": 357,
+            "content": "مَدِينَتِنَا، اللهُمَّ اجْعَلْ مَعَ",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 2
+        },
+        {
+            "top_left_x": 237,
+            "top_left_y": 367,
+            "bottom_right_x": 436,
+            "bottom_right_y": 389,
+            "content": "عُرْوَةَ بْنِ الْمُغِيرَةِ بْنِ شُعْبَةَ عَنْ أَبِيهِ،",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 3
         }
     ],
     "meta": {
-        "template": "book_cover",
+        "template": "minimalist",
         "hybrid": null
     }
 }

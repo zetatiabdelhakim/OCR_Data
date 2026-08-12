@@ -1,361 +1,73 @@
 {
-    "markdown": "\\sum_{\\mu=0}^{N} \\frac{\\alpha^\\mu}{\\mu!} = e^{\\alpha}\n## برهان\nجمهور العلماء (١) . وذهب الإمام أبو حنيفة رحمه الله: إلى أنه يسهم للفارس بسهمين: سهم له،\n\\mathbb{E}[y] = \\int x f_y(x) dx + \\frac{j}{y^2}\nP(A|B) = \\frac{P(A \\cap B)}{P(B)} + \\frac{x}{y^2}\n## ملاحظة\nبْنِ مُحَمَّدِ بْنِ سَعْدٍ عَنْ عَامِرِ بْنِ سَعْدِ بْنِ أَبِي وَقَّاصٍ: ((أن سعد بن أبي\n\\int_{5}^{100} \\log(\\sigma) \\, d\\sigma = x^2 \\approx C\n\\prod_{k=1}^{n} (1 \\cdot n_k) = 0",
-    "images": [],
+    "markdown": "فكلٌّ موعود\n\n![image](img-0)\n\nقَتَادَةَ قَالَ: قَالَ\n1355-9402\n\n![image](img-1)\n",
+    "images": [
+        {
+            "id": "img-0",
+            "top_left_x": 286,
+            "top_left_y": 74,
+            "bottom_right_x": 330,
+            "bottom_right_y": 130,
+            "reading_index": 2
+        },
+        {
+            "id": "img-1",
+            "top_left_x": 10,
+            "top_left_y": 180,
+            "bottom_right_x": 330,
+            "bottom_right_y": 210,
+            "reading_index": 5
+        }
+    ],
     "tables": [],
     "hyperlinks": [],
     "header": null,
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 597,
-        "width": 488
+        "height": 220,
+        "width": 340
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "\\sum_{\\mu=0}^{N}",
+                "text": "فكلٌّ",
                 "confidence": 1.0,
                 "start_index": 0
             },
             {
-                "text": "\\frac{\\alpha^\\mu}{\\mu!}",
+                "text": "موعود",
                 "confidence": 1.0,
-                "start_index": 17
+                "start_index": 6
             },
             {
-                "text": "=",
+                "text": "![image](img-0)",
                 "confidence": 1.0,
-                "start_index": 41
+                "start_index": 13
             },
             {
-                "text": "e^{\\alpha}",
+                "text": "قَتَادَةَ",
                 "confidence": 1.0,
-                "start_index": 43
+                "start_index": 30
             },
             {
-                "text": "##",
+                "text": "قَالَ:",
                 "confidence": 1.0,
-                "start_index": 54
+                "start_index": 40
             },
             {
-                "text": "برهان",
+                "text": "قَالَ",
                 "confidence": 1.0,
-                "start_index": 57
+                "start_index": 47
             },
             {
-                "text": "جمهور",
+                "text": "1355-9402",
                 "confidence": 1.0,
-                "start_index": 63
+                "start_index": 53
             },
             {
-                "text": "العلماء",
+                "text": "![image](img-1)",
                 "confidence": 1.0,
-                "start_index": 69
-            },
-            {
-                "text": "(١)",
-                "confidence": 1.0,
-                "start_index": 77
-            },
-            {
-                "text": ".",
-                "confidence": 1.0,
-                "start_index": 81
-            },
-            {
-                "text": "وذهب",
-                "confidence": 1.0,
-                "start_index": 83
-            },
-            {
-                "text": "الإمام",
-                "confidence": 1.0,
-                "start_index": 88
-            },
-            {
-                "text": "أبو",
-                "confidence": 1.0,
-                "start_index": 95
-            },
-            {
-                "text": "حنيفة",
-                "confidence": 1.0,
-                "start_index": 99
-            },
-            {
-                "text": "رحمه",
-                "confidence": 1.0,
-                "start_index": 105
-            },
-            {
-                "text": "الله:",
-                "confidence": 1.0,
-                "start_index": 110
-            },
-            {
-                "text": "إلى",
-                "confidence": 1.0,
-                "start_index": 116
-            },
-            {
-                "text": "أنه",
-                "confidence": 1.0,
-                "start_index": 120
-            },
-            {
-                "text": "يسهم",
-                "confidence": 1.0,
-                "start_index": 124
-            },
-            {
-                "text": "للفارس",
-                "confidence": 1.0,
-                "start_index": 129
-            },
-            {
-                "text": "بسهمين:",
-                "confidence": 1.0,
-                "start_index": 136
-            },
-            {
-                "text": "سهم",
-                "confidence": 1.0,
-                "start_index": 144
-            },
-            {
-                "text": "له،",
-                "confidence": 1.0,
-                "start_index": 148
-            },
-            {
-                "text": "\\mathbb{E}[y]",
-                "confidence": 1.0,
-                "start_index": 152
-            },
-            {
-                "text": "=",
-                "confidence": 1.0,
-                "start_index": 166
-            },
-            {
-                "text": "\\int",
-                "confidence": 1.0,
-                "start_index": 168
-            },
-            {
-                "text": "x",
-                "confidence": 1.0,
-                "start_index": 173
-            },
-            {
-                "text": "f_y(x)",
-                "confidence": 1.0,
-                "start_index": 175
-            },
-            {
-                "text": "dx",
-                "confidence": 1.0,
-                "start_index": 182
-            },
-            {
-                "text": "+",
-                "confidence": 1.0,
-                "start_index": 185
-            },
-            {
-                "text": "\\frac{j}{y^2}",
-                "confidence": 1.0,
-                "start_index": 187
-            },
-            {
-                "text": "P(A|B)",
-                "confidence": 1.0,
-                "start_index": 201
-            },
-            {
-                "text": "=",
-                "confidence": 1.0,
-                "start_index": 208
-            },
-            {
-                "text": "\\frac{P(A",
-                "confidence": 1.0,
-                "start_index": 210
-            },
-            {
-                "text": "\\cap",
-                "confidence": 1.0,
-                "start_index": 220
-            },
-            {
-                "text": "B)}{P(B)}",
-                "confidence": 1.0,
-                "start_index": 225
-            },
-            {
-                "text": "+",
-                "confidence": 1.0,
-                "start_index": 235
-            },
-            {
-                "text": "\\frac{x}{y^2}",
-                "confidence": 1.0,
-                "start_index": 237
-            },
-            {
-                "text": "##",
-                "confidence": 1.0,
-                "start_index": 251
-            },
-            {
-                "text": "ملاحظة",
-                "confidence": 1.0,
-                "start_index": 254
-            },
-            {
-                "text": "بْنِ",
-                "confidence": 1.0,
-                "start_index": 261
-            },
-            {
-                "text": "مُحَمَّدِ",
-                "confidence": 1.0,
-                "start_index": 266
-            },
-            {
-                "text": "بْنِ",
-                "confidence": 1.0,
-                "start_index": 276
-            },
-            {
-                "text": "سَعْدٍ",
-                "confidence": 1.0,
-                "start_index": 281
-            },
-            {
-                "text": "عَنْ",
-                "confidence": 1.0,
-                "start_index": 288
-            },
-            {
-                "text": "عَامِرِ",
-                "confidence": 1.0,
-                "start_index": 293
-            },
-            {
-                "text": "بْنِ",
-                "confidence": 1.0,
-                "start_index": 301
-            },
-            {
-                "text": "سَعْدِ",
-                "confidence": 1.0,
-                "start_index": 306
-            },
-            {
-                "text": "بْنِ",
-                "confidence": 1.0,
-                "start_index": 313
-            },
-            {
-                "text": "أَبِي",
-                "confidence": 1.0,
-                "start_index": 318
-            },
-            {
-                "text": "وَقَّاصٍ:",
-                "confidence": 1.0,
-                "start_index": 324
-            },
-            {
-                "text": "((أن",
-                "confidence": 1.0,
-                "start_index": 334
-            },
-            {
-                "text": "سعد",
-                "confidence": 1.0,
-                "start_index": 339
-            },
-            {
-                "text": "بن",
-                "confidence": 1.0,
-                "start_index": 343
-            },
-            {
-                "text": "أبي",
-                "confidence": 1.0,
-                "start_index": 346
-            },
-            {
-                "text": "\\int_{5}^{100}",
-                "confidence": 1.0,
-                "start_index": 350
-            },
-            {
-                "text": "\\log(\\sigma)",
-                "confidence": 1.0,
-                "start_index": 365
-            },
-            {
-                "text": "\\,",
-                "confidence": 1.0,
-                "start_index": 378
-            },
-            {
-                "text": "d\\sigma",
-                "confidence": 1.0,
-                "start_index": 381
-            },
-            {
-                "text": "=",
-                "confidence": 1.0,
-                "start_index": 389
-            },
-            {
-                "text": "x^2",
-                "confidence": 1.0,
-                "start_index": 391
-            },
-            {
-                "text": "\\approx",
-                "confidence": 1.0,
-                "start_index": 395
-            },
-            {
-                "text": "C",
-                "confidence": 1.0,
-                "start_index": 403
-            },
-            {
-                "text": "\\prod_{k=1}^{n}",
-                "confidence": 1.0,
-                "start_index": 405
-            },
-            {
-                "text": "(1",
-                "confidence": 1.0,
-                "start_index": 421
-            },
-            {
-                "text": "\\cdot",
-                "confidence": 1.0,
-                "start_index": 424
-            },
-            {
-                "text": "n_k)",
-                "confidence": 1.0,
-                "start_index": 430
-            },
-            {
-                "text": "=",
-                "confidence": 1.0,
-                "start_index": 435
-            },
-            {
-                "text": "0",
-                "confidence": 1.0,
-                "start_index": 437
+                "start_index": 64
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -363,98 +75,58 @@
     },
     "blocks": [
         {
-            "top_left_x": 20,
-            "top_left_y": 26,
-            "bottom_right_x": 468,
-            "bottom_right_y": 95,
-            "content": "\\sum_{\\mu=0}^{N} \\frac{\\alpha^\\mu}{\\mu!} = e^{\\alpha}",
+            "top_left_x": 10,
+            "top_left_y": 10,
+            "bottom_right_x": 330,
+            "bottom_right_y": 24,
+            "content": "فكلٌّ موعود",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 32,
-            "top_left_y": 113,
-            "bottom_right_x": 452,
-            "bottom_right_y": 140,
-            "content": "برهان",
-            "type": "title",
+            "top_left_x": 286,
+            "top_left_y": 74,
+            "bottom_right_x": 330,
+            "bottom_right_y": 130,
+            "content": "![image](img-0)",
+            "type": "image",
             "confidence_scores": null,
             "reading_index": 2
         },
         {
-            "top_left_x": 32,
-            "top_left_y": 145,
-            "bottom_right_x": 452,
-            "bottom_right_y": 168,
-            "content": "جمهور العلماء (١) . وذهب الإمام أبو حنيفة رحمه الله: إلى أنه يسهم للفارس بسهمين: سهم له،",
+            "top_left_x": 10,
+            "top_left_y": 87,
+            "bottom_right_x": 278,
+            "bottom_right_y": 101,
+            "content": "قَتَادَةَ قَالَ: قَالَ",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 3
         },
         {
-            "top_left_x": 32,
-            "top_left_y": 174,
-            "bottom_right_x": 452,
-            "bottom_right_y": 228,
-            "content": "\\mathbb{E}[y] = \\int x f_y(x) dx + \\frac{j}{y^2}",
+            "top_left_x": 10,
+            "top_left_y": 105,
+            "bottom_right_x": 278,
+            "bottom_right_y": 118,
+            "content": "1355-9402",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 4
         },
         {
-            "top_left_x": 20,
-            "top_left_y": 260,
-            "bottom_right_x": 468,
-            "bottom_right_y": 315,
-            "content": "P(A|B) = \\frac{P(A \\cap B)}{P(B)} + \\frac{x}{y^2}",
-            "type": "text",
+            "top_left_x": 10,
+            "top_left_y": 180,
+            "bottom_right_x": 330,
+            "bottom_right_y": 210,
+            "content": "![image](img-1)",
+            "type": "image",
             "confidence_scores": null,
             "reading_index": 5
-        },
-        {
-            "top_left_x": 32,
-            "top_left_y": 339,
-            "bottom_right_x": 452,
-            "bottom_right_y": 357,
-            "content": "ملاحظة",
-            "type": "title",
-            "confidence_scores": null,
-            "reading_index": 6
-        },
-        {
-            "top_left_x": 32,
-            "top_left_y": 362,
-            "bottom_right_x": 452,
-            "bottom_right_y": 385,
-            "content": "بْنِ مُحَمَّدِ بْنِ سَعْدٍ عَنْ عَامِرِ بْنِ سَعْدِ بْنِ أَبِي وَقَّاصٍ: ((أن سعد بن أبي",
-            "type": "text",
-            "confidence_scores": null,
-            "reading_index": 7
-        },
-        {
-            "top_left_x": 32,
-            "top_left_y": 391,
-            "bottom_right_x": 452,
-            "bottom_right_y": 448,
-            "content": "\\int_{5}^{100} \\log(\\sigma) \\, d\\sigma = x^2 \\approx C",
-            "type": "text",
-            "confidence_scores": null,
-            "reading_index": 8
-        },
-        {
-            "top_left_x": 20,
-            "top_left_y": 480,
-            "bottom_right_x": 468,
-            "bottom_right_y": 551,
-            "content": "\\prod_{k=1}^{n} (1 \\cdot n_k) = 0",
-            "type": "text",
-            "confidence_scores": null,
-            "reading_index": 9
         }
     ],
     "meta": {
-        "template": "math_proof",
-        "hybrid": "theorem"
+        "template": "id_card",
+        "hybrid": null
     }
 }

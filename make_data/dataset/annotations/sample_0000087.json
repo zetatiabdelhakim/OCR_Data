@@ -1,1081 +1,364 @@
 {
-    "markdown": "## الْعَوَّامِ، حَدَّثَنَا سَعِيدُ بْنُ يَزِيدَ-\n\"فَقَصَّتْهُ حَفْصَةُ عَلَى النَّبِيِّ صلى الله عليه وسلم، فَقَالَ النَّبِيُّ صلى الله عليه وسلم: ((أَرَى عَبْدَ للَّهِ رَجُلًا\"\nعُلَيَّةَ وَالثَّقَفِيِّ: فَإِنِّي أَخَافُ، وَفِي حَدِيثِ سُفْيَانَ وَحَدِيثِ الضَّحَّاكِ بْنِ عُثْمَانَ: مَخَافَةَ أَنْ يَنَالَهُ الْعَدُوُّ. هذا الحديث فيه: النهي عن السفر بالقرآن إلى أرض العدو؛ مخافة أن تناله أيديهم بسوء، أو امتهان، وإذا انتفت هذه العلة جاز السفر بالقرآن، وقد انتفت هذه العلة في هذا الزمن، فإن القرآن موجود الآن عند الكفرة، ويطبعونه، ويذيعونه في إذاعاتهم. وفي حكم السفر بالقرآن إلى أرض العدو ثلاثة أقوال للعلماء: القول الأول: جواز السفر بالقرآن مطلقًا. القول الثاني: منعه مطلقًا. القول الثالث: جواز السفر به إذا لم يُخَفْ أن تناله أيدي الكفار بسوء، أو امتهان، وهذا هو القول الوسط، الذي دل عليه الحديث. قوله: ((وَخَاصَمُوكُمْ بِهِ) )، أي: جادلوكم به. بَابُ الْمُسَابَقَةِ بَيْنَ الْخَيْلِ وَتَضْمِيرِهَا [١٨٧٠] حَدَّثَنَا يَحيَى بْنُ يَحيَى التَّمِيمِيُّ قَالَ: قَرَأْتُ عَلَى مَالِكٍ عَنْ نَافِعٍ عَنِ ابْنِ عُمَرَ: أَنَّ رَسُولَ اللهِ صلى الله عليه وسلم سَابَقَ بِالْخَيْلِ الَّتِي قَدْ أُضْمِرَتْ مِنَ الْحَفْيَاءِ، وَكَانَ أَمَدُهَا ثَنِيَّةَ الْوَدَاعِ، وَسَابَقَ بَيْنَ الْخَيْلِ الَّتِي لَمْ تُضْمَرْ مِنَ الثَّنِيَّةِ إِلَى مَسْجِدِ بَنِي زُرَيْقٍ، وَكَانَ ابْنُ عُمَرَ فِيمَنْ سَابَقَ بِهَا. [خ: ٤٢٠] وَحَدَّثَنَا يَحيَى بْنُ يَحيَى، وَمُحَمَّدُ بْنُ رُمْحٍ، وَقُتَيْبَةُ بْنُ سَعِيدٍ عَنِ اللَّيْثِ بْنِ سَعْدٍ. ح وَحَدَّثَنَا خَلَفُ بْنُ هِشَامٍ، وَأَبُو الرَّبِيعِ، وَأَبُو كَامِلٍ قَالُوا: حَدَّثَنَا",
+    "markdown": "\n[tbl-0.html](tbl-0.html)\n\n## برهان\nفِي يَدِ سَارِقٍ، فَأَصْبَحُوا يَتَحَدَّثُونَ: تُصُدِّقَ عَلَى سَارِقٍ، فَقَالَ: اللَّهُمَّ لَكَ الْحَمْدُ عَلَى زَانِيَةٍ، وَعَلَى غَنِيٍّ، وَعَلَى سَارِقٍ، فَأُتِيَ، فَقِيلَ لَهُ: أَمَّا صَدَقَتُكَ\ni_{n+1} = i_n - \\alpha \\nabla f(i_n)\nj_{n+1} = j_n - \\alpha \\nabla f(j_n)",
     "images": [],
-    "tables": [],
+    "tables": [
+        {
+            "id": "tbl-0.html",
+            "content": "<table><tbody><tr><th>هذا صعد</th><th>إذن</th></tr><tr><td>في وقت قصير، فتقطع</td><td>والتأويل. وكلٌّ من القولين يخالف</td></tr><tr><td>كَانَ عَلَيْهِ مِنَ الْإِثْمِ مِثْلُ</td><td>أَبِي شَيْبَةَ، وَأَبُو كُرَيْبٍ- وَاللَّفْظُ</td></tr><tr><td>وأنه اغترف بإحدى</td><td>وَهْبٍ، أَخْبَرَنِي يُونُسُ</td></tr></tbody></table>",
+            "format": "html",
+            "word_confidence_scores": [
+                {
+                    "text": "هذا",
+                    "confidence": 1.0,
+                    "start_index": 22
+                },
+                {
+                    "text": " صعد",
+                    "confidence": 1.0,
+                    "start_index": 25
+                },
+                {
+                    "text": "إذن",
+                    "confidence": 1.0,
+                    "start_index": 38
+                },
+                {
+                    "text": "في",
+                    "confidence": 1.0,
+                    "start_index": 59
+                },
+                {
+                    "text": " وقت",
+                    "confidence": 1.0,
+                    "start_index": 61
+                },
+                {
+                    "text": " قصير،",
+                    "confidence": 1.0,
+                    "start_index": 65
+                },
+                {
+                    "text": " فتقطع",
+                    "confidence": 1.0,
+                    "start_index": 71
+                },
+                {
+                    "text": "والتأويل.",
+                    "confidence": 1.0,
+                    "start_index": 86
+                },
+                {
+                    "text": " وكلٌّ",
+                    "confidence": 1.0,
+                    "start_index": 95
+                },
+                {
+                    "text": " من",
+                    "confidence": 1.0,
+                    "start_index": 101
+                },
+                {
+                    "text": " القولين",
+                    "confidence": 1.0,
+                    "start_index": 104
+                },
+                {
+                    "text": " يخالف",
+                    "confidence": 1.0,
+                    "start_index": 112
+                },
+                {
+                    "text": "كَانَ",
+                    "confidence": 1.0,
+                    "start_index": 136
+                },
+                {
+                    "text": " عَلَيْهِ",
+                    "confidence": 1.0,
+                    "start_index": 141
+                },
+                {
+                    "text": " مِنَ",
+                    "confidence": 1.0,
+                    "start_index": 150
+                },
+                {
+                    "text": " الْإِثْمِ",
+                    "confidence": 1.0,
+                    "start_index": 155
+                },
+                {
+                    "text": " مِثْلُ",
+                    "confidence": 1.0,
+                    "start_index": 165
+                },
+                {
+                    "text": "أَبِي",
+                    "confidence": 1.0,
+                    "start_index": 181
+                },
+                {
+                    "text": " شَيْبَةَ،",
+                    "confidence": 1.0,
+                    "start_index": 186
+                },
+                {
+                    "text": " وَأَبُو",
+                    "confidence": 1.0,
+                    "start_index": 196
+                },
+                {
+                    "text": " كُرَيْبٍ-",
+                    "confidence": 1.0,
+                    "start_index": 204
+                },
+                {
+                    "text": " وَاللَّفْظُ",
+                    "confidence": 1.0,
+                    "start_index": 214
+                },
+                {
+                    "text": "وأنه",
+                    "confidence": 1.0,
+                    "start_index": 244
+                },
+                {
+                    "text": " اغترف",
+                    "confidence": 1.0,
+                    "start_index": 248
+                },
+                {
+                    "text": " بإحدى",
+                    "confidence": 1.0,
+                    "start_index": 254
+                },
+                {
+                    "text": "وَهْبٍ،",
+                    "confidence": 1.0,
+                    "start_index": 269
+                },
+                {
+                    "text": " أَخْبَرَنِي",
+                    "confidence": 1.0,
+                    "start_index": 276
+                },
+                {
+                    "text": " يُونُسُ",
+                    "confidence": 1.0,
+                    "start_index": 288
+                }
+            ]
+        }
+    ],
     "hyperlinks": [],
     "header": null,
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 1156,
-        "width": 710
+        "height": 442,
+        "width": 461
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
+                "text": "[tbl-0.html](tbl-0.html)",
+                "confidence": 1.0,
+                "start_index": 1
+            },
+            {
                 "text": "##",
-                "confidence": 1.0,
-                "start_index": 0
-            },
-            {
-                "text": "الْعَوَّامِ،",
-                "confidence": 1.0,
-                "start_index": 3
-            },
-            {
-                "text": "حَدَّثَنَا",
-                "confidence": 1.0,
-                "start_index": 16
-            },
-            {
-                "text": "سَعِيدُ",
                 "confidence": 1.0,
                 "start_index": 27
             },
             {
-                "text": "بْنُ",
+                "text": "برهان",
                 "confidence": 1.0,
-                "start_index": 35
+                "start_index": 30
             },
             {
-                "text": "يَزِيدَ-",
+                "text": "فِي",
+                "confidence": 1.0,
+                "start_index": 36
+            },
+            {
+                "text": "يَدِ",
                 "confidence": 1.0,
                 "start_index": 40
             },
             {
-                "text": "\"فَقَصَّتْهُ",
+                "text": "سَارِقٍ،",
                 "confidence": 1.0,
-                "start_index": 49
+                "start_index": 45
             },
             {
-                "text": "حَفْصَةُ",
+                "text": "فَأَصْبَحُوا",
                 "confidence": 1.0,
-                "start_index": 62
+                "start_index": 54
+            },
+            {
+                "text": "يَتَحَدَّثُونَ:",
+                "confidence": 1.0,
+                "start_index": 67
+            },
+            {
+                "text": "تُصُدِّقَ",
+                "confidence": 1.0,
+                "start_index": 83
             },
             {
                 "text": "عَلَى",
                 "confidence": 1.0,
-                "start_index": 71
+                "start_index": 93
             },
             {
-                "text": "النَّبِيِّ",
+                "text": "سَارِقٍ،",
                 "confidence": 1.0,
-                "start_index": 77
+                "start_index": 99
             },
             {
-                "text": "صلى",
-                "confidence": 1.0,
-                "start_index": 88
-            },
-            {
-                "text": "الله",
-                "confidence": 1.0,
-                "start_index": 92
-            },
-            {
-                "text": "عليه",
-                "confidence": 1.0,
-                "start_index": 97
-            },
-            {
-                "text": "وسلم،",
-                "confidence": 1.0,
-                "start_index": 102
-            },
-            {
-                "text": "فَقَالَ",
+                "text": "فَقَالَ:",
                 "confidence": 1.0,
                 "start_index": 108
             },
             {
-                "text": "النَّبِيُّ",
+                "text": "اللَّهُمَّ",
                 "confidence": 1.0,
-                "start_index": 116
+                "start_index": 117
             },
             {
-                "text": "صلى",
+                "text": "لَكَ",
                 "confidence": 1.0,
-                "start_index": 127
+                "start_index": 128
             },
             {
-                "text": "الله",
+                "text": "الْحَمْدُ",
                 "confidence": 1.0,
-                "start_index": 131
-            },
-            {
-                "text": "عليه",
-                "confidence": 1.0,
-                "start_index": 136
-            },
-            {
-                "text": "وسلم:",
-                "confidence": 1.0,
-                "start_index": 141
-            },
-            {
-                "text": "((أَرَى",
-                "confidence": 1.0,
-                "start_index": 147
-            },
-            {
-                "text": "عَبْدَ",
-                "confidence": 1.0,
-                "start_index": 155
-            },
-            {
-                "text": "للَّهِ",
-                "confidence": 1.0,
-                "start_index": 162
-            },
-            {
-                "text": "رَجُلًا\"",
-                "confidence": 1.0,
-                "start_index": 169
-            },
-            {
-                "text": "عُلَيَّةَ",
-                "confidence": 1.0,
-                "start_index": 178
-            },
-            {
-                "text": "وَالثَّقَفِيِّ:",
-                "confidence": 1.0,
-                "start_index": 188
-            },
-            {
-                "text": "فَإِنِّي",
-                "confidence": 1.0,
-                "start_index": 204
-            },
-            {
-                "text": "أَخَافُ،",
-                "confidence": 1.0,
-                "start_index": 213
-            },
-            {
-                "text": "وَفِي",
-                "confidence": 1.0,
-                "start_index": 222
-            },
-            {
-                "text": "حَدِيثِ",
-                "confidence": 1.0,
-                "start_index": 228
-            },
-            {
-                "text": "سُفْيَانَ",
-                "confidence": 1.0,
-                "start_index": 236
-            },
-            {
-                "text": "وَحَدِيثِ",
-                "confidence": 1.0,
-                "start_index": 246
-            },
-            {
-                "text": "الضَّحَّاكِ",
-                "confidence": 1.0,
-                "start_index": 256
-            },
-            {
-                "text": "بْنِ",
-                "confidence": 1.0,
-                "start_index": 268
-            },
-            {
-                "text": "عُثْمَانَ:",
-                "confidence": 1.0,
-                "start_index": 273
-            },
-            {
-                "text": "مَخَافَةَ",
-                "confidence": 1.0,
-                "start_index": 284
-            },
-            {
-                "text": "أَنْ",
-                "confidence": 1.0,
-                "start_index": 294
-            },
-            {
-                "text": "يَنَالَهُ",
-                "confidence": 1.0,
-                "start_index": 299
-            },
-            {
-                "text": "الْعَدُوُّ.",
-                "confidence": 1.0,
-                "start_index": 309
-            },
-            {
-                "text": "هذا",
-                "confidence": 1.0,
-                "start_index": 321
-            },
-            {
-                "text": "الحديث",
-                "confidence": 1.0,
-                "start_index": 325
-            },
-            {
-                "text": "فيه:",
-                "confidence": 1.0,
-                "start_index": 332
-            },
-            {
-                "text": "النهي",
-                "confidence": 1.0,
-                "start_index": 337
-            },
-            {
-                "text": "عن",
-                "confidence": 1.0,
-                "start_index": 343
-            },
-            {
-                "text": "السفر",
-                "confidence": 1.0,
-                "start_index": 346
-            },
-            {
-                "text": "بالقرآن",
-                "confidence": 1.0,
-                "start_index": 352
-            },
-            {
-                "text": "إلى",
-                "confidence": 1.0,
-                "start_index": 360
-            },
-            {
-                "text": "أرض",
-                "confidence": 1.0,
-                "start_index": 364
-            },
-            {
-                "text": "العدو؛",
-                "confidence": 1.0,
-                "start_index": 368
-            },
-            {
-                "text": "مخافة",
-                "confidence": 1.0,
-                "start_index": 375
-            },
-            {
-                "text": "أن",
-                "confidence": 1.0,
-                "start_index": 381
-            },
-            {
-                "text": "تناله",
-                "confidence": 1.0,
-                "start_index": 384
-            },
-            {
-                "text": "أيديهم",
-                "confidence": 1.0,
-                "start_index": 390
-            },
-            {
-                "text": "بسوء،",
-                "confidence": 1.0,
-                "start_index": 397
-            },
-            {
-                "text": "أو",
-                "confidence": 1.0,
-                "start_index": 403
-            },
-            {
-                "text": "امتهان،",
-                "confidence": 1.0,
-                "start_index": 406
-            },
-            {
-                "text": "وإذا",
-                "confidence": 1.0,
-                "start_index": 414
-            },
-            {
-                "text": "انتفت",
-                "confidence": 1.0,
-                "start_index": 419
-            },
-            {
-                "text": "هذه",
-                "confidence": 1.0,
-                "start_index": 425
-            },
-            {
-                "text": "العلة",
-                "confidence": 1.0,
-                "start_index": 429
-            },
-            {
-                "text": "جاز",
-                "confidence": 1.0,
-                "start_index": 435
-            },
-            {
-                "text": "السفر",
-                "confidence": 1.0,
-                "start_index": 439
-            },
-            {
-                "text": "بالقرآن،",
-                "confidence": 1.0,
-                "start_index": 445
-            },
-            {
-                "text": "وقد",
-                "confidence": 1.0,
-                "start_index": 454
-            },
-            {
-                "text": "انتفت",
-                "confidence": 1.0,
-                "start_index": 458
-            },
-            {
-                "text": "هذه",
-                "confidence": 1.0,
-                "start_index": 464
-            },
-            {
-                "text": "العلة",
-                "confidence": 1.0,
-                "start_index": 468
-            },
-            {
-                "text": "في",
-                "confidence": 1.0,
-                "start_index": 474
-            },
-            {
-                "text": "هذا",
-                "confidence": 1.0,
-                "start_index": 477
-            },
-            {
-                "text": "الزمن،",
-                "confidence": 1.0,
-                "start_index": 481
-            },
-            {
-                "text": "فإن",
-                "confidence": 1.0,
-                "start_index": 488
-            },
-            {
-                "text": "القرآن",
-                "confidence": 1.0,
-                "start_index": 492
-            },
-            {
-                "text": "موجود",
-                "confidence": 1.0,
-                "start_index": 499
-            },
-            {
-                "text": "الآن",
-                "confidence": 1.0,
-                "start_index": 505
-            },
-            {
-                "text": "عند",
-                "confidence": 1.0,
-                "start_index": 510
-            },
-            {
-                "text": "الكفرة،",
-                "confidence": 1.0,
-                "start_index": 514
-            },
-            {
-                "text": "ويطبعونه،",
-                "confidence": 1.0,
-                "start_index": 522
-            },
-            {
-                "text": "ويذيعونه",
-                "confidence": 1.0,
-                "start_index": 532
-            },
-            {
-                "text": "في",
-                "confidence": 1.0,
-                "start_index": 541
-            },
-            {
-                "text": "إذاعاتهم.",
-                "confidence": 1.0,
-                "start_index": 544
-            },
-            {
-                "text": "وفي",
-                "confidence": 1.0,
-                "start_index": 554
-            },
-            {
-                "text": "حكم",
-                "confidence": 1.0,
-                "start_index": 558
-            },
-            {
-                "text": "السفر",
-                "confidence": 1.0,
-                "start_index": 562
-            },
-            {
-                "text": "بالقرآن",
-                "confidence": 1.0,
-                "start_index": 568
-            },
-            {
-                "text": "إلى",
-                "confidence": 1.0,
-                "start_index": 576
-            },
-            {
-                "text": "أرض",
-                "confidence": 1.0,
-                "start_index": 580
-            },
-            {
-                "text": "العدو",
-                "confidence": 1.0,
-                "start_index": 584
-            },
-            {
-                "text": "ثلاثة",
-                "confidence": 1.0,
-                "start_index": 590
-            },
-            {
-                "text": "أقوال",
-                "confidence": 1.0,
-                "start_index": 596
-            },
-            {
-                "text": "للعلماء:",
-                "confidence": 1.0,
-                "start_index": 602
-            },
-            {
-                "text": "القول",
-                "confidence": 1.0,
-                "start_index": 611
-            },
-            {
-                "text": "الأول:",
-                "confidence": 1.0,
-                "start_index": 617
-            },
-            {
-                "text": "جواز",
-                "confidence": 1.0,
-                "start_index": 624
-            },
-            {
-                "text": "السفر",
-                "confidence": 1.0,
-                "start_index": 629
-            },
-            {
-                "text": "بالقرآن",
-                "confidence": 1.0,
-                "start_index": 635
-            },
-            {
-                "text": "مطلقًا.",
-                "confidence": 1.0,
-                "start_index": 643
-            },
-            {
-                "text": "القول",
-                "confidence": 1.0,
-                "start_index": 651
-            },
-            {
-                "text": "الثاني:",
-                "confidence": 1.0,
-                "start_index": 657
-            },
-            {
-                "text": "منعه",
-                "confidence": 1.0,
-                "start_index": 665
-            },
-            {
-                "text": "مطلقًا.",
-                "confidence": 1.0,
-                "start_index": 670
-            },
-            {
-                "text": "القول",
-                "confidence": 1.0,
-                "start_index": 678
-            },
-            {
-                "text": "الثالث:",
-                "confidence": 1.0,
-                "start_index": 684
-            },
-            {
-                "text": "جواز",
-                "confidence": 1.0,
-                "start_index": 692
-            },
-            {
-                "text": "السفر",
-                "confidence": 1.0,
-                "start_index": 697
-            },
-            {
-                "text": "به",
-                "confidence": 1.0,
-                "start_index": 703
-            },
-            {
-                "text": "إذا",
-                "confidence": 1.0,
-                "start_index": 706
-            },
-            {
-                "text": "لم",
-                "confidence": 1.0,
-                "start_index": 710
-            },
-            {
-                "text": "يُخَفْ",
-                "confidence": 1.0,
-                "start_index": 713
-            },
-            {
-                "text": "أن",
-                "confidence": 1.0,
-                "start_index": 720
-            },
-            {
-                "text": "تناله",
-                "confidence": 1.0,
-                "start_index": 723
-            },
-            {
-                "text": "أيدي",
-                "confidence": 1.0,
-                "start_index": 729
-            },
-            {
-                "text": "الكفار",
-                "confidence": 1.0,
-                "start_index": 734
-            },
-            {
-                "text": "بسوء،",
-                "confidence": 1.0,
-                "start_index": 741
-            },
-            {
-                "text": "أو",
-                "confidence": 1.0,
-                "start_index": 747
-            },
-            {
-                "text": "امتهان،",
-                "confidence": 1.0,
-                "start_index": 750
-            },
-            {
-                "text": "وهذا",
-                "confidence": 1.0,
-                "start_index": 758
-            },
-            {
-                "text": "هو",
-                "confidence": 1.0,
-                "start_index": 763
-            },
-            {
-                "text": "القول",
-                "confidence": 1.0,
-                "start_index": 766
-            },
-            {
-                "text": "الوسط،",
-                "confidence": 1.0,
-                "start_index": 772
-            },
-            {
-                "text": "الذي",
-                "confidence": 1.0,
-                "start_index": 779
-            },
-            {
-                "text": "دل",
-                "confidence": 1.0,
-                "start_index": 784
-            },
-            {
-                "text": "عليه",
-                "confidence": 1.0,
-                "start_index": 787
-            },
-            {
-                "text": "الحديث.",
-                "confidence": 1.0,
-                "start_index": 792
-            },
-            {
-                "text": "قوله:",
-                "confidence": 1.0,
-                "start_index": 800
-            },
-            {
-                "text": "((وَخَاصَمُوكُمْ",
-                "confidence": 1.0,
-                "start_index": 806
-            },
-            {
-                "text": "بِهِ)",
-                "confidence": 1.0,
-                "start_index": 823
-            },
-            {
-                "text": ")،",
-                "confidence": 1.0,
-                "start_index": 829
-            },
-            {
-                "text": "أي:",
-                "confidence": 1.0,
-                "start_index": 832
-            },
-            {
-                "text": "جادلوكم",
-                "confidence": 1.0,
-                "start_index": 836
-            },
-            {
-                "text": "به.",
-                "confidence": 1.0,
-                "start_index": 844
-            },
-            {
-                "text": "بَابُ",
-                "confidence": 1.0,
-                "start_index": 848
-            },
-            {
-                "text": "الْمُسَابَقَةِ",
-                "confidence": 1.0,
-                "start_index": 854
-            },
-            {
-                "text": "بَيْنَ",
-                "confidence": 1.0,
-                "start_index": 869
-            },
-            {
-                "text": "الْخَيْلِ",
-                "confidence": 1.0,
-                "start_index": 876
-            },
-            {
-                "text": "وَتَضْمِيرِهَا",
-                "confidence": 1.0,
-                "start_index": 886
-            },
-            {
-                "text": "[١٨٧٠]",
-                "confidence": 1.0,
-                "start_index": 901
-            },
-            {
-                "text": "حَدَّثَنَا",
-                "confidence": 1.0,
-                "start_index": 908
-            },
-            {
-                "text": "يَحيَى",
-                "confidence": 1.0,
-                "start_index": 919
-            },
-            {
-                "text": "بْنُ",
-                "confidence": 1.0,
-                "start_index": 926
-            },
-            {
-                "text": "يَحيَى",
-                "confidence": 1.0,
-                "start_index": 931
-            },
-            {
-                "text": "التَّمِيمِيُّ",
-                "confidence": 1.0,
-                "start_index": 938
-            },
-            {
-                "text": "قَالَ:",
-                "confidence": 1.0,
-                "start_index": 952
-            },
-            {
-                "text": "قَرَأْتُ",
-                "confidence": 1.0,
-                "start_index": 959
+                "start_index": 133
             },
             {
                 "text": "عَلَى",
                 "confidence": 1.0,
-                "start_index": 968
+                "start_index": 143
             },
             {
-                "text": "مَالِكٍ",
+                "text": "زَانِيَةٍ،",
                 "confidence": 1.0,
-                "start_index": 974
+                "start_index": 149
             },
             {
-                "text": "عَنْ",
+                "text": "وَعَلَى",
                 "confidence": 1.0,
-                "start_index": 982
+                "start_index": 160
             },
             {
-                "text": "نَافِعٍ",
+                "text": "غَنِيٍّ،",
                 "confidence": 1.0,
-                "start_index": 987
+                "start_index": 168
             },
             {
-                "text": "عَنِ",
+                "text": "وَعَلَى",
                 "confidence": 1.0,
-                "start_index": 995
+                "start_index": 177
             },
             {
-                "text": "ابْنِ",
+                "text": "سَارِقٍ،",
                 "confidence": 1.0,
-                "start_index": 1000
+                "start_index": 185
             },
             {
-                "text": "عُمَرَ:",
+                "text": "فَأُتِيَ،",
                 "confidence": 1.0,
-                "start_index": 1006
+                "start_index": 194
             },
             {
-                "text": "أَنَّ",
+                "text": "فَقِيلَ",
                 "confidence": 1.0,
-                "start_index": 1014
+                "start_index": 204
             },
             {
-                "text": "رَسُولَ",
+                "text": "لَهُ:",
                 "confidence": 1.0,
-                "start_index": 1020
+                "start_index": 212
             },
             {
-                "text": "اللهِ",
+                "text": "أَمَّا",
                 "confidence": 1.0,
-                "start_index": 1028
+                "start_index": 218
             },
             {
-                "text": "صلى",
+                "text": "صَدَقَتُكَ",
                 "confidence": 1.0,
-                "start_index": 1034
+                "start_index": 225
             },
             {
-                "text": "الله",
+                "text": "i_{n+1}",
                 "confidence": 1.0,
-                "start_index": 1038
+                "start_index": 236
             },
             {
-                "text": "عليه",
+                "text": "=",
                 "confidence": 1.0,
-                "start_index": 1043
+                "start_index": 244
             },
             {
-                "text": "وسلم",
+                "text": "i_n",
                 "confidence": 1.0,
-                "start_index": 1048
+                "start_index": 246
             },
             {
-                "text": "سَابَقَ",
+                "text": "-",
                 "confidence": 1.0,
-                "start_index": 1053
+                "start_index": 250
             },
             {
-                "text": "بِالْخَيْلِ",
+                "text": "\\alpha",
                 "confidence": 1.0,
-                "start_index": 1061
+                "start_index": 252
             },
             {
-                "text": "الَّتِي",
+                "text": "\\nabla",
                 "confidence": 1.0,
-                "start_index": 1073
+                "start_index": 259
             },
             {
-                "text": "قَدْ",
+                "text": "f(i_n)",
                 "confidence": 1.0,
-                "start_index": 1081
+                "start_index": 266
             },
             {
-                "text": "أُضْمِرَتْ",
+                "text": "j_{n+1}",
                 "confidence": 1.0,
-                "start_index": 1086
+                "start_index": 273
             },
             {
-                "text": "مِنَ",
+                "text": "=",
                 "confidence": 1.0,
-                "start_index": 1097
+                "start_index": 281
             },
             {
-                "text": "الْحَفْيَاءِ،",
+                "text": "j_n",
                 "confidence": 1.0,
-                "start_index": 1102
+                "start_index": 283
             },
             {
-                "text": "وَكَانَ",
+                "text": "-",
                 "confidence": 1.0,
-                "start_index": 1116
+                "start_index": 287
             },
             {
-                "text": "أَمَدُهَا",
+                "text": "\\alpha",
                 "confidence": 1.0,
-                "start_index": 1124
+                "start_index": 289
             },
             {
-                "text": "ثَنِيَّةَ",
+                "text": "\\nabla",
                 "confidence": 1.0,
-                "start_index": 1134
+                "start_index": 296
             },
             {
-                "text": "الْوَدَاعِ،",
+                "text": "f(j_n)",
                 "confidence": 1.0,
-                "start_index": 1144
-            },
-            {
-                "text": "وَسَابَقَ",
-                "confidence": 1.0,
-                "start_index": 1156
-            },
-            {
-                "text": "بَيْنَ",
-                "confidence": 1.0,
-                "start_index": 1166
-            },
-            {
-                "text": "الْخَيْلِ",
-                "confidence": 1.0,
-                "start_index": 1173
-            },
-            {
-                "text": "الَّتِي",
-                "confidence": 1.0,
-                "start_index": 1183
-            },
-            {
-                "text": "لَمْ",
-                "confidence": 1.0,
-                "start_index": 1191
-            },
-            {
-                "text": "تُضْمَرْ",
-                "confidence": 1.0,
-                "start_index": 1196
-            },
-            {
-                "text": "مِنَ",
-                "confidence": 1.0,
-                "start_index": 1205
-            },
-            {
-                "text": "الثَّنِيَّةِ",
-                "confidence": 1.0,
-                "start_index": 1210
-            },
-            {
-                "text": "إِلَى",
-                "confidence": 1.0,
-                "start_index": 1223
-            },
-            {
-                "text": "مَسْجِدِ",
-                "confidence": 1.0,
-                "start_index": 1229
-            },
-            {
-                "text": "بَنِي",
-                "confidence": 1.0,
-                "start_index": 1238
-            },
-            {
-                "text": "زُرَيْقٍ،",
-                "confidence": 1.0,
-                "start_index": 1244
-            },
-            {
-                "text": "وَكَانَ",
-                "confidence": 1.0,
-                "start_index": 1254
-            },
-            {
-                "text": "ابْنُ",
-                "confidence": 1.0,
-                "start_index": 1262
-            },
-            {
-                "text": "عُمَرَ",
-                "confidence": 1.0,
-                "start_index": 1268
-            },
-            {
-                "text": "فِيمَنْ",
-                "confidence": 1.0,
-                "start_index": 1275
-            },
-            {
-                "text": "سَابَقَ",
-                "confidence": 1.0,
-                "start_index": 1283
-            },
-            {
-                "text": "بِهَا.",
-                "confidence": 1.0,
-                "start_index": 1291
-            },
-            {
-                "text": "[خ:",
-                "confidence": 1.0,
-                "start_index": 1298
-            },
-            {
-                "text": "٤٢٠]",
-                "confidence": 1.0,
-                "start_index": 1302
-            },
-            {
-                "text": "وَحَدَّثَنَا",
-                "confidence": 1.0,
-                "start_index": 1307
-            },
-            {
-                "text": "يَحيَى",
-                "confidence": 1.0,
-                "start_index": 1320
-            },
-            {
-                "text": "بْنُ",
-                "confidence": 1.0,
-                "start_index": 1327
-            },
-            {
-                "text": "يَحيَى،",
-                "confidence": 1.0,
-                "start_index": 1332
-            },
-            {
-                "text": "وَمُحَمَّدُ",
-                "confidence": 1.0,
-                "start_index": 1340
-            },
-            {
-                "text": "بْنُ",
-                "confidence": 1.0,
-                "start_index": 1352
-            },
-            {
-                "text": "رُمْحٍ،",
-                "confidence": 1.0,
-                "start_index": 1357
-            },
-            {
-                "text": "وَقُتَيْبَةُ",
-                "confidence": 1.0,
-                "start_index": 1365
-            },
-            {
-                "text": "بْنُ",
-                "confidence": 1.0,
-                "start_index": 1378
-            },
-            {
-                "text": "سَعِيدٍ",
-                "confidence": 1.0,
-                "start_index": 1383
-            },
-            {
-                "text": "عَنِ",
-                "confidence": 1.0,
-                "start_index": 1391
-            },
-            {
-                "text": "اللَّيْثِ",
-                "confidence": 1.0,
-                "start_index": 1396
-            },
-            {
-                "text": "بْنِ",
-                "confidence": 1.0,
-                "start_index": 1406
-            },
-            {
-                "text": "سَعْدٍ.",
-                "confidence": 1.0,
-                "start_index": 1411
-            },
-            {
-                "text": "ح",
-                "confidence": 1.0,
-                "start_index": 1419
-            },
-            {
-                "text": "وَحَدَّثَنَا",
-                "confidence": 1.0,
-                "start_index": 1421
-            },
-            {
-                "text": "خَلَفُ",
-                "confidence": 1.0,
-                "start_index": 1434
-            },
-            {
-                "text": "بْنُ",
-                "confidence": 1.0,
-                "start_index": 1441
-            },
-            {
-                "text": "هِشَامٍ،",
-                "confidence": 1.0,
-                "start_index": 1446
-            },
-            {
-                "text": "وَأَبُو",
-                "confidence": 1.0,
-                "start_index": 1455
-            },
-            {
-                "text": "الرَّبِيعِ،",
-                "confidence": 1.0,
-                "start_index": 1463
-            },
-            {
-                "text": "وَأَبُو",
-                "confidence": 1.0,
-                "start_index": 1475
-            },
-            {
-                "text": "كَامِلٍ",
-                "confidence": 1.0,
-                "start_index": 1483
-            },
-            {
-                "text": "قَالُوا:",
-                "confidence": 1.0,
-                "start_index": 1491
-            },
-            {
-                "text": "حَدَّثَنَا",
-                "confidence": 1.0,
-                "start_index": 1500
+                "start_index": 303
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -1083,38 +366,59 @@
     },
     "blocks": [
         {
-            "top_left_x": 40,
-            "top_left_y": 40,
-            "bottom_right_x": 670,
-            "bottom_right_y": 201,
-            "content": "الْعَوَّامِ، حَدَّثَنَا سَعِيدُ بْنُ يَزِيدَ-",
-            "type": "title",
+            "top_left_x": 20,
+            "top_left_y": 32,
+            "bottom_right_x": 441,
+            "bottom_right_y": 177,
+            "content": "<table><tbody><tr><th>هذا صعد</th><th>إذن</th></tr><tr><td>في وقت قصير، فتقطع</td><td>والتأويل. وكلٌّ من القولين يخالف</td></tr><tr><td>كَانَ عَلَيْهِ مِنَ الْإِثْمِ مِثْلُ</td><td>أَبِي شَيْبَةَ، وَأَبُو كُرَيْبٍ- وَاللَّفْظُ</td></tr><tr><td>وأنه اغترف بإحدى</td><td>وَهْبٍ، أَخْبَرَنِي يُونُسُ</td></tr></tbody></table>",
+            "type": "table",
+            "table_id": "tbl-0.html",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 385,
-            "top_left_y": 243,
-            "bottom_right_x": 646,
-            "bottom_right_y": 351,
-            "content": "\"فَقَصَّتْهُ حَفْصَةُ عَلَى النَّبِيِّ صلى الله عليه وسلم، فَقَالَ النَّبِيُّ صلى الله عليه وسلم: ((أَرَى عَبْدَ للَّهِ رَجُلًا\"",
-            "type": "text",
+            "top_left_x": 32,
+            "top_left_y": 201,
+            "bottom_right_x": 425,
+            "bottom_right_y": 227,
+            "content": "برهان",
+            "type": "title",
             "confidence_scores": null,
             "reading_index": 2
         },
         {
-            "top_left_x": 40,
-            "top_left_y": 221,
-            "bottom_right_x": 345,
-            "bottom_right_y": 1136,
-            "content": "عُلَيَّةَ وَالثَّقَفِيِّ: فَإِنِّي أَخَافُ، وَفِي حَدِيثِ سُفْيَانَ وَحَدِيثِ الضَّحَّاكِ بْنِ عُثْمَانَ: مَخَافَةَ أَنْ يَنَالَهُ الْعَدُوُّ. هذا الحديث فيه: النهي عن السفر بالقرآن إلى أرض العدو؛ مخافة أن تناله أيديهم بسوء، أو امتهان، وإذا انتفت هذه العلة جاز السفر بالقرآن، وقد انتفت هذه العلة في هذا الزمن، فإن القرآن موجود الآن عند الكفرة، ويطبعونه، ويذيعونه في إذاعاتهم. وفي حكم السفر بالقرآن إلى أرض العدو ثلاثة أقوال للعلماء: القول الأول: جواز السفر بالقرآن مطلقًا. القول الثاني: منعه مطلقًا. القول الثالث: جواز السفر به إذا لم يُخَفْ أن تناله أيدي الكفار بسوء، أو امتهان، وهذا هو القول الوسط، الذي دل عليه الحديث. قوله: ((وَخَاصَمُوكُمْ بِهِ) )، أي: جادلوكم به. بَابُ الْمُسَابَقَةِ بَيْنَ الْخَيْلِ وَتَضْمِيرِهَا [١٨٧٠] حَدَّثَنَا يَحيَى بْنُ يَحيَى التَّمِيمِيُّ قَالَ: قَرَأْتُ عَلَى مَالِكٍ عَنْ نَافِعٍ عَنِ ابْنِ عُمَرَ: أَنَّ رَسُولَ اللهِ صلى الله عليه وسلم سَابَقَ بِالْخَيْلِ الَّتِي قَدْ أُضْمِرَتْ مِنَ الْحَفْيَاءِ، وَكَانَ أَمَدُهَا ثَنِيَّةَ الْوَدَاعِ، وَسَابَقَ بَيْنَ الْخَيْلِ الَّتِي لَمْ تُضْمَرْ مِنَ الثَّنِيَّةِ إِلَى مَسْجِدِ بَنِي زُرَيْقٍ، وَكَانَ ابْنُ عُمَرَ فِيمَنْ سَابَقَ بِهَا. [خ: ٤٢٠] وَحَدَّثَنَا يَحيَى بْنُ يَحيَى، وَمُحَمَّدُ بْنُ رُمْحٍ، وَقُتَيْبَةُ بْنُ سَعِيدٍ عَنِ اللَّيْثِ بْنِ سَعْدٍ. ح وَحَدَّثَنَا خَلَفُ بْنُ هِشَامٍ، وَأَبُو الرَّبِيعِ، وَأَبُو كَامِلٍ قَالُوا: حَدَّثَنَا",
+            "top_left_x": 32,
+            "top_left_y": 232,
+            "bottom_right_x": 425,
+            "bottom_right_y": 277,
+            "content": "فِي يَدِ سَارِقٍ، فَأَصْبَحُوا يَتَحَدَّثُونَ: تُصُدِّقَ عَلَى سَارِقٍ، فَقَالَ: اللَّهُمَّ لَكَ الْحَمْدُ عَلَى زَانِيَةٍ، وَعَلَى غَنِيٍّ، وَعَلَى سَارِقٍ، فَأُتِيَ، فَقِيلَ لَهُ: أَمَّا صَدَقَتُكَ",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 3
+        },
+        {
+            "top_left_x": 32,
+            "top_left_y": 283,
+            "bottom_right_x": 425,
+            "bottom_right_y": 321,
+            "content": "i_{n+1} = i_n - \\alpha \\nabla f(i_n)",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 4
+        },
+        {
+            "top_left_x": 20,
+            "top_left_y": 353,
+            "bottom_right_x": 441,
+            "bottom_right_y": 396,
+            "content": "j_{n+1} = j_n - \\alpha \\nabla f(j_n)",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 5
         }
     ],
     "meta": {
-        "template": "a4_literary",
-        "hybrid": "quote"
+        "template": "math_proof",
+        "hybrid": "mini-table"
     }
 }

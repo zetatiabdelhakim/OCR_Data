@@ -1,20 +1,20 @@
 {
-    "markdown": "فَلْيَتَصَدَّقْ) )\n\n![image](img-0)\n\nالمَلَك قتل\n6481-5119\n\n![image](img-1)\n",
+    "markdown": "كَتَبَهُ اللَّهُ\n\n![image](img-0)\n\nإلى العجب\n9849-2340\n\n![image](img-1)\n",
     "images": [
         {
             "id": "img-0",
-            "top_left_x": 277,
-            "top_left_y": 75,
-            "bottom_right_x": 321,
-            "bottom_right_y": 131,
+            "top_left_x": 286,
+            "top_left_y": 76,
+            "bottom_right_x": 330,
+            "bottom_right_y": 132,
             "reading_index": 2
         },
         {
             "id": "img-1",
             "top_left_x": 10,
-            "top_left_y": 174,
-            "bottom_right_x": 321,
-            "bottom_right_y": 204,
+            "top_left_y": 181,
+            "bottom_right_x": 330,
+            "bottom_right_y": 211,
             "reading_index": 5
         }
     ],
@@ -24,45 +24,45 @@
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 214,
-        "width": 331
+        "height": 221,
+        "width": 340
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "فَلْيَتَصَدَّقْ)",
+                "text": "كَتَبَهُ",
                 "confidence": 1.0,
                 "start_index": 0
             },
             {
-                "text": ")",
+                "text": "اللَّهُ",
                 "confidence": 1.0,
-                "start_index": 17
+                "start_index": 9
             },
             {
                 "text": "![image](img-0)",
                 "confidence": 1.0,
-                "start_index": 20
+                "start_index": 18
             },
             {
-                "text": "المَلَك",
+                "text": "إلى",
                 "confidence": 1.0,
-                "start_index": 37
+                "start_index": 35
             },
             {
-                "text": "قتل",
+                "text": "العجب",
+                "confidence": 1.0,
+                "start_index": 39
+            },
+            {
+                "text": "9849-2340",
                 "confidence": 1.0,
                 "start_index": 45
             },
             {
-                "text": "6481-5119",
-                "confidence": 1.0,
-                "start_index": 49
-            },
-            {
                 "text": "![image](img-1)",
                 "confidence": 1.0,
-                "start_index": 60
+                "start_index": 56
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -72,18 +72,18 @@
         {
             "top_left_x": 10,
             "top_left_y": 10,
-            "bottom_right_x": 321,
-            "bottom_right_y": 31,
-            "content": "فَلْيَتَصَدَّقْ) )",
+            "bottom_right_x": 330,
+            "bottom_right_y": 26,
+            "content": "كَتَبَهُ اللَّهُ",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 277,
-            "top_left_y": 75,
-            "bottom_right_x": 321,
-            "bottom_right_y": 131,
+            "top_left_x": 286,
+            "top_left_y": 76,
+            "bottom_right_x": 330,
+            "bottom_right_y": 132,
             "content": "![image](img-0)",
             "type": "image",
             "confidence_scores": null,
@@ -91,29 +91,29 @@
         },
         {
             "top_left_x": 10,
-            "top_left_y": 80,
-            "bottom_right_x": 269,
-            "bottom_right_y": 102,
-            "content": "المَلَك قتل",
+            "top_left_y": 85,
+            "bottom_right_x": 278,
+            "bottom_right_y": 103,
+            "content": "إلى العجب",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 3
         },
         {
             "top_left_x": 10,
-            "top_left_y": 106,
-            "bottom_right_x": 269,
-            "bottom_right_y": 125,
-            "content": "6481-5119",
+            "top_left_y": 107,
+            "bottom_right_x": 278,
+            "bottom_right_y": 122,
+            "content": "9849-2340",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 4
         },
         {
             "top_left_x": 10,
-            "top_left_y": 174,
-            "bottom_right_x": 321,
-            "bottom_right_y": 204,
+            "top_left_y": 181,
+            "bottom_right_x": 330,
+            "bottom_right_y": 211,
             "content": "![image](img-1)",
             "type": "image",
             "confidence_scores": null,

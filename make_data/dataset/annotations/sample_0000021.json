@@ -1,13 +1,21 @@
 {
-    "markdown": "## نظرية\nبِمَا أَمَرَ بِهِ الْمُرْسَلِينَ، فَقَالَ: {يَأَيُّهَا الرُّسُلُ كُلُوا مِنَ الطَّيِّبَاتِ وَاعْمَلُوا صَالِحًا إِنِّي بِمَا تَعْمَلُونَ عَلِيمٌ} ، وَقَالَ: {يَأَيُّهَا الَّذِينَ آمَنُوا كُلُوا مِنْ طَيِّبَاتِ مَا رَزَقْنَاكُمْ} ، ثُمَّ\n\\prod_{\\alpha=1}^{n} (1 + i_\\alpha) = 0\n## تعريف\nوالمريض ينقل إلى المستشفى، والمرافق له- أيضًا-، وكذلك الجندي الذي يرابط لحفظ الأمن، والطبيب\n\\prod_{k=1}^{n} (1 \\times j_k) = 0 + \\frac{\\sigma}{\\lambda^2}\n\n![image](img-0)\n",
+    "markdown": "زَيْدٍ. ح، قَالَ:\n\n![image](img-0)\n\nحَدَّثَنَا سُفْيَانُ\n3804-7221\n\n![image](img-1)\n",
     "images": [
         {
             "id": "img-0",
-            "top_left_x": 20,
-            "top_left_y": 369,
-            "bottom_right_x": 513,
-            "bottom_right_y": 679,
-            "reading_index": 7
+            "top_left_x": 274,
+            "top_left_y": 71,
+            "bottom_right_x": 318,
+            "bottom_right_y": 127,
+            "reading_index": 2
+        },
+        {
+            "id": "img-1",
+            "top_left_x": 10,
+            "top_left_y": 172,
+            "bottom_right_x": 318,
+            "bottom_right_y": 202,
+            "reading_index": 5
         }
     ],
     "tables": [],
@@ -16,315 +24,50 @@
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 732,
-        "width": 533
+        "height": 212,
+        "width": 328
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "##",
+                "text": "زَيْدٍ.",
                 "confidence": 1.0,
                 "start_index": 0
             },
             {
-                "text": "نظرية",
+                "text": "ح،",
                 "confidence": 1.0,
-                "start_index": 3
+                "start_index": 8
             },
             {
-                "text": "بِمَا",
+                "text": "قَالَ:",
                 "confidence": 1.0,
-                "start_index": 9
-            },
-            {
-                "text": "أَمَرَ",
-                "confidence": 1.0,
-                "start_index": 15
-            },
-            {
-                "text": "بِهِ",
-                "confidence": 1.0,
-                "start_index": 22
-            },
-            {
-                "text": "الْمُرْسَلِينَ،",
-                "confidence": 1.0,
-                "start_index": 27
-            },
-            {
-                "text": "فَقَالَ:",
-                "confidence": 1.0,
-                "start_index": 43
-            },
-            {
-                "text": "{يَأَيُّهَا",
-                "confidence": 1.0,
-                "start_index": 52
-            },
-            {
-                "text": "الرُّسُلُ",
-                "confidence": 1.0,
-                "start_index": 64
-            },
-            {
-                "text": "كُلُوا",
-                "confidence": 1.0,
-                "start_index": 74
-            },
-            {
-                "text": "مِنَ",
-                "confidence": 1.0,
-                "start_index": 81
-            },
-            {
-                "text": "الطَّيِّبَاتِ",
-                "confidence": 1.0,
-                "start_index": 86
-            },
-            {
-                "text": "وَاعْمَلُوا",
-                "confidence": 1.0,
-                "start_index": 100
-            },
-            {
-                "text": "صَالِحًا",
-                "confidence": 1.0,
-                "start_index": 112
-            },
-            {
-                "text": "إِنِّي",
-                "confidence": 1.0,
-                "start_index": 121
-            },
-            {
-                "text": "بِمَا",
-                "confidence": 1.0,
-                "start_index": 128
-            },
-            {
-                "text": "تَعْمَلُونَ",
-                "confidence": 1.0,
-                "start_index": 134
-            },
-            {
-                "text": "عَلِيمٌ}",
-                "confidence": 1.0,
-                "start_index": 146
-            },
-            {
-                "text": "،",
-                "confidence": 1.0,
-                "start_index": 155
-            },
-            {
-                "text": "وَقَالَ:",
-                "confidence": 1.0,
-                "start_index": 157
-            },
-            {
-                "text": "{يَأَيُّهَا",
-                "confidence": 1.0,
-                "start_index": 166
-            },
-            {
-                "text": "الَّذِينَ",
-                "confidence": 1.0,
-                "start_index": 178
-            },
-            {
-                "text": "آمَنُوا",
-                "confidence": 1.0,
-                "start_index": 188
-            },
-            {
-                "text": "كُلُوا",
-                "confidence": 1.0,
-                "start_index": 196
-            },
-            {
-                "text": "مِنْ",
-                "confidence": 1.0,
-                "start_index": 203
-            },
-            {
-                "text": "طَيِّبَاتِ",
-                "confidence": 1.0,
-                "start_index": 208
-            },
-            {
-                "text": "مَا",
-                "confidence": 1.0,
-                "start_index": 219
-            },
-            {
-                "text": "رَزَقْنَاكُمْ}",
-                "confidence": 1.0,
-                "start_index": 223
-            },
-            {
-                "text": "،",
-                "confidence": 1.0,
-                "start_index": 238
-            },
-            {
-                "text": "ثُمَّ",
-                "confidence": 1.0,
-                "start_index": 240
-            },
-            {
-                "text": "\\prod_{\\alpha=1}^{n}",
-                "confidence": 1.0,
-                "start_index": 246
-            },
-            {
-                "text": "(1",
-                "confidence": 1.0,
-                "start_index": 267
-            },
-            {
-                "text": "+",
-                "confidence": 1.0,
-                "start_index": 270
-            },
-            {
-                "text": "i_\\alpha)",
-                "confidence": 1.0,
-                "start_index": 272
-            },
-            {
-                "text": "=",
-                "confidence": 1.0,
-                "start_index": 282
-            },
-            {
-                "text": "0",
-                "confidence": 1.0,
-                "start_index": 284
-            },
-            {
-                "text": "##",
-                "confidence": 1.0,
-                "start_index": 286
-            },
-            {
-                "text": "تعريف",
-                "confidence": 1.0,
-                "start_index": 289
-            },
-            {
-                "text": "والمريض",
-                "confidence": 1.0,
-                "start_index": 295
-            },
-            {
-                "text": "ينقل",
-                "confidence": 1.0,
-                "start_index": 303
-            },
-            {
-                "text": "إلى",
-                "confidence": 1.0,
-                "start_index": 308
-            },
-            {
-                "text": "المستشفى،",
-                "confidence": 1.0,
-                "start_index": 312
-            },
-            {
-                "text": "والمرافق",
-                "confidence": 1.0,
-                "start_index": 322
-            },
-            {
-                "text": "له-",
-                "confidence": 1.0,
-                "start_index": 331
-            },
-            {
-                "text": "أيضًا-،",
-                "confidence": 1.0,
-                "start_index": 335
-            },
-            {
-                "text": "وكذلك",
-                "confidence": 1.0,
-                "start_index": 343
-            },
-            {
-                "text": "الجندي",
-                "confidence": 1.0,
-                "start_index": 349
-            },
-            {
-                "text": "الذي",
-                "confidence": 1.0,
-                "start_index": 356
-            },
-            {
-                "text": "يرابط",
-                "confidence": 1.0,
-                "start_index": 361
-            },
-            {
-                "text": "لحفظ",
-                "confidence": 1.0,
-                "start_index": 367
-            },
-            {
-                "text": "الأمن،",
-                "confidence": 1.0,
-                "start_index": 372
-            },
-            {
-                "text": "والطبيب",
-                "confidence": 1.0,
-                "start_index": 379
-            },
-            {
-                "text": "\\prod_{k=1}^{n}",
-                "confidence": 1.0,
-                "start_index": 387
-            },
-            {
-                "text": "(1",
-                "confidence": 1.0,
-                "start_index": 403
-            },
-            {
-                "text": "\\times",
-                "confidence": 1.0,
-                "start_index": 406
-            },
-            {
-                "text": "j_k)",
-                "confidence": 1.0,
-                "start_index": 413
-            },
-            {
-                "text": "=",
-                "confidence": 1.0,
-                "start_index": 418
-            },
-            {
-                "text": "0",
-                "confidence": 1.0,
-                "start_index": 420
-            },
-            {
-                "text": "+",
-                "confidence": 1.0,
-                "start_index": 422
-            },
-            {
-                "text": "\\frac{\\sigma}{\\lambda^2}",
-                "confidence": 1.0,
-                "start_index": 424
+                "start_index": 11
             },
             {
                 "text": "![image](img-0)",
                 "confidence": 1.0,
-                "start_index": 450
+                "start_index": 19
+            },
+            {
+                "text": "حَدَّثَنَا",
+                "confidence": 1.0,
+                "start_index": 36
+            },
+            {
+                "text": "سُفْيَانُ",
+                "confidence": 1.0,
+                "start_index": 47
+            },
+            {
+                "text": "3804-7221",
+                "confidence": 1.0,
+                "start_index": 57
+            },
+            {
+                "text": "![image](img-1)",
+                "confidence": 1.0,
+                "start_index": 68
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -332,78 +75,58 @@
     },
     "blocks": [
         {
-            "top_left_x": 32,
-            "top_left_y": 32,
-            "bottom_right_x": 497,
-            "bottom_right_y": 57,
-            "content": "نظرية",
-            "type": "title",
+            "top_left_x": 10,
+            "top_left_y": 10,
+            "bottom_right_x": 318,
+            "bottom_right_y": 25,
+            "content": "زَيْدٍ. ح، قَالَ:",
+            "type": "text",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 32,
-            "top_left_y": 62,
-            "bottom_right_x": 497,
-            "bottom_right_y": 107,
-            "content": "بِمَا أَمَرَ بِهِ الْمُرْسَلِينَ، فَقَالَ: {يَأَيُّهَا الرُّسُلُ كُلُوا مِنَ الطَّيِّبَاتِ وَاعْمَلُوا صَالِحًا إِنِّي بِمَا تَعْمَلُونَ عَلِيمٌ} ، وَقَالَ: {يَأَيُّهَا الَّذِينَ آمَنُوا كُلُوا مِنْ طَيِّبَاتِ مَا رَزَقْنَاكُمْ} ، ثُمَّ",
-            "type": "text",
+            "top_left_x": 274,
+            "top_left_y": 71,
+            "bottom_right_x": 318,
+            "bottom_right_y": 127,
+            "content": "![image](img-0)",
+            "type": "image",
             "confidence_scores": null,
             "reading_index": 2
         },
         {
-            "top_left_x": 32,
-            "top_left_y": 113,
-            "bottom_right_x": 497,
-            "bottom_right_y": 177,
-            "content": "\\prod_{\\alpha=1}^{n} (1 + i_\\alpha) = 0",
+            "top_left_x": 10,
+            "top_left_y": 82,
+            "bottom_right_x": 266,
+            "bottom_right_y": 98,
+            "content": "حَدَّثَنَا سُفْيَانُ",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 3
         },
         {
-            "top_left_x": 32,
-            "top_left_y": 221,
-            "bottom_right_x": 497,
-            "bottom_right_y": 239,
-            "content": "تعريف",
-            "type": "title",
+            "top_left_x": 10,
+            "top_left_y": 102,
+            "bottom_right_x": 266,
+            "bottom_right_y": 115,
+            "content": "3804-7221",
+            "type": "text",
             "confidence_scores": null,
             "reading_index": 4
         },
         {
-            "top_left_x": 32,
-            "top_left_y": 244,
-            "bottom_right_x": 497,
-            "bottom_right_y": 267,
-            "content": "والمريض ينقل إلى المستشفى، والمرافق له- أيضًا-، وكذلك الجندي الذي يرابط لحفظ الأمن، والطبيب",
-            "type": "text",
-            "confidence_scores": null,
-            "reading_index": 5
-        },
-        {
-            "top_left_x": 32,
-            "top_left_y": 273,
-            "bottom_right_x": 497,
-            "bottom_right_y": 337,
-            "content": "\\prod_{k=1}^{n} (1 \\times j_k) = 0 + \\frac{\\sigma}{\\lambda^2}",
-            "type": "text",
-            "confidence_scores": null,
-            "reading_index": 6
-        },
-        {
-            "top_left_x": 20,
-            "top_left_y": 369,
-            "bottom_right_x": 513,
-            "bottom_right_y": 679,
-            "content": "![image](img-0)",
+            "top_left_x": 10,
+            "top_left_y": 172,
+            "bottom_right_x": 318,
+            "bottom_right_y": 202,
+            "content": "![image](img-1)",
             "type": "image",
             "confidence_scores": null,
-            "reading_index": 7
+            "reading_index": 5
         }
     ],
     "meta": {
-        "template": "math_proof",
-        "hybrid": "chart"
+        "template": "id_card",
+        "hybrid": null
     }
 }

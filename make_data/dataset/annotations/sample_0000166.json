@@ -1,85 +1,236 @@
 {
-    "markdown": "\n![image](img-0)\n\nالشيخ: أخرجوا الرافضة من\nرَسُولُ اللهِ\n0790872378\nوكَّل النبي عليه الصلاة",
-    "images": [
-        {
-            "id": "img-0",
-            "top_left_x": 14,
-            "top_left_y": 14,
-            "bottom_right_x": 60,
-            "bottom_right_y": 60,
-            "reading_index": 1
-        }
-    ],
+    "markdown": "## حَفْصَةَ، فَقُلْتُ لَهَا: يَا بُنَيَّةُ، إِنَّكِ لَتُرَاجِعِينَ رَسُولَ\n## تعريف\nقَالَتْ: كَانَ الْأَعْرَابُ إِذَا قَدِمُوا عَلَى رَسُولِ اللَّهِ صلى الله عليه وسلم سَأَلُوهُ عَنِ السَّاعَةِ: مَتَى السَّاعَةُ؟ فَنَظَرَ إِلَى أَحْدَثِ إِنْسَانٍ مِنْهُمْ، فَقَالَ: ((إِنْ يَعِشْ\n\\int_{0}^{M} \\min(i) \\, di = z^2 \\geq C",
+    "images": [],
     "tables": [],
     "hyperlinks": [],
     "header": null,
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 194,
-        "width": 345
+        "height": 1003,
+        "width": 842
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "![image](img-0)",
+                "text": "##",
                 "confidence": 1.0,
-                "start_index": 1
+                "start_index": 0
             },
             {
-                "text": "الشيخ:",
+                "text": "حَفْصَةَ،",
                 "confidence": 1.0,
-                "start_index": 18
+                "start_index": 3
             },
             {
-                "text": "أخرجوا",
+                "text": "فَقُلْتُ",
                 "confidence": 1.0,
-                "start_index": 25
+                "start_index": 13
             },
             {
-                "text": "الرافضة",
+                "text": "لَهَا:",
                 "confidence": 1.0,
-                "start_index": 32
+                "start_index": 22
             },
             {
-                "text": "من",
+                "text": "يَا",
                 "confidence": 1.0,
-                "start_index": 40
+                "start_index": 29
             },
             {
-                "text": "رَسُولُ",
+                "text": "بُنَيَّةُ،",
                 "confidence": 1.0,
-                "start_index": 43
+                "start_index": 33
             },
             {
-                "text": "اللهِ",
+                "text": "إِنَّكِ",
                 "confidence": 1.0,
-                "start_index": 51
+                "start_index": 44
             },
             {
-                "text": "0790872378",
+                "text": "لَتُرَاجِعِينَ",
                 "confidence": 1.0,
-                "start_index": 57
+                "start_index": 52
             },
             {
-                "text": "وكَّل",
+                "text": "رَسُولَ",
                 "confidence": 1.0,
-                "start_index": 68
+                "start_index": 67
             },
             {
-                "text": "النبي",
+                "text": "##",
                 "confidence": 1.0,
-                "start_index": 74
+                "start_index": 75
+            },
+            {
+                "text": "تعريف",
+                "confidence": 1.0,
+                "start_index": 78
+            },
+            {
+                "text": "قَالَتْ:",
+                "confidence": 1.0,
+                "start_index": 84
+            },
+            {
+                "text": "كَانَ",
+                "confidence": 1.0,
+                "start_index": 93
+            },
+            {
+                "text": "الْأَعْرَابُ",
+                "confidence": 1.0,
+                "start_index": 99
+            },
+            {
+                "text": "إِذَا",
+                "confidence": 1.0,
+                "start_index": 112
+            },
+            {
+                "text": "قَدِمُوا",
+                "confidence": 1.0,
+                "start_index": 118
+            },
+            {
+                "text": "عَلَى",
+                "confidence": 1.0,
+                "start_index": 127
+            },
+            {
+                "text": "رَسُولِ",
+                "confidence": 1.0,
+                "start_index": 133
+            },
+            {
+                "text": "اللَّهِ",
+                "confidence": 1.0,
+                "start_index": 141
+            },
+            {
+                "text": "صلى",
+                "confidence": 1.0,
+                "start_index": 149
+            },
+            {
+                "text": "الله",
+                "confidence": 1.0,
+                "start_index": 153
             },
             {
                 "text": "عليه",
                 "confidence": 1.0,
-                "start_index": 80
+                "start_index": 158
             },
             {
-                "text": "الصلاة",
+                "text": "وسلم",
                 "confidence": 1.0,
-                "start_index": 85
+                "start_index": 163
+            },
+            {
+                "text": "سَأَلُوهُ",
+                "confidence": 1.0,
+                "start_index": 168
+            },
+            {
+                "text": "عَنِ",
+                "confidence": 1.0,
+                "start_index": 178
+            },
+            {
+                "text": "السَّاعَةِ:",
+                "confidence": 1.0,
+                "start_index": 183
+            },
+            {
+                "text": "مَتَى",
+                "confidence": 1.0,
+                "start_index": 195
+            },
+            {
+                "text": "السَّاعَةُ؟",
+                "confidence": 1.0,
+                "start_index": 201
+            },
+            {
+                "text": "فَنَظَرَ",
+                "confidence": 1.0,
+                "start_index": 213
+            },
+            {
+                "text": "إِلَى",
+                "confidence": 1.0,
+                "start_index": 222
+            },
+            {
+                "text": "أَحْدَثِ",
+                "confidence": 1.0,
+                "start_index": 228
+            },
+            {
+                "text": "إِنْسَانٍ",
+                "confidence": 1.0,
+                "start_index": 237
+            },
+            {
+                "text": "مِنْهُمْ،",
+                "confidence": 1.0,
+                "start_index": 247
+            },
+            {
+                "text": "فَقَالَ:",
+                "confidence": 1.0,
+                "start_index": 257
+            },
+            {
+                "text": "((إِنْ",
+                "confidence": 1.0,
+                "start_index": 266
+            },
+            {
+                "text": "يَعِشْ",
+                "confidence": 1.0,
+                "start_index": 273
+            },
+            {
+                "text": "\\int_{0}^{M}",
+                "confidence": 1.0,
+                "start_index": 280
+            },
+            {
+                "text": "\\min(i)",
+                "confidence": 1.0,
+                "start_index": 293
+            },
+            {
+                "text": "\\,",
+                "confidence": 1.0,
+                "start_index": 301
+            },
+            {
+                "text": "di",
+                "confidence": 1.0,
+                "start_index": 304
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 307
+            },
+            {
+                "text": "z^2",
+                "confidence": 1.0,
+                "start_index": 309
+            },
+            {
+                "text": "\\geq",
+                "confidence": 1.0,
+                "start_index": 313
+            },
+            {
+                "text": "C",
+                "confidence": 1.0,
+                "start_index": 318
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -87,58 +238,48 @@
     },
     "blocks": [
         {
-            "top_left_x": 14,
-            "top_left_y": 14,
-            "bottom_right_x": 60,
-            "bottom_right_y": 60,
-            "content": "![image](img-0)",
-            "type": "image",
+            "top_left_x": 40,
+            "top_left_y": 40,
+            "bottom_right_x": 802,
+            "bottom_right_y": 178,
+            "content": "حَفْصَةَ، فَقُلْتُ لَهَا: يَا بُنَيَّةُ، إِنَّكِ لَتُرَاجِعِينَ رَسُولَ",
+            "type": "title",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 14,
-            "top_left_y": 86,
-            "bottom_right_x": 331,
-            "bottom_right_y": 116,
-            "content": "الشيخ: أخرجوا الرافضة من",
-            "type": "text",
+            "top_left_x": 52,
+            "top_left_y": 222,
+            "bottom_right_x": 786,
+            "bottom_right_y": 238,
+            "content": "تعريف",
+            "type": "title",
             "confidence_scores": null,
             "reading_index": 2
         },
         {
-            "top_left_x": 14,
-            "top_left_y": 118,
-            "bottom_right_x": 331,
-            "bottom_right_y": 138,
-            "content": "رَسُولُ اللهِ",
+            "top_left_x": 52,
+            "top_left_y": 243,
+            "bottom_right_x": 786,
+            "bottom_right_y": 266,
+            "content": "قَالَتْ: كَانَ الْأَعْرَابُ إِذَا قَدِمُوا عَلَى رَسُولِ اللَّهِ صلى الله عليه وسلم سَأَلُوهُ عَنِ السَّاعَةِ: مَتَى السَّاعَةُ؟ فَنَظَرَ إِلَى أَحْدَثِ إِنْسَانٍ مِنْهُمْ، فَقَالَ: ((إِنْ يَعِشْ",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 3
         },
         {
-            "top_left_x": 14,
-            "top_left_y": 144,
-            "bottom_right_x": 331,
-            "bottom_right_y": 162,
-            "content": "0790872378",
+            "top_left_x": 52,
+            "top_left_y": 272,
+            "bottom_right_x": 786,
+            "bottom_right_y": 330,
+            "content": "\\int_{0}^{M} \\min(i) \\, di = z^2 \\geq C",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 4
-        },
-        {
-            "top_left_x": 14,
-            "top_left_y": 162,
-            "bottom_right_x": 331,
-            "bottom_right_y": 180,
-            "content": "وكَّل النبي عليه الصلاة",
-            "type": "text",
-            "confidence_scores": null,
-            "reading_index": 5
         }
     ],
     "meta": {
-        "template": "business_card",
-        "hybrid": null
+        "template": "a4_literary",
+        "hybrid": "theorem"
     }
 }

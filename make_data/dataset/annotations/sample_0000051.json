@@ -1,31 +1,78 @@
 {
-    "markdown": "خَالِدٍ الأَحْمَرُ عَنْ",
-    "images": [],
+    "markdown": "والسنة، وذكر النووي رحمه\n\n![image](img-0)\n\nعَوْنٍ الْهِلَالِيُّ،\n9205-9146\n\n![image](img-1)\n",
+    "images": [
+        {
+            "id": "img-0",
+            "top_left_x": 277,
+            "top_left_y": 75,
+            "bottom_right_x": 321,
+            "bottom_right_y": 131,
+            "reading_index": 2
+        },
+        {
+            "id": "img-1",
+            "top_left_x": 10,
+            "top_left_y": 173,
+            "bottom_right_x": 321,
+            "bottom_right_y": 203,
+            "reading_index": 5
+        }
+    ],
     "tables": [],
     "hyperlinks": [],
     "header": null,
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 819,
-        "width": 625
+        "height": 213,
+        "width": 331
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "خَالِدٍ",
+                "text": "والسنة،",
                 "confidence": 1.0,
                 "start_index": 0
             },
             {
-                "text": "الأَحْمَرُ",
+                "text": "وذكر",
                 "confidence": 1.0,
                 "start_index": 8
             },
             {
-                "text": "عَنْ",
+                "text": "النووي",
                 "confidence": 1.0,
-                "start_index": 19
+                "start_index": 13
+            },
+            {
+                "text": "رحمه",
+                "confidence": 1.0,
+                "start_index": 20
+            },
+            {
+                "text": "![image](img-0)",
+                "confidence": 1.0,
+                "start_index": 26
+            },
+            {
+                "text": "عَوْنٍ",
+                "confidence": 1.0,
+                "start_index": 43
+            },
+            {
+                "text": "الْهِلَالِيُّ،",
+                "confidence": 1.0,
+                "start_index": 50
+            },
+            {
+                "text": "9205-9146",
+                "confidence": 1.0,
+                "start_index": 65
+            },
+            {
+                "text": "![image](img-1)",
+                "confidence": 1.0,
+                "start_index": 76
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -33,18 +80,58 @@
     },
     "blocks": [
         {
-            "top_left_x": 263,
-            "top_left_y": 771,
-            "bottom_right_x": 362,
-            "bottom_right_y": 801,
-            "content": "خَالِدٍ الأَحْمَرُ عَنْ",
+            "top_left_x": 10,
+            "top_left_y": 10,
+            "bottom_right_x": 321,
+            "bottom_right_y": 32,
+            "content": "والسنة، وذكر النووي رحمه",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 1
+        },
+        {
+            "top_left_x": 277,
+            "top_left_y": 75,
+            "bottom_right_x": 321,
+            "bottom_right_y": 131,
+            "content": "![image](img-0)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 2
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 79,
+            "bottom_right_x": 269,
+            "bottom_right_y": 103,
+            "content": "عَوْنٍ الْهِلَالِيُّ،",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 3
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 107,
+            "bottom_right_x": 269,
+            "bottom_right_y": 127,
+            "content": "9205-9146",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 4
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 173,
+            "bottom_right_x": 321,
+            "bottom_right_y": 203,
+            "content": "![image](img-1)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 5
         }
     ],
     "meta": {
-        "template": "book_cover",
+        "template": "id_card",
         "hybrid": null
     }
 }

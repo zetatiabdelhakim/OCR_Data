@@ -1,586 +1,122 @@
 {
-    "markdown": "## رَسُولَ اللَّهِ، إِنَّهُ\n\n![image](img-0)\n\n\n![image](img-1)\n\n## حَدَّثَنَا سُفْيَانُ عَنْ\n\n![image](img-2)\n\nشكل: تَخْرُجُوا مِنْهَا،\nيعني: من المغرب. وقوله: ((انْزِلْ فَاجْدَحْ لَنَا) )، يعني: اخلِط السَّويق بالماء، من باب التحلية. وقوله: ((يَا رَسُولَ اللَّهِ، إِنَّ عَلَيْكَ نَهَارًا) )، يعني: ما غربت الشمس؛ لأنه رأى رضي الله عنه الحمرة بعد غروب الشمس، وظن أن الفطر لا يحلُّ إلا بعد ذهاب ذلك. في هذه الأحاديث: أنه لا عبرة بالحمرة بعد غروب قرص الشمس؛ لأن الحمرة تبقى مدة. وفيه: أن الصحابي رضي الله عنه أشكلت عليه الحمرة من غروب الشمس، فراجع النبي صلى الله عليه وسلم، ففيه: أنه لا بأس من مراجعة العالم، أو المسؤول، أو الكبير؛ حتى يتبين الأمر. وفيه: أن هذا",
+    "markdown": "الله عليه\n53\n## علمت مما ظهر على\n\n![image](img-0)\n\n\n![image](img-1)\n\n\n![image](img-2)\n\n\n![image](img-3)\n\n\n![image](img-4)\n",
     "images": [
         {
             "id": "img-0",
-            "top_left_x": 449,
-            "top_left_y": 228,
-            "bottom_right_x": 849,
-            "bottom_right_y": 716,
-            "reading_index": 2
+            "top_left_x": 639,
+            "top_left_y": 266,
+            "bottom_right_x": 827,
+            "bottom_right_y": 739,
+            "reading_index": 4
         },
         {
             "id": "img-1",
-            "top_left_x": 36,
-            "top_left_y": 228,
-            "bottom_right_x": 437,
-            "bottom_right_y": 716,
-            "reading_index": 3
+            "top_left_x": 440,
+            "top_left_y": 266,
+            "bottom_right_x": 627,
+            "bottom_right_y": 739,
+            "reading_index": 5
         },
         {
             "id": "img-2",
-            "top_left_x": 514,
-            "top_left_y": 797,
-            "bottom_right_x": 829,
-            "bottom_right_y": 1007,
-            "reading_index": 5
+            "top_left_x": 236,
+            "top_left_y": 266,
+            "bottom_right_x": 424,
+            "bottom_right_y": 739,
+            "reading_index": 6
+        },
+        {
+            "id": "img-3",
+            "top_left_x": 36,
+            "top_left_y": 266,
+            "bottom_right_x": 224,
+            "bottom_right_y": 739,
+            "reading_index": 7
+        },
+        {
+            "id": "img-4",
+            "top_left_x": 36,
+            "top_left_y": 765,
+            "bottom_right_x": 827,
+            "bottom_right_y": 1239,
+            "reading_index": 8
         }
     ],
     "tables": [],
     "hyperlinks": [],
-    "header": null,
+    "header": "53",
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 1245,
-        "width": 885
+        "height": 1253,
+        "width": 863
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "##",
+                "text": "الله",
                 "confidence": 1.0,
                 "start_index": 0
             },
             {
-                "text": "رَسُولَ",
+                "text": "عليه",
                 "confidence": 1.0,
-                "start_index": 3
+                "start_index": 5
             },
             {
-                "text": "اللَّهِ،",
+                "text": "53",
                 "confidence": 1.0,
-                "start_index": 11
-            },
-            {
-                "text": "إِنَّهُ",
-                "confidence": 1.0,
-                "start_index": 20
-            },
-            {
-                "text": "![image](img-0)",
-                "confidence": 1.0,
-                "start_index": 29
-            },
-            {
-                "text": "![image](img-1)",
-                "confidence": 1.0,
-                "start_index": 47
+                "start_index": 10
             },
             {
                 "text": "##",
                 "confidence": 1.0,
-                "start_index": 64
+                "start_index": 13
             },
             {
-                "text": "حَدَّثَنَا",
+                "text": "علمت",
                 "confidence": 1.0,
-                "start_index": 67
+                "start_index": 16
             },
             {
-                "text": "سُفْيَانُ",
+                "text": "مما",
                 "confidence": 1.0,
-                "start_index": 78
+                "start_index": 21
             },
             {
-                "text": "عَنْ",
+                "text": "ظهر",
                 "confidence": 1.0,
-                "start_index": 88
+                "start_index": 25
+            },
+            {
+                "text": "على",
+                "confidence": 1.0,
+                "start_index": 29
+            },
+            {
+                "text": "![image](img-0)",
+                "confidence": 1.0,
+                "start_index": 34
+            },
+            {
+                "text": "![image](img-1)",
+                "confidence": 1.0,
+                "start_index": 52
             },
             {
                 "text": "![image](img-2)",
                 "confidence": 1.0,
-                "start_index": 94
+                "start_index": 70
             },
             {
-                "text": "شكل:",
+                "text": "![image](img-3)",
                 "confidence": 1.0,
-                "start_index": 111
+                "start_index": 88
             },
             {
-                "text": "تَخْرُجُوا",
+                "text": "![image](img-4)",
                 "confidence": 1.0,
-                "start_index": 116
-            },
-            {
-                "text": "مِنْهَا،",
-                "confidence": 1.0,
-                "start_index": 127
-            },
-            {
-                "text": "يعني:",
-                "confidence": 1.0,
-                "start_index": 136
-            },
-            {
-                "text": "من",
-                "confidence": 1.0,
-                "start_index": 142
-            },
-            {
-                "text": "المغرب.",
-                "confidence": 1.0,
-                "start_index": 145
-            },
-            {
-                "text": "وقوله:",
-                "confidence": 1.0,
-                "start_index": 153
-            },
-            {
-                "text": "((انْزِلْ",
-                "confidence": 1.0,
-                "start_index": 160
-            },
-            {
-                "text": "فَاجْدَحْ",
-                "confidence": 1.0,
-                "start_index": 170
-            },
-            {
-                "text": "لَنَا)",
-                "confidence": 1.0,
-                "start_index": 180
-            },
-            {
-                "text": ")،",
-                "confidence": 1.0,
-                "start_index": 187
-            },
-            {
-                "text": "يعني:",
-                "confidence": 1.0,
-                "start_index": 190
-            },
-            {
-                "text": "اخلِط",
-                "confidence": 1.0,
-                "start_index": 196
-            },
-            {
-                "text": "السَّويق",
-                "confidence": 1.0,
-                "start_index": 202
-            },
-            {
-                "text": "بالماء،",
-                "confidence": 1.0,
-                "start_index": 211
-            },
-            {
-                "text": "من",
-                "confidence": 1.0,
-                "start_index": 219
-            },
-            {
-                "text": "باب",
-                "confidence": 1.0,
-                "start_index": 222
-            },
-            {
-                "text": "التحلية.",
-                "confidence": 1.0,
-                "start_index": 226
-            },
-            {
-                "text": "وقوله:",
-                "confidence": 1.0,
-                "start_index": 235
-            },
-            {
-                "text": "((يَا",
-                "confidence": 1.0,
-                "start_index": 242
-            },
-            {
-                "text": "رَسُولَ",
-                "confidence": 1.0,
-                "start_index": 248
-            },
-            {
-                "text": "اللَّهِ،",
-                "confidence": 1.0,
-                "start_index": 256
-            },
-            {
-                "text": "إِنَّ",
-                "confidence": 1.0,
-                "start_index": 265
-            },
-            {
-                "text": "عَلَيْكَ",
-                "confidence": 1.0,
-                "start_index": 271
-            },
-            {
-                "text": "نَهَارًا)",
-                "confidence": 1.0,
-                "start_index": 280
-            },
-            {
-                "text": ")،",
-                "confidence": 1.0,
-                "start_index": 290
-            },
-            {
-                "text": "يعني:",
-                "confidence": 1.0,
-                "start_index": 293
-            },
-            {
-                "text": "ما",
-                "confidence": 1.0,
-                "start_index": 299
-            },
-            {
-                "text": "غربت",
-                "confidence": 1.0,
-                "start_index": 302
-            },
-            {
-                "text": "الشمس؛",
-                "confidence": 1.0,
-                "start_index": 307
-            },
-            {
-                "text": "لأنه",
-                "confidence": 1.0,
-                "start_index": 314
-            },
-            {
-                "text": "رأى",
-                "confidence": 1.0,
-                "start_index": 319
-            },
-            {
-                "text": "رضي",
-                "confidence": 1.0,
-                "start_index": 323
-            },
-            {
-                "text": "الله",
-                "confidence": 1.0,
-                "start_index": 327
-            },
-            {
-                "text": "عنه",
-                "confidence": 1.0,
-                "start_index": 332
-            },
-            {
-                "text": "الحمرة",
-                "confidence": 1.0,
-                "start_index": 336
-            },
-            {
-                "text": "بعد",
-                "confidence": 1.0,
-                "start_index": 343
-            },
-            {
-                "text": "غروب",
-                "confidence": 1.0,
-                "start_index": 347
-            },
-            {
-                "text": "الشمس،",
-                "confidence": 1.0,
-                "start_index": 352
-            },
-            {
-                "text": "وظن",
-                "confidence": 1.0,
-                "start_index": 359
-            },
-            {
-                "text": "أن",
-                "confidence": 1.0,
-                "start_index": 363
-            },
-            {
-                "text": "الفطر",
-                "confidence": 1.0,
-                "start_index": 366
-            },
-            {
-                "text": "لا",
-                "confidence": 1.0,
-                "start_index": 372
-            },
-            {
-                "text": "يحلُّ",
-                "confidence": 1.0,
-                "start_index": 375
-            },
-            {
-                "text": "إلا",
-                "confidence": 1.0,
-                "start_index": 381
-            },
-            {
-                "text": "بعد",
-                "confidence": 1.0,
-                "start_index": 385
-            },
-            {
-                "text": "ذهاب",
-                "confidence": 1.0,
-                "start_index": 389
-            },
-            {
-                "text": "ذلك.",
-                "confidence": 1.0,
-                "start_index": 394
-            },
-            {
-                "text": "في",
-                "confidence": 1.0,
-                "start_index": 399
-            },
-            {
-                "text": "هذه",
-                "confidence": 1.0,
-                "start_index": 402
-            },
-            {
-                "text": "الأحاديث:",
-                "confidence": 1.0,
-                "start_index": 406
-            },
-            {
-                "text": "أنه",
-                "confidence": 1.0,
-                "start_index": 416
-            },
-            {
-                "text": "لا",
-                "confidence": 1.0,
-                "start_index": 420
-            },
-            {
-                "text": "عبرة",
-                "confidence": 1.0,
-                "start_index": 423
-            },
-            {
-                "text": "بالحمرة",
-                "confidence": 1.0,
-                "start_index": 428
-            },
-            {
-                "text": "بعد",
-                "confidence": 1.0,
-                "start_index": 436
-            },
-            {
-                "text": "غروب",
-                "confidence": 1.0,
-                "start_index": 440
-            },
-            {
-                "text": "قرص",
-                "confidence": 1.0,
-                "start_index": 445
-            },
-            {
-                "text": "الشمس؛",
-                "confidence": 1.0,
-                "start_index": 449
-            },
-            {
-                "text": "لأن",
-                "confidence": 1.0,
-                "start_index": 456
-            },
-            {
-                "text": "الحمرة",
-                "confidence": 1.0,
-                "start_index": 460
-            },
-            {
-                "text": "تبقى",
-                "confidence": 1.0,
-                "start_index": 467
-            },
-            {
-                "text": "مدة.",
-                "confidence": 1.0,
-                "start_index": 472
-            },
-            {
-                "text": "وفيه:",
-                "confidence": 1.0,
-                "start_index": 477
-            },
-            {
-                "text": "أن",
-                "confidence": 1.0,
-                "start_index": 483
-            },
-            {
-                "text": "الصحابي",
-                "confidence": 1.0,
-                "start_index": 486
-            },
-            {
-                "text": "رضي",
-                "confidence": 1.0,
-                "start_index": 494
-            },
-            {
-                "text": "الله",
-                "confidence": 1.0,
-                "start_index": 498
-            },
-            {
-                "text": "عنه",
-                "confidence": 1.0,
-                "start_index": 503
-            },
-            {
-                "text": "أشكلت",
-                "confidence": 1.0,
-                "start_index": 507
-            },
-            {
-                "text": "عليه",
-                "confidence": 1.0,
-                "start_index": 513
-            },
-            {
-                "text": "الحمرة",
-                "confidence": 1.0,
-                "start_index": 518
-            },
-            {
-                "text": "من",
-                "confidence": 1.0,
-                "start_index": 525
-            },
-            {
-                "text": "غروب",
-                "confidence": 1.0,
-                "start_index": 528
-            },
-            {
-                "text": "الشمس،",
-                "confidence": 1.0,
-                "start_index": 533
-            },
-            {
-                "text": "فراجع",
-                "confidence": 1.0,
-                "start_index": 540
-            },
-            {
-                "text": "النبي",
-                "confidence": 1.0,
-                "start_index": 546
-            },
-            {
-                "text": "صلى",
-                "confidence": 1.0,
-                "start_index": 552
-            },
-            {
-                "text": "الله",
-                "confidence": 1.0,
-                "start_index": 556
-            },
-            {
-                "text": "عليه",
-                "confidence": 1.0,
-                "start_index": 561
-            },
-            {
-                "text": "وسلم،",
-                "confidence": 1.0,
-                "start_index": 566
-            },
-            {
-                "text": "ففيه:",
-                "confidence": 1.0,
-                "start_index": 572
-            },
-            {
-                "text": "أنه",
-                "confidence": 1.0,
-                "start_index": 578
-            },
-            {
-                "text": "لا",
-                "confidence": 1.0,
-                "start_index": 582
-            },
-            {
-                "text": "بأس",
-                "confidence": 1.0,
-                "start_index": 585
-            },
-            {
-                "text": "من",
-                "confidence": 1.0,
-                "start_index": 589
-            },
-            {
-                "text": "مراجعة",
-                "confidence": 1.0,
-                "start_index": 592
-            },
-            {
-                "text": "العالم،",
-                "confidence": 1.0,
-                "start_index": 599
-            },
-            {
-                "text": "أو",
-                "confidence": 1.0,
-                "start_index": 607
-            },
-            {
-                "text": "المسؤول،",
-                "confidence": 1.0,
-                "start_index": 610
-            },
-            {
-                "text": "أو",
-                "confidence": 1.0,
-                "start_index": 619
-            },
-            {
-                "text": "الكبير؛",
-                "confidence": 1.0,
-                "start_index": 622
-            },
-            {
-                "text": "حتى",
-                "confidence": 1.0,
-                "start_index": 630
-            },
-            {
-                "text": "يتبين",
-                "confidence": 1.0,
-                "start_index": 634
-            },
-            {
-                "text": "الأمر.",
-                "confidence": 1.0,
-                "start_index": 640
-            },
-            {
-                "text": "وفيه:",
-                "confidence": 1.0,
-                "start_index": 647
-            },
-            {
-                "text": "أن",
-                "confidence": 1.0,
-                "start_index": 653
-            },
-            {
-                "text": "هذا",
-                "confidence": 1.0,
-                "start_index": 656
+                "start_index": 106
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -588,74 +124,84 @@
     },
     "blocks": [
         {
-            "top_left_x": 36,
-            "top_left_y": 36,
-            "bottom_right_x": 849,
-            "bottom_right_y": 212,
-            "content": "رَسُولَ اللَّهِ، إِنَّهُ",
-            "type": "title",
+            "top_left_x": 785,
+            "top_left_y": 10,
+            "bottom_right_x": 823,
+            "bottom_right_y": 31,
+            "content": "الله عليه",
+            "type": "header",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 449,
-            "top_left_y": 228,
-            "bottom_right_x": 849,
-            "bottom_right_y": 716,
-            "content": "![image](img-0)",
-            "type": "image",
+            "top_left_x": 40,
+            "top_left_y": 10,
+            "bottom_right_x": 54,
+            "bottom_right_y": 31,
+            "content": "53",
+            "type": "header",
             "confidence_scores": null,
             "reading_index": 2
         },
         {
             "top_left_x": 36,
-            "top_left_y": 228,
-            "bottom_right_x": 437,
-            "bottom_right_y": 716,
-            "content": "![image](img-1)",
-            "type": "image",
+            "top_left_y": 79,
+            "bottom_right_x": 827,
+            "bottom_right_y": 250,
+            "content": "علمت مما ظهر على",
+            "type": "title",
             "confidence_scores": null,
             "reading_index": 3
         },
         {
-            "top_left_x": 36,
-            "top_left_y": 742,
-            "bottom_right_x": 849,
-            "bottom_right_y": 782,
-            "content": "حَدَّثَنَا سُفْيَانُ عَنْ",
-            "type": "title",
+            "top_left_x": 639,
+            "top_left_y": 266,
+            "bottom_right_x": 827,
+            "bottom_right_y": 739,
+            "content": "![image](img-0)",
+            "type": "image",
             "confidence_scores": null,
             "reading_index": 4
         },
         {
-            "top_left_x": 514,
-            "top_left_y": 797,
-            "bottom_right_x": 829,
-            "bottom_right_y": 1007,
-            "content": "![image](img-2)",
+            "top_left_x": 440,
+            "top_left_y": 266,
+            "bottom_right_x": 627,
+            "bottom_right_y": 739,
+            "content": "![image](img-1)",
             "type": "image",
             "confidence_scores": null,
             "reading_index": 5
         },
         {
-            "top_left_x": 514,
-            "top_left_y": 1011,
-            "bottom_right_x": 829,
-            "bottom_right_y": 1033,
-            "content": "شكل: تَخْرُجُوا مِنْهَا،",
-            "type": "text",
+            "top_left_x": 236,
+            "top_left_y": 266,
+            "bottom_right_x": 424,
+            "bottom_right_y": 739,
+            "content": "![image](img-2)",
+            "type": "image",
             "confidence_scores": null,
             "reading_index": 6
         },
         {
             "top_left_x": 36,
-            "top_left_y": 1048,
-            "bottom_right_x": 849,
-            "bottom_right_y": 1226,
-            "content": "يعني: من المغرب. وقوله: ((انْزِلْ فَاجْدَحْ لَنَا) )، يعني: اخلِط السَّويق بالماء، من باب التحلية. وقوله: ((يَا رَسُولَ اللَّهِ، إِنَّ عَلَيْكَ نَهَارًا) )، يعني: ما غربت الشمس؛ لأنه رأى رضي الله عنه الحمرة بعد غروب الشمس، وظن أن الفطر لا يحلُّ إلا بعد ذهاب ذلك. في هذه الأحاديث: أنه لا عبرة بالحمرة بعد غروب قرص الشمس؛ لأن الحمرة تبقى مدة. وفيه: أن الصحابي رضي الله عنه أشكلت عليه الحمرة من غروب الشمس، فراجع النبي صلى الله عليه وسلم، ففيه: أنه لا بأس من مراجعة العالم، أو المسؤول، أو الكبير؛ حتى يتبين الأمر. وفيه: أن هذا",
-            "type": "text",
+            "top_left_y": 266,
+            "bottom_right_x": 224,
+            "bottom_right_y": 739,
+            "content": "![image](img-3)",
+            "type": "image",
             "confidence_scores": null,
             "reading_index": 7
+        },
+        {
+            "top_left_x": 36,
+            "top_left_y": 765,
+            "bottom_right_x": 827,
+            "bottom_right_y": 1239,
+            "content": "![image](img-4)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 8
         }
     ],
     "meta": {

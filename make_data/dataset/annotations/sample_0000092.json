@@ -1,75 +1,101 @@
 {
-    "markdown": "\n![image](img-0)\n\nرضي الله عنه أنه\nبه الشر، ومثله- أيضا- قوله:",
-    "images": [
-        {
-            "id": "img-0",
-            "top_left_x": 14,
-            "top_left_y": 14,
-            "bottom_right_x": 60,
-            "bottom_right_y": 60,
-            "reading_index": 1
-        }
-    ],
+    "markdown": "## قَتَادَةَ: رَجُلٌ أَتَى النَّبِيَّ صلى الله\n\"سَمِعَا أَبَا هُرَيْرَةَ يَقُولُ: قَالَ رَسُولُ اللَّهِ صلى الله عليه\"",
+    "images": [],
     "tables": [],
     "hyperlinks": [],
     "header": null,
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 211,
-        "width": 352
+        "height": 1089,
+        "width": 710
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "![image](img-0)",
+                "text": "##",
                 "confidence": 1.0,
-                "start_index": 1
+                "start_index": 0
             },
             {
-                "text": "رضي",
+                "text": "قَتَادَةَ:",
                 "confidence": 1.0,
-                "start_index": 18
+                "start_index": 3
             },
             {
-                "text": "الله",
+                "text": "رَجُلٌ",
                 "confidence": 1.0,
-                "start_index": 22
+                "start_index": 14
             },
             {
-                "text": "عنه",
+                "text": "أَتَى",
+                "confidence": 1.0,
+                "start_index": 21
+            },
+            {
+                "text": "النَّبِيَّ",
                 "confidence": 1.0,
                 "start_index": 27
             },
             {
-                "text": "أنه",
-                "confidence": 1.0,
-                "start_index": 31
-            },
-            {
-                "text": "به",
-                "confidence": 1.0,
-                "start_index": 35
-            },
-            {
-                "text": "الشر،",
+                "text": "صلى",
                 "confidence": 1.0,
                 "start_index": 38
             },
             {
-                "text": "ومثله-",
+                "text": "الله",
                 "confidence": 1.0,
-                "start_index": 44
+                "start_index": 42
             },
             {
-                "text": "أيضا-",
+                "text": "\"سَمِعَا",
                 "confidence": 1.0,
-                "start_index": 51
+                "start_index": 47
             },
             {
-                "text": "قوله:",
+                "text": "أَبَا",
                 "confidence": 1.0,
-                "start_index": 57
+                "start_index": 56
+            },
+            {
+                "text": "هُرَيْرَةَ",
+                "confidence": 1.0,
+                "start_index": 62
+            },
+            {
+                "text": "يَقُولُ:",
+                "confidence": 1.0,
+                "start_index": 73
+            },
+            {
+                "text": "قَالَ",
+                "confidence": 1.0,
+                "start_index": 82
+            },
+            {
+                "text": "رَسُولُ",
+                "confidence": 1.0,
+                "start_index": 88
+            },
+            {
+                "text": "اللَّهِ",
+                "confidence": 1.0,
+                "start_index": 96
+            },
+            {
+                "text": "صلى",
+                "confidence": 1.0,
+                "start_index": 104
+            },
+            {
+                "text": "الله",
+                "confidence": 1.0,
+                "start_index": 108
+            },
+            {
+                "text": "عليه\"",
+                "confidence": 1.0,
+                "start_index": 113
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -77,38 +103,28 @@
     },
     "blocks": [
         {
-            "top_left_x": 14,
-            "top_left_y": 14,
-            "bottom_right_x": 60,
-            "bottom_right_y": 60,
-            "content": "![image](img-0)",
-            "type": "image",
+            "top_left_x": 40,
+            "top_left_y": 40,
+            "bottom_right_x": 670,
+            "bottom_right_y": 191,
+            "content": "قَتَادَةَ: رَجُلٌ أَتَى النَّبِيَّ صلى الله",
+            "type": "title",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 14,
-            "top_left_y": 165,
-            "bottom_right_x": 338,
-            "bottom_right_y": 183,
-            "content": "رضي الله عنه أنه",
+            "top_left_x": 60,
+            "top_left_y": 221,
+            "bottom_right_x": 646,
+            "bottom_right_y": 1059,
+            "content": "\"سَمِعَا أَبَا هُرَيْرَةَ يَقُولُ: قَالَ رَسُولُ اللَّهِ صلى الله عليه\"",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 2
-        },
-        {
-            "top_left_x": 14,
-            "top_left_y": 185,
-            "bottom_right_x": 338,
-            "bottom_right_y": 197,
-            "content": "به الشر، ومثله- أيضا- قوله:",
-            "type": "text",
-            "confidence_scores": null,
-            "reading_index": 3
         }
     ],
     "meta": {
-        "template": "business_card",
+        "template": "a4_literary",
         "hybrid": null
     }
 }

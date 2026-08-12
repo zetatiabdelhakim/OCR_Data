@@ -1,11 +1,11 @@
 {
-    "markdown": "\n![image](img-0)\n\nقد تُوعد عليه\nلَقِسْمَةٌ مَا عُدِلَ",
+    "markdown": "\n![image](img-0)\n\nرضي الله عنه -\nوَأَتْقَاكُمْ لَهُ) ). (٢)\n0783345152\nكَمَا تَأْرِزُ الْحَيَّةُ فِي جُحْرِهَا) ):",
     "images": [
         {
             "id": "img-0",
-            "top_left_x": 163,
+            "top_left_x": 137,
             "top_left_y": 14,
-            "bottom_right_x": 209,
+            "bottom_right_x": 183,
             "bottom_right_y": 60,
             "reading_index": 1
         }
@@ -16,8 +16,8 @@
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 343,
-        "width": 223
+        "height": 310,
+        "width": 197
     },
     "confidence_scores": {
         "word_confidence_scores": [
@@ -27,34 +27,79 @@
                 "start_index": 1
             },
             {
-                "text": "قد",
+                "text": "رضي",
                 "confidence": 1.0,
                 "start_index": 18
             },
             {
-                "text": "تُوعد",
+                "text": "الله",
                 "confidence": 1.0,
-                "start_index": 21
+                "start_index": 22
             },
             {
-                "text": "عليه",
+                "text": "عنه",
                 "confidence": 1.0,
                 "start_index": 27
             },
             {
-                "text": "لَقِسْمَةٌ",
+                "text": "-",
                 "confidence": 1.0,
-                "start_index": 32
+                "start_index": 31
             },
             {
-                "text": "مَا",
+                "text": "وَأَتْقَاكُمْ",
                 "confidence": 1.0,
-                "start_index": 43
+                "start_index": 33
             },
             {
-                "text": "عُدِلَ",
+                "text": "لَهُ)",
                 "confidence": 1.0,
                 "start_index": 47
+            },
+            {
+                "text": ").",
+                "confidence": 1.0,
+                "start_index": 53
+            },
+            {
+                "text": "(٢)",
+                "confidence": 1.0,
+                "start_index": 56
+            },
+            {
+                "text": "0783345152",
+                "confidence": 1.0,
+                "start_index": 60
+            },
+            {
+                "text": "كَمَا",
+                "confidence": 1.0,
+                "start_index": 71
+            },
+            {
+                "text": "تَأْرِزُ",
+                "confidence": 1.0,
+                "start_index": 77
+            },
+            {
+                "text": "الْحَيَّةُ",
+                "confidence": 1.0,
+                "start_index": 86
+            },
+            {
+                "text": "فِي",
+                "confidence": 1.0,
+                "start_index": 97
+            },
+            {
+                "text": "جُحْرِهَا)",
+                "confidence": 1.0,
+                "start_index": 101
+            },
+            {
+                "text": "):",
+                "confidence": 1.0,
+                "start_index": 112
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -62,9 +107,9 @@
     },
     "blocks": [
         {
-            "top_left_x": 163,
+            "top_left_x": 137,
             "top_left_y": 14,
-            "bottom_right_x": 209,
+            "bottom_right_x": 183,
             "bottom_right_y": 60,
             "content": "![image](img-0)",
             "type": "image",
@@ -73,23 +118,43 @@
         },
         {
             "top_left_x": 14,
-            "top_left_y": 297,
-            "bottom_right_x": 209,
-            "bottom_right_y": 315,
-            "content": "قد تُوعد عليه",
+            "top_left_y": 210,
+            "bottom_right_x": 183,
+            "bottom_right_y": 236,
+            "content": "رضي الله عنه -",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 2
         },
         {
             "top_left_x": 14,
-            "top_left_y": 317,
-            "bottom_right_x": 209,
-            "bottom_right_y": 329,
-            "content": "لَقِسْمَةٌ مَا عُدِلَ",
+            "top_left_y": 238,
+            "bottom_right_x": 183,
+            "bottom_right_y": 256,
+            "content": "وَأَتْقَاكُمْ لَهُ) ). (٢)",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 3
+        },
+        {
+            "top_left_x": 14,
+            "top_left_y": 262,
+            "bottom_right_x": 183,
+            "bottom_right_y": 279,
+            "content": "0783345152",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 4
+        },
+        {
+            "top_left_x": 14,
+            "top_left_y": 279,
+            "bottom_right_x": 183,
+            "bottom_right_y": 296,
+            "content": "كَمَا تَأْرِزُ الْحَيَّةُ فِي جُحْرِهَا) ):",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 5
         }
     ],
     "meta": {

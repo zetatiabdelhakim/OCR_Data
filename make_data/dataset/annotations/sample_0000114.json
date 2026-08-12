@@ -1,225 +1,181 @@
 {
-    "markdown": "\n![image](img-0)\n\nالصَّلَاةُ، فَقُمْنَا، فَعَدَّلْنَا الصُّفُوفَ\n\n[tbl-0.html](tbl-0.html)\n",
-    "images": [
-        {
-            "id": "img-0",
-            "top_left_x": 279,
-            "top_left_y": 338,
-            "bottom_right_x": 343,
-            "bottom_right_y": 402,
-            "reading_index": 1
-        }
-    ],
+    "markdown": "عَنْ خَالِدِ بْنِ\nINV-60715\n25/03/2023\nفاتورة إلى: عليه وسلم: ((أَوْ مُسْلِمًا)\n\n[tbl-0.html](tbl-0.html)\n\nالإجمالي: 5,050.43",
+    "images": [],
     "tables": [
         {
             "id": "tbl-0.html",
-            "content": "<table><tbody><tr><th>أَبِي</th><th>بْنَ</th><th>يحميه وينصره في</th></tr><tr><td>حَدَّثَنَا الْكُوفِيُّونَ-</td><td>شِمَاسَةَ عَنْ أَبِي بَصْرَةَ عَنْ</td><td>يريد أن يقيس عليه، والمعنى</td></tr><tr><td>فُرُشَكُمْ أَحَدًا تَكْرَهُونَهُ، فَإِنْ فَعَلْنَ ذَلِكَ</td><td>الأمة على الدجال-</td><td>بالخواتم التي في رقابهم،</td></tr><tr><td>فَخَرَجْتُ مُسْتَبْشِرًا بِدَعْوَةِ نَبِيِّ اللَّهِ صلى</td><td>باز (١٧/</td><td>وهو واقف على</td></tr></tbody></table>",
+            "content": "<table><tbody><tr><th>البيان</th><th>الكمية</th><th>السعر</th><th>المجموع</th></tr><tr><td>٣٢٣). (٢) أخرجه ابن سعد</td><td>11</td><td>196.25</td><td>2,158.75</td></tr><tr><td>وقوله: ((إِنِّي فِي غَائِطٍ</td><td>12</td><td>66.92</td><td>803.04</td></tr><tr><td>عَنْ أَبِي هُرَيْرَةَ قَالَ: قَالَ</td><td>10</td><td>197.64</td><td>1,976.40</td></tr><tr><td>أَنَّ رَسُولَ اللَّهِ صلى</td><td>1</td><td>112.24</td><td>112.24</td></tr></tbody></table>",
             "format": "html",
             "word_confidence_scores": [
                 {
-                    "text": "أَبِي",
+                    "text": "البيان",
                     "confidence": 1.0,
                     "start_index": 22
                 },
                 {
-                    "text": "بْنَ",
+                    "text": "الكمية",
                     "confidence": 1.0,
-                    "start_index": 36
+                    "start_index": 37
                 },
                 {
-                    "text": "يحميه",
+                    "text": "السعر",
                     "confidence": 1.0,
-                    "start_index": 49
+                    "start_index": 52
                 },
                 {
-                    "text": " وينصره",
+                    "text": "المجموع",
                     "confidence": 1.0,
-                    "start_index": 54
+                    "start_index": 66
                 },
                 {
-                    "text": " في",
+                    "text": "٣٢٣).",
                     "confidence": 1.0,
-                    "start_index": 61
+                    "start_index": 91
                 },
                 {
-                    "text": "حَدَّثَنَا",
+                    "text": " (٢)",
                     "confidence": 1.0,
-                    "start_index": 82
+                    "start_index": 96
                 },
                 {
-                    "text": " الْكُوفِيُّونَ-",
+                    "text": " أخرجه",
                     "confidence": 1.0,
-                    "start_index": 92
+                    "start_index": 100
                 },
                 {
-                    "text": "شِمَاسَةَ",
+                    "text": " ابن",
                     "confidence": 1.0,
-                    "start_index": 117
+                    "start_index": 106
                 },
                 {
-                    "text": " عَنْ",
+                    "text": " سعد",
                     "confidence": 1.0,
-                    "start_index": 126
+                    "start_index": 110
                 },
                 {
-                    "text": " أَبِي",
+                    "text": "11",
                     "confidence": 1.0,
-                    "start_index": 131
+                    "start_index": 123
                 },
                 {
-                    "text": " بَصْرَةَ",
+                    "text": "196.25",
                     "confidence": 1.0,
-                    "start_index": 137
+                    "start_index": 134
                 },
                 {
-                    "text": " عَنْ",
+                    "text": "2,158.75",
                     "confidence": 1.0,
-                    "start_index": 146
+                    "start_index": 149
                 },
                 {
-                    "text": "يريد",
+                    "text": "وقوله:",
                     "confidence": 1.0,
-                    "start_index": 160
+                    "start_index": 175
                 },
                 {
-                    "text": " أن",
+                    "text": " ((إِنِّي",
                     "confidence": 1.0,
-                    "start_index": 164
+                    "start_index": 181
                 },
                 {
-                    "text": " يقيس",
+                    "text": " فِي",
                     "confidence": 1.0,
-                    "start_index": 167
+                    "start_index": 190
                 },
                 {
-                    "text": " عليه،",
+                    "text": " غَائِطٍ",
                     "confidence": 1.0,
-                    "start_index": 172
+                    "start_index": 194
                 },
                 {
-                    "text": " والمعنى",
+                    "text": "12",
                     "confidence": 1.0,
-                    "start_index": 178
+                    "start_index": 211
                 },
                 {
-                    "text": "فُرُشَكُمْ",
-                    "confidence": 1.0,
-                    "start_index": 204
-                },
-                {
-                    "text": " أَحَدًا",
-                    "confidence": 1.0,
-                    "start_index": 214
-                },
-                {
-                    "text": " تَكْرَهُونَهُ،",
+                    "text": "66.92",
                     "confidence": 1.0,
                     "start_index": 222
                 },
                 {
-                    "text": " فَإِنْ",
+                    "text": "803.04",
                     "confidence": 1.0,
-                    "start_index": 237
+                    "start_index": 236
                 },
                 {
-                    "text": " فَعَلْنَ",
+                    "text": "عَنْ",
                     "confidence": 1.0,
-                    "start_index": 244
+                    "start_index": 260
                 },
                 {
-                    "text": " ذَلِكَ",
+                    "text": " أَبِي",
                     "confidence": 1.0,
-                    "start_index": 253
+                    "start_index": 264
                 },
                 {
-                    "text": "الأمة",
+                    "text": " هُرَيْرَةَ",
                     "confidence": 1.0,
-                    "start_index": 269
+                    "start_index": 270
                 },
                 {
-                    "text": " على",
+                    "text": " قَالَ:",
                     "confidence": 1.0,
-                    "start_index": 274
+                    "start_index": 281
                 },
                 {
-                    "text": " الدجال-",
+                    "text": " قَالَ",
                     "confidence": 1.0,
-                    "start_index": 278
+                    "start_index": 288
                 },
                 {
-                    "text": "بالخواتم",
-                    "confidence": 1.0,
-                    "start_index": 295
-                },
-                {
-                    "text": " التي",
+                    "text": "10",
                     "confidence": 1.0,
                     "start_index": 303
                 },
                 {
-                    "text": " في",
+                    "text": "197.64",
                     "confidence": 1.0,
-                    "start_index": 308
+                    "start_index": 314
                 },
                 {
-                    "text": " رقابهم،",
+                    "text": "1,976.40",
                     "confidence": 1.0,
-                    "start_index": 311
+                    "start_index": 329
                 },
                 {
-                    "text": "فَخَرَجْتُ",
+                    "text": "أَنَّ",
                     "confidence": 1.0,
-                    "start_index": 337
+                    "start_index": 355
                 },
                 {
-                    "text": " مُسْتَبْشِرًا",
+                    "text": " رَسُولَ",
                     "confidence": 1.0,
-                    "start_index": 347
-                },
-                {
-                    "text": " بِدَعْوَةِ",
-                    "confidence": 1.0,
-                    "start_index": 361
-                },
-                {
-                    "text": " نَبِيِّ",
-                    "confidence": 1.0,
-                    "start_index": 372
+                    "start_index": 360
                 },
                 {
                     "text": " اللَّهِ",
                     "confidence": 1.0,
-                    "start_index": 380
+                    "start_index": 368
                 },
                 {
                     "text": " صلى",
                     "confidence": 1.0,
-                    "start_index": 388
+                    "start_index": 376
                 },
                 {
-                    "text": "باز",
+                    "text": "1",
                     "confidence": 1.0,
-                    "start_index": 401
+                    "start_index": 389
                 },
                 {
-                    "text": " (١٧/",
+                    "text": "112.24",
                     "confidence": 1.0,
-                    "start_index": 404
+                    "start_index": 399
                 },
                 {
-                    "text": "وهو",
+                    "text": "112.24",
                     "confidence": 1.0,
-                    "start_index": 418
-                },
-                {
-                    "text": " واقف",
-                    "confidence": 1.0,
-                    "start_index": 421
-                },
-                {
-                    "text": " على",
-                    "confidence": 1.0,
-                    "start_index": 426
+                    "start_index": 414
                 }
             ]
         }
@@ -229,40 +185,80 @@
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 953,
-        "width": 622
+        "height": 1092,
+        "width": 731
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "![image](img-0)",
+                "text": "عَنْ",
                 "confidence": 1.0,
-                "start_index": 1
+                "start_index": 0
             },
             {
-                "text": "الصَّلَاةُ،",
+                "text": "خَالِدِ",
+                "confidence": 1.0,
+                "start_index": 5
+            },
+            {
+                "text": "بْنِ",
+                "confidence": 1.0,
+                "start_index": 13
+            },
+            {
+                "text": "INV-60715",
                 "confidence": 1.0,
                 "start_index": 18
             },
             {
-                "text": "فَقُمْنَا،",
+                "text": "25/03/2023",
                 "confidence": 1.0,
-                "start_index": 30
+                "start_index": 28
             },
             {
-                "text": "فَعَدَّلْنَا",
+                "text": "فاتورة",
                 "confidence": 1.0,
-                "start_index": 41
+                "start_index": 39
             },
             {
-                "text": "الصُّفُوفَ",
+                "text": "إلى:",
                 "confidence": 1.0,
-                "start_index": 54
+                "start_index": 46
+            },
+            {
+                "text": "عليه",
+                "confidence": 1.0,
+                "start_index": 51
+            },
+            {
+                "text": "وسلم:",
+                "confidence": 1.0,
+                "start_index": 56
+            },
+            {
+                "text": "((أَوْ",
+                "confidence": 1.0,
+                "start_index": 62
+            },
+            {
+                "text": "مُسْلِمًا)",
+                "confidence": 1.0,
+                "start_index": 69
             },
             {
                 "text": "[tbl-0.html](tbl-0.html)",
                 "confidence": 1.0,
-                "start_index": 66
+                "start_index": 81
+            },
+            {
+                "text": "الإجمالي:",
+                "confidence": 1.0,
+                "start_index": 107
+            },
+            {
+                "text": "5,050.43",
+                "confidence": 1.0,
+                "start_index": 117
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -270,39 +266,69 @@
     },
     "blocks": [
         {
-            "top_left_x": 279,
-            "top_left_y": 338,
-            "bottom_right_x": 343,
-            "bottom_right_y": 402,
-            "content": "![image](img-0)",
-            "type": "image",
+            "top_left_x": 44,
+            "top_left_y": 44,
+            "bottom_right_x": 687,
+            "bottom_right_y": 82,
+            "content": "عَنْ خَالِدِ بْنِ",
+            "type": "text",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 122,
-            "top_left_y": 424,
-            "bottom_right_x": 500,
-            "bottom_right_y": 471,
-            "content": "الصَّلَاةُ، فَقُمْنَا، فَعَدَّلْنَا الصُّفُوفَ",
+            "top_left_x": 625,
+            "top_left_y": 90,
+            "bottom_right_x": 687,
+            "bottom_right_y": 113,
+            "content": "INV-60715",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 2
         },
         {
-            "top_left_x": 40,
-            "top_left_y": 493,
-            "bottom_right_x": 582,
-            "bottom_right_y": 610,
-            "content": "<table><tbody><tr><th>أَبِي</th><th>بْنَ</th><th>يحميه وينصره في</th></tr><tr><td>حَدَّثَنَا الْكُوفِيُّونَ-</td><td>شِمَاسَةَ عَنْ أَبِي بَصْرَةَ عَنْ</td><td>يريد أن يقيس عليه، والمعنى</td></tr><tr><td>فُرُشَكُمْ أَحَدًا تَكْرَهُونَهُ، فَإِنْ فَعَلْنَ ذَلِكَ</td><td>الأمة على الدجال-</td><td>بالخواتم التي في رقابهم،</td></tr><tr><td>فَخَرَجْتُ مُسْتَبْشِرًا بِدَعْوَةِ نَبِيِّ اللَّهِ صلى</td><td>باز (١٧/</td><td>وهو واقف على</td></tr></tbody></table>",
+            "top_left_x": 44,
+            "top_left_y": 90,
+            "bottom_right_x": 109,
+            "bottom_right_y": 113,
+            "content": "25/03/2023",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 3
+        },
+        {
+            "top_left_x": 44,
+            "top_left_y": 135,
+            "bottom_right_x": 687,
+            "bottom_right_y": 160,
+            "content": "فاتورة إلى: عليه وسلم: ((أَوْ مُسْلِمًا)",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 4
+        },
+        {
+            "top_left_x": 44,
+            "top_left_y": 174,
+            "bottom_right_x": 687,
+            "bottom_right_y": 348,
+            "content": "<table><tbody><tr><th>البيان</th><th>الكمية</th><th>السعر</th><th>المجموع</th></tr><tr><td>٣٢٣). (٢) أخرجه ابن سعد</td><td>11</td><td>196.25</td><td>2,158.75</td></tr><tr><td>وقوله: ((إِنِّي فِي غَائِطٍ</td><td>12</td><td>66.92</td><td>803.04</td></tr><tr><td>عَنْ أَبِي هُرَيْرَةَ قَالَ: قَالَ</td><td>10</td><td>197.64</td><td>1,976.40</td></tr><tr><td>أَنَّ رَسُولَ اللَّهِ صلى</td><td>1</td><td>112.24</td><td>112.24</td></tr></tbody></table>",
             "type": "table",
             "table_id": "tbl-0.html",
             "confidence_scores": null,
-            "reading_index": 3
+            "reading_index": 5
+        },
+        {
+            "top_left_x": 44,
+            "top_left_y": 362,
+            "bottom_right_x": 163,
+            "bottom_right_y": 390,
+            "content": "الإجمالي: 5,050.43",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 6
         }
     ],
     "meta": {
-        "template": "minimalist",
-        "hybrid": "mini-table"
+        "template": "invoice",
+        "hybrid": null
     }
 }

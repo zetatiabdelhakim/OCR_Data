@@ -1,21 +1,13 @@
 {
-    "markdown": "وَتَعَالَى يَغْفِرُ لَهُ، ثُمَّ\n\n![image](img-0)\n\nيُقدِّر ما يكون\n3672-9102\n\n![image](img-1)\n",
+    "markdown": "\n![image](img-0)\n\nمسلم) . أسأل\nالمحرمات لحقِّ الله تعالى؛ كأكل",
     "images": [
         {
             "id": "img-0",
-            "top_left_x": 279,
-            "top_left_y": 65,
-            "bottom_right_x": 323,
-            "bottom_right_y": 121,
-            "reading_index": 2
-        },
-        {
-            "id": "img-1",
-            "top_left_x": 10,
-            "top_left_y": 158,
-            "bottom_right_x": 323,
-            "bottom_right_y": 188,
-            "reading_index": 5
+            "top_left_x": 263,
+            "top_left_y": 335,
+            "bottom_right_x": 327,
+            "bottom_right_y": 399,
+            "reading_index": 1
         }
     ],
     "tables": [],
@@ -24,60 +16,55 @@
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 198,
-        "width": 333
+        "height": 845,
+        "width": 590
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "وَتَعَالَى",
+                "text": "![image](img-0)",
                 "confidence": 1.0,
-                "start_index": 0
+                "start_index": 1
             },
             {
-                "text": "يَغْفِرُ",
+                "text": "مسلم)",
                 "confidence": 1.0,
-                "start_index": 11
+                "start_index": 18
             },
             {
-                "text": "لَهُ،",
+                "text": ".",
                 "confidence": 1.0,
-                "start_index": 20
+                "start_index": 24
             },
             {
-                "text": "ثُمَّ",
+                "text": "أسأل",
                 "confidence": 1.0,
                 "start_index": 26
             },
             {
-                "text": "![image](img-0)",
+                "text": "المحرمات",
                 "confidence": 1.0,
-                "start_index": 33
+                "start_index": 31
             },
             {
-                "text": "يُقدِّر",
+                "text": "لحقِّ",
                 "confidence": 1.0,
-                "start_index": 50
+                "start_index": 40
             },
             {
-                "text": "ما",
+                "text": "الله",
+                "confidence": 1.0,
+                "start_index": 46
+            },
+            {
+                "text": "تعالى؛",
+                "confidence": 1.0,
+                "start_index": 51
+            },
+            {
+                "text": "كأكل",
                 "confidence": 1.0,
                 "start_index": 58
-            },
-            {
-                "text": "يكون",
-                "confidence": 1.0,
-                "start_index": 61
-            },
-            {
-                "text": "3672-9102",
-                "confidence": 1.0,
-                "start_index": 66
-            },
-            {
-                "text": "![image](img-1)",
-                "confidence": 1.0,
-                "start_index": 77
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -85,58 +72,38 @@
     },
     "blocks": [
         {
-            "top_left_x": 10,
-            "top_left_y": 10,
-            "bottom_right_x": 323,
-            "bottom_right_y": 28,
-            "content": "وَتَعَالَى يَغْفِرُ لَهُ، ثُمَّ",
-            "type": "text",
+            "top_left_x": 263,
+            "top_left_y": 335,
+            "bottom_right_x": 327,
+            "bottom_right_y": 399,
+            "content": "![image](img-0)",
+            "type": "image",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 279,
-            "top_left_y": 65,
-            "bottom_right_x": 323,
-            "bottom_right_y": 121,
-            "content": "![image](img-0)",
-            "type": "image",
+            "top_left_x": 236,
+            "top_left_y": 421,
+            "bottom_right_x": 354,
+            "bottom_right_y": 476,
+            "content": "مسلم) . أسأل",
+            "type": "text",
             "confidence_scores": null,
             "reading_index": 2
         },
         {
-            "top_left_x": 10,
-            "top_left_y": 74,
-            "bottom_right_x": 271,
-            "bottom_right_y": 93,
-            "content": "يُقدِّر ما يكون",
+            "top_left_x": 252,
+            "top_left_y": 486,
+            "bottom_right_x": 338,
+            "bottom_right_y": 511,
+            "content": "المحرمات لحقِّ الله تعالى؛ كأكل",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 3
-        },
-        {
-            "top_left_x": 10,
-            "top_left_y": 97,
-            "bottom_right_x": 271,
-            "bottom_right_y": 113,
-            "content": "3672-9102",
-            "type": "text",
-            "confidence_scores": null,
-            "reading_index": 4
-        },
-        {
-            "top_left_x": 10,
-            "top_left_y": 158,
-            "bottom_right_x": 323,
-            "bottom_right_y": 188,
-            "content": "![image](img-1)",
-            "type": "image",
-            "confidence_scores": null,
-            "reading_index": 5
         }
     ],
     "meta": {
-        "template": "id_card",
+        "template": "minimalist",
         "hybrid": null
     }
 }

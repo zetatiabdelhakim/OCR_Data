@@ -1,13 +1,21 @@
 {
-    "markdown": "\n![image](img-0)\n\nعَنْ أُمِّ سَلَمَةَ- زَوْجِ\nصوت غير معروف. وقوله: ((فَرَأَتْ أُمُّ ابْنِ صَيَّادٍ",
+    "markdown": "اللَّهِ صلى الله\n\n![image](img-0)\n\nعليه وسلم\n5923-8188\n\n![image](img-1)\n",
     "images": [
         {
             "id": "img-0",
-            "top_left_x": 271,
-            "top_left_y": 417,
-            "bottom_right_x": 335,
-            "bottom_right_y": 481,
-            "reading_index": 1
+            "top_left_x": 318,
+            "top_left_y": 60,
+            "bottom_right_x": 362,
+            "bottom_right_y": 116,
+            "reading_index": 2
+        },
+        {
+            "id": "img-1",
+            "top_left_x": 10,
+            "top_left_y": 148,
+            "bottom_right_x": 362,
+            "bottom_right_y": 178,
+            "reading_index": 5
         }
     ],
     "tables": [],
@@ -16,75 +24,50 @@
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 982,
-        "width": 605
+        "height": 188,
+        "width": 372
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "![image](img-0)",
+                "text": "اللَّهِ",
                 "confidence": 1.0,
-                "start_index": 1
+                "start_index": 0
             },
             {
-                "text": "عَنْ",
+                "text": "صلى",
+                "confidence": 1.0,
+                "start_index": 8
+            },
+            {
+                "text": "الله",
+                "confidence": 1.0,
+                "start_index": 12
+            },
+            {
+                "text": "![image](img-0)",
                 "confidence": 1.0,
                 "start_index": 18
             },
             {
-                "text": "أُمِّ",
+                "text": "عليه",
                 "confidence": 1.0,
-                "start_index": 23
+                "start_index": 35
             },
             {
-                "text": "سَلَمَةَ-",
+                "text": "وسلم",
                 "confidence": 1.0,
-                "start_index": 29
+                "start_index": 40
             },
             {
-                "text": "زَوْجِ",
+                "text": "5923-8188",
                 "confidence": 1.0,
-                "start_index": 39
+                "start_index": 45
             },
             {
-                "text": "صوت",
+                "text": "![image](img-1)",
                 "confidence": 1.0,
-                "start_index": 46
-            },
-            {
-                "text": "غير",
-                "confidence": 1.0,
-                "start_index": 50
-            },
-            {
-                "text": "معروف.",
-                "confidence": 1.0,
-                "start_index": 54
-            },
-            {
-                "text": "وقوله:",
-                "confidence": 1.0,
-                "start_index": 61
-            },
-            {
-                "text": "((فَرَأَتْ",
-                "confidence": 1.0,
-                "start_index": 68
-            },
-            {
-                "text": "أُمُّ",
-                "confidence": 1.0,
-                "start_index": 79
-            },
-            {
-                "text": "ابْنِ",
-                "confidence": 1.0,
-                "start_index": 85
-            },
-            {
-                "text": "صَيَّادٍ",
-                "confidence": 1.0,
-                "start_index": 91
+                "start_index": 56
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -92,38 +75,58 @@
     },
     "blocks": [
         {
-            "top_left_x": 271,
-            "top_left_y": 417,
-            "bottom_right_x": 335,
-            "bottom_right_y": 481,
-            "content": "![image](img-0)",
-            "type": "image",
+            "top_left_x": 10,
+            "top_left_y": 10,
+            "bottom_right_x": 362,
+            "bottom_right_y": 27,
+            "content": "اللَّهِ صلى الله",
+            "type": "text",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 223,
-            "top_left_y": 503,
-            "bottom_right_x": 382,
-            "bottom_right_y": 539,
-            "content": "عَنْ أُمِّ سَلَمَةَ- زَوْجِ",
-            "type": "text",
+            "top_left_x": 318,
+            "top_left_y": 60,
+            "bottom_right_x": 362,
+            "bottom_right_y": 116,
+            "content": "![image](img-0)",
+            "type": "image",
             "confidence_scores": null,
             "reading_index": 2
         },
         {
-            "top_left_x": 167,
-            "top_left_y": 549,
-            "bottom_right_x": 438,
-            "bottom_right_y": 566,
-            "content": "صوت غير معروف. وقوله: ((فَرَأَتْ أُمُّ ابْنِ صَيَّادٍ",
+            "top_left_x": 10,
+            "top_left_y": 68,
+            "bottom_right_x": 310,
+            "bottom_right_y": 87,
+            "content": "عليه وسلم",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 3
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 91,
+            "bottom_right_x": 310,
+            "bottom_right_y": 107,
+            "content": "5923-8188",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 4
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 148,
+            "bottom_right_x": 362,
+            "bottom_right_y": 178,
+            "content": "![image](img-1)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 5
         }
     ],
     "meta": {
-        "template": "minimalist",
+        "template": "id_card",
         "hybrid": null
     }
 }

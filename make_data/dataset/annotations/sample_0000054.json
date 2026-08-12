@@ -1,13 +1,21 @@
 {
-    "markdown": "\n![image](img-0)\n\nتعالى: {وقضينا إلى بني\nلَا وَاللَّهِ، مَا",
+    "markdown": "\n![image](img-0)\n\nنَافِعٍ أَنَّ عَبْدَ اللهِ\n\n![image](img-1)\n",
     "images": [
         {
             "id": "img-0",
-            "top_left_x": 14,
-            "top_left_y": 14,
-            "bottom_right_x": 60,
-            "bottom_right_y": 60,
+            "top_left_x": 333,
+            "top_left_y": 92,
+            "bottom_right_x": 397,
+            "bottom_right_y": 156,
             "reading_index": 1
+        },
+        {
+            "id": "img-1",
+            "top_left_x": 215,
+            "top_left_y": 246,
+            "bottom_right_x": 515,
+            "bottom_right_y": 556,
+            "reading_index": 3
         }
     ],
     "tables": [],
@@ -16,8 +24,8 @@
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 292,
-        "width": 193
+        "height": 654,
+        "width": 730
     },
     "confidence_scores": {
         "word_confidence_scores": [
@@ -27,39 +35,29 @@
                 "start_index": 1
             },
             {
-                "text": "تعالى:",
+                "text": "نَافِعٍ",
                 "confidence": 1.0,
                 "start_index": 18
             },
             {
-                "text": "{وقضينا",
+                "text": "أَنَّ",
                 "confidence": 1.0,
-                "start_index": 25
+                "start_index": 26
             },
             {
-                "text": "إلى",
+                "text": "عَبْدَ",
                 "confidence": 1.0,
-                "start_index": 33
+                "start_index": 32
             },
             {
-                "text": "بني",
+                "text": "اللهِ",
                 "confidence": 1.0,
-                "start_index": 37
+                "start_index": 39
             },
             {
-                "text": "لَا",
+                "text": "![image](img-1)",
                 "confidence": 1.0,
-                "start_index": 41
-            },
-            {
-                "text": "وَاللَّهِ،",
-                "confidence": 1.0,
-                "start_index": 45
-            },
-            {
-                "text": "مَا",
-                "confidence": 1.0,
-                "start_index": 56
+                "start_index": 46
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -67,38 +65,38 @@
     },
     "blocks": [
         {
-            "top_left_x": 14,
-            "top_left_y": 14,
-            "bottom_right_x": 60,
-            "bottom_right_y": 60,
+            "top_left_x": 333,
+            "top_left_y": 92,
+            "bottom_right_x": 397,
+            "bottom_right_y": 156,
             "content": "![image](img-0)",
             "type": "image",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 14,
-            "top_left_y": 246,
-            "bottom_right_x": 179,
-            "bottom_right_y": 264,
-            "content": "تعالى: {وقضينا إلى بني",
+            "top_left_x": 288,
+            "top_left_y": 178,
+            "bottom_right_x": 442,
+            "bottom_right_y": 224,
+            "content": "نَافِعٍ أَنَّ عَبْدَ اللهِ",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 2
         },
         {
-            "top_left_x": 14,
-            "top_left_y": 266,
-            "bottom_right_x": 179,
-            "bottom_right_y": 278,
-            "content": "لَا وَاللَّهِ، مَا",
-            "type": "text",
+            "top_left_x": 215,
+            "top_left_y": 246,
+            "bottom_right_x": 515,
+            "bottom_right_y": 556,
+            "content": "![image](img-1)",
+            "type": "image",
             "confidence_scores": null,
             "reading_index": 3
         }
     ],
     "meta": {
-        "template": "business_card",
-        "hybrid": null
+        "template": "minimalist",
+        "hybrid": "chart"
     }
 }

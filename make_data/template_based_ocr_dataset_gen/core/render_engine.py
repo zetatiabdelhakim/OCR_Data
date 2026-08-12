@@ -211,29 +211,64 @@ EXTRACTION_SCRIPT = r"""
     }
 
     // STEP 6: STRICT OUT-OF-BOUNDS & COLLAPSED NODE CROP
-    // Remove any layout-node that overflows the page canvas.
-    // If an element is partially outside (e.g., bottom cut off by the edge of the paper), 
-    // or if it has collapsed to a tiny sliver (< 12px height/width) due to flex constraints,
-    // we remove it entirely so it doesn't appear in the JSON or image.
-    if (!autoHeight) {
-        const safeRight = document.body.clientWidth;
-        const safeBottom = document.body.clientHeight;
+    // Remove any layout-node that overflows its bounding containers or the page.
+    for (let pass = 0; pass < 5; pass++) {
+        let removedAny = false;
+        document.querySelectorAll('.layout-node').forEach(block => {
+            const r = block.getBoundingClientRect();
+            let clipped = false;
 
-        for (let pass = 0; pass < 3; pass++) {
-            let removedAny = false;
-            document.querySelectorAll('.layout-node').forEach(block => {
-                const r = block.getBoundingClientRect();
-                // Allow a tiny 5px margin of error for borders
-                // Remove if smaller than 12px (unreadable collapsed slivers)
-                if (r.width < 12 || r.height < 12 ||
-                    r.bottom > safeBottom + 5 || r.top < -5 ||
-                    r.right > safeRight + 5 || r.left < -5) {
-                    block.remove();
-                    removedAny = true;
+            if (r.width < 12 || r.height < 12) {
+                clipped = true;
+            } else {
+                let current = block.parentElement;
+                while (current && current !== document.body && current !== document.documentElement) {
+                    const style = window.getComputedStyle(current);
+                    if (style.overflow !== 'visible' && style.overflow !== '') {
+                        const pr = current.getBoundingClientRect();
+                        
+                        // Check if block bleeds outside this restricted container
+                        if (r.top < pr.top - 1 || r.bottom > pr.bottom + 1 || 
+                            r.left < pr.left - 1 || r.right > pr.right + 1) {
+                            
+                            // Safe handling for headers and footers (allow 3px for borders/rounding)
+                            const label = block.getAttribute('data-label') || '';
+                            if (label === 'header' || label === 'footer') {
+                                if (r.top < pr.top - 3 || r.bottom > pr.bottom + 3 ||
+                                    r.left < pr.left - 3 || r.right > pr.right + 3) {
+                                    clipped = true;
+                                    break;
+                                }
+                            } else {
+                                clipped = true;
+                                break;
+                            }
+                        }
+                    }
+                    current = current.parentElement;
                 }
-            });
-            if (!removedAny) break;
-        }
+                
+                // If not autoHeight, also strictly check page boundaries (the body)
+                if (!autoHeight && !clipped) {
+                    const safeRight = document.body.clientWidth;
+                    const safeBottom = document.body.clientHeight;
+                    
+                    const label = block.getAttribute('data-label') || '';
+                    const tolerance = (label === 'header' || label === 'footer') ? 3 : 1;
+                    
+                    if (r.bottom > safeBottom + tolerance || r.top < -tolerance ||
+                        r.right > safeRight + tolerance || r.left < -tolerance) {
+                        clipped = true;
+                    }
+                }
+            }
+
+            if (clipped) {
+                block.remove();
+                removedAny = true;
+            }
+        });
+        if (!removedAny) break;
     }
 
     // STEP 7: MEASURE AUTO-HEIGHT
