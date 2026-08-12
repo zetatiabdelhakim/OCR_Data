@@ -24,7 +24,9 @@ Expected local layout (same as the original single-purpose scripts):
 import os
 import random
 import asyncio
+import multiprocessing
 from tqdm import tqdm
+from playwright.async_api import async_playwright
 
 from core import assets
 from core.render_engine import build_html_page, render_and_extract
@@ -35,11 +37,12 @@ from templates import TEMPLATES
 # Config
 # ------------------------------------------------------------------
 
-NUM_SAMPLES = 200
+NUM_SAMPLES = 1000
 HYBRID_PROBABILITY = 0.28
+WORKERS = os.cpu_count() or 4
 
 
-async def generate_one(index):
+async def generate_one(browser, index):
     template_name = random.choice(list(TEMPLATES))
     generate_fn = TEMPLATES[template_name]
 
@@ -56,26 +59,58 @@ async def generate_one(index):
     json_path = os.path.join(assets.DATASET_ANNOTATIONS_PATH, f"sample_{index:07d}.json")
 
     await render_and_extract(
-        html_page, spec["width"], spec["height"], img_path, json_path,
+        browser, html_page, spec["width"], spec["height"], img_path, json_path,
         auto_height=spec["auto_height"],
         meta={"template": template_name, "hybrid": hybrid_name},
     )
 
 
-async def main():
-    assets.load_assets()
-    os.makedirs(assets.DATASET_IMAGES_PATH, exist_ok=True)
-    os.makedirs(assets.DATASET_ANNOTATIONS_PATH, exist_ok=True)
+async def worker_task(indices, queue):
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(headless=True)
+        for index in indices:
+            await generate_one(browser, index)
+            queue.put(1)
+        await browser.close()
 
-    print(f"Generating {NUM_SAMPLES} samples across {len(TEMPLATES)} templates: {', '.join(TEMPLATES)}")
-    for i in tqdm(range(NUM_SAMPLES)):
-        await generate_one(i)
 
-
-if __name__ == "__main__":
+def worker_process(indices, queue):
     try:
-        asyncio.run(main())
+        asyncio.run(worker_task(indices, queue))
     except RuntimeError:
         import nest_asyncio
         nest_asyncio.apply()
-        asyncio.run(main())
+        asyncio.run(worker_task(indices, queue))
+
+
+def init_worker():
+    assets.load_assets()
+
+
+def main():
+    os.makedirs(assets.DATASET_IMAGES_PATH, exist_ok=True)
+    os.makedirs(assets.DATASET_ANNOTATIONS_PATH, exist_ok=True)
+
+    print(f"Generating {NUM_SAMPLES} samples across {len(TEMPLATES)} templates using {WORKERS} workers: {', '.join(TEMPLATES)}")
+    
+    indices = list(range(NUM_SAMPLES))
+    chunk_size = (NUM_SAMPLES + WORKERS - 1) // WORKERS
+    chunks = [indices[i:i + chunk_size] for i in range(0, len(indices), chunk_size)]
+    
+    manager = multiprocessing.Manager()
+    queue = manager.Queue()
+    
+    with multiprocessing.Pool(processes=WORKERS, initializer=init_worker) as pool:
+        results = []
+        for chunk in chunks:
+            results.append(pool.apply_async(worker_process, args=(chunk, queue)))
+            
+        for _ in tqdm(range(NUM_SAMPLES), desc="Generating Samples"):
+            queue.get()
+            
+        for r in results:
+            r.get()
+
+if __name__ == "__main__":
+    multiprocessing.freeze_support()
+    main()
