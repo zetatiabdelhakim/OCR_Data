@@ -13,7 +13,7 @@ def generate(hybrid_html=""):
     color = random.choice(assets.COLORS)
 
     org_name = assets.get_real_arabic_text(2, 4)
-    holder_name = assets.get_real_arabic_text(2, 3)
+    holder_name = assets.get_real_arabic_name()
     id_number = "-".join(str(random.randint(1000, 9999)) for _ in range(2))
 
     photo_html = (

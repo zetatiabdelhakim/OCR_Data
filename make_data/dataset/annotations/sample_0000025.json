@@ -1,75 +1,196 @@
 {
-    "markdown": "\n![image](img-0)\n\nوَأَنَا أُحَدِّثُهُمْ هَذَا الْحَدِيثَ،\nإذا لم يكن هناك ريبة،",
-    "images": [
-        {
-            "id": "img-0",
-            "top_left_x": 484,
-            "top_left_y": 170,
-            "bottom_right_x": 548,
-            "bottom_right_y": 234,
-            "reading_index": 1
-        }
-    ],
+    "markdown": "t_{n+1} = t_n - \\alpha \\nabla f(t_n)\n\\frac{\\partial x}{\\partial \\alpha} = \\lim_{h \\to 0} \\frac{\\exp(\\alpha + h) - \\exp(\\alpha)}{h} + \\frac{j}{x^2}\n\\prod_{\\beta=1}^{n} (1 \\leq t_\\beta) = 0\n## مبرهنة\ni_{n+1} = i_n - \\alpha \\nabla f(i_n)",
+    "images": [],
     "tables": [],
     "hyperlinks": [],
     "header": null,
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 503,
-        "width": 1031
+        "height": 371,
+        "width": 592
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "![image](img-0)",
+                "text": "t_{n+1}",
                 "confidence": 1.0,
-                "start_index": 1
+                "start_index": 0
             },
             {
-                "text": "وَأَنَا",
+                "text": "=",
                 "confidence": 1.0,
-                "start_index": 18
+                "start_index": 8
             },
             {
-                "text": "أُحَدِّثُهُمْ",
+                "text": "t_n",
                 "confidence": 1.0,
-                "start_index": 26
+                "start_index": 10
             },
             {
-                "text": "هَذَا",
+                "text": "-",
                 "confidence": 1.0,
-                "start_index": 40
+                "start_index": 14
             },
             {
-                "text": "الْحَدِيثَ،",
+                "text": "\\alpha",
                 "confidence": 1.0,
-                "start_index": 46
+                "start_index": 16
             },
             {
-                "text": "إذا",
+                "text": "\\nabla",
                 "confidence": 1.0,
-                "start_index": 58
+                "start_index": 23
             },
             {
-                "text": "لم",
+                "text": "f(t_n)",
                 "confidence": 1.0,
-                "start_index": 62
+                "start_index": 30
             },
             {
-                "text": "يكن",
+                "text": "\\frac{\\partial",
                 "confidence": 1.0,
-                "start_index": 65
+                "start_index": 37
             },
             {
-                "text": "هناك",
+                "text": "x}{\\partial",
                 "confidence": 1.0,
-                "start_index": 69
+                "start_index": 52
             },
             {
-                "text": "ريبة،",
+                "text": "\\alpha}",
+                "confidence": 1.0,
+                "start_index": 64
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 72
+            },
+            {
+                "text": "\\lim_{h",
                 "confidence": 1.0,
                 "start_index": 74
+            },
+            {
+                "text": "\\to",
+                "confidence": 1.0,
+                "start_index": 82
+            },
+            {
+                "text": "0}",
+                "confidence": 1.0,
+                "start_index": 86
+            },
+            {
+                "text": "\\frac{\\exp(\\alpha",
+                "confidence": 1.0,
+                "start_index": 89
+            },
+            {
+                "text": "+",
+                "confidence": 1.0,
+                "start_index": 107
+            },
+            {
+                "text": "h)",
+                "confidence": 1.0,
+                "start_index": 109
+            },
+            {
+                "text": "-",
+                "confidence": 1.0,
+                "start_index": 112
+            },
+            {
+                "text": "\\exp(\\alpha)}{h}",
+                "confidence": 1.0,
+                "start_index": 114
+            },
+            {
+                "text": "+",
+                "confidence": 1.0,
+                "start_index": 131
+            },
+            {
+                "text": "\\frac{j}{x^2}",
+                "confidence": 1.0,
+                "start_index": 133
+            },
+            {
+                "text": "\\prod_{\\beta=1}^{n}",
+                "confidence": 1.0,
+                "start_index": 147
+            },
+            {
+                "text": "(1",
+                "confidence": 1.0,
+                "start_index": 167
+            },
+            {
+                "text": "\\leq",
+                "confidence": 1.0,
+                "start_index": 170
+            },
+            {
+                "text": "t_\\beta)",
+                "confidence": 1.0,
+                "start_index": 175
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 184
+            },
+            {
+                "text": "0",
+                "confidence": 1.0,
+                "start_index": 186
+            },
+            {
+                "text": "##",
+                "confidence": 1.0,
+                "start_index": 188
+            },
+            {
+                "text": "مبرهنة",
+                "confidence": 1.0,
+                "start_index": 191
+            },
+            {
+                "text": "i_{n+1}",
+                "confidence": 1.0,
+                "start_index": 198
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 206
+            },
+            {
+                "text": "i_n",
+                "confidence": 1.0,
+                "start_index": 208
+            },
+            {
+                "text": "-",
+                "confidence": 1.0,
+                "start_index": 212
+            },
+            {
+                "text": "\\alpha",
+                "confidence": 1.0,
+                "start_index": 214
+            },
+            {
+                "text": "\\nabla",
+                "confidence": 1.0,
+                "start_index": 221
+            },
+            {
+                "text": "f(i_n)",
+                "confidence": 1.0,
+                "start_index": 228
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -77,38 +198,58 @@
     },
     "blocks": [
         {
-            "top_left_x": 484,
-            "top_left_y": 170,
-            "bottom_right_x": 548,
-            "bottom_right_y": 234,
-            "content": "![image](img-0)",
-            "type": "image",
+            "top_left_x": 20,
+            "top_left_y": 26,
+            "bottom_right_x": 572,
+            "bottom_right_y": 67,
+            "content": "t_{n+1} = t_n - \\alpha \\nabla f(t_n)",
+            "type": "text",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 392,
-            "top_left_y": 256,
-            "bottom_right_x": 640,
-            "bottom_right_y": 292,
-            "content": "وَأَنَا أُحَدِّثُهُمْ هَذَا الْحَدِيثَ،",
+            "top_left_x": 20,
+            "top_left_y": 73,
+            "bottom_right_x": 572,
+            "bottom_right_y": 126,
+            "content": "\\frac{\\partial x}{\\partial \\alpha} = \\lim_{h \\to 0} \\frac{\\exp(\\alpha + h) - \\exp(\\alpha)}{h} + \\frac{j}{x^2}",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 2
         },
         {
-            "top_left_x": 463,
-            "top_left_y": 302,
-            "bottom_right_x": 568,
-            "bottom_right_y": 333,
-            "content": "إذا لم يكن هناك ريبة،",
+            "top_left_x": 20,
+            "top_left_y": 138,
+            "bottom_right_x": 572,
+            "bottom_right_y": 196,
+            "content": "\\prod_{\\beta=1}^{n} (1 \\leq t_\\beta) = 0",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 3
+        },
+        {
+            "top_left_x": 32,
+            "top_left_y": 220,
+            "bottom_right_x": 556,
+            "bottom_right_y": 254,
+            "content": "مبرهنة",
+            "type": "title",
+            "confidence_scores": null,
+            "reading_index": 4
+        },
+        {
+            "top_left_x": 32,
+            "top_left_y": 260,
+            "bottom_right_x": 556,
+            "bottom_right_y": 298,
+            "content": "i_{n+1} = i_n - \\alpha \\nabla f(i_n)",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 5
         }
     ],
     "meta": {
-        "template": "minimalist",
-        "hybrid": null
+        "template": "math_proof",
+        "hybrid": "equation"
     }
 }

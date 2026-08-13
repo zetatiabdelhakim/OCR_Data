@@ -22,7 +22,7 @@ from . import assets
 # ------------------------------------------------------------------
 
 def gen_heading(text=None, label="heading", font=None, color=None, align=None, font_size=None):
-    text = text or assets.get_real_arabic_text(3, 8)
+    text = text or assets.get_real_arabic_title()
     font = font or random.choice(assets.FONTS)
     color = color or random.choice(assets.COLORS)
     align = align or random.choice(["center", "right"])
@@ -100,7 +100,7 @@ def gen_complex_paragraph(compact=False):
          style="height: 100%; width: 100%; font-family: '{font}'; color: {color}; font-size:{font_size}px;
                 text-align: justify; overflow: hidden; line-height: 1.8; box-sizing: border-box; padding-bottom: 15px;
                 display: flex; flex-direction: column; min-height: 0;">
-        <div class="layout-node autofit-text" data-label="heading" style="margin-top: 0; margin-bottom: 10px; font-size: {h_level_size}px; color: {random.choice(assets.COLORS)}; font-weight: bold; flex-shrink: 0; overflow: hidden;">{assets.get_real_arabic_text(2, 6)}</div>
+        <div class="layout-node autofit-text" data-label="heading" style="margin-top: 0; margin-bottom: 10px; font-size: {h_level_size}px; color: {random.choice(assets.COLORS)}; font-weight: bold; flex-shrink: 0; overflow: hidden;">{assets.get_real_arabic_title()}</div>
         {img_html}
         <div class="layout-node autofit-text" data-label="paragraph" style="flex: 1; min-height: 0; overflow: hidden;">{text}</div>
     </div>

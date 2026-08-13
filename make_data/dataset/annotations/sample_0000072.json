@@ -1,13 +1,13 @@
 {
-    "markdown": "\n![image](img-0)\n\nشكل: بَعْلِهَا وَوَلَدِهِ، وَهِيَ مَسْئُولَةٌ\n## ملاحظة\nالله عليه وسلم عَلَى رَاحِلَتِهِ، فَطَفِقَ نَاسٌ يَسْأَلُونَهُ، فَيَقُولُ الْقَائِلُ مِنْهُمْ:\n\\frac{\\partial \\mu}{\\partial i} = \\lim_{h \\to 0} \\frac{\\cos(i + h) - \\cos(i)}{h} + \\frac{\\beta}{x^2}\nx_{n+1} = x_n - \\alpha \\nabla f(x_n) + \\frac{x}{\\mu^2}\n## نظرية\nوسلم قَالَ: ((قَدْرُ حَوْضِي كَمَا بَيْنَ أَيْلَةَ، وَصَنْعَاءَ مِنْ الْيَمَنِ، وَإِنَّ فِيهِ مِنَ الْأَبَارِيقِ كَعَدَدِ نُجُومِ السَّمَاءِ) ). [خ: ٦٥٨٠] [٢٣٠٤] وَحَدَّثَنِي مُحَمَّدُ بْنُ حَاتِمٍ، حَدَّثَنَا عَفَّانُ بْنُ\n\\sum_{j=0}^{N} \\frac{t^j}{j!} = e^{t}\n\\vec{F} = m\\vec{a} + \\frac{\\theta}{k^2}",
+    "markdown": "يتكفّفون النّاس]\n22/06/2025 - 19:49\n(2) .\n73.00\nقال بعض المفسّرين:\n35.00\nهذه\n92.29\nالآية خطاب\n67.47\nلمن يتصرّف بأموال\n125.00\nاليتامى؛ معناه: وليخش\n24.17\nالذين يخافون\n12.00\nالضّياع على\n49.24\nالمجموع\n478.17\n\n![image](img-0)\n\nشكرا لزيارتكم",
     "images": [
         {
             "id": "img-0",
-            "top_left_x": 20,
-            "top_left_y": 32,
-            "bottom_right_x": 523,
-            "bottom_right_y": 369,
-            "reading_index": 1
+            "top_left_x": 10,
+            "top_left_y": 233,
+            "bottom_right_x": 206,
+            "bottom_right_y": 263,
+            "reading_index": 21
         }
     ],
     "tables": [],
@@ -16,415 +16,190 @@
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 910,
-        "width": 543
+        "height": 312,
+        "width": 216
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "![image](img-0)",
+                "text": "يتكفّفون",
                 "confidence": 1.0,
-                "start_index": 1
+                "start_index": 0
             },
             {
-                "text": "شكل:",
+                "text": "النّاس]",
                 "confidence": 1.0,
-                "start_index": 18
+                "start_index": 9
             },
             {
-                "text": "بَعْلِهَا",
+                "text": "22/06/2025",
                 "confidence": 1.0,
-                "start_index": 23
+                "start_index": 17
             },
             {
-                "text": "وَوَلَدِهِ،",
+                "text": "-",
                 "confidence": 1.0,
-                "start_index": 33
+                "start_index": 28
             },
             {
-                "text": "وَهِيَ",
+                "text": "19:49",
                 "confidence": 1.0,
-                "start_index": 45
+                "start_index": 30
             },
             {
-                "text": "مَسْئُولَةٌ",
+                "text": "(2)",
+                "confidence": 1.0,
+                "start_index": 36
+            },
+            {
+                "text": ".",
+                "confidence": 1.0,
+                "start_index": 40
+            },
+            {
+                "text": "73.00",
+                "confidence": 1.0,
+                "start_index": 42
+            },
+            {
+                "text": "قال",
+                "confidence": 1.0,
+                "start_index": 48
+            },
+            {
+                "text": "بعض",
                 "confidence": 1.0,
                 "start_index": 52
             },
             {
-                "text": "##",
+                "text": "المفسّرين:",
                 "confidence": 1.0,
-                "start_index": 64
+                "start_index": 56
             },
             {
-                "text": "ملاحظة",
+                "text": "35.00",
                 "confidence": 1.0,
                 "start_index": 67
             },
             {
-                "text": "الله",
+                "text": "هذه",
                 "confidence": 1.0,
-                "start_index": 74
+                "start_index": 73
             },
             {
-                "text": "عليه",
+                "text": "92.29",
                 "confidence": 1.0,
-                "start_index": 79
+                "start_index": 77
             },
             {
-                "text": "وسلم",
+                "text": "الآية",
                 "confidence": 1.0,
-                "start_index": 84
+                "start_index": 83
             },
             {
-                "text": "عَلَى",
+                "text": "خطاب",
                 "confidence": 1.0,
                 "start_index": 89
             },
             {
-                "text": "رَاحِلَتِهِ،",
+                "text": "67.47",
                 "confidence": 1.0,
-                "start_index": 95
+                "start_index": 94
             },
             {
-                "text": "فَطَفِقَ",
+                "text": "لمن",
                 "confidence": 1.0,
-                "start_index": 108
+                "start_index": 100
             },
             {
-                "text": "نَاسٌ",
+                "text": "يتصرّف",
                 "confidence": 1.0,
-                "start_index": 117
+                "start_index": 104
             },
             {
-                "text": "يَسْأَلُونَهُ،",
+                "text": "بأموال",
                 "confidence": 1.0,
-                "start_index": 123
+                "start_index": 111
             },
             {
-                "text": "فَيَقُولُ",
+                "text": "125.00",
                 "confidence": 1.0,
-                "start_index": 138
+                "start_index": 118
             },
             {
-                "text": "الْقَائِلُ",
+                "text": "اليتامى؛",
                 "confidence": 1.0,
-                "start_index": 148
+                "start_index": 125
             },
             {
-                "text": "مِنْهُمْ:",
+                "text": "معناه:",
+                "confidence": 1.0,
+                "start_index": 134
+            },
+            {
+                "text": "وليخش",
+                "confidence": 1.0,
+                "start_index": 141
+            },
+            {
+                "text": "24.17",
+                "confidence": 1.0,
+                "start_index": 147
+            },
+            {
+                "text": "الذين",
+                "confidence": 1.0,
+                "start_index": 153
+            },
+            {
+                "text": "يخافون",
                 "confidence": 1.0,
                 "start_index": 159
             },
             {
-                "text": "\\frac{\\partial",
+                "text": "12.00",
                 "confidence": 1.0,
-                "start_index": 169
+                "start_index": 166
             },
             {
-                "text": "\\mu}{\\partial",
+                "text": "الضّياع",
+                "confidence": 1.0,
+                "start_index": 172
+            },
+            {
+                "text": "على",
+                "confidence": 1.0,
+                "start_index": 180
+            },
+            {
+                "text": "49.24",
                 "confidence": 1.0,
                 "start_index": 184
             },
             {
-                "text": "i}",
+                "text": "المجموع",
+                "confidence": 1.0,
+                "start_index": 190
+            },
+            {
+                "text": "478.17",
                 "confidence": 1.0,
                 "start_index": 198
             },
             {
-                "text": "=",
+                "text": "![image](img-0)",
                 "confidence": 1.0,
-                "start_index": 201
+                "start_index": 206
             },
             {
-                "text": "\\lim_{h",
+                "text": "شكرا",
                 "confidence": 1.0,
-                "start_index": 203
+                "start_index": 223
             },
             {
-                "text": "\\to",
+                "text": "لزيارتكم",
                 "confidence": 1.0,
-                "start_index": 211
-            },
-            {
-                "text": "0}",
-                "confidence": 1.0,
-                "start_index": 215
-            },
-            {
-                "text": "\\frac{\\cos(i",
-                "confidence": 1.0,
-                "start_index": 218
-            },
-            {
-                "text": "+",
-                "confidence": 1.0,
-                "start_index": 231
-            },
-            {
-                "text": "h)",
-                "confidence": 1.0,
-                "start_index": 233
-            },
-            {
-                "text": "-",
-                "confidence": 1.0,
-                "start_index": 236
-            },
-            {
-                "text": "\\cos(i)}{h}",
-                "confidence": 1.0,
-                "start_index": 238
-            },
-            {
-                "text": "+",
-                "confidence": 1.0,
-                "start_index": 250
-            },
-            {
-                "text": "\\frac{\\beta}{x^2}",
-                "confidence": 1.0,
-                "start_index": 252
-            },
-            {
-                "text": "x_{n+1}",
-                "confidence": 1.0,
-                "start_index": 270
-            },
-            {
-                "text": "=",
-                "confidence": 1.0,
-                "start_index": 278
-            },
-            {
-                "text": "x_n",
-                "confidence": 1.0,
-                "start_index": 280
-            },
-            {
-                "text": "-",
-                "confidence": 1.0,
-                "start_index": 284
-            },
-            {
-                "text": "\\alpha",
-                "confidence": 1.0,
-                "start_index": 286
-            },
-            {
-                "text": "\\nabla",
-                "confidence": 1.0,
-                "start_index": 293
-            },
-            {
-                "text": "f(x_n)",
-                "confidence": 1.0,
-                "start_index": 300
-            },
-            {
-                "text": "+",
-                "confidence": 1.0,
-                "start_index": 307
-            },
-            {
-                "text": "\\frac{x}{\\mu^2}",
-                "confidence": 1.0,
-                "start_index": 309
-            },
-            {
-                "text": "##",
-                "confidence": 1.0,
-                "start_index": 325
-            },
-            {
-                "text": "نظرية",
-                "confidence": 1.0,
-                "start_index": 328
-            },
-            {
-                "text": "وسلم",
-                "confidence": 1.0,
-                "start_index": 334
-            },
-            {
-                "text": "قَالَ:",
-                "confidence": 1.0,
-                "start_index": 339
-            },
-            {
-                "text": "((قَدْرُ",
-                "confidence": 1.0,
-                "start_index": 346
-            },
-            {
-                "text": "حَوْضِي",
-                "confidence": 1.0,
-                "start_index": 355
-            },
-            {
-                "text": "كَمَا",
-                "confidence": 1.0,
-                "start_index": 363
-            },
-            {
-                "text": "بَيْنَ",
-                "confidence": 1.0,
-                "start_index": 369
-            },
-            {
-                "text": "أَيْلَةَ،",
-                "confidence": 1.0,
-                "start_index": 376
-            },
-            {
-                "text": "وَصَنْعَاءَ",
-                "confidence": 1.0,
-                "start_index": 386
-            },
-            {
-                "text": "مِنْ",
-                "confidence": 1.0,
-                "start_index": 398
-            },
-            {
-                "text": "الْيَمَنِ،",
-                "confidence": 1.0,
-                "start_index": 403
-            },
-            {
-                "text": "وَإِنَّ",
-                "confidence": 1.0,
-                "start_index": 414
-            },
-            {
-                "text": "فِيهِ",
-                "confidence": 1.0,
-                "start_index": 422
-            },
-            {
-                "text": "مِنَ",
-                "confidence": 1.0,
-                "start_index": 428
-            },
-            {
-                "text": "الْأَبَارِيقِ",
-                "confidence": 1.0,
-                "start_index": 433
-            },
-            {
-                "text": "كَعَدَدِ",
-                "confidence": 1.0,
-                "start_index": 447
-            },
-            {
-                "text": "نُجُومِ",
-                "confidence": 1.0,
-                "start_index": 456
-            },
-            {
-                "text": "السَّمَاءِ)",
-                "confidence": 1.0,
-                "start_index": 464
-            },
-            {
-                "text": ").",
-                "confidence": 1.0,
-                "start_index": 476
-            },
-            {
-                "text": "[خ:",
-                "confidence": 1.0,
-                "start_index": 479
-            },
-            {
-                "text": "٦٥٨٠]",
-                "confidence": 1.0,
-                "start_index": 483
-            },
-            {
-                "text": "[٢٣٠٤]",
-                "confidence": 1.0,
-                "start_index": 489
-            },
-            {
-                "text": "وَحَدَّثَنِي",
-                "confidence": 1.0,
-                "start_index": 496
-            },
-            {
-                "text": "مُحَمَّدُ",
-                "confidence": 1.0,
-                "start_index": 509
-            },
-            {
-                "text": "بْنُ",
-                "confidence": 1.0,
-                "start_index": 519
-            },
-            {
-                "text": "حَاتِمٍ،",
-                "confidence": 1.0,
-                "start_index": 524
-            },
-            {
-                "text": "حَدَّثَنَا",
-                "confidence": 1.0,
-                "start_index": 533
-            },
-            {
-                "text": "عَفَّانُ",
-                "confidence": 1.0,
-                "start_index": 544
-            },
-            {
-                "text": "بْنُ",
-                "confidence": 1.0,
-                "start_index": 553
-            },
-            {
-                "text": "\\sum_{j=0}^{N}",
-                "confidence": 1.0,
-                "start_index": 558
-            },
-            {
-                "text": "\\frac{t^j}{j!}",
-                "confidence": 1.0,
-                "start_index": 573
-            },
-            {
-                "text": "=",
-                "confidence": 1.0,
-                "start_index": 588
-            },
-            {
-                "text": "e^{t}",
-                "confidence": 1.0,
-                "start_index": 590
-            },
-            {
-                "text": "\\vec{F}",
-                "confidence": 1.0,
-                "start_index": 596
-            },
-            {
-                "text": "=",
-                "confidence": 1.0,
-                "start_index": 604
-            },
-            {
-                "text": "m\\vec{a}",
-                "confidence": 1.0,
-                "start_index": 606
-            },
-            {
-                "text": "+",
-                "confidence": 1.0,
-                "start_index": 615
-            },
-            {
-                "text": "\\frac{\\theta}{k^2}",
-                "confidence": 1.0,
-                "start_index": 617
+                "start_index": 228
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -432,108 +207,228 @@
     },
     "blocks": [
         {
-            "top_left_x": 20,
-            "top_left_y": 32,
-            "bottom_right_x": 523,
-            "bottom_right_y": 369,
-            "content": "![image](img-0)",
-            "type": "image",
+            "top_left_x": 10,
+            "top_left_y": 14,
+            "bottom_right_x": 206,
+            "bottom_right_y": 35,
+            "content": "يتكفّفون النّاس]",
+            "type": "text",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 20,
-            "top_left_y": 375,
-            "bottom_right_x": 523,
-            "bottom_right_y": 392,
-            "content": "شكل: بَعْلِهَا وَوَلَدِهِ، وَهِيَ مَسْئُولَةٌ",
+            "top_left_x": 10,
+            "top_left_y": 35,
+            "bottom_right_x": 206,
+            "bottom_right_y": 50,
+            "content": "22/06/2025 - 19:49",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 2
         },
         {
-            "top_left_x": 32,
-            "top_left_y": 426,
-            "bottom_right_x": 507,
-            "bottom_right_y": 448,
-            "content": "ملاحظة",
-            "type": "title",
+            "top_left_x": 173,
+            "top_left_y": 63,
+            "bottom_right_x": 206,
+            "bottom_right_y": 79,
+            "content": "(2) .",
+            "type": "text",
             "confidence_scores": null,
             "reading_index": 3
         },
         {
-            "top_left_x": 32,
-            "top_left_y": 453,
-            "bottom_right_x": 507,
-            "bottom_right_y": 475,
-            "content": "الله عليه وسلم عَلَى رَاحِلَتِهِ، فَطَفِقَ نَاسٌ يَسْأَلُونَهُ، فَيَقُولُ الْقَائِلُ مِنْهُمْ:",
+            "top_left_x": 10,
+            "top_left_y": 63,
+            "bottom_right_x": 43,
+            "bottom_right_y": 79,
+            "content": "73.00",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 4
         },
         {
-            "top_left_x": 32,
-            "top_left_y": 481,
-            "bottom_right_x": 507,
-            "bottom_right_y": 534,
-            "content": "\\frac{\\partial \\mu}{\\partial i} = \\lim_{h \\to 0} \\frac{\\cos(i + h) - \\cos(i)}{h} + \\frac{\\beta}{x^2}",
+            "top_left_x": 94,
+            "top_left_y": 79,
+            "bottom_right_x": 206,
+            "bottom_right_y": 95,
+            "content": "قال بعض المفسّرين:",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 5
         },
         {
-            "top_left_x": 20,
-            "top_left_y": 566,
-            "bottom_right_x": 523,
-            "bottom_right_y": 620,
-            "content": "x_{n+1} = x_n - \\alpha \\nabla f(x_n) + \\frac{x}{\\mu^2}",
+            "top_left_x": 10,
+            "top_left_y": 79,
+            "bottom_right_x": 43,
+            "bottom_right_y": 95,
+            "content": "35.00",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 6
         },
         {
-            "top_left_x": 32,
-            "top_left_y": 638,
-            "bottom_right_x": 507,
-            "bottom_right_y": 657,
-            "content": "نظرية",
-            "type": "title",
+            "top_left_x": 186,
+            "top_left_y": 95,
+            "bottom_right_x": 206,
+            "bottom_right_y": 111,
+            "content": "هذه",
+            "type": "text",
             "confidence_scores": null,
             "reading_index": 7
         },
         {
-            "top_left_x": 32,
-            "top_left_y": 662,
-            "bottom_right_x": 507,
-            "bottom_right_y": 707,
-            "content": "وسلم قَالَ: ((قَدْرُ حَوْضِي كَمَا بَيْنَ أَيْلَةَ، وَصَنْعَاءَ مِنْ الْيَمَنِ، وَإِنَّ فِيهِ مِنَ الْأَبَارِيقِ كَعَدَدِ نُجُومِ السَّمَاءِ) ). [خ: ٦٥٨٠] [٢٣٠٤] وَحَدَّثَنِي مُحَمَّدُ بْنُ حَاتِمٍ، حَدَّثَنَا عَفَّانُ بْنُ",
+            "top_left_x": 10,
+            "top_left_y": 95,
+            "bottom_right_x": 43,
+            "bottom_right_y": 111,
+            "content": "92.29",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 8
         },
         {
-            "top_left_x": 32,
-            "top_left_y": 713,
-            "bottom_right_x": 507,
-            "bottom_right_y": 782,
-            "content": "\\sum_{j=0}^{N} \\frac{t^j}{j!} = e^{t}",
+            "top_left_x": 147,
+            "top_left_y": 111,
+            "bottom_right_x": 206,
+            "bottom_right_y": 127,
+            "content": "الآية خطاب",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 9
         },
         {
-            "top_left_x": 20,
-            "top_left_y": 814,
-            "bottom_right_x": 523,
-            "bottom_right_y": 864,
-            "content": "\\vec{F} = m\\vec{a} + \\frac{\\theta}{k^2}",
+            "top_left_x": 10,
+            "top_left_y": 111,
+            "bottom_right_x": 43,
+            "bottom_right_y": 127,
+            "content": "67.47",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 10
+        },
+        {
+            "top_left_x": 100,
+            "top_left_y": 127,
+            "bottom_right_x": 206,
+            "bottom_right_y": 143,
+            "content": "لمن يتصرّف بأموال",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 11
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 127,
+            "bottom_right_x": 50,
+            "bottom_right_y": 143,
+            "content": "125.00",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 12
+        },
+        {
+            "top_left_x": 67,
+            "top_left_y": 143,
+            "bottom_right_x": 206,
+            "bottom_right_y": 159,
+            "content": "اليتامى؛ معناه: وليخش",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 13
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 143,
+            "bottom_right_x": 43,
+            "bottom_right_y": 159,
+            "content": "24.17",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 14
+        },
+        {
+            "top_left_x": 127,
+            "top_left_y": 159,
+            "bottom_right_x": 206,
+            "bottom_right_y": 175,
+            "content": "الذين يخافون",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 15
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 159,
+            "bottom_right_x": 43,
+            "bottom_right_y": 175,
+            "content": "12.00",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 16
+        },
+        {
+            "top_left_x": 140,
+            "top_left_y": 175,
+            "bottom_right_x": 206,
+            "bottom_right_y": 191,
+            "content": "الضّياع على",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 17
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 175,
+            "bottom_right_x": 43,
+            "bottom_right_y": 191,
+            "content": "49.24",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 18
+        },
+        {
+            "top_left_x": 151,
+            "top_left_y": 204,
+            "bottom_right_x": 206,
+            "bottom_right_y": 223,
+            "content": "المجموع",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 19
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 204,
+            "bottom_right_x": 57,
+            "bottom_right_y": 223,
+            "content": "478.17",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 20
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 233,
+            "bottom_right_x": 206,
+            "bottom_right_y": 263,
+            "content": "![image](img-0)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 21
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 263,
+            "bottom_right_x": 206,
+            "bottom_right_y": 278,
+            "content": "شكرا لزيارتكم",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 22
         }
     ],
     "meta": {
-        "template": "math_proof",
-        "hybrid": "figure"
+        "template": "receipt",
+        "hybrid": null
     }
 }

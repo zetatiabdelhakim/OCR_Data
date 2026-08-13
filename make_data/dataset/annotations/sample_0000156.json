@@ -1,21 +1,13 @@
 {
-    "markdown": "اللَّهِ صلى الله\n\n![image](img-0)\n\nعليه وسلم\n5923-8188\n\n![image](img-1)\n",
+    "markdown": "\n![image](img-0)\n\nيزيد بن الوليد\nبن عبد الملك إلى‌ ‌ مروان بن محمد:",
     "images": [
         {
             "id": "img-0",
-            "top_left_x": 318,
-            "top_left_y": 60,
-            "bottom_right_x": 362,
-            "bottom_right_y": 116,
-            "reading_index": 2
-        },
-        {
-            "id": "img-1",
-            "top_left_x": 10,
-            "top_left_y": 148,
-            "bottom_right_x": 362,
-            "bottom_right_y": 178,
-            "reading_index": 5
+            "top_left_x": 278,
+            "top_left_y": 263,
+            "bottom_right_x": 342,
+            "bottom_right_y": 327,
+            "reading_index": 1
         }
     ],
     "tables": [],
@@ -24,50 +16,70 @@
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 188,
-        "width": 372
+        "height": 685,
+        "width": 619
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "اللَّهِ",
-                "confidence": 1.0,
-                "start_index": 0
-            },
-            {
-                "text": "صلى",
-                "confidence": 1.0,
-                "start_index": 8
-            },
-            {
-                "text": "الله",
-                "confidence": 1.0,
-                "start_index": 12
-            },
-            {
                 "text": "![image](img-0)",
+                "confidence": 1.0,
+                "start_index": 1
+            },
+            {
+                "text": "يزيد",
                 "confidence": 1.0,
                 "start_index": 18
             },
             {
-                "text": "عليه",
+                "text": "بن",
                 "confidence": 1.0,
-                "start_index": 35
+                "start_index": 23
             },
             {
-                "text": "وسلم",
+                "text": "الوليد",
+                "confidence": 1.0,
+                "start_index": 26
+            },
+            {
+                "text": "بن",
+                "confidence": 1.0,
+                "start_index": 33
+            },
+            {
+                "text": "عبد",
+                "confidence": 1.0,
+                "start_index": 36
+            },
+            {
+                "text": "الملك",
                 "confidence": 1.0,
                 "start_index": 40
             },
             {
-                "text": "5923-8188",
+                "text": "إلى‌",
                 "confidence": 1.0,
-                "start_index": 45
+                "start_index": 46
             },
             {
-                "text": "![image](img-1)",
+                "text": "‌",
                 "confidence": 1.0,
-                "start_index": 56
+                "start_index": 51
+            },
+            {
+                "text": "مروان",
+                "confidence": 1.0,
+                "start_index": 53
+            },
+            {
+                "text": "بن",
+                "confidence": 1.0,
+                "start_index": 59
+            },
+            {
+                "text": "محمد:",
+                "confidence": 1.0,
+                "start_index": 62
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -75,58 +87,38 @@
     },
     "blocks": [
         {
-            "top_left_x": 10,
-            "top_left_y": 10,
-            "bottom_right_x": 362,
-            "bottom_right_y": 27,
-            "content": "اللَّهِ صلى الله",
-            "type": "text",
+            "top_left_x": 278,
+            "top_left_y": 263,
+            "bottom_right_x": 342,
+            "bottom_right_y": 327,
+            "content": "![image](img-0)",
+            "type": "image",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 318,
-            "top_left_y": 60,
-            "bottom_right_x": 362,
-            "bottom_right_y": 116,
-            "content": "![image](img-0)",
-            "type": "image",
+            "top_left_x": 253,
+            "top_left_y": 349,
+            "bottom_right_x": 366,
+            "bottom_right_y": 396,
+            "content": "يزيد بن الوليد",
+            "type": "text",
             "confidence_scores": null,
             "reading_index": 2
         },
         {
-            "top_left_x": 10,
-            "top_left_y": 68,
-            "bottom_right_x": 310,
-            "bottom_right_y": 87,
-            "content": "عليه وسلم",
+            "top_left_x": 235,
+            "top_left_y": 406,
+            "bottom_right_x": 384,
+            "bottom_right_y": 422,
+            "content": "بن عبد الملك إلى‌ ‌ مروان بن محمد:",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 3
-        },
-        {
-            "top_left_x": 10,
-            "top_left_y": 91,
-            "bottom_right_x": 310,
-            "bottom_right_y": 107,
-            "content": "5923-8188",
-            "type": "text",
-            "confidence_scores": null,
-            "reading_index": 4
-        },
-        {
-            "top_left_x": 10,
-            "top_left_y": 148,
-            "bottom_right_x": 362,
-            "bottom_right_y": 178,
-            "content": "![image](img-1)",
-            "type": "image",
-            "confidence_scores": null,
-            "reading_index": 5
         }
     ],
     "meta": {
-        "template": "id_card",
+        "template": "minimalist",
         "hybrid": null
     }
 }

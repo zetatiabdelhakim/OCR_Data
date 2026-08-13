@@ -1,45 +1,21 @@
 {
-    "markdown": "## كان الاختيار والانتخاب للمسلمين\n\n![image](img-0)\n\n\n![image](img-1)\n\n\n![image](img-2)\n\n\n![image](img-3)\n\n\n![image](img-4)\n",
+    "markdown": "فى أمر الخوارج:\n\n![image](img-0)\n\nمحمد علي\n3903-6000\n\n![image](img-1)\n",
     "images": [
         {
             "id": "img-0",
-            "top_left_x": 663,
-            "top_left_y": 193,
-            "bottom_right_x": 775,
-            "bottom_right_y": 979,
+            "top_left_x": 310,
+            "top_left_y": 63,
+            "bottom_right_x": 354,
+            "bottom_right_y": 119,
             "reading_index": 2
         },
         {
             "id": "img-1",
-            "top_left_x": 538,
-            "top_left_y": 193,
-            "bottom_right_x": 651,
-            "bottom_right_y": 979,
-            "reading_index": 3
-        },
-        {
-            "id": "img-2",
-            "top_left_x": 414,
-            "top_left_y": 193,
-            "bottom_right_x": 526,
-            "bottom_right_y": 979,
-            "reading_index": 4
-        },
-        {
-            "id": "img-3",
-            "top_left_x": 223,
-            "top_left_y": 193,
-            "bottom_right_x": 398,
-            "bottom_right_y": 979,
+            "top_left_x": 10,
+            "top_left_y": 155,
+            "bottom_right_x": 354,
+            "bottom_right_y": 185,
             "reading_index": 5
-        },
-        {
-            "id": "img-4",
-            "top_left_x": 36,
-            "top_left_y": 193,
-            "bottom_right_x": 211,
-            "bottom_right_y": 979,
-            "reading_index": 6
         }
     ],
     "tables": [],
@@ -48,60 +24,50 @@
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 1009,
-        "width": 811
+        "height": 195,
+        "width": 364
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "##",
+                "text": "فى",
                 "confidence": 1.0,
                 "start_index": 0
             },
             {
-                "text": "كان",
+                "text": "أمر",
                 "confidence": 1.0,
                 "start_index": 3
             },
             {
-                "text": "الاختيار",
+                "text": "الخوارج:",
                 "confidence": 1.0,
                 "start_index": 7
             },
             {
-                "text": "والانتخاب",
-                "confidence": 1.0,
-                "start_index": 16
-            },
-            {
-                "text": "للمسلمين",
-                "confidence": 1.0,
-                "start_index": 26
-            },
-            {
                 "text": "![image](img-0)",
                 "confidence": 1.0,
-                "start_index": 36
+                "start_index": 17
+            },
+            {
+                "text": "محمد",
+                "confidence": 1.0,
+                "start_index": 34
+            },
+            {
+                "text": "علي",
+                "confidence": 1.0,
+                "start_index": 39
+            },
+            {
+                "text": "3903-6000",
+                "confidence": 1.0,
+                "start_index": 43
             },
             {
                 "text": "![image](img-1)",
                 "confidence": 1.0,
                 "start_index": 54
-            },
-            {
-                "text": "![image](img-2)",
-                "confidence": 1.0,
-                "start_index": 72
-            },
-            {
-                "text": "![image](img-3)",
-                "confidence": 1.0,
-                "start_index": 90
-            },
-            {
-                "text": "![image](img-4)",
-                "confidence": 1.0,
-                "start_index": 108
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -109,68 +75,58 @@
     },
     "blocks": [
         {
-            "top_left_x": 36,
-            "top_left_y": 36,
-            "bottom_right_x": 775,
-            "bottom_right_y": 177,
-            "content": "كان الاختيار والانتخاب للمسلمين",
-            "type": "title",
+            "top_left_x": 10,
+            "top_left_y": 10,
+            "bottom_right_x": 354,
+            "bottom_right_y": 26,
+            "content": "فى أمر الخوارج:",
+            "type": "text",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 663,
-            "top_left_y": 193,
-            "bottom_right_x": 775,
-            "bottom_right_y": 979,
+            "top_left_x": 310,
+            "top_left_y": 63,
+            "bottom_right_x": 354,
+            "bottom_right_y": 119,
             "content": "![image](img-0)",
             "type": "image",
             "confidence_scores": null,
             "reading_index": 2
         },
         {
-            "top_left_x": 538,
-            "top_left_y": 193,
-            "bottom_right_x": 651,
-            "bottom_right_y": 979,
-            "content": "![image](img-1)",
-            "type": "image",
+            "top_left_x": 10,
+            "top_left_y": 74,
+            "bottom_right_x": 302,
+            "bottom_right_y": 91,
+            "content": "محمد علي",
+            "type": "text",
             "confidence_scores": null,
             "reading_index": 3
         },
         {
-            "top_left_x": 414,
-            "top_left_y": 193,
-            "bottom_right_x": 526,
-            "bottom_right_y": 979,
-            "content": "![image](img-2)",
-            "type": "image",
+            "top_left_x": 10,
+            "top_left_y": 95,
+            "bottom_right_x": 302,
+            "bottom_right_y": 108,
+            "content": "3903-6000",
+            "type": "text",
             "confidence_scores": null,
             "reading_index": 4
         },
         {
-            "top_left_x": 223,
-            "top_left_y": 193,
-            "bottom_right_x": 398,
-            "bottom_right_y": 979,
-            "content": "![image](img-3)",
+            "top_left_x": 10,
+            "top_left_y": 155,
+            "bottom_right_x": 354,
+            "bottom_right_y": 185,
+            "content": "![image](img-1)",
             "type": "image",
             "confidence_scores": null,
             "reading_index": 5
-        },
-        {
-            "top_left_x": 36,
-            "top_left_y": 193,
-            "bottom_right_x": 211,
-            "bottom_right_y": 979,
-            "content": "![image](img-4)",
-            "type": "image",
-            "confidence_scores": null,
-            "reading_index": 6
         }
     ],
     "meta": {
-        "template": "a4_image_gallery",
+        "template": "id_card",
         "hybrid": null
     }
 }

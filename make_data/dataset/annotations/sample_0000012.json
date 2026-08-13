@@ -1,21 +1,13 @@
 {
-    "markdown": "شَيْئًا حَفِظْتَهُ مِنْ\n\n![image](img-0)\n\nعهد إلي\n9819-4800\n\n![image](img-1)\n",
+    "markdown": "## تعريف\nعامله يخبره فيه بقلة الأمطار فى بلده: «مرهم بالاستغفار». وإلى سهل بن سيار: «خف الله وإمامك، فإنه يأخذك عند أول زلّة» ‌ ‌يزيد بن الوليد\n\\nabla_{\\lambda} J(\\lambda) = \\frac{1}{m} X^T ( \\sigma(X \\lambda) - Y )\n\n![image](img-0)\n\n\\iint_{D} \\theta^2 \\geq \\theta^2 \\, dx \\, dy",
     "images": [
         {
             "id": "img-0",
-            "top_left_x": 282,
-            "top_left_y": 64,
-            "bottom_right_x": 326,
-            "bottom_right_y": 120,
-            "reading_index": 2
-        },
-        {
-            "id": "img-1",
-            "top_left_x": 10,
-            "top_left_y": 159,
-            "bottom_right_x": 326,
-            "bottom_right_y": 189,
-            "reading_index": 5
+            "top_left_x": 20,
+            "top_left_y": 192,
+            "bottom_right_x": 501,
+            "bottom_right_y": 502,
+            "reading_index": 4
         }
     ],
     "tables": [],
@@ -24,50 +16,245 @@
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 199,
-        "width": 336
+        "height": 616,
+        "width": 521
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "شَيْئًا",
+                "text": "##",
                 "confidence": 1.0,
                 "start_index": 0
             },
             {
-                "text": "حَفِظْتَهُ",
+                "text": "تعريف",
                 "confidence": 1.0,
-                "start_index": 8
+                "start_index": 3
             },
             {
-                "text": "مِنْ",
+                "text": "عامله",
                 "confidence": 1.0,
-                "start_index": 19
+                "start_index": 9
             },
             {
-                "text": "![image](img-0)",
+                "text": "يخبره",
+                "confidence": 1.0,
+                "start_index": 15
+            },
+            {
+                "text": "فيه",
+                "confidence": 1.0,
+                "start_index": 21
+            },
+            {
+                "text": "بقلة",
                 "confidence": 1.0,
                 "start_index": 25
             },
             {
-                "text": "عهد",
+                "text": "الأمطار",
                 "confidence": 1.0,
-                "start_index": 42
+                "start_index": 30
             },
             {
-                "text": "إلي",
+                "text": "فى",
                 "confidence": 1.0,
-                "start_index": 46
+                "start_index": 38
             },
             {
-                "text": "9819-4800",
+                "text": "بلده:",
                 "confidence": 1.0,
-                "start_index": 50
+                "start_index": 41
             },
             {
-                "text": "![image](img-1)",
+                "text": "«مرهم",
                 "confidence": 1.0,
-                "start_index": 61
+                "start_index": 47
+            },
+            {
+                "text": "بالاستغفار».",
+                "confidence": 1.0,
+                "start_index": 53
+            },
+            {
+                "text": "وإلى",
+                "confidence": 1.0,
+                "start_index": 66
+            },
+            {
+                "text": "سهل",
+                "confidence": 1.0,
+                "start_index": 71
+            },
+            {
+                "text": "بن",
+                "confidence": 1.0,
+                "start_index": 75
+            },
+            {
+                "text": "سيار:",
+                "confidence": 1.0,
+                "start_index": 78
+            },
+            {
+                "text": "«خف",
+                "confidence": 1.0,
+                "start_index": 84
+            },
+            {
+                "text": "الله",
+                "confidence": 1.0,
+                "start_index": 88
+            },
+            {
+                "text": "وإمامك،",
+                "confidence": 1.0,
+                "start_index": 93
+            },
+            {
+                "text": "فإنه",
+                "confidence": 1.0,
+                "start_index": 101
+            },
+            {
+                "text": "يأخذك",
+                "confidence": 1.0,
+                "start_index": 106
+            },
+            {
+                "text": "عند",
+                "confidence": 1.0,
+                "start_index": 112
+            },
+            {
+                "text": "أول",
+                "confidence": 1.0,
+                "start_index": 116
+            },
+            {
+                "text": "زلّة»",
+                "confidence": 1.0,
+                "start_index": 120
+            },
+            {
+                "text": "‌",
+                "confidence": 1.0,
+                "start_index": 126
+            },
+            {
+                "text": "‌يزيد",
+                "confidence": 1.0,
+                "start_index": 128
+            },
+            {
+                "text": "بن",
+                "confidence": 1.0,
+                "start_index": 134
+            },
+            {
+                "text": "الوليد",
+                "confidence": 1.0,
+                "start_index": 137
+            },
+            {
+                "text": "\\nabla_{\\lambda}",
+                "confidence": 1.0,
+                "start_index": 144
+            },
+            {
+                "text": "J(\\lambda)",
+                "confidence": 1.0,
+                "start_index": 161
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 172
+            },
+            {
+                "text": "\\frac{1}{m}",
+                "confidence": 1.0,
+                "start_index": 174
+            },
+            {
+                "text": "X^T",
+                "confidence": 1.0,
+                "start_index": 186
+            },
+            {
+                "text": "(",
+                "confidence": 1.0,
+                "start_index": 190
+            },
+            {
+                "text": "\\sigma(X",
+                "confidence": 1.0,
+                "start_index": 192
+            },
+            {
+                "text": "\\lambda)",
+                "confidence": 1.0,
+                "start_index": 201
+            },
+            {
+                "text": "-",
+                "confidence": 1.0,
+                "start_index": 210
+            },
+            {
+                "text": "Y",
+                "confidence": 1.0,
+                "start_index": 212
+            },
+            {
+                "text": ")",
+                "confidence": 1.0,
+                "start_index": 214
+            },
+            {
+                "text": "![image](img-0)",
+                "confidence": 1.0,
+                "start_index": 217
+            },
+            {
+                "text": "\\iint_{D}",
+                "confidence": 1.0,
+                "start_index": 234
+            },
+            {
+                "text": "\\theta^2",
+                "confidence": 1.0,
+                "start_index": 244
+            },
+            {
+                "text": "\\geq",
+                "confidence": 1.0,
+                "start_index": 253
+            },
+            {
+                "text": "\\theta^2",
+                "confidence": 1.0,
+                "start_index": 258
+            },
+            {
+                "text": "\\,",
+                "confidence": 1.0,
+                "start_index": 267
+            },
+            {
+                "text": "dx",
+                "confidence": 1.0,
+                "start_index": 270
+            },
+            {
+                "text": "\\,",
+                "confidence": 1.0,
+                "start_index": 273
+            },
+            {
+                "text": "dy",
+                "confidence": 1.0,
+                "start_index": 276
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -75,58 +262,58 @@
     },
     "blocks": [
         {
-            "top_left_x": 10,
-            "top_left_y": 10,
-            "bottom_right_x": 326,
-            "bottom_right_y": 24,
-            "content": "شَيْئًا حَفِظْتَهُ مِنْ",
-            "type": "text",
+            "top_left_x": 32,
+            "top_left_y": 32,
+            "bottom_right_x": 485,
+            "bottom_right_y": 54,
+            "content": "تعريف",
+            "type": "title",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 282,
-            "top_left_y": 64,
-            "bottom_right_x": 326,
-            "bottom_right_y": 120,
-            "content": "![image](img-0)",
-            "type": "image",
+            "top_left_x": 32,
+            "top_left_y": 59,
+            "bottom_right_x": 485,
+            "bottom_right_y": 104,
+            "content": "عامله يخبره فيه بقلة الأمطار فى بلده: «مرهم بالاستغفار». وإلى سهل بن سيار: «خف الله وإمامك، فإنه يأخذك عند أول زلّة» ‌ ‌يزيد بن الوليد",
+            "type": "text",
             "confidence_scores": null,
             "reading_index": 2
         },
         {
-            "top_left_x": 10,
-            "top_left_y": 75,
-            "bottom_right_x": 274,
-            "bottom_right_y": 91,
-            "content": "عهد إلي",
+            "top_left_x": 32,
+            "top_left_y": 110,
+            "bottom_right_x": 485,
+            "bottom_right_y": 160,
+            "content": "\\nabla_{\\lambda} J(\\lambda) = \\frac{1}{m} X^T ( \\sigma(X \\lambda) - Y )",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 3
         },
         {
-            "top_left_x": 10,
-            "top_left_y": 95,
-            "bottom_right_x": 274,
-            "bottom_right_y": 108,
-            "content": "9819-4800",
-            "type": "text",
+            "top_left_x": 20,
+            "top_left_y": 192,
+            "bottom_right_x": 501,
+            "bottom_right_y": 502,
+            "content": "![image](img-0)",
+            "type": "image",
             "confidence_scores": null,
             "reading_index": 4
         },
         {
-            "top_left_x": 10,
-            "top_left_y": 159,
-            "bottom_right_x": 326,
-            "bottom_right_y": 189,
-            "content": "![image](img-1)",
-            "type": "image",
+            "top_left_x": 20,
+            "top_left_y": 514,
+            "bottom_right_x": 501,
+            "bottom_right_y": 569,
+            "content": "\\iint_{D} \\theta^2 \\geq \\theta^2 \\, dx \\, dy",
+            "type": "text",
             "confidence_scores": null,
             "reading_index": 5
         }
     ],
     "meta": {
-        "template": "id_card",
-        "hybrid": null
+        "template": "math_proof",
+        "hybrid": "chart"
     }
 }

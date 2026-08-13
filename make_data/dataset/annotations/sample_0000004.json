@@ -1,40 +1,404 @@
 {
-    "markdown": "\n![image](img-0)\n\nقَالَهَا ثَلَاثَ",
-    "images": [
+    "markdown": "عن التشبه\nINV-24311\n12/02/2026\nفاتورة إلى: بأهل الكتاب، وقيل:\n\n[tbl-0.html](tbl-0.html)\n\nالإجمالي: 8,156.49",
+    "images": [],
+    "tables": [
         {
-            "id": "img-0",
-            "top_left_x": 270,
-            "top_left_y": 436,
-            "bottom_right_x": 334,
-            "bottom_right_y": 500,
-            "reading_index": 1
+            "id": "tbl-0.html",
+            "content": "<table><tbody><tr><th>البيان</th><th>الكمية</th><th>السعر</th><th>المجموع</th></tr><tr><td>ليشرع في صوم</td><td>7</td><td>211.29</td><td>1,479.03</td></tr><tr><td>رمضان بنشاط، ولا يثقل عليه</td><td>6</td><td>160.08</td><td>960.48</td></tr><tr><td>صومه، وقيل:</td><td>9</td><td>266.72</td><td>2,400.48</td></tr><tr><td>لئلا يختلط</td><td>8</td><td>39.78</td><td>318.24</td></tr><tr><td>صوم النفل بالفرض.</td><td>8</td><td>55.48</td><td>443.84</td></tr><tr><td>\"إلا أن يكون رجل كان</td><td>2</td><td>13.51</td><td>27.02</td></tr><tr><td>يصوم صوماً، فليصمْ ذلك اليوم\":</td><td>7</td><td>76.71</td><td>536.97</td></tr><tr><td>الحديث يدل على صحة صوم</td><td>10</td><td>159.68</td><td>1,596.80</td></tr><tr><td>يوم الشك إن</td><td>3</td><td>131.21</td><td>393.63</td></tr></tbody></table>",
+            "format": "html",
+            "word_confidence_scores": [
+                {
+                    "text": "البيان",
+                    "confidence": 1.0,
+                    "start_index": 22
+                },
+                {
+                    "text": "الكمية",
+                    "confidence": 1.0,
+                    "start_index": 37
+                },
+                {
+                    "text": "السعر",
+                    "confidence": 1.0,
+                    "start_index": 52
+                },
+                {
+                    "text": "المجموع",
+                    "confidence": 1.0,
+                    "start_index": 66
+                },
+                {
+                    "text": "ليشرع",
+                    "confidence": 1.0,
+                    "start_index": 91
+                },
+                {
+                    "text": " في",
+                    "confidence": 1.0,
+                    "start_index": 96
+                },
+                {
+                    "text": " صوم",
+                    "confidence": 1.0,
+                    "start_index": 99
+                },
+                {
+                    "text": "7",
+                    "confidence": 1.0,
+                    "start_index": 112
+                },
+                {
+                    "text": "211.29",
+                    "confidence": 1.0,
+                    "start_index": 122
+                },
+                {
+                    "text": "1,479.03",
+                    "confidence": 1.0,
+                    "start_index": 137
+                },
+                {
+                    "text": "رمضان",
+                    "confidence": 1.0,
+                    "start_index": 163
+                },
+                {
+                    "text": " بنشاط،",
+                    "confidence": 1.0,
+                    "start_index": 168
+                },
+                {
+                    "text": " ولا",
+                    "confidence": 1.0,
+                    "start_index": 175
+                },
+                {
+                    "text": " يثقل",
+                    "confidence": 1.0,
+                    "start_index": 179
+                },
+                {
+                    "text": " عليه",
+                    "confidence": 1.0,
+                    "start_index": 184
+                },
+                {
+                    "text": "6",
+                    "confidence": 1.0,
+                    "start_index": 198
+                },
+                {
+                    "text": "160.08",
+                    "confidence": 1.0,
+                    "start_index": 208
+                },
+                {
+                    "text": "960.48",
+                    "confidence": 1.0,
+                    "start_index": 223
+                },
+                {
+                    "text": "صومه،",
+                    "confidence": 1.0,
+                    "start_index": 247
+                },
+                {
+                    "text": " وقيل:",
+                    "confidence": 1.0,
+                    "start_index": 252
+                },
+                {
+                    "text": "9",
+                    "confidence": 1.0,
+                    "start_index": 267
+                },
+                {
+                    "text": "266.72",
+                    "confidence": 1.0,
+                    "start_index": 277
+                },
+                {
+                    "text": "2,400.48",
+                    "confidence": 1.0,
+                    "start_index": 292
+                },
+                {
+                    "text": "لئلا",
+                    "confidence": 1.0,
+                    "start_index": 318
+                },
+                {
+                    "text": " يختلط",
+                    "confidence": 1.0,
+                    "start_index": 322
+                },
+                {
+                    "text": "8",
+                    "confidence": 1.0,
+                    "start_index": 337
+                },
+                {
+                    "text": "39.78",
+                    "confidence": 1.0,
+                    "start_index": 347
+                },
+                {
+                    "text": "318.24",
+                    "confidence": 1.0,
+                    "start_index": 361
+                },
+                {
+                    "text": "صوم",
+                    "confidence": 1.0,
+                    "start_index": 385
+                },
+                {
+                    "text": " النفل",
+                    "confidence": 1.0,
+                    "start_index": 388
+                },
+                {
+                    "text": " بالفرض.",
+                    "confidence": 1.0,
+                    "start_index": 394
+                },
+                {
+                    "text": "8",
+                    "confidence": 1.0,
+                    "start_index": 411
+                },
+                {
+                    "text": "55.48",
+                    "confidence": 1.0,
+                    "start_index": 421
+                },
+                {
+                    "text": "443.84",
+                    "confidence": 1.0,
+                    "start_index": 435
+                },
+                {
+                    "text": "\"إلا",
+                    "confidence": 1.0,
+                    "start_index": 459
+                },
+                {
+                    "text": " أن",
+                    "confidence": 1.0,
+                    "start_index": 463
+                },
+                {
+                    "text": " يكون",
+                    "confidence": 1.0,
+                    "start_index": 466
+                },
+                {
+                    "text": " رجل",
+                    "confidence": 1.0,
+                    "start_index": 471
+                },
+                {
+                    "text": " كان",
+                    "confidence": 1.0,
+                    "start_index": 475
+                },
+                {
+                    "text": "2",
+                    "confidence": 1.0,
+                    "start_index": 488
+                },
+                {
+                    "text": "13.51",
+                    "confidence": 1.0,
+                    "start_index": 498
+                },
+                {
+                    "text": "27.02",
+                    "confidence": 1.0,
+                    "start_index": 512
+                },
+                {
+                    "text": "يصوم",
+                    "confidence": 1.0,
+                    "start_index": 535
+                },
+                {
+                    "text": " صوماً،",
+                    "confidence": 1.0,
+                    "start_index": 539
+                },
+                {
+                    "text": " فليصمْ",
+                    "confidence": 1.0,
+                    "start_index": 546
+                },
+                {
+                    "text": " ذلك",
+                    "confidence": 1.0,
+                    "start_index": 553
+                },
+                {
+                    "text": " اليوم\":",
+                    "confidence": 1.0,
+                    "start_index": 557
+                },
+                {
+                    "text": "7",
+                    "confidence": 1.0,
+                    "start_index": 574
+                },
+                {
+                    "text": "76.71",
+                    "confidence": 1.0,
+                    "start_index": 584
+                },
+                {
+                    "text": "536.97",
+                    "confidence": 1.0,
+                    "start_index": 598
+                },
+                {
+                    "text": "الحديث",
+                    "confidence": 1.0,
+                    "start_index": 622
+                },
+                {
+                    "text": " يدل",
+                    "confidence": 1.0,
+                    "start_index": 628
+                },
+                {
+                    "text": " على",
+                    "confidence": 1.0,
+                    "start_index": 632
+                },
+                {
+                    "text": " صحة",
+                    "confidence": 1.0,
+                    "start_index": 636
+                },
+                {
+                    "text": " صوم",
+                    "confidence": 1.0,
+                    "start_index": 640
+                },
+                {
+                    "text": "10",
+                    "confidence": 1.0,
+                    "start_index": 653
+                },
+                {
+                    "text": "159.68",
+                    "confidence": 1.0,
+                    "start_index": 664
+                },
+                {
+                    "text": "1,596.80",
+                    "confidence": 1.0,
+                    "start_index": 679
+                },
+                {
+                    "text": "يوم",
+                    "confidence": 1.0,
+                    "start_index": 705
+                },
+                {
+                    "text": " الشك",
+                    "confidence": 1.0,
+                    "start_index": 708
+                },
+                {
+                    "text": " إن",
+                    "confidence": 1.0,
+                    "start_index": 713
+                },
+                {
+                    "text": "3",
+                    "confidence": 1.0,
+                    "start_index": 725
+                },
+                {
+                    "text": "131.21",
+                    "confidence": 1.0,
+                    "start_index": 735
+                },
+                {
+                    "text": "393.63",
+                    "confidence": 1.0,
+                    "start_index": 750
+                }
+            ]
         }
     ],
-    "tables": [],
     "hyperlinks": [],
     "header": null,
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 998,
-        "width": 604
+        "height": 1040,
+        "width": 876
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "![image](img-0)",
+                "text": "عن",
                 "confidence": 1.0,
-                "start_index": 1
+                "start_index": 0
             },
             {
-                "text": "قَالَهَا",
+                "text": "التشبه",
                 "confidence": 1.0,
-                "start_index": 18
+                "start_index": 3
             },
             {
-                "text": "ثَلَاثَ",
+                "text": "INV-24311",
                 "confidence": 1.0,
-                "start_index": 27
+                "start_index": 10
+            },
+            {
+                "text": "12/02/2026",
+                "confidence": 1.0,
+                "start_index": 20
+            },
+            {
+                "text": "فاتورة",
+                "confidence": 1.0,
+                "start_index": 31
+            },
+            {
+                "text": "إلى:",
+                "confidence": 1.0,
+                "start_index": 38
+            },
+            {
+                "text": "بأهل",
+                "confidence": 1.0,
+                "start_index": 43
+            },
+            {
+                "text": "الكتاب،",
+                "confidence": 1.0,
+                "start_index": 48
+            },
+            {
+                "text": "وقيل:",
+                "confidence": 1.0,
+                "start_index": 56
+            },
+            {
+                "text": "[tbl-0.html](tbl-0.html)",
+                "confidence": 1.0,
+                "start_index": 63
+            },
+            {
+                "text": "الإجمالي:",
+                "confidence": 1.0,
+                "start_index": 89
+            },
+            {
+                "text": "8,156.49",
+                "confidence": 1.0,
+                "start_index": 99
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -42,28 +406,69 @@
     },
     "blocks": [
         {
-            "top_left_x": 270,
-            "top_left_y": 436,
-            "bottom_right_x": 334,
-            "bottom_right_y": 500,
-            "content": "![image](img-0)",
-            "type": "image",
+            "top_left_x": 44,
+            "top_left_y": 44,
+            "bottom_right_x": 832,
+            "bottom_right_y": 78,
+            "content": "عن التشبه",
+            "type": "text",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 255,
-            "top_left_y": 522,
-            "bottom_right_x": 349,
-            "bottom_right_y": 562,
-            "content": "قَالَهَا ثَلَاثَ",
+            "top_left_x": 783,
+            "top_left_y": 86,
+            "bottom_right_x": 832,
+            "bottom_right_y": 106,
+            "content": "INV-24311",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 2
+        },
+        {
+            "top_left_x": 44,
+            "top_left_y": 86,
+            "bottom_right_x": 88,
+            "bottom_right_y": 106,
+            "content": "12/02/2026",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 3
+        },
+        {
+            "top_left_x": 44,
+            "top_left_y": 128,
+            "bottom_right_x": 832,
+            "bottom_right_y": 150,
+            "content": "فاتورة إلى: بأهل الكتاب، وقيل:",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 4
+        },
+        {
+            "top_left_x": 44,
+            "top_left_y": 164,
+            "bottom_right_x": 832,
+            "bottom_right_y": 579,
+            "content": "<table><tbody><tr><th>البيان</th><th>الكمية</th><th>السعر</th><th>المجموع</th></tr><tr><td>ليشرع في صوم</td><td>7</td><td>211.29</td><td>1,479.03</td></tr><tr><td>رمضان بنشاط، ولا يثقل عليه</td><td>6</td><td>160.08</td><td>960.48</td></tr><tr><td>صومه، وقيل:</td><td>9</td><td>266.72</td><td>2,400.48</td></tr><tr><td>لئلا يختلط</td><td>8</td><td>39.78</td><td>318.24</td></tr><tr><td>صوم النفل بالفرض.</td><td>8</td><td>55.48</td><td>443.84</td></tr><tr><td>\"إلا أن يكون رجل كان</td><td>2</td><td>13.51</td><td>27.02</td></tr><tr><td>يصوم صوماً، فليصمْ ذلك اليوم\":</td><td>7</td><td>76.71</td><td>536.97</td></tr><tr><td>الحديث يدل على صحة صوم</td><td>10</td><td>159.68</td><td>1,596.80</td></tr><tr><td>يوم الشك إن</td><td>3</td><td>131.21</td><td>393.63</td></tr></tbody></table>",
+            "type": "table",
+            "table_id": "tbl-0.html",
+            "confidence_scores": null,
+            "reading_index": 5
+        },
+        {
+            "top_left_x": 44,
+            "top_left_y": 593,
+            "bottom_right_x": 135,
+            "bottom_right_y": 618,
+            "content": "الإجمالي: 8,156.49",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 6
         }
     ],
     "meta": {
-        "template": "minimalist",
+        "template": "invoice",
         "hybrid": null
     }
 }

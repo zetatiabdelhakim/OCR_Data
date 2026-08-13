@@ -26,8 +26,8 @@ def generate(hybrid_html=""):
     bg_html = (f'<img src="{img_b64}" style="width:100%; height:100%; object-fit:cover; display:block; position:absolute; inset:0;" />'
                if img_b64 else '<div style="position:absolute; inset:0; background:#94a3b8;"></div>')
 
-    title_text = assets.get_real_arabic_text(2, 6)
-    author_text = assets.get_real_arabic_text(2, 3)
+    title_text = assets.get_real_arabic_title()
+    author_text = assets.get_real_arabic_name()
     has_tagline = random.random() < 0.5
     tagline_html = (
         f'<div class="layout-node autofit-text" data-label="tagline" '

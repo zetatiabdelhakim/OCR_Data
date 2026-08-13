@@ -1,826 +1,60 @@
 {
-    "markdown": "## إنها نزلت في أهل\n\n![image](img-0)\n\n\n![image](img-1)\n\n## بْنُ أَبِي شَيْبَةَ، وَيَحْيَى بْنُ\n\n![image](img-2)\n\nشكل: هَلْ رَأَيْتِ مِنْ\nالَّذِينَ، لَا يَسْتَرْقُونَ، وَلَا يَتَطَيَّرُونَ، وَلَا يَكْتَوُونَ، وَعَلَى رَبِّهِمْ يَتَوَكَّلُونَ) ). قوله: ((هُمُ الَّذِينَ لَا يَكْتَوُونَ وَلَا يَسْتَرْقُونَ، وَعَلَى رَبِّهِمْ يَتَوَكَّلُونَ) ) أضف إليه ما جاء في الحديث الآخر: ((وَلَا يَتَطَيَّرُونَ) )، فتكون أعمالهم أربعة، وهي (١) أخرجه أحمد (٢٢)، وأبو يعلى (١١٢). أعمال السبعين ألفًا. وقوله: ((وَلَا يَسْتَرْقُونَ) )، أي: لا يطلبون من أحدٍ أن يرقيهم؛ لأن الرقية فيها ميل إلى الغير، والتفات القلب إلى المخلوق، وإن كان الاسترقاء جائزًا، وهؤلاء الذين يدخلون الجنة بلا حساب لأنهم لا يفعلون الذي هو خلاف الأولى، فلا يطلبون من أحد أن يرقيهم، والهمزة والسين والتاء في الفعل: (اسْتَرقَى) وهو الماضي من قوله: ((يَسْتَرْقُونَ) ) للطلب، يعني: لا يطلبون أحدًا أن يرقيهم، ولكن إذا دعت الحاجة إلى ذلك وتعيَّن طريقا للعلاج فلا بأس، فَيُحمل هذا على أنه يكون عند عدم الحاجة؛ لأن النبي صلى الله عليه وسلم رقاه جبريل عليه\nالصفحة 15",
+    "markdown": "\n![image](img-0)\n\nعائشة عبد الرحمن\nعن التشبه بأهل",
     "images": [
         {
             "id": "img-0",
-            "top_left_x": 605,
-            "top_left_y": 216,
-            "bottom_right_x": 781,
-            "bottom_right_y": 1134,
-            "reading_index": 2
-        },
-        {
-            "id": "img-1",
-            "top_left_x": 417,
-            "top_left_y": 216,
-            "bottom_right_x": 593,
-            "bottom_right_y": 1134,
-            "reading_index": 3
-        },
-        {
-            "id": "img-2",
-            "top_left_x": 245,
-            "top_left_y": 270,
-            "bottom_right_x": 381,
-            "bottom_right_y": 361,
-            "reading_index": 5
+            "top_left_x": 231,
+            "top_left_y": 14,
+            "bottom_right_x": 277,
+            "bottom_right_y": 60,
+            "reading_index": 1
         }
     ],
     "tables": [],
     "hyperlinks": [],
     "header": null,
-    "footer": "الصفحة 15",
+    "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 1198,
-        "width": 817
+        "height": 198,
+        "width": 291
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "##",
-                "confidence": 1.0,
-                "start_index": 0
-            },
-            {
-                "text": "إنها",
-                "confidence": 1.0,
-                "start_index": 3
-            },
-            {
-                "text": "نزلت",
-                "confidence": 1.0,
-                "start_index": 8
-            },
-            {
-                "text": "في",
-                "confidence": 1.0,
-                "start_index": 13
-            },
-            {
-                "text": "أهل",
-                "confidence": 1.0,
-                "start_index": 16
-            },
-            {
                 "text": "![image](img-0)",
                 "confidence": 1.0,
-                "start_index": 21
+                "start_index": 1
             },
             {
-                "text": "![image](img-1)",
+                "text": "عائشة",
                 "confidence": 1.0,
-                "start_index": 39
+                "start_index": 18
             },
             {
-                "text": "##",
+                "text": "عبد",
                 "confidence": 1.0,
-                "start_index": 56
+                "start_index": 24
             },
             {
-                "text": "بْنُ",
+                "text": "الرحمن",
                 "confidence": 1.0,
-                "start_index": 59
+                "start_index": 28
             },
             {
-                "text": "أَبِي",
+                "text": "عن",
                 "confidence": 1.0,
-                "start_index": 64
+                "start_index": 35
             },
             {
-                "text": "شَيْبَةَ،",
+                "text": "التشبه",
                 "confidence": 1.0,
-                "start_index": 70
+                "start_index": 38
             },
             {
-                "text": "وَيَحْيَى",
+                "text": "بأهل",
                 "confidence": 1.0,
-                "start_index": 80
-            },
-            {
-                "text": "بْنُ",
-                "confidence": 1.0,
-                "start_index": 90
-            },
-            {
-                "text": "![image](img-2)",
-                "confidence": 1.0,
-                "start_index": 96
-            },
-            {
-                "text": "شكل:",
-                "confidence": 1.0,
-                "start_index": 113
-            },
-            {
-                "text": "هَلْ",
-                "confidence": 1.0,
-                "start_index": 118
-            },
-            {
-                "text": "رَأَيْتِ",
-                "confidence": 1.0,
-                "start_index": 123
-            },
-            {
-                "text": "مِنْ",
-                "confidence": 1.0,
-                "start_index": 132
-            },
-            {
-                "text": "الَّذِينَ،",
-                "confidence": 1.0,
-                "start_index": 137
-            },
-            {
-                "text": "لَا",
-                "confidence": 1.0,
-                "start_index": 148
-            },
-            {
-                "text": "يَسْتَرْقُونَ،",
-                "confidence": 1.0,
-                "start_index": 152
-            },
-            {
-                "text": "وَلَا",
-                "confidence": 1.0,
-                "start_index": 167
-            },
-            {
-                "text": "يَتَطَيَّرُونَ،",
-                "confidence": 1.0,
-                "start_index": 173
-            },
-            {
-                "text": "وَلَا",
-                "confidence": 1.0,
-                "start_index": 189
-            },
-            {
-                "text": "يَكْتَوُونَ،",
-                "confidence": 1.0,
-                "start_index": 195
-            },
-            {
-                "text": "وَعَلَى",
-                "confidence": 1.0,
-                "start_index": 208
-            },
-            {
-                "text": "رَبِّهِمْ",
-                "confidence": 1.0,
-                "start_index": 216
-            },
-            {
-                "text": "يَتَوَكَّلُونَ)",
-                "confidence": 1.0,
-                "start_index": 226
-            },
-            {
-                "text": ").",
-                "confidence": 1.0,
-                "start_index": 242
-            },
-            {
-                "text": "قوله:",
-                "confidence": 1.0,
-                "start_index": 245
-            },
-            {
-                "text": "((هُمُ",
-                "confidence": 1.0,
-                "start_index": 251
-            },
-            {
-                "text": "الَّذِينَ",
-                "confidence": 1.0,
-                "start_index": 258
-            },
-            {
-                "text": "لَا",
-                "confidence": 1.0,
-                "start_index": 268
-            },
-            {
-                "text": "يَكْتَوُونَ",
-                "confidence": 1.0,
-                "start_index": 272
-            },
-            {
-                "text": "وَلَا",
-                "confidence": 1.0,
-                "start_index": 284
-            },
-            {
-                "text": "يَسْتَرْقُونَ،",
-                "confidence": 1.0,
-                "start_index": 290
-            },
-            {
-                "text": "وَعَلَى",
-                "confidence": 1.0,
-                "start_index": 305
-            },
-            {
-                "text": "رَبِّهِمْ",
-                "confidence": 1.0,
-                "start_index": 313
-            },
-            {
-                "text": "يَتَوَكَّلُونَ)",
-                "confidence": 1.0,
-                "start_index": 323
-            },
-            {
-                "text": ")",
-                "confidence": 1.0,
-                "start_index": 339
-            },
-            {
-                "text": "أضف",
-                "confidence": 1.0,
-                "start_index": 341
-            },
-            {
-                "text": "إليه",
-                "confidence": 1.0,
-                "start_index": 345
-            },
-            {
-                "text": "ما",
-                "confidence": 1.0,
-                "start_index": 350
-            },
-            {
-                "text": "جاء",
-                "confidence": 1.0,
-                "start_index": 353
-            },
-            {
-                "text": "في",
-                "confidence": 1.0,
-                "start_index": 357
-            },
-            {
-                "text": "الحديث",
-                "confidence": 1.0,
-                "start_index": 360
-            },
-            {
-                "text": "الآخر:",
-                "confidence": 1.0,
-                "start_index": 367
-            },
-            {
-                "text": "((وَلَا",
-                "confidence": 1.0,
-                "start_index": 374
-            },
-            {
-                "text": "يَتَطَيَّرُونَ)",
-                "confidence": 1.0,
-                "start_index": 382
-            },
-            {
-                "text": ")،",
-                "confidence": 1.0,
-                "start_index": 398
-            },
-            {
-                "text": "فتكون",
-                "confidence": 1.0,
-                "start_index": 401
-            },
-            {
-                "text": "أعمالهم",
-                "confidence": 1.0,
-                "start_index": 407
-            },
-            {
-                "text": "أربعة،",
-                "confidence": 1.0,
-                "start_index": 415
-            },
-            {
-                "text": "وهي",
-                "confidence": 1.0,
-                "start_index": 422
-            },
-            {
-                "text": "(١)",
-                "confidence": 1.0,
-                "start_index": 426
-            },
-            {
-                "text": "أخرجه",
-                "confidence": 1.0,
-                "start_index": 430
-            },
-            {
-                "text": "أحمد",
-                "confidence": 1.0,
-                "start_index": 436
-            },
-            {
-                "text": "(٢٢)،",
-                "confidence": 1.0,
-                "start_index": 441
-            },
-            {
-                "text": "وأبو",
-                "confidence": 1.0,
-                "start_index": 447
-            },
-            {
-                "text": "يعلى",
-                "confidence": 1.0,
-                "start_index": 452
-            },
-            {
-                "text": "(١١٢).",
-                "confidence": 1.0,
-                "start_index": 457
-            },
-            {
-                "text": "أعمال",
-                "confidence": 1.0,
-                "start_index": 464
-            },
-            {
-                "text": "السبعين",
-                "confidence": 1.0,
-                "start_index": 470
-            },
-            {
-                "text": "ألفًا.",
-                "confidence": 1.0,
-                "start_index": 478
-            },
-            {
-                "text": "وقوله:",
-                "confidence": 1.0,
-                "start_index": 485
-            },
-            {
-                "text": "((وَلَا",
-                "confidence": 1.0,
-                "start_index": 492
-            },
-            {
-                "text": "يَسْتَرْقُونَ)",
-                "confidence": 1.0,
-                "start_index": 500
-            },
-            {
-                "text": ")،",
-                "confidence": 1.0,
-                "start_index": 515
-            },
-            {
-                "text": "أي:",
-                "confidence": 1.0,
-                "start_index": 518
-            },
-            {
-                "text": "لا",
-                "confidence": 1.0,
-                "start_index": 522
-            },
-            {
-                "text": "يطلبون",
-                "confidence": 1.0,
-                "start_index": 525
-            },
-            {
-                "text": "من",
-                "confidence": 1.0,
-                "start_index": 532
-            },
-            {
-                "text": "أحدٍ",
-                "confidence": 1.0,
-                "start_index": 535
-            },
-            {
-                "text": "أن",
-                "confidence": 1.0,
-                "start_index": 540
-            },
-            {
-                "text": "يرقيهم؛",
-                "confidence": 1.0,
-                "start_index": 543
-            },
-            {
-                "text": "لأن",
-                "confidence": 1.0,
-                "start_index": 551
-            },
-            {
-                "text": "الرقية",
-                "confidence": 1.0,
-                "start_index": 555
-            },
-            {
-                "text": "فيها",
-                "confidence": 1.0,
-                "start_index": 562
-            },
-            {
-                "text": "ميل",
-                "confidence": 1.0,
-                "start_index": 567
-            },
-            {
-                "text": "إلى",
-                "confidence": 1.0,
-                "start_index": 571
-            },
-            {
-                "text": "الغير،",
-                "confidence": 1.0,
-                "start_index": 575
-            },
-            {
-                "text": "والتفات",
-                "confidence": 1.0,
-                "start_index": 582
-            },
-            {
-                "text": "القلب",
-                "confidence": 1.0,
-                "start_index": 590
-            },
-            {
-                "text": "إلى",
-                "confidence": 1.0,
-                "start_index": 596
-            },
-            {
-                "text": "المخلوق،",
-                "confidence": 1.0,
-                "start_index": 600
-            },
-            {
-                "text": "وإن",
-                "confidence": 1.0,
-                "start_index": 609
-            },
-            {
-                "text": "كان",
-                "confidence": 1.0,
-                "start_index": 613
-            },
-            {
-                "text": "الاسترقاء",
-                "confidence": 1.0,
-                "start_index": 617
-            },
-            {
-                "text": "جائزًا،",
-                "confidence": 1.0,
-                "start_index": 627
-            },
-            {
-                "text": "وهؤلاء",
-                "confidence": 1.0,
-                "start_index": 635
-            },
-            {
-                "text": "الذين",
-                "confidence": 1.0,
-                "start_index": 642
-            },
-            {
-                "text": "يدخلون",
-                "confidence": 1.0,
-                "start_index": 648
-            },
-            {
-                "text": "الجنة",
-                "confidence": 1.0,
-                "start_index": 655
-            },
-            {
-                "text": "بلا",
-                "confidence": 1.0,
-                "start_index": 661
-            },
-            {
-                "text": "حساب",
-                "confidence": 1.0,
-                "start_index": 665
-            },
-            {
-                "text": "لأنهم",
-                "confidence": 1.0,
-                "start_index": 670
-            },
-            {
-                "text": "لا",
-                "confidence": 1.0,
-                "start_index": 676
-            },
-            {
-                "text": "يفعلون",
-                "confidence": 1.0,
-                "start_index": 679
-            },
-            {
-                "text": "الذي",
-                "confidence": 1.0,
-                "start_index": 686
-            },
-            {
-                "text": "هو",
-                "confidence": 1.0,
-                "start_index": 691
-            },
-            {
-                "text": "خلاف",
-                "confidence": 1.0,
-                "start_index": 694
-            },
-            {
-                "text": "الأولى،",
-                "confidence": 1.0,
-                "start_index": 699
-            },
-            {
-                "text": "فلا",
-                "confidence": 1.0,
-                "start_index": 707
-            },
-            {
-                "text": "يطلبون",
-                "confidence": 1.0,
-                "start_index": 711
-            },
-            {
-                "text": "من",
-                "confidence": 1.0,
-                "start_index": 718
-            },
-            {
-                "text": "أحد",
-                "confidence": 1.0,
-                "start_index": 721
-            },
-            {
-                "text": "أن",
-                "confidence": 1.0,
-                "start_index": 725
-            },
-            {
-                "text": "يرقيهم،",
-                "confidence": 1.0,
-                "start_index": 728
-            },
-            {
-                "text": "والهمزة",
-                "confidence": 1.0,
-                "start_index": 736
-            },
-            {
-                "text": "والسين",
-                "confidence": 1.0,
-                "start_index": 744
-            },
-            {
-                "text": "والتاء",
-                "confidence": 1.0,
-                "start_index": 751
-            },
-            {
-                "text": "في",
-                "confidence": 1.0,
-                "start_index": 758
-            },
-            {
-                "text": "الفعل:",
-                "confidence": 1.0,
-                "start_index": 761
-            },
-            {
-                "text": "(اسْتَرقَى)",
-                "confidence": 1.0,
-                "start_index": 768
-            },
-            {
-                "text": "وهو",
-                "confidence": 1.0,
-                "start_index": 780
-            },
-            {
-                "text": "الماضي",
-                "confidence": 1.0,
-                "start_index": 784
-            },
-            {
-                "text": "من",
-                "confidence": 1.0,
-                "start_index": 791
-            },
-            {
-                "text": "قوله:",
-                "confidence": 1.0,
-                "start_index": 794
-            },
-            {
-                "text": "((يَسْتَرْقُونَ)",
-                "confidence": 1.0,
-                "start_index": 800
-            },
-            {
-                "text": ")",
-                "confidence": 1.0,
-                "start_index": 817
-            },
-            {
-                "text": "للطلب،",
-                "confidence": 1.0,
-                "start_index": 819
-            },
-            {
-                "text": "يعني:",
-                "confidence": 1.0,
-                "start_index": 826
-            },
-            {
-                "text": "لا",
-                "confidence": 1.0,
-                "start_index": 832
-            },
-            {
-                "text": "يطلبون",
-                "confidence": 1.0,
-                "start_index": 835
-            },
-            {
-                "text": "أحدًا",
-                "confidence": 1.0,
-                "start_index": 842
-            },
-            {
-                "text": "أن",
-                "confidence": 1.0,
-                "start_index": 848
-            },
-            {
-                "text": "يرقيهم،",
-                "confidence": 1.0,
-                "start_index": 851
-            },
-            {
-                "text": "ولكن",
-                "confidence": 1.0,
-                "start_index": 859
-            },
-            {
-                "text": "إذا",
-                "confidence": 1.0,
-                "start_index": 864
-            },
-            {
-                "text": "دعت",
-                "confidence": 1.0,
-                "start_index": 868
-            },
-            {
-                "text": "الحاجة",
-                "confidence": 1.0,
-                "start_index": 872
-            },
-            {
-                "text": "إلى",
-                "confidence": 1.0,
-                "start_index": 879
-            },
-            {
-                "text": "ذلك",
-                "confidence": 1.0,
-                "start_index": 883
-            },
-            {
-                "text": "وتعيَّن",
-                "confidence": 1.0,
-                "start_index": 887
-            },
-            {
-                "text": "طريقا",
-                "confidence": 1.0,
-                "start_index": 895
-            },
-            {
-                "text": "للعلاج",
-                "confidence": 1.0,
-                "start_index": 901
-            },
-            {
-                "text": "فلا",
-                "confidence": 1.0,
-                "start_index": 908
-            },
-            {
-                "text": "بأس،",
-                "confidence": 1.0,
-                "start_index": 912
-            },
-            {
-                "text": "فَيُحمل",
-                "confidence": 1.0,
-                "start_index": 917
-            },
-            {
-                "text": "هذا",
-                "confidence": 1.0,
-                "start_index": 925
-            },
-            {
-                "text": "على",
-                "confidence": 1.0,
-                "start_index": 929
-            },
-            {
-                "text": "أنه",
-                "confidence": 1.0,
-                "start_index": 933
-            },
-            {
-                "text": "يكون",
-                "confidence": 1.0,
-                "start_index": 937
-            },
-            {
-                "text": "عند",
-                "confidence": 1.0,
-                "start_index": 942
-            },
-            {
-                "text": "عدم",
-                "confidence": 1.0,
-                "start_index": 946
-            },
-            {
-                "text": "الحاجة؛",
-                "confidence": 1.0,
-                "start_index": 950
-            },
-            {
-                "text": "لأن",
-                "confidence": 1.0,
-                "start_index": 958
-            },
-            {
-                "text": "النبي",
-                "confidence": 1.0,
-                "start_index": 962
-            },
-            {
-                "text": "صلى",
-                "confidence": 1.0,
-                "start_index": 968
-            },
-            {
-                "text": "الله",
-                "confidence": 1.0,
-                "start_index": 972
-            },
-            {
-                "text": "عليه",
-                "confidence": 1.0,
-                "start_index": 977
-            },
-            {
-                "text": "وسلم",
-                "confidence": 1.0,
-                "start_index": 982
-            },
-            {
-                "text": "رقاه",
-                "confidence": 1.0,
-                "start_index": 987
-            },
-            {
-                "text": "جبريل",
-                "confidence": 1.0,
-                "start_index": 992
-            },
-            {
-                "text": "عليه",
-                "confidence": 1.0,
-                "start_index": 998
-            },
-            {
-                "text": "الصفحة",
-                "confidence": 1.0,
-                "start_index": 1003
-            },
-            {
-                "text": "15",
-                "confidence": 1.0,
-                "start_index": 1010
+                "start_index": 45
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -828,88 +62,38 @@
     },
     "blocks": [
         {
-            "top_left_x": 36,
-            "top_left_y": 36,
-            "bottom_right_x": 781,
-            "bottom_right_y": 200,
-            "content": "إنها نزلت في أهل",
-            "type": "title",
+            "top_left_x": 231,
+            "top_left_y": 14,
+            "bottom_right_x": 277,
+            "bottom_right_y": 60,
+            "content": "![image](img-0)",
+            "type": "image",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 605,
-            "top_left_y": 216,
-            "bottom_right_x": 781,
-            "bottom_right_y": 1134,
-            "content": "![image](img-0)",
-            "type": "image",
+            "top_left_x": 14,
+            "top_left_y": 153,
+            "bottom_right_x": 277,
+            "bottom_right_y": 170,
+            "content": "عائشة عبد الرحمن",
+            "type": "text",
             "confidence_scores": null,
             "reading_index": 2
         },
         {
-            "top_left_x": 417,
-            "top_left_y": 216,
-            "bottom_right_x": 593,
-            "bottom_right_y": 1134,
-            "content": "![image](img-1)",
-            "type": "image",
+            "top_left_x": 14,
+            "top_left_y": 172,
+            "bottom_right_x": 277,
+            "bottom_right_y": 184,
+            "content": "عن التشبه بأهل",
+            "type": "text",
             "confidence_scores": null,
             "reading_index": 3
-        },
-        {
-            "top_left_x": 36,
-            "top_left_y": 216,
-            "bottom_right_x": 401,
-            "bottom_right_y": 255,
-            "content": "بْنُ أَبِي شَيْبَةَ، وَيَحْيَى بْنُ",
-            "type": "title",
-            "confidence_scores": null,
-            "reading_index": 4
-        },
-        {
-            "top_left_x": 245,
-            "top_left_y": 270,
-            "bottom_right_x": 381,
-            "bottom_right_y": 361,
-            "content": "![image](img-2)",
-            "type": "image",
-            "confidence_scores": null,
-            "reading_index": 5
-        },
-        {
-            "top_left_x": 245,
-            "top_left_y": 365,
-            "bottom_right_x": 381,
-            "bottom_right_y": 387,
-            "content": "شكل: هَلْ رَأَيْتِ مِنْ",
-            "type": "text",
-            "confidence_scores": null,
-            "reading_index": 6
-        },
-        {
-            "top_left_x": 36,
-            "top_left_y": 402,
-            "bottom_right_x": 401,
-            "bottom_right_y": 1129,
-            "content": "الَّذِينَ، لَا يَسْتَرْقُونَ، وَلَا يَتَطَيَّرُونَ، وَلَا يَكْتَوُونَ، وَعَلَى رَبِّهِمْ يَتَوَكَّلُونَ) ). قوله: ((هُمُ الَّذِينَ لَا يَكْتَوُونَ وَلَا يَسْتَرْقُونَ، وَعَلَى رَبِّهِمْ يَتَوَكَّلُونَ) ) أضف إليه ما جاء في الحديث الآخر: ((وَلَا يَتَطَيَّرُونَ) )، فتكون أعمالهم أربعة، وهي (١) أخرجه أحمد (٢٢)، وأبو يعلى (١١٢). أعمال السبعين ألفًا. وقوله: ((وَلَا يَسْتَرْقُونَ) )، أي: لا يطلبون من أحدٍ أن يرقيهم؛ لأن الرقية فيها ميل إلى الغير، والتفات القلب إلى المخلوق، وإن كان الاسترقاء جائزًا، وهؤلاء الذين يدخلون الجنة بلا حساب لأنهم لا يفعلون الذي هو خلاف الأولى، فلا يطلبون من أحد أن يرقيهم، والهمزة والسين والتاء في الفعل: (اسْتَرقَى) وهو الماضي من قوله: ((يَسْتَرْقُونَ) ) للطلب، يعني: لا يطلبون أحدًا أن يرقيهم، ولكن إذا دعت الحاجة إلى ذلك وتعيَّن طريقا للعلاج فلا بأس، فَيُحمل هذا على أنه يكون عند عدم الحاجة؛ لأن النبي صلى الله عليه وسلم رقاه جبريل عليه",
-            "type": "text",
-            "confidence_scores": null,
-            "reading_index": 7
-        },
-        {
-            "top_left_x": 386,
-            "top_left_y": 1175,
-            "bottom_right_x": 431,
-            "bottom_right_y": 1188,
-            "content": "الصفحة 15",
-            "type": "footer",
-            "confidence_scores": null,
-            "reading_index": 8
         }
     ],
     "meta": {
-        "template": "a4_image_gallery",
+        "template": "business_card",
         "hybrid": null
     }
 }

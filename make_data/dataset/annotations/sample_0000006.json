@@ -1,23 +1,14 @@
 {
-    "markdown": "## فمنهم من يُعفَى\n\\int_{4}^{\\infty} \\sin(k) \\, dk = k^2 \\approx C + \\frac{\\alpha}{y^2}\n\n![image](img-0)\n\nشكل: صلى الله عليه وسلم فيصلي فيها",
-    "images": [
-        {
-            "id": "img-0",
-            "top_left_x": 40,
-            "top_left_y": 215,
-            "bottom_right_x": 246,
-            "bottom_right_y": 1014,
-            "reading_index": 3
-        }
-    ],
+    "markdown": "## تعريف\n31 - حَدَّثَنَا أَبُو خَيْثَمَةَ، حَدَّثَنَا عَبْدُ الرَّحْمَنِ بْنُ مَهْدِيٍّ، عَنْ سُفْيَانَ، عَنْ أَبِي الْأَغَرِّ، عَنْ وَهْبِ بْنِ مُنَبِّهٍ، قَالَ فِي\n\\prod_{i=1}^{n} (1 \\cdot \\alpha_i) = 0 + \\frac{z}{x^2}\n\\prod_{x=1}^{n} (1 \\approx t_x) = 0\n## ملاحظة\nيَكُونَ عَارِفًا بِزَمَانِهِ، حَافِظًا لِلِسَانِهِ، مُقْبِلًا عَلَى شَأْنِهِ»\n\\vec{F} = m\\vec{a}\n\\theta_{n+1} = \\theta_n - \\alpha \\nabla f(\\theta_n)",
+    "images": [],
     "tables": [],
     "hyperlinks": [],
     "header": null,
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 1116,
-        "width": 718
+        "height": 519,
+        "width": 536
     },
     "confidence_scores": {
         "word_confidence_scores": [
@@ -27,109 +18,284 @@
                 "start_index": 0
             },
             {
-                "text": "فمنهم",
+                "text": "تعريف",
                 "confidence": 1.0,
                 "start_index": 3
             },
             {
-                "text": "من",
+                "text": "31",
                 "confidence": 1.0,
                 "start_index": 9
             },
             {
-                "text": "يُعفَى",
+                "text": "-",
                 "confidence": 1.0,
                 "start_index": 12
             },
             {
-                "text": "\\int_{4}^{\\infty}",
+                "text": "حَدَّثَنَا",
                 "confidence": 1.0,
-                "start_index": 19
+                "start_index": 14
             },
             {
-                "text": "\\sin(k)",
+                "text": "أَبُو",
                 "confidence": 1.0,
-                "start_index": 37
+                "start_index": 25
             },
             {
-                "text": "\\,",
+                "text": "خَيْثَمَةَ،",
                 "confidence": 1.0,
-                "start_index": 45
+                "start_index": 31
             },
             {
-                "text": "dk",
+                "text": "حَدَّثَنَا",
                 "confidence": 1.0,
-                "start_index": 48
+                "start_index": 43
             },
             {
-                "text": "=",
+                "text": "عَبْدُ",
                 "confidence": 1.0,
-                "start_index": 51
+                "start_index": 54
             },
             {
-                "text": "k^2",
+                "text": "الرَّحْمَنِ",
                 "confidence": 1.0,
-                "start_index": 53
+                "start_index": 61
             },
             {
-                "text": "\\approx",
+                "text": "بْنُ",
                 "confidence": 1.0,
-                "start_index": 57
+                "start_index": 73
             },
             {
-                "text": "C",
+                "text": "مَهْدِيٍّ،",
                 "confidence": 1.0,
-                "start_index": 65
+                "start_index": 78
             },
             {
-                "text": "+",
-                "confidence": 1.0,
-                "start_index": 67
-            },
-            {
-                "text": "\\frac{\\alpha}{y^2}",
-                "confidence": 1.0,
-                "start_index": 69
-            },
-            {
-                "text": "![image](img-0)",
+                "text": "عَنْ",
                 "confidence": 1.0,
                 "start_index": 89
             },
             {
-                "text": "شكل:",
+                "text": "سُفْيَانَ،",
                 "confidence": 1.0,
-                "start_index": 106
+                "start_index": 94
             },
             {
-                "text": "صلى",
+                "text": "عَنْ",
                 "confidence": 1.0,
-                "start_index": 111
+                "start_index": 105
             },
             {
-                "text": "الله",
+                "text": "أَبِي",
                 "confidence": 1.0,
-                "start_index": 115
+                "start_index": 110
             },
             {
-                "text": "عليه",
+                "text": "الْأَغَرِّ،",
                 "confidence": 1.0,
-                "start_index": 120
+                "start_index": 116
             },
             {
-                "text": "وسلم",
+                "text": "عَنْ",
                 "confidence": 1.0,
-                "start_index": 125
+                "start_index": 128
             },
             {
-                "text": "فيصلي",
+                "text": "وَهْبِ",
                 "confidence": 1.0,
-                "start_index": 130
+                "start_index": 133
             },
             {
-                "text": "فيها",
+                "text": "بْنِ",
                 "confidence": 1.0,
-                "start_index": 136
+                "start_index": 140
+            },
+            {
+                "text": "مُنَبِّهٍ،",
+                "confidence": 1.0,
+                "start_index": 145
+            },
+            {
+                "text": "قَالَ",
+                "confidence": 1.0,
+                "start_index": 156
+            },
+            {
+                "text": "فِي",
+                "confidence": 1.0,
+                "start_index": 162
+            },
+            {
+                "text": "\\prod_{i=1}^{n}",
+                "confidence": 1.0,
+                "start_index": 166
+            },
+            {
+                "text": "(1",
+                "confidence": 1.0,
+                "start_index": 182
+            },
+            {
+                "text": "\\cdot",
+                "confidence": 1.0,
+                "start_index": 185
+            },
+            {
+                "text": "\\alpha_i)",
+                "confidence": 1.0,
+                "start_index": 191
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 201
+            },
+            {
+                "text": "0",
+                "confidence": 1.0,
+                "start_index": 203
+            },
+            {
+                "text": "+",
+                "confidence": 1.0,
+                "start_index": 205
+            },
+            {
+                "text": "\\frac{z}{x^2}",
+                "confidence": 1.0,
+                "start_index": 207
+            },
+            {
+                "text": "\\prod_{x=1}^{n}",
+                "confidence": 1.0,
+                "start_index": 221
+            },
+            {
+                "text": "(1",
+                "confidence": 1.0,
+                "start_index": 237
+            },
+            {
+                "text": "\\approx",
+                "confidence": 1.0,
+                "start_index": 240
+            },
+            {
+                "text": "t_x)",
+                "confidence": 1.0,
+                "start_index": 248
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 253
+            },
+            {
+                "text": "0",
+                "confidence": 1.0,
+                "start_index": 255
+            },
+            {
+                "text": "##",
+                "confidence": 1.0,
+                "start_index": 257
+            },
+            {
+                "text": "ملاحظة",
+                "confidence": 1.0,
+                "start_index": 260
+            },
+            {
+                "text": "يَكُونَ",
+                "confidence": 1.0,
+                "start_index": 267
+            },
+            {
+                "text": "عَارِفًا",
+                "confidence": 1.0,
+                "start_index": 275
+            },
+            {
+                "text": "بِزَمَانِهِ،",
+                "confidence": 1.0,
+                "start_index": 284
+            },
+            {
+                "text": "حَافِظًا",
+                "confidence": 1.0,
+                "start_index": 297
+            },
+            {
+                "text": "لِلِسَانِهِ،",
+                "confidence": 1.0,
+                "start_index": 306
+            },
+            {
+                "text": "مُقْبِلًا",
+                "confidence": 1.0,
+                "start_index": 319
+            },
+            {
+                "text": "عَلَى",
+                "confidence": 1.0,
+                "start_index": 329
+            },
+            {
+                "text": "شَأْنِهِ»",
+                "confidence": 1.0,
+                "start_index": 335
+            },
+            {
+                "text": "\\vec{F}",
+                "confidence": 1.0,
+                "start_index": 345
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 353
+            },
+            {
+                "text": "m\\vec{a}",
+                "confidence": 1.0,
+                "start_index": 355
+            },
+            {
+                "text": "\\theta_{n+1}",
+                "confidence": 1.0,
+                "start_index": 364
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 377
+            },
+            {
+                "text": "\\theta_n",
+                "confidence": 1.0,
+                "start_index": 379
+            },
+            {
+                "text": "-",
+                "confidence": 1.0,
+                "start_index": 388
+            },
+            {
+                "text": "\\alpha",
+                "confidence": 1.0,
+                "start_index": 390
+            },
+            {
+                "text": "\\nabla",
+                "confidence": 1.0,
+                "start_index": 397
+            },
+            {
+                "text": "f(\\theta_n)",
+                "confidence": 1.0,
+                "start_index": 404
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -137,48 +303,88 @@
     },
     "blocks": [
         {
-            "top_left_x": 40,
-            "top_left_y": 40,
-            "bottom_right_x": 678,
-            "bottom_right_y": 195,
-            "content": "فمنهم من يُعفَى",
+            "top_left_x": 32,
+            "top_left_y": 32,
+            "bottom_right_x": 500,
+            "bottom_right_y": 63,
+            "content": "تعريف",
             "type": "title",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 266,
-            "top_left_y": 233,
-            "bottom_right_x": 678,
-            "bottom_right_y": 287,
-            "content": "\\int_{4}^{\\infty} \\sin(k) \\, dk = k^2 \\approx C + \\frac{\\alpha}{y^2}",
+            "top_left_x": 32,
+            "top_left_y": 68,
+            "bottom_right_x": 500,
+            "bottom_right_y": 113,
+            "content": "31 - حَدَّثَنَا أَبُو خَيْثَمَةَ، حَدَّثَنَا عَبْدُ الرَّحْمَنِ بْنُ مَهْدِيٍّ، عَنْ سُفْيَانَ، عَنْ أَبِي الْأَغَرِّ، عَنْ وَهْبِ بْنِ مُنَبِّهٍ، قَالَ فِي",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 2
         },
         {
-            "top_left_x": 40,
-            "top_left_y": 215,
-            "bottom_right_x": 246,
-            "bottom_right_y": 1014,
-            "content": "![image](img-0)",
-            "type": "image",
+            "top_left_x": 32,
+            "top_left_y": 119,
+            "bottom_right_x": 500,
+            "bottom_right_y": 183,
+            "content": "\\prod_{i=1}^{n} (1 \\cdot \\alpha_i) = 0 + \\frac{z}{x^2}",
+            "type": "text",
             "confidence_scores": null,
             "reading_index": 3
         },
         {
-            "top_left_x": 40,
-            "top_left_y": 1020,
-            "bottom_right_x": 246,
-            "bottom_right_y": 1086,
-            "content": "شكل: صلى الله عليه وسلم فيصلي فيها",
+            "top_left_x": 20,
+            "top_left_y": 215,
+            "bottom_right_x": 516,
+            "bottom_right_y": 291,
+            "content": "\\prod_{x=1}^{n} (1 \\approx t_x) = 0",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 4
+        },
+        {
+            "top_left_x": 32,
+            "top_left_y": 309,
+            "bottom_right_x": 500,
+            "bottom_right_y": 326,
+            "content": "ملاحظة",
+            "type": "title",
+            "confidence_scores": null,
+            "reading_index": 5
+        },
+        {
+            "top_left_x": 32,
+            "top_left_y": 331,
+            "bottom_right_x": 500,
+            "bottom_right_y": 353,
+            "content": "يَكُونَ عَارِفًا بِزَمَانِهِ، حَافِظًا لِلِسَانِهِ، مُقْبِلًا عَلَى شَأْنِهِ»",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 6
+        },
+        {
+            "top_left_x": 32,
+            "top_left_y": 359,
+            "bottom_right_x": 500,
+            "bottom_right_y": 398,
+            "content": "\\vec{F} = m\\vec{a}",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 7
+        },
+        {
+            "top_left_x": 20,
+            "top_left_y": 430,
+            "bottom_right_x": 516,
+            "bottom_right_y": 473,
+            "content": "\\theta_{n+1} = \\theta_n - \\alpha \\nabla f(\\theta_n)",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 8
         }
     ],
     "meta": {
-        "template": "a4_report",
-        "hybrid": "equation"
+        "template": "math_proof",
+        "hybrid": null
     }
 }

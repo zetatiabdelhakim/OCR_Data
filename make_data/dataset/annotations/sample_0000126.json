@@ -1,281 +1,78 @@
 {
-    "markdown": "## الله عليه وسلم: ((لَوْلَا حِدْثَانُ\nالله عليه وسلم يُحِبُّ التَّيَمُّنَ فِي\nإِدْرِيسَ، كِلَاهُمَا عَنْ\nالدر المختار، لابن عابدين (٢/ ١٢٠\nللحاجة لمن لا يتخذه\nوَخَدَمًا) ): الحشم هم: خدم الرجل\n\"يَذْكُرْ قَوْلَ مُعَاوِيَةَ: بَلَغَنِي. في هذا الحديث: فضل قراءة القرآن، وأن من عمل به يأتي له شفيعًا يوم القيامة. وفيه: فضل سورة\"",
-    "images": [],
+    "markdown": "عن الزهري أن عبد\n\n![image](img-0)\n\nفاطمة الزهراء\n1155-4265\n\n![image](img-1)\n",
+    "images": [
+        {
+            "id": "img-0",
+            "top_left_x": 268,
+            "top_left_y": 73,
+            "bottom_right_x": 312,
+            "bottom_right_y": 129,
+            "reading_index": 2
+        },
+        {
+            "id": "img-1",
+            "top_left_x": 10,
+            "top_left_y": 170,
+            "bottom_right_x": 312,
+            "bottom_right_y": 200,
+            "reading_index": 5
+        }
+    ],
     "tables": [],
     "hyperlinks": [],
     "header": null,
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 1195,
-        "width": 817
+        "height": 210,
+        "width": 322
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "##",
+                "text": "عن",
                 "confidence": 1.0,
                 "start_index": 0
             },
             {
-                "text": "الله",
+                "text": "الزهري",
                 "confidence": 1.0,
                 "start_index": 3
             },
             {
-                "text": "عليه",
+                "text": "أن",
                 "confidence": 1.0,
-                "start_index": 8
+                "start_index": 10
             },
             {
-                "text": "وسلم:",
+                "text": "عبد",
                 "confidence": 1.0,
                 "start_index": 13
             },
             {
-                "text": "((لَوْلَا",
+                "text": "![image](img-0)",
                 "confidence": 1.0,
-                "start_index": 19
+                "start_index": 18
             },
             {
-                "text": "حِدْثَانُ",
+                "text": "فاطمة",
                 "confidence": 1.0,
-                "start_index": 29
+                "start_index": 35
             },
             {
-                "text": "الله",
+                "text": "الزهراء",
                 "confidence": 1.0,
-                "start_index": 39
+                "start_index": 41
             },
             {
-                "text": "عليه",
-                "confidence": 1.0,
-                "start_index": 44
-            },
-            {
-                "text": "وسلم",
+                "text": "1155-4265",
                 "confidence": 1.0,
                 "start_index": 49
             },
             {
-                "text": "يُحِبُّ",
+                "text": "![image](img-1)",
                 "confidence": 1.0,
-                "start_index": 54
-            },
-            {
-                "text": "التَّيَمُّنَ",
-                "confidence": 1.0,
-                "start_index": 62
-            },
-            {
-                "text": "فِي",
-                "confidence": 1.0,
-                "start_index": 75
-            },
-            {
-                "text": "إِدْرِيسَ،",
-                "confidence": 1.0,
-                "start_index": 79
-            },
-            {
-                "text": "كِلَاهُمَا",
-                "confidence": 1.0,
-                "start_index": 90
-            },
-            {
-                "text": "عَنْ",
-                "confidence": 1.0,
-                "start_index": 101
-            },
-            {
-                "text": "الدر",
-                "confidence": 1.0,
-                "start_index": 106
-            },
-            {
-                "text": "المختار،",
-                "confidence": 1.0,
-                "start_index": 111
-            },
-            {
-                "text": "لابن",
-                "confidence": 1.0,
-                "start_index": 120
-            },
-            {
-                "text": "عابدين",
-                "confidence": 1.0,
-                "start_index": 125
-            },
-            {
-                "text": "(٢/",
-                "confidence": 1.0,
-                "start_index": 132
-            },
-            {
-                "text": "١٢٠",
-                "confidence": 1.0,
-                "start_index": 136
-            },
-            {
-                "text": "للحاجة",
-                "confidence": 1.0,
-                "start_index": 140
-            },
-            {
-                "text": "لمن",
-                "confidence": 1.0,
-                "start_index": 147
-            },
-            {
-                "text": "لا",
-                "confidence": 1.0,
-                "start_index": 151
-            },
-            {
-                "text": "يتخذه",
-                "confidence": 1.0,
-                "start_index": 154
-            },
-            {
-                "text": "وَخَدَمًا)",
-                "confidence": 1.0,
-                "start_index": 160
-            },
-            {
-                "text": "):",
-                "confidence": 1.0,
-                "start_index": 171
-            },
-            {
-                "text": "الحشم",
-                "confidence": 1.0,
-                "start_index": 174
-            },
-            {
-                "text": "هم:",
-                "confidence": 1.0,
-                "start_index": 180
-            },
-            {
-                "text": "خدم",
-                "confidence": 1.0,
-                "start_index": 184
-            },
-            {
-                "text": "الرجل",
-                "confidence": 1.0,
-                "start_index": 188
-            },
-            {
-                "text": "\"يَذْكُرْ",
-                "confidence": 1.0,
-                "start_index": 194
-            },
-            {
-                "text": "قَوْلَ",
-                "confidence": 1.0,
-                "start_index": 204
-            },
-            {
-                "text": "مُعَاوِيَةَ:",
-                "confidence": 1.0,
-                "start_index": 211
-            },
-            {
-                "text": "بَلَغَنِي.",
-                "confidence": 1.0,
-                "start_index": 224
-            },
-            {
-                "text": "في",
-                "confidence": 1.0,
-                "start_index": 235
-            },
-            {
-                "text": "هذا",
-                "confidence": 1.0,
-                "start_index": 238
-            },
-            {
-                "text": "الحديث:",
-                "confidence": 1.0,
-                "start_index": 242
-            },
-            {
-                "text": "فضل",
-                "confidence": 1.0,
-                "start_index": 250
-            },
-            {
-                "text": "قراءة",
-                "confidence": 1.0,
-                "start_index": 254
-            },
-            {
-                "text": "القرآن،",
-                "confidence": 1.0,
-                "start_index": 260
-            },
-            {
-                "text": "وأن",
-                "confidence": 1.0,
-                "start_index": 268
-            },
-            {
-                "text": "من",
-                "confidence": 1.0,
-                "start_index": 272
-            },
-            {
-                "text": "عمل",
-                "confidence": 1.0,
-                "start_index": 275
-            },
-            {
-                "text": "به",
-                "confidence": 1.0,
-                "start_index": 279
-            },
-            {
-                "text": "يأتي",
-                "confidence": 1.0,
-                "start_index": 282
-            },
-            {
-                "text": "له",
-                "confidence": 1.0,
-                "start_index": 287
-            },
-            {
-                "text": "شفيعًا",
-                "confidence": 1.0,
-                "start_index": 290
-            },
-            {
-                "text": "يوم",
-                "confidence": 1.0,
-                "start_index": 297
-            },
-            {
-                "text": "القيامة.",
-                "confidence": 1.0,
-                "start_index": 301
-            },
-            {
-                "text": "وفيه:",
-                "confidence": 1.0,
-                "start_index": 310
-            },
-            {
-                "text": "فضل",
-                "confidence": 1.0,
-                "start_index": 316
-            },
-            {
-                "text": "سورة\"",
-                "confidence": 1.0,
-                "start_index": 320
+                "start_index": 60
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -283,78 +80,58 @@
     },
     "blocks": [
         {
-            "top_left_x": 40,
-            "top_left_y": 40,
-            "bottom_right_x": 777,
-            "bottom_right_y": 207,
-            "content": "الله عليه وسلم: ((لَوْلَا حِدْثَانُ",
-            "type": "title",
+            "top_left_x": 10,
+            "top_left_y": 10,
+            "bottom_right_x": 312,
+            "bottom_right_y": 32,
+            "content": "عن الزهري أن عبد",
+            "type": "text",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 419,
-            "top_left_y": 629,
-            "bottom_right_x": 777,
-            "bottom_right_y": 658,
-            "content": "الله عليه وسلم يُحِبُّ التَّيَمُّنَ فِي",
-            "type": "text",
+            "top_left_x": 268,
+            "top_left_y": 73,
+            "bottom_right_x": 312,
+            "bottom_right_y": 129,
+            "content": "![image](img-0)",
+            "type": "image",
             "confidence_scores": null,
             "reading_index": 2
         },
         {
-            "top_left_x": 419,
-            "top_left_y": 658,
-            "bottom_right_x": 777,
-            "bottom_right_y": 687,
-            "content": "إِدْرِيسَ، كِلَاهُمَا عَنْ",
+            "top_left_x": 10,
+            "top_left_y": 77,
+            "bottom_right_x": 260,
+            "bottom_right_y": 101,
+            "content": "فاطمة الزهراء",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 3
         },
         {
-            "top_left_x": 419,
-            "top_left_y": 687,
-            "bottom_right_x": 777,
-            "bottom_right_y": 716,
-            "content": "الدر المختار، لابن عابدين (٢/ ١٢٠",
+            "top_left_x": 10,
+            "top_left_y": 105,
+            "bottom_right_x": 260,
+            "bottom_right_y": 126,
+            "content": "1155-4265",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 4
         },
         {
-            "top_left_x": 419,
-            "top_left_y": 716,
-            "bottom_right_x": 777,
-            "bottom_right_y": 745,
-            "content": "للحاجة لمن لا يتخذه",
-            "type": "text",
+            "top_left_x": 10,
+            "top_left_y": 170,
+            "bottom_right_x": 312,
+            "bottom_right_y": 200,
+            "content": "![image](img-1)",
+            "type": "image",
             "confidence_scores": null,
             "reading_index": 5
-        },
-        {
-            "top_left_x": 419,
-            "top_left_y": 745,
-            "bottom_right_x": 777,
-            "bottom_right_y": 774,
-            "content": "وَخَدَمًا) ): الحشم هم: خدم الرجل",
-            "type": "text",
-            "confidence_scores": null,
-            "reading_index": 6
-        },
-        {
-            "top_left_x": 60,
-            "top_left_y": 237,
-            "bottom_right_x": 375,
-            "bottom_right_y": 1165,
-            "content": "\"يَذْكُرْ قَوْلَ مُعَاوِيَةَ: بَلَغَنِي. في هذا الحديث: فضل قراءة القرآن، وأن من عمل به يأتي له شفيعًا يوم القيامة. وفيه: فضل سورة\"",
-            "type": "text",
-            "confidence_scores": null,
-            "reading_index": 7
         }
     ],
     "meta": {
-        "template": "a4_literary",
+        "template": "id_card",
         "hybrid": null
     }
 }

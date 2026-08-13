@@ -19,7 +19,7 @@ def generate(hybrid_html=""):
     intro = random.choice(assets.LETTER_INTROS)
     body_paras = [assets.get_real_arabic_text(60, 150) for _ in range(random.randint(1, 2))]
     closing = random.choice(assets.LETTER_CLOSINGS)
-    signature_name = assets.get_real_arabic_text(2, 3)
+    signature_name = assets.get_real_arabic_name()
 
     def block(label, text, size=14, bold=False, align="right"):
         weight = "bold" if bold else "normal"

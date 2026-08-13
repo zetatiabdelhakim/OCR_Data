@@ -1,85 +1,339 @@
 {
-    "markdown": "\n![image](img-0)\n\nتدخريه في الوعاء\nرَسُولُ اللَّهِ صلى\n0619353552\nيَمُوتُ وَلَمْ يُؤْمِنْ بِالَّذِي",
-    "images": [
+    "markdown": "اللهُ)} لتوكيد\nINV-92009\n25/06/2023\nفاتورة إلى: النّفي في جميع ما\n\n[tbl-0.html](tbl-0.html)\n\nالإجمالي: 8,970.33",
+    "images": [],
+    "tables": [
         {
-            "id": "img-0",
-            "top_left_x": 273,
-            "top_left_y": 14,
-            "bottom_right_x": 319,
-            "bottom_right_y": 60,
-            "reading_index": 1
+            "id": "tbl-0.html",
+            "content": "<table><tbody><tr><th>البيان</th><th>الكمية</th><th>السعر</th><th>المجموع</th></tr><tr><td>ادّعاه المشركون أنّهم</td><td>11</td><td>217.59</td><td>2,393.49</td></tr><tr><td>آلهة. قوله تعالى:</td><td>2</td><td>134.58</td><td>269.16</td></tr><tr><td>{وَإِنَّ اللهَ لَهُوَ</td><td>3</td><td>22.66</td><td>67.98</td></tr><tr><td>الْعَزِيزُ الْحَكِيمُ}</td><td>2</td><td>179.16</td><td>358.32</td></tr><tr><td>(62)؛أي العزيز بالنقمة لمن لا</td><td>3</td><td>241.76</td><td>725.28</td></tr><tr><td>يؤمن به،</td><td>5</td><td>190.98</td><td>954.90</td></tr><tr><td>ذو الحكمة</td><td>10</td><td>110.52</td><td>1,105.20</td></tr><tr><td>في خلق</td><td>12</td><td>258.00</td><td>3,096.00</td></tr></tbody></table>",
+            "format": "html",
+            "word_confidence_scores": [
+                {
+                    "text": "البيان",
+                    "confidence": 1.0,
+                    "start_index": 22
+                },
+                {
+                    "text": "الكمية",
+                    "confidence": 1.0,
+                    "start_index": 37
+                },
+                {
+                    "text": "السعر",
+                    "confidence": 1.0,
+                    "start_index": 52
+                },
+                {
+                    "text": "المجموع",
+                    "confidence": 1.0,
+                    "start_index": 66
+                },
+                {
+                    "text": "ادّعاه",
+                    "confidence": 1.0,
+                    "start_index": 91
+                },
+                {
+                    "text": " المشركون",
+                    "confidence": 1.0,
+                    "start_index": 97
+                },
+                {
+                    "text": " أنّهم",
+                    "confidence": 1.0,
+                    "start_index": 106
+                },
+                {
+                    "text": "11",
+                    "confidence": 1.0,
+                    "start_index": 121
+                },
+                {
+                    "text": "217.59",
+                    "confidence": 1.0,
+                    "start_index": 132
+                },
+                {
+                    "text": "2,393.49",
+                    "confidence": 1.0,
+                    "start_index": 147
+                },
+                {
+                    "text": "آلهة.",
+                    "confidence": 1.0,
+                    "start_index": 173
+                },
+                {
+                    "text": " قوله",
+                    "confidence": 1.0,
+                    "start_index": 178
+                },
+                {
+                    "text": " تعالى:",
+                    "confidence": 1.0,
+                    "start_index": 183
+                },
+                {
+                    "text": "2",
+                    "confidence": 1.0,
+                    "start_index": 199
+                },
+                {
+                    "text": "134.58",
+                    "confidence": 1.0,
+                    "start_index": 209
+                },
+                {
+                    "text": "269.16",
+                    "confidence": 1.0,
+                    "start_index": 224
+                },
+                {
+                    "text": "{وَإِنَّ",
+                    "confidence": 1.0,
+                    "start_index": 248
+                },
+                {
+                    "text": " اللهَ",
+                    "confidence": 1.0,
+                    "start_index": 256
+                },
+                {
+                    "text": " لَهُوَ",
+                    "confidence": 1.0,
+                    "start_index": 262
+                },
+                {
+                    "text": "3",
+                    "confidence": 1.0,
+                    "start_index": 278
+                },
+                {
+                    "text": "22.66",
+                    "confidence": 1.0,
+                    "start_index": 288
+                },
+                {
+                    "text": "67.98",
+                    "confidence": 1.0,
+                    "start_index": 302
+                },
+                {
+                    "text": "الْعَزِيزُ",
+                    "confidence": 1.0,
+                    "start_index": 325
+                },
+                {
+                    "text": " الْحَكِيمُ}",
+                    "confidence": 1.0,
+                    "start_index": 335
+                },
+                {
+                    "text": "2",
+                    "confidence": 1.0,
+                    "start_index": 356
+                },
+                {
+                    "text": "179.16",
+                    "confidence": 1.0,
+                    "start_index": 366
+                },
+                {
+                    "text": "358.32",
+                    "confidence": 1.0,
+                    "start_index": 381
+                },
+                {
+                    "text": "(62)؛أي",
+                    "confidence": 1.0,
+                    "start_index": 405
+                },
+                {
+                    "text": " العزيز",
+                    "confidence": 1.0,
+                    "start_index": 412
+                },
+                {
+                    "text": " بالنقمة",
+                    "confidence": 1.0,
+                    "start_index": 419
+                },
+                {
+                    "text": " لمن",
+                    "confidence": 1.0,
+                    "start_index": 427
+                },
+                {
+                    "text": " لا",
+                    "confidence": 1.0,
+                    "start_index": 431
+                },
+                {
+                    "text": "3",
+                    "confidence": 1.0,
+                    "start_index": 443
+                },
+                {
+                    "text": "241.76",
+                    "confidence": 1.0,
+                    "start_index": 453
+                },
+                {
+                    "text": "725.28",
+                    "confidence": 1.0,
+                    "start_index": 468
+                },
+                {
+                    "text": "يؤمن",
+                    "confidence": 1.0,
+                    "start_index": 492
+                },
+                {
+                    "text": " به،",
+                    "confidence": 1.0,
+                    "start_index": 496
+                },
+                {
+                    "text": "5",
+                    "confidence": 1.0,
+                    "start_index": 509
+                },
+                {
+                    "text": "190.98",
+                    "confidence": 1.0,
+                    "start_index": 519
+                },
+                {
+                    "text": "954.90",
+                    "confidence": 1.0,
+                    "start_index": 534
+                },
+                {
+                    "text": "ذو",
+                    "confidence": 1.0,
+                    "start_index": 558
+                },
+                {
+                    "text": " الحكمة",
+                    "confidence": 1.0,
+                    "start_index": 560
+                },
+                {
+                    "text": "10",
+                    "confidence": 1.0,
+                    "start_index": 576
+                },
+                {
+                    "text": "110.52",
+                    "confidence": 1.0,
+                    "start_index": 587
+                },
+                {
+                    "text": "1,105.20",
+                    "confidence": 1.0,
+                    "start_index": 602
+                },
+                {
+                    "text": "في",
+                    "confidence": 1.0,
+                    "start_index": 628
+                },
+                {
+                    "text": " خلق",
+                    "confidence": 1.0,
+                    "start_index": 630
+                },
+                {
+                    "text": "12",
+                    "confidence": 1.0,
+                    "start_index": 643
+                },
+                {
+                    "text": "258.00",
+                    "confidence": 1.0,
+                    "start_index": 654
+                },
+                {
+                    "text": "3,096.00",
+                    "confidence": 1.0,
+                    "start_index": 669
+                }
+            ]
         }
     ],
-    "tables": [],
     "hyperlinks": [],
     "header": null,
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 196,
-        "width": 333
+        "height": 1003,
+        "width": 823
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "![image](img-0)",
+                "text": "اللهُ)}",
                 "confidence": 1.0,
-                "start_index": 1
+                "start_index": 0
             },
             {
-                "text": "تدخريه",
+                "text": "لتوكيد",
                 "confidence": 1.0,
-                "start_index": 18
+                "start_index": 8
             },
             {
-                "text": "في",
+                "text": "INV-92009",
+                "confidence": 1.0,
+                "start_index": 15
+            },
+            {
+                "text": "25/06/2023",
                 "confidence": 1.0,
                 "start_index": 25
             },
             {
-                "text": "الوعاء",
+                "text": "فاتورة",
                 "confidence": 1.0,
-                "start_index": 28
+                "start_index": 36
             },
             {
-                "text": "رَسُولُ",
-                "confidence": 1.0,
-                "start_index": 35
-            },
-            {
-                "text": "اللَّهِ",
+                "text": "إلى:",
                 "confidence": 1.0,
                 "start_index": 43
             },
             {
-                "text": "صلى",
+                "text": "النّفي",
                 "confidence": 1.0,
-                "start_index": 51
+                "start_index": 48
             },
             {
-                "text": "0619353552",
+                "text": "في",
                 "confidence": 1.0,
                 "start_index": 55
             },
             {
-                "text": "يَمُوتُ",
+                "text": "جميع",
                 "confidence": 1.0,
-                "start_index": 66
+                "start_index": 58
             },
             {
-                "text": "وَلَمْ",
+                "text": "ما",
                 "confidence": 1.0,
-                "start_index": 74
+                "start_index": 63
             },
             {
-                "text": "يُؤْمِنْ",
+                "text": "[tbl-0.html](tbl-0.html)",
                 "confidence": 1.0,
-                "start_index": 81
+                "start_index": 67
             },
             {
-                "text": "بِالَّذِي",
+                "text": "الإجمالي:",
                 "confidence": 1.0,
-                "start_index": 90
+                "start_index": 93
+            },
+            {
+                "text": "8,970.33",
+                "confidence": 1.0,
+                "start_index": 103
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -87,58 +341,69 @@
     },
     "blocks": [
         {
-            "top_left_x": 273,
-            "top_left_y": 14,
-            "bottom_right_x": 319,
-            "bottom_right_y": 60,
-            "content": "![image](img-0)",
-            "type": "image",
+            "top_left_x": 44,
+            "top_left_y": 44,
+            "bottom_right_x": 779,
+            "bottom_right_y": 79,
+            "content": "اللهُ)} لتوكيد",
+            "type": "text",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 14,
-            "top_left_y": 103,
-            "bottom_right_x": 319,
-            "bottom_right_y": 127,
-            "content": "تدخريه في الوعاء",
+            "top_left_x": 726,
+            "top_left_y": 87,
+            "bottom_right_x": 779,
+            "bottom_right_y": 108,
+            "content": "INV-92009",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 2
         },
         {
-            "top_left_x": 14,
-            "top_left_y": 129,
-            "bottom_right_x": 319,
-            "bottom_right_y": 146,
-            "content": "رَسُولُ اللَّهِ صلى",
+            "top_left_x": 44,
+            "top_left_y": 87,
+            "bottom_right_x": 93,
+            "bottom_right_y": 108,
+            "content": "25/06/2023",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 3
         },
         {
-            "top_left_x": 14,
-            "top_left_y": 152,
-            "bottom_right_x": 319,
-            "bottom_right_y": 167,
-            "content": "0619353552",
+            "top_left_x": 44,
+            "top_left_y": 130,
+            "bottom_right_x": 779,
+            "bottom_right_y": 153,
+            "content": "فاتورة إلى: النّفي في جميع ما",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 4
         },
         {
-            "top_left_x": 14,
+            "top_left_x": 44,
             "top_left_y": 167,
-            "bottom_right_x": 319,
-            "bottom_right_y": 182,
-            "content": "يَمُوتُ وَلَمْ يُؤْمِنْ بِالَّذِي",
-            "type": "text",
+            "bottom_right_x": 779,
+            "bottom_right_y": 568,
+            "content": "<table><tbody><tr><th>البيان</th><th>الكمية</th><th>السعر</th><th>المجموع</th></tr><tr><td>ادّعاه المشركون أنّهم</td><td>11</td><td>217.59</td><td>2,393.49</td></tr><tr><td>آلهة. قوله تعالى:</td><td>2</td><td>134.58</td><td>269.16</td></tr><tr><td>{وَإِنَّ اللهَ لَهُوَ</td><td>3</td><td>22.66</td><td>67.98</td></tr><tr><td>الْعَزِيزُ الْحَكِيمُ}</td><td>2</td><td>179.16</td><td>358.32</td></tr><tr><td>(62)؛أي العزيز بالنقمة لمن لا</td><td>3</td><td>241.76</td><td>725.28</td></tr><tr><td>يؤمن به،</td><td>5</td><td>190.98</td><td>954.90</td></tr><tr><td>ذو الحكمة</td><td>10</td><td>110.52</td><td>1,105.20</td></tr><tr><td>في خلق</td><td>12</td><td>258.00</td><td>3,096.00</td></tr></tbody></table>",
+            "type": "table",
+            "table_id": "tbl-0.html",
             "confidence_scores": null,
             "reading_index": 5
+        },
+        {
+            "top_left_x": 44,
+            "top_left_y": 582,
+            "bottom_right_x": 147,
+            "bottom_right_y": 608,
+            "content": "الإجمالي: 8,970.33",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 6
         }
     ],
     "meta": {
-        "template": "business_card",
+        "template": "invoice",
         "hybrid": null
     }
 }

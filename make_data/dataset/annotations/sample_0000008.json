@@ -1,80 +1,879 @@
 {
-    "markdown": "\n![image](img-0)\n\nيَحْيَى: أَخْبَرَنَا، وَقَالَ\nإلى أن\n0684520824\nوَاسْتِحْبَابِ الوُضُوءِ لَهُ، وَغَسْلِ",
-    "images": [
+    "markdown": "غير الله\nالدار البيضاء، في 24/01/2024\nحضرة السيد المدير المحترم،\nالموضوع: يجازيهم على ذلك. ثم دعاهم\nتحية طيبة وبعد،\nالله إلى التوحيد فقال عز وجل: {قُلْ يا أَهْلَ الْكِتابِ تَعالَوْا إِلى كَلِمَةٍ سَواءٍ بَيْنَنا وَبَيْنَكُمْ أَلاّ نَعْبُدَ إِلاَّ اللهَ وَلا نُشْرِكَ بِهِ شَيْئاً؛} أي قل لهم يا محمّد: يا أهل الكتاب هلمّوا إلى كلمة عدل بيننا وبينكم. وفي (سواء) ثلاث لغات: سواء وسوى وسوا، ولا يمدّ فيها إلاّ المفتوح، قال الله تعالى: {مَكاناً سُوىً} (1) .ثم فسّر الكلمة فقال تعالى: {(أَلاّ نَعْبُدَ إِلاَّ اللهَ وَلا نُشْرِكَ بِهِ)} أحدا من\n\n[tbl-0.html](tbl-0.html)\n\nشاكرين لكم حسن تعاونكم.\nطارق بن زياد",
+    "images": [],
+    "tables": [
         {
-            "id": "img-0",
-            "top_left_x": 238,
-            "top_left_y": 14,
-            "bottom_right_x": 284,
-            "bottom_right_y": 60,
-            "reading_index": 1
+            "id": "tbl-0.html",
+            "content": "<table><tbody><tr><th>قوله {(وَما</th><th>مِنْ إِلهٍ إِلاَّ</th><th>اللهُ)}</th></tr><tr><td>لتوكيد النّفي في جميع ما</td><td>ادّعاه المشركون أنّهم آلهة. قوله تعالى: {وَإِنَّ اللهَ</td><td>لَهُوَ الْعَزِيزُ الْحَكِيمُ} (62)؛أي</td></tr><tr><td>العزيز بالنقمة لمن لا يؤمن به، ذو الحكمة</td><td>في خلق عيسى</td><td>عليه السلام من غير أب؛ وفي أمره ألاّ</td></tr><tr><td>تعبدوا إلاّ الله تعالى. قوله تعالى: {فَإِنْ</td><td>تَوَلَّوْا فَإِنَّ اللهَ عَلِيمٌ بِالْمُفْسِدِينَ} (63)؛أي</td><td>إن أعرضوا عمّا أتيت</td></tr><tr><td>به من البيان؛ فإنّ الله عالم بالمفسدين الذين</td><td>يعبدون غير</td><td>الله ويدعون الناس إلى عبادة</td></tr></tbody></table>",
+            "format": "html",
+            "word_confidence_scores": [
+                {
+                    "text": "قوله",
+                    "confidence": 1.0,
+                    "start_index": 22
+                },
+                {
+                    "text": " {(وَما",
+                    "confidence": 1.0,
+                    "start_index": 26
+                },
+                {
+                    "text": "مِنْ",
+                    "confidence": 1.0,
+                    "start_index": 42
+                },
+                {
+                    "text": " إِلهٍ",
+                    "confidence": 1.0,
+                    "start_index": 46
+                },
+                {
+                    "text": " إِلاَّ",
+                    "confidence": 1.0,
+                    "start_index": 52
+                },
+                {
+                    "text": "اللهُ)}",
+                    "confidence": 1.0,
+                    "start_index": 68
+                },
+                {
+                    "text": "لتوكيد",
+                    "confidence": 1.0,
+                    "start_index": 93
+                },
+                {
+                    "text": " النّفي",
+                    "confidence": 1.0,
+                    "start_index": 99
+                },
+                {
+                    "text": " في",
+                    "confidence": 1.0,
+                    "start_index": 106
+                },
+                {
+                    "text": " جميع",
+                    "confidence": 1.0,
+                    "start_index": 109
+                },
+                {
+                    "text": " ما",
+                    "confidence": 1.0,
+                    "start_index": 114
+                },
+                {
+                    "text": "ادّعاه",
+                    "confidence": 1.0,
+                    "start_index": 126
+                },
+                {
+                    "text": " المشركون",
+                    "confidence": 1.0,
+                    "start_index": 132
+                },
+                {
+                    "text": " أنّهم",
+                    "confidence": 1.0,
+                    "start_index": 141
+                },
+                {
+                    "text": " آلهة.",
+                    "confidence": 1.0,
+                    "start_index": 147
+                },
+                {
+                    "text": " قوله",
+                    "confidence": 1.0,
+                    "start_index": 153
+                },
+                {
+                    "text": " تعالى:",
+                    "confidence": 1.0,
+                    "start_index": 158
+                },
+                {
+                    "text": " {وَإِنَّ",
+                    "confidence": 1.0,
+                    "start_index": 165
+                },
+                {
+                    "text": " اللهَ",
+                    "confidence": 1.0,
+                    "start_index": 174
+                },
+                {
+                    "text": "لَهُوَ",
+                    "confidence": 1.0,
+                    "start_index": 189
+                },
+                {
+                    "text": " الْعَزِيزُ",
+                    "confidence": 1.0,
+                    "start_index": 195
+                },
+                {
+                    "text": " الْحَكِيمُ}",
+                    "confidence": 1.0,
+                    "start_index": 206
+                },
+                {
+                    "text": " (62)؛أي",
+                    "confidence": 1.0,
+                    "start_index": 218
+                },
+                {
+                    "text": "العزيز",
+                    "confidence": 1.0,
+                    "start_index": 244
+                },
+                {
+                    "text": " بالنقمة",
+                    "confidence": 1.0,
+                    "start_index": 250
+                },
+                {
+                    "text": " لمن",
+                    "confidence": 1.0,
+                    "start_index": 258
+                },
+                {
+                    "text": " لا",
+                    "confidence": 1.0,
+                    "start_index": 262
+                },
+                {
+                    "text": " يؤمن",
+                    "confidence": 1.0,
+                    "start_index": 265
+                },
+                {
+                    "text": " به،",
+                    "confidence": 1.0,
+                    "start_index": 270
+                },
+                {
+                    "text": " ذو",
+                    "confidence": 1.0,
+                    "start_index": 274
+                },
+                {
+                    "text": " الحكمة",
+                    "confidence": 1.0,
+                    "start_index": 277
+                },
+                {
+                    "text": "في",
+                    "confidence": 1.0,
+                    "start_index": 293
+                },
+                {
+                    "text": " خلق",
+                    "confidence": 1.0,
+                    "start_index": 295
+                },
+                {
+                    "text": " عيسى",
+                    "confidence": 1.0,
+                    "start_index": 299
+                },
+                {
+                    "text": "عليه",
+                    "confidence": 1.0,
+                    "start_index": 313
+                },
+                {
+                    "text": " السلام",
+                    "confidence": 1.0,
+                    "start_index": 317
+                },
+                {
+                    "text": " من",
+                    "confidence": 1.0,
+                    "start_index": 324
+                },
+                {
+                    "text": " غير",
+                    "confidence": 1.0,
+                    "start_index": 327
+                },
+                {
+                    "text": " أب؛",
+                    "confidence": 1.0,
+                    "start_index": 331
+                },
+                {
+                    "text": " وفي",
+                    "confidence": 1.0,
+                    "start_index": 335
+                },
+                {
+                    "text": " أمره",
+                    "confidence": 1.0,
+                    "start_index": 339
+                },
+                {
+                    "text": " ألاّ",
+                    "confidence": 1.0,
+                    "start_index": 344
+                },
+                {
+                    "text": "تعبدوا",
+                    "confidence": 1.0,
+                    "start_index": 367
+                },
+                {
+                    "text": " إلاّ",
+                    "confidence": 1.0,
+                    "start_index": 373
+                },
+                {
+                    "text": " الله",
+                    "confidence": 1.0,
+                    "start_index": 378
+                },
+                {
+                    "text": " تعالى.",
+                    "confidence": 1.0,
+                    "start_index": 383
+                },
+                {
+                    "text": " قوله",
+                    "confidence": 1.0,
+                    "start_index": 390
+                },
+                {
+                    "text": " تعالى:",
+                    "confidence": 1.0,
+                    "start_index": 395
+                },
+                {
+                    "text": " {فَإِنْ",
+                    "confidence": 1.0,
+                    "start_index": 402
+                },
+                {
+                    "text": "تَوَلَّوْا",
+                    "confidence": 1.0,
+                    "start_index": 419
+                },
+                {
+                    "text": " فَإِنَّ",
+                    "confidence": 1.0,
+                    "start_index": 429
+                },
+                {
+                    "text": " اللهَ",
+                    "confidence": 1.0,
+                    "start_index": 437
+                },
+                {
+                    "text": " عَلِيمٌ",
+                    "confidence": 1.0,
+                    "start_index": 443
+                },
+                {
+                    "text": " بِالْمُفْسِدِينَ}",
+                    "confidence": 1.0,
+                    "start_index": 451
+                },
+                {
+                    "text": " (63)؛أي",
+                    "confidence": 1.0,
+                    "start_index": 469
+                },
+                {
+                    "text": "إن",
+                    "confidence": 1.0,
+                    "start_index": 486
+                },
+                {
+                    "text": " أعرضوا",
+                    "confidence": 1.0,
+                    "start_index": 488
+                },
+                {
+                    "text": " عمّا",
+                    "confidence": 1.0,
+                    "start_index": 495
+                },
+                {
+                    "text": " أتيت",
+                    "confidence": 1.0,
+                    "start_index": 500
+                },
+                {
+                    "text": "به",
+                    "confidence": 1.0,
+                    "start_index": 523
+                },
+                {
+                    "text": " من",
+                    "confidence": 1.0,
+                    "start_index": 525
+                },
+                {
+                    "text": " البيان؛",
+                    "confidence": 1.0,
+                    "start_index": 528
+                },
+                {
+                    "text": " فإنّ",
+                    "confidence": 1.0,
+                    "start_index": 536
+                },
+                {
+                    "text": " الله",
+                    "confidence": 1.0,
+                    "start_index": 541
+                },
+                {
+                    "text": " عالم",
+                    "confidence": 1.0,
+                    "start_index": 546
+                },
+                {
+                    "text": " بالمفسدين",
+                    "confidence": 1.0,
+                    "start_index": 551
+                },
+                {
+                    "text": " الذين",
+                    "confidence": 1.0,
+                    "start_index": 561
+                },
+                {
+                    "text": "يعبدون",
+                    "confidence": 1.0,
+                    "start_index": 576
+                },
+                {
+                    "text": " غير",
+                    "confidence": 1.0,
+                    "start_index": 582
+                },
+                {
+                    "text": "الله",
+                    "confidence": 1.0,
+                    "start_index": 595
+                },
+                {
+                    "text": " ويدعون",
+                    "confidence": 1.0,
+                    "start_index": 599
+                },
+                {
+                    "text": " الناس",
+                    "confidence": 1.0,
+                    "start_index": 606
+                },
+                {
+                    "text": " إلى",
+                    "confidence": 1.0,
+                    "start_index": 612
+                },
+                {
+                    "text": " عبادة",
+                    "confidence": 1.0,
+                    "start_index": 616
+                }
+            ]
         }
     ],
-    "tables": [],
     "hyperlinks": [],
     "header": null,
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 225,
-        "width": 298
+        "height": 1069,
+        "width": 854
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "![image](img-0)",
+                "text": "غير",
                 "confidence": 1.0,
-                "start_index": 1
+                "start_index": 0
             },
             {
-                "text": "يَحْيَى:",
+                "text": "الله",
                 "confidence": 1.0,
-                "start_index": 18
+                "start_index": 4
             },
             {
-                "text": "أَخْبَرَنَا،",
+                "text": "الدار",
+                "confidence": 1.0,
+                "start_index": 9
+            },
+            {
+                "text": "البيضاء،",
+                "confidence": 1.0,
+                "start_index": 15
+            },
+            {
+                "text": "في",
+                "confidence": 1.0,
+                "start_index": 24
+            },
+            {
+                "text": "24/01/2024",
                 "confidence": 1.0,
                 "start_index": 27
             },
             {
-                "text": "وَقَالَ",
+                "text": "حضرة",
                 "confidence": 1.0,
-                "start_index": 40
+                "start_index": 38
             },
             {
-                "text": "إلى",
+                "text": "السيد",
                 "confidence": 1.0,
-                "start_index": 48
+                "start_index": 43
             },
             {
-                "text": "أن",
+                "text": "المدير",
                 "confidence": 1.0,
-                "start_index": 52
+                "start_index": 49
             },
             {
-                "text": "0684520824",
+                "text": "المحترم،",
                 "confidence": 1.0,
-                "start_index": 55
+                "start_index": 56
             },
             {
-                "text": "وَاسْتِحْبَابِ",
+                "text": "الموضوع:",
                 "confidence": 1.0,
-                "start_index": 66
+                "start_index": 65
             },
             {
-                "text": "الوُضُوءِ",
+                "text": "يجازيهم",
                 "confidence": 1.0,
-                "start_index": 81
+                "start_index": 74
             },
             {
-                "text": "لَهُ،",
+                "text": "على",
+                "confidence": 1.0,
+                "start_index": 82
+            },
+            {
+                "text": "ذلك.",
+                "confidence": 1.0,
+                "start_index": 86
+            },
+            {
+                "text": "ثم",
                 "confidence": 1.0,
                 "start_index": 91
             },
             {
-                "text": "وَغَسْلِ",
+                "text": "دعاهم",
                 "confidence": 1.0,
-                "start_index": 97
+                "start_index": 94
+            },
+            {
+                "text": "تحية",
+                "confidence": 1.0,
+                "start_index": 100
+            },
+            {
+                "text": "طيبة",
+                "confidence": 1.0,
+                "start_index": 105
+            },
+            {
+                "text": "وبعد،",
+                "confidence": 1.0,
+                "start_index": 110
+            },
+            {
+                "text": "الله",
+                "confidence": 1.0,
+                "start_index": 116
+            },
+            {
+                "text": "إلى",
+                "confidence": 1.0,
+                "start_index": 121
+            },
+            {
+                "text": "التوحيد",
+                "confidence": 1.0,
+                "start_index": 125
+            },
+            {
+                "text": "فقال",
+                "confidence": 1.0,
+                "start_index": 133
+            },
+            {
+                "text": "عز",
+                "confidence": 1.0,
+                "start_index": 138
+            },
+            {
+                "text": "وجل:",
+                "confidence": 1.0,
+                "start_index": 141
+            },
+            {
+                "text": "{قُلْ",
+                "confidence": 1.0,
+                "start_index": 146
+            },
+            {
+                "text": "يا",
+                "confidence": 1.0,
+                "start_index": 152
+            },
+            {
+                "text": "أَهْلَ",
+                "confidence": 1.0,
+                "start_index": 155
+            },
+            {
+                "text": "الْكِتابِ",
+                "confidence": 1.0,
+                "start_index": 162
+            },
+            {
+                "text": "تَعالَوْا",
+                "confidence": 1.0,
+                "start_index": 172
+            },
+            {
+                "text": "إِلى",
+                "confidence": 1.0,
+                "start_index": 182
+            },
+            {
+                "text": "كَلِمَةٍ",
+                "confidence": 1.0,
+                "start_index": 187
+            },
+            {
+                "text": "سَواءٍ",
+                "confidence": 1.0,
+                "start_index": 196
+            },
+            {
+                "text": "بَيْنَنا",
+                "confidence": 1.0,
+                "start_index": 203
+            },
+            {
+                "text": "وَبَيْنَكُمْ",
+                "confidence": 1.0,
+                "start_index": 212
+            },
+            {
+                "text": "أَلاّ",
+                "confidence": 1.0,
+                "start_index": 225
+            },
+            {
+                "text": "نَعْبُدَ",
+                "confidence": 1.0,
+                "start_index": 231
+            },
+            {
+                "text": "إِلاَّ",
+                "confidence": 1.0,
+                "start_index": 240
+            },
+            {
+                "text": "اللهَ",
+                "confidence": 1.0,
+                "start_index": 247
+            },
+            {
+                "text": "وَلا",
+                "confidence": 1.0,
+                "start_index": 253
+            },
+            {
+                "text": "نُشْرِكَ",
+                "confidence": 1.0,
+                "start_index": 258
+            },
+            {
+                "text": "بِهِ",
+                "confidence": 1.0,
+                "start_index": 267
+            },
+            {
+                "text": "شَيْئاً؛}",
+                "confidence": 1.0,
+                "start_index": 272
+            },
+            {
+                "text": "أي",
+                "confidence": 1.0,
+                "start_index": 282
+            },
+            {
+                "text": "قل",
+                "confidence": 1.0,
+                "start_index": 285
+            },
+            {
+                "text": "لهم",
+                "confidence": 1.0,
+                "start_index": 288
+            },
+            {
+                "text": "يا",
+                "confidence": 1.0,
+                "start_index": 292
+            },
+            {
+                "text": "محمّد:",
+                "confidence": 1.0,
+                "start_index": 295
+            },
+            {
+                "text": "يا",
+                "confidence": 1.0,
+                "start_index": 302
+            },
+            {
+                "text": "أهل",
+                "confidence": 1.0,
+                "start_index": 305
+            },
+            {
+                "text": "الكتاب",
+                "confidence": 1.0,
+                "start_index": 309
+            },
+            {
+                "text": "هلمّوا",
+                "confidence": 1.0,
+                "start_index": 316
+            },
+            {
+                "text": "إلى",
+                "confidence": 1.0,
+                "start_index": 323
+            },
+            {
+                "text": "كلمة",
+                "confidence": 1.0,
+                "start_index": 327
+            },
+            {
+                "text": "عدل",
+                "confidence": 1.0,
+                "start_index": 332
+            },
+            {
+                "text": "بيننا",
+                "confidence": 1.0,
+                "start_index": 336
+            },
+            {
+                "text": "وبينكم.",
+                "confidence": 1.0,
+                "start_index": 342
+            },
+            {
+                "text": "وفي",
+                "confidence": 1.0,
+                "start_index": 350
+            },
+            {
+                "text": "(سواء)",
+                "confidence": 1.0,
+                "start_index": 354
+            },
+            {
+                "text": "ثلاث",
+                "confidence": 1.0,
+                "start_index": 361
+            },
+            {
+                "text": "لغات:",
+                "confidence": 1.0,
+                "start_index": 366
+            },
+            {
+                "text": "سواء",
+                "confidence": 1.0,
+                "start_index": 372
+            },
+            {
+                "text": "وسوى",
+                "confidence": 1.0,
+                "start_index": 377
+            },
+            {
+                "text": "وسوا،",
+                "confidence": 1.0,
+                "start_index": 382
+            },
+            {
+                "text": "ولا",
+                "confidence": 1.0,
+                "start_index": 388
+            },
+            {
+                "text": "يمدّ",
+                "confidence": 1.0,
+                "start_index": 392
+            },
+            {
+                "text": "فيها",
+                "confidence": 1.0,
+                "start_index": 397
+            },
+            {
+                "text": "إلاّ",
+                "confidence": 1.0,
+                "start_index": 402
+            },
+            {
+                "text": "المفتوح،",
+                "confidence": 1.0,
+                "start_index": 407
+            },
+            {
+                "text": "قال",
+                "confidence": 1.0,
+                "start_index": 416
+            },
+            {
+                "text": "الله",
+                "confidence": 1.0,
+                "start_index": 420
+            },
+            {
+                "text": "تعالى:",
+                "confidence": 1.0,
+                "start_index": 425
+            },
+            {
+                "text": "{مَكاناً",
+                "confidence": 1.0,
+                "start_index": 432
+            },
+            {
+                "text": "سُوىً}",
+                "confidence": 1.0,
+                "start_index": 441
+            },
+            {
+                "text": "(1)",
+                "confidence": 1.0,
+                "start_index": 448
+            },
+            {
+                "text": ".ثم",
+                "confidence": 1.0,
+                "start_index": 452
+            },
+            {
+                "text": "فسّر",
+                "confidence": 1.0,
+                "start_index": 456
+            },
+            {
+                "text": "الكلمة",
+                "confidence": 1.0,
+                "start_index": 461
+            },
+            {
+                "text": "فقال",
+                "confidence": 1.0,
+                "start_index": 468
+            },
+            {
+                "text": "تعالى:",
+                "confidence": 1.0,
+                "start_index": 473
+            },
+            {
+                "text": "{(أَلاّ",
+                "confidence": 1.0,
+                "start_index": 480
+            },
+            {
+                "text": "نَعْبُدَ",
+                "confidence": 1.0,
+                "start_index": 488
+            },
+            {
+                "text": "إِلاَّ",
+                "confidence": 1.0,
+                "start_index": 497
+            },
+            {
+                "text": "اللهَ",
+                "confidence": 1.0,
+                "start_index": 504
+            },
+            {
+                "text": "وَلا",
+                "confidence": 1.0,
+                "start_index": 510
+            },
+            {
+                "text": "نُشْرِكَ",
+                "confidence": 1.0,
+                "start_index": 515
+            },
+            {
+                "text": "بِهِ)}",
+                "confidence": 1.0,
+                "start_index": 524
+            },
+            {
+                "text": "أحدا",
+                "confidence": 1.0,
+                "start_index": 531
+            },
+            {
+                "text": "من",
+                "confidence": 1.0,
+                "start_index": 536
+            },
+            {
+                "text": "[tbl-0.html](tbl-0.html)",
+                "confidence": 1.0,
+                "start_index": 540
+            },
+            {
+                "text": "شاكرين",
+                "confidence": 1.0,
+                "start_index": 566
+            },
+            {
+                "text": "لكم",
+                "confidence": 1.0,
+                "start_index": 573
+            },
+            {
+                "text": "حسن",
+                "confidence": 1.0,
+                "start_index": 577
+            },
+            {
+                "text": "تعاونكم.",
+                "confidence": 1.0,
+                "start_index": 581
+            },
+            {
+                "text": "طارق",
+                "confidence": 1.0,
+                "start_index": 590
+            },
+            {
+                "text": "بن",
+                "confidence": 1.0,
+                "start_index": 595
+            },
+            {
+                "text": "زياد",
+                "confidence": 1.0,
+                "start_index": 598
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -82,58 +881,99 @@
     },
     "blocks": [
         {
-            "top_left_x": 238,
-            "top_left_y": 14,
-            "bottom_right_x": 284,
-            "bottom_right_y": 60,
-            "content": "![image](img-0)",
-            "type": "image",
+            "top_left_x": 50,
+            "top_left_y": 50,
+            "bottom_right_x": 804,
+            "bottom_right_y": 86,
+            "content": "غير الله",
+            "type": "text",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 14,
-            "top_left_y": 147,
-            "bottom_right_x": 284,
-            "bottom_right_y": 166,
-            "content": "يَحْيَى: أَخْبَرَنَا، وَقَالَ",
+            "top_left_x": 50,
+            "top_left_y": 98,
+            "bottom_right_x": 804,
+            "bottom_right_y": 121,
+            "content": "الدار البيضاء، في 24/01/2024",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 2
         },
         {
-            "top_left_x": 14,
-            "top_left_y": 168,
-            "bottom_right_x": 284,
-            "bottom_right_y": 181,
-            "content": "إلى أن",
+            "top_left_x": 50,
+            "top_left_y": 133,
+            "bottom_right_x": 804,
+            "bottom_right_y": 159,
+            "content": "حضرة السيد المدير المحترم،",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 3
         },
         {
-            "top_left_x": 14,
-            "top_left_y": 187,
-            "bottom_right_x": 284,
-            "bottom_right_y": 199,
-            "content": "0684520824",
+            "top_left_x": 50,
+            "top_left_y": 171,
+            "bottom_right_x": 804,
+            "bottom_right_y": 194,
+            "content": "الموضوع: يجازيهم على ذلك. ثم دعاهم",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 4
         },
         {
-            "top_left_x": 14,
-            "top_left_y": 199,
-            "bottom_right_x": 284,
-            "bottom_right_y": 211,
-            "content": "وَاسْتِحْبَابِ الوُضُوءِ لَهُ، وَغَسْلِ",
+            "top_left_x": 50,
+            "top_left_y": 206,
+            "bottom_right_x": 804,
+            "bottom_right_y": 231,
+            "content": "تحية طيبة وبعد،",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 5
+        },
+        {
+            "top_left_x": 50,
+            "top_left_y": 243,
+            "bottom_right_x": 804,
+            "bottom_right_y": 294,
+            "content": "الله إلى التوحيد فقال عز وجل: {قُلْ يا أَهْلَ الْكِتابِ تَعالَوْا إِلى كَلِمَةٍ سَواءٍ بَيْنَنا وَبَيْنَكُمْ أَلاّ نَعْبُدَ إِلاَّ اللهَ وَلا نُشْرِكَ بِهِ شَيْئاً؛} أي قل لهم يا محمّد: يا أهل الكتاب هلمّوا إلى كلمة عدل بيننا وبينكم. وفي (سواء) ثلاث لغات: سواء وسوى وسوا، ولا يمدّ فيها إلاّ المفتوح، قال الله تعالى: {مَكاناً سُوىً} (1) .ثم فسّر الكلمة فقال تعالى: {(أَلاّ نَعْبُدَ إِلاَّ اللهَ وَلا نُشْرِكَ بِهِ)} أحدا من",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 6
+        },
+        {
+            "top_left_x": 50,
+            "top_left_y": 306,
+            "bottom_right_x": 804,
+            "bottom_right_y": 464,
+            "content": "<table><tbody><tr><th>قوله {(وَما</th><th>مِنْ إِلهٍ إِلاَّ</th><th>اللهُ)}</th></tr><tr><td>لتوكيد النّفي في جميع ما</td><td>ادّعاه المشركون أنّهم آلهة. قوله تعالى: {وَإِنَّ اللهَ</td><td>لَهُوَ الْعَزِيزُ الْحَكِيمُ} (62)؛أي</td></tr><tr><td>العزيز بالنقمة لمن لا يؤمن به، ذو الحكمة</td><td>في خلق عيسى</td><td>عليه السلام من غير أب؛ وفي أمره ألاّ</td></tr><tr><td>تعبدوا إلاّ الله تعالى. قوله تعالى: {فَإِنْ</td><td>تَوَلَّوْا فَإِنَّ اللهَ عَلِيمٌ بِالْمُفْسِدِينَ} (63)؛أي</td><td>إن أعرضوا عمّا أتيت</td></tr><tr><td>به من البيان؛ فإنّ الله عالم بالمفسدين الذين</td><td>يعبدون غير</td><td>الله ويدعون الناس إلى عبادة</td></tr></tbody></table>",
+            "type": "table",
+            "table_id": "tbl-0.html",
+            "confidence_scores": null,
+            "reading_index": 7
+        },
+        {
+            "top_left_x": 50,
+            "top_left_y": 476,
+            "bottom_right_x": 804,
+            "bottom_right_y": 501,
+            "content": "شاكرين لكم حسن تعاونكم.",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 8
+        },
+        {
+            "top_left_x": 50,
+            "top_left_y": 531,
+            "bottom_right_x": 804,
+            "bottom_right_y": 549,
+            "content": "طارق بن زياد",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 9
         }
     ],
     "meta": {
-        "template": "business_card",
-        "hybrid": null
+        "template": "letter",
+        "hybrid": "mini-table"
     }
 }

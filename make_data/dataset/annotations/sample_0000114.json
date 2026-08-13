@@ -1,264 +1,386 @@
 {
-    "markdown": "عَنْ خَالِدِ بْنِ\nINV-60715\n25/03/2023\nفاتورة إلى: عليه وسلم: ((أَوْ مُسْلِمًا)\n\n[tbl-0.html](tbl-0.html)\n\nالإجمالي: 5,050.43",
-    "images": [],
-    "tables": [
+    "markdown": "## 31 - حَدَّثَنَا أَبُو خَيْثَمَةَ، حَدَّثَنَا عَبْدُ الرَّحْم\n\n![image](img-0)\n\n\n![image](img-1)\n\n\n![image](img-2)\n\n## \"‌ ‌الخروج من\n\n![image](img-3)\n\nشكل: \"مسند السائب بن\n31 - حَدَّثَنَا أَبُو خَيْثَمَةَ، حَدَّثَنَا عَبْدُ الرَّحْمَنِ بْنُ مَهْدِيٍّ، عَنْ سُفْيَانَ، عَنْ أَبِي الْأَغَرِّ، عَنْ وَهْبِ بْنِ مُنَبِّهٍ، قَالَ فِي حِكَمِ آلِ دَاوُدَ: «حَقٌّ عَلَى الْعَاقِلِ أَنْ يَكُونَ عَارِفًا بِزَمَانِهِ، حَافِظًا لِلِسَانِهِ، مُقْبِلًا عَلَى شَأْنِهِ»\n\n![image](img-4)\n\n\n![image](img-5)\n\n\n![image](img-6)\n\n\n![image](img-7)\n",
+    "images": [
         {
-            "id": "tbl-0.html",
-            "content": "<table><tbody><tr><th>البيان</th><th>الكمية</th><th>السعر</th><th>المجموع</th></tr><tr><td>٣٢٣). (٢) أخرجه ابن سعد</td><td>11</td><td>196.25</td><td>2,158.75</td></tr><tr><td>وقوله: ((إِنِّي فِي غَائِطٍ</td><td>12</td><td>66.92</td><td>803.04</td></tr><tr><td>عَنْ أَبِي هُرَيْرَةَ قَالَ: قَالَ</td><td>10</td><td>197.64</td><td>1,976.40</td></tr><tr><td>أَنَّ رَسُولَ اللَّهِ صلى</td><td>1</td><td>112.24</td><td>112.24</td></tr></tbody></table>",
-            "format": "html",
-            "word_confidence_scores": [
-                {
-                    "text": "البيان",
-                    "confidence": 1.0,
-                    "start_index": 22
-                },
-                {
-                    "text": "الكمية",
-                    "confidence": 1.0,
-                    "start_index": 37
-                },
-                {
-                    "text": "السعر",
-                    "confidence": 1.0,
-                    "start_index": 52
-                },
-                {
-                    "text": "المجموع",
-                    "confidence": 1.0,
-                    "start_index": 66
-                },
-                {
-                    "text": "٣٢٣).",
-                    "confidence": 1.0,
-                    "start_index": 91
-                },
-                {
-                    "text": " (٢)",
-                    "confidence": 1.0,
-                    "start_index": 96
-                },
-                {
-                    "text": " أخرجه",
-                    "confidence": 1.0,
-                    "start_index": 100
-                },
-                {
-                    "text": " ابن",
-                    "confidence": 1.0,
-                    "start_index": 106
-                },
-                {
-                    "text": " سعد",
-                    "confidence": 1.0,
-                    "start_index": 110
-                },
-                {
-                    "text": "11",
-                    "confidence": 1.0,
-                    "start_index": 123
-                },
-                {
-                    "text": "196.25",
-                    "confidence": 1.0,
-                    "start_index": 134
-                },
-                {
-                    "text": "2,158.75",
-                    "confidence": 1.0,
-                    "start_index": 149
-                },
-                {
-                    "text": "وقوله:",
-                    "confidence": 1.0,
-                    "start_index": 175
-                },
-                {
-                    "text": " ((إِنِّي",
-                    "confidence": 1.0,
-                    "start_index": 181
-                },
-                {
-                    "text": " فِي",
-                    "confidence": 1.0,
-                    "start_index": 190
-                },
-                {
-                    "text": " غَائِطٍ",
-                    "confidence": 1.0,
-                    "start_index": 194
-                },
-                {
-                    "text": "12",
-                    "confidence": 1.0,
-                    "start_index": 211
-                },
-                {
-                    "text": "66.92",
-                    "confidence": 1.0,
-                    "start_index": 222
-                },
-                {
-                    "text": "803.04",
-                    "confidence": 1.0,
-                    "start_index": 236
-                },
-                {
-                    "text": "عَنْ",
-                    "confidence": 1.0,
-                    "start_index": 260
-                },
-                {
-                    "text": " أَبِي",
-                    "confidence": 1.0,
-                    "start_index": 264
-                },
-                {
-                    "text": " هُرَيْرَةَ",
-                    "confidence": 1.0,
-                    "start_index": 270
-                },
-                {
-                    "text": " قَالَ:",
-                    "confidence": 1.0,
-                    "start_index": 281
-                },
-                {
-                    "text": " قَالَ",
-                    "confidence": 1.0,
-                    "start_index": 288
-                },
-                {
-                    "text": "10",
-                    "confidence": 1.0,
-                    "start_index": 303
-                },
-                {
-                    "text": "197.64",
-                    "confidence": 1.0,
-                    "start_index": 314
-                },
-                {
-                    "text": "1,976.40",
-                    "confidence": 1.0,
-                    "start_index": 329
-                },
-                {
-                    "text": "أَنَّ",
-                    "confidence": 1.0,
-                    "start_index": 355
-                },
-                {
-                    "text": " رَسُولَ",
-                    "confidence": 1.0,
-                    "start_index": 360
-                },
-                {
-                    "text": " اللَّهِ",
-                    "confidence": 1.0,
-                    "start_index": 368
-                },
-                {
-                    "text": " صلى",
-                    "confidence": 1.0,
-                    "start_index": 376
-                },
-                {
-                    "text": "1",
-                    "confidence": 1.0,
-                    "start_index": 389
-                },
-                {
-                    "text": "112.24",
-                    "confidence": 1.0,
-                    "start_index": 399
-                },
-                {
-                    "text": "112.24",
-                    "confidence": 1.0,
-                    "start_index": 414
-                }
-            ]
+            "id": "img-0",
+            "top_left_x": 569,
+            "top_left_y": 196,
+            "bottom_right_x": 663,
+            "bottom_right_y": 593,
+            "reading_index": 2
+        },
+        {
+            "id": "img-1",
+            "top_left_x": 463,
+            "top_left_y": 196,
+            "bottom_right_x": 557,
+            "bottom_right_y": 593,
+            "reading_index": 3
+        },
+        {
+            "id": "img-2",
+            "top_left_x": 358,
+            "top_left_y": 196,
+            "bottom_right_x": 451,
+            "bottom_right_y": 593,
+            "reading_index": 4
+        },
+        {
+            "id": "img-3",
+            "top_left_x": 209,
+            "top_left_y": 250,
+            "bottom_right_x": 322,
+            "bottom_right_y": 325,
+            "reading_index": 6
+        },
+        {
+            "id": "img-4",
+            "top_left_x": 515,
+            "top_left_y": 619,
+            "bottom_right_x": 663,
+            "bottom_right_y": 1016,
+            "reading_index": 9
+        },
+        {
+            "id": "img-5",
+            "top_left_x": 356,
+            "top_left_y": 619,
+            "bottom_right_x": 503,
+            "bottom_right_y": 1016,
+            "reading_index": 10
+        },
+        {
+            "id": "img-6",
+            "top_left_x": 196,
+            "top_left_y": 619,
+            "bottom_right_x": 344,
+            "bottom_right_y": 1016,
+            "reading_index": 11
+        },
+        {
+            "id": "img-7",
+            "top_left_x": 36,
+            "top_left_y": 619,
+            "bottom_right_x": 184,
+            "bottom_right_y": 1016,
+            "reading_index": 12
         }
     ],
+    "tables": [],
     "hyperlinks": [],
     "header": null,
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 1092,
-        "width": 731
+        "height": 1030,
+        "width": 699
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "عَنْ",
+                "text": "##",
                 "confidence": 1.0,
                 "start_index": 0
             },
             {
-                "text": "خَالِدِ",
+                "text": "31",
                 "confidence": 1.0,
-                "start_index": 5
+                "start_index": 3
+            },
+            {
+                "text": "-",
+                "confidence": 1.0,
+                "start_index": 6
+            },
+            {
+                "text": "حَدَّثَنَا",
+                "confidence": 1.0,
+                "start_index": 8
+            },
+            {
+                "text": "أَبُو",
+                "confidence": 1.0,
+                "start_index": 19
+            },
+            {
+                "text": "خَيْثَمَةَ،",
+                "confidence": 1.0,
+                "start_index": 25
+            },
+            {
+                "text": "حَدَّثَنَا",
+                "confidence": 1.0,
+                "start_index": 37
+            },
+            {
+                "text": "عَبْدُ",
+                "confidence": 1.0,
+                "start_index": 48
+            },
+            {
+                "text": "الرَّحْم",
+                "confidence": 1.0,
+                "start_index": 55
+            },
+            {
+                "text": "![image](img-0)",
+                "confidence": 1.0,
+                "start_index": 65
+            },
+            {
+                "text": "![image](img-1)",
+                "confidence": 1.0,
+                "start_index": 83
+            },
+            {
+                "text": "![image](img-2)",
+                "confidence": 1.0,
+                "start_index": 101
+            },
+            {
+                "text": "##",
+                "confidence": 1.0,
+                "start_index": 118
+            },
+            {
+                "text": "\"‌",
+                "confidence": 1.0,
+                "start_index": 121
+            },
+            {
+                "text": "‌الخروج",
+                "confidence": 1.0,
+                "start_index": 124
+            },
+            {
+                "text": "من",
+                "confidence": 1.0,
+                "start_index": 132
+            },
+            {
+                "text": "![image](img-3)",
+                "confidence": 1.0,
+                "start_index": 136
+            },
+            {
+                "text": "شكل:",
+                "confidence": 1.0,
+                "start_index": 153
+            },
+            {
+                "text": "\"مسند",
+                "confidence": 1.0,
+                "start_index": 158
+            },
+            {
+                "text": "السائب",
+                "confidence": 1.0,
+                "start_index": 164
+            },
+            {
+                "text": "بن",
+                "confidence": 1.0,
+                "start_index": 171
+            },
+            {
+                "text": "31",
+                "confidence": 1.0,
+                "start_index": 174
+            },
+            {
+                "text": "-",
+                "confidence": 1.0,
+                "start_index": 177
+            },
+            {
+                "text": "حَدَّثَنَا",
+                "confidence": 1.0,
+                "start_index": 179
+            },
+            {
+                "text": "أَبُو",
+                "confidence": 1.0,
+                "start_index": 190
+            },
+            {
+                "text": "خَيْثَمَةَ،",
+                "confidence": 1.0,
+                "start_index": 196
+            },
+            {
+                "text": "حَدَّثَنَا",
+                "confidence": 1.0,
+                "start_index": 208
+            },
+            {
+                "text": "عَبْدُ",
+                "confidence": 1.0,
+                "start_index": 219
+            },
+            {
+                "text": "الرَّحْمَنِ",
+                "confidence": 1.0,
+                "start_index": 226
+            },
+            {
+                "text": "بْنُ",
+                "confidence": 1.0,
+                "start_index": 238
+            },
+            {
+                "text": "مَهْدِيٍّ،",
+                "confidence": 1.0,
+                "start_index": 243
+            },
+            {
+                "text": "عَنْ",
+                "confidence": 1.0,
+                "start_index": 254
+            },
+            {
+                "text": "سُفْيَانَ،",
+                "confidence": 1.0,
+                "start_index": 259
+            },
+            {
+                "text": "عَنْ",
+                "confidence": 1.0,
+                "start_index": 270
+            },
+            {
+                "text": "أَبِي",
+                "confidence": 1.0,
+                "start_index": 275
+            },
+            {
+                "text": "الْأَغَرِّ،",
+                "confidence": 1.0,
+                "start_index": 281
+            },
+            {
+                "text": "عَنْ",
+                "confidence": 1.0,
+                "start_index": 293
+            },
+            {
+                "text": "وَهْبِ",
+                "confidence": 1.0,
+                "start_index": 298
             },
             {
                 "text": "بْنِ",
                 "confidence": 1.0,
-                "start_index": 13
+                "start_index": 305
             },
             {
-                "text": "INV-60715",
+                "text": "مُنَبِّهٍ،",
                 "confidence": 1.0,
-                "start_index": 18
+                "start_index": 310
             },
             {
-                "text": "25/03/2023",
+                "text": "قَالَ",
                 "confidence": 1.0,
-                "start_index": 28
+                "start_index": 321
             },
             {
-                "text": "فاتورة",
+                "text": "فِي",
                 "confidence": 1.0,
-                "start_index": 39
+                "start_index": 327
             },
             {
-                "text": "إلى:",
+                "text": "حِكَمِ",
                 "confidence": 1.0,
-                "start_index": 46
+                "start_index": 331
             },
             {
-                "text": "عليه",
+                "text": "آلِ",
                 "confidence": 1.0,
-                "start_index": 51
+                "start_index": 338
             },
             {
-                "text": "وسلم:",
+                "text": "دَاوُدَ:",
                 "confidence": 1.0,
-                "start_index": 56
+                "start_index": 342
             },
             {
-                "text": "((أَوْ",
+                "text": "«حَقٌّ",
                 "confidence": 1.0,
-                "start_index": 62
+                "start_index": 351
             },
             {
-                "text": "مُسْلِمًا)",
+                "text": "عَلَى",
                 "confidence": 1.0,
-                "start_index": 69
+                "start_index": 358
             },
             {
-                "text": "[tbl-0.html](tbl-0.html)",
+                "text": "الْعَاقِلِ",
                 "confidence": 1.0,
-                "start_index": 81
+                "start_index": 364
             },
             {
-                "text": "الإجمالي:",
+                "text": "أَنْ",
                 "confidence": 1.0,
-                "start_index": 107
+                "start_index": 375
             },
             {
-                "text": "5,050.43",
+                "text": "يَكُونَ",
                 "confidence": 1.0,
-                "start_index": 117
+                "start_index": 380
+            },
+            {
+                "text": "عَارِفًا",
+                "confidence": 1.0,
+                "start_index": 388
+            },
+            {
+                "text": "بِزَمَانِهِ،",
+                "confidence": 1.0,
+                "start_index": 397
+            },
+            {
+                "text": "حَافِظًا",
+                "confidence": 1.0,
+                "start_index": 410
+            },
+            {
+                "text": "لِلِسَانِهِ،",
+                "confidence": 1.0,
+                "start_index": 419
+            },
+            {
+                "text": "مُقْبِلًا",
+                "confidence": 1.0,
+                "start_index": 432
+            },
+            {
+                "text": "عَلَى",
+                "confidence": 1.0,
+                "start_index": 442
+            },
+            {
+                "text": "شَأْنِهِ»",
+                "confidence": 1.0,
+                "start_index": 448
+            },
+            {
+                "text": "![image](img-4)",
+                "confidence": 1.0,
+                "start_index": 459
+            },
+            {
+                "text": "![image](img-5)",
+                "confidence": 1.0,
+                "start_index": 477
+            },
+            {
+                "text": "![image](img-6)",
+                "confidence": 1.0,
+                "start_index": 495
+            },
+            {
+                "text": "![image](img-7)",
+                "confidence": 1.0,
+                "start_index": 513
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -266,69 +388,128 @@
     },
     "blocks": [
         {
-            "top_left_x": 44,
-            "top_left_y": 44,
-            "bottom_right_x": 687,
-            "bottom_right_y": 82,
-            "content": "عَنْ خَالِدِ بْنِ",
-            "type": "text",
+            "top_left_x": 36,
+            "top_left_y": 36,
+            "bottom_right_x": 663,
+            "bottom_right_y": 180,
+            "content": "31 - حَدَّثَنَا أَبُو خَيْثَمَةَ، حَدَّثَنَا عَبْدُ الرَّحْم",
+            "type": "title",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 625,
-            "top_left_y": 90,
-            "bottom_right_x": 687,
-            "bottom_right_y": 113,
-            "content": "INV-60715",
-            "type": "text",
+            "top_left_x": 569,
+            "top_left_y": 196,
+            "bottom_right_x": 663,
+            "bottom_right_y": 593,
+            "content": "![image](img-0)",
+            "type": "image",
             "confidence_scores": null,
             "reading_index": 2
         },
         {
-            "top_left_x": 44,
-            "top_left_y": 90,
-            "bottom_right_x": 109,
-            "bottom_right_y": 113,
-            "content": "25/03/2023",
-            "type": "text",
+            "top_left_x": 463,
+            "top_left_y": 196,
+            "bottom_right_x": 557,
+            "bottom_right_y": 593,
+            "content": "![image](img-1)",
+            "type": "image",
             "confidence_scores": null,
             "reading_index": 3
         },
         {
-            "top_left_x": 44,
-            "top_left_y": 135,
-            "bottom_right_x": 687,
-            "bottom_right_y": 160,
-            "content": "فاتورة إلى: عليه وسلم: ((أَوْ مُسْلِمًا)",
-            "type": "text",
+            "top_left_x": 358,
+            "top_left_y": 196,
+            "bottom_right_x": 451,
+            "bottom_right_y": 593,
+            "content": "![image](img-2)",
+            "type": "image",
             "confidence_scores": null,
             "reading_index": 4
         },
         {
-            "top_left_x": 44,
-            "top_left_y": 174,
-            "bottom_right_x": 687,
-            "bottom_right_y": 348,
-            "content": "<table><tbody><tr><th>البيان</th><th>الكمية</th><th>السعر</th><th>المجموع</th></tr><tr><td>٣٢٣). (٢) أخرجه ابن سعد</td><td>11</td><td>196.25</td><td>2,158.75</td></tr><tr><td>وقوله: ((إِنِّي فِي غَائِطٍ</td><td>12</td><td>66.92</td><td>803.04</td></tr><tr><td>عَنْ أَبِي هُرَيْرَةَ قَالَ: قَالَ</td><td>10</td><td>197.64</td><td>1,976.40</td></tr><tr><td>أَنَّ رَسُولَ اللَّهِ صلى</td><td>1</td><td>112.24</td><td>112.24</td></tr></tbody></table>",
-            "type": "table",
-            "table_id": "tbl-0.html",
+            "top_left_x": 36,
+            "top_left_y": 196,
+            "bottom_right_x": 342,
+            "bottom_right_y": 235,
+            "content": "\"‌ ‌الخروج من",
+            "type": "title",
             "confidence_scores": null,
             "reading_index": 5
         },
         {
-            "top_left_x": 44,
-            "top_left_y": 362,
-            "bottom_right_x": 163,
-            "bottom_right_y": 390,
-            "content": "الإجمالي: 5,050.43",
-            "type": "text",
+            "top_left_x": 209,
+            "top_left_y": 250,
+            "bottom_right_x": 322,
+            "bottom_right_y": 325,
+            "content": "![image](img-3)",
+            "type": "image",
             "confidence_scores": null,
             "reading_index": 6
+        },
+        {
+            "top_left_x": 209,
+            "top_left_y": 329,
+            "bottom_right_x": 322,
+            "bottom_right_y": 351,
+            "content": "شكل: \"مسند السائب بن",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 7
+        },
+        {
+            "top_left_x": 36,
+            "top_left_y": 366,
+            "bottom_right_x": 342,
+            "bottom_right_y": 588,
+            "content": "31 - حَدَّثَنَا أَبُو خَيْثَمَةَ، حَدَّثَنَا عَبْدُ الرَّحْمَنِ بْنُ مَهْدِيٍّ، عَنْ سُفْيَانَ، عَنْ أَبِي الْأَغَرِّ، عَنْ وَهْبِ بْنِ مُنَبِّهٍ، قَالَ فِي حِكَمِ آلِ دَاوُدَ: «حَقٌّ عَلَى الْعَاقِلِ أَنْ يَكُونَ عَارِفًا بِزَمَانِهِ، حَافِظًا لِلِسَانِهِ، مُقْبِلًا عَلَى شَأْنِهِ»",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 8
+        },
+        {
+            "top_left_x": 515,
+            "top_left_y": 619,
+            "bottom_right_x": 663,
+            "bottom_right_y": 1016,
+            "content": "![image](img-4)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 9
+        },
+        {
+            "top_left_x": 356,
+            "top_left_y": 619,
+            "bottom_right_x": 503,
+            "bottom_right_y": 1016,
+            "content": "![image](img-5)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 10
+        },
+        {
+            "top_left_x": 196,
+            "top_left_y": 619,
+            "bottom_right_x": 344,
+            "bottom_right_y": 1016,
+            "content": "![image](img-6)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 11
+        },
+        {
+            "top_left_x": 36,
+            "top_left_y": 619,
+            "bottom_right_x": 184,
+            "bottom_right_y": 1016,
+            "content": "![image](img-7)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 12
         }
     ],
     "meta": {
-        "template": "invoice",
+        "template": "a4_image_gallery",
         "hybrid": null
     }
 }

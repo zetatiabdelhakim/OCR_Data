@@ -1,374 +1,78 @@
 {
-    "markdown": "الزُّبَيْرِ عَنْ\nINV-2450\n02/12/2025\nفاتورة إلى: عنه فانتهوا} . وفيه:\n\n[tbl-0.html](tbl-0.html)\n\nالإجمالي: 9,106.32",
-    "images": [],
-    "tables": [
+    "markdown": "31 - حَدَّثَنَا\n\n![image](img-0)\n\nخالد بن الوليد\n9319-3413\n\n![image](img-1)\n",
+    "images": [
         {
-            "id": "tbl-0.html",
-            "content": "<table><tbody><tr><th>البيان</th><th>الكمية</th><th>السعر</th><th>المجموع</th></tr><tr><td>(١) أخرجه البخاري (١٨٠١)،</td><td>11</td><td>219.80</td><td>2,417.80</td></tr><tr><td>والمراد: أن المؤمن في الجنة</td><td>12</td><td>23.26</td><td>279.12</td></tr><tr><td>التَّيْمِيِّ عَنِ الحَارِثِ بْنِ</td><td>1</td><td>70.40</td><td>70.40</td></tr><tr><td>حال، وقد اختلف العلماء فى</td><td>9</td><td>131.84</td><td>1,186.56</td></tr><tr><td>أن من تاب من</td><td>12</td><td>226.06</td><td>2,712.72</td></tr><tr><td>لَا فَأَدُّوا حَقَّهَا) )، أي:</td><td>2</td><td>203.91</td><td>407.82</td></tr><tr><td>ثم بعد ذلك استقر ترتيب</td><td>10</td><td>203.19</td><td>2,031.90</td></tr></tbody></table>",
-            "format": "html",
-            "word_confidence_scores": [
-                {
-                    "text": "البيان",
-                    "confidence": 1.0,
-                    "start_index": 22
-                },
-                {
-                    "text": "الكمية",
-                    "confidence": 1.0,
-                    "start_index": 37
-                },
-                {
-                    "text": "السعر",
-                    "confidence": 1.0,
-                    "start_index": 52
-                },
-                {
-                    "text": "المجموع",
-                    "confidence": 1.0,
-                    "start_index": 66
-                },
-                {
-                    "text": "(١)",
-                    "confidence": 1.0,
-                    "start_index": 91
-                },
-                {
-                    "text": " أخرجه",
-                    "confidence": 1.0,
-                    "start_index": 94
-                },
-                {
-                    "text": " البخاري",
-                    "confidence": 1.0,
-                    "start_index": 100
-                },
-                {
-                    "text": " (١٨٠١)،",
-                    "confidence": 1.0,
-                    "start_index": 108
-                },
-                {
-                    "text": "11",
-                    "confidence": 1.0,
-                    "start_index": 125
-                },
-                {
-                    "text": "219.80",
-                    "confidence": 1.0,
-                    "start_index": 136
-                },
-                {
-                    "text": "2,417.80",
-                    "confidence": 1.0,
-                    "start_index": 151
-                },
-                {
-                    "text": "والمراد:",
-                    "confidence": 1.0,
-                    "start_index": 177
-                },
-                {
-                    "text": " أن",
-                    "confidence": 1.0,
-                    "start_index": 185
-                },
-                {
-                    "text": " المؤمن",
-                    "confidence": 1.0,
-                    "start_index": 188
-                },
-                {
-                    "text": " في",
-                    "confidence": 1.0,
-                    "start_index": 195
-                },
-                {
-                    "text": " الجنة",
-                    "confidence": 1.0,
-                    "start_index": 198
-                },
-                {
-                    "text": "12",
-                    "confidence": 1.0,
-                    "start_index": 213
-                },
-                {
-                    "text": "23.26",
-                    "confidence": 1.0,
-                    "start_index": 224
-                },
-                {
-                    "text": "279.12",
-                    "confidence": 1.0,
-                    "start_index": 238
-                },
-                {
-                    "text": "التَّيْمِيِّ",
-                    "confidence": 1.0,
-                    "start_index": 262
-                },
-                {
-                    "text": " عَنِ",
-                    "confidence": 1.0,
-                    "start_index": 274
-                },
-                {
-                    "text": " الحَارِثِ",
-                    "confidence": 1.0,
-                    "start_index": 279
-                },
-                {
-                    "text": " بْنِ",
-                    "confidence": 1.0,
-                    "start_index": 289
-                },
-                {
-                    "text": "1",
-                    "confidence": 1.0,
-                    "start_index": 303
-                },
-                {
-                    "text": "70.40",
-                    "confidence": 1.0,
-                    "start_index": 313
-                },
-                {
-                    "text": "70.40",
-                    "confidence": 1.0,
-                    "start_index": 327
-                },
-                {
-                    "text": "حال،",
-                    "confidence": 1.0,
-                    "start_index": 350
-                },
-                {
-                    "text": " وقد",
-                    "confidence": 1.0,
-                    "start_index": 354
-                },
-                {
-                    "text": " اختلف",
-                    "confidence": 1.0,
-                    "start_index": 358
-                },
-                {
-                    "text": " العلماء",
-                    "confidence": 1.0,
-                    "start_index": 364
-                },
-                {
-                    "text": " فى",
-                    "confidence": 1.0,
-                    "start_index": 372
-                },
-                {
-                    "text": "9",
-                    "confidence": 1.0,
-                    "start_index": 384
-                },
-                {
-                    "text": "131.84",
-                    "confidence": 1.0,
-                    "start_index": 394
-                },
-                {
-                    "text": "1,186.56",
-                    "confidence": 1.0,
-                    "start_index": 409
-                },
-                {
-                    "text": "أن",
-                    "confidence": 1.0,
-                    "start_index": 435
-                },
-                {
-                    "text": " من",
-                    "confidence": 1.0,
-                    "start_index": 437
-                },
-                {
-                    "text": " تاب",
-                    "confidence": 1.0,
-                    "start_index": 440
-                },
-                {
-                    "text": " من",
-                    "confidence": 1.0,
-                    "start_index": 444
-                },
-                {
-                    "text": "12",
-                    "confidence": 1.0,
-                    "start_index": 456
-                },
-                {
-                    "text": "226.06",
-                    "confidence": 1.0,
-                    "start_index": 467
-                },
-                {
-                    "text": "2,712.72",
-                    "confidence": 1.0,
-                    "start_index": 482
-                },
-                {
-                    "text": "لَا",
-                    "confidence": 1.0,
-                    "start_index": 508
-                },
-                {
-                    "text": " فَأَدُّوا",
-                    "confidence": 1.0,
-                    "start_index": 511
-                },
-                {
-                    "text": " حَقَّهَا)",
-                    "confidence": 1.0,
-                    "start_index": 521
-                },
-                {
-                    "text": " )،",
-                    "confidence": 1.0,
-                    "start_index": 531
-                },
-                {
-                    "text": " أي:",
-                    "confidence": 1.0,
-                    "start_index": 534
-                },
-                {
-                    "text": "2",
-                    "confidence": 1.0,
-                    "start_index": 547
-                },
-                {
-                    "text": "203.91",
-                    "confidence": 1.0,
-                    "start_index": 557
-                },
-                {
-                    "text": "407.82",
-                    "confidence": 1.0,
-                    "start_index": 572
-                },
-                {
-                    "text": "ثم",
-                    "confidence": 1.0,
-                    "start_index": 596
-                },
-                {
-                    "text": " بعد",
-                    "confidence": 1.0,
-                    "start_index": 598
-                },
-                {
-                    "text": " ذلك",
-                    "confidence": 1.0,
-                    "start_index": 602
-                },
-                {
-                    "text": " استقر",
-                    "confidence": 1.0,
-                    "start_index": 606
-                },
-                {
-                    "text": " ترتيب",
-                    "confidence": 1.0,
-                    "start_index": 612
-                },
-                {
-                    "text": "10",
-                    "confidence": 1.0,
-                    "start_index": 627
-                },
-                {
-                    "text": "203.19",
-                    "confidence": 1.0,
-                    "start_index": 638
-                },
-                {
-                    "text": "2,031.90",
-                    "confidence": 1.0,
-                    "start_index": 653
-                }
-            ]
+            "id": "img-0",
+            "top_left_x": 276,
+            "top_left_y": 64,
+            "bottom_right_x": 320,
+            "bottom_right_y": 120,
+            "reading_index": 2
+        },
+        {
+            "id": "img-1",
+            "top_left_x": 10,
+            "top_left_y": 153,
+            "bottom_right_x": 320,
+            "bottom_right_y": 183,
+            "reading_index": 5
         }
     ],
+    "tables": [],
     "hyperlinks": [],
     "header": null,
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 1195,
-        "width": 763
+        "height": 193,
+        "width": 330
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "الزُّبَيْرِ",
+                "text": "31",
                 "confidence": 1.0,
                 "start_index": 0
             },
             {
-                "text": "عَنْ",
+                "text": "-",
                 "confidence": 1.0,
-                "start_index": 12
+                "start_index": 3
             },
             {
-                "text": "INV-2450",
+                "text": "حَدَّثَنَا",
+                "confidence": 1.0,
+                "start_index": 5
+            },
+            {
+                "text": "![image](img-0)",
                 "confidence": 1.0,
                 "start_index": 17
             },
             {
-                "text": "02/12/2025",
+                "text": "خالد",
                 "confidence": 1.0,
-                "start_index": 26
+                "start_index": 34
             },
             {
-                "text": "فاتورة",
+                "text": "بن",
                 "confidence": 1.0,
-                "start_index": 37
+                "start_index": 39
             },
             {
-                "text": "إلى:",
+                "text": "الوليد",
                 "confidence": 1.0,
-                "start_index": 44
+                "start_index": 42
             },
             {
-                "text": "عنه",
+                "text": "9319-3413",
                 "confidence": 1.0,
                 "start_index": 49
             },
             {
-                "text": "فانتهوا}",
+                "text": "![image](img-1)",
                 "confidence": 1.0,
-                "start_index": 53
-            },
-            {
-                "text": ".",
-                "confidence": 1.0,
-                "start_index": 62
-            },
-            {
-                "text": "وفيه:",
-                "confidence": 1.0,
-                "start_index": 64
-            },
-            {
-                "text": "[tbl-0.html](tbl-0.html)",
-                "confidence": 1.0,
-                "start_index": 71
-            },
-            {
-                "text": "الإجمالي:",
-                "confidence": 1.0,
-                "start_index": 97
-            },
-            {
-                "text": "9,106.32",
-                "confidence": 1.0,
-                "start_index": 107
+                "start_index": 60
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -376,69 +80,58 @@
     },
     "blocks": [
         {
-            "top_left_x": 44,
-            "top_left_y": 44,
-            "bottom_right_x": 719,
-            "bottom_right_y": 83,
-            "content": "الزُّبَيْرِ عَنْ",
+            "top_left_x": 10,
+            "top_left_y": 10,
+            "bottom_right_x": 320,
+            "bottom_right_y": 30,
+            "content": "31 - حَدَّثَنَا",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 669,
-            "top_left_y": 91,
-            "bottom_right_x": 719,
-            "bottom_right_y": 114,
-            "content": "INV-2450",
-            "type": "text",
+            "top_left_x": 276,
+            "top_left_y": 64,
+            "bottom_right_x": 320,
+            "bottom_right_y": 120,
+            "content": "![image](img-0)",
+            "type": "image",
             "confidence_scores": null,
             "reading_index": 2
         },
         {
-            "top_left_x": 44,
-            "top_left_y": 91,
-            "bottom_right_x": 97,
-            "bottom_right_y": 114,
-            "content": "02/12/2025",
+            "top_left_x": 10,
+            "top_left_y": 69,
+            "bottom_right_x": 268,
+            "bottom_right_y": 91,
+            "content": "خالد بن الوليد",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 3
         },
         {
-            "top_left_x": 44,
-            "top_left_y": 136,
-            "bottom_right_x": 719,
-            "bottom_right_y": 160,
-            "content": "فاتورة إلى: عنه فانتهوا} . وفيه:",
+            "top_left_x": 10,
+            "top_left_y": 95,
+            "bottom_right_x": 268,
+            "bottom_right_y": 114,
+            "content": "9319-3413",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 4
         },
         {
-            "top_left_x": 44,
-            "top_left_y": 174,
-            "bottom_right_x": 719,
-            "bottom_right_y": 507,
-            "content": "<table><tbody><tr><th>البيان</th><th>الكمية</th><th>السعر</th><th>المجموع</th></tr><tr><td>(١) أخرجه البخاري (١٨٠١)،</td><td>11</td><td>219.80</td><td>2,417.80</td></tr><tr><td>والمراد: أن المؤمن في الجنة</td><td>12</td><td>23.26</td><td>279.12</td></tr><tr><td>التَّيْمِيِّ عَنِ الحَارِثِ بْنِ</td><td>1</td><td>70.40</td><td>70.40</td></tr><tr><td>حال، وقد اختلف العلماء فى</td><td>9</td><td>131.84</td><td>1,186.56</td></tr><tr><td>أن من تاب من</td><td>12</td><td>226.06</td><td>2,712.72</td></tr><tr><td>لَا فَأَدُّوا حَقَّهَا) )، أي:</td><td>2</td><td>203.91</td><td>407.82</td></tr><tr><td>ثم بعد ذلك استقر ترتيب</td><td>10</td><td>203.19</td><td>2,031.90</td></tr></tbody></table>",
-            "type": "table",
-            "table_id": "tbl-0.html",
+            "top_left_x": 10,
+            "top_left_y": 153,
+            "bottom_right_x": 320,
+            "bottom_right_y": 183,
+            "content": "![image](img-1)",
+            "type": "image",
             "confidence_scores": null,
             "reading_index": 5
-        },
-        {
-            "top_left_x": 44,
-            "top_left_y": 521,
-            "bottom_right_x": 135,
-            "bottom_right_y": 549,
-            "content": "الإجمالي: 9,106.32",
-            "type": "text",
-            "confidence_scores": null,
-            "reading_index": 6
         }
     ],
     "meta": {
-        "template": "invoice",
+        "template": "id_card",
         "hybrid": null
     }
 }

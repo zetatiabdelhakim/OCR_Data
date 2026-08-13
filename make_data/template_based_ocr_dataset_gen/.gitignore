@@ -3,6 +3,11 @@
 __pycache__/
 *.pyc
 
+
+# Dataset Outputs
+dataset/
+nature_images/
+
 # Editor
 .vscode/
 .idea/

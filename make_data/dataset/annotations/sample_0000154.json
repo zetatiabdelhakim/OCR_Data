@@ -1,60 +1,256 @@
 {
-    "markdown": "\n![image](img-0)\n\nوَهْبٍ، أَخْبَرَنِي أُسَامَةُ\nقَرْقَرٍ، كَأَوْفَرِ مَا",
-    "images": [
-        {
-            "id": "img-0",
-            "top_left_x": 244,
-            "top_left_y": 359,
-            "bottom_right_x": 308,
-            "bottom_right_y": 423,
-            "reading_index": 1
-        }
-    ],
+    "markdown": "## والشّجر، وما حال\nنَعْبُدَ إِلاَّ اللهَ وَلا نُشْرِكَ بِهِ\nشَيْئاً؛} أي قل لهم\nيا محمّد: يا أهل الكتاب هلمّوا إلى\nكلمة عدل بيننا وبينكم. وفي\n\"(سواء) ثلاث لغات: سواء وسوى وسوا، ولا يمدّ فيها إلاّ المفتوح، قال الله تعالى: {مَكاناً سُوىً} (1) .ثم فسّر الكلمة فقال تعالى:\"",
+    "images": [],
     "tables": [],
     "hyperlinks": [],
     "header": null,
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 881,
-        "width": 552
+        "height": 1155,
+        "width": 718
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "![image](img-0)",
+                "text": "##",
                 "confidence": 1.0,
-                "start_index": 1
+                "start_index": 0
             },
             {
-                "text": "وَهْبٍ،",
+                "text": "والشّجر،",
                 "confidence": 1.0,
-                "start_index": 18
+                "start_index": 3
             },
             {
-                "text": "أَخْبَرَنِي",
+                "text": "وما",
                 "confidence": 1.0,
-                "start_index": 26
+                "start_index": 12
             },
             {
-                "text": "أُسَامَةُ",
+                "text": "حال",
                 "confidence": 1.0,
-                "start_index": 38
+                "start_index": 16
             },
             {
-                "text": "قَرْقَرٍ،",
+                "text": "نَعْبُدَ",
                 "confidence": 1.0,
-                "start_index": 48
+                "start_index": 20
             },
             {
-                "text": "كَأَوْفَرِ",
+                "text": "إِلاَّ",
                 "confidence": 1.0,
-                "start_index": 58
+                "start_index": 29
             },
             {
-                "text": "مَا",
+                "text": "اللهَ",
                 "confidence": 1.0,
-                "start_index": 69
+                "start_index": 36
+            },
+            {
+                "text": "وَلا",
+                "confidence": 1.0,
+                "start_index": 42
+            },
+            {
+                "text": "نُشْرِكَ",
+                "confidence": 1.0,
+                "start_index": 47
+            },
+            {
+                "text": "بِهِ",
+                "confidence": 1.0,
+                "start_index": 56
+            },
+            {
+                "text": "شَيْئاً؛}",
+                "confidence": 1.0,
+                "start_index": 61
+            },
+            {
+                "text": "أي",
+                "confidence": 1.0,
+                "start_index": 71
+            },
+            {
+                "text": "قل",
+                "confidence": 1.0,
+                "start_index": 74
+            },
+            {
+                "text": "لهم",
+                "confidence": 1.0,
+                "start_index": 77
+            },
+            {
+                "text": "يا",
+                "confidence": 1.0,
+                "start_index": 81
+            },
+            {
+                "text": "محمّد:",
+                "confidence": 1.0,
+                "start_index": 84
+            },
+            {
+                "text": "يا",
+                "confidence": 1.0,
+                "start_index": 91
+            },
+            {
+                "text": "أهل",
+                "confidence": 1.0,
+                "start_index": 94
+            },
+            {
+                "text": "الكتاب",
+                "confidence": 1.0,
+                "start_index": 98
+            },
+            {
+                "text": "هلمّوا",
+                "confidence": 1.0,
+                "start_index": 105
+            },
+            {
+                "text": "إلى",
+                "confidence": 1.0,
+                "start_index": 112
+            },
+            {
+                "text": "كلمة",
+                "confidence": 1.0,
+                "start_index": 116
+            },
+            {
+                "text": "عدل",
+                "confidence": 1.0,
+                "start_index": 121
+            },
+            {
+                "text": "بيننا",
+                "confidence": 1.0,
+                "start_index": 125
+            },
+            {
+                "text": "وبينكم.",
+                "confidence": 1.0,
+                "start_index": 131
+            },
+            {
+                "text": "وفي",
+                "confidence": 1.0,
+                "start_index": 139
+            },
+            {
+                "text": "\"(سواء)",
+                "confidence": 1.0,
+                "start_index": 143
+            },
+            {
+                "text": "ثلاث",
+                "confidence": 1.0,
+                "start_index": 151
+            },
+            {
+                "text": "لغات:",
+                "confidence": 1.0,
+                "start_index": 156
+            },
+            {
+                "text": "سواء",
+                "confidence": 1.0,
+                "start_index": 162
+            },
+            {
+                "text": "وسوى",
+                "confidence": 1.0,
+                "start_index": 167
+            },
+            {
+                "text": "وسوا،",
+                "confidence": 1.0,
+                "start_index": 172
+            },
+            {
+                "text": "ولا",
+                "confidence": 1.0,
+                "start_index": 178
+            },
+            {
+                "text": "يمدّ",
+                "confidence": 1.0,
+                "start_index": 182
+            },
+            {
+                "text": "فيها",
+                "confidence": 1.0,
+                "start_index": 187
+            },
+            {
+                "text": "إلاّ",
+                "confidence": 1.0,
+                "start_index": 192
+            },
+            {
+                "text": "المفتوح،",
+                "confidence": 1.0,
+                "start_index": 197
+            },
+            {
+                "text": "قال",
+                "confidence": 1.0,
+                "start_index": 206
+            },
+            {
+                "text": "الله",
+                "confidence": 1.0,
+                "start_index": 210
+            },
+            {
+                "text": "تعالى:",
+                "confidence": 1.0,
+                "start_index": 215
+            },
+            {
+                "text": "{مَكاناً",
+                "confidence": 1.0,
+                "start_index": 222
+            },
+            {
+                "text": "سُوىً}",
+                "confidence": 1.0,
+                "start_index": 231
+            },
+            {
+                "text": "(1)",
+                "confidence": 1.0,
+                "start_index": 238
+            },
+            {
+                "text": ".ثم",
+                "confidence": 1.0,
+                "start_index": 242
+            },
+            {
+                "text": "فسّر",
+                "confidence": 1.0,
+                "start_index": 246
+            },
+            {
+                "text": "الكلمة",
+                "confidence": 1.0,
+                "start_index": 251
+            },
+            {
+                "text": "فقال",
+                "confidence": 1.0,
+                "start_index": 258
+            },
+            {
+                "text": "تعالى:\"",
+                "confidence": 1.0,
+                "start_index": 263
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -62,38 +258,68 @@
     },
     "blocks": [
         {
-            "top_left_x": 244,
-            "top_left_y": 359,
-            "bottom_right_x": 308,
-            "bottom_right_y": 423,
-            "content": "![image](img-0)",
-            "type": "image",
+            "top_left_x": 40,
+            "top_left_y": 40,
+            "bottom_right_x": 678,
+            "bottom_right_y": 201,
+            "content": "والشّجر، وما حال",
+            "type": "title",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 179,
-            "top_left_y": 445,
-            "bottom_right_x": 373,
-            "bottom_right_y": 490,
-            "content": "وَهْبٍ، أَخْبَرَنِي أُسَامَةُ",
+            "top_left_x": 369,
+            "top_left_y": 614,
+            "bottom_right_x": 678,
+            "bottom_right_y": 646,
+            "content": "نَعْبُدَ إِلاَّ اللهَ وَلا نُشْرِكَ بِهِ",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 2
         },
         {
-            "top_left_x": 238,
-            "top_left_y": 500,
-            "bottom_right_x": 314,
-            "bottom_right_y": 522,
-            "content": "قَرْقَرٍ، كَأَوْفَرِ مَا",
+            "top_left_x": 369,
+            "top_left_y": 646,
+            "bottom_right_x": 678,
+            "bottom_right_y": 678,
+            "content": "شَيْئاً؛} أي قل لهم",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 3
+        },
+        {
+            "top_left_x": 369,
+            "top_left_y": 678,
+            "bottom_right_x": 678,
+            "bottom_right_y": 710,
+            "content": "يا محمّد: يا أهل الكتاب هلمّوا إلى",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 4
+        },
+        {
+            "top_left_x": 369,
+            "top_left_y": 710,
+            "bottom_right_x": 678,
+            "bottom_right_y": 742,
+            "content": "كلمة عدل بيننا وبينكم. وفي",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 5
+        },
+        {
+            "top_left_x": 60,
+            "top_left_y": 231,
+            "bottom_right_x": 325,
+            "bottom_right_y": 1125,
+            "content": "\"(سواء) ثلاث لغات: سواء وسوى وسوا، ولا يمدّ فيها إلاّ المفتوح، قال الله تعالى: {مَكاناً سُوىً} (1) .ثم فسّر الكلمة فقال تعالى:\"",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 6
         }
     ],
     "meta": {
-        "template": "minimalist",
+        "template": "a4_literary",
         "hybrid": null
     }
 }

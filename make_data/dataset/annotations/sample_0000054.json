@@ -1,63 +1,151 @@
 {
-    "markdown": "\n![image](img-0)\n\nنَافِعٍ أَنَّ عَبْدَ اللهِ\n\n![image](img-1)\n",
-    "images": [
-        {
-            "id": "img-0",
-            "top_left_x": 333,
-            "top_left_y": 92,
-            "bottom_right_x": 397,
-            "bottom_right_y": 156,
-            "reading_index": 1
-        },
-        {
-            "id": "img-1",
-            "top_left_x": 215,
-            "top_left_y": 246,
-            "bottom_right_x": 515,
-            "bottom_right_y": 556,
-            "reading_index": 3
-        }
-    ],
+    "markdown": "## وَأَنَّهُ لَوْ شَرَطَ\nالْوَلَاءَ تَابِعٌ لِلْعِتْقِ، وَهُوَ لَمْ يَشْتَرِطْ الْأَصْلَ،\nوَلَوْ بَاعَ رَقِيقًا بِشَرْطِ أَنْ يَبِيعَهُ\nالْمُشْتَرِي بِشَرْطِ الْإِعْتَاقِ لَمْ\nيَصِحَّ الْبَيْعُ، وَكَذَا لَوْ اشْتَرَى دَارًا",
+    "images": [],
     "tables": [],
     "hyperlinks": [],
     "header": null,
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 654,
-        "width": 730
+        "height": 1197,
+        "width": 747
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "![image](img-0)",
+                "text": "##",
                 "confidence": 1.0,
-                "start_index": 1
+                "start_index": 0
             },
             {
-                "text": "نَافِعٍ",
+                "text": "وَأَنَّهُ",
+                "confidence": 1.0,
+                "start_index": 3
+            },
+            {
+                "text": "لَوْ",
+                "confidence": 1.0,
+                "start_index": 13
+            },
+            {
+                "text": "شَرَطَ",
                 "confidence": 1.0,
                 "start_index": 18
             },
             {
-                "text": "أَنَّ",
+                "text": "الْوَلَاءَ",
                 "confidence": 1.0,
-                "start_index": 26
+                "start_index": 25
             },
             {
-                "text": "عَبْدَ",
+                "text": "تَابِعٌ",
                 "confidence": 1.0,
-                "start_index": 32
+                "start_index": 36
             },
             {
-                "text": "اللهِ",
+                "text": "لِلْعِتْقِ،",
                 "confidence": 1.0,
-                "start_index": 39
+                "start_index": 44
             },
             {
-                "text": "![image](img-1)",
+                "text": "وَهُوَ",
                 "confidence": 1.0,
-                "start_index": 46
+                "start_index": 56
+            },
+            {
+                "text": "لَمْ",
+                "confidence": 1.0,
+                "start_index": 63
+            },
+            {
+                "text": "يَشْتَرِطْ",
+                "confidence": 1.0,
+                "start_index": 68
+            },
+            {
+                "text": "الْأَصْلَ،",
+                "confidence": 1.0,
+                "start_index": 79
+            },
+            {
+                "text": "وَلَوْ",
+                "confidence": 1.0,
+                "start_index": 90
+            },
+            {
+                "text": "بَاعَ",
+                "confidence": 1.0,
+                "start_index": 97
+            },
+            {
+                "text": "رَقِيقًا",
+                "confidence": 1.0,
+                "start_index": 103
+            },
+            {
+                "text": "بِشَرْطِ",
+                "confidence": 1.0,
+                "start_index": 112
+            },
+            {
+                "text": "أَنْ",
+                "confidence": 1.0,
+                "start_index": 121
+            },
+            {
+                "text": "يَبِيعَهُ",
+                "confidence": 1.0,
+                "start_index": 126
+            },
+            {
+                "text": "الْمُشْتَرِي",
+                "confidence": 1.0,
+                "start_index": 136
+            },
+            {
+                "text": "بِشَرْطِ",
+                "confidence": 1.0,
+                "start_index": 149
+            },
+            {
+                "text": "الْإِعْتَاقِ",
+                "confidence": 1.0,
+                "start_index": 158
+            },
+            {
+                "text": "لَمْ",
+                "confidence": 1.0,
+                "start_index": 171
+            },
+            {
+                "text": "يَصِحَّ",
+                "confidence": 1.0,
+                "start_index": 176
+            },
+            {
+                "text": "الْبَيْعُ،",
+                "confidence": 1.0,
+                "start_index": 184
+            },
+            {
+                "text": "وَكَذَا",
+                "confidence": 1.0,
+                "start_index": 195
+            },
+            {
+                "text": "لَوْ",
+                "confidence": 1.0,
+                "start_index": 203
+            },
+            {
+                "text": "اشْتَرَى",
+                "confidence": 1.0,
+                "start_index": 208
+            },
+            {
+                "text": "دَارًا",
+                "confidence": 1.0,
+                "start_index": 217
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -65,38 +153,58 @@
     },
     "blocks": [
         {
-            "top_left_x": 333,
-            "top_left_y": 92,
-            "bottom_right_x": 397,
-            "bottom_right_y": 156,
-            "content": "![image](img-0)",
-            "type": "image",
+            "top_left_x": 40,
+            "top_left_y": 40,
+            "bottom_right_x": 707,
+            "bottom_right_y": 208,
+            "content": "وَأَنَّهُ لَوْ شَرَطَ",
+            "type": "title",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 288,
-            "top_left_y": 178,
-            "bottom_right_x": 442,
-            "bottom_right_y": 224,
-            "content": "نَافِعٍ أَنَّ عَبْدَ اللهِ",
+            "top_left_x": 40,
+            "top_left_y": 612,
+            "bottom_right_x": 707,
+            "bottom_right_y": 657,
+            "content": "الْوَلَاءَ تَابِعٌ لِلْعِتْقِ، وَهُوَ لَمْ يَشْتَرِطْ الْأَصْلَ،",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 2
         },
         {
-            "top_left_x": 215,
-            "top_left_y": 246,
-            "bottom_right_x": 515,
-            "bottom_right_y": 556,
-            "content": "![image](img-1)",
-            "type": "image",
+            "top_left_x": 40,
+            "top_left_y": 657,
+            "bottom_right_x": 707,
+            "bottom_right_y": 702,
+            "content": "وَلَوْ بَاعَ رَقِيقًا بِشَرْطِ أَنْ يَبِيعَهُ",
+            "type": "text",
             "confidence_scores": null,
             "reading_index": 3
+        },
+        {
+            "top_left_x": 40,
+            "top_left_y": 702,
+            "bottom_right_x": 707,
+            "bottom_right_y": 747,
+            "content": "الْمُشْتَرِي بِشَرْطِ الْإِعْتَاقِ لَمْ",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 4
+        },
+        {
+            "top_left_x": 40,
+            "top_left_y": 747,
+            "bottom_right_x": 707,
+            "bottom_right_y": 792,
+            "content": "يَصِحَّ الْبَيْعُ، وَكَذَا لَوْ اشْتَرَى دَارًا",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 5
         }
     ],
     "meta": {
-        "template": "minimalist",
-        "hybrid": "chart"
+        "template": "a4_literary",
+        "hybrid": null
     }
 }

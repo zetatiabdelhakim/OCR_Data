@@ -15,7 +15,6 @@ import pandas as pd
 # Paths (edit these to match your local setup)
 # ------------------------------------------------------------------
 
-TEXT_FILE_PATH = "../shamela_1M_words.txt"
 IMAGE_FOLDER_PATH = "../nature_images"
 
 DATASET_IMAGES_PATH = "../dataset/images"
@@ -23,7 +22,6 @@ DATASET_ANNOTATIONS_PATH = "../dataset/annotations"
 
 FONTS_FOLDER_PATH = "./../fonts"
 
-CORPUS_WORDS = []
 IMAGE_PATHS = []
 FONTS = []
 DISPLAY_FONTS = []
@@ -54,12 +52,7 @@ RECEIPT_HEADER_WORDS_MIN, RECEIPT_HEADER_WORDS_MAX = 2, 4
 
 def load_assets():
     global CORPUS_WORDS, IMAGE_PATHS, FONTS, DISPLAY_FONTS, FONT_FACE_DICT
-    if os.path.exists(TEXT_FILE_PATH):
-        print(f"Loading text from {TEXT_FILE_PATH}...")
-        with open(TEXT_FILE_PATH, 'r', encoding='utf-8') as f:
-            CORPUS_WORDS = f.read().split()
-    else:
-        raise FileNotFoundError(f"{TEXT_FILE_PATH} not found.")
+
 
     if os.path.exists(IMAGE_FOLDER_PATH):
         print(f"Scanning images in {IMAGE_FOLDER_PATH}...")
@@ -103,14 +96,25 @@ def load_assets():
 
 
 
+from .text_provider import current_document
+
 def get_real_arabic_text(min_words=30, max_words=300):
-    count = random.randint(min_words, max_words)
-    if len(CORPUS_WORDS) > count:
-        start_idx = random.randint(0, len(CORPUS_WORDS) - count)
-        return " ".join(CORPUS_WORDS[start_idx: start_idx + count])
-    elif CORPUS_WORDS:
-        return " ".join(CORPUS_WORDS)
-    return "نص تجريبي"
+    doc = current_document.get()
+    if doc:
+        return doc.get_words(min_words, max_words)
+    return "نص تجريبي غير متصل"
+
+def get_real_arabic_title():
+    doc = current_document.get()
+    if doc:
+        return doc.get_title()
+    return "عنوان تجريبي"
+    
+def get_real_arabic_name():
+    doc = current_document.get()
+    if doc:
+        return doc.get_author()
+    return "اسم تجريبي"
 
 
 def get_image_base64(img_path):

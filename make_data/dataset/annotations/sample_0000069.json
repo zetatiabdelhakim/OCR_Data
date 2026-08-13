@@ -1,13 +1,13 @@
 {
-    "markdown": "\n![image](img-0)\n\nالله عنهما-",
+    "markdown": "أبي مروان الأسلمي\n12/11/2024 - 19:45\nقال: \"صليت\n115.96\nخلف عمر\n9.68\nوخلف\n5.89\nعلي، وخلف\n143.00\nأبي\n22.05\nذر، فكلهم رأيت\n31.00\nيسلم عن يمينه\n179.08\nالمجموع\n506.66\n\n![image](img-0)\n\nشكرا لزيارتكم",
     "images": [
         {
             "id": "img-0",
-            "top_left_x": 442,
-            "top_left_y": 160,
-            "bottom_right_x": 506,
-            "bottom_right_y": 224,
-            "reading_index": 1
+            "top_left_x": 10,
+            "top_left_y": 217,
+            "bottom_right_x": 220,
+            "bottom_right_y": 247,
+            "reading_index": 19
         }
     ],
     "tables": [],
@@ -16,25 +16,170 @@
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 445,
-        "width": 948
+        "height": 296,
+        "width": 230
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "![image](img-0)",
+                "text": "أبي",
                 "confidence": 1.0,
-                "start_index": 1
+                "start_index": 0
             },
             {
-                "text": "الله",
+                "text": "مروان",
+                "confidence": 1.0,
+                "start_index": 4
+            },
+            {
+                "text": "الأسلمي",
+                "confidence": 1.0,
+                "start_index": 10
+            },
+            {
+                "text": "12/11/2024",
                 "confidence": 1.0,
                 "start_index": 18
             },
             {
-                "text": "عنهما-",
+                "text": "-",
                 "confidence": 1.0,
-                "start_index": 23
+                "start_index": 29
+            },
+            {
+                "text": "19:45",
+                "confidence": 1.0,
+                "start_index": 31
+            },
+            {
+                "text": "قال:",
+                "confidence": 1.0,
+                "start_index": 37
+            },
+            {
+                "text": "\"صليت",
+                "confidence": 1.0,
+                "start_index": 42
+            },
+            {
+                "text": "115.96",
+                "confidence": 1.0,
+                "start_index": 48
+            },
+            {
+                "text": "خلف",
+                "confidence": 1.0,
+                "start_index": 55
+            },
+            {
+                "text": "عمر",
+                "confidence": 1.0,
+                "start_index": 59
+            },
+            {
+                "text": "9.68",
+                "confidence": 1.0,
+                "start_index": 63
+            },
+            {
+                "text": "وخلف",
+                "confidence": 1.0,
+                "start_index": 68
+            },
+            {
+                "text": "5.89",
+                "confidence": 1.0,
+                "start_index": 73
+            },
+            {
+                "text": "علي،",
+                "confidence": 1.0,
+                "start_index": 78
+            },
+            {
+                "text": "وخلف",
+                "confidence": 1.0,
+                "start_index": 83
+            },
+            {
+                "text": "143.00",
+                "confidence": 1.0,
+                "start_index": 88
+            },
+            {
+                "text": "أبي",
+                "confidence": 1.0,
+                "start_index": 95
+            },
+            {
+                "text": "22.05",
+                "confidence": 1.0,
+                "start_index": 99
+            },
+            {
+                "text": "ذر،",
+                "confidence": 1.0,
+                "start_index": 105
+            },
+            {
+                "text": "فكلهم",
+                "confidence": 1.0,
+                "start_index": 109
+            },
+            {
+                "text": "رأيت",
+                "confidence": 1.0,
+                "start_index": 115
+            },
+            {
+                "text": "31.00",
+                "confidence": 1.0,
+                "start_index": 120
+            },
+            {
+                "text": "يسلم",
+                "confidence": 1.0,
+                "start_index": 126
+            },
+            {
+                "text": "عن",
+                "confidence": 1.0,
+                "start_index": 131
+            },
+            {
+                "text": "يمينه",
+                "confidence": 1.0,
+                "start_index": 134
+            },
+            {
+                "text": "179.08",
+                "confidence": 1.0,
+                "start_index": 140
+            },
+            {
+                "text": "المجموع",
+                "confidence": 1.0,
+                "start_index": 147
+            },
+            {
+                "text": "506.66",
+                "confidence": 1.0,
+                "start_index": 155
+            },
+            {
+                "text": "![image](img-0)",
+                "confidence": 1.0,
+                "start_index": 163
+            },
+            {
+                "text": "شكرا",
+                "confidence": 1.0,
+                "start_index": 180
+            },
+            {
+                "text": "لزيارتكم",
+                "confidence": 1.0,
+                "start_index": 185
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -42,28 +187,208 @@
     },
     "blocks": [
         {
-            "top_left_x": 442,
-            "top_left_y": 160,
-            "bottom_right_x": 506,
-            "bottom_right_y": 224,
-            "content": "![image](img-0)",
-            "type": "image",
+            "top_left_x": 10,
+            "top_left_y": 14,
+            "bottom_right_x": 220,
+            "bottom_right_y": 35,
+            "content": "أبي مروان الأسلمي",
+            "type": "text",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 415,
-            "top_left_y": 246,
-            "bottom_right_x": 533,
-            "bottom_right_y": 286,
-            "content": "الله عنهما-",
+            "top_left_x": 10,
+            "top_left_y": 35,
+            "bottom_right_x": 220,
+            "bottom_right_y": 50,
+            "content": "12/11/2024 - 19:45",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 2
+        },
+        {
+            "top_left_x": 154,
+            "top_left_y": 63,
+            "bottom_right_x": 220,
+            "bottom_right_y": 79,
+            "content": "قال: \"صليت",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 3
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 63,
+            "bottom_right_x": 50,
+            "bottom_right_y": 79,
+            "content": "115.96",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 4
+        },
+        {
+            "top_left_x": 174,
+            "top_left_y": 79,
+            "bottom_right_x": 220,
+            "bottom_right_y": 95,
+            "content": "خلف عمر",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 5
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 79,
+            "bottom_right_x": 36,
+            "bottom_right_y": 95,
+            "content": "9.68",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 6
+        },
+        {
+            "top_left_x": 194,
+            "top_left_y": 95,
+            "bottom_right_x": 220,
+            "bottom_right_y": 111,
+            "content": "وخلف",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 7
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 95,
+            "bottom_right_x": 36,
+            "bottom_right_y": 111,
+            "content": "5.89",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 8
+        },
+        {
+            "top_left_x": 161,
+            "top_left_y": 111,
+            "bottom_right_x": 220,
+            "bottom_right_y": 127,
+            "content": "علي، وخلف",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 9
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 111,
+            "bottom_right_x": 50,
+            "bottom_right_y": 127,
+            "content": "143.00",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 10
+        },
+        {
+            "top_left_x": 200,
+            "top_left_y": 127,
+            "bottom_right_x": 220,
+            "bottom_right_y": 143,
+            "content": "أبي",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 11
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 127,
+            "bottom_right_x": 43,
+            "bottom_right_y": 143,
+            "content": "22.05",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 12
+        },
+        {
+            "top_left_x": 128,
+            "top_left_y": 143,
+            "bottom_right_x": 220,
+            "bottom_right_y": 159,
+            "content": "ذر، فكلهم رأيت",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 13
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 143,
+            "bottom_right_x": 43,
+            "bottom_right_y": 159,
+            "content": "31.00",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 14
+        },
+        {
+            "top_left_x": 134,
+            "top_left_y": 159,
+            "bottom_right_x": 220,
+            "bottom_right_y": 175,
+            "content": "يسلم عن يمينه",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 15
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 159,
+            "bottom_right_x": 50,
+            "bottom_right_y": 175,
+            "content": "179.08",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 16
+        },
+        {
+            "top_left_x": 165,
+            "top_left_y": 188,
+            "bottom_right_x": 220,
+            "bottom_right_y": 207,
+            "content": "المجموع",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 17
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 188,
+            "bottom_right_x": 57,
+            "bottom_right_y": 207,
+            "content": "506.66",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 18
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 217,
+            "bottom_right_x": 220,
+            "bottom_right_y": 247,
+            "content": "![image](img-0)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 19
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 247,
+            "bottom_right_x": 220,
+            "bottom_right_y": 262,
+            "content": "شكرا لزيارتكم",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 20
         }
     ],
     "meta": {
-        "template": "minimalist",
+        "template": "receipt",
         "hybrid": null
     }
 }

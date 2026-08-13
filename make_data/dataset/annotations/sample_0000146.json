@@ -1,85 +1,359 @@
 {
-    "markdown": "\n![image](img-0)\n\nأن الملائكة يقولون: ((ربنا\nعِمْرَانَ بْنِ\n0733949814\nحَتَّى سَأَلَهُ مَرَّةً، أَوْ",
-    "images": [
+    "markdown": "قدّم لنفسك، أعتق وتصدّق،\nINV-17613\n23/07/2023\nفاتورة إلى: أوص لفلان بكذا\n\n[tbl-0.html](tbl-0.html)\n\nالإجمالي: 5,401.95",
+    "images": [],
+    "tables": [
         {
-            "id": "img-0",
-            "top_left_x": 270,
-            "top_left_y": 14,
-            "bottom_right_x": 316,
-            "bottom_right_y": 60,
-            "reading_index": 1
+            "id": "tbl-0.html",
+            "content": "<table><tbody><tr><th>البيان</th><th>الكمية</th><th>السعر</th><th>المجموع</th></tr><tr><td>ولفلان بكذا،</td><td>6</td><td>105.37</td><td>632.22</td></tr><tr><td>فلا يزالون كذلك حتّى يذهب</td><td>2</td><td>81.35</td><td>162.70</td></tr><tr><td>عامّة ماله، ويبقى</td><td>1</td><td>175.74</td><td>175.74</td></tr><tr><td>عياله بغير</td><td>1</td><td>287.87</td><td>287.87</td></tr><tr><td>شيء، فنهاهم الله تعالى</td><td>9</td><td>228.56</td><td>2,057.04</td></tr><tr><td>عن ذلك</td><td>5</td><td>100.65</td><td>503.25</td></tr><tr><td>وأمرهم أن</td><td>5</td><td>142.49</td><td>712.45</td></tr><tr><td>يتركوا أموالهم لورثتهم) (1) .</td><td>4</td><td>217.67</td><td>870.68</td></tr></tbody></table>",
+            "format": "html",
+            "word_confidence_scores": [
+                {
+                    "text": "البيان",
+                    "confidence": 1.0,
+                    "start_index": 22
+                },
+                {
+                    "text": "الكمية",
+                    "confidence": 1.0,
+                    "start_index": 37
+                },
+                {
+                    "text": "السعر",
+                    "confidence": 1.0,
+                    "start_index": 52
+                },
+                {
+                    "text": "المجموع",
+                    "confidence": 1.0,
+                    "start_index": 66
+                },
+                {
+                    "text": "ولفلان",
+                    "confidence": 1.0,
+                    "start_index": 91
+                },
+                {
+                    "text": " بكذا،",
+                    "confidence": 1.0,
+                    "start_index": 97
+                },
+                {
+                    "text": "6",
+                    "confidence": 1.0,
+                    "start_index": 112
+                },
+                {
+                    "text": "105.37",
+                    "confidence": 1.0,
+                    "start_index": 122
+                },
+                {
+                    "text": "632.22",
+                    "confidence": 1.0,
+                    "start_index": 137
+                },
+                {
+                    "text": "فلا",
+                    "confidence": 1.0,
+                    "start_index": 161
+                },
+                {
+                    "text": " يزالون",
+                    "confidence": 1.0,
+                    "start_index": 164
+                },
+                {
+                    "text": " كذلك",
+                    "confidence": 1.0,
+                    "start_index": 171
+                },
+                {
+                    "text": " حتّى",
+                    "confidence": 1.0,
+                    "start_index": 176
+                },
+                {
+                    "text": " يذهب",
+                    "confidence": 1.0,
+                    "start_index": 181
+                },
+                {
+                    "text": "2",
+                    "confidence": 1.0,
+                    "start_index": 195
+                },
+                {
+                    "text": "81.35",
+                    "confidence": 1.0,
+                    "start_index": 205
+                },
+                {
+                    "text": "162.70",
+                    "confidence": 1.0,
+                    "start_index": 219
+                },
+                {
+                    "text": "عامّة",
+                    "confidence": 1.0,
+                    "start_index": 243
+                },
+                {
+                    "text": " ماله،",
+                    "confidence": 1.0,
+                    "start_index": 248
+                },
+                {
+                    "text": " ويبقى",
+                    "confidence": 1.0,
+                    "start_index": 254
+                },
+                {
+                    "text": "1",
+                    "confidence": 1.0,
+                    "start_index": 269
+                },
+                {
+                    "text": "175.74",
+                    "confidence": 1.0,
+                    "start_index": 279
+                },
+                {
+                    "text": "175.74",
+                    "confidence": 1.0,
+                    "start_index": 294
+                },
+                {
+                    "text": "عياله",
+                    "confidence": 1.0,
+                    "start_index": 318
+                },
+                {
+                    "text": " بغير",
+                    "confidence": 1.0,
+                    "start_index": 323
+                },
+                {
+                    "text": "1",
+                    "confidence": 1.0,
+                    "start_index": 337
+                },
+                {
+                    "text": "287.87",
+                    "confidence": 1.0,
+                    "start_index": 347
+                },
+                {
+                    "text": "287.87",
+                    "confidence": 1.0,
+                    "start_index": 362
+                },
+                {
+                    "text": "شيء،",
+                    "confidence": 1.0,
+                    "start_index": 386
+                },
+                {
+                    "text": " فنهاهم",
+                    "confidence": 1.0,
+                    "start_index": 390
+                },
+                {
+                    "text": " الله",
+                    "confidence": 1.0,
+                    "start_index": 397
+                },
+                {
+                    "text": " تعالى",
+                    "confidence": 1.0,
+                    "start_index": 402
+                },
+                {
+                    "text": "9",
+                    "confidence": 1.0,
+                    "start_index": 417
+                },
+                {
+                    "text": "228.56",
+                    "confidence": 1.0,
+                    "start_index": 427
+                },
+                {
+                    "text": "2,057.04",
+                    "confidence": 1.0,
+                    "start_index": 442
+                },
+                {
+                    "text": "عن",
+                    "confidence": 1.0,
+                    "start_index": 468
+                },
+                {
+                    "text": " ذلك",
+                    "confidence": 1.0,
+                    "start_index": 470
+                },
+                {
+                    "text": "5",
+                    "confidence": 1.0,
+                    "start_index": 483
+                },
+                {
+                    "text": "100.65",
+                    "confidence": 1.0,
+                    "start_index": 493
+                },
+                {
+                    "text": "503.25",
+                    "confidence": 1.0,
+                    "start_index": 508
+                },
+                {
+                    "text": "وأمرهم",
+                    "confidence": 1.0,
+                    "start_index": 532
+                },
+                {
+                    "text": " أن",
+                    "confidence": 1.0,
+                    "start_index": 538
+                },
+                {
+                    "text": "5",
+                    "confidence": 1.0,
+                    "start_index": 550
+                },
+                {
+                    "text": "142.49",
+                    "confidence": 1.0,
+                    "start_index": 560
+                },
+                {
+                    "text": "712.45",
+                    "confidence": 1.0,
+                    "start_index": 575
+                },
+                {
+                    "text": "يتركوا",
+                    "confidence": 1.0,
+                    "start_index": 599
+                },
+                {
+                    "text": " أموالهم",
+                    "confidence": 1.0,
+                    "start_index": 605
+                },
+                {
+                    "text": " لورثتهم)",
+                    "confidence": 1.0,
+                    "start_index": 613
+                },
+                {
+                    "text": " (1)",
+                    "confidence": 1.0,
+                    "start_index": 622
+                },
+                {
+                    "text": " .",
+                    "confidence": 1.0,
+                    "start_index": 626
+                },
+                {
+                    "text": "4",
+                    "confidence": 1.0,
+                    "start_index": 637
+                },
+                {
+                    "text": "217.67",
+                    "confidence": 1.0,
+                    "start_index": 647
+                },
+                {
+                    "text": "870.68",
+                    "confidence": 1.0,
+                    "start_index": 662
+                }
+            ]
         }
     ],
-    "tables": [],
     "hyperlinks": [],
     "header": null,
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 226,
-        "width": 330
+        "height": 1140,
+        "width": 872
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "![image](img-0)",
+                "text": "قدّم",
                 "confidence": 1.0,
-                "start_index": 1
+                "start_index": 0
             },
             {
-                "text": "أن",
+                "text": "لنفسك،",
                 "confidence": 1.0,
-                "start_index": 18
+                "start_index": 5
             },
             {
-                "text": "الملائكة",
+                "text": "أعتق",
                 "confidence": 1.0,
-                "start_index": 21
+                "start_index": 12
             },
             {
-                "text": "يقولون:",
+                "text": "وتصدّق،",
                 "confidence": 1.0,
-                "start_index": 30
+                "start_index": 17
             },
             {
-                "text": "((ربنا",
+                "text": "INV-17613",
                 "confidence": 1.0,
-                "start_index": 38
+                "start_index": 25
             },
             {
-                "text": "عِمْرَانَ",
+                "text": "23/07/2023",
                 "confidence": 1.0,
-                "start_index": 45
+                "start_index": 35
             },
             {
-                "text": "بْنِ",
+                "text": "فاتورة",
                 "confidence": 1.0,
-                "start_index": 55
+                "start_index": 46
             },
             {
-                "text": "0733949814",
+                "text": "إلى:",
                 "confidence": 1.0,
-                "start_index": 60
+                "start_index": 53
             },
             {
-                "text": "حَتَّى",
+                "text": "أوص",
                 "confidence": 1.0,
-                "start_index": 71
+                "start_index": 58
             },
             {
-                "text": "سَأَلَهُ",
+                "text": "لفلان",
                 "confidence": 1.0,
-                "start_index": 78
+                "start_index": 62
             },
             {
-                "text": "مَرَّةً،",
+                "text": "بكذا",
                 "confidence": 1.0,
-                "start_index": 87
+                "start_index": 68
             },
             {
-                "text": "أَوْ",
+                "text": "[tbl-0.html](tbl-0.html)",
                 "confidence": 1.0,
-                "start_index": 96
+                "start_index": 74
+            },
+            {
+                "text": "الإجمالي:",
+                "confidence": 1.0,
+                "start_index": 100
+            },
+            {
+                "text": "5,401.95",
+                "confidence": 1.0,
+                "start_index": 110
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -87,58 +361,69 @@
     },
     "blocks": [
         {
-            "top_left_x": 270,
-            "top_left_y": 14,
-            "bottom_right_x": 316,
-            "bottom_right_y": 60,
-            "content": "![image](img-0)",
-            "type": "image",
+            "top_left_x": 44,
+            "top_left_y": 44,
+            "bottom_right_x": 828,
+            "bottom_right_y": 84,
+            "content": "قدّم لنفسك، أعتق وتصدّق،",
+            "type": "text",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 14,
-            "top_left_y": 131,
-            "bottom_right_x": 316,
-            "bottom_right_y": 155,
-            "content": "أن الملائكة يقولون: ((ربنا",
+            "top_left_x": 761,
+            "top_left_y": 92,
+            "bottom_right_x": 828,
+            "bottom_right_y": 116,
+            "content": "INV-17613",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 2
         },
         {
-            "top_left_x": 14,
-            "top_left_y": 157,
-            "bottom_right_x": 316,
-            "bottom_right_y": 174,
-            "content": "عِمْرَانَ بْنِ",
+            "top_left_x": 44,
+            "top_left_y": 92,
+            "bottom_right_x": 104,
+            "bottom_right_y": 116,
+            "content": "23/07/2023",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 3
         },
         {
-            "top_left_x": 14,
-            "top_left_y": 180,
-            "bottom_right_x": 316,
-            "bottom_right_y": 196,
-            "content": "0733949814",
+            "top_left_x": 44,
+            "top_left_y": 138,
+            "bottom_right_x": 828,
+            "bottom_right_y": 163,
+            "content": "فاتورة إلى: أوص لفلان بكذا",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 4
         },
         {
-            "top_left_x": 14,
-            "top_left_y": 196,
-            "bottom_right_x": 316,
-            "bottom_right_y": 212,
-            "content": "حَتَّى سَأَلَهُ مَرَّةً، أَوْ",
-            "type": "text",
+            "top_left_x": 44,
+            "top_left_y": 177,
+            "bottom_right_x": 828,
+            "bottom_right_y": 515,
+            "content": "<table><tbody><tr><th>البيان</th><th>الكمية</th><th>السعر</th><th>المجموع</th></tr><tr><td>ولفلان بكذا،</td><td>6</td><td>105.37</td><td>632.22</td></tr><tr><td>فلا يزالون كذلك حتّى يذهب</td><td>2</td><td>81.35</td><td>162.70</td></tr><tr><td>عامّة ماله، ويبقى</td><td>1</td><td>175.74</td><td>175.74</td></tr><tr><td>عياله بغير</td><td>1</td><td>287.87</td><td>287.87</td></tr><tr><td>شيء، فنهاهم الله تعالى</td><td>9</td><td>228.56</td><td>2,057.04</td></tr><tr><td>عن ذلك</td><td>5</td><td>100.65</td><td>503.25</td></tr><tr><td>وأمرهم أن</td><td>5</td><td>142.49</td><td>712.45</td></tr><tr><td>يتركوا أموالهم لورثتهم) (1) .</td><td>4</td><td>217.67</td><td>870.68</td></tr></tbody></table>",
+            "type": "table",
+            "table_id": "tbl-0.html",
             "confidence_scores": null,
             "reading_index": 5
+        },
+        {
+            "top_left_x": 44,
+            "top_left_y": 529,
+            "bottom_right_x": 154,
+            "bottom_right_y": 558,
+            "content": "الإجمالي: 5,401.95",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 6
         }
     ],
     "meta": {
-        "template": "business_card",
+        "template": "invoice",
         "hybrid": null
     }
 }

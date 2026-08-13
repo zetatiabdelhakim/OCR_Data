@@ -1,259 +1,159 @@
 {
-    "markdown": "ثمان سنين\nINV-11176\n08/03/2026\nفاتورة إلى: وجوب النكاح، مبني\n\n[tbl-0.html](tbl-0.html)\n\nالإجمالي: 8,066.77",
-    "images": [],
-    "tables": [
+    "markdown": "## الرّجل إذا حضره الموت يقول\n\n![image](img-0)\n\n\n![image](img-1)\n\n\\frac{\\partial n}{\\partial \\theta} = \\lim_{h \\to 0} \\frac{\\log(\\theta + h) - \\log(\\theta)}{h}\n\n![image](img-2)\n\n\n![image](img-3)\n",
+    "images": [
         {
-            "id": "tbl-0.html",
-            "content": "<table><tbody><tr><th>البيان</th><th>الكمية</th><th>السعر</th><th>المجموع</th></tr><tr><td>شَأْنُ ثَابِتٍ، اشْتَكَى؟</td><td>5</td><td>256.22</td><td>1,281.10</td></tr><tr><td>من هذا الحكم كلب</td><td>12</td><td>67.11</td><td>805.32</td></tr><tr><td>أَبِي زَرْعٍ، فَمَا بِنْتُ</td><td>9</td><td>234.67</td><td>2,112.03</td></tr><tr><td>على البحر لا</td><td>9</td><td>110.28</td><td>992.52</td></tr><tr><td>عَنْ أَبِي</td><td>12</td><td>239.65</td><td>2,875.80</td></tr></tbody></table>",
-            "format": "html",
-            "word_confidence_scores": [
-                {
-                    "text": "البيان",
-                    "confidence": 1.0,
-                    "start_index": 22
-                },
-                {
-                    "text": "الكمية",
-                    "confidence": 1.0,
-                    "start_index": 37
-                },
-                {
-                    "text": "السعر",
-                    "confidence": 1.0,
-                    "start_index": 52
-                },
-                {
-                    "text": "المجموع",
-                    "confidence": 1.0,
-                    "start_index": 66
-                },
-                {
-                    "text": "شَأْنُ",
-                    "confidence": 1.0,
-                    "start_index": 91
-                },
-                {
-                    "text": " ثَابِتٍ،",
-                    "confidence": 1.0,
-                    "start_index": 97
-                },
-                {
-                    "text": " اشْتَكَى؟",
-                    "confidence": 1.0,
-                    "start_index": 106
-                },
-                {
-                    "text": "5",
-                    "confidence": 1.0,
-                    "start_index": 125
-                },
-                {
-                    "text": "256.22",
-                    "confidence": 1.0,
-                    "start_index": 135
-                },
-                {
-                    "text": "1,281.10",
-                    "confidence": 1.0,
-                    "start_index": 150
-                },
-                {
-                    "text": "من",
-                    "confidence": 1.0,
-                    "start_index": 176
-                },
-                {
-                    "text": " هذا",
-                    "confidence": 1.0,
-                    "start_index": 178
-                },
-                {
-                    "text": " الحكم",
-                    "confidence": 1.0,
-                    "start_index": 182
-                },
-                {
-                    "text": " كلب",
-                    "confidence": 1.0,
-                    "start_index": 188
-                },
-                {
-                    "text": "12",
-                    "confidence": 1.0,
-                    "start_index": 201
-                },
-                {
-                    "text": "67.11",
-                    "confidence": 1.0,
-                    "start_index": 212
-                },
-                {
-                    "text": "805.32",
-                    "confidence": 1.0,
-                    "start_index": 226
-                },
-                {
-                    "text": "أَبِي",
-                    "confidence": 1.0,
-                    "start_index": 250
-                },
-                {
-                    "text": " زَرْعٍ،",
-                    "confidence": 1.0,
-                    "start_index": 255
-                },
-                {
-                    "text": " فَمَا",
-                    "confidence": 1.0,
-                    "start_index": 263
-                },
-                {
-                    "text": " بِنْتُ",
-                    "confidence": 1.0,
-                    "start_index": 269
-                },
-                {
-                    "text": "9",
-                    "confidence": 1.0,
-                    "start_index": 285
-                },
-                {
-                    "text": "234.67",
-                    "confidence": 1.0,
-                    "start_index": 295
-                },
-                {
-                    "text": "2,112.03",
-                    "confidence": 1.0,
-                    "start_index": 310
-                },
-                {
-                    "text": "على",
-                    "confidence": 1.0,
-                    "start_index": 336
-                },
-                {
-                    "text": " البحر",
-                    "confidence": 1.0,
-                    "start_index": 339
-                },
-                {
-                    "text": " لا",
-                    "confidence": 1.0,
-                    "start_index": 345
-                },
-                {
-                    "text": "9",
-                    "confidence": 1.0,
-                    "start_index": 357
-                },
-                {
-                    "text": "110.28",
-                    "confidence": 1.0,
-                    "start_index": 367
-                },
-                {
-                    "text": "992.52",
-                    "confidence": 1.0,
-                    "start_index": 382
-                },
-                {
-                    "text": "عَنْ",
-                    "confidence": 1.0,
-                    "start_index": 406
-                },
-                {
-                    "text": " أَبِي",
-                    "confidence": 1.0,
-                    "start_index": 410
-                },
-                {
-                    "text": "12",
-                    "confidence": 1.0,
-                    "start_index": 425
-                },
-                {
-                    "text": "239.65",
-                    "confidence": 1.0,
-                    "start_index": 436
-                },
-                {
-                    "text": "2,875.80",
-                    "confidence": 1.0,
-                    "start_index": 451
-                }
-            ]
+            "id": "img-0",
+            "top_left_x": 392,
+            "top_left_y": 220,
+            "bottom_right_x": 735,
+            "bottom_right_y": 687,
+            "reading_index": 2
+        },
+        {
+            "id": "img-1",
+            "top_left_x": 36,
+            "top_left_y": 220,
+            "bottom_right_x": 380,
+            "bottom_right_y": 687,
+            "reading_index": 3
+        },
+        {
+            "id": "img-2",
+            "top_left_x": 213,
+            "top_left_y": 713,
+            "bottom_right_x": 378,
+            "bottom_right_y": 1179,
+            "reading_index": 5
+        },
+        {
+            "id": "img-3",
+            "top_left_x": 36,
+            "top_left_y": 713,
+            "bottom_right_x": 201,
+            "bottom_right_y": 1179,
+            "reading_index": 6
         }
     ],
+    "tables": [],
     "hyperlinks": [],
     "header": null,
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 1065,
-        "width": 833
+        "height": 1193,
+        "width": 771
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "ثمان",
+                "text": "##",
                 "confidence": 1.0,
                 "start_index": 0
             },
             {
-                "text": "سنين",
+                "text": "الرّجل",
                 "confidence": 1.0,
-                "start_index": 5
+                "start_index": 3
             },
             {
-                "text": "INV-11176",
+                "text": "إذا",
                 "confidence": 1.0,
                 "start_index": 10
             },
             {
-                "text": "08/03/2026",
+                "text": "حضره",
                 "confidence": 1.0,
-                "start_index": 20
+                "start_index": 14
             },
             {
-                "text": "فاتورة",
+                "text": "الموت",
+                "confidence": 1.0,
+                "start_index": 19
+            },
+            {
+                "text": "يقول",
+                "confidence": 1.0,
+                "start_index": 25
+            },
+            {
+                "text": "![image](img-0)",
                 "confidence": 1.0,
                 "start_index": 31
             },
             {
-                "text": "إلى:",
+                "text": "![image](img-1)",
                 "confidence": 1.0,
-                "start_index": 38
+                "start_index": 49
             },
             {
-                "text": "وجوب",
+                "text": "\\frac{\\partial",
                 "confidence": 1.0,
-                "start_index": 43
+                "start_index": 66
             },
             {
-                "text": "النكاح،",
+                "text": "n}{\\partial",
                 "confidence": 1.0,
-                "start_index": 48
+                "start_index": 81
             },
             {
-                "text": "مبني",
+                "text": "\\theta}",
                 "confidence": 1.0,
-                "start_index": 56
+                "start_index": 93
             },
             {
-                "text": "[tbl-0.html](tbl-0.html)",
+                "text": "=",
                 "confidence": 1.0,
-                "start_index": 62
+                "start_index": 101
             },
             {
-                "text": "الإجمالي:",
+                "text": "\\lim_{h",
                 "confidence": 1.0,
-                "start_index": 88
+                "start_index": 103
             },
             {
-                "text": "8,066.77",
+                "text": "\\to",
                 "confidence": 1.0,
-                "start_index": 98
+                "start_index": 111
+            },
+            {
+                "text": "0}",
+                "confidence": 1.0,
+                "start_index": 115
+            },
+            {
+                "text": "\\frac{\\log(\\theta",
+                "confidence": 1.0,
+                "start_index": 118
+            },
+            {
+                "text": "+",
+                "confidence": 1.0,
+                "start_index": 136
+            },
+            {
+                "text": "h)",
+                "confidence": 1.0,
+                "start_index": 138
+            },
+            {
+                "text": "-",
+                "confidence": 1.0,
+                "start_index": 141
+            },
+            {
+                "text": "\\log(\\theta)}{h}",
+                "confidence": 1.0,
+                "start_index": 143
+            },
+            {
+                "text": "![image](img-2)",
+                "confidence": 1.0,
+                "start_index": 161
+            },
+            {
+                "text": "![image](img-3)",
+                "confidence": 1.0,
+                "start_index": 179
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -261,69 +161,68 @@
     },
     "blocks": [
         {
-            "top_left_x": 44,
-            "top_left_y": 44,
-            "bottom_right_x": 789,
-            "bottom_right_y": 81,
-            "content": "ثمان سنين",
-            "type": "text",
+            "top_left_x": 36,
+            "top_left_y": 36,
+            "bottom_right_x": 735,
+            "bottom_right_y": 204,
+            "content": "الرّجل إذا حضره الموت يقول",
+            "type": "title",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 719,
-            "top_left_y": 89,
-            "bottom_right_x": 789,
-            "bottom_right_y": 112,
-            "content": "INV-11176",
-            "type": "text",
+            "top_left_x": 392,
+            "top_left_y": 220,
+            "bottom_right_x": 735,
+            "bottom_right_y": 687,
+            "content": "![image](img-0)",
+            "type": "image",
             "confidence_scores": null,
             "reading_index": 2
         },
         {
-            "top_left_x": 44,
-            "top_left_y": 89,
-            "bottom_right_x": 119,
-            "bottom_right_y": 112,
-            "content": "08/03/2026",
-            "type": "text",
+            "top_left_x": 36,
+            "top_left_y": 220,
+            "bottom_right_x": 380,
+            "bottom_right_y": 687,
+            "content": "![image](img-1)",
+            "type": "image",
             "confidence_scores": null,
             "reading_index": 3
         },
         {
-            "top_left_x": 44,
-            "top_left_y": 134,
-            "bottom_right_x": 789,
-            "bottom_right_y": 158,
-            "content": "فاتورة إلى: وجوب النكاح، مبني",
+            "top_left_x": 394,
+            "top_left_y": 731,
+            "bottom_right_x": 735,
+            "bottom_right_y": 782,
+            "content": "\\frac{\\partial n}{\\partial \\theta} = \\lim_{h \\to 0} \\frac{\\log(\\theta + h) - \\log(\\theta)}{h}",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 4
         },
         {
-            "top_left_x": 44,
-            "top_left_y": 172,
-            "bottom_right_x": 789,
-            "bottom_right_y": 370,
-            "content": "<table><tbody><tr><th>البيان</th><th>الكمية</th><th>السعر</th><th>المجموع</th></tr><tr><td>شَأْنُ ثَابِتٍ، اشْتَكَى؟</td><td>5</td><td>256.22</td><td>1,281.10</td></tr><tr><td>من هذا الحكم كلب</td><td>12</td><td>67.11</td><td>805.32</td></tr><tr><td>أَبِي زَرْعٍ، فَمَا بِنْتُ</td><td>9</td><td>234.67</td><td>2,112.03</td></tr><tr><td>على البحر لا</td><td>9</td><td>110.28</td><td>992.52</td></tr><tr><td>عَنْ أَبِي</td><td>12</td><td>239.65</td><td>2,875.80</td></tr></tbody></table>",
-            "type": "table",
-            "table_id": "tbl-0.html",
+            "top_left_x": 213,
+            "top_left_y": 713,
+            "bottom_right_x": 378,
+            "bottom_right_y": 1179,
+            "content": "![image](img-2)",
+            "type": "image",
             "confidence_scores": null,
             "reading_index": 5
         },
         {
-            "top_left_x": 44,
-            "top_left_y": 384,
-            "bottom_right_x": 178,
-            "bottom_right_y": 411,
-            "content": "الإجمالي: 8,066.77",
-            "type": "text",
+            "top_left_x": 36,
+            "top_left_y": 713,
+            "bottom_right_x": 201,
+            "bottom_right_y": 1179,
+            "content": "![image](img-3)",
+            "type": "image",
             "confidence_scores": null,
             "reading_index": 6
         }
     ],
     "meta": {
-        "template": "invoice",
-        "hybrid": null
+        "template": "a4_image_gallery",
+        "hybrid": "equation"
     }
 }

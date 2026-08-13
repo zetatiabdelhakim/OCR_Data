@@ -1,86 +1,83 @@
 {
-    "markdown": "عليه وسلم قَالَ عَمْرٌو:\nهَاجَرَ حَجَّةً وَاحِدَةً حَجَّةَ الْوَدَاعِ، قَالَ أَبُو إِسْحَاقَ:\nكَانَ مِمَّنْ",
-    "images": [],
+    "markdown": "\"كر\". 22367- عن الزهري\n\n![image](img-0)\n\nأحمد عبد الرحمن\n8209-3730\n\n![image](img-1)\n",
+    "images": [
+        {
+            "id": "img-0",
+            "top_left_x": 315,
+            "top_left_y": 71,
+            "bottom_right_x": 359,
+            "bottom_right_y": 127,
+            "reading_index": 2
+        },
+        {
+            "id": "img-1",
+            "top_left_x": 10,
+            "top_left_y": 174,
+            "bottom_right_x": 359,
+            "bottom_right_y": 204,
+            "reading_index": 5
+        }
+    ],
     "tables": [],
     "hyperlinks": [],
     "header": null,
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 644,
-        "width": 461
+        "height": 214,
+        "width": 369
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "عليه",
+                "text": "\"كر\".",
                 "confidence": 1.0,
                 "start_index": 0
             },
             {
-                "text": "وسلم",
+                "text": "22367-",
                 "confidence": 1.0,
-                "start_index": 5
+                "start_index": 6
             },
             {
-                "text": "قَالَ",
+                "text": "عن",
                 "confidence": 1.0,
-                "start_index": 10
+                "start_index": 13
             },
             {
-                "text": "عَمْرٌو:",
+                "text": "الزهري",
                 "confidence": 1.0,
                 "start_index": 16
             },
             {
-                "text": "هَاجَرَ",
+                "text": "![image](img-0)",
                 "confidence": 1.0,
-                "start_index": 25
+                "start_index": 24
             },
             {
-                "text": "حَجَّةً",
-                "confidence": 1.0,
-                "start_index": 33
-            },
-            {
-                "text": "وَاحِدَةً",
+                "text": "أحمد",
                 "confidence": 1.0,
                 "start_index": 41
             },
             {
-                "text": "حَجَّةَ",
+                "text": "عبد",
                 "confidence": 1.0,
-                "start_index": 51
+                "start_index": 46
             },
             {
-                "text": "الْوَدَاعِ،",
+                "text": "الرحمن",
                 "confidence": 1.0,
-                "start_index": 59
+                "start_index": 50
             },
             {
-                "text": "قَالَ",
+                "text": "8209-3730",
                 "confidence": 1.0,
-                "start_index": 71
+                "start_index": 57
             },
             {
-                "text": "أَبُو",
+                "text": "![image](img-1)",
                 "confidence": 1.0,
-                "start_index": 77
-            },
-            {
-                "text": "إِسْحَاقَ:",
-                "confidence": 1.0,
-                "start_index": 83
-            },
-            {
-                "text": "كَانَ",
-                "confidence": 1.0,
-                "start_index": 94
-            },
-            {
-                "text": "مِمَّنْ",
-                "confidence": 1.0,
-                "start_index": 100
+                "start_index": 68
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -88,38 +85,58 @@
     },
     "blocks": [
         {
-            "top_left_x": 107,
-            "top_left_y": 286,
-            "bottom_right_x": 354,
-            "bottom_right_y": 330,
-            "content": "عليه وسلم قَالَ عَمْرٌو:",
+            "top_left_x": 10,
+            "top_left_y": 10,
+            "bottom_right_x": 359,
+            "bottom_right_y": 24,
+            "content": "\"كر\". 22367- عن الزهري",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 147,
-            "top_left_y": 338,
-            "bottom_right_x": 314,
-            "bottom_right_y": 358,
-            "content": "هَاجَرَ حَجَّةً وَاحِدَةً حَجَّةَ الْوَدَاعِ، قَالَ أَبُو إِسْحَاقَ:",
-            "type": "text",
+            "top_left_x": 315,
+            "top_left_y": 71,
+            "bottom_right_x": 359,
+            "bottom_right_y": 127,
+            "content": "![image](img-0)",
+            "type": "image",
             "confidence_scores": null,
             "reading_index": 2
         },
         {
-            "top_left_x": 212,
-            "top_left_y": 600,
-            "bottom_right_x": 249,
-            "bottom_right_y": 626,
-            "content": "كَانَ مِمَّنْ",
+            "top_left_x": 10,
+            "top_left_y": 83,
+            "bottom_right_x": 307,
+            "bottom_right_y": 98,
+            "content": "أحمد عبد الرحمن",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 3
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 102,
+            "bottom_right_x": 307,
+            "bottom_right_y": 115,
+            "content": "8209-3730",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 4
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 174,
+            "bottom_right_x": 359,
+            "bottom_right_y": 204,
+            "content": "![image](img-1)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 5
         }
     ],
     "meta": {
-        "template": "book_cover",
+        "template": "id_card",
         "hybrid": null
     }
 }

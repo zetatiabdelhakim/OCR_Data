@@ -1,68 +1,196 @@
 {
-    "markdown": "سُفْيَانَ وَفِي\n\n![image](img-0)\n\nنُسُكٍ} قَالَ:\n8024-9779\n\n![image](img-1)\n",
-    "images": [
-        {
-            "id": "img-0",
-            "top_left_x": 259,
-            "top_left_y": 61,
-            "bottom_right_x": 303,
-            "bottom_right_y": 117,
-            "reading_index": 2
-        },
-        {
-            "id": "img-1",
-            "top_left_x": 10,
-            "top_left_y": 148,
-            "bottom_right_x": 303,
-            "bottom_right_y": 178,
-            "reading_index": 5
-        }
-    ],
+    "markdown": "## مبرهنة\n31 - حَدَّثَنَا أَبُو خَيْثَمَةَ، حَدَّثَنَا عَبْدُ الرَّحْمَنِ بْنُ مَهْدِيٍّ، عَنْ سُفْيَانَ، عَنْ أَبِي الْأَغَرِّ، عَنْ وَهْبِ بْنِ\n\\iint_{D} i^2 \\geq \\mu^2 \\, dx \\, dy\n\\prod_{k=1}^{n} (1 - x_k) = 0 + \\frac{\\beta}{\\alpha^2}",
+    "images": [],
     "tables": [],
     "hyperlinks": [],
     "header": null,
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 188,
-        "width": 313
+        "height": 303,
+        "width": 722
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "سُفْيَانَ",
+                "text": "##",
                 "confidence": 1.0,
                 "start_index": 0
             },
             {
-                "text": "وَفِي",
+                "text": "مبرهنة",
+                "confidence": 1.0,
+                "start_index": 3
+            },
+            {
+                "text": "31",
                 "confidence": 1.0,
                 "start_index": 10
             },
             {
-                "text": "![image](img-0)",
+                "text": "-",
                 "confidence": 1.0,
-                "start_index": 17
+                "start_index": 13
             },
             {
-                "text": "نُسُكٍ}",
+                "text": "حَدَّثَنَا",
                 "confidence": 1.0,
-                "start_index": 34
+                "start_index": 15
             },
             {
-                "text": "قَالَ:",
+                "text": "أَبُو",
                 "confidence": 1.0,
-                "start_index": 42
+                "start_index": 26
             },
             {
-                "text": "8024-9779",
+                "text": "خَيْثَمَةَ،",
                 "confidence": 1.0,
-                "start_index": 49
+                "start_index": 32
             },
             {
-                "text": "![image](img-1)",
+                "text": "حَدَّثَنَا",
                 "confidence": 1.0,
-                "start_index": 60
+                "start_index": 44
+            },
+            {
+                "text": "عَبْدُ",
+                "confidence": 1.0,
+                "start_index": 55
+            },
+            {
+                "text": "الرَّحْمَنِ",
+                "confidence": 1.0,
+                "start_index": 62
+            },
+            {
+                "text": "بْنُ",
+                "confidence": 1.0,
+                "start_index": 74
+            },
+            {
+                "text": "مَهْدِيٍّ،",
+                "confidence": 1.0,
+                "start_index": 79
+            },
+            {
+                "text": "عَنْ",
+                "confidence": 1.0,
+                "start_index": 90
+            },
+            {
+                "text": "سُفْيَانَ،",
+                "confidence": 1.0,
+                "start_index": 95
+            },
+            {
+                "text": "عَنْ",
+                "confidence": 1.0,
+                "start_index": 106
+            },
+            {
+                "text": "أَبِي",
+                "confidence": 1.0,
+                "start_index": 111
+            },
+            {
+                "text": "الْأَغَرِّ،",
+                "confidence": 1.0,
+                "start_index": 117
+            },
+            {
+                "text": "عَنْ",
+                "confidence": 1.0,
+                "start_index": 129
+            },
+            {
+                "text": "وَهْبِ",
+                "confidence": 1.0,
+                "start_index": 134
+            },
+            {
+                "text": "بْنِ",
+                "confidence": 1.0,
+                "start_index": 141
+            },
+            {
+                "text": "\\iint_{D}",
+                "confidence": 1.0,
+                "start_index": 146
+            },
+            {
+                "text": "i^2",
+                "confidence": 1.0,
+                "start_index": 156
+            },
+            {
+                "text": "\\geq",
+                "confidence": 1.0,
+                "start_index": 160
+            },
+            {
+                "text": "\\mu^2",
+                "confidence": 1.0,
+                "start_index": 165
+            },
+            {
+                "text": "\\,",
+                "confidence": 1.0,
+                "start_index": 171
+            },
+            {
+                "text": "dx",
+                "confidence": 1.0,
+                "start_index": 174
+            },
+            {
+                "text": "\\,",
+                "confidence": 1.0,
+                "start_index": 177
+            },
+            {
+                "text": "dy",
+                "confidence": 1.0,
+                "start_index": 180
+            },
+            {
+                "text": "\\prod_{k=1}^{n}",
+                "confidence": 1.0,
+                "start_index": 183
+            },
+            {
+                "text": "(1",
+                "confidence": 1.0,
+                "start_index": 199
+            },
+            {
+                "text": "-",
+                "confidence": 1.0,
+                "start_index": 202
+            },
+            {
+                "text": "x_k)",
+                "confidence": 1.0,
+                "start_index": 204
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 209
+            },
+            {
+                "text": "0",
+                "confidence": 1.0,
+                "start_index": 211
+            },
+            {
+                "text": "+",
+                "confidence": 1.0,
+                "start_index": 213
+            },
+            {
+                "text": "\\frac{\\beta}{\\alpha^2}",
+                "confidence": 1.0,
+                "start_index": 215
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -70,58 +198,48 @@
     },
     "blocks": [
         {
-            "top_left_x": 10,
-            "top_left_y": 10,
-            "bottom_right_x": 303,
-            "bottom_right_y": 30,
-            "content": "سُفْيَانَ وَفِي",
-            "type": "text",
+            "top_left_x": 32,
+            "top_left_y": 32,
+            "bottom_right_x": 686,
+            "bottom_right_y": 60,
+            "content": "مبرهنة",
+            "type": "title",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 259,
-            "top_left_y": 61,
-            "bottom_right_x": 303,
-            "bottom_right_y": 117,
-            "content": "![image](img-0)",
-            "type": "image",
+            "top_left_x": 32,
+            "top_left_y": 65,
+            "bottom_right_x": 686,
+            "bottom_right_y": 87,
+            "content": "31 - حَدَّثَنَا أَبُو خَيْثَمَةَ، حَدَّثَنَا عَبْدُ الرَّحْمَنِ بْنُ مَهْدِيٍّ، عَنْ سُفْيَانَ، عَنْ أَبِي الْأَغَرِّ، عَنْ وَهْبِ بْنِ",
+            "type": "text",
             "confidence_scores": null,
             "reading_index": 2
         },
         {
-            "top_left_x": 10,
-            "top_left_y": 67,
-            "bottom_right_x": 251,
-            "bottom_right_y": 90,
-            "content": "نُسُكٍ} قَالَ:",
+            "top_left_x": 32,
+            "top_left_y": 93,
+            "bottom_right_x": 686,
+            "bottom_right_y": 148,
+            "content": "\\iint_{D} i^2 \\geq \\mu^2 \\, dx \\, dy",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 3
         },
         {
-            "top_left_x": 10,
-            "top_left_y": 94,
-            "bottom_right_x": 251,
-            "bottom_right_y": 112,
-            "content": "8024-9779",
+            "top_left_x": 20,
+            "top_left_y": 180,
+            "bottom_right_x": 702,
+            "bottom_right_y": 256,
+            "content": "\\prod_{k=1}^{n} (1 - x_k) = 0 + \\frac{\\beta}{\\alpha^2}",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 4
-        },
-        {
-            "top_left_x": 10,
-            "top_left_y": 148,
-            "bottom_right_x": 303,
-            "bottom_right_y": 178,
-            "content": "![image](img-1)",
-            "type": "image",
-            "confidence_scores": null,
-            "reading_index": 5
         }
     ],
     "meta": {
-        "template": "id_card",
+        "template": "math_proof",
         "hybrid": null
     }
 }

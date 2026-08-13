@@ -1,21 +1,13 @@
 {
-    "markdown": "لم يقل: من اشترى\n\n![image](img-0)\n\nعليكم ليحاجوكم به\n8191-6709\n\n![image](img-1)\n",
+    "markdown": "\n![image](img-0)\n\nبكذا، فلا يزالون كذلك\nحتّى يذهب عامّة ماله، ويبقى عياله بغير شيء،",
     "images": [
         {
             "id": "img-0",
-            "top_left_x": 254,
-            "top_left_y": 81,
-            "bottom_right_x": 298,
-            "bottom_right_y": 137,
-            "reading_index": 2
-        },
-        {
-            "id": "img-1",
-            "top_left_x": 10,
-            "top_left_y": 185,
-            "bottom_right_x": 298,
-            "bottom_right_y": 215,
-            "reading_index": 5
+            "top_left_x": 469,
+            "top_left_y": 139,
+            "bottom_right_x": 533,
+            "bottom_right_y": 203,
+            "reading_index": 1
         }
     ],
     "tables": [],
@@ -24,60 +16,75 @@
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 225,
-        "width": 308
+        "height": 452,
+        "width": 1002
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "لم",
-                "confidence": 1.0,
-                "start_index": 0
-            },
-            {
-                "text": "يقل:",
-                "confidence": 1.0,
-                "start_index": 3
-            },
-            {
-                "text": "من",
-                "confidence": 1.0,
-                "start_index": 8
-            },
-            {
-                "text": "اشترى",
-                "confidence": 1.0,
-                "start_index": 11
-            },
-            {
                 "text": "![image](img-0)",
+                "confidence": 1.0,
+                "start_index": 1
+            },
+            {
+                "text": "بكذا،",
                 "confidence": 1.0,
                 "start_index": 18
             },
             {
-                "text": "عليكم",
+                "text": "فلا",
+                "confidence": 1.0,
+                "start_index": 24
+            },
+            {
+                "text": "يزالون",
+                "confidence": 1.0,
+                "start_index": 28
+            },
+            {
+                "text": "كذلك",
                 "confidence": 1.0,
                 "start_index": 35
             },
             {
-                "text": "ليحاجوكم",
+                "text": "حتّى",
                 "confidence": 1.0,
-                "start_index": 41
+                "start_index": 40
             },
             {
-                "text": "به",
+                "text": "يذهب",
+                "confidence": 1.0,
+                "start_index": 45
+            },
+            {
+                "text": "عامّة",
                 "confidence": 1.0,
                 "start_index": 50
             },
             {
-                "text": "8191-6709",
+                "text": "ماله،",
                 "confidence": 1.0,
-                "start_index": 53
+                "start_index": 56
             },
             {
-                "text": "![image](img-1)",
+                "text": "ويبقى",
                 "confidence": 1.0,
-                "start_index": 64
+                "start_index": 62
+            },
+            {
+                "text": "عياله",
+                "confidence": 1.0,
+                "start_index": 68
+            },
+            {
+                "text": "بغير",
+                "confidence": 1.0,
+                "start_index": 74
+            },
+            {
+                "text": "شيء،",
+                "confidence": 1.0,
+                "start_index": 79
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -85,58 +92,38 @@
     },
     "blocks": [
         {
-            "top_left_x": 10,
-            "top_left_y": 10,
-            "bottom_right_x": 298,
-            "bottom_right_y": 32,
-            "content": "لم يقل: من اشترى",
-            "type": "text",
+            "top_left_x": 469,
+            "top_left_y": 139,
+            "bottom_right_x": 533,
+            "bottom_right_y": 203,
+            "content": "![image](img-0)",
+            "type": "image",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 254,
-            "top_left_y": 81,
-            "bottom_right_x": 298,
-            "bottom_right_y": 137,
-            "content": "![image](img-0)",
-            "type": "image",
+            "top_left_x": 390,
+            "top_left_y": 225,
+            "bottom_right_x": 612,
+            "bottom_right_y": 261,
+            "content": "بكذا، فلا يزالون كذلك",
+            "type": "text",
             "confidence_scores": null,
             "reading_index": 2
         },
         {
-            "top_left_x": 10,
-            "top_left_y": 85,
-            "bottom_right_x": 246,
-            "bottom_right_y": 109,
-            "content": "عليكم ليحاجوكم به",
+            "top_left_x": 422,
+            "top_left_y": 271,
+            "bottom_right_x": 580,
+            "bottom_right_y": 314,
+            "content": "حتّى يذهب عامّة ماله، ويبقى عياله بغير شيء،",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 3
-        },
-        {
-            "top_left_x": 10,
-            "top_left_y": 113,
-            "bottom_right_x": 246,
-            "bottom_right_y": 133,
-            "content": "8191-6709",
-            "type": "text",
-            "confidence_scores": null,
-            "reading_index": 4
-        },
-        {
-            "top_left_x": 10,
-            "top_left_y": 185,
-            "bottom_right_x": 298,
-            "bottom_right_y": 215,
-            "content": "![image](img-1)",
-            "type": "image",
-            "confidence_scores": null,
-            "reading_index": 5
         }
     ],
     "meta": {
-        "template": "id_card",
+        "template": "minimalist",
         "hybrid": null
     }
 }

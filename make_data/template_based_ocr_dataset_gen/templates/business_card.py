@@ -18,7 +18,7 @@ def generate(hybrid_html=""):
     color = random.choice(assets.COLORS)
     logo_side = random.choice(["flex-start", "flex-end"])
 
-    name_text = assets.get_real_arabic_text(2, 4)
+    name_text = assets.get_real_arabic_name()
     role_text = assets.get_real_arabic_text(2, 5)
     contact1 = assets.random_fake_phone()
     contact2 = assets.get_real_arabic_text(3, 6)

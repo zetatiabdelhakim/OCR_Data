@@ -1,5 +1,5 @@
 {
-    "markdown": "## ملاحظة\nقَالَ: ((لِأَنَّهُ حَدِيثُ عَهْدٍ بِرَبِّهِ تَعَالَى) ). في هذا الحديث: بيان مشروعية كشف بعض الجسد ليصيبه المطر؛ اقتداء بالنبي صلى الله\nP(A|B) = \\frac{P(A \\cap B)}{P(B)} + \\frac{y}{k^2}\ny_{n+1} = y_n - \\alpha \\nabla f(y_n)\n\\int_{4}^{100} \\log(\\theta) \\, d\\theta = k^2 \\geq C\n## تعريف\nفَرِحَ. في هذه الأحاديث: فضل الصيام، حيث أضافه الرب سبحانه\n\\mathbb{E}[n] = \\int x f_n(x) dx + \\frac{k}{y^2}",
+    "markdown": "## 31 - حَدَّثَنَا أَبُو خَيْثَمَةَ، حَدَّثَنَا عَبْدُ الرَّحْم\n31 - حَدَّثَنَا أَبُو خَيْثَمَةَ، حَدَّثَنَا عَبْدُ الرَّحْمَنِ بْنُ مَهْدِيٍّ، عَنْ سُفْيَانَ، عَنْ أَبِي الْأَغَرِّ، عَنْ وَهْبِ بْنِ مُنَبِّهٍ، قَالَ فِي حِكَمِ آلِ دَاوُدَ: «حَقٌّ عَلَى الْعَاقِلِ أَنْ يَكُونَ عَارِفًا بِزَمَانِهِ، حَافِظًا لِلِسَانِهِ، مُقْبِلًا عَلَى شَأْنِهِ»",
     "images": [],
     "tables": [],
     "hyperlinks": [],
@@ -7,8 +7,8 @@
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 510,
-        "width": 544
+        "height": 1050,
+        "width": 859
     },
     "confidence_scores": {
         "word_confidence_scores": [
@@ -18,324 +18,224 @@
                 "start_index": 0
             },
             {
-                "text": "ملاحظة",
+                "text": "31",
                 "confidence": 1.0,
                 "start_index": 3
             },
             {
-                "text": "قَالَ:",
+                "text": "-",
                 "confidence": 1.0,
-                "start_index": 10
+                "start_index": 6
             },
             {
-                "text": "((لِأَنَّهُ",
+                "text": "حَدَّثَنَا",
                 "confidence": 1.0,
-                "start_index": 17
+                "start_index": 8
             },
             {
-                "text": "حَدِيثُ",
+                "text": "أَبُو",
                 "confidence": 1.0,
-                "start_index": 29
+                "start_index": 19
             },
             {
-                "text": "عَهْدٍ",
+                "text": "خَيْثَمَةَ،",
+                "confidence": 1.0,
+                "start_index": 25
+            },
+            {
+                "text": "حَدَّثَنَا",
                 "confidence": 1.0,
                 "start_index": 37
             },
             {
-                "text": "بِرَبِّهِ",
+                "text": "عَبْدُ",
                 "confidence": 1.0,
-                "start_index": 44
+                "start_index": 48
             },
             {
-                "text": "تَعَالَى)",
+                "text": "الرَّحْم",
                 "confidence": 1.0,
-                "start_index": 54
+                "start_index": 55
             },
             {
-                "text": ").",
+                "text": "31",
                 "confidence": 1.0,
                 "start_index": 64
             },
             {
-                "text": "في",
+                "text": "-",
                 "confidence": 1.0,
                 "start_index": 67
             },
             {
-                "text": "هذا",
+                "text": "حَدَّثَنَا",
                 "confidence": 1.0,
-                "start_index": 70
+                "start_index": 69
             },
             {
-                "text": "الحديث:",
+                "text": "أَبُو",
                 "confidence": 1.0,
-                "start_index": 74
+                "start_index": 80
             },
             {
-                "text": "بيان",
+                "text": "خَيْثَمَةَ،",
                 "confidence": 1.0,
-                "start_index": 82
+                "start_index": 86
             },
             {
-                "text": "مشروعية",
+                "text": "حَدَّثَنَا",
                 "confidence": 1.0,
-                "start_index": 87
+                "start_index": 98
             },
             {
-                "text": "كشف",
-                "confidence": 1.0,
-                "start_index": 95
-            },
-            {
-                "text": "بعض",
-                "confidence": 1.0,
-                "start_index": 99
-            },
-            {
-                "text": "الجسد",
-                "confidence": 1.0,
-                "start_index": 103
-            },
-            {
-                "text": "ليصيبه",
+                "text": "عَبْدُ",
                 "confidence": 1.0,
                 "start_index": 109
             },
             {
-                "text": "المطر؛",
+                "text": "الرَّحْمَنِ",
                 "confidence": 1.0,
                 "start_index": 116
             },
             {
-                "text": "اقتداء",
+                "text": "بْنُ",
                 "confidence": 1.0,
-                "start_index": 123
+                "start_index": 128
             },
             {
-                "text": "بالنبي",
+                "text": "مَهْدِيٍّ،",
                 "confidence": 1.0,
-                "start_index": 130
+                "start_index": 133
             },
             {
-                "text": "صلى",
+                "text": "عَنْ",
                 "confidence": 1.0,
-                "start_index": 137
+                "start_index": 144
             },
             {
-                "text": "الله",
+                "text": "سُفْيَانَ،",
                 "confidence": 1.0,
-                "start_index": 141
+                "start_index": 149
             },
             {
-                "text": "P(A|B)",
+                "text": "عَنْ",
                 "confidence": 1.0,
-                "start_index": 146
+                "start_index": 160
             },
             {
-                "text": "=",
-                "confidence": 1.0,
-                "start_index": 153
-            },
-            {
-                "text": "\\frac{P(A",
-                "confidence": 1.0,
-                "start_index": 155
-            },
-            {
-                "text": "\\cap",
+                "text": "أَبِي",
                 "confidence": 1.0,
                 "start_index": 165
             },
             {
-                "text": "B)}{P(B)}",
+                "text": "الْأَغَرِّ،",
                 "confidence": 1.0,
-                "start_index": 170
+                "start_index": 171
             },
             {
-                "text": "+",
+                "text": "عَنْ",
                 "confidence": 1.0,
-                "start_index": 180
+                "start_index": 183
             },
             {
-                "text": "\\frac{y}{k^2}",
+                "text": "وَهْبِ",
                 "confidence": 1.0,
-                "start_index": 182
+                "start_index": 188
             },
             {
-                "text": "y_{n+1}",
+                "text": "بْنِ",
                 "confidence": 1.0,
-                "start_index": 196
+                "start_index": 195
             },
             {
-                "text": "=",
+                "text": "مُنَبِّهٍ،",
                 "confidence": 1.0,
-                "start_index": 204
+                "start_index": 200
             },
             {
-                "text": "y_n",
+                "text": "قَالَ",
                 "confidence": 1.0,
-                "start_index": 206
+                "start_index": 211
             },
             {
-                "text": "-",
+                "text": "فِي",
                 "confidence": 1.0,
-                "start_index": 210
+                "start_index": 217
             },
             {
-                "text": "\\alpha",
+                "text": "حِكَمِ",
                 "confidence": 1.0,
-                "start_index": 212
+                "start_index": 221
             },
             {
-                "text": "\\nabla",
+                "text": "آلِ",
                 "confidence": 1.0,
-                "start_index": 219
+                "start_index": 228
             },
             {
-                "text": "f(y_n)",
+                "text": "دَاوُدَ:",
                 "confidence": 1.0,
-                "start_index": 226
+                "start_index": 232
             },
             {
-                "text": "\\int_{4}^{100}",
+                "text": "«حَقٌّ",
                 "confidence": 1.0,
-                "start_index": 233
+                "start_index": 241
             },
             {
-                "text": "\\log(\\theta)",
+                "text": "عَلَى",
                 "confidence": 1.0,
                 "start_index": 248
             },
             {
-                "text": "\\,",
+                "text": "الْعَاقِلِ",
                 "confidence": 1.0,
-                "start_index": 261
+                "start_index": 254
             },
             {
-                "text": "d\\theta",
+                "text": "أَنْ",
                 "confidence": 1.0,
-                "start_index": 264
+                "start_index": 265
             },
             {
-                "text": "=",
+                "text": "يَكُونَ",
                 "confidence": 1.0,
-                "start_index": 272
+                "start_index": 270
             },
             {
-                "text": "k^2",
-                "confidence": 1.0,
-                "start_index": 274
-            },
-            {
-                "text": "\\geq",
+                "text": "عَارِفًا",
                 "confidence": 1.0,
                 "start_index": 278
             },
             {
-                "text": "C",
+                "text": "بِزَمَانِهِ،",
                 "confidence": 1.0,
-                "start_index": 283
+                "start_index": 287
             },
             {
-                "text": "##",
+                "text": "حَافِظًا",
                 "confidence": 1.0,
-                "start_index": 285
+                "start_index": 300
             },
             {
-                "text": "تعريف",
-                "confidence": 1.0,
-                "start_index": 288
-            },
-            {
-                "text": "فَرِحَ.",
-                "confidence": 1.0,
-                "start_index": 294
-            },
-            {
-                "text": "في",
-                "confidence": 1.0,
-                "start_index": 302
-            },
-            {
-                "text": "هذه",
-                "confidence": 1.0,
-                "start_index": 305
-            },
-            {
-                "text": "الأحاديث:",
+                "text": "لِلِسَانِهِ،",
                 "confidence": 1.0,
                 "start_index": 309
             },
             {
-                "text": "فضل",
+                "text": "مُقْبِلًا",
                 "confidence": 1.0,
-                "start_index": 319
+                "start_index": 322
             },
             {
-                "text": "الصيام،",
+                "text": "عَلَى",
                 "confidence": 1.0,
-                "start_index": 323
+                "start_index": 332
             },
             {
-                "text": "حيث",
+                "text": "شَأْنِهِ»",
                 "confidence": 1.0,
-                "start_index": 331
-            },
-            {
-                "text": "أضافه",
-                "confidence": 1.0,
-                "start_index": 335
-            },
-            {
-                "text": "الرب",
-                "confidence": 1.0,
-                "start_index": 341
-            },
-            {
-                "text": "سبحانه",
-                "confidence": 1.0,
-                "start_index": 346
-            },
-            {
-                "text": "\\mathbb{E}[n]",
-                "confidence": 1.0,
-                "start_index": 353
-            },
-            {
-                "text": "=",
-                "confidence": 1.0,
-                "start_index": 367
-            },
-            {
-                "text": "\\int",
-                "confidence": 1.0,
-                "start_index": 369
-            },
-            {
-                "text": "x",
-                "confidence": 1.0,
-                "start_index": 374
-            },
-            {
-                "text": "f_n(x)",
-                "confidence": 1.0,
-                "start_index": 376
-            },
-            {
-                "text": "dx",
-                "confidence": 1.0,
-                "start_index": 383
-            },
-            {
-                "text": "+",
-                "confidence": 1.0,
-                "start_index": 386
-            },
-            {
-                "text": "\\frac{k}{y^2}",
-                "confidence": 1.0,
-                "start_index": 388
+                "start_index": 338
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -343,88 +243,28 @@
     },
     "blocks": [
         {
-            "top_left_x": 32,
-            "top_left_y": 32,
-            "bottom_right_x": 508,
-            "bottom_right_y": 56,
-            "content": "ملاحظة",
+            "top_left_x": 40,
+            "top_left_y": 40,
+            "bottom_right_x": 819,
+            "bottom_right_y": 186,
+            "content": "31 - حَدَّثَنَا أَبُو خَيْثَمَةَ، حَدَّثَنَا عَبْدُ الرَّحْم",
             "type": "title",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 32,
-            "top_left_y": 61,
-            "bottom_right_x": 508,
-            "bottom_right_y": 106,
-            "content": "قَالَ: ((لِأَنَّهُ حَدِيثُ عَهْدٍ بِرَبِّهِ تَعَالَى) ). في هذا الحديث: بيان مشروعية كشف بعض الجسد ليصيبه المطر؛ اقتداء بالنبي صلى الله",
+            "top_left_x": 40,
+            "top_left_y": 206,
+            "bottom_right_x": 819,
+            "bottom_right_y": 1030,
+            "content": "31 - حَدَّثَنَا أَبُو خَيْثَمَةَ، حَدَّثَنَا عَبْدُ الرَّحْمَنِ بْنُ مَهْدِيٍّ، عَنْ سُفْيَانَ، عَنْ أَبِي الْأَغَرِّ، عَنْ وَهْبِ بْنِ مُنَبِّهٍ، قَالَ فِي حِكَمِ آلِ دَاوُدَ: «حَقٌّ عَلَى الْعَاقِلِ أَنْ يَكُونَ عَارِفًا بِزَمَانِهِ، حَافِظًا لِلِسَانِهِ، مُقْبِلًا عَلَى شَأْنِهِ»",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 2
-        },
-        {
-            "top_left_x": 32,
-            "top_left_y": 112,
-            "bottom_right_x": 508,
-            "bottom_right_y": 168,
-            "content": "P(A|B) = \\frac{P(A \\cap B)}{P(B)} + \\frac{y}{k^2}",
-            "type": "text",
-            "confidence_scores": null,
-            "reading_index": 3
-        },
-        {
-            "top_left_x": 20,
-            "top_left_y": 200,
-            "bottom_right_x": 524,
-            "bottom_right_y": 238,
-            "content": "y_{n+1} = y_n - \\alpha \\nabla f(y_n)",
-            "type": "text",
-            "confidence_scores": null,
-            "reading_index": 4
-        },
-        {
-            "top_left_x": 20,
-            "top_left_y": 244,
-            "bottom_right_x": 524,
-            "bottom_right_y": 304,
-            "content": "\\int_{4}^{100} \\log(\\theta) \\, d\\theta = k^2 \\geq C",
-            "type": "text",
-            "confidence_scores": null,
-            "reading_index": 5
-        },
-        {
-            "top_left_x": 32,
-            "top_left_y": 322,
-            "bottom_right_x": 508,
-            "bottom_right_y": 350,
-            "content": "تعريف",
-            "type": "title",
-            "confidence_scores": null,
-            "reading_index": 6
-        },
-        {
-            "top_left_x": 32,
-            "top_left_y": 355,
-            "bottom_right_x": 508,
-            "bottom_right_y": 377,
-            "content": "فَرِحَ. في هذه الأحاديث: فضل الصيام، حيث أضافه الرب سبحانه",
-            "type": "text",
-            "confidence_scores": null,
-            "reading_index": 7
-        },
-        {
-            "top_left_x": 32,
-            "top_left_y": 383,
-            "bottom_right_x": 508,
-            "bottom_right_y": 438,
-            "content": "\\mathbb{E}[n] = \\int x f_n(x) dx + \\frac{k}{y^2}",
-            "type": "text",
-            "confidence_scores": null,
-            "reading_index": 8
         }
     ],
     "meta": {
-        "template": "math_proof",
+        "template": "a4_literary",
         "hybrid": null
     }
 }

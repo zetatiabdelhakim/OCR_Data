@@ -1,579 +1,76 @@
 {
-    "markdown": "## الله عليه وسلم كَانَ يَبْعَثُ مَعَهُ بِالْبُدْنِ،\n\n![image](img-0)\n\nقَالَا: حَدَّثَنَا وَكِيعٌ. ح، وَحَدَّثَنَا مُحَمَّدُ بْنُ الْمُثَنَّى، وَابْنُ بَشَّارٍ قَالَا: حَدَّثَنَا مُحَمَّدُ بْنُ جَعْفَرٍ، جَمِيعًا عَنْ شُعْبَةَ. ح، وَحَدَّثَنَا- وَاللَّفْظُ لَهُ- عُبَيْدُ اللَّهِ بْنُ مُعَاذٍ الْعَنْبَرِيُّ، حَدَّثَنَا أَبِي، حَدَّثَنَا شُعْبَةُ عَنْ عَمْرِو بْنِ مُرَّةَ\n## اللهِ) ) (١) ؟ والجواب:\n\n![image](img-1)\n\nشكل: الله عليه وسلم،\nعثمان رضي الله عنه، فردوه، وسألوا عثمان رضي الله عنه أن يولي عليهم أبا موسى الأشعري رضي الله عنه، فولَّاه) ) (١) . (١) شرح مسلم، للنووي (١٨/ ١٨). بَابُ لَا تَقُومُ السَّاعَةُ حَتَّى يَحْسِرَ الْفُرَاتُ عَنْ جَبَلٍ مِنْ ذَهَبٍ [٢٨٩٤] حَدَّثَنَا قُتَيْبَةُ بْنُ سَعِيدٍ، حَدَّثَنَا يَعْقُوبُ- يَعْنِي: ابْنَ\n\n![image](img-2)\n\n\n![image](img-3)\n",
-    "images": [
-        {
-            "id": "img-0",
-            "top_left_x": 603,
-            "top_left_y": 176,
-            "bottom_right_x": 788,
-            "bottom_right_y": 299,
-            "reading_index": 2
-        },
-        {
-            "id": "img-1",
-            "top_left_x": 192,
-            "top_left_y": 222,
-            "bottom_right_x": 279,
-            "bottom_right_y": 280,
-            "reading_index": 5
-        },
-        {
-            "id": "img-2",
-            "top_left_x": 304,
-            "top_left_y": 523,
-            "bottom_right_x": 793,
-            "bottom_right_y": 856,
-            "reading_index": 8
-        },
-        {
-            "id": "img-3",
-            "top_left_x": 40,
-            "top_left_y": 523,
-            "bottom_right_x": 284,
-            "bottom_right_y": 856,
-            "reading_index": 9
-        }
-    ],
+    "markdown": "الرّجل إذا حضره الموت يقول\nالعدل والصّواب من القول. قوله\nمحمود إبراهيم",
+    "images": [],
     "tables": [],
     "hyperlinks": [],
     "header": null,
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 1188,
-        "width": 833
+        "height": 1102,
+        "width": 878
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "##",
+                "text": "الرّجل",
                 "confidence": 1.0,
                 "start_index": 0
             },
             {
-                "text": "الله",
+                "text": "إذا",
                 "confidence": 1.0,
-                "start_index": 3
+                "start_index": 7
             },
             {
-                "text": "عليه",
+                "text": "حضره",
                 "confidence": 1.0,
-                "start_index": 8
+                "start_index": 11
             },
             {
-                "text": "وسلم",
+                "text": "الموت",
                 "confidence": 1.0,
-                "start_index": 13
+                "start_index": 16
             },
             {
-                "text": "كَانَ",
+                "text": "يقول",
                 "confidence": 1.0,
-                "start_index": 18
+                "start_index": 22
             },
             {
-                "text": "يَبْعَثُ",
+                "text": "العدل",
                 "confidence": 1.0,
-                "start_index": 24
+                "start_index": 27
             },
             {
-                "text": "مَعَهُ",
+                "text": "والصّواب",
                 "confidence": 1.0,
                 "start_index": 33
             },
             {
-                "text": "بِالْبُدْنِ،",
+                "text": "من",
                 "confidence": 1.0,
-                "start_index": 40
+                "start_index": 42
             },
             {
-                "text": "![image](img-0)",
+                "text": "القول.",
                 "confidence": 1.0,
-                "start_index": 54
+                "start_index": 45
             },
             {
-                "text": "قَالَا:",
+                "text": "قوله",
                 "confidence": 1.0,
-                "start_index": 71
+                "start_index": 52
             },
             {
-                "text": "حَدَّثَنَا",
+                "text": "محمود",
                 "confidence": 1.0,
-                "start_index": 79
+                "start_index": 57
             },
             {
-                "text": "وَكِيعٌ.",
+                "text": "إبراهيم",
                 "confidence": 1.0,
-                "start_index": 90
-            },
-            {
-                "text": "ح،",
-                "confidence": 1.0,
-                "start_index": 99
-            },
-            {
-                "text": "وَحَدَّثَنَا",
-                "confidence": 1.0,
-                "start_index": 102
-            },
-            {
-                "text": "مُحَمَّدُ",
-                "confidence": 1.0,
-                "start_index": 115
-            },
-            {
-                "text": "بْنُ",
-                "confidence": 1.0,
-                "start_index": 125
-            },
-            {
-                "text": "الْمُثَنَّى،",
-                "confidence": 1.0,
-                "start_index": 130
-            },
-            {
-                "text": "وَابْنُ",
-                "confidence": 1.0,
-                "start_index": 143
-            },
-            {
-                "text": "بَشَّارٍ",
-                "confidence": 1.0,
-                "start_index": 151
-            },
-            {
-                "text": "قَالَا:",
-                "confidence": 1.0,
-                "start_index": 160
-            },
-            {
-                "text": "حَدَّثَنَا",
-                "confidence": 1.0,
-                "start_index": 168
-            },
-            {
-                "text": "مُحَمَّدُ",
-                "confidence": 1.0,
-                "start_index": 179
-            },
-            {
-                "text": "بْنُ",
-                "confidence": 1.0,
-                "start_index": 189
-            },
-            {
-                "text": "جَعْفَرٍ،",
-                "confidence": 1.0,
-                "start_index": 194
-            },
-            {
-                "text": "جَمِيعًا",
-                "confidence": 1.0,
-                "start_index": 204
-            },
-            {
-                "text": "عَنْ",
-                "confidence": 1.0,
-                "start_index": 213
-            },
-            {
-                "text": "شُعْبَةَ.",
-                "confidence": 1.0,
-                "start_index": 218
-            },
-            {
-                "text": "ح،",
-                "confidence": 1.0,
-                "start_index": 228
-            },
-            {
-                "text": "وَحَدَّثَنَا-",
-                "confidence": 1.0,
-                "start_index": 231
-            },
-            {
-                "text": "وَاللَّفْظُ",
-                "confidence": 1.0,
-                "start_index": 245
-            },
-            {
-                "text": "لَهُ-",
-                "confidence": 1.0,
-                "start_index": 257
-            },
-            {
-                "text": "عُبَيْدُ",
-                "confidence": 1.0,
-                "start_index": 263
-            },
-            {
-                "text": "اللَّهِ",
-                "confidence": 1.0,
-                "start_index": 272
-            },
-            {
-                "text": "بْنُ",
-                "confidence": 1.0,
-                "start_index": 280
-            },
-            {
-                "text": "مُعَاذٍ",
-                "confidence": 1.0,
-                "start_index": 285
-            },
-            {
-                "text": "الْعَنْبَرِيُّ،",
-                "confidence": 1.0,
-                "start_index": 293
-            },
-            {
-                "text": "حَدَّثَنَا",
-                "confidence": 1.0,
-                "start_index": 309
-            },
-            {
-                "text": "أَبِي،",
-                "confidence": 1.0,
-                "start_index": 320
-            },
-            {
-                "text": "حَدَّثَنَا",
-                "confidence": 1.0,
-                "start_index": 327
-            },
-            {
-                "text": "شُعْبَةُ",
-                "confidence": 1.0,
-                "start_index": 338
-            },
-            {
-                "text": "عَنْ",
-                "confidence": 1.0,
-                "start_index": 347
-            },
-            {
-                "text": "عَمْرِو",
-                "confidence": 1.0,
-                "start_index": 352
-            },
-            {
-                "text": "بْنِ",
-                "confidence": 1.0,
-                "start_index": 360
-            },
-            {
-                "text": "مُرَّةَ",
-                "confidence": 1.0,
-                "start_index": 365
-            },
-            {
-                "text": "##",
-                "confidence": 1.0,
-                "start_index": 373
-            },
-            {
-                "text": "اللهِ)",
-                "confidence": 1.0,
-                "start_index": 376
-            },
-            {
-                "text": ")",
-                "confidence": 1.0,
-                "start_index": 383
-            },
-            {
-                "text": "(١)",
-                "confidence": 1.0,
-                "start_index": 385
-            },
-            {
-                "text": "؟",
-                "confidence": 1.0,
-                "start_index": 389
-            },
-            {
-                "text": "والجواب:",
-                "confidence": 1.0,
-                "start_index": 391
-            },
-            {
-                "text": "![image](img-1)",
-                "confidence": 1.0,
-                "start_index": 401
-            },
-            {
-                "text": "شكل:",
-                "confidence": 1.0,
-                "start_index": 418
-            },
-            {
-                "text": "الله",
-                "confidence": 1.0,
-                "start_index": 423
-            },
-            {
-                "text": "عليه",
-                "confidence": 1.0,
-                "start_index": 428
-            },
-            {
-                "text": "وسلم،",
-                "confidence": 1.0,
-                "start_index": 433
-            },
-            {
-                "text": "عثمان",
-                "confidence": 1.0,
-                "start_index": 439
-            },
-            {
-                "text": "رضي",
-                "confidence": 1.0,
-                "start_index": 445
-            },
-            {
-                "text": "الله",
-                "confidence": 1.0,
-                "start_index": 449
-            },
-            {
-                "text": "عنه،",
-                "confidence": 1.0,
-                "start_index": 454
-            },
-            {
-                "text": "فردوه،",
-                "confidence": 1.0,
-                "start_index": 459
-            },
-            {
-                "text": "وسألوا",
-                "confidence": 1.0,
-                "start_index": 466
-            },
-            {
-                "text": "عثمان",
-                "confidence": 1.0,
-                "start_index": 473
-            },
-            {
-                "text": "رضي",
-                "confidence": 1.0,
-                "start_index": 479
-            },
-            {
-                "text": "الله",
-                "confidence": 1.0,
-                "start_index": 483
-            },
-            {
-                "text": "عنه",
-                "confidence": 1.0,
-                "start_index": 488
-            },
-            {
-                "text": "أن",
-                "confidence": 1.0,
-                "start_index": 492
-            },
-            {
-                "text": "يولي",
-                "confidence": 1.0,
-                "start_index": 495
-            },
-            {
-                "text": "عليهم",
-                "confidence": 1.0,
-                "start_index": 500
-            },
-            {
-                "text": "أبا",
-                "confidence": 1.0,
-                "start_index": 506
-            },
-            {
-                "text": "موسى",
-                "confidence": 1.0,
-                "start_index": 510
-            },
-            {
-                "text": "الأشعري",
-                "confidence": 1.0,
-                "start_index": 515
-            },
-            {
-                "text": "رضي",
-                "confidence": 1.0,
-                "start_index": 523
-            },
-            {
-                "text": "الله",
-                "confidence": 1.0,
-                "start_index": 527
-            },
-            {
-                "text": "عنه،",
-                "confidence": 1.0,
-                "start_index": 532
-            },
-            {
-                "text": "فولَّاه)",
-                "confidence": 1.0,
-                "start_index": 537
-            },
-            {
-                "text": ")",
-                "confidence": 1.0,
-                "start_index": 546
-            },
-            {
-                "text": "(١)",
-                "confidence": 1.0,
-                "start_index": 548
-            },
-            {
-                "text": ".",
-                "confidence": 1.0,
-                "start_index": 552
-            },
-            {
-                "text": "(١)",
-                "confidence": 1.0,
-                "start_index": 554
-            },
-            {
-                "text": "شرح",
-                "confidence": 1.0,
-                "start_index": 558
-            },
-            {
-                "text": "مسلم،",
-                "confidence": 1.0,
-                "start_index": 562
-            },
-            {
-                "text": "للنووي",
-                "confidence": 1.0,
-                "start_index": 568
-            },
-            {
-                "text": "(١٨/",
-                "confidence": 1.0,
-                "start_index": 575
-            },
-            {
-                "text": "١٨).",
-                "confidence": 1.0,
-                "start_index": 580
-            },
-            {
-                "text": "بَابُ",
-                "confidence": 1.0,
-                "start_index": 585
-            },
-            {
-                "text": "لَا",
-                "confidence": 1.0,
-                "start_index": 591
-            },
-            {
-                "text": "تَقُومُ",
-                "confidence": 1.0,
-                "start_index": 595
-            },
-            {
-                "text": "السَّاعَةُ",
-                "confidence": 1.0,
-                "start_index": 603
-            },
-            {
-                "text": "حَتَّى",
-                "confidence": 1.0,
-                "start_index": 614
-            },
-            {
-                "text": "يَحْسِرَ",
-                "confidence": 1.0,
-                "start_index": 621
-            },
-            {
-                "text": "الْفُرَاتُ",
-                "confidence": 1.0,
-                "start_index": 630
-            },
-            {
-                "text": "عَنْ",
-                "confidence": 1.0,
-                "start_index": 641
-            },
-            {
-                "text": "جَبَلٍ",
-                "confidence": 1.0,
-                "start_index": 646
-            },
-            {
-                "text": "مِنْ",
-                "confidence": 1.0,
-                "start_index": 653
-            },
-            {
-                "text": "ذَهَبٍ",
-                "confidence": 1.0,
-                "start_index": 658
-            },
-            {
-                "text": "[٢٨٩٤]",
-                "confidence": 1.0,
-                "start_index": 665
-            },
-            {
-                "text": "حَدَّثَنَا",
-                "confidence": 1.0,
-                "start_index": 672
-            },
-            {
-                "text": "قُتَيْبَةُ",
-                "confidence": 1.0,
-                "start_index": 683
-            },
-            {
-                "text": "بْنُ",
-                "confidence": 1.0,
-                "start_index": 694
-            },
-            {
-                "text": "سَعِيدٍ،",
-                "confidence": 1.0,
-                "start_index": 699
-            },
-            {
-                "text": "حَدَّثَنَا",
-                "confidence": 1.0,
-                "start_index": 708
-            },
-            {
-                "text": "يَعْقُوبُ-",
-                "confidence": 1.0,
-                "start_index": 719
-            },
-            {
-                "text": "يَعْنِي:",
-                "confidence": 1.0,
-                "start_index": 730
-            },
-            {
-                "text": "ابْنَ",
-                "confidence": 1.0,
-                "start_index": 739
-            },
-            {
-                "text": "![image](img-2)",
-                "confidence": 1.0,
-                "start_index": 746
-            },
-            {
-                "text": "![image](img-3)",
-                "confidence": 1.0,
-                "start_index": 764
+                "start_index": 63
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -581,98 +78,38 @@
     },
     "blocks": [
         {
-            "top_left_x": 40,
-            "top_left_y": 40,
-            "bottom_right_x": 793,
-            "bottom_right_y": 151,
-            "content": "الله عليه وسلم كَانَ يَبْعَثُ مَعَهُ بِالْبُدْنِ،",
-            "type": "title",
+            "top_left_x": 256,
+            "top_left_y": 513,
+            "bottom_right_x": 622,
+            "bottom_right_y": 557,
+            "content": "الرّجل إذا حضره الموت يقول",
+            "type": "text",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 603,
-            "top_left_y": 176,
-            "bottom_right_x": 788,
-            "bottom_right_y": 299,
-            "content": "![image](img-0)",
-            "type": "image",
+            "top_left_x": 365,
+            "top_left_y": 565,
+            "bottom_right_x": 513,
+            "bottom_right_y": 589,
+            "content": "العدل والصّواب من القول. قوله",
+            "type": "text",
             "confidence_scores": null,
             "reading_index": 2
         },
         {
-            "top_left_x": 304,
-            "top_left_y": 314,
-            "bottom_right_x": 793,
-            "bottom_right_y": 488,
-            "content": "قَالَا: حَدَّثَنَا وَكِيعٌ. ح، وَحَدَّثَنَا مُحَمَّدُ بْنُ الْمُثَنَّى، وَابْنُ بَشَّارٍ قَالَا: حَدَّثَنَا مُحَمَّدُ بْنُ جَعْفَرٍ، جَمِيعًا عَنْ شُعْبَةَ. ح، وَحَدَّثَنَا- وَاللَّفْظُ لَهُ- عُبَيْدُ اللَّهِ بْنُ مُعَاذٍ الْعَنْبَرِيُّ، حَدَّثَنَا أَبِي، حَدَّثَنَا شُعْبَةُ عَنْ عَمْرِو بْنِ مُرَّةَ",
+            "top_left_x": 394,
+            "top_left_y": 1054,
+            "bottom_right_x": 484,
+            "bottom_right_y": 1084,
+            "content": "محمود إبراهيم",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 3
-        },
-        {
-            "top_left_x": 40,
-            "top_left_y": 171,
-            "bottom_right_x": 284,
-            "bottom_right_y": 207,
-            "content": "اللهِ) ) (١) ؟ والجواب:",
-            "type": "title",
-            "confidence_scores": null,
-            "reading_index": 4
-        },
-        {
-            "top_left_x": 192,
-            "top_left_y": 222,
-            "bottom_right_x": 279,
-            "bottom_right_y": 280,
-            "content": "![image](img-1)",
-            "type": "image",
-            "confidence_scores": null,
-            "reading_index": 5
-        },
-        {
-            "top_left_x": 192,
-            "top_left_y": 284,
-            "bottom_right_x": 279,
-            "bottom_right_y": 327,
-            "content": "شكل: الله عليه وسلم،",
-            "type": "text",
-            "confidence_scores": null,
-            "reading_index": 6
-        },
-        {
-            "top_left_x": 40,
-            "top_left_y": 342,
-            "bottom_right_x": 284,
-            "bottom_right_y": 488,
-            "content": "عثمان رضي الله عنه، فردوه، وسألوا عثمان رضي الله عنه أن يولي عليهم أبا موسى الأشعري رضي الله عنه، فولَّاه) ) (١) . (١) شرح مسلم، للنووي (١٨/ ١٨). بَابُ لَا تَقُومُ السَّاعَةُ حَتَّى يَحْسِرَ الْفُرَاتُ عَنْ جَبَلٍ مِنْ ذَهَبٍ [٢٨٩٤] حَدَّثَنَا قُتَيْبَةُ بْنُ سَعِيدٍ، حَدَّثَنَا يَعْقُوبُ- يَعْنِي: ابْنَ",
-            "type": "text",
-            "confidence_scores": null,
-            "reading_index": 7
-        },
-        {
-            "top_left_x": 304,
-            "top_left_y": 523,
-            "bottom_right_x": 793,
-            "bottom_right_y": 856,
-            "content": "![image](img-2)",
-            "type": "image",
-            "confidence_scores": null,
-            "reading_index": 8
-        },
-        {
-            "top_left_x": 40,
-            "top_left_y": 523,
-            "bottom_right_x": 284,
-            "bottom_right_y": 856,
-            "content": "![image](img-3)",
-            "type": "image",
-            "confidence_scores": null,
-            "reading_index": 9
         }
     ],
     "meta": {
-        "template": "a4_charts",
+        "template": "book_cover",
         "hybrid": null
     }
 }

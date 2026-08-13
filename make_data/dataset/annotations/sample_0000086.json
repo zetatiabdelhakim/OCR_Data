@@ -1,55 +1,289 @@
 {
-    "markdown": "\n![image](img-0)\n\nمَنْ لَقِيتُ\nعنه لما فعل",
-    "images": [
+    "markdown": "على صحة\nINV-57688\n11/08/2024\nفاتورة إلى: صوم يوم\n\n[tbl-0.html](tbl-0.html)\n\nالإجمالي: 2,401.08",
+    "images": [],
+    "tables": [
         {
-            "id": "img-0",
-            "top_left_x": 234,
-            "top_left_y": 14,
-            "bottom_right_x": 280,
-            "bottom_right_y": 60,
-            "reading_index": 1
+            "id": "tbl-0.html",
+            "content": "<table><tbody><tr><th>البيان</th><th>الكمية</th><th>السعر</th><th>المجموع</th></tr><tr><td>الشك إن وافق نذراً أو</td><td>2</td><td>12.92</td><td>25.84</td></tr><tr><td>قضاءً أو ورداً؛ لأن فيه</td><td>1</td><td>80.61</td><td>80.61</td></tr><tr><td>ضرورة؛ لأن القضاء والنذر فرضٌ،</td><td>11</td><td>23.59</td><td>259.49</td></tr><tr><td>وتأخيرُهُ غيرُ مرضي، وأما</td><td>1</td><td>150.74</td><td>150.74</td></tr><tr><td>الوِرْدُ فتركه أيضاً شديدٌ</td><td>7</td><td>269.20</td><td>1,884.40</td></tr></tbody></table>",
+            "format": "html",
+            "word_confidence_scores": [
+                {
+                    "text": "البيان",
+                    "confidence": 1.0,
+                    "start_index": 22
+                },
+                {
+                    "text": "الكمية",
+                    "confidence": 1.0,
+                    "start_index": 37
+                },
+                {
+                    "text": "السعر",
+                    "confidence": 1.0,
+                    "start_index": 52
+                },
+                {
+                    "text": "المجموع",
+                    "confidence": 1.0,
+                    "start_index": 66
+                },
+                {
+                    "text": "الشك",
+                    "confidence": 1.0,
+                    "start_index": 91
+                },
+                {
+                    "text": " إن",
+                    "confidence": 1.0,
+                    "start_index": 95
+                },
+                {
+                    "text": " وافق",
+                    "confidence": 1.0,
+                    "start_index": 98
+                },
+                {
+                    "text": " نذراً",
+                    "confidence": 1.0,
+                    "start_index": 103
+                },
+                {
+                    "text": " أو",
+                    "confidence": 1.0,
+                    "start_index": 109
+                },
+                {
+                    "text": "2",
+                    "confidence": 1.0,
+                    "start_index": 121
+                },
+                {
+                    "text": "12.92",
+                    "confidence": 1.0,
+                    "start_index": 131
+                },
+                {
+                    "text": "25.84",
+                    "confidence": 1.0,
+                    "start_index": 145
+                },
+                {
+                    "text": "قضاءً",
+                    "confidence": 1.0,
+                    "start_index": 168
+                },
+                {
+                    "text": " أو",
+                    "confidence": 1.0,
+                    "start_index": 173
+                },
+                {
+                    "text": " ورداً؛",
+                    "confidence": 1.0,
+                    "start_index": 176
+                },
+                {
+                    "text": " لأن",
+                    "confidence": 1.0,
+                    "start_index": 183
+                },
+                {
+                    "text": " فيه",
+                    "confidence": 1.0,
+                    "start_index": 187
+                },
+                {
+                    "text": "1",
+                    "confidence": 1.0,
+                    "start_index": 200
+                },
+                {
+                    "text": "80.61",
+                    "confidence": 1.0,
+                    "start_index": 210
+                },
+                {
+                    "text": "80.61",
+                    "confidence": 1.0,
+                    "start_index": 224
+                },
+                {
+                    "text": "ضرورة؛",
+                    "confidence": 1.0,
+                    "start_index": 247
+                },
+                {
+                    "text": " لأن",
+                    "confidence": 1.0,
+                    "start_index": 253
+                },
+                {
+                    "text": " القضاء",
+                    "confidence": 1.0,
+                    "start_index": 257
+                },
+                {
+                    "text": " والنذر",
+                    "confidence": 1.0,
+                    "start_index": 264
+                },
+                {
+                    "text": " فرضٌ،",
+                    "confidence": 1.0,
+                    "start_index": 271
+                },
+                {
+                    "text": "11",
+                    "confidence": 1.0,
+                    "start_index": 286
+                },
+                {
+                    "text": "23.59",
+                    "confidence": 1.0,
+                    "start_index": 297
+                },
+                {
+                    "text": "259.49",
+                    "confidence": 1.0,
+                    "start_index": 311
+                },
+                {
+                    "text": "وتأخيرُهُ",
+                    "confidence": 1.0,
+                    "start_index": 335
+                },
+                {
+                    "text": " غيرُ",
+                    "confidence": 1.0,
+                    "start_index": 344
+                },
+                {
+                    "text": " مرضي،",
+                    "confidence": 1.0,
+                    "start_index": 349
+                },
+                {
+                    "text": " وأما",
+                    "confidence": 1.0,
+                    "start_index": 355
+                },
+                {
+                    "text": "1",
+                    "confidence": 1.0,
+                    "start_index": 369
+                },
+                {
+                    "text": "150.74",
+                    "confidence": 1.0,
+                    "start_index": 379
+                },
+                {
+                    "text": "150.74",
+                    "confidence": 1.0,
+                    "start_index": 394
+                },
+                {
+                    "text": "الوِرْدُ",
+                    "confidence": 1.0,
+                    "start_index": 418
+                },
+                {
+                    "text": " فتركه",
+                    "confidence": 1.0,
+                    "start_index": 426
+                },
+                {
+                    "text": " أيضاً",
+                    "confidence": 1.0,
+                    "start_index": 432
+                },
+                {
+                    "text": " شديدٌ",
+                    "confidence": 1.0,
+                    "start_index": 438
+                },
+                {
+                    "text": "7",
+                    "confidence": 1.0,
+                    "start_index": 453
+                },
+                {
+                    "text": "269.20",
+                    "confidence": 1.0,
+                    "start_index": 463
+                },
+                {
+                    "text": "1,884.40",
+                    "confidence": 1.0,
+                    "start_index": 478
+                }
+            ]
         }
     ],
-    "tables": [],
     "hyperlinks": [],
     "header": null,
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 195,
-        "width": 294
+        "height": 1076,
+        "width": 780
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "![image](img-0)",
+                "text": "على",
                 "confidence": 1.0,
-                "start_index": 1
+                "start_index": 0
             },
             {
-                "text": "مَنْ",
+                "text": "صحة",
+                "confidence": 1.0,
+                "start_index": 4
+            },
+            {
+                "text": "INV-57688",
+                "confidence": 1.0,
+                "start_index": 8
+            },
+            {
+                "text": "11/08/2024",
                 "confidence": 1.0,
                 "start_index": 18
             },
             {
-                "text": "لَقِيتُ",
+                "text": "فاتورة",
                 "confidence": 1.0,
-                "start_index": 23
+                "start_index": 29
             },
             {
-                "text": "عنه",
+                "text": "إلى:",
                 "confidence": 1.0,
-                "start_index": 31
+                "start_index": 36
             },
             {
-                "text": "لما",
+                "text": "صوم",
                 "confidence": 1.0,
-                "start_index": 35
+                "start_index": 41
             },
             {
-                "text": "فعل",
+                "text": "يوم",
                 "confidence": 1.0,
-                "start_index": 39
+                "start_index": 45
+            },
+            {
+                "text": "[tbl-0.html](tbl-0.html)",
+                "confidence": 1.0,
+                "start_index": 50
+            },
+            {
+                "text": "الإجمالي:",
+                "confidence": 1.0,
+                "start_index": 76
+            },
+            {
+                "text": "2,401.08",
+                "confidence": 1.0,
+                "start_index": 86
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -57,38 +291,69 @@
     },
     "blocks": [
         {
-            "top_left_x": 234,
-            "top_left_y": 14,
-            "bottom_right_x": 280,
-            "bottom_right_y": 60,
-            "content": "![image](img-0)",
-            "type": "image",
+            "top_left_x": 44,
+            "top_left_y": 44,
+            "bottom_right_x": 736,
+            "bottom_right_y": 68,
+            "content": "على صحة",
+            "type": "text",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 14,
-            "top_left_y": 150,
-            "bottom_right_x": 280,
-            "bottom_right_y": 167,
-            "content": "مَنْ لَقِيتُ",
+            "top_left_x": 667,
+            "top_left_y": 76,
+            "bottom_right_x": 736,
+            "bottom_right_y": 90,
+            "content": "INV-57688",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 2
         },
         {
-            "top_left_x": 14,
-            "top_left_y": 169,
-            "bottom_right_x": 280,
-            "bottom_right_y": 181,
-            "content": "عنه لما فعل",
+            "top_left_x": 44,
+            "top_left_y": 76,
+            "bottom_right_x": 124,
+            "bottom_right_y": 90,
+            "content": "11/08/2024",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 3
+        },
+        {
+            "top_left_x": 44,
+            "top_left_y": 112,
+            "bottom_right_x": 736,
+            "bottom_right_y": 127,
+            "content": "فاتورة إلى: صوم يوم",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 4
+        },
+        {
+            "top_left_x": 44,
+            "top_left_y": 141,
+            "bottom_right_x": 736,
+            "bottom_right_y": 331,
+            "content": "<table><tbody><tr><th>البيان</th><th>الكمية</th><th>السعر</th><th>المجموع</th></tr><tr><td>الشك إن وافق نذراً أو</td><td>2</td><td>12.92</td><td>25.84</td></tr><tr><td>قضاءً أو ورداً؛ لأن فيه</td><td>1</td><td>80.61</td><td>80.61</td></tr><tr><td>ضرورة؛ لأن القضاء والنذر فرضٌ،</td><td>11</td><td>23.59</td><td>259.49</td></tr><tr><td>وتأخيرُهُ غيرُ مرضي، وأما</td><td>1</td><td>150.74</td><td>150.74</td></tr><tr><td>الوِرْدُ فتركه أيضاً شديدٌ</td><td>7</td><td>269.20</td><td>1,884.40</td></tr></tbody></table>",
+            "type": "table",
+            "table_id": "tbl-0.html",
+            "confidence_scores": null,
+            "reading_index": 5
+        },
+        {
+            "top_left_x": 44,
+            "top_left_y": 345,
+            "bottom_right_x": 157,
+            "bottom_right_y": 363,
+            "content": "الإجمالي: 2,401.08",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 6
         }
     ],
     "meta": {
-        "template": "business_card",
+        "template": "invoice",
         "hybrid": null
     }
 }

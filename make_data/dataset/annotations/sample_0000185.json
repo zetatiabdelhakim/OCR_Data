@@ -1,68 +1,309 @@
 {
-    "markdown": "كَتَبَهُ اللَّهُ\n\n![image](img-0)\n\nإلى العجب\n9849-2340\n\n![image](img-1)\n",
-    "images": [
+    "markdown": "بن عمر أو بن\nINV-19203\n22/01/2025\nفاتورة إلى: عمرو قال: \"فصل\n\n[tbl-0.html](tbl-0.html)\n\nالإجمالي: 6,194.47",
+    "images": [],
+    "tables": [
         {
-            "id": "img-0",
-            "top_left_x": 286,
-            "top_left_y": 76,
-            "bottom_right_x": 330,
-            "bottom_right_y": 132,
-            "reading_index": 2
-        },
-        {
-            "id": "img-1",
-            "top_left_x": 10,
-            "top_left_y": 181,
-            "bottom_right_x": 330,
-            "bottom_right_y": 211,
-            "reading_index": 5
+            "id": "tbl-0.html",
+            "content": "<table><tbody><tr><th>البيان</th><th>الكمية</th><th>السعر</th><th>المجموع</th></tr><tr><td>الصلاة التسليم\". \"عب\". 22368- عن</td><td>2</td><td>235.20</td><td>470.40</td></tr><tr><td>علي قال: \"إذا أتم</td><td>5</td><td>240.55</td><td>1,202.75</td></tr><tr><td>الركوع والسجود، ثم أحدث، فقد</td><td>5</td><td>137.31</td><td>686.55</td></tr><tr><td>تمت صلاته\".</td><td>1</td><td>82.97</td><td>82.97</td></tr><tr><td>\"ابن جرير\". 22369-</td><td>12</td><td>184.05</td><td>2,208.60</td></tr><tr><td>عن علي</td><td>12</td><td>128.60</td><td>1,543.20</td></tr></tbody></table>",
+            "format": "html",
+            "word_confidence_scores": [
+                {
+                    "text": "البيان",
+                    "confidence": 1.0,
+                    "start_index": 22
+                },
+                {
+                    "text": "الكمية",
+                    "confidence": 1.0,
+                    "start_index": 37
+                },
+                {
+                    "text": "السعر",
+                    "confidence": 1.0,
+                    "start_index": 52
+                },
+                {
+                    "text": "المجموع",
+                    "confidence": 1.0,
+                    "start_index": 66
+                },
+                {
+                    "text": "الصلاة",
+                    "confidence": 1.0,
+                    "start_index": 91
+                },
+                {
+                    "text": " التسليم\".",
+                    "confidence": 1.0,
+                    "start_index": 97
+                },
+                {
+                    "text": " \"عب\".",
+                    "confidence": 1.0,
+                    "start_index": 107
+                },
+                {
+                    "text": " 22368-",
+                    "confidence": 1.0,
+                    "start_index": 113
+                },
+                {
+                    "text": " عن",
+                    "confidence": 1.0,
+                    "start_index": 120
+                },
+                {
+                    "text": "2",
+                    "confidence": 1.0,
+                    "start_index": 132
+                },
+                {
+                    "text": "235.20",
+                    "confidence": 1.0,
+                    "start_index": 142
+                },
+                {
+                    "text": "470.40",
+                    "confidence": 1.0,
+                    "start_index": 157
+                },
+                {
+                    "text": "علي",
+                    "confidence": 1.0,
+                    "start_index": 181
+                },
+                {
+                    "text": " قال:",
+                    "confidence": 1.0,
+                    "start_index": 184
+                },
+                {
+                    "text": " \"إذا",
+                    "confidence": 1.0,
+                    "start_index": 189
+                },
+                {
+                    "text": " أتم",
+                    "confidence": 1.0,
+                    "start_index": 194
+                },
+                {
+                    "text": "5",
+                    "confidence": 1.0,
+                    "start_index": 207
+                },
+                {
+                    "text": "240.55",
+                    "confidence": 1.0,
+                    "start_index": 217
+                },
+                {
+                    "text": "1,202.75",
+                    "confidence": 1.0,
+                    "start_index": 232
+                },
+                {
+                    "text": "الركوع",
+                    "confidence": 1.0,
+                    "start_index": 258
+                },
+                {
+                    "text": " والسجود،",
+                    "confidence": 1.0,
+                    "start_index": 264
+                },
+                {
+                    "text": " ثم",
+                    "confidence": 1.0,
+                    "start_index": 273
+                },
+                {
+                    "text": " أحدث،",
+                    "confidence": 1.0,
+                    "start_index": 276
+                },
+                {
+                    "text": " فقد",
+                    "confidence": 1.0,
+                    "start_index": 282
+                },
+                {
+                    "text": "5",
+                    "confidence": 1.0,
+                    "start_index": 295
+                },
+                {
+                    "text": "137.31",
+                    "confidence": 1.0,
+                    "start_index": 305
+                },
+                {
+                    "text": "686.55",
+                    "confidence": 1.0,
+                    "start_index": 320
+                },
+                {
+                    "text": "تمت",
+                    "confidence": 1.0,
+                    "start_index": 344
+                },
+                {
+                    "text": " صلاته\".",
+                    "confidence": 1.0,
+                    "start_index": 347
+                },
+                {
+                    "text": "1",
+                    "confidence": 1.0,
+                    "start_index": 364
+                },
+                {
+                    "text": "82.97",
+                    "confidence": 1.0,
+                    "start_index": 374
+                },
+                {
+                    "text": "82.97",
+                    "confidence": 1.0,
+                    "start_index": 388
+                },
+                {
+                    "text": "\"ابن",
+                    "confidence": 1.0,
+                    "start_index": 411
+                },
+                {
+                    "text": " جرير\".",
+                    "confidence": 1.0,
+                    "start_index": 415
+                },
+                {
+                    "text": " 22369-",
+                    "confidence": 1.0,
+                    "start_index": 422
+                },
+                {
+                    "text": "12",
+                    "confidence": 1.0,
+                    "start_index": 438
+                },
+                {
+                    "text": "184.05",
+                    "confidence": 1.0,
+                    "start_index": 449
+                },
+                {
+                    "text": "2,208.60",
+                    "confidence": 1.0,
+                    "start_index": 464
+                },
+                {
+                    "text": "عن",
+                    "confidence": 1.0,
+                    "start_index": 490
+                },
+                {
+                    "text": " علي",
+                    "confidence": 1.0,
+                    "start_index": 492
+                },
+                {
+                    "text": "12",
+                    "confidence": 1.0,
+                    "start_index": 505
+                },
+                {
+                    "text": "128.60",
+                    "confidence": 1.0,
+                    "start_index": 516
+                },
+                {
+                    "text": "1,543.20",
+                    "confidence": 1.0,
+                    "start_index": 531
+                }
+            ]
         }
     ],
-    "tables": [],
     "hyperlinks": [],
     "header": null,
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 221,
-        "width": 340
+        "height": 1224,
+        "width": 782
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "كَتَبَهُ",
+                "text": "بن",
                 "confidence": 1.0,
                 "start_index": 0
             },
             {
-                "text": "اللَّهُ",
+                "text": "عمر",
                 "confidence": 1.0,
-                "start_index": 9
+                "start_index": 3
             },
             {
-                "text": "![image](img-0)",
+                "text": "أو",
                 "confidence": 1.0,
-                "start_index": 18
+                "start_index": 7
             },
             {
-                "text": "إلى",
+                "text": "بن",
                 "confidence": 1.0,
-                "start_index": 35
+                "start_index": 10
             },
             {
-                "text": "العجب",
+                "text": "INV-19203",
                 "confidence": 1.0,
-                "start_index": 39
+                "start_index": 13
             },
             {
-                "text": "9849-2340",
+                "text": "22/01/2025",
                 "confidence": 1.0,
-                "start_index": 45
+                "start_index": 23
             },
             {
-                "text": "![image](img-1)",
+                "text": "فاتورة",
+                "confidence": 1.0,
+                "start_index": 34
+            },
+            {
+                "text": "إلى:",
+                "confidence": 1.0,
+                "start_index": 41
+            },
+            {
+                "text": "عمرو",
+                "confidence": 1.0,
+                "start_index": 46
+            },
+            {
+                "text": "قال:",
+                "confidence": 1.0,
+                "start_index": 51
+            },
+            {
+                "text": "\"فصل",
                 "confidence": 1.0,
                 "start_index": 56
+            },
+            {
+                "text": "[tbl-0.html](tbl-0.html)",
+                "confidence": 1.0,
+                "start_index": 62
+            },
+            {
+                "text": "الإجمالي:",
+                "confidence": 1.0,
+                "start_index": 88
+            },
+            {
+                "text": "6,194.47",
+                "confidence": 1.0,
+                "start_index": 98
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -70,58 +311,69 @@
     },
     "blocks": [
         {
-            "top_left_x": 10,
-            "top_left_y": 10,
-            "bottom_right_x": 330,
-            "bottom_right_y": 26,
-            "content": "كَتَبَهُ اللَّهُ",
+            "top_left_x": 44,
+            "top_left_y": 44,
+            "bottom_right_x": 738,
+            "bottom_right_y": 66,
+            "content": "بن عمر أو بن",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 286,
-            "top_left_y": 76,
-            "bottom_right_x": 330,
-            "bottom_right_y": 132,
-            "content": "![image](img-0)",
-            "type": "image",
+            "top_left_x": 692,
+            "top_left_y": 74,
+            "bottom_right_x": 738,
+            "bottom_right_y": 87,
+            "content": "INV-19203",
+            "type": "text",
             "confidence_scores": null,
             "reading_index": 2
         },
         {
-            "top_left_x": 10,
-            "top_left_y": 85,
-            "bottom_right_x": 278,
-            "bottom_right_y": 103,
-            "content": "إلى العجب",
+            "top_left_x": 44,
+            "top_left_y": 74,
+            "bottom_right_x": 93,
+            "bottom_right_y": 87,
+            "content": "22/01/2025",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 3
         },
         {
-            "top_left_x": 10,
-            "top_left_y": 107,
-            "bottom_right_x": 278,
-            "bottom_right_y": 122,
-            "content": "9849-2340",
+            "top_left_x": 44,
+            "top_left_y": 109,
+            "bottom_right_x": 738,
+            "bottom_right_y": 123,
+            "content": "فاتورة إلى: عمرو قال: \"فصل",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 4
         },
         {
-            "top_left_x": 10,
-            "top_left_y": 181,
-            "bottom_right_x": 330,
-            "bottom_right_y": 211,
-            "content": "![image](img-1)",
-            "type": "image",
+            "top_left_x": 44,
+            "top_left_y": 137,
+            "bottom_right_x": 738,
+            "bottom_right_y": 379,
+            "content": "<table><tbody><tr><th>البيان</th><th>الكمية</th><th>السعر</th><th>المجموع</th></tr><tr><td>الصلاة التسليم\". \"عب\". 22368- عن</td><td>2</td><td>235.20</td><td>470.40</td></tr><tr><td>علي قال: \"إذا أتم</td><td>5</td><td>240.55</td><td>1,202.75</td></tr><tr><td>الركوع والسجود، ثم أحدث، فقد</td><td>5</td><td>137.31</td><td>686.55</td></tr><tr><td>تمت صلاته\".</td><td>1</td><td>82.97</td><td>82.97</td></tr><tr><td>\"ابن جرير\". 22369-</td><td>12</td><td>184.05</td><td>2,208.60</td></tr><tr><td>عن علي</td><td>12</td><td>128.60</td><td>1,543.20</td></tr></tbody></table>",
+            "type": "table",
+            "table_id": "tbl-0.html",
             "confidence_scores": null,
             "reading_index": 5
+        },
+        {
+            "top_left_x": 44,
+            "top_left_y": 393,
+            "bottom_right_x": 135,
+            "bottom_right_y": 409,
+            "content": "الإجمالي: 6,194.47",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 6
         }
     ],
     "meta": {
-        "template": "id_card",
+        "template": "invoice",
         "hybrid": null
     }
 }

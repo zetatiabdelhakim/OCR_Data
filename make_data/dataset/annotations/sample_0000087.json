@@ -1,364 +1,75 @@
 {
-    "markdown": "\n[tbl-0.html](tbl-0.html)\n\n## برهان\nفِي يَدِ سَارِقٍ، فَأَصْبَحُوا يَتَحَدَّثُونَ: تُصُدِّقَ عَلَى سَارِقٍ، فَقَالَ: اللَّهُمَّ لَكَ الْحَمْدُ عَلَى زَانِيَةٍ، وَعَلَى غَنِيٍّ، وَعَلَى سَارِقٍ، فَأُتِيَ، فَقِيلَ لَهُ: أَمَّا صَدَقَتُكَ\ni_{n+1} = i_n - \\alpha \\nabla f(i_n)\nj_{n+1} = j_n - \\alpha \\nabla f(j_n)",
-    "images": [],
-    "tables": [
+    "markdown": "\n![image](img-0)\n\nرسول الله؛ إنّي ذو\nمال وليس لي إلاّ بنت",
+    "images": [
         {
-            "id": "tbl-0.html",
-            "content": "<table><tbody><tr><th>هذا صعد</th><th>إذن</th></tr><tr><td>في وقت قصير، فتقطع</td><td>والتأويل. وكلٌّ من القولين يخالف</td></tr><tr><td>كَانَ عَلَيْهِ مِنَ الْإِثْمِ مِثْلُ</td><td>أَبِي شَيْبَةَ، وَأَبُو كُرَيْبٍ- وَاللَّفْظُ</td></tr><tr><td>وأنه اغترف بإحدى</td><td>وَهْبٍ، أَخْبَرَنِي يُونُسُ</td></tr></tbody></table>",
-            "format": "html",
-            "word_confidence_scores": [
-                {
-                    "text": "هذا",
-                    "confidence": 1.0,
-                    "start_index": 22
-                },
-                {
-                    "text": " صعد",
-                    "confidence": 1.0,
-                    "start_index": 25
-                },
-                {
-                    "text": "إذن",
-                    "confidence": 1.0,
-                    "start_index": 38
-                },
-                {
-                    "text": "في",
-                    "confidence": 1.0,
-                    "start_index": 59
-                },
-                {
-                    "text": " وقت",
-                    "confidence": 1.0,
-                    "start_index": 61
-                },
-                {
-                    "text": " قصير،",
-                    "confidence": 1.0,
-                    "start_index": 65
-                },
-                {
-                    "text": " فتقطع",
-                    "confidence": 1.0,
-                    "start_index": 71
-                },
-                {
-                    "text": "والتأويل.",
-                    "confidence": 1.0,
-                    "start_index": 86
-                },
-                {
-                    "text": " وكلٌّ",
-                    "confidence": 1.0,
-                    "start_index": 95
-                },
-                {
-                    "text": " من",
-                    "confidence": 1.0,
-                    "start_index": 101
-                },
-                {
-                    "text": " القولين",
-                    "confidence": 1.0,
-                    "start_index": 104
-                },
-                {
-                    "text": " يخالف",
-                    "confidence": 1.0,
-                    "start_index": 112
-                },
-                {
-                    "text": "كَانَ",
-                    "confidence": 1.0,
-                    "start_index": 136
-                },
-                {
-                    "text": " عَلَيْهِ",
-                    "confidence": 1.0,
-                    "start_index": 141
-                },
-                {
-                    "text": " مِنَ",
-                    "confidence": 1.0,
-                    "start_index": 150
-                },
-                {
-                    "text": " الْإِثْمِ",
-                    "confidence": 1.0,
-                    "start_index": 155
-                },
-                {
-                    "text": " مِثْلُ",
-                    "confidence": 1.0,
-                    "start_index": 165
-                },
-                {
-                    "text": "أَبِي",
-                    "confidence": 1.0,
-                    "start_index": 181
-                },
-                {
-                    "text": " شَيْبَةَ،",
-                    "confidence": 1.0,
-                    "start_index": 186
-                },
-                {
-                    "text": " وَأَبُو",
-                    "confidence": 1.0,
-                    "start_index": 196
-                },
-                {
-                    "text": " كُرَيْبٍ-",
-                    "confidence": 1.0,
-                    "start_index": 204
-                },
-                {
-                    "text": " وَاللَّفْظُ",
-                    "confidence": 1.0,
-                    "start_index": 214
-                },
-                {
-                    "text": "وأنه",
-                    "confidence": 1.0,
-                    "start_index": 244
-                },
-                {
-                    "text": " اغترف",
-                    "confidence": 1.0,
-                    "start_index": 248
-                },
-                {
-                    "text": " بإحدى",
-                    "confidence": 1.0,
-                    "start_index": 254
-                },
-                {
-                    "text": "وَهْبٍ،",
-                    "confidence": 1.0,
-                    "start_index": 269
-                },
-                {
-                    "text": " أَخْبَرَنِي",
-                    "confidence": 1.0,
-                    "start_index": 276
-                },
-                {
-                    "text": " يُونُسُ",
-                    "confidence": 1.0,
-                    "start_index": 288
-                }
-            ]
+            "id": "img-0",
+            "top_left_x": 351,
+            "top_left_y": 312,
+            "bottom_right_x": 415,
+            "bottom_right_y": 376,
+            "reading_index": 1
         }
     ],
+    "tables": [],
     "hyperlinks": [],
     "header": null,
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 442,
-        "width": 461
+        "height": 782,
+        "width": 766
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "[tbl-0.html](tbl-0.html)",
+                "text": "![image](img-0)",
                 "confidence": 1.0,
                 "start_index": 1
             },
             {
-                "text": "##",
+                "text": "رسول",
                 "confidence": 1.0,
-                "start_index": 27
+                "start_index": 18
             },
             {
-                "text": "برهان",
+                "text": "الله؛",
                 "confidence": 1.0,
-                "start_index": 30
+                "start_index": 23
             },
             {
-                "text": "فِي",
+                "text": "إنّي",
                 "confidence": 1.0,
-                "start_index": 36
+                "start_index": 29
             },
             {
-                "text": "يَدِ",
+                "text": "ذو",
                 "confidence": 1.0,
-                "start_index": 40
+                "start_index": 34
             },
             {
-                "text": "سَارِقٍ،",
+                "text": "مال",
                 "confidence": 1.0,
-                "start_index": 45
+                "start_index": 37
             },
             {
-                "text": "فَأَصْبَحُوا",
+                "text": "وليس",
+                "confidence": 1.0,
+                "start_index": 41
+            },
+            {
+                "text": "لي",
+                "confidence": 1.0,
+                "start_index": 46
+            },
+            {
+                "text": "إلاّ",
+                "confidence": 1.0,
+                "start_index": 49
+            },
+            {
+                "text": "بنت",
                 "confidence": 1.0,
                 "start_index": 54
-            },
-            {
-                "text": "يَتَحَدَّثُونَ:",
-                "confidence": 1.0,
-                "start_index": 67
-            },
-            {
-                "text": "تُصُدِّقَ",
-                "confidence": 1.0,
-                "start_index": 83
-            },
-            {
-                "text": "عَلَى",
-                "confidence": 1.0,
-                "start_index": 93
-            },
-            {
-                "text": "سَارِقٍ،",
-                "confidence": 1.0,
-                "start_index": 99
-            },
-            {
-                "text": "فَقَالَ:",
-                "confidence": 1.0,
-                "start_index": 108
-            },
-            {
-                "text": "اللَّهُمَّ",
-                "confidence": 1.0,
-                "start_index": 117
-            },
-            {
-                "text": "لَكَ",
-                "confidence": 1.0,
-                "start_index": 128
-            },
-            {
-                "text": "الْحَمْدُ",
-                "confidence": 1.0,
-                "start_index": 133
-            },
-            {
-                "text": "عَلَى",
-                "confidence": 1.0,
-                "start_index": 143
-            },
-            {
-                "text": "زَانِيَةٍ،",
-                "confidence": 1.0,
-                "start_index": 149
-            },
-            {
-                "text": "وَعَلَى",
-                "confidence": 1.0,
-                "start_index": 160
-            },
-            {
-                "text": "غَنِيٍّ،",
-                "confidence": 1.0,
-                "start_index": 168
-            },
-            {
-                "text": "وَعَلَى",
-                "confidence": 1.0,
-                "start_index": 177
-            },
-            {
-                "text": "سَارِقٍ،",
-                "confidence": 1.0,
-                "start_index": 185
-            },
-            {
-                "text": "فَأُتِيَ،",
-                "confidence": 1.0,
-                "start_index": 194
-            },
-            {
-                "text": "فَقِيلَ",
-                "confidence": 1.0,
-                "start_index": 204
-            },
-            {
-                "text": "لَهُ:",
-                "confidence": 1.0,
-                "start_index": 212
-            },
-            {
-                "text": "أَمَّا",
-                "confidence": 1.0,
-                "start_index": 218
-            },
-            {
-                "text": "صَدَقَتُكَ",
-                "confidence": 1.0,
-                "start_index": 225
-            },
-            {
-                "text": "i_{n+1}",
-                "confidence": 1.0,
-                "start_index": 236
-            },
-            {
-                "text": "=",
-                "confidence": 1.0,
-                "start_index": 244
-            },
-            {
-                "text": "i_n",
-                "confidence": 1.0,
-                "start_index": 246
-            },
-            {
-                "text": "-",
-                "confidence": 1.0,
-                "start_index": 250
-            },
-            {
-                "text": "\\alpha",
-                "confidence": 1.0,
-                "start_index": 252
-            },
-            {
-                "text": "\\nabla",
-                "confidence": 1.0,
-                "start_index": 259
-            },
-            {
-                "text": "f(i_n)",
-                "confidence": 1.0,
-                "start_index": 266
-            },
-            {
-                "text": "j_{n+1}",
-                "confidence": 1.0,
-                "start_index": 273
-            },
-            {
-                "text": "=",
-                "confidence": 1.0,
-                "start_index": 281
-            },
-            {
-                "text": "j_n",
-                "confidence": 1.0,
-                "start_index": 283
-            },
-            {
-                "text": "-",
-                "confidence": 1.0,
-                "start_index": 287
-            },
-            {
-                "text": "\\alpha",
-                "confidence": 1.0,
-                "start_index": 289
-            },
-            {
-                "text": "\\nabla",
-                "confidence": 1.0,
-                "start_index": 296
-            },
-            {
-                "text": "f(j_n)",
-                "confidence": 1.0,
-                "start_index": 303
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -366,59 +77,38 @@
     },
     "blocks": [
         {
-            "top_left_x": 20,
-            "top_left_y": 32,
-            "bottom_right_x": 441,
-            "bottom_right_y": 177,
-            "content": "<table><tbody><tr><th>هذا صعد</th><th>إذن</th></tr><tr><td>في وقت قصير، فتقطع</td><td>والتأويل. وكلٌّ من القولين يخالف</td></tr><tr><td>كَانَ عَلَيْهِ مِنَ الْإِثْمِ مِثْلُ</td><td>أَبِي شَيْبَةَ، وَأَبُو كُرَيْبٍ- وَاللَّفْظُ</td></tr><tr><td>وأنه اغترف بإحدى</td><td>وَهْبٍ، أَخْبَرَنِي يُونُسُ</td></tr></tbody></table>",
-            "type": "table",
-            "table_id": "tbl-0.html",
+            "top_left_x": 351,
+            "top_left_y": 312,
+            "bottom_right_x": 415,
+            "bottom_right_y": 376,
+            "content": "![image](img-0)",
+            "type": "image",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 32,
-            "top_left_y": 201,
-            "bottom_right_x": 425,
-            "bottom_right_y": 227,
-            "content": "برهان",
-            "type": "title",
+            "top_left_x": 303,
+            "top_left_y": 398,
+            "bottom_right_x": 463,
+            "bottom_right_y": 435,
+            "content": "رسول الله؛ إنّي ذو",
+            "type": "text",
             "confidence_scores": null,
             "reading_index": 2
         },
         {
-            "top_left_x": 32,
-            "top_left_y": 232,
-            "bottom_right_x": 425,
-            "bottom_right_y": 277,
-            "content": "فِي يَدِ سَارِقٍ، فَأَصْبَحُوا يَتَحَدَّثُونَ: تُصُدِّقَ عَلَى سَارِقٍ، فَقَالَ: اللَّهُمَّ لَكَ الْحَمْدُ عَلَى زَانِيَةٍ، وَعَلَى غَنِيٍّ، وَعَلَى سَارِقٍ، فَأُتِيَ، فَقِيلَ لَهُ: أَمَّا صَدَقَتُكَ",
+            "top_left_x": 334,
+            "top_left_y": 445,
+            "bottom_right_x": 432,
+            "bottom_right_y": 470,
+            "content": "مال وليس لي إلاّ بنت",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 3
-        },
-        {
-            "top_left_x": 32,
-            "top_left_y": 283,
-            "bottom_right_x": 425,
-            "bottom_right_y": 321,
-            "content": "i_{n+1} = i_n - \\alpha \\nabla f(i_n)",
-            "type": "text",
-            "confidence_scores": null,
-            "reading_index": 4
-        },
-        {
-            "top_left_x": 20,
-            "top_left_y": 353,
-            "bottom_right_x": 441,
-            "bottom_right_y": 396,
-            "content": "j_{n+1} = j_n - \\alpha \\nabla f(j_n)",
-            "type": "text",
-            "confidence_scores": null,
-            "reading_index": 5
         }
     ],
     "meta": {
-        "template": "math_proof",
-        "hybrid": "mini-table"
+        "template": "minimalist",
+        "hybrid": null
     }
 }

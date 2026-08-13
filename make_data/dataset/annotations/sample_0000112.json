@@ -1,73 +1,334 @@
 {
-    "markdown": "مَا شَاءَ اللَّهُ\n\n![image](img-0)\n\nسَعِيدٍ، حَدَّثَنَا\n9228-6015\n\n![image](img-1)\n",
+    "markdown": "مسلم: «نجوم الظاهر يدلّ على\n15\n## وَأَنَّهُ لَوْ شَرَطَ مَعَ الْعِتْقِ\n## وَأَنَّهُ لَوْ شَرَطَ مَعَ الْعِتْقِ\n\n![image](img-0)\n\nشكل: بِلَازِمٍ كَمَا لَوْ\nفِي وَاحِدٍ مِنْهُ مَا تَشَوَّفَ إلَيْهِ الشَّارِعُ مِنْ الْعِتْقِ النَّاجِزِ، وَالثَّانِي: يَصِحُّ الْبَيْعُ وَيَبْطُلُ الشَّرْطُ وَاشْتِرَاطُ الْوَقْفِ كَاشْتِرَاطِ التَّدْبِيرِ\n\n![image](img-1)\n\n\n![image](img-2)\n\n## لا يتقدمنَّ أحدُكم رمضانَ بصوم يوم\n\n![image](img-3)\n\nشكل: شديدٌ عند مَنْ ألِفَ",
     "images": [
         {
             "id": "img-0",
-            "top_left_x": 318,
-            "top_left_y": 69,
-            "bottom_right_x": 362,
-            "bottom_right_y": 125,
-            "reading_index": 2
+            "top_left_x": 602,
+            "top_left_y": 257,
+            "bottom_right_x": 730,
+            "bottom_right_y": 342,
+            "reading_index": 5
         },
         {
             "id": "img-1",
-            "top_left_x": 10,
-            "top_left_y": 166,
-            "bottom_right_x": 362,
-            "bottom_right_y": 196,
-            "reading_index": 5
+            "top_left_x": 40,
+            "top_left_y": 198,
+            "bottom_right_x": 385,
+            "bottom_right_y": 473,
+            "reading_index": 8
+        },
+        {
+            "id": "img-2",
+            "top_left_x": 405,
+            "top_left_y": 505,
+            "bottom_right_x": 750,
+            "bottom_right_y": 665,
+            "reading_index": 9
+        },
+        {
+            "id": "img-3",
+            "top_left_x": 237,
+            "top_left_y": 594,
+            "bottom_right_x": 365,
+            "bottom_right_y": 679,
+            "reading_index": 11
         }
     ],
     "tables": [],
     "hyperlinks": [],
-    "header": null,
+    "header": "15",
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 206,
-        "width": 372
+        "height": 1041,
+        "width": 790
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "مَا",
+                "text": "مسلم:",
                 "confidence": 1.0,
                 "start_index": 0
             },
             {
-                "text": "شَاءَ",
+                "text": "«نجوم",
                 "confidence": 1.0,
-                "start_index": 4
+                "start_index": 6
             },
             {
-                "text": "اللَّهُ",
+                "text": "الظاهر",
                 "confidence": 1.0,
-                "start_index": 10
+                "start_index": 12
             },
             {
-                "text": "![image](img-0)",
+                "text": "يدلّ",
                 "confidence": 1.0,
                 "start_index": 19
             },
             {
-                "text": "سَعِيدٍ،",
+                "text": "على",
                 "confidence": 1.0,
-                "start_index": 36
+                "start_index": 24
             },
             {
-                "text": "حَدَّثَنَا",
+                "text": "15",
                 "confidence": 1.0,
-                "start_index": 45
+                "start_index": 28
             },
             {
-                "text": "9228-6015",
+                "text": "##",
+                "confidence": 1.0,
+                "start_index": 31
+            },
+            {
+                "text": "وَأَنَّهُ",
+                "confidence": 1.0,
+                "start_index": 34
+            },
+            {
+                "text": "لَوْ",
+                "confidence": 1.0,
+                "start_index": 44
+            },
+            {
+                "text": "شَرَطَ",
+                "confidence": 1.0,
+                "start_index": 49
+            },
+            {
+                "text": "مَعَ",
                 "confidence": 1.0,
                 "start_index": 56
             },
             {
+                "text": "الْعِتْقِ",
+                "confidence": 1.0,
+                "start_index": 61
+            },
+            {
+                "text": "##",
+                "confidence": 1.0,
+                "start_index": 71
+            },
+            {
+                "text": "وَأَنَّهُ",
+                "confidence": 1.0,
+                "start_index": 74
+            },
+            {
+                "text": "لَوْ",
+                "confidence": 1.0,
+                "start_index": 84
+            },
+            {
+                "text": "شَرَطَ",
+                "confidence": 1.0,
+                "start_index": 89
+            },
+            {
+                "text": "مَعَ",
+                "confidence": 1.0,
+                "start_index": 96
+            },
+            {
+                "text": "الْعِتْقِ",
+                "confidence": 1.0,
+                "start_index": 101
+            },
+            {
+                "text": "![image](img-0)",
+                "confidence": 1.0,
+                "start_index": 112
+            },
+            {
+                "text": "شكل:",
+                "confidence": 1.0,
+                "start_index": 129
+            },
+            {
+                "text": "بِلَازِمٍ",
+                "confidence": 1.0,
+                "start_index": 134
+            },
+            {
+                "text": "كَمَا",
+                "confidence": 1.0,
+                "start_index": 144
+            },
+            {
+                "text": "لَوْ",
+                "confidence": 1.0,
+                "start_index": 150
+            },
+            {
+                "text": "فِي",
+                "confidence": 1.0,
+                "start_index": 155
+            },
+            {
+                "text": "وَاحِدٍ",
+                "confidence": 1.0,
+                "start_index": 159
+            },
+            {
+                "text": "مِنْهُ",
+                "confidence": 1.0,
+                "start_index": 167
+            },
+            {
+                "text": "مَا",
+                "confidence": 1.0,
+                "start_index": 174
+            },
+            {
+                "text": "تَشَوَّفَ",
+                "confidence": 1.0,
+                "start_index": 178
+            },
+            {
+                "text": "إلَيْهِ",
+                "confidence": 1.0,
+                "start_index": 188
+            },
+            {
+                "text": "الشَّارِعُ",
+                "confidence": 1.0,
+                "start_index": 196
+            },
+            {
+                "text": "مِنْ",
+                "confidence": 1.0,
+                "start_index": 207
+            },
+            {
+                "text": "الْعِتْقِ",
+                "confidence": 1.0,
+                "start_index": 212
+            },
+            {
+                "text": "النَّاجِزِ،",
+                "confidence": 1.0,
+                "start_index": 222
+            },
+            {
+                "text": "وَالثَّانِي:",
+                "confidence": 1.0,
+                "start_index": 234
+            },
+            {
+                "text": "يَصِحُّ",
+                "confidence": 1.0,
+                "start_index": 247
+            },
+            {
+                "text": "الْبَيْعُ",
+                "confidence": 1.0,
+                "start_index": 255
+            },
+            {
+                "text": "وَيَبْطُلُ",
+                "confidence": 1.0,
+                "start_index": 265
+            },
+            {
+                "text": "الشَّرْطُ",
+                "confidence": 1.0,
+                "start_index": 276
+            },
+            {
+                "text": "وَاشْتِرَاطُ",
+                "confidence": 1.0,
+                "start_index": 286
+            },
+            {
+                "text": "الْوَقْفِ",
+                "confidence": 1.0,
+                "start_index": 299
+            },
+            {
+                "text": "كَاشْتِرَاطِ",
+                "confidence": 1.0,
+                "start_index": 309
+            },
+            {
+                "text": "التَّدْبِيرِ",
+                "confidence": 1.0,
+                "start_index": 322
+            },
+            {
                 "text": "![image](img-1)",
                 "confidence": 1.0,
-                "start_index": 67
+                "start_index": 336
+            },
+            {
+                "text": "![image](img-2)",
+                "confidence": 1.0,
+                "start_index": 354
+            },
+            {
+                "text": "##",
+                "confidence": 1.0,
+                "start_index": 371
+            },
+            {
+                "text": "لا",
+                "confidence": 1.0,
+                "start_index": 374
+            },
+            {
+                "text": "يتقدمنَّ",
+                "confidence": 1.0,
+                "start_index": 377
+            },
+            {
+                "text": "أحدُكم",
+                "confidence": 1.0,
+                "start_index": 386
+            },
+            {
+                "text": "رمضانَ",
+                "confidence": 1.0,
+                "start_index": 393
+            },
+            {
+                "text": "بصوم",
+                "confidence": 1.0,
+                "start_index": 400
+            },
+            {
+                "text": "يوم",
+                "confidence": 1.0,
+                "start_index": 405
+            },
+            {
+                "text": "![image](img-3)",
+                "confidence": 1.0,
+                "start_index": 410
+            },
+            {
+                "text": "شكل:",
+                "confidence": 1.0,
+                "start_index": 427
+            },
+            {
+                "text": "شديدٌ",
+                "confidence": 1.0,
+                "start_index": 432
+            },
+            {
+                "text": "عند",
+                "confidence": 1.0,
+                "start_index": 438
+            },
+            {
+                "text": "مَنْ",
+                "confidence": 1.0,
+                "start_index": 442
+            },
+            {
+                "text": "ألِفَ",
+                "confidence": 1.0,
+                "start_index": 447
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -75,58 +336,128 @@
     },
     "blocks": [
         {
-            "top_left_x": 10,
+            "top_left_x": 603,
             "top_left_y": 10,
-            "bottom_right_x": 362,
-            "bottom_right_y": 28,
-            "content": "مَا شَاءَ اللَّهُ",
-            "type": "text",
+            "bottom_right_x": 750,
+            "bottom_right_y": 35,
+            "content": "مسلم: «نجوم الظاهر يدلّ على",
+            "type": "header",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 318,
-            "top_left_y": 69,
-            "bottom_right_x": 362,
-            "bottom_right_y": 125,
-            "content": "![image](img-0)",
-            "type": "image",
+            "top_left_x": 40,
+            "top_left_y": 10,
+            "bottom_right_x": 53,
+            "bottom_right_y": 35,
+            "content": "15",
+            "type": "header",
             "confidence_scores": null,
             "reading_index": 2
         },
         {
-            "top_left_x": 10,
-            "top_left_y": 77,
-            "bottom_right_x": 310,
-            "bottom_right_y": 96,
-            "content": "سَعِيدٍ، حَدَّثَنَا",
-            "type": "text",
+            "top_left_x": 40,
+            "top_left_y": 87,
+            "bottom_right_x": 750,
+            "bottom_right_y": 178,
+            "content": "وَأَنَّهُ لَوْ شَرَطَ مَعَ الْعِتْقِ",
+            "type": "title",
             "confidence_scores": null,
             "reading_index": 3
         },
         {
-            "top_left_x": 10,
-            "top_left_y": 100,
-            "bottom_right_x": 310,
-            "bottom_right_y": 117,
-            "content": "9228-6015",
-            "type": "text",
+            "top_left_x": 405,
+            "top_left_y": 198,
+            "bottom_right_x": 750,
+            "bottom_right_y": 242,
+            "content": "وَأَنَّهُ لَوْ شَرَطَ مَعَ الْعِتْقِ",
+            "type": "title",
             "confidence_scores": null,
             "reading_index": 4
         },
         {
-            "top_left_x": 10,
-            "top_left_y": 166,
-            "bottom_right_x": 362,
-            "bottom_right_y": 196,
-            "content": "![image](img-1)",
+            "top_left_x": 602,
+            "top_left_y": 257,
+            "bottom_right_x": 730,
+            "bottom_right_y": 342,
+            "content": "![image](img-0)",
             "type": "image",
             "confidence_scores": null,
             "reading_index": 5
+        },
+        {
+            "top_left_x": 602,
+            "top_left_y": 346,
+            "bottom_right_x": 730,
+            "bottom_right_y": 368,
+            "content": "شكل: بِلَازِمٍ كَمَا لَوْ",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 6
+        },
+        {
+            "top_left_x": 405,
+            "top_left_y": 383,
+            "bottom_right_x": 750,
+            "bottom_right_y": 458,
+            "content": "فِي وَاحِدٍ مِنْهُ مَا تَشَوَّفَ إلَيْهِ الشَّارِعُ مِنْ الْعِتْقِ النَّاجِزِ، وَالثَّانِي: يَصِحُّ الْبَيْعُ وَيَبْطُلُ الشَّرْطُ وَاشْتِرَاطُ الْوَقْفِ كَاشْتِرَاطِ التَّدْبِيرِ",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 7
+        },
+        {
+            "top_left_x": 40,
+            "top_left_y": 198,
+            "bottom_right_x": 385,
+            "bottom_right_y": 473,
+            "content": "![image](img-1)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 8
+        },
+        {
+            "top_left_x": 405,
+            "top_left_y": 505,
+            "bottom_right_x": 750,
+            "bottom_right_y": 665,
+            "content": "![image](img-2)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 9
+        },
+        {
+            "top_left_x": 40,
+            "top_left_y": 493,
+            "bottom_right_x": 385,
+            "bottom_right_y": 579,
+            "content": "لا يتقدمنَّ أحدُكم رمضانَ بصوم يوم",
+            "type": "title",
+            "confidence_scores": null,
+            "reading_index": 10
+        },
+        {
+            "top_left_x": 237,
+            "top_left_y": 594,
+            "bottom_right_x": 365,
+            "bottom_right_y": 679,
+            "content": "![image](img-3)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 11
+        },
+        {
+            "top_left_x": 237,
+            "top_left_y": 683,
+            "bottom_right_x": 365,
+            "bottom_right_y": 726,
+            "content": "شكل: شديدٌ عند مَنْ ألِفَ",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 12
         }
     ],
     "meta": {
-        "template": "id_card",
-        "hybrid": null
+        "template": "a4_charts",
+        "hybrid": "chart"
     }
 }

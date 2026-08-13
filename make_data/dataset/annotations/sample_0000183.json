@@ -1,5 +1,5 @@
 {
-    "markdown": "عَبْدِ الْمَلِكِ، فَأَخْبَرَهُ ذَلِكَ، وَأَخْبَرَهُ بِشَهَادَةِ\nخمسها، ويقسم",
+    "markdown": "P(A|B) = \\frac{P(A \\cap B)}{P(B)}\n\\vec{F} = m\\vec{a} + \\frac{j}{i^2}\n## مبرهنة\n31 - حَدَّثَنَا أَبُو خَيْثَمَةَ، حَدَّثَنَا عَبْدُ الرَّحْمَنِ بْنُ مَهْدِيٍّ، عَنْ سُفْيَانَ،\n\\mathbb{E}[\\lambda] = \\int x f_\\lambda(x) dx + \\frac{z}{\\mu^2}",
     "images": [],
     "tables": [],
     "hyperlinks": [],
@@ -7,50 +7,170 @@
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 724,
-        "width": 451
+        "height": 356,
+        "width": 543
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "عَبْدِ",
+                "text": "P(A|B)",
                 "confidence": 1.0,
                 "start_index": 0
             },
             {
-                "text": "الْمَلِكِ،",
+                "text": "=",
                 "confidence": 1.0,
                 "start_index": 7
             },
             {
-                "text": "فَأَخْبَرَهُ",
+                "text": "\\frac{P(A",
                 "confidence": 1.0,
-                "start_index": 18
+                "start_index": 9
             },
             {
-                "text": "ذَلِكَ،",
+                "text": "\\cap",
                 "confidence": 1.0,
-                "start_index": 31
+                "start_index": 19
             },
             {
-                "text": "وَأَخْبَرَهُ",
+                "text": "B)}{P(B)}",
                 "confidence": 1.0,
-                "start_index": 39
+                "start_index": 24
             },
             {
-                "text": "بِشَهَادَةِ",
+                "text": "\\vec{F}",
                 "confidence": 1.0,
-                "start_index": 52
+                "start_index": 34
             },
             {
-                "text": "خمسها،",
+                "text": "=",
                 "confidence": 1.0,
-                "start_index": 64
+                "start_index": 42
             },
             {
-                "text": "ويقسم",
+                "text": "m\\vec{a}",
                 "confidence": 1.0,
-                "start_index": 71
+                "start_index": 44
+            },
+            {
+                "text": "+",
+                "confidence": 1.0,
+                "start_index": 53
+            },
+            {
+                "text": "\\frac{j}{i^2}",
+                "confidence": 1.0,
+                "start_index": 55
+            },
+            {
+                "text": "##",
+                "confidence": 1.0,
+                "start_index": 69
+            },
+            {
+                "text": "مبرهنة",
+                "confidence": 1.0,
+                "start_index": 72
+            },
+            {
+                "text": "31",
+                "confidence": 1.0,
+                "start_index": 79
+            },
+            {
+                "text": "-",
+                "confidence": 1.0,
+                "start_index": 82
+            },
+            {
+                "text": "حَدَّثَنَا",
+                "confidence": 1.0,
+                "start_index": 84
+            },
+            {
+                "text": "أَبُو",
+                "confidence": 1.0,
+                "start_index": 95
+            },
+            {
+                "text": "خَيْثَمَةَ،",
+                "confidence": 1.0,
+                "start_index": 101
+            },
+            {
+                "text": "حَدَّثَنَا",
+                "confidence": 1.0,
+                "start_index": 113
+            },
+            {
+                "text": "عَبْدُ",
+                "confidence": 1.0,
+                "start_index": 124
+            },
+            {
+                "text": "الرَّحْمَنِ",
+                "confidence": 1.0,
+                "start_index": 131
+            },
+            {
+                "text": "بْنُ",
+                "confidence": 1.0,
+                "start_index": 143
+            },
+            {
+                "text": "مَهْدِيٍّ،",
+                "confidence": 1.0,
+                "start_index": 148
+            },
+            {
+                "text": "عَنْ",
+                "confidence": 1.0,
+                "start_index": 159
+            },
+            {
+                "text": "سُفْيَانَ،",
+                "confidence": 1.0,
+                "start_index": 164
+            },
+            {
+                "text": "\\mathbb{E}[\\lambda]",
+                "confidence": 1.0,
+                "start_index": 175
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 195
+            },
+            {
+                "text": "\\int",
+                "confidence": 1.0,
+                "start_index": 197
+            },
+            {
+                "text": "x",
+                "confidence": 1.0,
+                "start_index": 202
+            },
+            {
+                "text": "f_\\lambda(x)",
+                "confidence": 1.0,
+                "start_index": 204
+            },
+            {
+                "text": "dx",
+                "confidence": 1.0,
+                "start_index": 217
+            },
+            {
+                "text": "+",
+                "confidence": 1.0,
+                "start_index": 220
+            },
+            {
+                "text": "\\frac{z}{\\mu^2}",
+                "confidence": 1.0,
+                "start_index": 222
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -58,28 +178,58 @@
     },
     "blocks": [
         {
-            "top_left_x": 24,
-            "top_left_y": 318,
-            "bottom_right_x": 427,
-            "bottom_right_y": 406,
-            "content": "عَبْدِ الْمَلِكِ، فَأَخْبَرَهُ ذَلِكَ، وَأَخْبَرَهُ بِشَهَادَةِ",
+            "top_left_x": 20,
+            "top_left_y": 26,
+            "bottom_right_x": 523,
+            "bottom_right_y": 91,
+            "content": "P(A|B) = \\frac{P(A \\cap B)}{P(B)}",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 180,
-            "top_left_y": 688,
-            "bottom_right_x": 271,
-            "bottom_right_y": 706,
-            "content": "خمسها، ويقسم",
+            "top_left_x": 20,
+            "top_left_y": 97,
+            "bottom_right_x": 523,
+            "bottom_right_y": 150,
+            "content": "\\vec{F} = m\\vec{a} + \\frac{j}{i^2}",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 2
+        },
+        {
+            "top_left_x": 32,
+            "top_left_y": 174,
+            "bottom_right_x": 507,
+            "bottom_right_y": 197,
+            "content": "مبرهنة",
+            "type": "title",
+            "confidence_scores": null,
+            "reading_index": 3
+        },
+        {
+            "top_left_x": 32,
+            "top_left_y": 202,
+            "bottom_right_x": 507,
+            "bottom_right_y": 224,
+            "content": "31 - حَدَّثَنَا أَبُو خَيْثَمَةَ، حَدَّثَنَا عَبْدُ الرَّحْمَنِ بْنُ مَهْدِيٍّ، عَنْ سُفْيَانَ،",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 4
+        },
+        {
+            "top_left_x": 32,
+            "top_left_y": 230,
+            "bottom_right_x": 507,
+            "bottom_right_y": 284,
+            "content": "\\mathbb{E}[\\lambda] = \\int x f_\\lambda(x) dx + \\frac{z}{\\mu^2}",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 5
         }
     ],
     "meta": {
-        "template": "book_cover",
-        "hybrid": null
+        "template": "math_proof",
+        "hybrid": "theorem"
     }
 }

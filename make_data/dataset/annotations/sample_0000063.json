@@ -1,85 +1,986 @@
 {
-    "markdown": "\n![image](img-0)\n\nبَشَّارٍ قَالَا:\nرَسُولُ اللهِ صلى الله عليه\nولا آباؤنا} ، ولذلك",
-    "images": [
-        {
-            "id": "img-0",
-            "top_left_x": 133,
-            "top_left_y": 14,
-            "bottom_right_x": 179,
-            "bottom_right_y": 60,
-            "reading_index": 1
-        }
-    ],
+    "markdown": "## لا يتقدمنَّ أحدُكم رمضانَ بصوم يوم\n\"فرضٌ، وتأخيرُهُ غيرُ مرضي، وأما الوِرْدُ فتركه أيضاً شديدٌ عند مَنْ ألِفَ به؛ لأن أفضل العبادة أدومُها. * * * مِنَ الحِسَان: 1401\"\n- قال صلى الله عليه وسلم: \"إذا انْتَصَفَ شَعْبَانُ فلا تَصُومُوا\". \"من الحسان\": \" عن أبي هريرة أنه قال: قال رسول الله صلى الله تعالى عليه وسلم: إذا انتصف شعبانُ\"؛ أي: إذا مضى النصف الأول منه، \"فلا تصوموا\": وهذا ليستريحَ من الصوم، ويكون له نشاط لصوم رمضان. * * * 1402 - وقال صلى الله عليه وسلم: \"أَحْصُوا هِلالَ شَعْبَانَ لِرَمَضَانَ\". \"عن أبي هريرة أنه قال: قال رسول الله صلى الله تعالى عليه وسلم: أَحصُوا هلالَ شعبان لرمضان\": بفتح الهمزة: أمرٌ من (الإحصاء) وهو: العد؛ أي: عدوا أيامه لتعلموا دخول رمضان. * * *\nالتسليم\". \"عب\". 22368- عن علي قال: \"إذا أتم الركوع والسجود، ثم أحدث، فقد تمت صلاته\". \"ابن جرير\". 22369- عن علي إذا رفع المصلي رأسه من آخر سجدة، ثم أحدث فقد مضت صلاته. \"ابن جرير\". 22370- عن عاصم بن ضمرة عن علي قال: \"إذا جلس مقدار التشهد ثم أحدث فقد تمت صلاته\". \"عب ق وقال: عاصم ليس بالقوى\".\n\"على العراق فى أمر الخوارج: «ضع سيفك فى كلاب النار، وتقرّب إلى الله\"",
+    "images": [],
     "tables": [],
     "hyperlinks": [],
     "header": null,
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 293,
-        "width": 193
+        "height": 1209,
+        "width": 740
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "![image](img-0)",
+                "text": "##",
                 "confidence": 1.0,
-                "start_index": 1
+                "start_index": 0
             },
             {
-                "text": "بَشَّارٍ",
+                "text": "لا",
                 "confidence": 1.0,
-                "start_index": 18
+                "start_index": 3
             },
             {
-                "text": "قَالَا:",
+                "text": "يتقدمنَّ",
                 "confidence": 1.0,
-                "start_index": 27
+                "start_index": 6
             },
             {
-                "text": "رَسُولُ",
+                "text": "أحدُكم",
                 "confidence": 1.0,
-                "start_index": 35
+                "start_index": 15
             },
             {
-                "text": "اللهِ",
+                "text": "رمضانَ",
                 "confidence": 1.0,
-                "start_index": 43
+                "start_index": 22
+            },
+            {
+                "text": "بصوم",
+                "confidence": 1.0,
+                "start_index": 29
+            },
+            {
+                "text": "يوم",
+                "confidence": 1.0,
+                "start_index": 34
+            },
+            {
+                "text": "\"فرضٌ،",
+                "confidence": 1.0,
+                "start_index": 38
+            },
+            {
+                "text": "وتأخيرُهُ",
+                "confidence": 1.0,
+                "start_index": 45
+            },
+            {
+                "text": "غيرُ",
+                "confidence": 1.0,
+                "start_index": 55
+            },
+            {
+                "text": "مرضي،",
+                "confidence": 1.0,
+                "start_index": 60
+            },
+            {
+                "text": "وأما",
+                "confidence": 1.0,
+                "start_index": 66
+            },
+            {
+                "text": "الوِرْدُ",
+                "confidence": 1.0,
+                "start_index": 71
+            },
+            {
+                "text": "فتركه",
+                "confidence": 1.0,
+                "start_index": 80
+            },
+            {
+                "text": "أيضاً",
+                "confidence": 1.0,
+                "start_index": 86
+            },
+            {
+                "text": "شديدٌ",
+                "confidence": 1.0,
+                "start_index": 92
+            },
+            {
+                "text": "عند",
+                "confidence": 1.0,
+                "start_index": 98
+            },
+            {
+                "text": "مَنْ",
+                "confidence": 1.0,
+                "start_index": 102
+            },
+            {
+                "text": "ألِفَ",
+                "confidence": 1.0,
+                "start_index": 107
+            },
+            {
+                "text": "به؛",
+                "confidence": 1.0,
+                "start_index": 113
+            },
+            {
+                "text": "لأن",
+                "confidence": 1.0,
+                "start_index": 117
+            },
+            {
+                "text": "أفضل",
+                "confidence": 1.0,
+                "start_index": 121
+            },
+            {
+                "text": "العبادة",
+                "confidence": 1.0,
+                "start_index": 126
+            },
+            {
+                "text": "أدومُها.",
+                "confidence": 1.0,
+                "start_index": 134
+            },
+            {
+                "text": "*",
+                "confidence": 1.0,
+                "start_index": 143
+            },
+            {
+                "text": "*",
+                "confidence": 1.0,
+                "start_index": 145
+            },
+            {
+                "text": "*",
+                "confidence": 1.0,
+                "start_index": 147
+            },
+            {
+                "text": "مِنَ",
+                "confidence": 1.0,
+                "start_index": 149
+            },
+            {
+                "text": "الحِسَان:",
+                "confidence": 1.0,
+                "start_index": 154
+            },
+            {
+                "text": "1401\"",
+                "confidence": 1.0,
+                "start_index": 164
+            },
+            {
+                "text": "-",
+                "confidence": 1.0,
+                "start_index": 170
+            },
+            {
+                "text": "قال",
+                "confidence": 1.0,
+                "start_index": 172
             },
             {
                 "text": "صلى",
                 "confidence": 1.0,
-                "start_index": 49
+                "start_index": 176
             },
             {
                 "text": "الله",
                 "confidence": 1.0,
-                "start_index": 53
+                "start_index": 180
             },
             {
                 "text": "عليه",
                 "confidence": 1.0,
-                "start_index": 58
+                "start_index": 185
             },
             {
-                "text": "ولا",
+                "text": "وسلم:",
                 "confidence": 1.0,
-                "start_index": 63
+                "start_index": 190
             },
             {
-                "text": "آباؤنا}",
+                "text": "\"إذا",
                 "confidence": 1.0,
-                "start_index": 67
+                "start_index": 196
             },
             {
-                "text": "،",
+                "text": "انْتَصَفَ",
                 "confidence": 1.0,
-                "start_index": 75
+                "start_index": 201
             },
             {
-                "text": "ولذلك",
+                "text": "شَعْبَانُ",
                 "confidence": 1.0,
-                "start_index": 77
+                "start_index": 211
+            },
+            {
+                "text": "فلا",
+                "confidence": 1.0,
+                "start_index": 221
+            },
+            {
+                "text": "تَصُومُوا\".",
+                "confidence": 1.0,
+                "start_index": 225
+            },
+            {
+                "text": "\"من",
+                "confidence": 1.0,
+                "start_index": 237
+            },
+            {
+                "text": "الحسان\":",
+                "confidence": 1.0,
+                "start_index": 241
+            },
+            {
+                "text": "\"",
+                "confidence": 1.0,
+                "start_index": 250
+            },
+            {
+                "text": "عن",
+                "confidence": 1.0,
+                "start_index": 252
+            },
+            {
+                "text": "أبي",
+                "confidence": 1.0,
+                "start_index": 255
+            },
+            {
+                "text": "هريرة",
+                "confidence": 1.0,
+                "start_index": 259
+            },
+            {
+                "text": "أنه",
+                "confidence": 1.0,
+                "start_index": 265
+            },
+            {
+                "text": "قال:",
+                "confidence": 1.0,
+                "start_index": 269
+            },
+            {
+                "text": "قال",
+                "confidence": 1.0,
+                "start_index": 274
+            },
+            {
+                "text": "رسول",
+                "confidence": 1.0,
+                "start_index": 278
+            },
+            {
+                "text": "الله",
+                "confidence": 1.0,
+                "start_index": 283
+            },
+            {
+                "text": "صلى",
+                "confidence": 1.0,
+                "start_index": 288
+            },
+            {
+                "text": "الله",
+                "confidence": 1.0,
+                "start_index": 292
+            },
+            {
+                "text": "تعالى",
+                "confidence": 1.0,
+                "start_index": 297
+            },
+            {
+                "text": "عليه",
+                "confidence": 1.0,
+                "start_index": 303
+            },
+            {
+                "text": "وسلم:",
+                "confidence": 1.0,
+                "start_index": 308
+            },
+            {
+                "text": "إذا",
+                "confidence": 1.0,
+                "start_index": 314
+            },
+            {
+                "text": "انتصف",
+                "confidence": 1.0,
+                "start_index": 318
+            },
+            {
+                "text": "شعبانُ\"؛",
+                "confidence": 1.0,
+                "start_index": 324
+            },
+            {
+                "text": "أي:",
+                "confidence": 1.0,
+                "start_index": 333
+            },
+            {
+                "text": "إذا",
+                "confidence": 1.0,
+                "start_index": 337
+            },
+            {
+                "text": "مضى",
+                "confidence": 1.0,
+                "start_index": 341
+            },
+            {
+                "text": "النصف",
+                "confidence": 1.0,
+                "start_index": 345
+            },
+            {
+                "text": "الأول",
+                "confidence": 1.0,
+                "start_index": 351
+            },
+            {
+                "text": "منه،",
+                "confidence": 1.0,
+                "start_index": 357
+            },
+            {
+                "text": "\"فلا",
+                "confidence": 1.0,
+                "start_index": 362
+            },
+            {
+                "text": "تصوموا\":",
+                "confidence": 1.0,
+                "start_index": 367
+            },
+            {
+                "text": "وهذا",
+                "confidence": 1.0,
+                "start_index": 376
+            },
+            {
+                "text": "ليستريحَ",
+                "confidence": 1.0,
+                "start_index": 381
+            },
+            {
+                "text": "من",
+                "confidence": 1.0,
+                "start_index": 390
+            },
+            {
+                "text": "الصوم،",
+                "confidence": 1.0,
+                "start_index": 393
+            },
+            {
+                "text": "ويكون",
+                "confidence": 1.0,
+                "start_index": 400
+            },
+            {
+                "text": "له",
+                "confidence": 1.0,
+                "start_index": 406
+            },
+            {
+                "text": "نشاط",
+                "confidence": 1.0,
+                "start_index": 409
+            },
+            {
+                "text": "لصوم",
+                "confidence": 1.0,
+                "start_index": 414
+            },
+            {
+                "text": "رمضان.",
+                "confidence": 1.0,
+                "start_index": 419
+            },
+            {
+                "text": "*",
+                "confidence": 1.0,
+                "start_index": 426
+            },
+            {
+                "text": "*",
+                "confidence": 1.0,
+                "start_index": 428
+            },
+            {
+                "text": "*",
+                "confidence": 1.0,
+                "start_index": 430
+            },
+            {
+                "text": "1402",
+                "confidence": 1.0,
+                "start_index": 432
+            },
+            {
+                "text": "-",
+                "confidence": 1.0,
+                "start_index": 437
+            },
+            {
+                "text": "وقال",
+                "confidence": 1.0,
+                "start_index": 439
+            },
+            {
+                "text": "صلى",
+                "confidence": 1.0,
+                "start_index": 444
+            },
+            {
+                "text": "الله",
+                "confidence": 1.0,
+                "start_index": 448
+            },
+            {
+                "text": "عليه",
+                "confidence": 1.0,
+                "start_index": 453
+            },
+            {
+                "text": "وسلم:",
+                "confidence": 1.0,
+                "start_index": 458
+            },
+            {
+                "text": "\"أَحْصُوا",
+                "confidence": 1.0,
+                "start_index": 464
+            },
+            {
+                "text": "هِلالَ",
+                "confidence": 1.0,
+                "start_index": 474
+            },
+            {
+                "text": "شَعْبَانَ",
+                "confidence": 1.0,
+                "start_index": 481
+            },
+            {
+                "text": "لِرَمَضَانَ\".",
+                "confidence": 1.0,
+                "start_index": 491
+            },
+            {
+                "text": "\"عن",
+                "confidence": 1.0,
+                "start_index": 505
+            },
+            {
+                "text": "أبي",
+                "confidence": 1.0,
+                "start_index": 509
+            },
+            {
+                "text": "هريرة",
+                "confidence": 1.0,
+                "start_index": 513
+            },
+            {
+                "text": "أنه",
+                "confidence": 1.0,
+                "start_index": 519
+            },
+            {
+                "text": "قال:",
+                "confidence": 1.0,
+                "start_index": 523
+            },
+            {
+                "text": "قال",
+                "confidence": 1.0,
+                "start_index": 528
+            },
+            {
+                "text": "رسول",
+                "confidence": 1.0,
+                "start_index": 532
+            },
+            {
+                "text": "الله",
+                "confidence": 1.0,
+                "start_index": 537
+            },
+            {
+                "text": "صلى",
+                "confidence": 1.0,
+                "start_index": 542
+            },
+            {
+                "text": "الله",
+                "confidence": 1.0,
+                "start_index": 546
+            },
+            {
+                "text": "تعالى",
+                "confidence": 1.0,
+                "start_index": 551
+            },
+            {
+                "text": "عليه",
+                "confidence": 1.0,
+                "start_index": 557
+            },
+            {
+                "text": "وسلم:",
+                "confidence": 1.0,
+                "start_index": 562
+            },
+            {
+                "text": "أَحصُوا",
+                "confidence": 1.0,
+                "start_index": 568
+            },
+            {
+                "text": "هلالَ",
+                "confidence": 1.0,
+                "start_index": 576
+            },
+            {
+                "text": "شعبان",
+                "confidence": 1.0,
+                "start_index": 582
+            },
+            {
+                "text": "لرمضان\":",
+                "confidence": 1.0,
+                "start_index": 588
+            },
+            {
+                "text": "بفتح",
+                "confidence": 1.0,
+                "start_index": 597
+            },
+            {
+                "text": "الهمزة:",
+                "confidence": 1.0,
+                "start_index": 602
+            },
+            {
+                "text": "أمرٌ",
+                "confidence": 1.0,
+                "start_index": 610
+            },
+            {
+                "text": "من",
+                "confidence": 1.0,
+                "start_index": 615
+            },
+            {
+                "text": "(الإحصاء)",
+                "confidence": 1.0,
+                "start_index": 618
+            },
+            {
+                "text": "وهو:",
+                "confidence": 1.0,
+                "start_index": 628
+            },
+            {
+                "text": "العد؛",
+                "confidence": 1.0,
+                "start_index": 633
+            },
+            {
+                "text": "أي:",
+                "confidence": 1.0,
+                "start_index": 639
+            },
+            {
+                "text": "عدوا",
+                "confidence": 1.0,
+                "start_index": 643
+            },
+            {
+                "text": "أيامه",
+                "confidence": 1.0,
+                "start_index": 648
+            },
+            {
+                "text": "لتعلموا",
+                "confidence": 1.0,
+                "start_index": 654
+            },
+            {
+                "text": "دخول",
+                "confidence": 1.0,
+                "start_index": 662
+            },
+            {
+                "text": "رمضان.",
+                "confidence": 1.0,
+                "start_index": 667
+            },
+            {
+                "text": "*",
+                "confidence": 1.0,
+                "start_index": 674
+            },
+            {
+                "text": "*",
+                "confidence": 1.0,
+                "start_index": 676
+            },
+            {
+                "text": "*",
+                "confidence": 1.0,
+                "start_index": 678
+            },
+            {
+                "text": "التسليم\".",
+                "confidence": 1.0,
+                "start_index": 680
+            },
+            {
+                "text": "\"عب\".",
+                "confidence": 1.0,
+                "start_index": 690
+            },
+            {
+                "text": "22368-",
+                "confidence": 1.0,
+                "start_index": 696
+            },
+            {
+                "text": "عن",
+                "confidence": 1.0,
+                "start_index": 703
+            },
+            {
+                "text": "علي",
+                "confidence": 1.0,
+                "start_index": 706
+            },
+            {
+                "text": "قال:",
+                "confidence": 1.0,
+                "start_index": 710
+            },
+            {
+                "text": "\"إذا",
+                "confidence": 1.0,
+                "start_index": 715
+            },
+            {
+                "text": "أتم",
+                "confidence": 1.0,
+                "start_index": 720
+            },
+            {
+                "text": "الركوع",
+                "confidence": 1.0,
+                "start_index": 724
+            },
+            {
+                "text": "والسجود،",
+                "confidence": 1.0,
+                "start_index": 731
+            },
+            {
+                "text": "ثم",
+                "confidence": 1.0,
+                "start_index": 740
+            },
+            {
+                "text": "أحدث،",
+                "confidence": 1.0,
+                "start_index": 743
+            },
+            {
+                "text": "فقد",
+                "confidence": 1.0,
+                "start_index": 749
+            },
+            {
+                "text": "تمت",
+                "confidence": 1.0,
+                "start_index": 753
+            },
+            {
+                "text": "صلاته\".",
+                "confidence": 1.0,
+                "start_index": 757
+            },
+            {
+                "text": "\"ابن",
+                "confidence": 1.0,
+                "start_index": 765
+            },
+            {
+                "text": "جرير\".",
+                "confidence": 1.0,
+                "start_index": 770
+            },
+            {
+                "text": "22369-",
+                "confidence": 1.0,
+                "start_index": 777
+            },
+            {
+                "text": "عن",
+                "confidence": 1.0,
+                "start_index": 784
+            },
+            {
+                "text": "علي",
+                "confidence": 1.0,
+                "start_index": 787
+            },
+            {
+                "text": "إذا",
+                "confidence": 1.0,
+                "start_index": 791
+            },
+            {
+                "text": "رفع",
+                "confidence": 1.0,
+                "start_index": 795
+            },
+            {
+                "text": "المصلي",
+                "confidence": 1.0,
+                "start_index": 799
+            },
+            {
+                "text": "رأسه",
+                "confidence": 1.0,
+                "start_index": 806
+            },
+            {
+                "text": "من",
+                "confidence": 1.0,
+                "start_index": 811
+            },
+            {
+                "text": "آخر",
+                "confidence": 1.0,
+                "start_index": 814
+            },
+            {
+                "text": "سجدة،",
+                "confidence": 1.0,
+                "start_index": 818
+            },
+            {
+                "text": "ثم",
+                "confidence": 1.0,
+                "start_index": 824
+            },
+            {
+                "text": "أحدث",
+                "confidence": 1.0,
+                "start_index": 827
+            },
+            {
+                "text": "فقد",
+                "confidence": 1.0,
+                "start_index": 832
+            },
+            {
+                "text": "مضت",
+                "confidence": 1.0,
+                "start_index": 836
+            },
+            {
+                "text": "صلاته.",
+                "confidence": 1.0,
+                "start_index": 840
+            },
+            {
+                "text": "\"ابن",
+                "confidence": 1.0,
+                "start_index": 847
+            },
+            {
+                "text": "جرير\".",
+                "confidence": 1.0,
+                "start_index": 852
+            },
+            {
+                "text": "22370-",
+                "confidence": 1.0,
+                "start_index": 859
+            },
+            {
+                "text": "عن",
+                "confidence": 1.0,
+                "start_index": 866
+            },
+            {
+                "text": "عاصم",
+                "confidence": 1.0,
+                "start_index": 869
+            },
+            {
+                "text": "بن",
+                "confidence": 1.0,
+                "start_index": 874
+            },
+            {
+                "text": "ضمرة",
+                "confidence": 1.0,
+                "start_index": 877
+            },
+            {
+                "text": "عن",
+                "confidence": 1.0,
+                "start_index": 882
+            },
+            {
+                "text": "علي",
+                "confidence": 1.0,
+                "start_index": 885
+            },
+            {
+                "text": "قال:",
+                "confidence": 1.0,
+                "start_index": 889
+            },
+            {
+                "text": "\"إذا",
+                "confidence": 1.0,
+                "start_index": 894
+            },
+            {
+                "text": "جلس",
+                "confidence": 1.0,
+                "start_index": 899
+            },
+            {
+                "text": "مقدار",
+                "confidence": 1.0,
+                "start_index": 903
+            },
+            {
+                "text": "التشهد",
+                "confidence": 1.0,
+                "start_index": 909
+            },
+            {
+                "text": "ثم",
+                "confidence": 1.0,
+                "start_index": 916
+            },
+            {
+                "text": "أحدث",
+                "confidence": 1.0,
+                "start_index": 919
+            },
+            {
+                "text": "فقد",
+                "confidence": 1.0,
+                "start_index": 924
+            },
+            {
+                "text": "تمت",
+                "confidence": 1.0,
+                "start_index": 928
+            },
+            {
+                "text": "صلاته\".",
+                "confidence": 1.0,
+                "start_index": 932
+            },
+            {
+                "text": "\"عب",
+                "confidence": 1.0,
+                "start_index": 940
+            },
+            {
+                "text": "ق",
+                "confidence": 1.0,
+                "start_index": 944
+            },
+            {
+                "text": "وقال:",
+                "confidence": 1.0,
+                "start_index": 946
+            },
+            {
+                "text": "عاصم",
+                "confidence": 1.0,
+                "start_index": 952
+            },
+            {
+                "text": "ليس",
+                "confidence": 1.0,
+                "start_index": 957
+            },
+            {
+                "text": "بالقوى\".",
+                "confidence": 1.0,
+                "start_index": 961
+            },
+            {
+                "text": "\"على",
+                "confidence": 1.0,
+                "start_index": 970
+            },
+            {
+                "text": "العراق",
+                "confidence": 1.0,
+                "start_index": 975
+            },
+            {
+                "text": "فى",
+                "confidence": 1.0,
+                "start_index": 982
+            },
+            {
+                "text": "أمر",
+                "confidence": 1.0,
+                "start_index": 985
+            },
+            {
+                "text": "الخوارج:",
+                "confidence": 1.0,
+                "start_index": 989
+            },
+            {
+                "text": "«ضع",
+                "confidence": 1.0,
+                "start_index": 998
+            },
+            {
+                "text": "سيفك",
+                "confidence": 1.0,
+                "start_index": 1002
+            },
+            {
+                "text": "فى",
+                "confidence": 1.0,
+                "start_index": 1007
+            },
+            {
+                "text": "كلاب",
+                "confidence": 1.0,
+                "start_index": 1010
+            },
+            {
+                "text": "النار،",
+                "confidence": 1.0,
+                "start_index": 1015
+            },
+            {
+                "text": "وتقرّب",
+                "confidence": 1.0,
+                "start_index": 1022
+            },
+            {
+                "text": "إلى",
+                "confidence": 1.0,
+                "start_index": 1029
+            },
+            {
+                "text": "الله\"",
+                "confidence": 1.0,
+                "start_index": 1033
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -87,48 +988,58 @@
     },
     "blocks": [
         {
-            "top_left_x": 133,
-            "top_left_y": 14,
-            "bottom_right_x": 179,
-            "bottom_right_y": 60,
-            "content": "![image](img-0)",
-            "type": "image",
+            "top_left_x": 40,
+            "top_left_y": 40,
+            "bottom_right_x": 700,
+            "bottom_right_y": 209,
+            "content": "لا يتقدمنَّ أحدُكم رمضانَ بصوم يوم",
+            "type": "title",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 14,
-            "top_left_y": 235,
-            "bottom_right_x": 179,
-            "bottom_right_y": 253,
-            "content": "بَشَّارٍ قَالَا:",
+            "top_left_x": 400,
+            "top_left_y": 239,
+            "bottom_right_x": 676,
+            "bottom_right_y": 699,
+            "content": "\"فرضٌ، وتأخيرُهُ غيرُ مرضي، وأما الوِرْدُ فتركه أيضاً شديدٌ عند مَنْ ألِفَ به؛ لأن أفضل العبادة أدومُها. * * * مِنَ الحِسَان: 1401\"",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 2
         },
         {
-            "top_left_x": 14,
-            "top_left_y": 255,
-            "bottom_right_x": 179,
-            "bottom_right_y": 267,
-            "content": "رَسُولُ اللهِ صلى الله عليه",
+            "top_left_x": 40,
+            "top_left_y": 229,
+            "bottom_right_x": 360,
+            "bottom_right_y": 709,
+            "content": "- قال صلى الله عليه وسلم: \"إذا انْتَصَفَ شَعْبَانُ فلا تَصُومُوا\". \"من الحسان\": \" عن أبي هريرة أنه قال: قال رسول الله صلى الله تعالى عليه وسلم: إذا انتصف شعبانُ\"؛ أي: إذا مضى النصف الأول منه، \"فلا تصوموا\": وهذا ليستريحَ من الصوم، ويكون له نشاط لصوم رمضان. * * * 1402 - وقال صلى الله عليه وسلم: \"أَحْصُوا هِلالَ شَعْبَانَ لِرَمَضَانَ\". \"عن أبي هريرة أنه قال: قال رسول الله صلى الله تعالى عليه وسلم: أَحصُوا هلالَ شعبان لرمضان\": بفتح الهمزة: أمرٌ من (الإحصاء) وهو: العد؛ أي: عدوا أيامه لتعلموا دخول رمضان. * * *",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 3
         },
         {
-            "top_left_x": 14,
-            "top_left_y": 267,
-            "bottom_right_x": 179,
-            "bottom_right_y": 279,
-            "content": "ولا آباؤنا} ، ولذلك",
+            "top_left_x": 380,
+            "top_left_y": 729,
+            "bottom_right_x": 700,
+            "bottom_right_y": 1209,
+            "content": "التسليم\". \"عب\". 22368- عن علي قال: \"إذا أتم الركوع والسجود، ثم أحدث، فقد تمت صلاته\". \"ابن جرير\". 22369- عن علي إذا رفع المصلي رأسه من آخر سجدة، ثم أحدث فقد مضت صلاته. \"ابن جرير\". 22370- عن عاصم بن ضمرة عن علي قال: \"إذا جلس مقدار التشهد ثم أحدث فقد تمت صلاته\". \"عب ق وقال: عاصم ليس بالقوى\".",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 4
+        },
+        {
+            "top_left_x": 60,
+            "top_left_y": 739,
+            "bottom_right_x": 336,
+            "bottom_right_y": 1199,
+            "content": "\"على العراق فى أمر الخوارج: «ضع سيفك فى كلاب النار، وتقرّب إلى الله\"",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 5
         }
     ],
     "meta": {
-        "template": "business_card",
+        "template": "a4_literary",
         "hybrid": null
     }
 }

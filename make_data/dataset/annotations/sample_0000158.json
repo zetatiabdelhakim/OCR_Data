@@ -1,5 +1,5 @@
 {
-    "markdown": "كان متكئًا فاستوى",
+    "markdown": "\\frac{\\partial \\sigma}{\\partial x} = \\lim_{h \\to 0} \\frac{\\log(x + h) - \\log(x)}{h}\nطارق بن زياد",
     "images": [],
     "tables": [],
     "hyperlinks": [],
@@ -7,25 +7,85 @@
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 763,
-        "width": 608
+        "height": 956,
+        "width": 573
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "كان",
+                "text": "\\frac{\\partial",
                 "confidence": 1.0,
                 "start_index": 0
             },
             {
-                "text": "متكئًا",
+                "text": "\\sigma}{\\partial",
                 "confidence": 1.0,
-                "start_index": 4
+                "start_index": 15
             },
             {
-                "text": "فاستوى",
+                "text": "x}",
                 "confidence": 1.0,
-                "start_index": 11
+                "start_index": 32
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 35
+            },
+            {
+                "text": "\\lim_{h",
+                "confidence": 1.0,
+                "start_index": 37
+            },
+            {
+                "text": "\\to",
+                "confidence": 1.0,
+                "start_index": 45
+            },
+            {
+                "text": "0}",
+                "confidence": 1.0,
+                "start_index": 49
+            },
+            {
+                "text": "\\frac{\\log(x",
+                "confidence": 1.0,
+                "start_index": 52
+            },
+            {
+                "text": "+",
+                "confidence": 1.0,
+                "start_index": 65
+            },
+            {
+                "text": "h)",
+                "confidence": 1.0,
+                "start_index": 67
+            },
+            {
+                "text": "-",
+                "confidence": 1.0,
+                "start_index": 70
+            },
+            {
+                "text": "\\log(x)}{h}",
+                "confidence": 1.0,
+                "start_index": 72
+            },
+            {
+                "text": "طارق",
+                "confidence": 1.0,
+                "start_index": 84
+            },
+            {
+                "text": "بن",
+                "confidence": 1.0,
+                "start_index": 89
+            },
+            {
+                "text": "زياد",
+                "confidence": 1.0,
+                "start_index": 92
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -33,18 +93,28 @@
     },
     "blocks": [
         {
-            "top_left_x": 262,
-            "top_left_y": 720,
-            "bottom_right_x": 346,
-            "bottom_right_y": 745,
-            "content": "كان متكئًا فاستوى",
+            "top_left_x": 77,
+            "top_left_y": 460,
+            "bottom_right_x": 497,
+            "bottom_right_y": 506,
+            "content": "\\frac{\\partial \\sigma}{\\partial x} = \\lim_{h \\to 0} \\frac{\\log(x + h) - \\log(x)}{h}",
             "type": "text",
             "confidence_scores": null,
             "reading_index": 1
+        },
+        {
+            "top_left_x": 246,
+            "top_left_y": 917,
+            "bottom_right_x": 327,
+            "bottom_right_y": 938,
+            "content": "طارق بن زياد",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 2
         }
     ],
     "meta": {
         "template": "book_cover",
-        "hybrid": null
+        "hybrid": "equation"
     }
 }

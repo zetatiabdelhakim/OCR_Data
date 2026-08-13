@@ -1,5 +1,5 @@
 {
-    "markdown": "## بْنُ حَرْبٍ، حَدَّثَنَا يَحْيَى بْنُ سَعِيدٍ عَنْ حَاتِمِ\n## نظرية\nأَبِي رَبِيعَةَ بِطَلَاقِي، وَأَرْسَلَ مَعَهُ بِخَمْسَةِ آصُعِ تَمْرٍ، وَخَمْسَةِ آصُعِ شَعِيرٍ، فَقُلْتُ: أَمَا لِي نَفَقَةٌ إِلَّا هَذَا، وَلَا أَعْتَدُّ فِي مَنْزِلِكُمْ؟ ! قَالَ: لَا،\n\\mathbb{E}[\\alpha] = \\int x f_\\alpha(x) dx",
+    "markdown": "31 - حَدَّثَنَا أَبُو خَيْثَمَةَ، حَدَّثَنَا عَبْدُ الرَّحْم\nمحمود إبراهيم",
     "images": [],
     "tables": [],
     "hyperlinks": [],
@@ -7,215 +7,60 @@
     "footer": null,
     "dimensions": {
         "dpi": 96,
-        "height": 1001,
-        "width": 715
+        "height": 677,
+        "width": 399
     },
     "confidence_scores": {
         "word_confidence_scores": [
             {
-                "text": "##",
+                "text": "31",
                 "confidence": 1.0,
                 "start_index": 0
             },
             {
-                "text": "بْنُ",
+                "text": "-",
                 "confidence": 1.0,
                 "start_index": 3
             },
             {
-                "text": "حَرْبٍ،",
+                "text": "حَدَّثَنَا",
                 "confidence": 1.0,
-                "start_index": 8
+                "start_index": 5
             },
             {
-                "text": "حَدَّثَنَا",
+                "text": "أَبُو",
                 "confidence": 1.0,
                 "start_index": 16
             },
             {
-                "text": "يَحْيَى",
+                "text": "خَيْثَمَةَ،",
                 "confidence": 1.0,
-                "start_index": 27
+                "start_index": 22
             },
             {
-                "text": "بْنُ",
+                "text": "حَدَّثَنَا",
                 "confidence": 1.0,
-                "start_index": 35
+                "start_index": 34
             },
             {
-                "text": "سَعِيدٍ",
+                "text": "عَبْدُ",
                 "confidence": 1.0,
-                "start_index": 40
+                "start_index": 45
             },
             {
-                "text": "عَنْ",
+                "text": "الرَّحْم",
                 "confidence": 1.0,
-                "start_index": 48
+                "start_index": 52
             },
             {
-                "text": "حَاتِمِ",
-                "confidence": 1.0,
-                "start_index": 53
-            },
-            {
-                "text": "##",
+                "text": "محمود",
                 "confidence": 1.0,
                 "start_index": 61
             },
             {
-                "text": "نظرية",
+                "text": "إبراهيم",
                 "confidence": 1.0,
-                "start_index": 64
-            },
-            {
-                "text": "أَبِي",
-                "confidence": 1.0,
-                "start_index": 70
-            },
-            {
-                "text": "رَبِيعَةَ",
-                "confidence": 1.0,
-                "start_index": 76
-            },
-            {
-                "text": "بِطَلَاقِي،",
-                "confidence": 1.0,
-                "start_index": 86
-            },
-            {
-                "text": "وَأَرْسَلَ",
-                "confidence": 1.0,
-                "start_index": 98
-            },
-            {
-                "text": "مَعَهُ",
-                "confidence": 1.0,
-                "start_index": 109
-            },
-            {
-                "text": "بِخَمْسَةِ",
-                "confidence": 1.0,
-                "start_index": 116
-            },
-            {
-                "text": "آصُعِ",
-                "confidence": 1.0,
-                "start_index": 127
-            },
-            {
-                "text": "تَمْرٍ،",
-                "confidence": 1.0,
-                "start_index": 133
-            },
-            {
-                "text": "وَخَمْسَةِ",
-                "confidence": 1.0,
-                "start_index": 141
-            },
-            {
-                "text": "آصُعِ",
-                "confidence": 1.0,
-                "start_index": 152
-            },
-            {
-                "text": "شَعِيرٍ،",
-                "confidence": 1.0,
-                "start_index": 158
-            },
-            {
-                "text": "فَقُلْتُ:",
-                "confidence": 1.0,
-                "start_index": 167
-            },
-            {
-                "text": "أَمَا",
-                "confidence": 1.0,
-                "start_index": 177
-            },
-            {
-                "text": "لِي",
-                "confidence": 1.0,
-                "start_index": 183
-            },
-            {
-                "text": "نَفَقَةٌ",
-                "confidence": 1.0,
-                "start_index": 187
-            },
-            {
-                "text": "إِلَّا",
-                "confidence": 1.0,
-                "start_index": 196
-            },
-            {
-                "text": "هَذَا،",
-                "confidence": 1.0,
-                "start_index": 203
-            },
-            {
-                "text": "وَلَا",
-                "confidence": 1.0,
-                "start_index": 210
-            },
-            {
-                "text": "أَعْتَدُّ",
-                "confidence": 1.0,
-                "start_index": 216
-            },
-            {
-                "text": "فِي",
-                "confidence": 1.0,
-                "start_index": 226
-            },
-            {
-                "text": "مَنْزِلِكُمْ؟",
-                "confidence": 1.0,
-                "start_index": 230
-            },
-            {
-                "text": "!",
-                "confidence": 1.0,
-                "start_index": 244
-            },
-            {
-                "text": "قَالَ:",
-                "confidence": 1.0,
-                "start_index": 246
-            },
-            {
-                "text": "لَا،",
-                "confidence": 1.0,
-                "start_index": 253
-            },
-            {
-                "text": "\\mathbb{E}[\\alpha]",
-                "confidence": 1.0,
-                "start_index": 258
-            },
-            {
-                "text": "=",
-                "confidence": 1.0,
-                "start_index": 277
-            },
-            {
-                "text": "\\int",
-                "confidence": 1.0,
-                "start_index": 279
-            },
-            {
-                "text": "x",
-                "confidence": 1.0,
-                "start_index": 284
-            },
-            {
-                "text": "f_\\alpha(x)",
-                "confidence": 1.0,
-                "start_index": 286
-            },
-            {
-                "text": "dx",
-                "confidence": 1.0,
-                "start_index": 298
+                "start_index": 67
             }
         ],
         "average_page_confidence_score": 1.0,
@@ -223,48 +68,28 @@
     },
     "blocks": [
         {
-            "top_left_x": 40,
-            "top_left_y": 40,
-            "bottom_right_x": 675,
-            "bottom_right_y": 178,
-            "content": "بْنُ حَرْبٍ، حَدَّثَنَا يَحْيَى بْنُ سَعِيدٍ عَنْ حَاتِمِ",
-            "type": "title",
+            "top_left_x": 41,
+            "top_left_y": 316,
+            "bottom_right_x": 358,
+            "bottom_right_y": 361,
+            "content": "31 - حَدَّثَنَا أَبُو خَيْثَمَةَ، حَدَّثَنَا عَبْدُ الرَّحْم",
+            "type": "text",
             "confidence_scores": null,
             "reading_index": 1
         },
         {
-            "top_left_x": 52,
-            "top_left_y": 222,
-            "bottom_right_x": 659,
-            "bottom_right_y": 249,
-            "content": "نظرية",
-            "type": "title",
+            "top_left_x": 180,
+            "top_left_y": 643,
+            "bottom_right_x": 219,
+            "bottom_right_y": 659,
+            "content": "محمود إبراهيم",
+            "type": "text",
             "confidence_scores": null,
             "reading_index": 2
-        },
-        {
-            "top_left_x": 52,
-            "top_left_y": 254,
-            "bottom_right_x": 659,
-            "bottom_right_y": 299,
-            "content": "أَبِي رَبِيعَةَ بِطَلَاقِي، وَأَرْسَلَ مَعَهُ بِخَمْسَةِ آصُعِ تَمْرٍ، وَخَمْسَةِ آصُعِ شَعِيرٍ، فَقُلْتُ: أَمَا لِي نَفَقَةٌ إِلَّا هَذَا، وَلَا أَعْتَدُّ فِي مَنْزِلِكُمْ؟ ! قَالَ: لَا،",
-            "type": "text",
-            "confidence_scores": null,
-            "reading_index": 3
-        },
-        {
-            "top_left_x": 52,
-            "top_left_y": 305,
-            "bottom_right_x": 659,
-            "bottom_right_y": 359,
-            "content": "\\mathbb{E}[\\alpha] = \\int x f_\\alpha(x) dx",
-            "type": "text",
-            "confidence_scores": null,
-            "reading_index": 4
         }
     ],
     "meta": {
-        "template": "a4_literary",
-        "hybrid": "theorem"
+        "template": "book_cover",
+        "hybrid": null
     }
 }
