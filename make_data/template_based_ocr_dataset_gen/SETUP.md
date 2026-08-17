@@ -6,7 +6,7 @@
 
 Click the link below and accept the invite:
 
-**→ https://huggingface.co/organizations/OCR-Data/share/MelLKBnsWnlzOIrDuwfdsUaxghgEQsmEdr**
+**→ <a href="https://huggingface.co/organizations/OCR-Data/share/MelLKBnsWnlzOIrDuwfdsUaxghgEQsmEdr" target="_blank">https://huggingface.co/organizations/OCR-Data/share/MelLKBnsWnlzOIrDuwfdsUaxghgEQsmEdr</a>**
 
 > You need to be a member to push data to the shared dataset repo.
 
@@ -16,7 +16,7 @@ Click the link below and accept the invite:
 
 ```bash
 git clone https://github.com/zetatiabdelhakim/OCR_Data.git
-cd OCR_Data
+cd OCR-DATA\make_data\template_based_ocr_dataset_gen
 ```
 
 ---
@@ -43,10 +43,9 @@ Then open `.env` and replace the placeholder with your real HuggingFace token:
 ```
 HF_TOKEN=hf_your_real_token_here
 ```
-
-> Get your token here → https://huggingface.co/settings/tokens  
+> Get your token here → <a href="https://huggingface.co/settings/tokens" target="_blank">https://huggingface.co/settings/tokens</a>  
 > It needs **write** permission.
-
+>> **Important:** Make sure to add the organization under **"Applied to:"** and select the **"write"** setting when creating the token.
 ---
 
 ## 5. Set your name in `config.yaml`
@@ -87,4 +86,6 @@ That's it. The script handles everything automatically — batching, uploading t
 - If `destination: "hf"` (default) → uploaded automatically to HuggingFace, then deleted locally.
 - If `destination: "lcl"` → saved to `./dataset_local_output/` on your machine.
 
-You don't need to do anything manually. Just let it run.
+You don't need to do anything manually. Just let it run. It may be slow starting, but all will be good at the time all resources are loaded.
+
+Thank you for following!

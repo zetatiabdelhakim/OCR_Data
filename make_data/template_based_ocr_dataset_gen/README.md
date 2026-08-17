@@ -22,6 +22,7 @@ A4 content style. This replaces all five with:
   foreign snippet (a chart, an equation, a quote, a mini-table, a
   figure, or a theorem box) dropped into whatever template was picked -
   a chart inside a receipt, an equation on a book cover, etc.
+- **Data Augmentation & Hugging Face Integration**: Includes data augmentation steps to make the dataset more robust, and natively connects to Hugging Face for seamless dataset uploading and sharing.
 
 ## Setup
 
