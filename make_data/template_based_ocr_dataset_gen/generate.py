@@ -31,6 +31,7 @@ from core.text_provider import DocumentContext, current_document
 from core import assets
 from core.render_engine import build_html_page, render_and_extract
 from core.hybrid import maybe_pick_hybrid
+from core import augmentation
 from templates import TEMPLATES
 
 # ------------------------------------------------------------------
@@ -57,6 +58,9 @@ REFRESH_INTERVAL = config.get("refresh_interval", 1000)
 NUM_BOOKS_TO_FETCH = config.get("num_books_to_fetch", 7)
 TEXT_CORPUS_HF_ID = config.get("text_corpus_hf_id", "MathematicianNLPer/hamela_books_text_full_ok")
 LOCAL_OUTPUT_DIR = config.get("local_output_dir", "./dataset_local_output")
+
+ENABLE_AUGMENTATION = config.get("enable_augmentation", True)
+AUGMENTATIONS_PER_IMAGE = config.get("augmentations_per_image", 3)
 
 STATE_FILE = "state.yaml"
 
@@ -163,9 +167,13 @@ def get_global_count(api):
     print("Checking global dataset size on Hugging Face...")
     try:
         files = api.list_repo_files(repo_id=REPO_ID, repo_type="dataset")
-        # approximate count based on .json files
-        count = sum(1 for f in files if f.endswith('.json'))
-        print(f"Current global dataset size: ~{count} samples.")
+        # Count only ORIGINAL samples (in data/, not data_aug/) so that
+        # global_limit is interpreted as the number of originals.
+        count = sum(
+            1 for f in files
+            if f.endswith('.json') and f.startswith('data/') and not f.startswith('data_aug/')
+        )
+        print(f"Current global dataset size: ~{count} original samples.")
         return count
     except Exception as e:
         print(f"Error checking repo files (maybe repo doesn't exist yet): {e}")
@@ -183,6 +191,7 @@ def flush_current_folder(state, api):
     
     print(f"Processing upload/move for folder {folder_name} ({folder_count} samples)...")
     if DESTINATION == "hf":
+        # --- Upload originals to data/ ---
         print(f"Uploading {temp_dir} to Hugging Face: data/{folder_name} ...")
         try:
             api.upload_folder(
@@ -191,18 +200,51 @@ def flush_current_folder(state, api):
                 repo_id=REPO_ID,
                 repo_type="dataset"
             )
-            print("Upload complete. Cleaning up local temp dir...")
+            print("Original upload complete.")
             shutil.rmtree(temp_dir, ignore_errors=True)
         except Exception as e:
-            print(f"Failed to upload to Hugging Face: {e}")
+            print(f"Failed to upload originals to Hugging Face: {e}")
             return False
+
+        # --- Upload augmented satellite folders to data_aug/ ---
+        if ENABLE_AUGMENTATION:
+            for aug_i in range(1, AUGMENTATIONS_PER_IMAGE + 1):
+                aug_folder_name = f"{folder_name}_aug{aug_i}"
+                aug_temp_dir = os.path.abspath(f"./temp_generation_{aug_folder_name}")
+                if os.path.exists(aug_temp_dir):
+                    print(f"Uploading augmented folder: data_aug/{aug_folder_name} ...")
+                    try:
+                        api.upload_folder(
+                            folder_path=aug_temp_dir,
+                            path_in_repo=f"data_aug/{aug_folder_name}",
+                            repo_id=REPO_ID,
+                            repo_type="dataset"
+                        )
+                        print(f"Augmented upload {aug_i}/{AUGMENTATIONS_PER_IMAGE} complete.")
+                        shutil.rmtree(aug_temp_dir, ignore_errors=True)
+                    except Exception as e:
+                        print(f"Failed to upload augmented folder {aug_folder_name}: {e}")
+                        # Continue — don't block the pipeline for a failed aug upload
     else:
-        dest_path = os.path.join(LOCAL_OUTPUT_DIR, folder_name)
+        # --- Local destination: move originals ---
+        dest_path = os.path.join(LOCAL_OUTPUT_DIR, "data", folder_name)
         print(f"Moving {temp_dir} to {dest_path} ...")
-        os.makedirs(LOCAL_OUTPUT_DIR, exist_ok=True)
+        os.makedirs(os.path.dirname(dest_path), exist_ok=True)
         if os.path.exists(dest_path):
             shutil.rmtree(dest_path)
         shutil.move(temp_dir, dest_path)
+
+        # --- Local destination: move augmented folders ---
+        if ENABLE_AUGMENTATION:
+            for aug_i in range(1, AUGMENTATIONS_PER_IMAGE + 1):
+                aug_folder_name = f"{folder_name}_aug{aug_i}"
+                aug_temp_dir = os.path.abspath(f"./temp_generation_{aug_folder_name}")
+                if os.path.exists(aug_temp_dir):
+                    aug_dest = os.path.join(LOCAL_OUTPUT_DIR, "data_aug", aug_folder_name)
+                    os.makedirs(os.path.dirname(aug_dest), exist_ok=True)
+                    if os.path.exists(aug_dest):
+                        shutil.rmtree(aug_dest)
+                    shutil.move(aug_temp_dir, aug_dest)
     
     # Reset state for next chunk
     state["local_total_pushed"] += folder_count
@@ -343,6 +385,53 @@ def main():
                 r.get()
                 
             pbar.close()
+
+            # ----------------------------------------------------------
+            # AUGMENTATION PASS — runs after each batch of originals
+            # ----------------------------------------------------------
+            if ENABLE_AUGMENTATION:
+                # 1. Create augmented temp directories
+                for aug_i in range(1, AUGMENTATIONS_PER_IMAGE + 1):
+                    aug_dir = os.path.abspath(f"./temp_generation_{folder_name}_aug{aug_i}")
+                    os.makedirs(os.path.join(aug_dir, "images"), exist_ok=True)
+                    os.makedirs(os.path.join(aug_dir, "annotations"), exist_ok=True)
+
+                # 2. Collect original images from this batch
+                original_images = sorted([
+                    f for f in os.listdir(images_path) if f.endswith('.png')
+                ])
+
+                # 3. Build augmentation task list
+                aug_tasks = []
+                for img_file in original_images:
+                    json_file = img_file.replace('.png', '.json')
+                    img_src = os.path.join(images_path, img_file)
+                    json_src = os.path.join(annotations_path, json_file)
+
+                    if not os.path.exists(json_src):
+                        continue
+
+                    # Pick 3 DISTINCT augmentations for this image
+                    aug_names = augmentation.pick_n_distinct(AUGMENTATIONS_PER_IMAGE)
+                    for aug_i, aug_name in enumerate(aug_names, 1):
+                        aug_dir = os.path.abspath(f"./temp_generation_{folder_name}_aug{aug_i}")
+                        aug_img_path = os.path.join(aug_dir, "images", img_file)
+                        aug_json_path = os.path.join(aug_dir, "annotations", json_file)
+                        aug_tasks.append((img_src, json_src, aug_img_path, aug_json_path, aug_name))
+
+                # 4. Run augmentation in parallel using the existing pool
+                print(f"Augmenting {len(original_images)} images × {AUGMENTATIONS_PER_IMAGE} variants...")
+                pbar_aug = tqdm(total=len(aug_tasks), desc="Augmentation")
+                aug_results = []
+                for task in aug_tasks:
+                    aug_results.append(pool.apply_async(augmentation.augment_sample, args=task))
+                for ar in aug_results:
+                    try:
+                        ar.get(timeout=60)
+                    except Exception as e:
+                        print(f"  [aug] Error: {e}")
+                    pbar_aug.update(1)
+                pbar_aug.close()
 
     # Final flush of any remaining un-pushed samples
     state = load_state()

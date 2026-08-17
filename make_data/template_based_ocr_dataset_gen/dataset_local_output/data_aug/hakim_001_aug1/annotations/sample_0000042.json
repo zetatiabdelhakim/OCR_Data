@@ -1,0 +1,322 @@
+{
+    "markdown": "جنود مجندة، فما\n10/01/2026 - 15:49\nتعارف\n145.00\nمنها\n154.21\nفي الله ائتلف\n39.69\nوما تناكر منها\n103.60\nفي\n18.00\nالمجموع\n460.50\n\n![image](img-0)\n\nشكرا لزيارتكم",
+    "images": [
+        {
+            "id": "img-0",
+            "top_left_x": 10,
+            "top_left_y": 185,
+            "bottom_right_x": 297,
+            "bottom_right_y": 215,
+            "reading_index": 15
+        }
+    ],
+    "tables": [],
+    "hyperlinks": [],
+    "header": null,
+    "footer": null,
+    "dimensions": {
+        "dpi": 96,
+        "height": 264,
+        "width": 307
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "جنود",
+                "confidence": 1.0,
+                "start_index": 0
+            },
+            {
+                "text": "مجندة،",
+                "confidence": 1.0,
+                "start_index": 5
+            },
+            {
+                "text": "فما",
+                "confidence": 1.0,
+                "start_index": 12
+            },
+            {
+                "text": "10/01/2026",
+                "confidence": 1.0,
+                "start_index": 16
+            },
+            {
+                "text": "-",
+                "confidence": 1.0,
+                "start_index": 27
+            },
+            {
+                "text": "15:49",
+                "confidence": 1.0,
+                "start_index": 29
+            },
+            {
+                "text": "تعارف",
+                "confidence": 1.0,
+                "start_index": 35
+            },
+            {
+                "text": "145.00",
+                "confidence": 1.0,
+                "start_index": 41
+            },
+            {
+                "text": "منها",
+                "confidence": 1.0,
+                "start_index": 48
+            },
+            {
+                "text": "154.21",
+                "confidence": 1.0,
+                "start_index": 53
+            },
+            {
+                "text": "في",
+                "confidence": 1.0,
+                "start_index": 60
+            },
+            {
+                "text": "الله",
+                "confidence": 1.0,
+                "start_index": 63
+            },
+            {
+                "text": "ائتلف",
+                "confidence": 1.0,
+                "start_index": 68
+            },
+            {
+                "text": "39.69",
+                "confidence": 1.0,
+                "start_index": 74
+            },
+            {
+                "text": "وما",
+                "confidence": 1.0,
+                "start_index": 80
+            },
+            {
+                "text": "تناكر",
+                "confidence": 1.0,
+                "start_index": 84
+            },
+            {
+                "text": "منها",
+                "confidence": 1.0,
+                "start_index": 90
+            },
+            {
+                "text": "103.60",
+                "confidence": 1.0,
+                "start_index": 95
+            },
+            {
+                "text": "في",
+                "confidence": 1.0,
+                "start_index": 102
+            },
+            {
+                "text": "18.00",
+                "confidence": 1.0,
+                "start_index": 105
+            },
+            {
+                "text": "المجموع",
+                "confidence": 1.0,
+                "start_index": 111
+            },
+            {
+                "text": "460.50",
+                "confidence": 1.0,
+                "start_index": 119
+            },
+            {
+                "text": "![image](img-0)",
+                "confidence": 1.0,
+                "start_index": 127
+            },
+            {
+                "text": "شكرا",
+                "confidence": 1.0,
+                "start_index": 144
+            },
+            {
+                "text": "لزيارتكم",
+                "confidence": 1.0,
+                "start_index": 149
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 10,
+            "top_left_y": 14,
+            "bottom_right_x": 297,
+            "bottom_right_y": 35,
+            "content": "جنود مجندة، فما",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 1
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 35,
+            "bottom_right_x": 297,
+            "bottom_right_y": 50,
+            "content": "10/01/2026 - 15:49",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 2
+        },
+        {
+            "top_left_x": 264,
+            "top_left_y": 63,
+            "bottom_right_x": 297,
+            "bottom_right_y": 79,
+            "content": "تعارف",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 3
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 63,
+            "bottom_right_x": 50,
+            "bottom_right_y": 79,
+            "content": "145.00",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 4
+        },
+        {
+            "top_left_x": 271,
+            "top_left_y": 79,
+            "bottom_right_x": 297,
+            "bottom_right_y": 95,
+            "content": "منها",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 5
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 79,
+            "bottom_right_x": 50,
+            "bottom_right_y": 95,
+            "content": "154.21",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 6
+        },
+        {
+            "top_left_x": 231,
+            "top_left_y": 95,
+            "bottom_right_x": 297,
+            "bottom_right_y": 111,
+            "content": "في الله ائتلف",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 7
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 95,
+            "bottom_right_x": 43,
+            "bottom_right_y": 111,
+            "content": "39.69",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 8
+        },
+        {
+            "top_left_x": 205,
+            "top_left_y": 111,
+            "bottom_right_x": 297,
+            "bottom_right_y": 127,
+            "content": "وما تناكر منها",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 9
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 111,
+            "bottom_right_x": 50,
+            "bottom_right_y": 127,
+            "content": "103.60",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 10
+        },
+        {
+            "top_left_x": 284,
+            "top_left_y": 127,
+            "bottom_right_x": 297,
+            "bottom_right_y": 143,
+            "content": "في",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 11
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 127,
+            "bottom_right_x": 43,
+            "bottom_right_y": 143,
+            "content": "18.00",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 12
+        },
+        {
+            "top_left_x": 242,
+            "top_left_y": 156,
+            "bottom_right_x": 297,
+            "bottom_right_y": 175,
+            "content": "المجموع",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 13
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 156,
+            "bottom_right_x": 57,
+            "bottom_right_y": 175,
+            "content": "460.50",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 14
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 185,
+            "bottom_right_x": 297,
+            "bottom_right_y": 215,
+            "content": "![image](img-0)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 15
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 215,
+            "bottom_right_x": 297,
+            "bottom_right_y": 230,
+            "content": "شكرا لزيارتكم",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 16
+        }
+    ],
+    "meta": {
+        "template": "receipt",
+        "hybrid": null,
+        "augmentation": {
+            "name": "bad_photocopy"
+        }
+    }
+}

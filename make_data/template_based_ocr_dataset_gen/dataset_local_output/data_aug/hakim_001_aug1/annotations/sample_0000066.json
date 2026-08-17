@@ -1,0 +1,255 @@
+{
+    "markdown": "## ‌ ‌[حذن] الحُذُنَّتان: الأذنان، بالضم والتشديد\n\n![image](img-0)\n\n\n![image](img-1)\n\n\n![image](img-2)\n\n\n![image](img-3)\n\n\n![image](img-4)\n\nشكل: (3) ،\n‌ ‌[حذن] الحُذُنَّتان: الأذنان، بالضم والتشديد.",
+    "images": [
+        {
+            "id": "img-0",
+            "top_left_x": 650,
+            "top_left_y": 230,
+            "bottom_right_x": 793,
+            "bottom_right_y": 1224,
+            "reading_index": 2
+        },
+        {
+            "id": "img-1",
+            "top_left_x": 531,
+            "top_left_y": 234,
+            "bottom_right_x": 674,
+            "bottom_right_y": 1228,
+            "reading_index": 3
+        },
+        {
+            "id": "img-2",
+            "top_left_x": 412,
+            "top_left_y": 238,
+            "bottom_right_x": 555,
+            "bottom_right_y": 1233,
+            "reading_index": 4
+        },
+        {
+            "id": "img-3",
+            "top_left_x": 292,
+            "top_left_y": 243,
+            "bottom_right_x": 436,
+            "bottom_right_y": 1237,
+            "reading_index": 5
+        },
+        {
+            "id": "img-4",
+            "top_left_x": 173,
+            "top_left_y": 253,
+            "bottom_right_x": 258,
+            "bottom_right_y": 311,
+            "reading_index": 6
+        }
+    ],
+    "tables": [],
+    "hyperlinks": [],
+    "header": null,
+    "footer": null,
+    "dimensions": {
+        "dpi": 96,
+        "height": 1277,
+        "width": 830
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "##",
+                "confidence": 1.0,
+                "start_index": 0
+            },
+            {
+                "text": "‌",
+                "confidence": 1.0,
+                "start_index": 3
+            },
+            {
+                "text": "‌[حذن]",
+                "confidence": 1.0,
+                "start_index": 5
+            },
+            {
+                "text": "الحُذُنَّتان:",
+                "confidence": 1.0,
+                "start_index": 12
+            },
+            {
+                "text": "الأذنان،",
+                "confidence": 1.0,
+                "start_index": 26
+            },
+            {
+                "text": "بالضم",
+                "confidence": 1.0,
+                "start_index": 35
+            },
+            {
+                "text": "والتشديد",
+                "confidence": 1.0,
+                "start_index": 41
+            },
+            {
+                "text": "![image](img-0)",
+                "confidence": 1.0,
+                "start_index": 51
+            },
+            {
+                "text": "![image](img-1)",
+                "confidence": 1.0,
+                "start_index": 69
+            },
+            {
+                "text": "![image](img-2)",
+                "confidence": 1.0,
+                "start_index": 87
+            },
+            {
+                "text": "![image](img-3)",
+                "confidence": 1.0,
+                "start_index": 105
+            },
+            {
+                "text": "![image](img-4)",
+                "confidence": 1.0,
+                "start_index": 123
+            },
+            {
+                "text": "شكل:",
+                "confidence": 1.0,
+                "start_index": 140
+            },
+            {
+                "text": "(3)",
+                "confidence": 1.0,
+                "start_index": 145
+            },
+            {
+                "text": "،",
+                "confidence": 1.0,
+                "start_index": 149
+            },
+            {
+                "text": "‌",
+                "confidence": 1.0,
+                "start_index": 151
+            },
+            {
+                "text": "‌[حذن]",
+                "confidence": 1.0,
+                "start_index": 153
+            },
+            {
+                "text": "الحُذُنَّتان:",
+                "confidence": 1.0,
+                "start_index": 160
+            },
+            {
+                "text": "الأذنان،",
+                "confidence": 1.0,
+                "start_index": 174
+            },
+            {
+                "text": "بالضم",
+                "confidence": 1.0,
+                "start_index": 183
+            },
+            {
+                "text": "والتشديد.",
+                "confidence": 1.0,
+                "start_index": 189
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 37,
+            "top_left_y": 37,
+            "bottom_right_x": 756,
+            "bottom_right_y": 240,
+            "content": "‌ ‌[حذن] الحُذُنَّتان: الأذنان، بالضم والتشديد",
+            "type": "title",
+            "confidence_scores": null,
+            "reading_index": 1
+        },
+        {
+            "top_left_x": 650,
+            "top_left_y": 230,
+            "bottom_right_x": 793,
+            "bottom_right_y": 1224,
+            "content": "![image](img-0)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 2
+        },
+        {
+            "top_left_x": 531,
+            "top_left_y": 234,
+            "bottom_right_x": 674,
+            "bottom_right_y": 1228,
+            "content": "![image](img-1)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 3
+        },
+        {
+            "top_left_x": 412,
+            "top_left_y": 238,
+            "bottom_right_x": 555,
+            "bottom_right_y": 1233,
+            "content": "![image](img-2)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 4
+        },
+        {
+            "top_left_x": 292,
+            "top_left_y": 243,
+            "bottom_right_x": 436,
+            "bottom_right_y": 1237,
+            "content": "![image](img-3)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 5
+        },
+        {
+            "top_left_x": 173,
+            "top_left_y": 253,
+            "bottom_right_x": 258,
+            "bottom_right_y": 311,
+            "content": "![image](img-4)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 6
+        },
+        {
+            "top_left_x": 175,
+            "top_left_y": 312,
+            "bottom_right_x": 259,
+            "bottom_right_y": 337,
+            "content": "شكل: (3) ،",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 7
+        },
+        {
+            "top_left_x": 48,
+            "top_left_y": 348,
+            "bottom_right_x": 312,
+            "bottom_right_y": 1241,
+            "content": "‌ ‌[حذن] الحُذُنَّتان: الأذنان، بالضم والتشديد.",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 8
+        }
+    ],
+    "meta": {
+        "template": "a4_image_gallery",
+        "hybrid": null,
+        "augmentation": {
+            "name": "rotation",
+            "angle": 2.1
+        }
+    }
+}

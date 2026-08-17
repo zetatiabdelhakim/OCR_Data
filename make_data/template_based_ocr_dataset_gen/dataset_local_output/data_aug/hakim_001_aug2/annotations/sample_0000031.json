@@ -1,0 +1,145 @@
+{
+    "markdown": "- أي ظهر لها\n\n![image](img-0)\n\nعبد الله سعيد\n5986-2214\n\n![image](img-1)\n",
+    "images": [
+        {
+            "id": "img-0",
+            "top_left_x": 306,
+            "top_left_y": 77,
+            "bottom_right_x": 350,
+            "bottom_right_y": 133,
+            "reading_index": 2
+        },
+        {
+            "id": "img-1",
+            "top_left_x": 10,
+            "top_left_y": 179,
+            "bottom_right_x": 350,
+            "bottom_right_y": 209,
+            "reading_index": 5
+        }
+    ],
+    "tables": [],
+    "hyperlinks": [],
+    "header": null,
+    "footer": null,
+    "dimensions": {
+        "dpi": 96,
+        "height": 219,
+        "width": 360
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "-",
+                "confidence": 1.0,
+                "start_index": 0
+            },
+            {
+                "text": "أي",
+                "confidence": 1.0,
+                "start_index": 2
+            },
+            {
+                "text": "ظهر",
+                "confidence": 1.0,
+                "start_index": 5
+            },
+            {
+                "text": "لها",
+                "confidence": 1.0,
+                "start_index": 9
+            },
+            {
+                "text": "![image](img-0)",
+                "confidence": 1.0,
+                "start_index": 14
+            },
+            {
+                "text": "عبد",
+                "confidence": 1.0,
+                "start_index": 31
+            },
+            {
+                "text": "الله",
+                "confidence": 1.0,
+                "start_index": 35
+            },
+            {
+                "text": "سعيد",
+                "confidence": 1.0,
+                "start_index": 40
+            },
+            {
+                "text": "5986-2214",
+                "confidence": 1.0,
+                "start_index": 45
+            },
+            {
+                "text": "![image](img-1)",
+                "confidence": 1.0,
+                "start_index": 56
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 10,
+            "top_left_y": 10,
+            "bottom_right_x": 350,
+            "bottom_right_y": 31,
+            "content": "- أي ظهر لها",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 1
+        },
+        {
+            "top_left_x": 306,
+            "top_left_y": 77,
+            "bottom_right_x": 350,
+            "bottom_right_y": 133,
+            "content": "![image](img-0)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 2
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 82,
+            "bottom_right_x": 298,
+            "bottom_right_y": 106,
+            "content": "عبد الله سعيد",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 3
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 110,
+            "bottom_right_x": 298,
+            "bottom_right_y": 129,
+            "content": "5986-2214",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 4
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 179,
+            "bottom_right_x": 350,
+            "bottom_right_y": 209,
+            "content": "![image](img-1)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 5
+        }
+    ],
+    "meta": {
+        "template": "id_card",
+        "hybrid": null,
+        "augmentation": {
+            "name": "bad_photocopy"
+        }
+    }
+}

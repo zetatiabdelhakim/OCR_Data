@@ -21,14 +21,14 @@ destination: "hf"
 # 2. GENERATION LIMITS & BATCH CHUNKING
 # ------------------------------------------------------------------------------
 # Total target size of the dataset across the team. Script halts if total images >= global_limit
-global_limit: 1000
+global_limit: 1000000
 
 # Absolute maximum number of images a SINGLE user is allowed to generate on their machine across all runs.
 # The script will completely halt the user once their local historical total reaches this number.
-user_local_limit: 600
+user_local_limit: 10000
 
 # Maximum number of images allowed per batch subfolder before rotating to a new folder ID (Max recommended: 9000)
-chunk_limit: 9000
+chunk_limit: 9990
 
 # Number of samples to generate in one run (if not capped by global limit). 
 # Set to a high number to run indefinitely until global_limit is reached.
@@ -73,3 +73,12 @@ default_dpi: 96
 
 # Jitter percentage used for varying layout sizes (0.12 = +/- 12%)
 default_jitter_pct: 0.12
+
+# ------------------------------------------------------------------------------
+# 5. DATA AUGMENTATION SETTINGS
+# ------------------------------------------------------------------------------
+# Whether to generate augmented variants of each image
+enable_augmentation: true
+
+# Number of augmented copies per original image (each picks a DIFFERENT augmentation from 10 available)
+augmentations_per_image: 3

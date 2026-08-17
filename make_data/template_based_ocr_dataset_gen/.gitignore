@@ -21,7 +21,7 @@ state.yaml
 
 # ── Dataset outputs ───────────────────────────────────────────────────────────
 dataset/
-dataset_local_output/
+# dataset_local_output/
 nature_images/
 
 # ── Temp generation folders ───────────────────────────────────────────────────

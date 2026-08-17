@@ -1,0 +1,74 @@
+{
+    "markdown": "رحمه الله بـ (القول الجملي): القول المجمل",
+    "images": [],
+    "tables": [],
+    "hyperlinks": [],
+    "header": null,
+    "footer": null,
+    "dimensions": {
+        "dpi": 96,
+        "height": 629,
+        "width": 417
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "رحمه",
+                "confidence": 1.0,
+                "start_index": 0
+            },
+            {
+                "text": "الله",
+                "confidence": 1.0,
+                "start_index": 5
+            },
+            {
+                "text": "بـ",
+                "confidence": 1.0,
+                "start_index": 10
+            },
+            {
+                "text": "(القول",
+                "confidence": 1.0,
+                "start_index": 13
+            },
+            {
+                "text": "الجملي):",
+                "confidence": 1.0,
+                "start_index": 20
+            },
+            {
+                "text": "القول",
+                "confidence": 1.0,
+                "start_index": 29
+            },
+            {
+                "text": "المجمل",
+                "confidence": 1.0,
+                "start_index": 35
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 66,
+            "top_left_y": 578,
+            "bottom_right_x": 351,
+            "bottom_right_y": 611,
+            "content": "رحمه الله بـ (القول الجملي): القول المجمل",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 1
+        }
+    ],
+    "meta": {
+        "template": "book_cover",
+        "hybrid": null,
+        "augmentation": {
+            "name": "bleed_through",
+            "alpha": 0.16
+        }
+    }
+}

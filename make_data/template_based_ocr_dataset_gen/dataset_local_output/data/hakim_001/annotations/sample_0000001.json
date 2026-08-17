@@ -1,0 +1,1090 @@
+{
+    "markdown": "## ملاحظة\nالافرنج سنة سبع وتسعين وهم محاصرون حران [3] فتركوا المنافسة بينهم وقصدوهم وسقمان في سبعة آلاف من التركمان فهزموا الافرنج وأسروا القمص بردويل صاحب الرها أسره أصحاب سقمان فتغلب عليهم أصحاب جكرمس وأخذوه وافترقوا بسبب ذلك وعادوا الى ما كان بينهم من الفتن والله أعلم. ‌ ‌استيلاء سقمان بن ارتق على ماردين\n\\alpha_{n+1} = \\alpha_n - \\alpha \\nabla f(\\alpha_n) + \\frac{\\sigma}{y^2}\n## برهان\n\\vec{F} = m\\vec{a}\n\\mathbb{E}[x] = \\int x f_x(x) dx\n\\frac{\\partial \\alpha}{\\partial \\sigma} = \\lim_{h \\to 0} \\frac{\\max(\\sigma + h) - \\max(\\sigma)}{h}\n## مبرهنة\n[5] وهي لبعض التركمان فاستنجد صاحبها بسقمان فسار لانجاده وقاتل كربوقا قتالا شديدا ثم هزمه وأسر ابن أخيه ياقوتي بن ارتق وحبسه بقلعة\n\\mathbb{E}[i] = \\int x f_i(x) dx + \\frac{n}{\\sigma^2}\n## نظرية\n\\nabla_{n} J(n) = \\frac{1}{m} X^T ( \\sigma(X n) - Y )\n## برهان\nواحد من محققي العلماء: الاتفاق على أن الملائكة لا يأكلون، ولا يشربون، ولا ينكحون\" (4) . ولما كان للملائكة مقام عليٌّ عند الله ذكرهم سبحانه وتعالى بالتقريب والكرامة (5) ، فقال\n\\sum_{\\mu=0}^{M} \\frac{\\alpha^\\mu}{\\mu!} = e^{\\alpha}\n## نظرية\n\\prod_{\\sigma=1}^{n} (1 \\geq x_\\sigma) = 0 + \\frac{t}{z^2}",
+    "images": [],
+    "tables": [],
+    "hyperlinks": [],
+    "header": null,
+    "footer": null,
+    "dimensions": {
+        "dpi": 96,
+        "height": 1220,
+        "width": 862
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "##",
+                "confidence": 1.0,
+                "start_index": 0
+            },
+            {
+                "text": "ملاحظة",
+                "confidence": 1.0,
+                "start_index": 3
+            },
+            {
+                "text": "الافرنج",
+                "confidence": 1.0,
+                "start_index": 10
+            },
+            {
+                "text": "سنة",
+                "confidence": 1.0,
+                "start_index": 18
+            },
+            {
+                "text": "سبع",
+                "confidence": 1.0,
+                "start_index": 22
+            },
+            {
+                "text": "وتسعين",
+                "confidence": 1.0,
+                "start_index": 26
+            },
+            {
+                "text": "وهم",
+                "confidence": 1.0,
+                "start_index": 33
+            },
+            {
+                "text": "محاصرون",
+                "confidence": 1.0,
+                "start_index": 37
+            },
+            {
+                "text": "حران",
+                "confidence": 1.0,
+                "start_index": 45
+            },
+            {
+                "text": "[3]",
+                "confidence": 1.0,
+                "start_index": 50
+            },
+            {
+                "text": "فتركوا",
+                "confidence": 1.0,
+                "start_index": 54
+            },
+            {
+                "text": "المنافسة",
+                "confidence": 1.0,
+                "start_index": 61
+            },
+            {
+                "text": "بينهم",
+                "confidence": 1.0,
+                "start_index": 70
+            },
+            {
+                "text": "وقصدوهم",
+                "confidence": 1.0,
+                "start_index": 76
+            },
+            {
+                "text": "وسقمان",
+                "confidence": 1.0,
+                "start_index": 84
+            },
+            {
+                "text": "في",
+                "confidence": 1.0,
+                "start_index": 91
+            },
+            {
+                "text": "سبعة",
+                "confidence": 1.0,
+                "start_index": 94
+            },
+            {
+                "text": "آلاف",
+                "confidence": 1.0,
+                "start_index": 99
+            },
+            {
+                "text": "من",
+                "confidence": 1.0,
+                "start_index": 104
+            },
+            {
+                "text": "التركمان",
+                "confidence": 1.0,
+                "start_index": 107
+            },
+            {
+                "text": "فهزموا",
+                "confidence": 1.0,
+                "start_index": 116
+            },
+            {
+                "text": "الافرنج",
+                "confidence": 1.0,
+                "start_index": 123
+            },
+            {
+                "text": "وأسروا",
+                "confidence": 1.0,
+                "start_index": 131
+            },
+            {
+                "text": "القمص",
+                "confidence": 1.0,
+                "start_index": 138
+            },
+            {
+                "text": "بردويل",
+                "confidence": 1.0,
+                "start_index": 144
+            },
+            {
+                "text": "صاحب",
+                "confidence": 1.0,
+                "start_index": 151
+            },
+            {
+                "text": "الرها",
+                "confidence": 1.0,
+                "start_index": 156
+            },
+            {
+                "text": "أسره",
+                "confidence": 1.0,
+                "start_index": 162
+            },
+            {
+                "text": "أصحاب",
+                "confidence": 1.0,
+                "start_index": 167
+            },
+            {
+                "text": "سقمان",
+                "confidence": 1.0,
+                "start_index": 173
+            },
+            {
+                "text": "فتغلب",
+                "confidence": 1.0,
+                "start_index": 179
+            },
+            {
+                "text": "عليهم",
+                "confidence": 1.0,
+                "start_index": 185
+            },
+            {
+                "text": "أصحاب",
+                "confidence": 1.0,
+                "start_index": 191
+            },
+            {
+                "text": "جكرمس",
+                "confidence": 1.0,
+                "start_index": 197
+            },
+            {
+                "text": "وأخذوه",
+                "confidence": 1.0,
+                "start_index": 203
+            },
+            {
+                "text": "وافترقوا",
+                "confidence": 1.0,
+                "start_index": 210
+            },
+            {
+                "text": "بسبب",
+                "confidence": 1.0,
+                "start_index": 219
+            },
+            {
+                "text": "ذلك",
+                "confidence": 1.0,
+                "start_index": 224
+            },
+            {
+                "text": "وعادوا",
+                "confidence": 1.0,
+                "start_index": 228
+            },
+            {
+                "text": "الى",
+                "confidence": 1.0,
+                "start_index": 235
+            },
+            {
+                "text": "ما",
+                "confidence": 1.0,
+                "start_index": 239
+            },
+            {
+                "text": "كان",
+                "confidence": 1.0,
+                "start_index": 242
+            },
+            {
+                "text": "بينهم",
+                "confidence": 1.0,
+                "start_index": 246
+            },
+            {
+                "text": "من",
+                "confidence": 1.0,
+                "start_index": 252
+            },
+            {
+                "text": "الفتن",
+                "confidence": 1.0,
+                "start_index": 255
+            },
+            {
+                "text": "والله",
+                "confidence": 1.0,
+                "start_index": 261
+            },
+            {
+                "text": "أعلم.",
+                "confidence": 1.0,
+                "start_index": 267
+            },
+            {
+                "text": "‌",
+                "confidence": 1.0,
+                "start_index": 273
+            },
+            {
+                "text": "‌استيلاء",
+                "confidence": 1.0,
+                "start_index": 275
+            },
+            {
+                "text": "سقمان",
+                "confidence": 1.0,
+                "start_index": 284
+            },
+            {
+                "text": "بن",
+                "confidence": 1.0,
+                "start_index": 290
+            },
+            {
+                "text": "ارتق",
+                "confidence": 1.0,
+                "start_index": 293
+            },
+            {
+                "text": "على",
+                "confidence": 1.0,
+                "start_index": 298
+            },
+            {
+                "text": "ماردين",
+                "confidence": 1.0,
+                "start_index": 302
+            },
+            {
+                "text": "\\alpha_{n+1}",
+                "confidence": 1.0,
+                "start_index": 309
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 322
+            },
+            {
+                "text": "\\alpha_n",
+                "confidence": 1.0,
+                "start_index": 324
+            },
+            {
+                "text": "-",
+                "confidence": 1.0,
+                "start_index": 333
+            },
+            {
+                "text": "\\alpha",
+                "confidence": 1.0,
+                "start_index": 335
+            },
+            {
+                "text": "\\nabla",
+                "confidence": 1.0,
+                "start_index": 342
+            },
+            {
+                "text": "f(\\alpha_n)",
+                "confidence": 1.0,
+                "start_index": 349
+            },
+            {
+                "text": "+",
+                "confidence": 1.0,
+                "start_index": 361
+            },
+            {
+                "text": "\\frac{\\sigma}{y^2}",
+                "confidence": 1.0,
+                "start_index": 363
+            },
+            {
+                "text": "##",
+                "confidence": 1.0,
+                "start_index": 382
+            },
+            {
+                "text": "برهان",
+                "confidence": 1.0,
+                "start_index": 385
+            },
+            {
+                "text": "\\vec{F}",
+                "confidence": 1.0,
+                "start_index": 391
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 399
+            },
+            {
+                "text": "m\\vec{a}",
+                "confidence": 1.0,
+                "start_index": 401
+            },
+            {
+                "text": "\\mathbb{E}[x]",
+                "confidence": 1.0,
+                "start_index": 410
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 424
+            },
+            {
+                "text": "\\int",
+                "confidence": 1.0,
+                "start_index": 426
+            },
+            {
+                "text": "x",
+                "confidence": 1.0,
+                "start_index": 431
+            },
+            {
+                "text": "f_x(x)",
+                "confidence": 1.0,
+                "start_index": 433
+            },
+            {
+                "text": "dx",
+                "confidence": 1.0,
+                "start_index": 440
+            },
+            {
+                "text": "\\frac{\\partial",
+                "confidence": 1.0,
+                "start_index": 443
+            },
+            {
+                "text": "\\alpha}{\\partial",
+                "confidence": 1.0,
+                "start_index": 458
+            },
+            {
+                "text": "\\sigma}",
+                "confidence": 1.0,
+                "start_index": 475
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 483
+            },
+            {
+                "text": "\\lim_{h",
+                "confidence": 1.0,
+                "start_index": 485
+            },
+            {
+                "text": "\\to",
+                "confidence": 1.0,
+                "start_index": 493
+            },
+            {
+                "text": "0}",
+                "confidence": 1.0,
+                "start_index": 497
+            },
+            {
+                "text": "\\frac{\\max(\\sigma",
+                "confidence": 1.0,
+                "start_index": 500
+            },
+            {
+                "text": "+",
+                "confidence": 1.0,
+                "start_index": 518
+            },
+            {
+                "text": "h)",
+                "confidence": 1.0,
+                "start_index": 520
+            },
+            {
+                "text": "-",
+                "confidence": 1.0,
+                "start_index": 523
+            },
+            {
+                "text": "\\max(\\sigma)}{h}",
+                "confidence": 1.0,
+                "start_index": 525
+            },
+            {
+                "text": "##",
+                "confidence": 1.0,
+                "start_index": 542
+            },
+            {
+                "text": "مبرهنة",
+                "confidence": 1.0,
+                "start_index": 545
+            },
+            {
+                "text": "[5]",
+                "confidence": 1.0,
+                "start_index": 552
+            },
+            {
+                "text": "وهي",
+                "confidence": 1.0,
+                "start_index": 556
+            },
+            {
+                "text": "لبعض",
+                "confidence": 1.0,
+                "start_index": 560
+            },
+            {
+                "text": "التركمان",
+                "confidence": 1.0,
+                "start_index": 565
+            },
+            {
+                "text": "فاستنجد",
+                "confidence": 1.0,
+                "start_index": 574
+            },
+            {
+                "text": "صاحبها",
+                "confidence": 1.0,
+                "start_index": 582
+            },
+            {
+                "text": "بسقمان",
+                "confidence": 1.0,
+                "start_index": 589
+            },
+            {
+                "text": "فسار",
+                "confidence": 1.0,
+                "start_index": 596
+            },
+            {
+                "text": "لانجاده",
+                "confidence": 1.0,
+                "start_index": 601
+            },
+            {
+                "text": "وقاتل",
+                "confidence": 1.0,
+                "start_index": 609
+            },
+            {
+                "text": "كربوقا",
+                "confidence": 1.0,
+                "start_index": 615
+            },
+            {
+                "text": "قتالا",
+                "confidence": 1.0,
+                "start_index": 622
+            },
+            {
+                "text": "شديدا",
+                "confidence": 1.0,
+                "start_index": 628
+            },
+            {
+                "text": "ثم",
+                "confidence": 1.0,
+                "start_index": 634
+            },
+            {
+                "text": "هزمه",
+                "confidence": 1.0,
+                "start_index": 637
+            },
+            {
+                "text": "وأسر",
+                "confidence": 1.0,
+                "start_index": 642
+            },
+            {
+                "text": "ابن",
+                "confidence": 1.0,
+                "start_index": 647
+            },
+            {
+                "text": "أخيه",
+                "confidence": 1.0,
+                "start_index": 651
+            },
+            {
+                "text": "ياقوتي",
+                "confidence": 1.0,
+                "start_index": 656
+            },
+            {
+                "text": "بن",
+                "confidence": 1.0,
+                "start_index": 663
+            },
+            {
+                "text": "ارتق",
+                "confidence": 1.0,
+                "start_index": 666
+            },
+            {
+                "text": "وحبسه",
+                "confidence": 1.0,
+                "start_index": 671
+            },
+            {
+                "text": "بقلعة",
+                "confidence": 1.0,
+                "start_index": 677
+            },
+            {
+                "text": "\\mathbb{E}[i]",
+                "confidence": 1.0,
+                "start_index": 683
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 697
+            },
+            {
+                "text": "\\int",
+                "confidence": 1.0,
+                "start_index": 699
+            },
+            {
+                "text": "x",
+                "confidence": 1.0,
+                "start_index": 704
+            },
+            {
+                "text": "f_i(x)",
+                "confidence": 1.0,
+                "start_index": 706
+            },
+            {
+                "text": "dx",
+                "confidence": 1.0,
+                "start_index": 713
+            },
+            {
+                "text": "+",
+                "confidence": 1.0,
+                "start_index": 716
+            },
+            {
+                "text": "\\frac{n}{\\sigma^2}",
+                "confidence": 1.0,
+                "start_index": 718
+            },
+            {
+                "text": "##",
+                "confidence": 1.0,
+                "start_index": 737
+            },
+            {
+                "text": "نظرية",
+                "confidence": 1.0,
+                "start_index": 740
+            },
+            {
+                "text": "\\nabla_{n}",
+                "confidence": 1.0,
+                "start_index": 746
+            },
+            {
+                "text": "J(n)",
+                "confidence": 1.0,
+                "start_index": 757
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 762
+            },
+            {
+                "text": "\\frac{1}{m}",
+                "confidence": 1.0,
+                "start_index": 764
+            },
+            {
+                "text": "X^T",
+                "confidence": 1.0,
+                "start_index": 776
+            },
+            {
+                "text": "(",
+                "confidence": 1.0,
+                "start_index": 780
+            },
+            {
+                "text": "\\sigma(X",
+                "confidence": 1.0,
+                "start_index": 782
+            },
+            {
+                "text": "n)",
+                "confidence": 1.0,
+                "start_index": 791
+            },
+            {
+                "text": "-",
+                "confidence": 1.0,
+                "start_index": 794
+            },
+            {
+                "text": "Y",
+                "confidence": 1.0,
+                "start_index": 796
+            },
+            {
+                "text": ")",
+                "confidence": 1.0,
+                "start_index": 798
+            },
+            {
+                "text": "##",
+                "confidence": 1.0,
+                "start_index": 800
+            },
+            {
+                "text": "برهان",
+                "confidence": 1.0,
+                "start_index": 803
+            },
+            {
+                "text": "واحد",
+                "confidence": 1.0,
+                "start_index": 809
+            },
+            {
+                "text": "من",
+                "confidence": 1.0,
+                "start_index": 814
+            },
+            {
+                "text": "محققي",
+                "confidence": 1.0,
+                "start_index": 817
+            },
+            {
+                "text": "العلماء:",
+                "confidence": 1.0,
+                "start_index": 823
+            },
+            {
+                "text": "الاتفاق",
+                "confidence": 1.0,
+                "start_index": 832
+            },
+            {
+                "text": "على",
+                "confidence": 1.0,
+                "start_index": 840
+            },
+            {
+                "text": "أن",
+                "confidence": 1.0,
+                "start_index": 844
+            },
+            {
+                "text": "الملائكة",
+                "confidence": 1.0,
+                "start_index": 847
+            },
+            {
+                "text": "لا",
+                "confidence": 1.0,
+                "start_index": 856
+            },
+            {
+                "text": "يأكلون،",
+                "confidence": 1.0,
+                "start_index": 859
+            },
+            {
+                "text": "ولا",
+                "confidence": 1.0,
+                "start_index": 867
+            },
+            {
+                "text": "يشربون،",
+                "confidence": 1.0,
+                "start_index": 871
+            },
+            {
+                "text": "ولا",
+                "confidence": 1.0,
+                "start_index": 879
+            },
+            {
+                "text": "ينكحون\"",
+                "confidence": 1.0,
+                "start_index": 883
+            },
+            {
+                "text": "(4)",
+                "confidence": 1.0,
+                "start_index": 891
+            },
+            {
+                "text": ".",
+                "confidence": 1.0,
+                "start_index": 895
+            },
+            {
+                "text": "ولما",
+                "confidence": 1.0,
+                "start_index": 897
+            },
+            {
+                "text": "كان",
+                "confidence": 1.0,
+                "start_index": 902
+            },
+            {
+                "text": "للملائكة",
+                "confidence": 1.0,
+                "start_index": 906
+            },
+            {
+                "text": "مقام",
+                "confidence": 1.0,
+                "start_index": 915
+            },
+            {
+                "text": "عليٌّ",
+                "confidence": 1.0,
+                "start_index": 920
+            },
+            {
+                "text": "عند",
+                "confidence": 1.0,
+                "start_index": 926
+            },
+            {
+                "text": "الله",
+                "confidence": 1.0,
+                "start_index": 930
+            },
+            {
+                "text": "ذكرهم",
+                "confidence": 1.0,
+                "start_index": 935
+            },
+            {
+                "text": "سبحانه",
+                "confidence": 1.0,
+                "start_index": 941
+            },
+            {
+                "text": "وتعالى",
+                "confidence": 1.0,
+                "start_index": 948
+            },
+            {
+                "text": "بالتقريب",
+                "confidence": 1.0,
+                "start_index": 955
+            },
+            {
+                "text": "والكرامة",
+                "confidence": 1.0,
+                "start_index": 964
+            },
+            {
+                "text": "(5)",
+                "confidence": 1.0,
+                "start_index": 973
+            },
+            {
+                "text": "،",
+                "confidence": 1.0,
+                "start_index": 977
+            },
+            {
+                "text": "فقال",
+                "confidence": 1.0,
+                "start_index": 979
+            },
+            {
+                "text": "\\sum_{\\mu=0}^{M}",
+                "confidence": 1.0,
+                "start_index": 984
+            },
+            {
+                "text": "\\frac{\\alpha^\\mu}{\\mu!}",
+                "confidence": 1.0,
+                "start_index": 1001
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 1025
+            },
+            {
+                "text": "e^{\\alpha}",
+                "confidence": 1.0,
+                "start_index": 1027
+            },
+            {
+                "text": "##",
+                "confidence": 1.0,
+                "start_index": 1038
+            },
+            {
+                "text": "نظرية",
+                "confidence": 1.0,
+                "start_index": 1041
+            },
+            {
+                "text": "\\prod_{\\sigma=1}^{n}",
+                "confidence": 1.0,
+                "start_index": 1047
+            },
+            {
+                "text": "(1",
+                "confidence": 1.0,
+                "start_index": 1068
+            },
+            {
+                "text": "\\geq",
+                "confidence": 1.0,
+                "start_index": 1071
+            },
+            {
+                "text": "x_\\sigma)",
+                "confidence": 1.0,
+                "start_index": 1076
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 1086
+            },
+            {
+                "text": "0",
+                "confidence": 1.0,
+                "start_index": 1088
+            },
+            {
+                "text": "+",
+                "confidence": 1.0,
+                "start_index": 1090
+            },
+            {
+                "text": "\\frac{t}{z^2}",
+                "confidence": 1.0,
+                "start_index": 1092
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 52,
+            "top_left_y": 52,
+            "bottom_right_x": 806,
+            "bottom_right_y": 70,
+            "content": "ملاحظة",
+            "type": "title",
+            "confidence_scores": null,
+            "reading_index": 1
+        },
+        {
+            "top_left_x": 52,
+            "top_left_y": 75,
+            "bottom_right_x": 806,
+            "bottom_right_y": 142,
+            "content": "الافرنج سنة سبع وتسعين وهم محاصرون حران [3] فتركوا المنافسة بينهم وقصدوهم وسقمان في سبعة آلاف من التركمان فهزموا الافرنج وأسروا القمص بردويل صاحب الرها أسره أصحاب سقمان فتغلب عليهم أصحاب جكرمس وأخذوه وافترقوا بسبب ذلك وعادوا الى ما كان بينهم من الفتن والله أعلم. ‌ ‌استيلاء سقمان بن ارتق على ماردين",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 2
+        },
+        {
+            "top_left_x": 52,
+            "top_left_y": 148,
+            "bottom_right_x": 806,
+            "bottom_right_y": 198,
+            "content": "\\alpha_{n+1} = \\alpha_n - \\alpha \\nabla f(\\alpha_n) + \\frac{\\sigma}{y^2}",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 3
+        },
+        {
+            "top_left_x": 52,
+            "top_left_y": 242,
+            "bottom_right_x": 806,
+            "bottom_right_y": 276,
+            "content": "برهان",
+            "type": "title",
+            "confidence_scores": null,
+            "reading_index": 4
+        },
+        {
+            "top_left_x": 52,
+            "top_left_y": 282,
+            "bottom_right_x": 806,
+            "bottom_right_y": 321,
+            "content": "\\vec{F} = m\\vec{a}",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 5
+        },
+        {
+            "top_left_x": 40,
+            "top_left_y": 353,
+            "bottom_right_x": 822,
+            "bottom_right_y": 407,
+            "content": "\\mathbb{E}[x] = \\int x f_x(x) dx",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 6
+        },
+        {
+            "top_left_x": 40,
+            "top_left_y": 413,
+            "bottom_right_x": 822,
+            "bottom_right_y": 467,
+            "content": "\\frac{\\partial \\alpha}{\\partial \\sigma} = \\lim_{h \\to 0} \\frac{\\max(\\sigma + h) - \\max(\\sigma)}{h}",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 7
+        },
+        {
+            "top_left_x": 52,
+            "top_left_y": 485,
+            "bottom_right_x": 806,
+            "bottom_right_y": 514,
+            "content": "مبرهنة",
+            "type": "title",
+            "confidence_scores": null,
+            "reading_index": 8
+        },
+        {
+            "top_left_x": 52,
+            "top_left_y": 519,
+            "bottom_right_x": 806,
+            "bottom_right_y": 541,
+            "content": "[5] وهي لبعض التركمان فاستنجد صاحبها بسقمان فسار لانجاده وقاتل كربوقا قتالا شديدا ثم هزمه وأسر ابن أخيه ياقوتي بن ارتق وحبسه بقلعة",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 9
+        },
+        {
+            "top_left_x": 52,
+            "top_left_y": 547,
+            "bottom_right_x": 806,
+            "bottom_right_y": 601,
+            "content": "\\mathbb{E}[i] = \\int x f_i(x) dx + \\frac{n}{\\sigma^2}",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 10
+        },
+        {
+            "top_left_x": 52,
+            "top_left_y": 645,
+            "bottom_right_x": 806,
+            "bottom_right_y": 677,
+            "content": "نظرية",
+            "type": "title",
+            "confidence_scores": null,
+            "reading_index": 11
+        },
+        {
+            "top_left_x": 52,
+            "top_left_y": 683,
+            "bottom_right_x": 806,
+            "bottom_right_y": 733,
+            "content": "\\nabla_{n} J(n) = \\frac{1}{m} X^T ( \\sigma(X n) - Y )",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 12
+        },
+        {
+            "top_left_x": 52,
+            "top_left_y": 777,
+            "bottom_right_x": 806,
+            "bottom_right_y": 795,
+            "content": "برهان",
+            "type": "title",
+            "confidence_scores": null,
+            "reading_index": 13
+        },
+        {
+            "top_left_x": 52,
+            "top_left_y": 800,
+            "bottom_right_x": 806,
+            "bottom_right_y": 823,
+            "content": "واحد من محققي العلماء: الاتفاق على أن الملائكة لا يأكلون، ولا يشربون، ولا ينكحون\" (4) . ولما كان للملائكة مقام عليٌّ عند الله ذكرهم سبحانه وتعالى بالتقريب والكرامة (5) ، فقال",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 14
+        },
+        {
+            "top_left_x": 52,
+            "top_left_y": 829,
+            "bottom_right_x": 806,
+            "bottom_right_y": 898,
+            "content": "\\sum_{\\mu=0}^{M} \\frac{\\alpha^\\mu}{\\mu!} = e^{\\alpha}",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 15
+        },
+        {
+            "top_left_x": 52,
+            "top_left_y": 942,
+            "bottom_right_x": 806,
+            "bottom_right_y": 977,
+            "content": "نظرية",
+            "type": "title",
+            "confidence_scores": null,
+            "reading_index": 16
+        },
+        {
+            "top_left_x": 52,
+            "top_left_y": 983,
+            "bottom_right_x": 806,
+            "bottom_right_y": 1047,
+            "content": "\\prod_{\\sigma=1}^{n} (1 \\geq x_\\sigma) = 0 + \\frac{t}{z^2}",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 17
+        }
+    ],
+    "meta": {
+        "template": "math_proof",
+        "hybrid": null
+    }
+}

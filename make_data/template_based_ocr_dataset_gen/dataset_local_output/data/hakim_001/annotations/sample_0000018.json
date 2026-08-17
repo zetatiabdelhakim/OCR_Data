@@ -1,0 +1,159 @@
+{
+    "markdown": "وقال اللَّه سبحانه وتعالى: {إِنَّ الدِّينَ\n\n![image](img-0)\n\nشكل: الْإِسْلَامُ} [آل\nرحمه الله بـ (القول الجملي): القول المجمل",
+    "images": [
+        {
+            "id": "img-0",
+            "top_left_x": 96,
+            "top_left_y": 354,
+            "bottom_right_x": 670,
+            "bottom_right_y": 738,
+            "reading_index": 2
+        }
+    ],
+    "tables": [],
+    "hyperlinks": [],
+    "header": null,
+    "footer": null,
+    "dimensions": {
+        "dpi": 96,
+        "height": 1072,
+        "width": 766
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "وقال",
+                "confidence": 1.0,
+                "start_index": 0
+            },
+            {
+                "text": "اللَّه",
+                "confidence": 1.0,
+                "start_index": 5
+            },
+            {
+                "text": "سبحانه",
+                "confidence": 1.0,
+                "start_index": 12
+            },
+            {
+                "text": "وتعالى:",
+                "confidence": 1.0,
+                "start_index": 19
+            },
+            {
+                "text": "{إِنَّ",
+                "confidence": 1.0,
+                "start_index": 27
+            },
+            {
+                "text": "الدِّينَ",
+                "confidence": 1.0,
+                "start_index": 34
+            },
+            {
+                "text": "![image](img-0)",
+                "confidence": 1.0,
+                "start_index": 44
+            },
+            {
+                "text": "شكل:",
+                "confidence": 1.0,
+                "start_index": 61
+            },
+            {
+                "text": "الْإِسْلَامُ}",
+                "confidence": 1.0,
+                "start_index": 66
+            },
+            {
+                "text": "[آل",
+                "confidence": 1.0,
+                "start_index": 80
+            },
+            {
+                "text": "رحمه",
+                "confidence": 1.0,
+                "start_index": 84
+            },
+            {
+                "text": "الله",
+                "confidence": 1.0,
+                "start_index": 89
+            },
+            {
+                "text": "بـ",
+                "confidence": 1.0,
+                "start_index": 94
+            },
+            {
+                "text": "(القول",
+                "confidence": 1.0,
+                "start_index": 97
+            },
+            {
+                "text": "الجملي):",
+                "confidence": 1.0,
+                "start_index": 104
+            },
+            {
+                "text": "القول",
+                "confidence": 1.0,
+                "start_index": 113
+            },
+            {
+                "text": "المجمل",
+                "confidence": 1.0,
+                "start_index": 119
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 228,
+            "top_left_y": 294,
+            "bottom_right_x": 538,
+            "bottom_right_y": 338,
+            "content": "وقال اللَّه سبحانه وتعالى: {إِنَّ الدِّينَ",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 1
+        },
+        {
+            "top_left_x": 96,
+            "top_left_y": 354,
+            "bottom_right_x": 670,
+            "bottom_right_y": 738,
+            "content": "![image](img-0)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 2
+        },
+        {
+            "top_left_x": 96,
+            "top_left_y": 744,
+            "bottom_right_x": 670,
+            "bottom_right_y": 762,
+            "content": "شكل: الْإِسْلَامُ} [آل",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 3
+        },
+        {
+            "top_left_x": 238,
+            "top_left_y": 1035,
+            "bottom_right_x": 528,
+            "bottom_right_y": 1054,
+            "content": "رحمه الله بـ (القول الجملي): القول المجمل",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 4
+        }
+    ],
+    "meta": {
+        "template": "book_cover",
+        "hybrid": "figure"
+    }
+}

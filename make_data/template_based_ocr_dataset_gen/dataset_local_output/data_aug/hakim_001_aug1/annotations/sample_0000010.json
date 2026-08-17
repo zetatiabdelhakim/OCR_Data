@@ -1,0 +1,363 @@
+{
+    "markdown": "\\sum_{z=0}^{\\infty} \\frac{j^z}{z!} = e^{j}\n\\prod_{y=1}^{n} (1 \\leq x_y) = 0 + \\frac{\\mu}{\\sigma^2}\n\n![image](img-0)\n\n## برهان\n19]. فهذا هو الذي يجمع بيننا، وهو الذي جاء بالمسلمين من مشارق الأرض ومغاربها، من أمريكا، ومن أوروبا، ومن أقصى إفريقيا، ومن أواسطها،\nP(A|B) = \\frac{P(A \\cap B)}{P(B)}\n\\int_{0}^{\\infty} \\exp(\\theta) \\, d\\theta = t^2 = C",
+    "images": [
+        {
+            "id": "img-0",
+            "top_left_x": 33,
+            "top_left_y": 187,
+            "bottom_right_x": 541,
+            "bottom_right_y": 383,
+            "reading_index": 3
+        }
+    ],
+    "tables": [],
+    "hyperlinks": [],
+    "header": null,
+    "footer": null,
+    "dimensions": {
+        "dpi": 96,
+        "height": 681,
+        "width": 582
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "\\sum_{z=0}^{\\infty}",
+                "confidence": 1.0,
+                "start_index": 0
+            },
+            {
+                "text": "\\frac{j^z}{z!}",
+                "confidence": 1.0,
+                "start_index": 20
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 35
+            },
+            {
+                "text": "e^{j}",
+                "confidence": 1.0,
+                "start_index": 37
+            },
+            {
+                "text": "\\prod_{y=1}^{n}",
+                "confidence": 1.0,
+                "start_index": 43
+            },
+            {
+                "text": "(1",
+                "confidence": 1.0,
+                "start_index": 59
+            },
+            {
+                "text": "\\leq",
+                "confidence": 1.0,
+                "start_index": 62
+            },
+            {
+                "text": "x_y)",
+                "confidence": 1.0,
+                "start_index": 67
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 72
+            },
+            {
+                "text": "0",
+                "confidence": 1.0,
+                "start_index": 74
+            },
+            {
+                "text": "+",
+                "confidence": 1.0,
+                "start_index": 76
+            },
+            {
+                "text": "\\frac{\\mu}{\\sigma^2}",
+                "confidence": 1.0,
+                "start_index": 78
+            },
+            {
+                "text": "![image](img-0)",
+                "confidence": 1.0,
+                "start_index": 100
+            },
+            {
+                "text": "##",
+                "confidence": 1.0,
+                "start_index": 117
+            },
+            {
+                "text": "برهان",
+                "confidence": 1.0,
+                "start_index": 120
+            },
+            {
+                "text": "19].",
+                "confidence": 1.0,
+                "start_index": 126
+            },
+            {
+                "text": "فهذا",
+                "confidence": 1.0,
+                "start_index": 131
+            },
+            {
+                "text": "هو",
+                "confidence": 1.0,
+                "start_index": 136
+            },
+            {
+                "text": "الذي",
+                "confidence": 1.0,
+                "start_index": 139
+            },
+            {
+                "text": "يجمع",
+                "confidence": 1.0,
+                "start_index": 144
+            },
+            {
+                "text": "بيننا،",
+                "confidence": 1.0,
+                "start_index": 149
+            },
+            {
+                "text": "وهو",
+                "confidence": 1.0,
+                "start_index": 156
+            },
+            {
+                "text": "الذي",
+                "confidence": 1.0,
+                "start_index": 160
+            },
+            {
+                "text": "جاء",
+                "confidence": 1.0,
+                "start_index": 165
+            },
+            {
+                "text": "بالمسلمين",
+                "confidence": 1.0,
+                "start_index": 169
+            },
+            {
+                "text": "من",
+                "confidence": 1.0,
+                "start_index": 179
+            },
+            {
+                "text": "مشارق",
+                "confidence": 1.0,
+                "start_index": 182
+            },
+            {
+                "text": "الأرض",
+                "confidence": 1.0,
+                "start_index": 188
+            },
+            {
+                "text": "ومغاربها،",
+                "confidence": 1.0,
+                "start_index": 194
+            },
+            {
+                "text": "من",
+                "confidence": 1.0,
+                "start_index": 204
+            },
+            {
+                "text": "أمريكا،",
+                "confidence": 1.0,
+                "start_index": 207
+            },
+            {
+                "text": "ومن",
+                "confidence": 1.0,
+                "start_index": 215
+            },
+            {
+                "text": "أوروبا،",
+                "confidence": 1.0,
+                "start_index": 219
+            },
+            {
+                "text": "ومن",
+                "confidence": 1.0,
+                "start_index": 227
+            },
+            {
+                "text": "أقصى",
+                "confidence": 1.0,
+                "start_index": 231
+            },
+            {
+                "text": "إفريقيا،",
+                "confidence": 1.0,
+                "start_index": 236
+            },
+            {
+                "text": "ومن",
+                "confidence": 1.0,
+                "start_index": 245
+            },
+            {
+                "text": "أواسطها،",
+                "confidence": 1.0,
+                "start_index": 249
+            },
+            {
+                "text": "P(A|B)",
+                "confidence": 1.0,
+                "start_index": 258
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 265
+            },
+            {
+                "text": "\\frac{P(A",
+                "confidence": 1.0,
+                "start_index": 267
+            },
+            {
+                "text": "\\cap",
+                "confidence": 1.0,
+                "start_index": 277
+            },
+            {
+                "text": "B)}{P(B)}",
+                "confidence": 1.0,
+                "start_index": 282
+            },
+            {
+                "text": "\\int_{0}^{\\infty}",
+                "confidence": 1.0,
+                "start_index": 292
+            },
+            {
+                "text": "\\exp(\\theta)",
+                "confidence": 1.0,
+                "start_index": 310
+            },
+            {
+                "text": "\\,",
+                "confidence": 1.0,
+                "start_index": 323
+            },
+            {
+                "text": "d\\theta",
+                "confidence": 1.0,
+                "start_index": 326
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 334
+            },
+            {
+                "text": "t^2",
+                "confidence": 1.0,
+                "start_index": 336
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 340
+            },
+            {
+                "text": "C",
+                "confidence": 1.0,
+                "start_index": 342
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 21,
+            "top_left_y": 27,
+            "bottom_right_x": 522,
+            "bottom_right_y": 133,
+            "content": "\\sum_{z=0}^{\\infty} \\frac{j^z}{z!} = e^{j}",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 1
+        },
+        {
+            "top_left_x": 27,
+            "top_left_y": 103,
+            "bottom_right_x": 528,
+            "bottom_right_y": 211,
+            "content": "\\prod_{y=1}^{n} (1 \\leq x_y) = 0 + \\frac{\\mu}{\\sigma^2}",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 2
+        },
+        {
+            "top_left_x": 33,
+            "top_left_y": 187,
+            "bottom_right_x": 541,
+            "bottom_right_y": 383,
+            "content": "![image](img-0)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 3
+        },
+        {
+            "top_left_x": 59,
+            "top_left_y": 371,
+            "bottom_right_x": 528,
+            "bottom_right_y": 432,
+            "content": "برهان",
+            "type": "title",
+            "confidence_scores": null,
+            "reading_index": 4
+        },
+        {
+            "top_left_x": 61,
+            "top_left_y": 402,
+            "bottom_right_x": 532,
+            "bottom_right_y": 481,
+            "content": "19]. فهذا هو الذي يجمع بيننا، وهو الذي جاء بالمسلمين من مشارق الأرض ومغاربها، من أمريكا، ومن أوروبا، ومن أقصى إفريقيا، ومن أواسطها،",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 5
+        },
+        {
+            "top_left_x": 65,
+            "top_left_y": 453,
+            "bottom_right_x": 536,
+            "bottom_right_y": 543,
+            "content": "P(A|B) = \\frac{P(A \\cap B)}{P(B)}",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 6
+        },
+        {
+            "top_left_x": 59,
+            "top_left_y": 540,
+            "bottom_right_x": 559,
+            "bottom_right_y": 633,
+            "content": "\\int_{0}^{\\infty} \\exp(\\theta) \\, d\\theta = t^2 = C",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 7
+        }
+    ],
+    "meta": {
+        "template": "math_proof",
+        "hybrid": "chart",
+        "augmentation": {
+            "name": "rotation",
+            "angle": 4.2
+        }
+    }
+}

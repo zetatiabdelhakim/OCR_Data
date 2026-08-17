@@ -1,0 +1,178 @@
+{
+    "markdown": "\n![image](img-0)\n\nرحمه الله بـ (القول الجملي): القول المجمل\nفي هذه الدنيا\n0761498645\nإلى هذه الأماكن، والتقوا جميعًا على",
+    "images": [
+        {
+            "id": "img-0",
+            "top_left_x": 232,
+            "top_left_y": 14,
+            "bottom_right_x": 280,
+            "bottom_right_y": 62,
+            "reading_index": 1
+        }
+    ],
+    "tables": [],
+    "hyperlinks": [],
+    "header": null,
+    "footer": null,
+    "dimensions": {
+        "dpi": 96,
+        "height": 229,
+        "width": 301
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "![image](img-0)",
+                "confidence": 1.0,
+                "start_index": 1
+            },
+            {
+                "text": "رحمه",
+                "confidence": 1.0,
+                "start_index": 18
+            },
+            {
+                "text": "الله",
+                "confidence": 1.0,
+                "start_index": 23
+            },
+            {
+                "text": "بـ",
+                "confidence": 1.0,
+                "start_index": 28
+            },
+            {
+                "text": "(القول",
+                "confidence": 1.0,
+                "start_index": 31
+            },
+            {
+                "text": "الجملي):",
+                "confidence": 1.0,
+                "start_index": 38
+            },
+            {
+                "text": "القول",
+                "confidence": 1.0,
+                "start_index": 47
+            },
+            {
+                "text": "المجمل",
+                "confidence": 1.0,
+                "start_index": 53
+            },
+            {
+                "text": "في",
+                "confidence": 1.0,
+                "start_index": 60
+            },
+            {
+                "text": "هذه",
+                "confidence": 1.0,
+                "start_index": 63
+            },
+            {
+                "text": "الدنيا",
+                "confidence": 1.0,
+                "start_index": 67
+            },
+            {
+                "text": "0761498645",
+                "confidence": 1.0,
+                "start_index": 74
+            },
+            {
+                "text": "إلى",
+                "confidence": 1.0,
+                "start_index": 85
+            },
+            {
+                "text": "هذه",
+                "confidence": 1.0,
+                "start_index": 89
+            },
+            {
+                "text": "الأماكن،",
+                "confidence": 1.0,
+                "start_index": 93
+            },
+            {
+                "text": "والتقوا",
+                "confidence": 1.0,
+                "start_index": 102
+            },
+            {
+                "text": "جميعًا",
+                "confidence": 1.0,
+                "start_index": 110
+            },
+            {
+                "text": "على",
+                "confidence": 1.0,
+                "start_index": 117
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 232,
+            "top_left_y": 14,
+            "bottom_right_x": 280,
+            "bottom_right_y": 62,
+            "content": "![image](img-0)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 1
+        },
+        {
+            "top_left_x": 19,
+            "top_left_y": 115,
+            "bottom_right_x": 284,
+            "bottom_right_y": 154,
+            "content": "رحمه الله بـ (القول الجملي): القول المجمل",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 2
+        },
+        {
+            "top_left_x": 20,
+            "top_left_y": 144,
+            "bottom_right_x": 285,
+            "bottom_right_y": 175,
+            "content": "في هذه الدنيا",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 3
+        },
+        {
+            "top_left_x": 21,
+            "top_left_y": 169,
+            "bottom_right_x": 286,
+            "bottom_right_y": 198,
+            "content": "0761498645",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 4
+        },
+        {
+            "top_left_x": 22,
+            "top_left_y": 186,
+            "bottom_right_x": 286,
+            "bottom_right_y": 215,
+            "content": "إلى هذه الأماكن، والتقوا جميعًا على",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 5
+        }
+    ],
+    "meta": {
+        "template": "business_card",
+        "hybrid": null,
+        "augmentation": {
+            "name": "rotation",
+            "angle": 2.5
+        }
+    }
+}

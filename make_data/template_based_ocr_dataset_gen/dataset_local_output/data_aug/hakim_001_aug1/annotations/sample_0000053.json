@@ -1,0 +1,160 @@
+{
+    "markdown": "من بطن، وصدر،\n\n![image](img-0)\n\nرحمه الله بـ (القول الجملي): القول المجمل\n3155-6721\n\n![image](img-1)\n",
+    "images": [
+        {
+            "id": "img-0",
+            "top_left_x": 289,
+            "top_left_y": 59,
+            "bottom_right_x": 333,
+            "bottom_right_y": 115,
+            "reading_index": 2
+        },
+        {
+            "id": "img-1",
+            "top_left_x": 10,
+            "top_left_y": 147,
+            "bottom_right_x": 333,
+            "bottom_right_y": 177,
+            "reading_index": 5
+        }
+    ],
+    "tables": [],
+    "hyperlinks": [],
+    "header": null,
+    "footer": null,
+    "dimensions": {
+        "dpi": 96,
+        "height": 187,
+        "width": 343
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "من",
+                "confidence": 1.0,
+                "start_index": 0
+            },
+            {
+                "text": "بطن،",
+                "confidence": 1.0,
+                "start_index": 3
+            },
+            {
+                "text": "وصدر،",
+                "confidence": 1.0,
+                "start_index": 8
+            },
+            {
+                "text": "![image](img-0)",
+                "confidence": 1.0,
+                "start_index": 15
+            },
+            {
+                "text": "رحمه",
+                "confidence": 1.0,
+                "start_index": 32
+            },
+            {
+                "text": "الله",
+                "confidence": 1.0,
+                "start_index": 37
+            },
+            {
+                "text": "بـ",
+                "confidence": 1.0,
+                "start_index": 42
+            },
+            {
+                "text": "(القول",
+                "confidence": 1.0,
+                "start_index": 45
+            },
+            {
+                "text": "الجملي):",
+                "confidence": 1.0,
+                "start_index": 52
+            },
+            {
+                "text": "القول",
+                "confidence": 1.0,
+                "start_index": 61
+            },
+            {
+                "text": "المجمل",
+                "confidence": 1.0,
+                "start_index": 67
+            },
+            {
+                "text": "3155-6721",
+                "confidence": 1.0,
+                "start_index": 74
+            },
+            {
+                "text": "![image](img-1)",
+                "confidence": 1.0,
+                "start_index": 85
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 10,
+            "top_left_y": 10,
+            "bottom_right_x": 333,
+            "bottom_right_y": 26,
+            "content": "من بطن، وصدر،",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 1
+        },
+        {
+            "top_left_x": 289,
+            "top_left_y": 59,
+            "bottom_right_x": 333,
+            "bottom_right_y": 115,
+            "content": "![image](img-0)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 2
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 69,
+            "bottom_right_x": 281,
+            "bottom_right_y": 86,
+            "content": "رحمه الله بـ (القول الجملي): القول المجمل",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 3
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 90,
+            "bottom_right_x": 281,
+            "bottom_right_y": 104,
+            "content": "3155-6721",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 4
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 147,
+            "bottom_right_x": 333,
+            "bottom_right_y": 177,
+            "content": "![image](img-1)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 5
+        }
+    ],
+    "meta": {
+        "template": "id_card",
+        "hybrid": null,
+        "augmentation": {
+            "name": "letterpress"
+        }
+    }
+}

@@ -24,3 +24,8 @@ tqdm>=4.60.0
 
 # Asyncio compatibility (fallback for some environments)
 nest_asyncio>=1.6.0
+
+# Data augmentation (document-realistic image transforms)
+augraphy>=8.0.0
+opencv-python-headless>=4.8.0
+numpy>=1.24.0

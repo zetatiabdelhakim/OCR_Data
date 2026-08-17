@@ -1,0 +1,87 @@
+{
+    "markdown": "\n![image](img-0)\n\n24740- \"الأرواح جنود مجندة، فما",
+    "images": [
+        {
+            "id": "img-0",
+            "top_left_x": 350,
+            "top_left_y": 298,
+            "bottom_right_x": 414,
+            "bottom_right_y": 362,
+            "reading_index": 1
+        }
+    ],
+    "tables": [],
+    "hyperlinks": [],
+    "header": null,
+    "footer": null,
+    "dimensions": {
+        "dpi": 96,
+        "height": 718,
+        "width": 763
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "![image](img-0)",
+                "confidence": 1.0,
+                "start_index": 1
+            },
+            {
+                "text": "24740-",
+                "confidence": 1.0,
+                "start_index": 18
+            },
+            {
+                "text": "\"الأرواح",
+                "confidence": 1.0,
+                "start_index": 25
+            },
+            {
+                "text": "جنود",
+                "confidence": 1.0,
+                "start_index": 34
+            },
+            {
+                "text": "مجندة،",
+                "confidence": 1.0,
+                "start_index": 39
+            },
+            {
+                "text": "فما",
+                "confidence": 1.0,
+                "start_index": 46
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 350,
+            "top_left_y": 298,
+            "bottom_right_x": 414,
+            "bottom_right_y": 362,
+            "content": "![image](img-0)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 1
+        },
+        {
+            "top_left_x": 184,
+            "top_left_y": 384,
+            "bottom_right_x": 579,
+            "bottom_right_y": 420,
+            "content": "24740- \"الأرواح جنود مجندة، فما",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 2
+        }
+    ],
+    "meta": {
+        "template": "minimalist",
+        "hybrid": null,
+        "augmentation": {
+            "name": "reflected_light"
+        }
+    }
+}

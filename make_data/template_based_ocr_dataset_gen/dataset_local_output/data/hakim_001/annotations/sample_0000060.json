@@ -1,0 +1,119 @@
+{
+    "markdown": "\n![image](img-0)\n\nكان هذا\nالحصن ماردين [4] من ديار بكر وأقطعه السلطان",
+    "images": [
+        {
+            "id": "img-0",
+            "top_left_x": 495,
+            "top_left_y": 171,
+            "bottom_right_x": 559,
+            "bottom_right_y": 235,
+            "reading_index": 1
+        }
+    ],
+    "tables": [],
+    "hyperlinks": [],
+    "header": null,
+    "footer": null,
+    "dimensions": {
+        "dpi": 96,
+        "height": 519,
+        "width": 1053
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "![image](img-0)",
+                "confidence": 1.0,
+                "start_index": 1
+            },
+            {
+                "text": "كان",
+                "confidence": 1.0,
+                "start_index": 18
+            },
+            {
+                "text": "هذا",
+                "confidence": 1.0,
+                "start_index": 22
+            },
+            {
+                "text": "الحصن",
+                "confidence": 1.0,
+                "start_index": 26
+            },
+            {
+                "text": "ماردين",
+                "confidence": 1.0,
+                "start_index": 32
+            },
+            {
+                "text": "[4]",
+                "confidence": 1.0,
+                "start_index": 39
+            },
+            {
+                "text": "من",
+                "confidence": 1.0,
+                "start_index": 43
+            },
+            {
+                "text": "ديار",
+                "confidence": 1.0,
+                "start_index": 46
+            },
+            {
+                "text": "بكر",
+                "confidence": 1.0,
+                "start_index": 51
+            },
+            {
+                "text": "وأقطعه",
+                "confidence": 1.0,
+                "start_index": 55
+            },
+            {
+                "text": "السلطان",
+                "confidence": 1.0,
+                "start_index": 62
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 495,
+            "top_left_y": 171,
+            "bottom_right_x": 559,
+            "bottom_right_y": 235,
+            "content": "![image](img-0)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 1
+        },
+        {
+            "top_left_x": 493,
+            "top_left_y": 257,
+            "bottom_right_x": 560,
+            "bottom_right_y": 291,
+            "content": "كان هذا",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 2
+        },
+        {
+            "top_left_x": 440,
+            "top_left_y": 301,
+            "bottom_right_x": 613,
+            "bottom_right_y": 348,
+            "content": "الحصن ماردين [4] من ديار بكر وأقطعه السلطان",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 3
+        }
+    ],
+    "meta": {
+        "template": "minimalist",
+        "hybrid": null
+    }
+}

@@ -1,0 +1,48 @@
+{
+    "markdown": "فاطمة الزهراء",
+    "images": [],
+    "tables": [],
+    "hyperlinks": [],
+    "header": null,
+    "footer": null,
+    "dimensions": {
+        "dpi": 96,
+        "height": 1051,
+        "width": 858
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "فاطمة",
+                "confidence": 1.0,
+                "start_index": 0
+            },
+            {
+                "text": "الزهراء",
+                "confidence": 1.0,
+                "start_index": 6
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 392,
+            "top_left_y": 1011,
+            "bottom_right_x": 467,
+            "bottom_right_y": 1033,
+            "content": "فاطمة الزهراء",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 1
+        }
+    ],
+    "meta": {
+        "template": "book_cover",
+        "hybrid": null,
+        "augmentation": {
+            "name": "watermark"
+        }
+    }
+}

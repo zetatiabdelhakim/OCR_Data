@@ -1,0 +1,1347 @@
+{
+    "markdown": "\n![image](img-0)\n\n\n[tbl-0.html](tbl-0.html)\n",
+    "images": [
+        {
+            "id": "img-0",
+            "top_left_x": 40,
+            "top_left_y": 52,
+            "bottom_right_x": 710,
+            "bottom_right_y": 212,
+            "reading_index": 1
+        }
+    ],
+    "tables": [
+        {
+            "id": "tbl-0.html",
+            "content": "<table><tbody><tr><th>كان السلف الصالح</th><th>رضي الله عنهم،</th><th>ويأتي في</th><th>مقدمة ذلك أصحاب</th><th>رسول اللَّه</th><th>صلى الله عليه</th></tr><tr><td>وسلم. * قوله:</td><td>(وَالقَوْلُ الجُمْلِيُّ أَيْضًا فِي هَذَا المَوْضِعِ). يقصد</td><td>المؤلف رحمه الله بـ (القول</td><td>الجملي): القول المجمل. * قوله: (يَنْحَصِرُ فِي مَعْرِفَةِ</td><td>حُكْمِهِ، وَفِي صِفَتِهِ، وَفِي وَقْتِهِ؛</td><td>فَأَمَّا كَوْنُ هَذَا الفِعْلِ مِنْ أَرْكانِ الحَجِّ، فَالأَصْلُ</td></tr><tr><td>فِيهِ). نحن نعيش -بحمد اللَّه-</td><td>في ذِكر اللَّه سبحانه وتعالى؛ منذ أن نلف</td><td>الإزار على صدورنا، ونطرح</td><td>الرداء على</td><td>أكتافنا، ونغطي به بقية</td><td>البدن؛ من بطن، وصدر،</td></tr><tr><td>وظهر؛ فننتقل من طاعة</td><td>إلى طاعة، ومن ذكر</td><td>إلى ذكر. فإننا نقول:</td><td>\"لبيك اللهم لبيك، لبيك لا شريك</td><td>لك لبيك،</td><td>إن الحمد والنعمة لك والملك، لا شريك لك</td></tr><tr><td>لبيك\" (1) ؛ حيث نستمر نكرر هذه الكلمات.</td><td>وفي عرفات نردد أيضًا قول: \"لا إله إلا</td><td>اللَّه وحده</td><td>لا شريك له\"</td><td>(2) . وقبل</td><td>ذلك ونحن</td></tr><tr><td>على الصفا، وعلى المروة أيضًا.</td><td>‌ ‌[حذن] الحُذُنَّتان: الأذنان، بالضم</td><td>والتشديد.</td><td>طاعة اللَّه سبحانه وتعالى، وينبغي أن تتفرق أجسامنا</td><td>وتبقى قلوبنا</td><td>متصلة؛ كما كان السلف الصالح</td></tr><tr><td>رضي الله عنهم، ويأتي في مقدمة ذلك</td><td>أصحاب رسول اللَّه</td><td>صلى الله عليه وسلم. * قوله: (وَالقَوْلُ الجُمْلِيُّ</td><td>أَيْضًا فِي هَذَا المَوْضِعِ). يقصد المؤلف</td><td>رحمه الله بـ (القول الجملي):</td><td>القول المجمل. *</td></tr><tr><td>قوله: (يَنْحَصِرُ فِي مَعْرِفَةِ حُكْمِهِ، وَفِي</td><td>صِفَتِهِ، وَفِي وَقْتِهِ؛ فَأَمَّا</td><td>كَوْنُ هَذَا الفِعْلِ مِنْ أَرْكانِ الحَجِّ، فَالأَصْلُ</td><td>فِيهِ). نحن نعيش -بحمد اللَّه- في ذِكر</td><td>اللَّه سبحانه</td><td>وتعالى؛ منذ أن نلف الإزار</td></tr><tr><td>على صدورنا، ونطرح الرداء على أكتافنا،</td><td>ونغطي به بقية البدن؛</td><td>من بطن، وصدر، وظهر؛ فننتقل من طاعة</td><td>إلى طاعة،</td><td>ومن ذكر إلى ذكر. فإننا</td><td>نقول: \"لبيك اللهم لبيك، لبيك لا شريك لك</td></tr></tbody></table>",
+            "format": "html",
+            "word_confidence_scores": [
+                {
+                    "text": "كان",
+                    "confidence": 1.0,
+                    "start_index": 22
+                },
+                {
+                    "text": " السلف",
+                    "confidence": 1.0,
+                    "start_index": 25
+                },
+                {
+                    "text": " الصالح",
+                    "confidence": 1.0,
+                    "start_index": 31
+                },
+                {
+                    "text": "رضي",
+                    "confidence": 1.0,
+                    "start_index": 47
+                },
+                {
+                    "text": " الله",
+                    "confidence": 1.0,
+                    "start_index": 50
+                },
+                {
+                    "text": " عنهم،",
+                    "confidence": 1.0,
+                    "start_index": 55
+                },
+                {
+                    "text": "ويأتي",
+                    "confidence": 1.0,
+                    "start_index": 70
+                },
+                {
+                    "text": " في",
+                    "confidence": 1.0,
+                    "start_index": 75
+                },
+                {
+                    "text": "مقدمة",
+                    "confidence": 1.0,
+                    "start_index": 87
+                },
+                {
+                    "text": " ذلك",
+                    "confidence": 1.0,
+                    "start_index": 92
+                },
+                {
+                    "text": " أصحاب",
+                    "confidence": 1.0,
+                    "start_index": 96
+                },
+                {
+                    "text": "رسول",
+                    "confidence": 1.0,
+                    "start_index": 111
+                },
+                {
+                    "text": " اللَّه",
+                    "confidence": 1.0,
+                    "start_index": 115
+                },
+                {
+                    "text": "صلى",
+                    "confidence": 1.0,
+                    "start_index": 131
+                },
+                {
+                    "text": " الله",
+                    "confidence": 1.0,
+                    "start_index": 134
+                },
+                {
+                    "text": " عليه",
+                    "confidence": 1.0,
+                    "start_index": 139
+                },
+                {
+                    "text": "وسلم.",
+                    "confidence": 1.0,
+                    "start_index": 162
+                },
+                {
+                    "text": " *",
+                    "confidence": 1.0,
+                    "start_index": 167
+                },
+                {
+                    "text": " قوله:",
+                    "confidence": 1.0,
+                    "start_index": 169
+                },
+                {
+                    "text": "(وَالقَوْلُ",
+                    "confidence": 1.0,
+                    "start_index": 184
+                },
+                {
+                    "text": " الجُمْلِيُّ",
+                    "confidence": 1.0,
+                    "start_index": 195
+                },
+                {
+                    "text": " أَيْضًا",
+                    "confidence": 1.0,
+                    "start_index": 207
+                },
+                {
+                    "text": " فِي",
+                    "confidence": 1.0,
+                    "start_index": 215
+                },
+                {
+                    "text": " هَذَا",
+                    "confidence": 1.0,
+                    "start_index": 219
+                },
+                {
+                    "text": " المَوْضِعِ).",
+                    "confidence": 1.0,
+                    "start_index": 225
+                },
+                {
+                    "text": " يقصد",
+                    "confidence": 1.0,
+                    "start_index": 238
+                },
+                {
+                    "text": "المؤلف",
+                    "confidence": 1.0,
+                    "start_index": 252
+                },
+                {
+                    "text": " رحمه",
+                    "confidence": 1.0,
+                    "start_index": 258
+                },
+                {
+                    "text": " الله",
+                    "confidence": 1.0,
+                    "start_index": 263
+                },
+                {
+                    "text": " بـ",
+                    "confidence": 1.0,
+                    "start_index": 268
+                },
+                {
+                    "text": " (القول",
+                    "confidence": 1.0,
+                    "start_index": 271
+                },
+                {
+                    "text": "الجملي):",
+                    "confidence": 1.0,
+                    "start_index": 287
+                },
+                {
+                    "text": " القول",
+                    "confidence": 1.0,
+                    "start_index": 295
+                },
+                {
+                    "text": " المجمل.",
+                    "confidence": 1.0,
+                    "start_index": 301
+                },
+                {
+                    "text": " *",
+                    "confidence": 1.0,
+                    "start_index": 309
+                },
+                {
+                    "text": " قوله:",
+                    "confidence": 1.0,
+                    "start_index": 311
+                },
+                {
+                    "text": " (يَنْحَصِرُ",
+                    "confidence": 1.0,
+                    "start_index": 317
+                },
+                {
+                    "text": " فِي",
+                    "confidence": 1.0,
+                    "start_index": 329
+                },
+                {
+                    "text": " مَعْرِفَةِ",
+                    "confidence": 1.0,
+                    "start_index": 333
+                },
+                {
+                    "text": "حُكْمِهِ،",
+                    "confidence": 1.0,
+                    "start_index": 353
+                },
+                {
+                    "text": " وَفِي",
+                    "confidence": 1.0,
+                    "start_index": 362
+                },
+                {
+                    "text": " صِفَتِهِ،",
+                    "confidence": 1.0,
+                    "start_index": 368
+                },
+                {
+                    "text": " وَفِي",
+                    "confidence": 1.0,
+                    "start_index": 378
+                },
+                {
+                    "text": " وَقْتِهِ؛",
+                    "confidence": 1.0,
+                    "start_index": 384
+                },
+                {
+                    "text": "فَأَمَّا",
+                    "confidence": 1.0,
+                    "start_index": 403
+                },
+                {
+                    "text": " كَوْنُ",
+                    "confidence": 1.0,
+                    "start_index": 411
+                },
+                {
+                    "text": " هَذَا",
+                    "confidence": 1.0,
+                    "start_index": 418
+                },
+                {
+                    "text": " الفِعْلِ",
+                    "confidence": 1.0,
+                    "start_index": 424
+                },
+                {
+                    "text": " مِنْ",
+                    "confidence": 1.0,
+                    "start_index": 433
+                },
+                {
+                    "text": " أَرْكانِ",
+                    "confidence": 1.0,
+                    "start_index": 438
+                },
+                {
+                    "text": " الحَجِّ،",
+                    "confidence": 1.0,
+                    "start_index": 447
+                },
+                {
+                    "text": " فَالأَصْلُ",
+                    "confidence": 1.0,
+                    "start_index": 456
+                },
+                {
+                    "text": "فِيهِ).",
+                    "confidence": 1.0,
+                    "start_index": 485
+                },
+                {
+                    "text": " نحن",
+                    "confidence": 1.0,
+                    "start_index": 492
+                },
+                {
+                    "text": " نعيش",
+                    "confidence": 1.0,
+                    "start_index": 496
+                },
+                {
+                    "text": " -بحمد",
+                    "confidence": 1.0,
+                    "start_index": 501
+                },
+                {
+                    "text": " اللَّه-",
+                    "confidence": 1.0,
+                    "start_index": 507
+                },
+                {
+                    "text": "في",
+                    "confidence": 1.0,
+                    "start_index": 524
+                },
+                {
+                    "text": " ذِكر",
+                    "confidence": 1.0,
+                    "start_index": 526
+                },
+                {
+                    "text": " اللَّه",
+                    "confidence": 1.0,
+                    "start_index": 531
+                },
+                {
+                    "text": " سبحانه",
+                    "confidence": 1.0,
+                    "start_index": 538
+                },
+                {
+                    "text": " وتعالى؛",
+                    "confidence": 1.0,
+                    "start_index": 545
+                },
+                {
+                    "text": " منذ",
+                    "confidence": 1.0,
+                    "start_index": 553
+                },
+                {
+                    "text": " أن",
+                    "confidence": 1.0,
+                    "start_index": 557
+                },
+                {
+                    "text": " نلف",
+                    "confidence": 1.0,
+                    "start_index": 560
+                },
+                {
+                    "text": "الإزار",
+                    "confidence": 1.0,
+                    "start_index": 573
+                },
+                {
+                    "text": " على",
+                    "confidence": 1.0,
+                    "start_index": 579
+                },
+                {
+                    "text": " صدورنا،",
+                    "confidence": 1.0,
+                    "start_index": 583
+                },
+                {
+                    "text": " ونطرح",
+                    "confidence": 1.0,
+                    "start_index": 591
+                },
+                {
+                    "text": "الرداء",
+                    "confidence": 1.0,
+                    "start_index": 606
+                },
+                {
+                    "text": " على",
+                    "confidence": 1.0,
+                    "start_index": 612
+                },
+                {
+                    "text": "أكتافنا،",
+                    "confidence": 1.0,
+                    "start_index": 625
+                },
+                {
+                    "text": " ونغطي",
+                    "confidence": 1.0,
+                    "start_index": 633
+                },
+                {
+                    "text": " به",
+                    "confidence": 1.0,
+                    "start_index": 639
+                },
+                {
+                    "text": " بقية",
+                    "confidence": 1.0,
+                    "start_index": 642
+                },
+                {
+                    "text": "البدن؛",
+                    "confidence": 1.0,
+                    "start_index": 656
+                },
+                {
+                    "text": " من",
+                    "confidence": 1.0,
+                    "start_index": 662
+                },
+                {
+                    "text": " بطن،",
+                    "confidence": 1.0,
+                    "start_index": 665
+                },
+                {
+                    "text": " وصدر،",
+                    "confidence": 1.0,
+                    "start_index": 670
+                },
+                {
+                    "text": "وظهر؛",
+                    "confidence": 1.0,
+                    "start_index": 694
+                },
+                {
+                    "text": " فننتقل",
+                    "confidence": 1.0,
+                    "start_index": 699
+                },
+                {
+                    "text": " من",
+                    "confidence": 1.0,
+                    "start_index": 706
+                },
+                {
+                    "text": " طاعة",
+                    "confidence": 1.0,
+                    "start_index": 709
+                },
+                {
+                    "text": "إلى",
+                    "confidence": 1.0,
+                    "start_index": 723
+                },
+                {
+                    "text": " طاعة،",
+                    "confidence": 1.0,
+                    "start_index": 726
+                },
+                {
+                    "text": " ومن",
+                    "confidence": 1.0,
+                    "start_index": 732
+                },
+                {
+                    "text": " ذكر",
+                    "confidence": 1.0,
+                    "start_index": 736
+                },
+                {
+                    "text": "إلى",
+                    "confidence": 1.0,
+                    "start_index": 749
+                },
+                {
+                    "text": " ذكر.",
+                    "confidence": 1.0,
+                    "start_index": 752
+                },
+                {
+                    "text": " فإننا",
+                    "confidence": 1.0,
+                    "start_index": 757
+                },
+                {
+                    "text": " نقول:",
+                    "confidence": 1.0,
+                    "start_index": 763
+                },
+                {
+                    "text": "\"لبيك",
+                    "confidence": 1.0,
+                    "start_index": 778
+                },
+                {
+                    "text": " اللهم",
+                    "confidence": 1.0,
+                    "start_index": 783
+                },
+                {
+                    "text": " لبيك،",
+                    "confidence": 1.0,
+                    "start_index": 789
+                },
+                {
+                    "text": " لبيك",
+                    "confidence": 1.0,
+                    "start_index": 795
+                },
+                {
+                    "text": " لا",
+                    "confidence": 1.0,
+                    "start_index": 800
+                },
+                {
+                    "text": " شريك",
+                    "confidence": 1.0,
+                    "start_index": 803
+                },
+                {
+                    "text": "لك",
+                    "confidence": 1.0,
+                    "start_index": 817
+                },
+                {
+                    "text": " لبيك،",
+                    "confidence": 1.0,
+                    "start_index": 819
+                },
+                {
+                    "text": "إن",
+                    "confidence": 1.0,
+                    "start_index": 834
+                },
+                {
+                    "text": " الحمد",
+                    "confidence": 1.0,
+                    "start_index": 836
+                },
+                {
+                    "text": " والنعمة",
+                    "confidence": 1.0,
+                    "start_index": 842
+                },
+                {
+                    "text": " لك",
+                    "confidence": 1.0,
+                    "start_index": 850
+                },
+                {
+                    "text": " والملك،",
+                    "confidence": 1.0,
+                    "start_index": 853
+                },
+                {
+                    "text": " لا",
+                    "confidence": 1.0,
+                    "start_index": 861
+                },
+                {
+                    "text": " شريك",
+                    "confidence": 1.0,
+                    "start_index": 864
+                },
+                {
+                    "text": " لك",
+                    "confidence": 1.0,
+                    "start_index": 869
+                },
+                {
+                    "text": "لبيك\"",
+                    "confidence": 1.0,
+                    "start_index": 890
+                },
+                {
+                    "text": " (1)",
+                    "confidence": 1.0,
+                    "start_index": 895
+                },
+                {
+                    "text": " ؛",
+                    "confidence": 1.0,
+                    "start_index": 899
+                },
+                {
+                    "text": " حيث",
+                    "confidence": 1.0,
+                    "start_index": 901
+                },
+                {
+                    "text": " نستمر",
+                    "confidence": 1.0,
+                    "start_index": 905
+                },
+                {
+                    "text": " نكرر",
+                    "confidence": 1.0,
+                    "start_index": 911
+                },
+                {
+                    "text": " هذه",
+                    "confidence": 1.0,
+                    "start_index": 916
+                },
+                {
+                    "text": " الكلمات.",
+                    "confidence": 1.0,
+                    "start_index": 920
+                },
+                {
+                    "text": "وفي",
+                    "confidence": 1.0,
+                    "start_index": 938
+                },
+                {
+                    "text": " عرفات",
+                    "confidence": 1.0,
+                    "start_index": 941
+                },
+                {
+                    "text": " نردد",
+                    "confidence": 1.0,
+                    "start_index": 947
+                },
+                {
+                    "text": " أيضًا",
+                    "confidence": 1.0,
+                    "start_index": 952
+                },
+                {
+                    "text": " قول:",
+                    "confidence": 1.0,
+                    "start_index": 958
+                },
+                {
+                    "text": " \"لا",
+                    "confidence": 1.0,
+                    "start_index": 963
+                },
+                {
+                    "text": " إله",
+                    "confidence": 1.0,
+                    "start_index": 967
+                },
+                {
+                    "text": " إلا",
+                    "confidence": 1.0,
+                    "start_index": 971
+                },
+                {
+                    "text": "اللَّه",
+                    "confidence": 1.0,
+                    "start_index": 984
+                },
+                {
+                    "text": " وحده",
+                    "confidence": 1.0,
+                    "start_index": 990
+                },
+                {
+                    "text": "لا",
+                    "confidence": 1.0,
+                    "start_index": 1004
+                },
+                {
+                    "text": " شريك",
+                    "confidence": 1.0,
+                    "start_index": 1006
+                },
+                {
+                    "text": " له\"",
+                    "confidence": 1.0,
+                    "start_index": 1011
+                },
+                {
+                    "text": "(2)",
+                    "confidence": 1.0,
+                    "start_index": 1024
+                },
+                {
+                    "text": " .",
+                    "confidence": 1.0,
+                    "start_index": 1027
+                },
+                {
+                    "text": " وقبل",
+                    "confidence": 1.0,
+                    "start_index": 1029
+                },
+                {
+                    "text": "ذلك",
+                    "confidence": 1.0,
+                    "start_index": 1043
+                },
+                {
+                    "text": " ونحن",
+                    "confidence": 1.0,
+                    "start_index": 1046
+                },
+                {
+                    "text": "على",
+                    "confidence": 1.0,
+                    "start_index": 1069
+                },
+                {
+                    "text": " الصفا،",
+                    "confidence": 1.0,
+                    "start_index": 1072
+                },
+                {
+                    "text": " وعلى",
+                    "confidence": 1.0,
+                    "start_index": 1079
+                },
+                {
+                    "text": " المروة",
+                    "confidence": 1.0,
+                    "start_index": 1084
+                },
+                {
+                    "text": " أيضًا.",
+                    "confidence": 1.0,
+                    "start_index": 1091
+                },
+                {
+                    "text": "‌",
+                    "confidence": 1.0,
+                    "start_index": 1107
+                },
+                {
+                    "text": " ‌[حذن]",
+                    "confidence": 1.0,
+                    "start_index": 1108
+                },
+                {
+                    "text": " الحُذُنَّتان:",
+                    "confidence": 1.0,
+                    "start_index": 1115
+                },
+                {
+                    "text": " الأذنان،",
+                    "confidence": 1.0,
+                    "start_index": 1129
+                },
+                {
+                    "text": " بالضم",
+                    "confidence": 1.0,
+                    "start_index": 1138
+                },
+                {
+                    "text": "والتشديد.",
+                    "confidence": 1.0,
+                    "start_index": 1153
+                },
+                {
+                    "text": "طاعة",
+                    "confidence": 1.0,
+                    "start_index": 1171
+                },
+                {
+                    "text": " اللَّه",
+                    "confidence": 1.0,
+                    "start_index": 1175
+                },
+                {
+                    "text": " سبحانه",
+                    "confidence": 1.0,
+                    "start_index": 1182
+                },
+                {
+                    "text": " وتعالى،",
+                    "confidence": 1.0,
+                    "start_index": 1189
+                },
+                {
+                    "text": " وينبغي",
+                    "confidence": 1.0,
+                    "start_index": 1197
+                },
+                {
+                    "text": " أن",
+                    "confidence": 1.0,
+                    "start_index": 1204
+                },
+                {
+                    "text": " تتفرق",
+                    "confidence": 1.0,
+                    "start_index": 1207
+                },
+                {
+                    "text": " أجسامنا",
+                    "confidence": 1.0,
+                    "start_index": 1213
+                },
+                {
+                    "text": "وتبقى",
+                    "confidence": 1.0,
+                    "start_index": 1230
+                },
+                {
+                    "text": " قلوبنا",
+                    "confidence": 1.0,
+                    "start_index": 1235
+                },
+                {
+                    "text": "متصلة؛",
+                    "confidence": 1.0,
+                    "start_index": 1251
+                },
+                {
+                    "text": " كما",
+                    "confidence": 1.0,
+                    "start_index": 1257
+                },
+                {
+                    "text": " كان",
+                    "confidence": 1.0,
+                    "start_index": 1261
+                },
+                {
+                    "text": " السلف",
+                    "confidence": 1.0,
+                    "start_index": 1265
+                },
+                {
+                    "text": " الصالح",
+                    "confidence": 1.0,
+                    "start_index": 1271
+                },
+                {
+                    "text": "رضي",
+                    "confidence": 1.0,
+                    "start_index": 1296
+                },
+                {
+                    "text": " الله",
+                    "confidence": 1.0,
+                    "start_index": 1299
+                },
+                {
+                    "text": " عنهم،",
+                    "confidence": 1.0,
+                    "start_index": 1304
+                },
+                {
+                    "text": " ويأتي",
+                    "confidence": 1.0,
+                    "start_index": 1310
+                },
+                {
+                    "text": " في",
+                    "confidence": 1.0,
+                    "start_index": 1316
+                },
+                {
+                    "text": " مقدمة",
+                    "confidence": 1.0,
+                    "start_index": 1319
+                },
+                {
+                    "text": " ذلك",
+                    "confidence": 1.0,
+                    "start_index": 1325
+                },
+                {
+                    "text": "أصحاب",
+                    "confidence": 1.0,
+                    "start_index": 1338
+                },
+                {
+                    "text": " رسول",
+                    "confidence": 1.0,
+                    "start_index": 1343
+                },
+                {
+                    "text": " اللَّه",
+                    "confidence": 1.0,
+                    "start_index": 1348
+                },
+                {
+                    "text": "صلى",
+                    "confidence": 1.0,
+                    "start_index": 1364
+                },
+                {
+                    "text": " الله",
+                    "confidence": 1.0,
+                    "start_index": 1367
+                },
+                {
+                    "text": " عليه",
+                    "confidence": 1.0,
+                    "start_index": 1372
+                },
+                {
+                    "text": " وسلم.",
+                    "confidence": 1.0,
+                    "start_index": 1377
+                },
+                {
+                    "text": " *",
+                    "confidence": 1.0,
+                    "start_index": 1383
+                },
+                {
+                    "text": " قوله:",
+                    "confidence": 1.0,
+                    "start_index": 1385
+                },
+                {
+                    "text": " (وَالقَوْلُ",
+                    "confidence": 1.0,
+                    "start_index": 1391
+                },
+                {
+                    "text": " الجُمْلِيُّ",
+                    "confidence": 1.0,
+                    "start_index": 1403
+                },
+                {
+                    "text": "أَيْضًا",
+                    "confidence": 1.0,
+                    "start_index": 1424
+                },
+                {
+                    "text": " فِي",
+                    "confidence": 1.0,
+                    "start_index": 1431
+                },
+                {
+                    "text": " هَذَا",
+                    "confidence": 1.0,
+                    "start_index": 1435
+                },
+                {
+                    "text": " المَوْضِعِ).",
+                    "confidence": 1.0,
+                    "start_index": 1441
+                },
+                {
+                    "text": " يقصد",
+                    "confidence": 1.0,
+                    "start_index": 1454
+                },
+                {
+                    "text": " المؤلف",
+                    "confidence": 1.0,
+                    "start_index": 1459
+                },
+                {
+                    "text": "رحمه",
+                    "confidence": 1.0,
+                    "start_index": 1475
+                },
+                {
+                    "text": " الله",
+                    "confidence": 1.0,
+                    "start_index": 1479
+                },
+                {
+                    "text": " بـ",
+                    "confidence": 1.0,
+                    "start_index": 1484
+                },
+                {
+                    "text": " (القول",
+                    "confidence": 1.0,
+                    "start_index": 1487
+                },
+                {
+                    "text": " الجملي):",
+                    "confidence": 1.0,
+                    "start_index": 1494
+                },
+                {
+                    "text": "القول",
+                    "confidence": 1.0,
+                    "start_index": 1512
+                },
+                {
+                    "text": " المجمل.",
+                    "confidence": 1.0,
+                    "start_index": 1517
+                },
+                {
+                    "text": " *",
+                    "confidence": 1.0,
+                    "start_index": 1525
+                },
+                {
+                    "text": "قوله:",
+                    "confidence": 1.0,
+                    "start_index": 1545
+                },
+                {
+                    "text": " (يَنْحَصِرُ",
+                    "confidence": 1.0,
+                    "start_index": 1550
+                },
+                {
+                    "text": " فِي",
+                    "confidence": 1.0,
+                    "start_index": 1562
+                },
+                {
+                    "text": " مَعْرِفَةِ",
+                    "confidence": 1.0,
+                    "start_index": 1566
+                },
+                {
+                    "text": " حُكْمِهِ،",
+                    "confidence": 1.0,
+                    "start_index": 1577
+                },
+                {
+                    "text": " وَفِي",
+                    "confidence": 1.0,
+                    "start_index": 1587
+                },
+                {
+                    "text": "صِفَتِهِ،",
+                    "confidence": 1.0,
+                    "start_index": 1602
+                },
+                {
+                    "text": " وَفِي",
+                    "confidence": 1.0,
+                    "start_index": 1611
+                },
+                {
+                    "text": " وَقْتِهِ؛",
+                    "confidence": 1.0,
+                    "start_index": 1617
+                },
+                {
+                    "text": " فَأَمَّا",
+                    "confidence": 1.0,
+                    "start_index": 1627
+                },
+                {
+                    "text": "كَوْنُ",
+                    "confidence": 1.0,
+                    "start_index": 1645
+                },
+                {
+                    "text": " هَذَا",
+                    "confidence": 1.0,
+                    "start_index": 1651
+                },
+                {
+                    "text": " الفِعْلِ",
+                    "confidence": 1.0,
+                    "start_index": 1657
+                },
+                {
+                    "text": " مِنْ",
+                    "confidence": 1.0,
+                    "start_index": 1666
+                },
+                {
+                    "text": " أَرْكانِ",
+                    "confidence": 1.0,
+                    "start_index": 1671
+                },
+                {
+                    "text": " الحَجِّ،",
+                    "confidence": 1.0,
+                    "start_index": 1680
+                },
+                {
+                    "text": " فَالأَصْلُ",
+                    "confidence": 1.0,
+                    "start_index": 1689
+                },
+                {
+                    "text": "فِيهِ).",
+                    "confidence": 1.0,
+                    "start_index": 1709
+                },
+                {
+                    "text": " نحن",
+                    "confidence": 1.0,
+                    "start_index": 1716
+                },
+                {
+                    "text": " نعيش",
+                    "confidence": 1.0,
+                    "start_index": 1720
+                },
+                {
+                    "text": " -بحمد",
+                    "confidence": 1.0,
+                    "start_index": 1725
+                },
+                {
+                    "text": " اللَّه-",
+                    "confidence": 1.0,
+                    "start_index": 1731
+                },
+                {
+                    "text": " في",
+                    "confidence": 1.0,
+                    "start_index": 1739
+                },
+                {
+                    "text": " ذِكر",
+                    "confidence": 1.0,
+                    "start_index": 1742
+                },
+                {
+                    "text": "اللَّه",
+                    "confidence": 1.0,
+                    "start_index": 1756
+                },
+                {
+                    "text": " سبحانه",
+                    "confidence": 1.0,
+                    "start_index": 1762
+                },
+                {
+                    "text": "وتعالى؛",
+                    "confidence": 1.0,
+                    "start_index": 1778
+                },
+                {
+                    "text": " منذ",
+                    "confidence": 1.0,
+                    "start_index": 1785
+                },
+                {
+                    "text": " أن",
+                    "confidence": 1.0,
+                    "start_index": 1789
+                },
+                {
+                    "text": " نلف",
+                    "confidence": 1.0,
+                    "start_index": 1792
+                },
+                {
+                    "text": " الإزار",
+                    "confidence": 1.0,
+                    "start_index": 1796
+                },
+                {
+                    "text": "على",
+                    "confidence": 1.0,
+                    "start_index": 1821
+                },
+                {
+                    "text": " صدورنا،",
+                    "confidence": 1.0,
+                    "start_index": 1824
+                },
+                {
+                    "text": " ونطرح",
+                    "confidence": 1.0,
+                    "start_index": 1832
+                },
+                {
+                    "text": " الرداء",
+                    "confidence": 1.0,
+                    "start_index": 1838
+                },
+                {
+                    "text": " على",
+                    "confidence": 1.0,
+                    "start_index": 1845
+                },
+                {
+                    "text": " أكتافنا،",
+                    "confidence": 1.0,
+                    "start_index": 1849
+                },
+                {
+                    "text": "ونغطي",
+                    "confidence": 1.0,
+                    "start_index": 1867
+                },
+                {
+                    "text": " به",
+                    "confidence": 1.0,
+                    "start_index": 1872
+                },
+                {
+                    "text": " بقية",
+                    "confidence": 1.0,
+                    "start_index": 1875
+                },
+                {
+                    "text": " البدن؛",
+                    "confidence": 1.0,
+                    "start_index": 1880
+                },
+                {
+                    "text": "من",
+                    "confidence": 1.0,
+                    "start_index": 1896
+                },
+                {
+                    "text": " بطن،",
+                    "confidence": 1.0,
+                    "start_index": 1898
+                },
+                {
+                    "text": " وصدر،",
+                    "confidence": 1.0,
+                    "start_index": 1903
+                },
+                {
+                    "text": " وظهر؛",
+                    "confidence": 1.0,
+                    "start_index": 1909
+                },
+                {
+                    "text": " فننتقل",
+                    "confidence": 1.0,
+                    "start_index": 1915
+                },
+                {
+                    "text": " من",
+                    "confidence": 1.0,
+                    "start_index": 1922
+                },
+                {
+                    "text": " طاعة",
+                    "confidence": 1.0,
+                    "start_index": 1925
+                },
+                {
+                    "text": "إلى",
+                    "confidence": 1.0,
+                    "start_index": 1939
+                },
+                {
+                    "text": " طاعة،",
+                    "confidence": 1.0,
+                    "start_index": 1942
+                },
+                {
+                    "text": "ومن",
+                    "confidence": 1.0,
+                    "start_index": 1957
+                },
+                {
+                    "text": " ذكر",
+                    "confidence": 1.0,
+                    "start_index": 1960
+                },
+                {
+                    "text": " إلى",
+                    "confidence": 1.0,
+                    "start_index": 1964
+                },
+                {
+                    "text": " ذكر.",
+                    "confidence": 1.0,
+                    "start_index": 1968
+                },
+                {
+                    "text": " فإننا",
+                    "confidence": 1.0,
+                    "start_index": 1973
+                },
+                {
+                    "text": "نقول:",
+                    "confidence": 1.0,
+                    "start_index": 1988
+                },
+                {
+                    "text": " \"لبيك",
+                    "confidence": 1.0,
+                    "start_index": 1993
+                },
+                {
+                    "text": " اللهم",
+                    "confidence": 1.0,
+                    "start_index": 1999
+                },
+                {
+                    "text": " لبيك،",
+                    "confidence": 1.0,
+                    "start_index": 2005
+                },
+                {
+                    "text": " لبيك",
+                    "confidence": 1.0,
+                    "start_index": 2011
+                },
+                {
+                    "text": " لا",
+                    "confidence": 1.0,
+                    "start_index": 2016
+                },
+                {
+                    "text": " شريك",
+                    "confidence": 1.0,
+                    "start_index": 2019
+                },
+                {
+                    "text": " لك",
+                    "confidence": 1.0,
+                    "start_index": 2024
+                }
+            ]
+        }
+    ],
+    "hyperlinks": [],
+    "header": null,
+    "footer": null,
+    "dimensions": {
+        "dpi": 96,
+        "height": 1175,
+        "width": 750
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "![image](img-0)",
+                "confidence": 1.0,
+                "start_index": 1
+            },
+            {
+                "text": "[tbl-0.html](tbl-0.html)",
+                "confidence": 1.0,
+                "start_index": 19
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 40,
+            "top_left_y": 52,
+            "bottom_right_x": 710,
+            "bottom_right_y": 212,
+            "content": "![image](img-0)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 1
+        },
+        {
+            "top_left_x": 40,
+            "top_left_y": 259,
+            "bottom_right_x": 710,
+            "bottom_right_y": 1120,
+            "content": "<table><tbody><tr><th>كان السلف الصالح</th><th>رضي الله عنهم،</th><th>ويأتي في</th><th>مقدمة ذلك أصحاب</th><th>رسول اللَّه</th><th>صلى الله عليه</th></tr><tr><td>وسلم. * قوله:</td><td>(وَالقَوْلُ الجُمْلِيُّ أَيْضًا فِي هَذَا المَوْضِعِ). يقصد</td><td>المؤلف رحمه الله بـ (القول</td><td>الجملي): القول المجمل. * قوله: (يَنْحَصِرُ فِي مَعْرِفَةِ</td><td>حُكْمِهِ، وَفِي صِفَتِهِ، وَفِي وَقْتِهِ؛</td><td>فَأَمَّا كَوْنُ هَذَا الفِعْلِ مِنْ أَرْكانِ الحَجِّ، فَالأَصْلُ</td></tr><tr><td>فِيهِ). نحن نعيش -بحمد اللَّه-</td><td>في ذِكر اللَّه سبحانه وتعالى؛ منذ أن نلف</td><td>الإزار على صدورنا، ونطرح</td><td>الرداء على</td><td>أكتافنا، ونغطي به بقية</td><td>البدن؛ من بطن، وصدر،</td></tr><tr><td>وظهر؛ فننتقل من طاعة</td><td>إلى طاعة، ومن ذكر</td><td>إلى ذكر. فإننا نقول:</td><td>\"لبيك اللهم لبيك، لبيك لا شريك</td><td>لك لبيك،</td><td>إن الحمد والنعمة لك والملك، لا شريك لك</td></tr><tr><td>لبيك\" (1) ؛ حيث نستمر نكرر هذه الكلمات.</td><td>وفي عرفات نردد أيضًا قول: \"لا إله إلا</td><td>اللَّه وحده</td><td>لا شريك له\"</td><td>(2) . وقبل</td><td>ذلك ونحن</td></tr><tr><td>على الصفا، وعلى المروة أيضًا.</td><td>‌ ‌[حذن] الحُذُنَّتان: الأذنان، بالضم</td><td>والتشديد.</td><td>طاعة اللَّه سبحانه وتعالى، وينبغي أن تتفرق أجسامنا</td><td>وتبقى قلوبنا</td><td>متصلة؛ كما كان السلف الصالح</td></tr><tr><td>رضي الله عنهم، ويأتي في مقدمة ذلك</td><td>أصحاب رسول اللَّه</td><td>صلى الله عليه وسلم. * قوله: (وَالقَوْلُ الجُمْلِيُّ</td><td>أَيْضًا فِي هَذَا المَوْضِعِ). يقصد المؤلف</td><td>رحمه الله بـ (القول الجملي):</td><td>القول المجمل. *</td></tr><tr><td>قوله: (يَنْحَصِرُ فِي مَعْرِفَةِ حُكْمِهِ، وَفِي</td><td>صِفَتِهِ، وَفِي وَقْتِهِ؛ فَأَمَّا</td><td>كَوْنُ هَذَا الفِعْلِ مِنْ أَرْكانِ الحَجِّ، فَالأَصْلُ</td><td>فِيهِ). نحن نعيش -بحمد اللَّه- في ذِكر</td><td>اللَّه سبحانه</td><td>وتعالى؛ منذ أن نلف الإزار</td></tr><tr><td>على صدورنا، ونطرح الرداء على أكتافنا،</td><td>ونغطي به بقية البدن؛</td><td>من بطن، وصدر، وظهر؛ فننتقل من طاعة</td><td>إلى طاعة،</td><td>ومن ذكر إلى ذكر. فإننا</td><td>نقول: \"لبيك اللهم لبيك، لبيك لا شريك لك</td></tr></tbody></table>",
+            "type": "table",
+            "table_id": "tbl-0.html",
+            "confidence_scores": null,
+            "reading_index": 2
+        }
+    ],
+    "meta": {
+        "template": "a4_tables",
+        "hybrid": "chart",
+        "augmentation": {
+            "name": "gaussian_noise",
+            "sigma": 13
+        }
+    }
+}

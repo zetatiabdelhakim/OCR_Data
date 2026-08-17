@@ -1,0 +1,509 @@
+{
+    "markdown": "قلوبنا متصلة؛\n02/06/2024 - 16:01\nكما كان السلف\n111.47\nالصالح رضي\n63.78\nالله عنهم، ويأتي\n156.00\nفي مقدمة\n112.37\nذلك\n71.81\nأصحاب\n122.00\nرسول اللَّه\n199.00\nصلى الله عليه\n111.83\nوسلم. * قوله:\n181.08\n(وَالقَوْلُ الجُمْلِيُّ أَيْضًا\n132.26\nالمجموع\n1,261.60\n\n![image](img-0)\n\nشكرا لزيارتكم",
+    "images": [
+        {
+            "id": "img-0",
+            "top_left_x": 10,
+            "top_left_y": 265,
+            "bottom_right_x": 205,
+            "bottom_right_y": 295,
+            "reading_index": 25
+        }
+    ],
+    "tables": [],
+    "hyperlinks": [],
+    "header": null,
+    "footer": null,
+    "dimensions": {
+        "dpi": 96,
+        "height": 344,
+        "width": 215
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "قلوبنا",
+                "confidence": 1.0,
+                "start_index": 0
+            },
+            {
+                "text": "متصلة؛",
+                "confidence": 1.0,
+                "start_index": 7
+            },
+            {
+                "text": "02/06/2024",
+                "confidence": 1.0,
+                "start_index": 14
+            },
+            {
+                "text": "-",
+                "confidence": 1.0,
+                "start_index": 25
+            },
+            {
+                "text": "16:01",
+                "confidence": 1.0,
+                "start_index": 27
+            },
+            {
+                "text": "كما",
+                "confidence": 1.0,
+                "start_index": 33
+            },
+            {
+                "text": "كان",
+                "confidence": 1.0,
+                "start_index": 37
+            },
+            {
+                "text": "السلف",
+                "confidence": 1.0,
+                "start_index": 41
+            },
+            {
+                "text": "111.47",
+                "confidence": 1.0,
+                "start_index": 47
+            },
+            {
+                "text": "الصالح",
+                "confidence": 1.0,
+                "start_index": 54
+            },
+            {
+                "text": "رضي",
+                "confidence": 1.0,
+                "start_index": 61
+            },
+            {
+                "text": "63.78",
+                "confidence": 1.0,
+                "start_index": 65
+            },
+            {
+                "text": "الله",
+                "confidence": 1.0,
+                "start_index": 71
+            },
+            {
+                "text": "عنهم،",
+                "confidence": 1.0,
+                "start_index": 76
+            },
+            {
+                "text": "ويأتي",
+                "confidence": 1.0,
+                "start_index": 82
+            },
+            {
+                "text": "156.00",
+                "confidence": 1.0,
+                "start_index": 88
+            },
+            {
+                "text": "في",
+                "confidence": 1.0,
+                "start_index": 95
+            },
+            {
+                "text": "مقدمة",
+                "confidence": 1.0,
+                "start_index": 98
+            },
+            {
+                "text": "112.37",
+                "confidence": 1.0,
+                "start_index": 104
+            },
+            {
+                "text": "ذلك",
+                "confidence": 1.0,
+                "start_index": 111
+            },
+            {
+                "text": "71.81",
+                "confidence": 1.0,
+                "start_index": 115
+            },
+            {
+                "text": "أصحاب",
+                "confidence": 1.0,
+                "start_index": 121
+            },
+            {
+                "text": "122.00",
+                "confidence": 1.0,
+                "start_index": 127
+            },
+            {
+                "text": "رسول",
+                "confidence": 1.0,
+                "start_index": 134
+            },
+            {
+                "text": "اللَّه",
+                "confidence": 1.0,
+                "start_index": 139
+            },
+            {
+                "text": "199.00",
+                "confidence": 1.0,
+                "start_index": 146
+            },
+            {
+                "text": "صلى",
+                "confidence": 1.0,
+                "start_index": 153
+            },
+            {
+                "text": "الله",
+                "confidence": 1.0,
+                "start_index": 157
+            },
+            {
+                "text": "عليه",
+                "confidence": 1.0,
+                "start_index": 162
+            },
+            {
+                "text": "111.83",
+                "confidence": 1.0,
+                "start_index": 167
+            },
+            {
+                "text": "وسلم.",
+                "confidence": 1.0,
+                "start_index": 174
+            },
+            {
+                "text": "*",
+                "confidence": 1.0,
+                "start_index": 180
+            },
+            {
+                "text": "قوله:",
+                "confidence": 1.0,
+                "start_index": 182
+            },
+            {
+                "text": "181.08",
+                "confidence": 1.0,
+                "start_index": 188
+            },
+            {
+                "text": "(وَالقَوْلُ",
+                "confidence": 1.0,
+                "start_index": 195
+            },
+            {
+                "text": "الجُمْلِيُّ",
+                "confidence": 1.0,
+                "start_index": 207
+            },
+            {
+                "text": "أَيْضًا",
+                "confidence": 1.0,
+                "start_index": 219
+            },
+            {
+                "text": "132.26",
+                "confidence": 1.0,
+                "start_index": 227
+            },
+            {
+                "text": "المجموع",
+                "confidence": 1.0,
+                "start_index": 234
+            },
+            {
+                "text": "1,261.60",
+                "confidence": 1.0,
+                "start_index": 242
+            },
+            {
+                "text": "![image](img-0)",
+                "confidence": 1.0,
+                "start_index": 252
+            },
+            {
+                "text": "شكرا",
+                "confidence": 1.0,
+                "start_index": 269
+            },
+            {
+                "text": "لزيارتكم",
+                "confidence": 1.0,
+                "start_index": 274
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 10,
+            "top_left_y": 14,
+            "bottom_right_x": 205,
+            "bottom_right_y": 35,
+            "content": "قلوبنا متصلة؛",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 1
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 35,
+            "bottom_right_x": 205,
+            "bottom_right_y": 50,
+            "content": "02/06/2024 - 16:01",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 2
+        },
+        {
+            "top_left_x": 119,
+            "top_left_y": 63,
+            "bottom_right_x": 205,
+            "bottom_right_y": 79,
+            "content": "كما كان السلف",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 3
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 63,
+            "bottom_right_x": 50,
+            "bottom_right_y": 79,
+            "content": "111.47",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 4
+        },
+        {
+            "top_left_x": 139,
+            "top_left_y": 79,
+            "bottom_right_x": 205,
+            "bottom_right_y": 95,
+            "content": "الصالح رضي",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 5
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 79,
+            "bottom_right_x": 43,
+            "bottom_right_y": 95,
+            "content": "63.78",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 6
+        },
+        {
+            "top_left_x": 119,
+            "top_left_y": 95,
+            "bottom_right_x": 205,
+            "bottom_right_y": 111,
+            "content": "الله عنهم، ويأتي",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 7
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 95,
+            "bottom_right_x": 50,
+            "bottom_right_y": 111,
+            "content": "156.00",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 8
+        },
+        {
+            "top_left_x": 152,
+            "top_left_y": 111,
+            "bottom_right_x": 205,
+            "bottom_right_y": 127,
+            "content": "في مقدمة",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 9
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 111,
+            "bottom_right_x": 50,
+            "bottom_right_y": 127,
+            "content": "112.37",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 10
+        },
+        {
+            "top_left_x": 185,
+            "top_left_y": 127,
+            "bottom_right_x": 205,
+            "bottom_right_y": 143,
+            "content": "ذلك",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 11
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 127,
+            "bottom_right_x": 43,
+            "bottom_right_y": 143,
+            "content": "71.81",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 12
+        },
+        {
+            "top_left_x": 172,
+            "top_left_y": 143,
+            "bottom_right_x": 205,
+            "bottom_right_y": 159,
+            "content": "أصحاب",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 13
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 143,
+            "bottom_right_x": 50,
+            "bottom_right_y": 159,
+            "content": "122.00",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 14
+        },
+        {
+            "top_left_x": 159,
+            "top_left_y": 159,
+            "bottom_right_x": 205,
+            "bottom_right_y": 175,
+            "content": "رسول اللَّه",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 15
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 159,
+            "bottom_right_x": 50,
+            "bottom_right_y": 175,
+            "content": "199.00",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 16
+        },
+        {
+            "top_left_x": 139,
+            "top_left_y": 175,
+            "bottom_right_x": 205,
+            "bottom_right_y": 191,
+            "content": "صلى الله عليه",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 17
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 175,
+            "bottom_right_x": 50,
+            "bottom_right_y": 191,
+            "content": "111.83",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 18
+        },
+        {
+            "top_left_x": 119,
+            "top_left_y": 191,
+            "bottom_right_x": 205,
+            "bottom_right_y": 207,
+            "content": "وسلم. * قوله:",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 19
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 191,
+            "bottom_right_x": 50,
+            "bottom_right_y": 207,
+            "content": "181.08",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 20
+        },
+        {
+            "top_left_x": 80,
+            "top_left_y": 207,
+            "bottom_right_x": 205,
+            "bottom_right_y": 223,
+            "content": "(وَالقَوْلُ الجُمْلِيُّ أَيْضًا",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 21
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 207,
+            "bottom_right_x": 50,
+            "bottom_right_y": 223,
+            "content": "132.26",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 22
+        },
+        {
+            "top_left_x": 150,
+            "top_left_y": 236,
+            "bottom_right_x": 205,
+            "bottom_right_y": 255,
+            "content": "المجموع",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 23
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 236,
+            "bottom_right_x": 72,
+            "bottom_right_y": 255,
+            "content": "1,261.60",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 24
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 265,
+            "bottom_right_x": 205,
+            "bottom_right_y": 295,
+            "content": "![image](img-0)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 25
+        },
+        {
+            "top_left_x": 10,
+            "top_left_y": 295,
+            "bottom_right_x": 205,
+            "bottom_right_y": 310,
+            "content": "شكرا لزيارتكم",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 26
+        }
+    ],
+    "meta": {
+        "template": "receipt",
+        "hybrid": null
+    }
+}

@@ -1,0 +1,700 @@
+{
+    "markdown": "## فهذا من أعمال\n\n![image](img-0)\n\n## ‌ ‌ثالثاً: من أمثلة\n\n![image](img-1)\n\nشكل: أن يعيّن\nذرية لهم (2) ، وقد نقل الرازي الاتفاق على ذلك، فقال: \"اتفقوا على أن الملائكة\n## وقال اللَّه سبحانه وتعالى:\n\n![image](img-2)\n\nشكل: ونطرح الرداء على\nله دابّة أو سيّارة، فإذا عطبت أو تعطّلت وجب عليه إحضار غيرها؛ لأنّ المعقود عليه غير معيّن. ومنها: الصّلاة في وقتها معيَّنة، فإذا خرج وقتها ولم يؤدّها، انتقل الأداء إلى الذّمّة فكان\n## ‌ ‌[حذن] الحُذُنَّتان: الأذنان، بالضم والتشديد\n\n![image](img-3)\n\nشكل: ‌ ‌[حذن] الحُذُنَّتان:\nأكتافنا، ونغطي به بقية البدن؛ من بطن، وصدر،\n\n![image](img-4)\n\nالصفحة 8",
+    "images": [
+        {
+            "id": "img-0",
+            "top_left_x": 441,
+            "top_left_y": 152,
+            "bottom_right_x": 822,
+            "bottom_right_y": 426,
+            "reading_index": 2
+        },
+        {
+            "id": "img-1",
+            "top_left_x": 259,
+            "top_left_y": 206,
+            "bottom_right_x": 401,
+            "bottom_right_y": 301,
+            "reading_index": 4
+        },
+        {
+            "id": "img-2",
+            "top_left_x": 728,
+            "top_left_y": 501,
+            "bottom_right_x": 817,
+            "bottom_right_y": 560,
+            "reading_index": 8
+        },
+        {
+            "id": "img-3",
+            "top_left_x": 446,
+            "top_left_y": 548,
+            "bottom_right_x": 535,
+            "bottom_right_y": 607,
+            "reading_index": 12
+        },
+        {
+            "id": "img-4",
+            "top_left_x": 40,
+            "top_left_y": 446,
+            "bottom_right_x": 287,
+            "bottom_right_y": 721,
+            "reading_index": 15
+        }
+    ],
+    "tables": [],
+    "hyperlinks": [],
+    "header": null,
+    "footer": "الصفحة 8",
+    "dimensions": {
+        "dpi": 96,
+        "height": 1031,
+        "width": 862
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "##",
+                "confidence": 1.0,
+                "start_index": 0
+            },
+            {
+                "text": "فهذا",
+                "confidence": 1.0,
+                "start_index": 3
+            },
+            {
+                "text": "من",
+                "confidence": 1.0,
+                "start_index": 8
+            },
+            {
+                "text": "أعمال",
+                "confidence": 1.0,
+                "start_index": 11
+            },
+            {
+                "text": "![image](img-0)",
+                "confidence": 1.0,
+                "start_index": 18
+            },
+            {
+                "text": "##",
+                "confidence": 1.0,
+                "start_index": 35
+            },
+            {
+                "text": "‌",
+                "confidence": 1.0,
+                "start_index": 38
+            },
+            {
+                "text": "‌ثالثاً:",
+                "confidence": 1.0,
+                "start_index": 40
+            },
+            {
+                "text": "من",
+                "confidence": 1.0,
+                "start_index": 49
+            },
+            {
+                "text": "أمثلة",
+                "confidence": 1.0,
+                "start_index": 52
+            },
+            {
+                "text": "![image](img-1)",
+                "confidence": 1.0,
+                "start_index": 59
+            },
+            {
+                "text": "شكل:",
+                "confidence": 1.0,
+                "start_index": 76
+            },
+            {
+                "text": "أن",
+                "confidence": 1.0,
+                "start_index": 81
+            },
+            {
+                "text": "يعيّن",
+                "confidence": 1.0,
+                "start_index": 84
+            },
+            {
+                "text": "ذرية",
+                "confidence": 1.0,
+                "start_index": 90
+            },
+            {
+                "text": "لهم",
+                "confidence": 1.0,
+                "start_index": 95
+            },
+            {
+                "text": "(2)",
+                "confidence": 1.0,
+                "start_index": 99
+            },
+            {
+                "text": "،",
+                "confidence": 1.0,
+                "start_index": 103
+            },
+            {
+                "text": "وقد",
+                "confidence": 1.0,
+                "start_index": 105
+            },
+            {
+                "text": "نقل",
+                "confidence": 1.0,
+                "start_index": 109
+            },
+            {
+                "text": "الرازي",
+                "confidence": 1.0,
+                "start_index": 113
+            },
+            {
+                "text": "الاتفاق",
+                "confidence": 1.0,
+                "start_index": 120
+            },
+            {
+                "text": "على",
+                "confidence": 1.0,
+                "start_index": 128
+            },
+            {
+                "text": "ذلك،",
+                "confidence": 1.0,
+                "start_index": 132
+            },
+            {
+                "text": "فقال:",
+                "confidence": 1.0,
+                "start_index": 137
+            },
+            {
+                "text": "\"اتفقوا",
+                "confidence": 1.0,
+                "start_index": 143
+            },
+            {
+                "text": "على",
+                "confidence": 1.0,
+                "start_index": 151
+            },
+            {
+                "text": "أن",
+                "confidence": 1.0,
+                "start_index": 155
+            },
+            {
+                "text": "الملائكة",
+                "confidence": 1.0,
+                "start_index": 158
+            },
+            {
+                "text": "##",
+                "confidence": 1.0,
+                "start_index": 167
+            },
+            {
+                "text": "وقال",
+                "confidence": 1.0,
+                "start_index": 170
+            },
+            {
+                "text": "اللَّه",
+                "confidence": 1.0,
+                "start_index": 175
+            },
+            {
+                "text": "سبحانه",
+                "confidence": 1.0,
+                "start_index": 182
+            },
+            {
+                "text": "وتعالى:",
+                "confidence": 1.0,
+                "start_index": 189
+            },
+            {
+                "text": "![image](img-2)",
+                "confidence": 1.0,
+                "start_index": 198
+            },
+            {
+                "text": "شكل:",
+                "confidence": 1.0,
+                "start_index": 215
+            },
+            {
+                "text": "ونطرح",
+                "confidence": 1.0,
+                "start_index": 220
+            },
+            {
+                "text": "الرداء",
+                "confidence": 1.0,
+                "start_index": 226
+            },
+            {
+                "text": "على",
+                "confidence": 1.0,
+                "start_index": 233
+            },
+            {
+                "text": "له",
+                "confidence": 1.0,
+                "start_index": 237
+            },
+            {
+                "text": "دابّة",
+                "confidence": 1.0,
+                "start_index": 240
+            },
+            {
+                "text": "أو",
+                "confidence": 1.0,
+                "start_index": 246
+            },
+            {
+                "text": "سيّارة،",
+                "confidence": 1.0,
+                "start_index": 249
+            },
+            {
+                "text": "فإذا",
+                "confidence": 1.0,
+                "start_index": 257
+            },
+            {
+                "text": "عطبت",
+                "confidence": 1.0,
+                "start_index": 262
+            },
+            {
+                "text": "أو",
+                "confidence": 1.0,
+                "start_index": 267
+            },
+            {
+                "text": "تعطّلت",
+                "confidence": 1.0,
+                "start_index": 270
+            },
+            {
+                "text": "وجب",
+                "confidence": 1.0,
+                "start_index": 277
+            },
+            {
+                "text": "عليه",
+                "confidence": 1.0,
+                "start_index": 281
+            },
+            {
+                "text": "إحضار",
+                "confidence": 1.0,
+                "start_index": 286
+            },
+            {
+                "text": "غيرها؛",
+                "confidence": 1.0,
+                "start_index": 292
+            },
+            {
+                "text": "لأنّ",
+                "confidence": 1.0,
+                "start_index": 299
+            },
+            {
+                "text": "المعقود",
+                "confidence": 1.0,
+                "start_index": 304
+            },
+            {
+                "text": "عليه",
+                "confidence": 1.0,
+                "start_index": 312
+            },
+            {
+                "text": "غير",
+                "confidence": 1.0,
+                "start_index": 317
+            },
+            {
+                "text": "معيّن.",
+                "confidence": 1.0,
+                "start_index": 321
+            },
+            {
+                "text": "ومنها:",
+                "confidence": 1.0,
+                "start_index": 328
+            },
+            {
+                "text": "الصّلاة",
+                "confidence": 1.0,
+                "start_index": 335
+            },
+            {
+                "text": "في",
+                "confidence": 1.0,
+                "start_index": 343
+            },
+            {
+                "text": "وقتها",
+                "confidence": 1.0,
+                "start_index": 346
+            },
+            {
+                "text": "معيَّنة،",
+                "confidence": 1.0,
+                "start_index": 352
+            },
+            {
+                "text": "فإذا",
+                "confidence": 1.0,
+                "start_index": 361
+            },
+            {
+                "text": "خرج",
+                "confidence": 1.0,
+                "start_index": 366
+            },
+            {
+                "text": "وقتها",
+                "confidence": 1.0,
+                "start_index": 370
+            },
+            {
+                "text": "ولم",
+                "confidence": 1.0,
+                "start_index": 376
+            },
+            {
+                "text": "يؤدّها،",
+                "confidence": 1.0,
+                "start_index": 380
+            },
+            {
+                "text": "انتقل",
+                "confidence": 1.0,
+                "start_index": 388
+            },
+            {
+                "text": "الأداء",
+                "confidence": 1.0,
+                "start_index": 394
+            },
+            {
+                "text": "إلى",
+                "confidence": 1.0,
+                "start_index": 401
+            },
+            {
+                "text": "الذّمّة",
+                "confidence": 1.0,
+                "start_index": 405
+            },
+            {
+                "text": "فكان",
+                "confidence": 1.0,
+                "start_index": 413
+            },
+            {
+                "text": "##",
+                "confidence": 1.0,
+                "start_index": 418
+            },
+            {
+                "text": "‌",
+                "confidence": 1.0,
+                "start_index": 421
+            },
+            {
+                "text": "‌[حذن]",
+                "confidence": 1.0,
+                "start_index": 423
+            },
+            {
+                "text": "الحُذُنَّتان:",
+                "confidence": 1.0,
+                "start_index": 430
+            },
+            {
+                "text": "الأذنان،",
+                "confidence": 1.0,
+                "start_index": 444
+            },
+            {
+                "text": "بالضم",
+                "confidence": 1.0,
+                "start_index": 453
+            },
+            {
+                "text": "والتشديد",
+                "confidence": 1.0,
+                "start_index": 459
+            },
+            {
+                "text": "![image](img-3)",
+                "confidence": 1.0,
+                "start_index": 469
+            },
+            {
+                "text": "شكل:",
+                "confidence": 1.0,
+                "start_index": 486
+            },
+            {
+                "text": "‌",
+                "confidence": 1.0,
+                "start_index": 491
+            },
+            {
+                "text": "‌[حذن]",
+                "confidence": 1.0,
+                "start_index": 493
+            },
+            {
+                "text": "الحُذُنَّتان:",
+                "confidence": 1.0,
+                "start_index": 500
+            },
+            {
+                "text": "أكتافنا،",
+                "confidence": 1.0,
+                "start_index": 514
+            },
+            {
+                "text": "ونغطي",
+                "confidence": 1.0,
+                "start_index": 523
+            },
+            {
+                "text": "به",
+                "confidence": 1.0,
+                "start_index": 529
+            },
+            {
+                "text": "بقية",
+                "confidence": 1.0,
+                "start_index": 532
+            },
+            {
+                "text": "البدن؛",
+                "confidence": 1.0,
+                "start_index": 537
+            },
+            {
+                "text": "من",
+                "confidence": 1.0,
+                "start_index": 544
+            },
+            {
+                "text": "بطن،",
+                "confidence": 1.0,
+                "start_index": 547
+            },
+            {
+                "text": "وصدر،",
+                "confidence": 1.0,
+                "start_index": 552
+            },
+            {
+                "text": "![image](img-4)",
+                "confidence": 1.0,
+                "start_index": 559
+            },
+            {
+                "text": "الصفحة",
+                "confidence": 1.0,
+                "start_index": 576
+            },
+            {
+                "text": "8",
+                "confidence": 1.0,
+                "start_index": 583
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 40,
+            "top_left_y": 40,
+            "bottom_right_x": 822,
+            "bottom_right_y": 132,
+            "content": "فهذا من أعمال",
+            "type": "title",
+            "confidence_scores": null,
+            "reading_index": 1
+        },
+        {
+            "top_left_x": 441,
+            "top_left_y": 152,
+            "bottom_right_x": 822,
+            "bottom_right_y": 426,
+            "content": "![image](img-0)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 2
+        },
+        {
+            "top_left_x": 40,
+            "top_left_y": 152,
+            "bottom_right_x": 421,
+            "bottom_right_y": 191,
+            "content": "‌ ‌ثالثاً: من أمثلة",
+            "type": "title",
+            "confidence_scores": null,
+            "reading_index": 3
+        },
+        {
+            "top_left_x": 259,
+            "top_left_y": 206,
+            "bottom_right_x": 401,
+            "bottom_right_y": 301,
+            "content": "![image](img-1)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 4
+        },
+        {
+            "top_left_x": 259,
+            "top_left_y": 305,
+            "bottom_right_x": 401,
+            "bottom_right_y": 327,
+            "content": "شكل: أن يعيّن",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 5
+        },
+        {
+            "top_left_x": 40,
+            "top_left_y": 342,
+            "bottom_right_x": 421,
+            "bottom_right_y": 411,
+            "content": "ذرية لهم (2) ، وقد نقل الرازي الاتفاق على ذلك، فقال: \"اتفقوا على أن الملائكة",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 6
+        },
+        {
+            "top_left_x": 575,
+            "top_left_y": 446,
+            "bottom_right_x": 822,
+            "bottom_right_y": 486,
+            "content": "وقال اللَّه سبحانه وتعالى:",
+            "type": "title",
+            "confidence_scores": null,
+            "reading_index": 7
+        },
+        {
+            "top_left_x": 728,
+            "top_left_y": 501,
+            "bottom_right_x": 817,
+            "bottom_right_y": 560,
+            "content": "![image](img-2)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 8
+        },
+        {
+            "top_left_x": 728,
+            "top_left_y": 564,
+            "bottom_right_x": 817,
+            "bottom_right_y": 586,
+            "content": "شكل: ونطرح الرداء على",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 9
+        },
+        {
+            "top_left_x": 575,
+            "top_left_y": 601,
+            "bottom_right_x": 822,
+            "bottom_right_y": 706,
+            "content": "له دابّة أو سيّارة، فإذا عطبت أو تعطّلت وجب عليه إحضار غيرها؛ لأنّ المعقود عليه غير معيّن. ومنها: الصّلاة في وقتها معيَّنة، فإذا خرج وقتها ولم يؤدّها، انتقل الأداء إلى الذّمّة فكان",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 10
+        },
+        {
+            "top_left_x": 307,
+            "top_left_y": 446,
+            "bottom_right_x": 555,
+            "bottom_right_y": 533,
+            "content": "‌ ‌[حذن] الحُذُنَّتان: الأذنان، بالضم والتشديد",
+            "type": "title",
+            "confidence_scores": null,
+            "reading_index": 11
+        },
+        {
+            "top_left_x": 446,
+            "top_left_y": 548,
+            "bottom_right_x": 535,
+            "bottom_right_y": 607,
+            "content": "![image](img-3)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 12
+        },
+        {
+            "top_left_x": 446,
+            "top_left_y": 611,
+            "bottom_right_x": 535,
+            "bottom_right_y": 633,
+            "content": "شكل: ‌ ‌[حذن] الحُذُنَّتان:",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 13
+        },
+        {
+            "top_left_x": 307,
+            "top_left_y": 648,
+            "bottom_right_x": 555,
+            "bottom_right_y": 706,
+            "content": "أكتافنا، ونغطي به بقية البدن؛ من بطن، وصدر،",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 14
+        },
+        {
+            "top_left_x": 40,
+            "top_left_y": 446,
+            "bottom_right_x": 287,
+            "bottom_right_y": 721,
+            "content": "![image](img-4)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 15
+        },
+        {
+            "top_left_x": 403,
+            "top_left_y": 1007,
+            "bottom_right_x": 459,
+            "bottom_right_y": 1021,
+            "content": "الصفحة 8",
+            "type": "footer",
+            "confidence_scores": null,
+            "reading_index": 16
+        }
+    ],
+    "meta": {
+        "template": "a4_charts",
+        "hybrid": null,
+        "augmentation": {
+            "name": "bleed_through",
+            "alpha": 0.16
+        }
+    }
+}

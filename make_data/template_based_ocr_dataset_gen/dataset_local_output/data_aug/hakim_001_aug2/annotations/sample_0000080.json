@@ -1,0 +1,83 @@
+{
+    "markdown": "\n![image](img-0)\n\nالعرب والأكراد وقتل مطارد",
+    "images": [
+        {
+            "id": "img-0",
+            "top_left_x": 299,
+            "top_left_y": 401,
+            "bottom_right_x": 368,
+            "bottom_right_y": 469,
+            "reading_index": 1
+        }
+    ],
+    "tables": [],
+    "hyperlinks": [],
+    "header": null,
+    "footer": null,
+    "dimensions": {
+        "dpi": 96,
+        "height": 938,
+        "width": 671
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "![image](img-0)",
+                "confidence": 1.0,
+                "start_index": 1
+            },
+            {
+                "text": "العرب",
+                "confidence": 1.0,
+                "start_index": 18
+            },
+            {
+                "text": "والأكراد",
+                "confidence": 1.0,
+                "start_index": 24
+            },
+            {
+                "text": "وقتل",
+                "confidence": 1.0,
+                "start_index": 33
+            },
+            {
+                "text": "مطارد",
+                "confidence": 1.0,
+                "start_index": 38
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 299,
+            "top_left_y": 401,
+            "bottom_right_x": 368,
+            "bottom_right_y": 469,
+            "content": "![image](img-0)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 1
+        },
+        {
+            "top_left_x": 218,
+            "top_left_y": 480,
+            "bottom_right_x": 460,
+            "bottom_right_y": 544,
+            "content": "العرب والأكراد وقتل مطارد",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 2
+        }
+    ],
+    "meta": {
+        "template": "minimalist",
+        "hybrid": null,
+        "augmentation": {
+            "name": "rotation",
+            "angle": 4.5
+        }
+    }
+}

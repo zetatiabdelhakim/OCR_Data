@@ -1,0 +1,234 @@
+{
+    "markdown": "## فهذا من أعمال الملائكة التي وكلوا\n\\vec{F} = m\\vec{a}\n\n![image](img-0)\n\n\n![image](img-1)\n\n\n![image](img-2)\n\n\n![image](img-3)\n\n\n![image](img-4)\n\n\n![image](img-5)\n",
+    "images": [
+        {
+            "id": "img-0",
+            "top_left_x": 164,
+            "top_left_y": 190,
+            "bottom_right_x": 280,
+            "bottom_right_y": 571,
+            "reading_index": 3
+        },
+        {
+            "id": "img-1",
+            "top_left_x": 36,
+            "top_left_y": 190,
+            "bottom_right_x": 152,
+            "bottom_right_y": 571,
+            "reading_index": 4
+        },
+        {
+            "id": "img-2",
+            "top_left_x": 605,
+            "top_left_y": 597,
+            "bottom_right_x": 783,
+            "bottom_right_y": 978,
+            "reading_index": 5
+        },
+        {
+            "id": "img-3",
+            "top_left_x": 416,
+            "top_left_y": 597,
+            "bottom_right_x": 593,
+            "bottom_right_y": 978,
+            "reading_index": 6
+        },
+        {
+            "id": "img-4",
+            "top_left_x": 226,
+            "top_left_y": 597,
+            "bottom_right_x": 404,
+            "bottom_right_y": 978,
+            "reading_index": 7
+        },
+        {
+            "id": "img-5",
+            "top_left_x": 36,
+            "top_left_y": 597,
+            "bottom_right_x": 214,
+            "bottom_right_y": 978,
+            "reading_index": 8
+        }
+    ],
+    "tables": [],
+    "hyperlinks": [],
+    "header": null,
+    "footer": null,
+    "dimensions": {
+        "dpi": 96,
+        "height": 992,
+        "width": 819
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "##",
+                "confidence": 1.0,
+                "start_index": 0
+            },
+            {
+                "text": "فهذا",
+                "confidence": 1.0,
+                "start_index": 3
+            },
+            {
+                "text": "من",
+                "confidence": 1.0,
+                "start_index": 8
+            },
+            {
+                "text": "أعمال",
+                "confidence": 1.0,
+                "start_index": 11
+            },
+            {
+                "text": "الملائكة",
+                "confidence": 1.0,
+                "start_index": 17
+            },
+            {
+                "text": "التي",
+                "confidence": 1.0,
+                "start_index": 26
+            },
+            {
+                "text": "وكلوا",
+                "confidence": 1.0,
+                "start_index": 31
+            },
+            {
+                "text": "\\vec{F}",
+                "confidence": 1.0,
+                "start_index": 37
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 45
+            },
+            {
+                "text": "m\\vec{a}",
+                "confidence": 1.0,
+                "start_index": 47
+            },
+            {
+                "text": "![image](img-0)",
+                "confidence": 1.0,
+                "start_index": 57
+            },
+            {
+                "text": "![image](img-1)",
+                "confidence": 1.0,
+                "start_index": 75
+            },
+            {
+                "text": "![image](img-2)",
+                "confidence": 1.0,
+                "start_index": 93
+            },
+            {
+                "text": "![image](img-3)",
+                "confidence": 1.0,
+                "start_index": 111
+            },
+            {
+                "text": "![image](img-4)",
+                "confidence": 1.0,
+                "start_index": 129
+            },
+            {
+                "text": "![image](img-5)",
+                "confidence": 1.0,
+                "start_index": 147
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 36,
+            "top_left_y": 36,
+            "bottom_right_x": 783,
+            "bottom_right_y": 174,
+            "content": "فهذا من أعمال الملائكة التي وكلوا",
+            "type": "title",
+            "confidence_scores": null,
+            "reading_index": 1
+        },
+        {
+            "top_left_x": 296,
+            "top_left_y": 208,
+            "bottom_right_x": 783,
+            "bottom_right_y": 246,
+            "content": "\\vec{F} = m\\vec{a}",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 2
+        },
+        {
+            "top_left_x": 164,
+            "top_left_y": 190,
+            "bottom_right_x": 280,
+            "bottom_right_y": 571,
+            "content": "![image](img-0)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 3
+        },
+        {
+            "top_left_x": 36,
+            "top_left_y": 190,
+            "bottom_right_x": 152,
+            "bottom_right_y": 571,
+            "content": "![image](img-1)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 4
+        },
+        {
+            "top_left_x": 605,
+            "top_left_y": 597,
+            "bottom_right_x": 783,
+            "bottom_right_y": 978,
+            "content": "![image](img-2)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 5
+        },
+        {
+            "top_left_x": 416,
+            "top_left_y": 597,
+            "bottom_right_x": 593,
+            "bottom_right_y": 978,
+            "content": "![image](img-3)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 6
+        },
+        {
+            "top_left_x": 226,
+            "top_left_y": 597,
+            "bottom_right_x": 404,
+            "bottom_right_y": 978,
+            "content": "![image](img-4)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 7
+        },
+        {
+            "top_left_x": 36,
+            "top_left_y": 597,
+            "bottom_right_x": 214,
+            "bottom_right_y": 978,
+            "content": "![image](img-5)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 8
+        }
+    ],
+    "meta": {
+        "template": "a4_image_gallery",
+        "hybrid": "equation"
+    }
+}

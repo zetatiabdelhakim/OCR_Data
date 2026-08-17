@@ -1,0 +1,728 @@
+{
+    "markdown": "## 24740- \"الأرواح جنود\nجنود مجندة، فما تعارف منها في الله ائتلف وما تناكر منها في الله اختلف، إذا ظهر القول، وخزن العمل، وائتلفت الألسنة، وتباغضت القلوب، وقطع كل ذي رحم رحمه، فعند ذلك لعنهم الله فأصمهم وأعمى أبصارهم\". \"الحسن بن سفيان، طب وابن عساكر عن سلمان\" 1 24741- \"الأرواح جنود مجندة تلتقي فتشأم فما تعارف منها ائتلف وما تناكر منها اختلف\". \"الديلمي عن علي\".\n\n![image](img-0)\n\nشكل: جنود مجندة،\nفما تعارف منها في الله ائتلف وما تناكر منها في الله اختلف، إذا ظهر القول، وخزن العمل، وائتلفت الألسنة، وتباغضت القلوب، وقطع كل ذي رحم رحمه، فعند ذلك لعنهم الله فأصمهم وأعمى أبصارهم\". \"الحسن بن سفيان، طب وابن عساكر عن سلمان\" 1 24741- \"الأرواح جنود مجندة تلتقي فتشأم فما تعارف منها ائتلف وما تناكر منها اختلف\". \"الديلمي عن علي\".",
+    "images": [
+        {
+            "id": "img-0",
+            "top_left_x": 40,
+            "top_left_y": 226,
+            "bottom_right_x": 424,
+            "bottom_right_y": 664,
+            "reading_index": 3
+        }
+    ],
+    "tables": [],
+    "hyperlinks": [],
+    "header": null,
+    "footer": null,
+    "dimensions": {
+        "dpi": 96,
+        "height": 1185,
+        "width": 867
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "##",
+                "confidence": 1.0,
+                "start_index": 0
+            },
+            {
+                "text": "24740-",
+                "confidence": 1.0,
+                "start_index": 3
+            },
+            {
+                "text": "\"الأرواح",
+                "confidence": 1.0,
+                "start_index": 10
+            },
+            {
+                "text": "جنود",
+                "confidence": 1.0,
+                "start_index": 19
+            },
+            {
+                "text": "جنود",
+                "confidence": 1.0,
+                "start_index": 24
+            },
+            {
+                "text": "مجندة،",
+                "confidence": 1.0,
+                "start_index": 29
+            },
+            {
+                "text": "فما",
+                "confidence": 1.0,
+                "start_index": 36
+            },
+            {
+                "text": "تعارف",
+                "confidence": 1.0,
+                "start_index": 40
+            },
+            {
+                "text": "منها",
+                "confidence": 1.0,
+                "start_index": 46
+            },
+            {
+                "text": "في",
+                "confidence": 1.0,
+                "start_index": 51
+            },
+            {
+                "text": "الله",
+                "confidence": 1.0,
+                "start_index": 54
+            },
+            {
+                "text": "ائتلف",
+                "confidence": 1.0,
+                "start_index": 59
+            },
+            {
+                "text": "وما",
+                "confidence": 1.0,
+                "start_index": 65
+            },
+            {
+                "text": "تناكر",
+                "confidence": 1.0,
+                "start_index": 69
+            },
+            {
+                "text": "منها",
+                "confidence": 1.0,
+                "start_index": 75
+            },
+            {
+                "text": "في",
+                "confidence": 1.0,
+                "start_index": 80
+            },
+            {
+                "text": "الله",
+                "confidence": 1.0,
+                "start_index": 83
+            },
+            {
+                "text": "اختلف،",
+                "confidence": 1.0,
+                "start_index": 88
+            },
+            {
+                "text": "إذا",
+                "confidence": 1.0,
+                "start_index": 95
+            },
+            {
+                "text": "ظهر",
+                "confidence": 1.0,
+                "start_index": 99
+            },
+            {
+                "text": "القول،",
+                "confidence": 1.0,
+                "start_index": 103
+            },
+            {
+                "text": "وخزن",
+                "confidence": 1.0,
+                "start_index": 110
+            },
+            {
+                "text": "العمل،",
+                "confidence": 1.0,
+                "start_index": 115
+            },
+            {
+                "text": "وائتلفت",
+                "confidence": 1.0,
+                "start_index": 122
+            },
+            {
+                "text": "الألسنة،",
+                "confidence": 1.0,
+                "start_index": 130
+            },
+            {
+                "text": "وتباغضت",
+                "confidence": 1.0,
+                "start_index": 139
+            },
+            {
+                "text": "القلوب،",
+                "confidence": 1.0,
+                "start_index": 147
+            },
+            {
+                "text": "وقطع",
+                "confidence": 1.0,
+                "start_index": 155
+            },
+            {
+                "text": "كل",
+                "confidence": 1.0,
+                "start_index": 160
+            },
+            {
+                "text": "ذي",
+                "confidence": 1.0,
+                "start_index": 163
+            },
+            {
+                "text": "رحم",
+                "confidence": 1.0,
+                "start_index": 166
+            },
+            {
+                "text": "رحمه،",
+                "confidence": 1.0,
+                "start_index": 170
+            },
+            {
+                "text": "فعند",
+                "confidence": 1.0,
+                "start_index": 176
+            },
+            {
+                "text": "ذلك",
+                "confidence": 1.0,
+                "start_index": 181
+            },
+            {
+                "text": "لعنهم",
+                "confidence": 1.0,
+                "start_index": 185
+            },
+            {
+                "text": "الله",
+                "confidence": 1.0,
+                "start_index": 191
+            },
+            {
+                "text": "فأصمهم",
+                "confidence": 1.0,
+                "start_index": 196
+            },
+            {
+                "text": "وأعمى",
+                "confidence": 1.0,
+                "start_index": 203
+            },
+            {
+                "text": "أبصارهم\".",
+                "confidence": 1.0,
+                "start_index": 209
+            },
+            {
+                "text": "\"الحسن",
+                "confidence": 1.0,
+                "start_index": 219
+            },
+            {
+                "text": "بن",
+                "confidence": 1.0,
+                "start_index": 226
+            },
+            {
+                "text": "سفيان،",
+                "confidence": 1.0,
+                "start_index": 229
+            },
+            {
+                "text": "طب",
+                "confidence": 1.0,
+                "start_index": 236
+            },
+            {
+                "text": "وابن",
+                "confidence": 1.0,
+                "start_index": 239
+            },
+            {
+                "text": "عساكر",
+                "confidence": 1.0,
+                "start_index": 244
+            },
+            {
+                "text": "عن",
+                "confidence": 1.0,
+                "start_index": 250
+            },
+            {
+                "text": "سلمان\"",
+                "confidence": 1.0,
+                "start_index": 253
+            },
+            {
+                "text": "1",
+                "confidence": 1.0,
+                "start_index": 260
+            },
+            {
+                "text": "24741-",
+                "confidence": 1.0,
+                "start_index": 262
+            },
+            {
+                "text": "\"الأرواح",
+                "confidence": 1.0,
+                "start_index": 269
+            },
+            {
+                "text": "جنود",
+                "confidence": 1.0,
+                "start_index": 278
+            },
+            {
+                "text": "مجندة",
+                "confidence": 1.0,
+                "start_index": 283
+            },
+            {
+                "text": "تلتقي",
+                "confidence": 1.0,
+                "start_index": 289
+            },
+            {
+                "text": "فتشأم",
+                "confidence": 1.0,
+                "start_index": 295
+            },
+            {
+                "text": "فما",
+                "confidence": 1.0,
+                "start_index": 301
+            },
+            {
+                "text": "تعارف",
+                "confidence": 1.0,
+                "start_index": 305
+            },
+            {
+                "text": "منها",
+                "confidence": 1.0,
+                "start_index": 311
+            },
+            {
+                "text": "ائتلف",
+                "confidence": 1.0,
+                "start_index": 316
+            },
+            {
+                "text": "وما",
+                "confidence": 1.0,
+                "start_index": 322
+            },
+            {
+                "text": "تناكر",
+                "confidence": 1.0,
+                "start_index": 326
+            },
+            {
+                "text": "منها",
+                "confidence": 1.0,
+                "start_index": 332
+            },
+            {
+                "text": "اختلف\".",
+                "confidence": 1.0,
+                "start_index": 337
+            },
+            {
+                "text": "\"الديلمي",
+                "confidence": 1.0,
+                "start_index": 345
+            },
+            {
+                "text": "عن",
+                "confidence": 1.0,
+                "start_index": 354
+            },
+            {
+                "text": "علي\".",
+                "confidence": 1.0,
+                "start_index": 357
+            },
+            {
+                "text": "![image](img-0)",
+                "confidence": 1.0,
+                "start_index": 364
+            },
+            {
+                "text": "شكل:",
+                "confidence": 1.0,
+                "start_index": 381
+            },
+            {
+                "text": "جنود",
+                "confidence": 1.0,
+                "start_index": 386
+            },
+            {
+                "text": "مجندة،",
+                "confidence": 1.0,
+                "start_index": 391
+            },
+            {
+                "text": "فما",
+                "confidence": 1.0,
+                "start_index": 398
+            },
+            {
+                "text": "تعارف",
+                "confidence": 1.0,
+                "start_index": 402
+            },
+            {
+                "text": "منها",
+                "confidence": 1.0,
+                "start_index": 408
+            },
+            {
+                "text": "في",
+                "confidence": 1.0,
+                "start_index": 413
+            },
+            {
+                "text": "الله",
+                "confidence": 1.0,
+                "start_index": 416
+            },
+            {
+                "text": "ائتلف",
+                "confidence": 1.0,
+                "start_index": 421
+            },
+            {
+                "text": "وما",
+                "confidence": 1.0,
+                "start_index": 427
+            },
+            {
+                "text": "تناكر",
+                "confidence": 1.0,
+                "start_index": 431
+            },
+            {
+                "text": "منها",
+                "confidence": 1.0,
+                "start_index": 437
+            },
+            {
+                "text": "في",
+                "confidence": 1.0,
+                "start_index": 442
+            },
+            {
+                "text": "الله",
+                "confidence": 1.0,
+                "start_index": 445
+            },
+            {
+                "text": "اختلف،",
+                "confidence": 1.0,
+                "start_index": 450
+            },
+            {
+                "text": "إذا",
+                "confidence": 1.0,
+                "start_index": 457
+            },
+            {
+                "text": "ظهر",
+                "confidence": 1.0,
+                "start_index": 461
+            },
+            {
+                "text": "القول،",
+                "confidence": 1.0,
+                "start_index": 465
+            },
+            {
+                "text": "وخزن",
+                "confidence": 1.0,
+                "start_index": 472
+            },
+            {
+                "text": "العمل،",
+                "confidence": 1.0,
+                "start_index": 477
+            },
+            {
+                "text": "وائتلفت",
+                "confidence": 1.0,
+                "start_index": 484
+            },
+            {
+                "text": "الألسنة،",
+                "confidence": 1.0,
+                "start_index": 492
+            },
+            {
+                "text": "وتباغضت",
+                "confidence": 1.0,
+                "start_index": 501
+            },
+            {
+                "text": "القلوب،",
+                "confidence": 1.0,
+                "start_index": 509
+            },
+            {
+                "text": "وقطع",
+                "confidence": 1.0,
+                "start_index": 517
+            },
+            {
+                "text": "كل",
+                "confidence": 1.0,
+                "start_index": 522
+            },
+            {
+                "text": "ذي",
+                "confidence": 1.0,
+                "start_index": 525
+            },
+            {
+                "text": "رحم",
+                "confidence": 1.0,
+                "start_index": 528
+            },
+            {
+                "text": "رحمه،",
+                "confidence": 1.0,
+                "start_index": 532
+            },
+            {
+                "text": "فعند",
+                "confidence": 1.0,
+                "start_index": 538
+            },
+            {
+                "text": "ذلك",
+                "confidence": 1.0,
+                "start_index": 543
+            },
+            {
+                "text": "لعنهم",
+                "confidence": 1.0,
+                "start_index": 547
+            },
+            {
+                "text": "الله",
+                "confidence": 1.0,
+                "start_index": 553
+            },
+            {
+                "text": "فأصمهم",
+                "confidence": 1.0,
+                "start_index": 558
+            },
+            {
+                "text": "وأعمى",
+                "confidence": 1.0,
+                "start_index": 565
+            },
+            {
+                "text": "أبصارهم\".",
+                "confidence": 1.0,
+                "start_index": 571
+            },
+            {
+                "text": "\"الحسن",
+                "confidence": 1.0,
+                "start_index": 581
+            },
+            {
+                "text": "بن",
+                "confidence": 1.0,
+                "start_index": 588
+            },
+            {
+                "text": "سفيان،",
+                "confidence": 1.0,
+                "start_index": 591
+            },
+            {
+                "text": "طب",
+                "confidence": 1.0,
+                "start_index": 598
+            },
+            {
+                "text": "وابن",
+                "confidence": 1.0,
+                "start_index": 601
+            },
+            {
+                "text": "عساكر",
+                "confidence": 1.0,
+                "start_index": 606
+            },
+            {
+                "text": "عن",
+                "confidence": 1.0,
+                "start_index": 612
+            },
+            {
+                "text": "سلمان\"",
+                "confidence": 1.0,
+                "start_index": 615
+            },
+            {
+                "text": "1",
+                "confidence": 1.0,
+                "start_index": 622
+            },
+            {
+                "text": "24741-",
+                "confidence": 1.0,
+                "start_index": 624
+            },
+            {
+                "text": "\"الأرواح",
+                "confidence": 1.0,
+                "start_index": 631
+            },
+            {
+                "text": "جنود",
+                "confidence": 1.0,
+                "start_index": 640
+            },
+            {
+                "text": "مجندة",
+                "confidence": 1.0,
+                "start_index": 645
+            },
+            {
+                "text": "تلتقي",
+                "confidence": 1.0,
+                "start_index": 651
+            },
+            {
+                "text": "فتشأم",
+                "confidence": 1.0,
+                "start_index": 657
+            },
+            {
+                "text": "فما",
+                "confidence": 1.0,
+                "start_index": 663
+            },
+            {
+                "text": "تعارف",
+                "confidence": 1.0,
+                "start_index": 667
+            },
+            {
+                "text": "منها",
+                "confidence": 1.0,
+                "start_index": 673
+            },
+            {
+                "text": "ائتلف",
+                "confidence": 1.0,
+                "start_index": 678
+            },
+            {
+                "text": "وما",
+                "confidence": 1.0,
+                "start_index": 684
+            },
+            {
+                "text": "تناكر",
+                "confidence": 1.0,
+                "start_index": 688
+            },
+            {
+                "text": "منها",
+                "confidence": 1.0,
+                "start_index": 694
+            },
+            {
+                "text": "اختلف\".",
+                "confidence": 1.0,
+                "start_index": 699
+            },
+            {
+                "text": "\"الديلمي",
+                "confidence": 1.0,
+                "start_index": 707
+            },
+            {
+                "text": "عن",
+                "confidence": 1.0,
+                "start_index": 716
+            },
+            {
+                "text": "علي\".",
+                "confidence": 1.0,
+                "start_index": 719
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 40,
+            "top_left_y": 40,
+            "bottom_right_x": 827,
+            "bottom_right_y": 206,
+            "content": "24740- \"الأرواح جنود",
+            "type": "title",
+            "confidence_scores": null,
+            "reading_index": 1
+        },
+        {
+            "top_left_x": 444,
+            "top_left_y": 226,
+            "bottom_right_x": 827,
+            "bottom_right_y": 695,
+            "content": "جنود مجندة، فما تعارف منها في الله ائتلف وما تناكر منها في الله اختلف، إذا ظهر القول، وخزن العمل، وائتلفت الألسنة، وتباغضت القلوب، وقطع كل ذي رحم رحمه، فعند ذلك لعنهم الله فأصمهم وأعمى أبصارهم\". \"الحسن بن سفيان، طب وابن عساكر عن سلمان\" 1 24741- \"الأرواح جنود مجندة تلتقي فتشأم فما تعارف منها ائتلف وما تناكر منها اختلف\". \"الديلمي عن علي\".",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 2
+        },
+        {
+            "top_left_x": 40,
+            "top_left_y": 226,
+            "bottom_right_x": 424,
+            "bottom_right_y": 664,
+            "content": "![image](img-0)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 3
+        },
+        {
+            "top_left_x": 40,
+            "top_left_y": 670,
+            "bottom_right_x": 424,
+            "bottom_right_y": 685,
+            "content": "شكل: جنود مجندة،",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 4
+        },
+        {
+            "top_left_x": 40,
+            "top_left_y": 715,
+            "bottom_right_x": 827,
+            "bottom_right_y": 1185,
+            "content": "فما تعارف منها في الله ائتلف وما تناكر منها في الله اختلف، إذا ظهر القول، وخزن العمل، وائتلفت الألسنة، وتباغضت القلوب، وقطع كل ذي رحم رحمه، فعند ذلك لعنهم الله فأصمهم وأعمى أبصارهم\". \"الحسن بن سفيان، طب وابن عساكر عن سلمان\" 1 24741- \"الأرواح جنود مجندة تلتقي فتشأم فما تعارف منها ائتلف وما تناكر منها اختلف\". \"الديلمي عن علي\".",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 5
+        }
+    ],
+    "meta": {
+        "template": "a4_report",
+        "hybrid": null,
+        "augmentation": {
+            "name": "bleed_through",
+            "alpha": 0.15
+        }
+    }
+}

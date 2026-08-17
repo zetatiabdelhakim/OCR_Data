@@ -1,0 +1,617 @@
+{
+    "markdown": "## ملاحظة\n(1) ، ولا يشربون ولا يناكحون، ولا ذرية لهم (2) ، وقد نقل الرازي الاتفاق على ذلك، فقال: \"اتفقوا على أن الملائكة\n\\frac{\\partial t}{\\partial \\theta} = \\lim_{h \\to 0} \\frac{\\exp(\\theta + h) - \\exp(\\theta)}{h} + \\frac{j}{\\alpha^2}\n\\prod_{\\alpha=1}^{n} (1 - \\theta_\\alpha) = 0\n## تعريف\nلا يأكلون ولا يشربون، ولاينكحون، يسبحون الليل والنهار لايفترون\" (3) ، وقال السفاريني:\nt_{n+1} = t_n - \\alpha \\nabla f(t_n) + \\frac{z}{z^2}\n\n![image](img-0)\n\n## تعريف\n\"وقد حكى غير واحد من محققي العلماء: الاتفاق على أن الملائكة لا يأكلون، ولا يشربون، ولا ينكحون\"\n\\prod_{i=1}^{n} (1 = x_i) = 0",
+    "images": [
+        {
+            "id": "img-0",
+            "top_left_x": 20,
+            "top_left_y": 409,
+            "bottom_right_x": 607,
+            "bottom_right_y": 569,
+            "reading_index": 8
+        }
+    ],
+    "tables": [],
+    "hyperlinks": [],
+    "header": null,
+    "footer": null,
+    "dimensions": {
+        "dpi": 96,
+        "height": 781,
+        "width": 627
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "##",
+                "confidence": 1.0,
+                "start_index": 0
+            },
+            {
+                "text": "ملاحظة",
+                "confidence": 1.0,
+                "start_index": 3
+            },
+            {
+                "text": "(1)",
+                "confidence": 1.0,
+                "start_index": 10
+            },
+            {
+                "text": "،",
+                "confidence": 1.0,
+                "start_index": 14
+            },
+            {
+                "text": "ولا",
+                "confidence": 1.0,
+                "start_index": 16
+            },
+            {
+                "text": "يشربون",
+                "confidence": 1.0,
+                "start_index": 20
+            },
+            {
+                "text": "ولا",
+                "confidence": 1.0,
+                "start_index": 27
+            },
+            {
+                "text": "يناكحون،",
+                "confidence": 1.0,
+                "start_index": 31
+            },
+            {
+                "text": "ولا",
+                "confidence": 1.0,
+                "start_index": 40
+            },
+            {
+                "text": "ذرية",
+                "confidence": 1.0,
+                "start_index": 44
+            },
+            {
+                "text": "لهم",
+                "confidence": 1.0,
+                "start_index": 49
+            },
+            {
+                "text": "(2)",
+                "confidence": 1.0,
+                "start_index": 53
+            },
+            {
+                "text": "،",
+                "confidence": 1.0,
+                "start_index": 57
+            },
+            {
+                "text": "وقد",
+                "confidence": 1.0,
+                "start_index": 59
+            },
+            {
+                "text": "نقل",
+                "confidence": 1.0,
+                "start_index": 63
+            },
+            {
+                "text": "الرازي",
+                "confidence": 1.0,
+                "start_index": 67
+            },
+            {
+                "text": "الاتفاق",
+                "confidence": 1.0,
+                "start_index": 74
+            },
+            {
+                "text": "على",
+                "confidence": 1.0,
+                "start_index": 82
+            },
+            {
+                "text": "ذلك،",
+                "confidence": 1.0,
+                "start_index": 86
+            },
+            {
+                "text": "فقال:",
+                "confidence": 1.0,
+                "start_index": 91
+            },
+            {
+                "text": "\"اتفقوا",
+                "confidence": 1.0,
+                "start_index": 97
+            },
+            {
+                "text": "على",
+                "confidence": 1.0,
+                "start_index": 105
+            },
+            {
+                "text": "أن",
+                "confidence": 1.0,
+                "start_index": 109
+            },
+            {
+                "text": "الملائكة",
+                "confidence": 1.0,
+                "start_index": 112
+            },
+            {
+                "text": "\\frac{\\partial",
+                "confidence": 1.0,
+                "start_index": 121
+            },
+            {
+                "text": "t}{\\partial",
+                "confidence": 1.0,
+                "start_index": 136
+            },
+            {
+                "text": "\\theta}",
+                "confidence": 1.0,
+                "start_index": 148
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 156
+            },
+            {
+                "text": "\\lim_{h",
+                "confidence": 1.0,
+                "start_index": 158
+            },
+            {
+                "text": "\\to",
+                "confidence": 1.0,
+                "start_index": 166
+            },
+            {
+                "text": "0}",
+                "confidence": 1.0,
+                "start_index": 170
+            },
+            {
+                "text": "\\frac{\\exp(\\theta",
+                "confidence": 1.0,
+                "start_index": 173
+            },
+            {
+                "text": "+",
+                "confidence": 1.0,
+                "start_index": 191
+            },
+            {
+                "text": "h)",
+                "confidence": 1.0,
+                "start_index": 193
+            },
+            {
+                "text": "-",
+                "confidence": 1.0,
+                "start_index": 196
+            },
+            {
+                "text": "\\exp(\\theta)}{h}",
+                "confidence": 1.0,
+                "start_index": 198
+            },
+            {
+                "text": "+",
+                "confidence": 1.0,
+                "start_index": 215
+            },
+            {
+                "text": "\\frac{j}{\\alpha^2}",
+                "confidence": 1.0,
+                "start_index": 217
+            },
+            {
+                "text": "\\prod_{\\alpha=1}^{n}",
+                "confidence": 1.0,
+                "start_index": 236
+            },
+            {
+                "text": "(1",
+                "confidence": 1.0,
+                "start_index": 257
+            },
+            {
+                "text": "-",
+                "confidence": 1.0,
+                "start_index": 260
+            },
+            {
+                "text": "\\theta_\\alpha)",
+                "confidence": 1.0,
+                "start_index": 262
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 277
+            },
+            {
+                "text": "0",
+                "confidence": 1.0,
+                "start_index": 279
+            },
+            {
+                "text": "##",
+                "confidence": 1.0,
+                "start_index": 281
+            },
+            {
+                "text": "تعريف",
+                "confidence": 1.0,
+                "start_index": 284
+            },
+            {
+                "text": "لا",
+                "confidence": 1.0,
+                "start_index": 290
+            },
+            {
+                "text": "يأكلون",
+                "confidence": 1.0,
+                "start_index": 293
+            },
+            {
+                "text": "ولا",
+                "confidence": 1.0,
+                "start_index": 300
+            },
+            {
+                "text": "يشربون،",
+                "confidence": 1.0,
+                "start_index": 304
+            },
+            {
+                "text": "ولاينكحون،",
+                "confidence": 1.0,
+                "start_index": 312
+            },
+            {
+                "text": "يسبحون",
+                "confidence": 1.0,
+                "start_index": 323
+            },
+            {
+                "text": "الليل",
+                "confidence": 1.0,
+                "start_index": 330
+            },
+            {
+                "text": "والنهار",
+                "confidence": 1.0,
+                "start_index": 336
+            },
+            {
+                "text": "لايفترون\"",
+                "confidence": 1.0,
+                "start_index": 344
+            },
+            {
+                "text": "(3)",
+                "confidence": 1.0,
+                "start_index": 354
+            },
+            {
+                "text": "،",
+                "confidence": 1.0,
+                "start_index": 358
+            },
+            {
+                "text": "وقال",
+                "confidence": 1.0,
+                "start_index": 360
+            },
+            {
+                "text": "السفاريني:",
+                "confidence": 1.0,
+                "start_index": 365
+            },
+            {
+                "text": "t_{n+1}",
+                "confidence": 1.0,
+                "start_index": 376
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 384
+            },
+            {
+                "text": "t_n",
+                "confidence": 1.0,
+                "start_index": 386
+            },
+            {
+                "text": "-",
+                "confidence": 1.0,
+                "start_index": 390
+            },
+            {
+                "text": "\\alpha",
+                "confidence": 1.0,
+                "start_index": 392
+            },
+            {
+                "text": "\\nabla",
+                "confidence": 1.0,
+                "start_index": 399
+            },
+            {
+                "text": "f(t_n)",
+                "confidence": 1.0,
+                "start_index": 406
+            },
+            {
+                "text": "+",
+                "confidence": 1.0,
+                "start_index": 413
+            },
+            {
+                "text": "\\frac{z}{z^2}",
+                "confidence": 1.0,
+                "start_index": 415
+            },
+            {
+                "text": "![image](img-0)",
+                "confidence": 1.0,
+                "start_index": 430
+            },
+            {
+                "text": "##",
+                "confidence": 1.0,
+                "start_index": 447
+            },
+            {
+                "text": "تعريف",
+                "confidence": 1.0,
+                "start_index": 450
+            },
+            {
+                "text": "\"وقد",
+                "confidence": 1.0,
+                "start_index": 456
+            },
+            {
+                "text": "حكى",
+                "confidence": 1.0,
+                "start_index": 461
+            },
+            {
+                "text": "غير",
+                "confidence": 1.0,
+                "start_index": 465
+            },
+            {
+                "text": "واحد",
+                "confidence": 1.0,
+                "start_index": 469
+            },
+            {
+                "text": "من",
+                "confidence": 1.0,
+                "start_index": 474
+            },
+            {
+                "text": "محققي",
+                "confidence": 1.0,
+                "start_index": 477
+            },
+            {
+                "text": "العلماء:",
+                "confidence": 1.0,
+                "start_index": 483
+            },
+            {
+                "text": "الاتفاق",
+                "confidence": 1.0,
+                "start_index": 492
+            },
+            {
+                "text": "على",
+                "confidence": 1.0,
+                "start_index": 500
+            },
+            {
+                "text": "أن",
+                "confidence": 1.0,
+                "start_index": 504
+            },
+            {
+                "text": "الملائكة",
+                "confidence": 1.0,
+                "start_index": 507
+            },
+            {
+                "text": "لا",
+                "confidence": 1.0,
+                "start_index": 516
+            },
+            {
+                "text": "يأكلون،",
+                "confidence": 1.0,
+                "start_index": 519
+            },
+            {
+                "text": "ولا",
+                "confidence": 1.0,
+                "start_index": 527
+            },
+            {
+                "text": "يشربون،",
+                "confidence": 1.0,
+                "start_index": 531
+            },
+            {
+                "text": "ولا",
+                "confidence": 1.0,
+                "start_index": 539
+            },
+            {
+                "text": "ينكحون\"",
+                "confidence": 1.0,
+                "start_index": 543
+            },
+            {
+                "text": "\\prod_{i=1}^{n}",
+                "confidence": 1.0,
+                "start_index": 551
+            },
+            {
+                "text": "(1",
+                "confidence": 1.0,
+                "start_index": 567
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 570
+            },
+            {
+                "text": "x_i)",
+                "confidence": 1.0,
+                "start_index": 572
+            },
+            {
+                "text": "=",
+                "confidence": 1.0,
+                "start_index": 577
+            },
+            {
+                "text": "0",
+                "confidence": 1.0,
+                "start_index": 579
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 32,
+            "top_left_y": 32,
+            "bottom_right_x": 591,
+            "bottom_right_y": 51,
+            "content": "ملاحظة",
+            "type": "title",
+            "confidence_scores": null,
+            "reading_index": 1
+        },
+        {
+            "top_left_x": 32,
+            "top_left_y": 56,
+            "bottom_right_x": 591,
+            "bottom_right_y": 101,
+            "content": "(1) ، ولا يشربون ولا يناكحون، ولا ذرية لهم (2) ، وقد نقل الرازي الاتفاق على ذلك، فقال: \"اتفقوا على أن الملائكة",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 2
+        },
+        {
+            "top_left_x": 32,
+            "top_left_y": 107,
+            "bottom_right_x": 591,
+            "bottom_right_y": 160,
+            "content": "\\frac{\\partial t}{\\partial \\theta} = \\lim_{h \\to 0} \\frac{\\exp(\\theta + h) - \\exp(\\theta)}{h} + \\frac{j}{\\alpha^2}",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 3
+        },
+        {
+            "top_left_x": 20,
+            "top_left_y": 192,
+            "bottom_right_x": 607,
+            "bottom_right_y": 256,
+            "content": "\\prod_{\\alpha=1}^{n} (1 - \\theta_\\alpha) = 0",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 4
+        },
+        {
+            "top_left_x": 32,
+            "top_left_y": 274,
+            "bottom_right_x": 591,
+            "bottom_right_y": 296,
+            "content": "تعريف",
+            "type": "title",
+            "confidence_scores": null,
+            "reading_index": 5
+        },
+        {
+            "top_left_x": 32,
+            "top_left_y": 301,
+            "bottom_right_x": 591,
+            "bottom_right_y": 324,
+            "content": "لا يأكلون ولا يشربون، ولاينكحون، يسبحون الليل والنهار لايفترون\" (3) ، وقال السفاريني:",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 6
+        },
+        {
+            "top_left_x": 32,
+            "top_left_y": 330,
+            "bottom_right_x": 591,
+            "bottom_right_y": 377,
+            "content": "t_{n+1} = t_n - \\alpha \\nabla f(t_n) + \\frac{z}{z^2}",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 7
+        },
+        {
+            "top_left_x": 20,
+            "top_left_y": 409,
+            "bottom_right_x": 607,
+            "bottom_right_y": 569,
+            "content": "![image](img-0)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 8
+        },
+        {
+            "top_left_x": 32,
+            "top_left_y": 593,
+            "bottom_right_x": 591,
+            "bottom_right_y": 611,
+            "content": "تعريف",
+            "type": "title",
+            "confidence_scores": null,
+            "reading_index": 9
+        },
+        {
+            "top_left_x": 32,
+            "top_left_y": 616,
+            "bottom_right_x": 591,
+            "bottom_right_y": 638,
+            "content": "\"وقد حكى غير واحد من محققي العلماء: الاتفاق على أن الملائكة لا يأكلون، ولا يشربون، ولا ينكحون\"",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 10
+        },
+        {
+            "top_left_x": 32,
+            "top_left_y": 644,
+            "bottom_right_x": 591,
+            "bottom_right_y": 709,
+            "content": "\\prod_{i=1}^{n} (1 = x_i) = 0",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 11
+        }
+    ],
+    "meta": {
+        "template": "math_proof",
+        "hybrid": "chart",
+        "augmentation": {
+            "name": "watermark"
+        }
+    }
+}

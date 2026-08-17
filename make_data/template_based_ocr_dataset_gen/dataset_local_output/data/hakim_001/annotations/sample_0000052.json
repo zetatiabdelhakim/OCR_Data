@@ -1,0 +1,104 @@
+{
+    "markdown": "\n![image](img-0)\n\nيشربون، ولاينكحون، يسبحون الليل\nوالنهار لايفترون\" (3)",
+    "images": [
+        {
+            "id": "img-0",
+            "top_left_x": 244,
+            "top_left_y": 362,
+            "bottom_right_x": 308,
+            "bottom_right_y": 426,
+            "reading_index": 1
+        }
+    ],
+    "tables": [],
+    "hyperlinks": [],
+    "header": null,
+    "footer": null,
+    "dimensions": {
+        "dpi": 96,
+        "height": 865,
+        "width": 552
+    },
+    "confidence_scores": {
+        "word_confidence_scores": [
+            {
+                "text": "![image](img-0)",
+                "confidence": 1.0,
+                "start_index": 1
+            },
+            {
+                "text": "يشربون،",
+                "confidence": 1.0,
+                "start_index": 18
+            },
+            {
+                "text": "ولاينكحون،",
+                "confidence": 1.0,
+                "start_index": 26
+            },
+            {
+                "text": "يسبحون",
+                "confidence": 1.0,
+                "start_index": 37
+            },
+            {
+                "text": "الليل",
+                "confidence": 1.0,
+                "start_index": 44
+            },
+            {
+                "text": "والنهار",
+                "confidence": 1.0,
+                "start_index": 50
+            },
+            {
+                "text": "لايفترون\"",
+                "confidence": 1.0,
+                "start_index": 58
+            },
+            {
+                "text": "(3)",
+                "confidence": 1.0,
+                "start_index": 68
+            }
+        ],
+        "average_page_confidence_score": 1.0,
+        "minimum_page_confidence_score": 1.0
+    },
+    "blocks": [
+        {
+            "top_left_x": 244,
+            "top_left_y": 362,
+            "bottom_right_x": 308,
+            "bottom_right_y": 426,
+            "content": "![image](img-0)",
+            "type": "image",
+            "confidence_scores": null,
+            "reading_index": 1
+        },
+        {
+            "top_left_x": 94,
+            "top_left_y": 448,
+            "bottom_right_x": 458,
+            "bottom_right_y": 476,
+            "content": "يشربون، ولاينكحون، يسبحون الليل",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 2
+        },
+        {
+            "top_left_x": 186,
+            "top_left_y": 486,
+            "bottom_right_x": 366,
+            "bottom_right_y": 503,
+            "content": "والنهار لايفترون\" (3)",
+            "type": "text",
+            "confidence_scores": null,
+            "reading_index": 3
+        }
+    ],
+    "meta": {
+        "template": "minimalist",
+        "hybrid": null
+    }
+}
