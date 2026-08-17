@@ -1,16 +1,33 @@
-# Environments
+# ── Secrets ──────────────────────────────────────────────────────────────────
 .env
+
+# ── Python ───────────────────────────────────────────────────────────────────
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
 
+# ── Virtual environments ──────────────────────────────────────────────────────
+.venv/
+venv/
+env/
 
-# Dataset Outputs
+# ── Runtime state (generated per-machine, not for sharing) ───────────────────
+state.yaml
+
+# ── Dataset outputs ───────────────────────────────────────────────────────────
 dataset/
+dataset_local_output/
 nature_images/
 
-# Editor
+# ── Temp generation folders ───────────────────────────────────────────────────
+temp_generation_*
+
+# ── Editors ───────────────────────────────────────────────────────────────────
 .vscode/
 .idea/
-
-#temp folders
-temp_generation_*
+*.swp
