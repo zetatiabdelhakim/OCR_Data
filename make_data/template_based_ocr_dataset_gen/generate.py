@@ -43,6 +43,7 @@ USER_NAME = config.get("user_name", "user")
 REPO_ID = config.get("repo_id", "org/repo")
 DESTINATION = config.get("destination", "lcl")
 GLOBAL_LIMIT = config.get("global_limit", 50000)
+USER_LOCAL_LIMIT = config.get("user_local_limit", 20000)
 CHUNK_LIMIT = config.get("chunk_limit", 9000)
 NUM_SAMPLES = config.get("num_samples", 2000)
 
@@ -263,9 +264,15 @@ def main():
                 # Continue the loop with new folder
                 continue
                 
+            user_historical_total = local_total + folder_count
+            if user_historical_total >= USER_LOCAL_LIMIT:
+                print(f"User local limit of {USER_LOCAL_LIMIT} reached (Historical Total: {user_historical_total}). Exiting.")
+                break
+                
             remaining_in_chunk = CHUNK_LIMIT - folder_count
             remaining_in_run = NUM_SAMPLES - total_generated_this_run
-            batch_size = min(remaining_in_chunk, remaining_in_run, REFRESH_INTERVAL)
+            remaining_allowed = USER_LOCAL_LIMIT - user_historical_total
+            batch_size = min(remaining_in_chunk, remaining_in_run, REFRESH_INTERVAL, remaining_allowed)
             
             if batch_size <= 0:
                 break

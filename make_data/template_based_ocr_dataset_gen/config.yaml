@@ -23,6 +23,10 @@ destination: "hf"
 # Total target size of the dataset across the team. Script halts if total images >= global_limit
 global_limit: 50000
 
+# Absolute maximum number of images a SINGLE user is allowed to generate on their machine across all runs.
+# The script will completely halt the user once their local historical total reaches this number.
+user_local_limit: 20000
+
 # Maximum number of images allowed per batch subfolder before rotating to a new folder ID (Max recommended: 9000)
 chunk_limit: 9000
 
