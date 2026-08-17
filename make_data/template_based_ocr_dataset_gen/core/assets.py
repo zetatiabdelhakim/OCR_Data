@@ -11,16 +11,23 @@ import base64
 import mimetypes
 import pandas as pd
 
+import yaml
+
 # ------------------------------------------------------------------
 # Paths (edit these to match your local setup)
 # ------------------------------------------------------------------
 
-IMAGE_FOLDER_PATH = "../nature_images"
+_CONFIG_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "config.yaml")
+with open(_CONFIG_PATH, "r", encoding="utf-8") as f:
+    config = yaml.safe_load(f)
 
+IMAGE_FOLDER_PATH = config.get("nature_images_dir", "../nature_images")
+
+# These will be updated dynamically by generate.py for each chunk
 DATASET_IMAGES_PATH = "../dataset/images"
 DATASET_ANNOTATIONS_PATH = "../dataset/annotations"
 
-FONTS_FOLDER_PATH = "./../fonts"
+FONTS_FOLDER_PATH = config.get("fonts_dir", "./../fonts")
 
 IMAGE_PATHS = []
 FONTS = []
@@ -137,8 +144,8 @@ def random_image_b64():
 # Sizing helpers - real-world sizes converted to CSS px, with jitter
 # ------------------------------------------------------------------
 
-DEFAULT_DPI = 96
-DEFAULT_JITTER_PCT = 0.12  # +/-12%, inside the 10-15% range requested
+DEFAULT_DPI = config.get("default_dpi", 96)
+DEFAULT_JITTER_PCT = config.get("default_jitter_pct", 0.12)
 
 
 def mm_to_px(mm, dpi=DEFAULT_DPI):

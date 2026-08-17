@@ -21,7 +21,14 @@ HYBRID_GENERATORS = {
     "theorem": lambda: components.gen_theorem_box(compact=True),
 }
 
-DEFAULT_HYBRID_PROBABILITY = 0.28
+import os
+import yaml
+
+_CONFIG_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "config.yaml")
+with open(_CONFIG_PATH, "r", encoding="utf-8") as f:
+    config = yaml.safe_load(f)
+
+DEFAULT_HYBRID_PROBABILITY = config.get("hybrid_probability", 0.28)
 
 
 def maybe_pick_hybrid(probability=DEFAULT_HYBRID_PROBABILITY, exclude=None):

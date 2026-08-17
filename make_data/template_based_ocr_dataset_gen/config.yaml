@@ -1,0 +1,71 @@
+# ==============================================================================
+# SYNTHETIC DOCUMENT ENGINE CONFIGURATION
+# Every variable used across the codebase is centralized here.
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. TEAM & IDENTITY SETTINGS
+# ------------------------------------------------------------------------------
+# Unique identifier for the developer running this script (used in folder naming)
+user_name: "hakim"
+
+# Target Hugging Face dataset repository namespace (Format: "org_or_user/repo_name")
+repo_id: "OCR-Data/dataset"
+
+# Target destination for generated outputs:
+#   - 'hf'  : Pushes completed batch folders to Hugging Face Hub, then deletes local temporary copies.
+#   - 'lcl' : Moves completed batch folders to a local directory specified below.
+destination: "hf"
+
+# ------------------------------------------------------------------------------
+# 2. GENERATION LIMITS & BATCH CHUNKING
+# ------------------------------------------------------------------------------
+# Total target size of the dataset across the team. Script halts if total images >= global_limit
+global_limit: 50000
+
+# Maximum number of images allowed per batch subfolder before rotating to a new folder ID (Max recommended: 9000)
+chunk_limit: 9000
+
+# Number of samples to generate in one run (if not capped by global limit). 
+# Set to a high number to run indefinitely until global_limit is reached.
+num_samples: 10000
+
+# Number of concurrent workers (processes) used during generation.
+# Set to 'auto' to use minimum of CPU count or 10. Otherwise, provide an integer.
+workers: "auto"
+
+# Maximum number of workers to use when workers is set to 'auto'
+maximum_num_of_workers: 10
+
+# Probability threshold (0.0 to 1.0) for injecting hybrid foreign snippets (charts, quotes, tables, etc.)
+hybrid_probability: 0.28
+
+# The refresh interval for batches of sample generation tasks.
+refresh_interval: 1000
+
+# Number of books/texts to fetch from the Hugging Face dataset at a time.
+num_books_to_fetch: 7
+
+# ------------------------------------------------------------------------------
+# 3. ASSETS & CORPUS PATHS
+# ------------------------------------------------------------------------------
+# Hugging Face dataset ID for the text corpus
+text_corpus_hf_id: "MathematicianNLPer/hamela_books_text_full_ok"
+
+# Relative path to the directory containing background images, covers, and figures
+nature_images_dir: "../nature_images"
+
+# Relative path to the fonts folder
+fonts_dir: "../fonts"
+
+# Local base path used when destination is set to 'lcl'
+local_output_dir: "./dataset_local_output"
+
+# ------------------------------------------------------------------------------
+# 4. RENDERING & PLAYWRIGHT ENGINE SETTINGS
+# ------------------------------------------------------------------------------
+# Base DPI used for mm to px conversion in templates
+default_dpi: 96
+
+# Jitter percentage used for varying layout sizes (0.12 = +/- 12%)
+default_jitter_pct: 0.12

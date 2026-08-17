@@ -11,3 +11,6 @@ nature_images/
 # Editor
 .vscode/
 .idea/
+
+#temp folders
+temp_generation_*

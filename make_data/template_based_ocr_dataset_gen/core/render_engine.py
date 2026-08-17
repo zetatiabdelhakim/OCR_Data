@@ -347,7 +347,18 @@ async def render_and_extract(browser, html_content, width, height, output_image_
     vp_height = initial_auto_height_viewport if auto_height else height
     page = await browser.new_page(viewport={"width": width, "height": vp_height})
 
-    await page.set_content(html_content, wait_until="networkidle")
+    try:
+        # We use 'load' instead of 'networkidle' because when spawning 10 workers rendering thousands
+        # of pages, CDNs (like Google Fonts or jsdelivr) will heavily throttle the IP, causing
+        # stray font/script requests to hang and timeout. 'load' ensures the critical DOM is ready.
+        await page.set_content(html_content, wait_until="load", timeout=25000)
+    except Exception as e:
+        if "Timeout" in str(e):
+            # If it still times out on 'load', the DOM is likely mostly there (just a hanging external asset).
+            # We proceed with extraction instead of failing the sample.
+            pass
+        else:
+            raise
 
     result = await page.evaluate(EXTRACTION_SCRIPT, {"autoHeight": auto_height})
     boxes = result["boxes"]
