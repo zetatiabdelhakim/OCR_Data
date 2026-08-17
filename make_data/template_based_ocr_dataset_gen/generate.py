@@ -67,7 +67,8 @@ def load_state():
     return {
         "current_folder_name": "",
         "current_folder_count": 0,
-        "local_total_pushed": 0
+        "local_total_pushed": 0,
+        "current_folder_index": 1
     }
 
 def save_state(state):
@@ -171,9 +172,53 @@ def get_global_count(api):
         return 0
 
 
-def generate_folder_name():
-    random_chars = ''.join(random.choices(string.ascii_lowercase + string.digits, k=3))
-    return f"{USER_NAME}_{random_chars}"
+def generate_folder_name(index):
+    return f"{USER_NAME}_{index:03d}"
+
+
+def flush_current_folder(state, api):
+    folder_name = state["current_folder_name"]
+    folder_count = state["current_folder_count"]
+    temp_dir = os.path.abspath(f"./temp_generation_{folder_name}")
+    
+    print(f"Processing upload/move for folder {folder_name} ({folder_count} samples)...")
+    if DESTINATION == "hf":
+        print(f"Uploading {temp_dir} to Hugging Face: data/{folder_name} ...")
+        try:
+            api.upload_folder(
+                folder_path=temp_dir,
+                path_in_repo=f"data/{folder_name}",
+                repo_id=REPO_ID,
+                repo_type="dataset"
+            )
+            print("Upload complete. Cleaning up local temp dir...")
+            shutil.rmtree(temp_dir, ignore_errors=True)
+        except Exception as e:
+            print(f"Failed to upload to Hugging Face: {e}")
+            return False
+    else:
+        dest_path = os.path.join(LOCAL_OUTPUT_DIR, folder_name)
+        print(f"Moving {temp_dir} to {dest_path} ...")
+        os.makedirs(LOCAL_OUTPUT_DIR, exist_ok=True)
+        if os.path.exists(dest_path):
+            shutil.rmtree(dest_path)
+        shutil.move(temp_dir, dest_path)
+    
+    # Reset state for next chunk
+    state["local_total_pushed"] += folder_count
+    state["current_folder_index"] = state.get("current_folder_index", 1) + 1
+    state["current_folder_name"] = generate_folder_name(state["current_folder_index"])
+    state["current_folder_count"] = 0
+    save_state(state)
+    
+    if DESTINATION == "hf":
+        global_count = get_global_count(api)
+        if global_count >= GLOBAL_LIMIT:
+            print(f"Global limit reached! ({global_count} >= {GLOBAL_LIMIT}). Exiting.")
+            return False
+            
+    return True
+
 
 
 def main():
@@ -197,7 +242,8 @@ def main():
     state = load_state()
     
     if not state.get("current_folder_name"):
-        state["current_folder_name"] = generate_folder_name()
+        state["current_folder_index"] = state.get("current_folder_index", 1)
+        state["current_folder_name"] = generate_folder_name(state["current_folder_index"])
         state["current_folder_count"] = 0
         save_state(state)
         
@@ -225,42 +271,10 @@ def main():
             local_total = state["local_total_pushed"]
             
             if folder_count >= CHUNK_LIMIT:
-                temp_dir = os.path.abspath(f"./temp_generation_{folder_name}")
-                print(f"Chunk limit ({CHUNK_LIMIT}) reached for folder {folder_name}. Processing upload/move...")
-                if DESTINATION == "hf":
-                    print(f"Uploading {temp_dir} to Hugging Face: data/{folder_name} ...")
-                    try:
-                        api.upload_folder(
-                            folder_path=temp_dir,
-                            path_in_repo=f"data/{folder_name}",
-                            repo_id=REPO_ID,
-                            repo_type="dataset"
-                        )
-                        print("Upload complete. Cleaning up local temp dir...")
-                        shutil.rmtree(temp_dir, ignore_errors=True)
-                    except Exception as e:
-                        print(f"Failed to upload to Hugging Face: {e}")
-                        return
-                else:
-                    dest_path = os.path.join(LOCAL_OUTPUT_DIR, folder_name)
-                    print(f"Moving {temp_dir} to {dest_path} ...")
-                    os.makedirs(LOCAL_OUTPUT_DIR, exist_ok=True)
-                    if os.path.exists(dest_path):
-                        shutil.rmtree(dest_path)
-                    shutil.move(temp_dir, dest_path)
-                
-                # Reset state for next chunk
-                state["local_total_pushed"] += folder_count
-                state["current_folder_name"] = generate_folder_name()
-                state["current_folder_count"] = 0
-                save_state(state)
-                
-                if DESTINATION == "hf":
-                    global_count = get_global_count(api)
-                    if global_count >= GLOBAL_LIMIT:
-                        print(f"Global limit reached! ({global_count} >= {GLOBAL_LIMIT}). Exiting.")
-                        break
-                
+                print(f"Chunk limit ({CHUNK_LIMIT}) reached for folder {folder_name}.")
+                success = flush_current_folder(state, api)
+                if not success:
+                    break
                 # Continue the loop with new folder
                 continue
                 
@@ -329,6 +343,13 @@ def main():
                 r.get()
                 
             pbar.close()
+
+    # Final flush of any remaining un-pushed samples
+    state = load_state()
+    if state.get("current_folder_count", 0) > 0:
+        print("\nFinalizing and pushing remaining un-pushed samples...")
+        flush_current_folder(state, api)
+
 
 if __name__ == "__main__":
     multiprocessing.freeze_support()
