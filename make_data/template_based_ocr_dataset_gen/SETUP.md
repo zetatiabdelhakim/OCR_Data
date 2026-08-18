@@ -16,7 +16,7 @@ Click the link below and accept the invite:
 
 ```bash
 git clone https://github.com/zetatiabdelhakim/OCR_Data.git
-cd OCR-DATA\make_data\template_based_ocr_dataset_gen
+cd OCR_DATA\make_data\template_based_ocr_dataset_gen
 ```
 
 ---
