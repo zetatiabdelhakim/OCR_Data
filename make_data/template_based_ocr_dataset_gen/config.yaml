@@ -15,7 +15,7 @@ repo_id: "OCR-Data/dataset"
 # Target destination for generated outputs:
 #   - 'hf'  : Pushes completed batch folders to Hugging Face Hub, then deletes local temporary copies.
 #   - 'lcl' : Moves completed batch folders to a local directory specified below.
-destination: "lcl"
+destination: "hf"
 
 # ------------------------------------------------------------------------------
 # 2. GENERATION LIMITS & BATCH CHUNKING
@@ -25,7 +25,7 @@ global_limit: 1000000
 
 # Absolute maximum number of images a SINGLE user is allowed to generate on their machine across all runs.
 # The script will completely halt the user once their local historical total reaches this number.
-user_local_limit: 1000
+user_local_limit: 10000000
 
 # Maximum number of images allowed per batch subfolder before rotating to a new folder ID (Max recommended: 9000)
 chunk_limit: 9990
@@ -45,10 +45,10 @@ maximum_num_of_workers: 10
 hybrid_probability: 0.07
 
 # The refresh interval for batches of sample generation tasks.
-refresh_interval: 3000
+refresh_interval: 9990
 
 # Number of books/texts to fetch from the Hugging Face dataset at a time.
-num_books_to_fetch: 7
+num_books_to_fetch: 10
 
 # ------------------------------------------------------------------------------
 # 3. ASSETS & CORPUS PATHS

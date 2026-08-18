@@ -5,19 +5,36 @@ Production rendering engine for dataset generation. Handles layout isolation,
 KaTeX auto-scaling, overlap resolution, and precision bounding-box extraction.
 """
 
+import os
 import json
 from playwright.async_api import async_playwright
 from core import assets
 
-FONT_IMPORT_URL = (
-    "https://fonts.googleapis.com/css2?"
-    "family=Almarai:wght@400;700&family=Amiri:wght@400;700&family=Cairo:wght@400;700"
-    "&family=Changa:wght@400;700&family=Tajawal:wght@400;700&family=Aref+Ruqaa:wght@400;700"
-    "&family=Rakkas&family=Lalezar&family=Katibeh&family=Reem+Kufi:wght@400;700"
-    "&family=El+Messiri:wght@400;700&family=Markazi+Text&family=Mada&family=Harmattan"
-    "&display=swap"
-)
+_VENDOR_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "vendor")
 
+try:
+    with open(os.path.join(_VENDOR_DIR, "katex.min.css"), "r", encoding="utf-8") as f:
+        KATEX_CSS = f.read()
+    with open(os.path.join(_VENDOR_DIR, "katex.min.js"), "r", encoding="utf-8") as f:
+        KATEX_JS = f.read()
+    with open(os.path.join(_VENDOR_DIR, "chart.min.js"), "r", encoding="utf-8") as f:
+        CHART_JS = f.read()
+    
+    # We replace URLs in katex.min.css if needed, but KaTeX fonts might still hit CDN.
+    # To be fully offline for CSS, we leave the CSS content, it might try to load fonts.
+    # It's better than blocking.
+    CDN_HTML = f"""
+<style>{KATEX_CSS}</style>
+<script>{KATEX_JS}</script>
+<script>{CHART_JS}</script>
+"""
+except Exception as e:
+    print(f"Warning: could not load local vendor files: {e}. Using CDN.")
+    CDN_HTML = """
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+"""
 
 def build_html_page(width, height, body_html, auto_height=False):
     """Wrap template HTML in a structured document with layout isolation rules."""
@@ -30,11 +47,8 @@ def build_html_page(width, height, body_html, auto_height=False):
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
-<script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+{CDN_HTML}
 <style>
-@import url('{FONT_IMPORT_URL}');
 {used_fonts_css}
 
 * {{ 
@@ -348,28 +362,30 @@ async def render_and_extract(browser, html_content, width, height, output_image_
     page = await browser.new_page(viewport={"width": width, "height": vp_height})
 
     try:
-        # We use 'load' instead of 'networkidle' because when spawning 10 workers rendering thousands
-        # of pages, CDNs (like Google Fonts or jsdelivr) will heavily throttle the IP, causing
-        # stray font/script requests to hang and timeout. 'load' ensures the critical DOM is ready.
-        await page.set_content(html_content, wait_until="load", timeout=25000)
-    except Exception as e:
-        if "Timeout" in str(e):
-            # If it still times out on 'load', the DOM is likely mostly there (just a hanging external asset).
-            # We proceed with extraction instead of failing the sample.
-            pass
-        else:
-            raise
+        try:
+            # We use 'load' instead of 'networkidle' because when spawning 10 workers rendering thousands
+            # of pages, CDNs (like Google Fonts or jsdelivr) will heavily throttle the IP, causing
+            # stray font/script requests to hang and timeout. 'load' ensures the critical DOM is ready.
+            await page.set_content(html_content, wait_until="load", timeout=25000)
+        except Exception as e:
+            if "Timeout" in str(e):
+                # If it still times out on 'load', the DOM is likely mostly there (just a hanging external asset).
+                # We proceed with extraction instead of failing the sample.
+                pass
+            else:
+                raise
 
-    result = await page.evaluate(EXTRACTION_SCRIPT, {"autoHeight": auto_height})
-    boxes = result["boxes"]
+        result = await page.evaluate(EXTRACTION_SCRIPT, {"autoHeight": auto_height})
+        boxes = result["boxes"]
 
-    final_height = height
-    if auto_height and result.get("measuredHeight"):
-        final_height = max(120, min(result["measuredHeight"], initial_auto_height_viewport))
-        await page.set_viewport_size({"width": width, "height": final_height})
+        final_height = height
+        if auto_height and result.get("measuredHeight"):
+            final_height = max(120, min(result["measuredHeight"], initial_auto_height_viewport))
+            await page.set_viewport_size({"width": width, "height": final_height})
 
-    await page.screenshot(path=output_image_path)
-    await page.close()
+        await page.screenshot(path=output_image_path)
+    finally:
+        await page.close()
 
     blocks = []
     tables = []

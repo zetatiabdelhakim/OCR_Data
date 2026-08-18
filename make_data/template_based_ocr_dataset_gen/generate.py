@@ -21,11 +21,7 @@ import shutil
 import string
 import time
 from tqdm import tqdm
-from playwright.async_api import async_playwright
 
-from dotenv import load_dotenv
-from datasets import load_dataset
-from huggingface_hub import login, HfApi
 
 from core.text_provider import DocumentContext, current_document
 from core import assets
@@ -126,10 +122,19 @@ async def generate_one(browser, index, books_pool, template_name, images_path, a
 
 
 async def worker_task(tasks, queue, books_pool):
+    from playwright.async_api import async_playwright
     async with async_playwright() as p:
         browser = None
         try:
             browser = await p.chromium.launch(headless=True)
+        except Exception as e:
+            print(f"FATAL: Browser launch failed: {e}")
+            for _ in tasks:
+                queue.put(False)
+            return
+
+        tasks_done = 0
+        try:
             for i, (index, template_name, images_path, annotations_path) in enumerate(tasks):
                 # Relaunch browser periodically to prevent Node.js IPC pipe crashes
                 if i > 0 and i % 30 == 0:
@@ -141,17 +146,22 @@ async def worker_task(tasks, queue, books_pool):
                     
                 try:
                     await generate_one(browser, index, books_pool, template_name, images_path, annotations_path)
+                    queue.put(True)
                 except Exception as e:
                     print(f"Error generating sample {index}: {e}")
+                    queue.put(False)
                     if "Connection closed" in str(e) or "Target closed" in str(e):
                         try:
                             await browser.close()
                         except Exception:
                             pass
                         browser = await p.chromium.launch(headless=True)
-                finally:
-                    queue.put(1)
+                tasks_done += 1
+        except Exception as e:
+            print(f"Worker crashed: {e}")
         finally:
+            for _ in range(len(tasks) - tasks_done):
+                queue.put(False)
             if browser:
                 try:
                     await browser.close()
@@ -274,6 +284,10 @@ def flush_current_folder(state, api):
 
 
 def main():
+    from dotenv import load_dotenv
+    from datasets import load_dataset
+    from huggingface_hub import login, HfApi
+    import queue as queue_module
     load_dotenv()
     
     hf_token = os.environ.get("HF_TOKEN")
@@ -315,6 +329,29 @@ def main():
     
     total_generated_this_run = 0
 
+    print("Running environment checks...")
+    try:
+        import psutil
+        available_gb = psutil.virtual_memory().available / (1024**3)
+        global WORKERS
+        if available_gb < 2.0:
+            print(f"WARNING: Only {available_gb:.1f}GB RAM available. Reducing workers.")
+            WORKERS = min(WORKERS, max(2, int(available_gb)))
+    except ImportError:
+        pass
+
+    async def smoke_test():
+        from playwright.async_api import async_playwright
+        async with async_playwright() as p:
+            browser = await p.chromium.launch(headless=True)
+            await browser.close()
+            print("✓ Chromium browser launch OK")
+    try:
+        asyncio.run(smoke_test())
+    except Exception as e:
+        print(f"FATAL: Playwright smoke test failed: {e}. Please run 'playwright install chromium'")
+        return
+
     with multiprocessing.Pool(processes=WORKERS, initializer=init_worker) as pool:
         while total_generated_this_run < NUM_SAMPLES:
             state = load_state()
@@ -350,6 +387,18 @@ def main():
             os.makedirs(images_path, exist_ok=True)
             os.makedirs(annotations_path, exist_ok=True)
             
+            # Reconcile state with actual files on disk
+            if os.path.exists(images_path) and os.path.exists(annotations_path):
+                actual_pairs = len([
+                    f for f in os.listdir(images_path) if f.endswith('.png')
+                    and os.path.exists(os.path.join(annotations_path, f.replace('.png', '.json')))
+                ])
+                if actual_pairs != folder_count:
+                    print(f"State correction: state says {folder_count}, actual valid pairs = {actual_pairs}")
+                    state["current_folder_count"] = actual_pairs
+                    folder_count = actual_pairs
+                    save_state(state)
+            
             print(f"--- Folder: {folder_name} | Progress: {folder_count}/{CHUNK_LIMIT} ---")
             
             tasks_list = []
@@ -382,12 +431,17 @@ def main():
                 results.append(pool.apply_async(worker_process, args=(chunk, queue, books_pool)))
                 
             for _ in range(len(tasks_list)):
-                queue.get()
+                try:
+                    success = queue.get(timeout=120)
+                except queue_module.Empty:
+                    print("WARNING: Worker timeout — some workers may have died.")
+                    break
                 pbar.update(1)
                 
-                # Atomic State Persistence immediately after every single sample generation
-                state["current_folder_count"] += 1
-                save_state(state)
+                if success:
+                    # Atomic State Persistence immediately after every single sample generation
+                    state["current_folder_count"] += 1
+                    save_state(state)
                 total_generated_this_run += 1
                 
             # Ensure the batch completes
@@ -408,7 +462,8 @@ def main():
 
                 # 2. Collect original images from this batch
                 original_images = sorted([
-                    f for f in os.listdir(images_path) if f.endswith('.png')
+                    f"sample_{idx:07d}.png" for idx, _, _, _ in tasks_list
+                    if os.path.exists(os.path.join(images_path, f"sample_{idx:07d}.png"))
                 ])
 
                 # 3. Build augmentation task list
