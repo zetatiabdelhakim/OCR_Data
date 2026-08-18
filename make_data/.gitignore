@@ -6,6 +6,7 @@ __pycache__/
 # Dataset Outputs
 dataset/
 nature_images/
+*dataset_local_output*
 
 # Editor
 .vscode/

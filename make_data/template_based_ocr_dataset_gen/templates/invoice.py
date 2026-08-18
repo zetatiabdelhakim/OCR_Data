@@ -9,7 +9,7 @@ BASE_MM = (210, 297)
 
 
 def _item_table(rows):
-    font = random.choice(assets.FONTS)
+    font = assets.get_page_body_font()
     color = random.choice(assets.COLORS)
     headers = ["البيان", "الكمية", "السعر", "المجموع"]
     html = '<div class="layout-node table-wrapper" data-label="table" style="width:100%; overflow:hidden; box-sizing:border-box;">'
@@ -24,7 +24,8 @@ def _item_table(rows):
         price = round(random.uniform(10, 300), 2)
         line_total = qty * price
         grand_total += line_total
-        cells = [assets.get_real_arabic_text(2, 5), str(qty), f"{price:,.2f}", f"{line_total:,.2f}"]
+        # Use semantic product names for invoice items
+        cells = [assets.get_semantic_product(), str(qty), f"{price:,.2f}", f"{line_total:,.2f}"]
         html += "<tr>" + "".join(
             f'<td class="layout-node autofit-text" data-label="table-cell" style="border:1px solid {color}; padding:8px; font-size:12px; overflow:hidden;">{c}</td>'
             for c in cells
@@ -35,23 +36,25 @@ def _item_table(rows):
 
 def generate(hybrid_html=""):
     width, height = assets.jittered_size(*BASE_MM)
-    font = random.choice(assets.FONTS)
+    font = assets.get_page_body_font()
+    title_font = assets.get_page_title_font()
 
-    org_name = assets.get_real_arabic_text(2, 4)
+    org_name = assets.get_semantic_org()
     invoice_no = f"INV-{random.randint(1000, 99999)}"
     date_line = f"{random.randint(1,28):02d}/{random.randint(1,12):02d}/{random.randint(2023,2026)}"
-    bill_to = assets.get_real_arabic_text(2, 5)
+    bill_to = assets.get_semantic_name()
 
     table_html, grand_total = _item_table(random.randint(4, 9))
 
-    def block(label, text, size=14, bold=False, align="right"):
+    def block(label, text, size=14, bold=False, align="right", use_title_font=False):
         weight = "bold" if bold else "normal"
+        f = title_font if use_title_font else font
         return (f'<div class="layout-node autofit-text" data-label="{label}" '
-                f'style="font-family:\'{font}\'; font-size:{size}px; font-weight:{weight}; text-align:{align}; '
+                f'style="font-family:\'{f}\'; font-size:{size}px; font-weight:{weight}; text-align:{align}; '
                 f'margin-bottom:8px; overflow:hidden;">{text}</div>')
 
     blocks = [
-        block("org-name", org_name, size=22, bold=True, align="center"),
+        block("org-name", org_name, size=22, bold=True, align="center", use_title_font=True),
         f'<div style="display:flex; justify-content:space-between; margin-bottom:14px;">'
         f'{block("invoice-number", invoice_no, size=13, align="left")}'
         f'{block("date-line", date_line, size=13, align="right")}</div>',

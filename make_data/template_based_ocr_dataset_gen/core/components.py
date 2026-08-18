@@ -6,9 +6,13 @@ these (plus its own bespoke bits). Each function returns a self
 contained HTML string following the layout-node / autofit-text /
 data-no-text conventions documented in render_engine.py.
 
+Font discipline (P4 change):
+  - ALL body-level content uses assets.get_page_body_font()
+  - ONLY headings / titles use assets.get_page_title_font()
+  - This gives a maximum of 2 distinct fonts per image.
+
 Most generators take a `compact` flag - when True they render at a
-smaller footprint so they can be used as *hybrid inserts* (a chart
-dropped into a receipt, an equation on a book cover, etc.) without
+smaller footprint so they can be used as *hybrid inserts* without
 overwhelming the host template.
 """
 
@@ -22,8 +26,9 @@ from . import assets
 # ------------------------------------------------------------------
 
 def gen_heading(text=None, label="heading", font=None, color=None, align=None, font_size=None):
-    text = text or assets.get_real_arabic_title()
-    font = font or random.choice(assets.FONTS)
+    text = text or assets.get_semantic_subject()
+    # Headings use the TITLE font — the one element that may differ from body
+    font = font or assets.get_page_title_font()
     color = color or random.choice(assets.COLORS)
     align = align or random.choice(["center", "right"])
     font_size = font_size or random.choice([24, 28, 32, 36])
@@ -40,7 +45,8 @@ def gen_heading(text=None, label="heading", font=None, color=None, align=None, f
 
 def gen_paragraph(text=None, columns=1, label="paragraph", font=None, color=None, font_size=None):
     text = text or assets.get_real_arabic_text(100, 300)
-    font = font or random.choice(assets.FONTS)
+    # Body paragraphs always use the page body font
+    font = font or assets.get_page_body_font()
     color = color or random.choice(assets.COLORS)
     font_size = font_size or random.choice([14, 16, 18])
 
@@ -61,7 +67,9 @@ def gen_paragraph(text=None, columns=1, label="paragraph", font=None, color=None
         chunks = chunks[:columns]
 
     col_gap = random.randint(15, 30)
-    html = f'<div class="layout-node" data-label="multi-column" style="display: grid; grid-template-columns: repeat({columns}, 1fr); gap: {col_gap}px; height: 100%; width: 100%; box-sizing: border-box; padding-bottom: 20px; min-height: 0; overflow: hidden;">'
+    html = (f'<div class="layout-node" data-label="multi-column" style="display: grid; '
+            f'grid-template-columns: repeat({columns}, 1fr); gap: {col_gap}px; height: 100%; '
+            f'width: 100%; box-sizing: border-box; padding-bottom: 20px; min-height: 0; overflow: hidden;">')
     for chunk in chunks:
         html += f"""
         <div class="layout-node autofit-text" data-label="{label}"
@@ -75,10 +83,10 @@ def gen_paragraph(text=None, columns=1, label="paragraph", font=None, color=None
 
 
 def gen_complex_paragraph(compact=False):
-    """Paragraph with an inner sub-heading and (70% chance) a floating image - the
-    'magazine article' block shared by the charts / image-gallery templates."""
+    """Paragraph with an inner sub-heading and (70% chance) a floating image."""
     text = assets.get_real_arabic_text(60, 220 if not compact else 80)
-    font = random.choice(assets.FONTS)
+    body_font = assets.get_page_body_font()
+    title_font = assets.get_page_title_font()
     color = random.choice(assets.COLORS)
     font_size = random.choice([14, 16, 18])
     h_level_size = font_size + 6
@@ -88,19 +96,20 @@ def gen_complex_paragraph(compact=False):
     if img_b64 and random.random() > 0.3:
         float_dir = random.choice(["right", "left"])
         margin_style = "margin: 0 0 10px 15px;" if float_dir == "right" else "margin: 0 15px 10px 0;"
+        caption = assets.get_figure_caption()
         img_html = f"""
         <div class="layout-node" data-label="figure" style="float: {float_dir}; width: 40%; {margin_style} border: 1px solid #94a3b8; border-radius: 4px; overflow: hidden; background: #e2e8f0; padding: 4px; box-sizing: border-box;">
             <div class="layout-node figure-image" data-label="figure-image" data-no-text="true"><img src="{img_b64}" style="width: 100%; height: auto; display: block;" /></div>
-            <div class="layout-node autofit-text" data-label="figure-caption" style="text-align:center; font-size: 12px; margin-top: 4px; color: #334155; font-weight: bold; overflow: hidden;">شكل: {assets.get_real_arabic_text(2, 4)}</div>
+            <div class="layout-node autofit-text" data-label="figure-caption" style="text-align:center; font-size: 12px; margin-top: 4px; color: #334155; font-family: '{body_font}'; font-weight: bold; overflow: hidden;">{caption}</div>
         </div>
         """
 
     return f"""
     <div class="layout-node" data-label="paragraph"
-         style="height: 100%; width: 100%; font-family: '{font}'; color: {color}; font-size:{font_size}px;
+         style="height: 100%; width: 100%; font-family: '{body_font}'; color: {color}; font-size:{font_size}px;
                 text-align: justify; overflow: hidden; line-height: 1.8; box-sizing: border-box; padding-bottom: 15px;
                 display: flex; flex-direction: column; min-height: 0;">
-        <div class="layout-node autofit-text" data-label="heading" style="margin-top: 0; margin-bottom: 10px; font-size: {h_level_size}px; color: {random.choice(assets.COLORS)}; font-weight: bold; flex-shrink: 0; overflow: hidden;">{assets.get_real_arabic_title()}</div>
+        <div class="layout-node autofit-text" data-label="heading" style="margin-top: 0; margin-bottom: 10px; font-size: {h_level_size}px; font-family: '{title_font}'; color: {random.choice(assets.COLORS)}; font-weight: bold; flex-shrink: 0; overflow: hidden;">{assets.get_semantic_subject()}</div>
         {img_html}
         <div class="layout-node autofit-text" data-label="paragraph" style="flex: 1; min-height: 0; overflow: hidden;">{text}</div>
     </div>
@@ -109,7 +118,7 @@ def gen_complex_paragraph(compact=False):
 
 def gen_quote():
     text = assets.get_real_arabic_text(10, 30)
-    font = random.choice(assets.FONTS)
+    font = assets.get_page_body_font()
     color = random.choice(assets.COLORS)
     return f"""
     <div class="layout-node" data-label="quote-block"
@@ -125,9 +134,10 @@ def gen_quote():
 
 
 def gen_poetry():
-    font = random.choice(assets.FONTS)
+    font = assets.get_page_body_font()
     color = random.choice(assets.COLORS)
-    lines = [assets.get_real_arabic_text(3, 7) for _ in range(random.randint(3, 6))]
+    # Use real Arabic hemistich lines for authenticity
+    lines = assets.get_poetry_lines(random.randint(3, 6))
     lines_html = "".join(
         f'<div class="layout-node autofit-text" data-label="poetry-line" '
         f'style="font-family: \'{font}\'; font-size: 18px; color: {color}; text-align: center; '
@@ -147,7 +157,7 @@ def gen_poetry():
 # ------------------------------------------------------------------
 
 def gen_table(rows=6, cols=3, compact=False):
-    font = random.choice(assets.FONTS)
+    font = assets.get_page_body_font()
     color = random.choice(assets.COLORS)
     pad = "5px 6px 8px 6px" if compact else "10px 10px 16px 10px"
     fsize = 11 if compact else 14
@@ -171,8 +181,8 @@ def gen_table(rows=6, cols=3, compact=False):
 # ------------------------------------------------------------------
 
 def gen_figure(caption=None, compact=False, label="figure"):
-    caption = caption or "شكل: " + assets.get_real_arabic_text(2, 6)
-    font = random.choice(assets.FONTS)
+    caption = caption or assets.get_figure_caption()
+    font = assets.get_page_body_font()
     img_b64 = assets.random_image_b64()
     img_html = (f'<img src="{img_b64}" style="width: 100%; height: 100%; object-fit: cover; display: block;" />'
                 if img_b64 else f'<span style="font-family: \'{font}\';">[صورة]</span>')
@@ -227,13 +237,18 @@ _CHART_TYPES = [
 
 def gen_chart(compact=False):
     chart_id = f"chart_{random.randint(10000, 999999)}"
-    labels = ",".join(f"'{assets.get_real_arabic_text(1, 2)}'" for _ in range(5))
+    # Coherent, semantic chart labels instead of corpus noise
+    labels = assets.get_chart_labels(n=5)
     d1 = [random.randint(10, 100) for _ in range(5)]
     d2 = [random.randint(10, 100) for _ in range(5)]
     config = random.choice(_CHART_TYPES).format(labels=labels, d1=d1, d2=d2)
-    font = random.choice(assets.FONTS)
+    font = assets.get_page_body_font()
+    title_font = assets.get_page_title_font()
     title_size = 11 if compact else 14
-    title = "" if compact else f'<div style="text-align:center; font-family:\'{font}\'; font-weight:bold; font-size:{title_size}px; margin-bottom:5px;">شكل إحصائي: {assets.get_real_arabic_text(2, 5)}</div>'
+    # Chart title uses title font; caption text uses body font
+    chart_subject = assets.get_semantic_subject()
+    title = ("" if compact else
+             f'<div style="text-align:center; font-family:\'{title_font}\'; font-weight:bold; font-size:{title_size}px; margin-bottom:5px;">{assets.get_figure_caption()}</div>')
 
     return f"""
     <div class="layout-node" data-label="chart" style="height: 100%; width: 100%; display: flex; flex-direction: column; overflow: hidden; box-sizing: border-box; padding-bottom: 10px;">
@@ -252,7 +267,7 @@ def gen_chart(compact=False):
 
 
 # ------------------------------------------------------------------
-# Equations (KaTeX, rendered client-side from base64 LaTeX)
+# Equations (KaTeX)
 # ------------------------------------------------------------------
 
 _EQ_VARS = ['x', 'y', 'z', 't', 'k', 'n', 'i', 'j', r'\theta', r'\alpha', r'\beta', r'\mu', r'\sigma', r'\lambda']
@@ -300,7 +315,7 @@ def gen_display_equation(compact=False):
 
 
 def gen_theorem_box(compact=False):
-    font = random.choice(assets.FONTS)
+    font = assets.get_page_body_font()
     box_type = random.choice(["نظرية", "تعريف", "مبرهنة", "ملاحظة", "برهان"])
     bg_color = random.choice(["#f8fafc", "#f0fdf4", "#fffbeb", "#fef2f2"])
     border_color = random.choice(["#94a3b8", "#4ade80", "#fcd34d", "#f87171"])
@@ -320,14 +335,12 @@ def gen_theorem_box(compact=False):
 
 
 # ------------------------------------------------------------------
-# Branding bits - logo & barcode placeholders (no real logo assets available,
-# so a "logo" is a stylised text/shape mark, consistent with the rest of
-# the synthetic-but-plausible approach used throughout this pipeline)
+# Branding bits — logo & barcode placeholders
 # ------------------------------------------------------------------
 
 def gen_logo(mark_text=None, compact=False):
     mark_text = mark_text or assets.get_real_arabic_text(1, 1)
-    font = random.choice(assets.DISPLAY_FONTS)
+    font = assets.get_page_title_font()
     color = random.choice(assets.COLORS)
     shape = random.choice(["circle", "square", "hexagon"])
     size = 46 if compact else 64
@@ -362,8 +375,8 @@ def gen_barcode(compact=False):
 # ------------------------------------------------------------------
 
 def gen_header():
-    font = random.choice(assets.FONTS)
-    text = assets.get_real_arabic_text(2, 6)
+    font = assets.get_page_body_font()
+    text = assets.get_semantic_org()
     return f"""
     <div class="layout-node" data-label="header" style="width: 100%; padding: 10px 40px; border-bottom: 2px solid #ccc; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; font-family: '{font}'; font-size: 14px; font-weight: bold; color: #333;">
         <span class="layout-node autofit-text" data-label="header" style="overflow: hidden; max-width: 80%;">{text}</span>
@@ -371,19 +384,21 @@ def gen_header():
     </div>
     """
 
+
 def gen_footer():
-    font = random.choice(assets.FONTS)
+    font = assets.get_page_body_font()
     return f"""
     <div class="layout-node" data-label="footer" style="width: 100%; padding: 10px 40px; border-top: 1px solid #ccc; box-sizing: border-box; display: flex; justify-content: center; align-items: center; font-family: '{font}'; font-size: 12px; color: #666;">
         <span class="layout-node autofit-text" data-label="footer" style="overflow: hidden;">الصفحة {random.randint(1, 99)}</span>
     </div>
     """
 
+
 def wrap_a4_page(inner_body_html):
-    """Wraps the inner content-flow of an A4 template in a flex column to safely inject headers and footers without breaking the flow."""
+    """Wraps the inner content-flow of an A4 template in a flex column."""
     header_html = gen_header() if random.random() < 0.2 else ""
     footer_html = gen_footer() if random.random() < 0.2 else ""
-    
+
     return f"""
     <div style="display:flex; flex-direction:column; width:100%; height:100%; background:white; overflow:hidden; box-sizing:border-box;">
         {header_html}

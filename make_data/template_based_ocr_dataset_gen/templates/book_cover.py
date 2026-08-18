@@ -17,8 +17,9 @@ def generate(hybrid_html=""):
     base = random.choice(SIZE_PRESETS_MM)
     width, height = assets.jittered_size(*base)
 
-    font = random.choice(assets.DISPLAY_FONTS)
-    author_font = random.choice(assets.FONTS)
+    # Book cover is one of the few cases where title font IS the display font
+    title_font = assets.get_page_title_font()
+    body_font = assets.get_page_body_font()
     title_color = random.choice(["#ffffff", "#111111", "#fef3c7"])
     band_color = random.choice(["rgba(0,0,0,0.55)", "rgba(0,0,0,0.35)", "rgba(255,255,255,0.85)"])
 
@@ -27,11 +28,11 @@ def generate(hybrid_html=""):
                if img_b64 else '<div style="position:absolute; inset:0; background:#94a3b8;"></div>')
 
     title_text = assets.get_real_arabic_title()
-    author_text = assets.get_real_arabic_name()
+    author_text = assets.get_semantic_name()
     has_tagline = random.random() < 0.5
     tagline_html = (
         f'<div class="layout-node autofit-text" data-label="tagline" '
-        f'style="font-family:\'{author_font}\'; font-size:13px; color:{title_color}; text-align:center; margin-top:8px; overflow:hidden;">{assets.get_real_arabic_text(4, 10)}</div>'
+        f'style="font-family:\'{body_font}\'; font-size:13px; color:{title_color}; text-align:center; margin-top:8px; overflow:hidden;">{assets.get_real_arabic_text(4, 10)}</div>'
         if has_tagline else ""
     )
 
@@ -42,13 +43,13 @@ def generate(hybrid_html=""):
         {bg_html}
         <div style="position:absolute; inset:0; background:{band_color}; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:24px; box-sizing:border-box; text-align:center;">
             <div class="layout-node autofit-text" data-label="book-title"
-                 style="font-family:'{font}'; font-size:34px; font-weight:bold; color:{title_color}; line-height:1.3; overflow:hidden; max-width:100%;">{title_text}</div>
+                 style="font-family:'{title_font}'; font-size:34px; font-weight:bold; color:{title_color}; line-height:1.3; overflow:hidden; max-width:100%;">{title_text}</div>
             {tagline_html}
             {hybrid_block}
         </div>
         <div style="position:absolute; bottom:18px; left:0; right:0; display:flex; justify-content:center;">
             <div class="layout-node autofit-text" data-label="author"
-                 style="font-family:'{author_font}'; font-size:16px; font-weight:bold; color:{title_color}; background:rgba(0,0,0,0.0); overflow:hidden;">{author_text}</div>
+                 style="font-family:'{body_font}'; font-size:16px; font-weight:bold; color:{title_color}; background:rgba(0,0,0,0.0); overflow:hidden;">{author_text}</div>
         </div>
     </div>
     """

@@ -53,7 +53,7 @@ MAXIMUM_NUM_OF_WORKERS = config.get("maximum_num_of_workers", 10)
 if WORKERS == "auto":
     WORKERS = min(os.cpu_count() or 4, MAXIMUM_NUM_OF_WORKERS)
 
-HYBRID_PROBABILITY = config.get("hybrid_probability", 0.28)
+HYBRID_PROBABILITY = config.get("hybrid_probability", 0.10)
 REFRESH_INTERVAL = config.get("refresh_interval", 1000)
 NUM_BOOKS_TO_FETCH = config.get("num_books_to_fetch", 7)
 TEXT_CORPUS_HF_ID = config.get("text_corpus_hf_id", "MathematicianNLPer/hamela_books_text_full_ok")
@@ -109,7 +109,17 @@ async def generate_one(browser, index, books_pool, template_name, images_path, a
         await render_and_extract(
             browser, html_page, spec["width"], spec["height"], img_path, json_path,
             auto_height=spec["auto_height"],
-            meta={"template": template_name, "hybrid": hybrid_name},
+            meta={
+                "template": template_name,
+                "hybrid": hybrid_name,
+                # Resolve opaque CustomFont_N keys to real font filenames for the JSON record
+                "page_font":  assets.FONT_NAME_MAP.get(doc_ctx.body_font,  doc_ctx.body_font),
+                "title_font": assets.FONT_NAME_MAP.get(doc_ctx.title_font, doc_ctx.title_font),
+                "language":   "ar",
+                "script":     "arabic",
+                "direction":  "rtl",
+                "augmentation": None,  # originals always null; augmented overrides in augmentation.py
+            },
         )
     finally:
         current_document.reset(token)
@@ -293,7 +303,7 @@ def main():
     try:
         ds = load_dataset(TEXT_CORPUS_HF_ID, split="train", streaming=True, token=hf_token)
         # Randomize the seed so every execution gets completely different books
-        ds = ds.shuffle(buffer_size=10000, seed=random.randint(0, 1000000))
+        ds = ds.shuffle(buffer_size=1000, seed=random.randint(0, 1000000))
         dataset_iterator = iter(ds)
     except Exception as e:
         print(f"Error loading dataset, using fallback text: {e}")

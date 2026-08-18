@@ -14,14 +14,15 @@ def generate(hybrid_html=""):
     base = BASE_MM_PORTRAIT if portrait else BASE_MM_LANDSCAPE
     width, height = assets.jittered_size(*base, pct=0.1)
 
-    font = random.choice(assets.FONTS)
+    font = assets.get_page_body_font()
     color = random.choice(assets.COLORS)
     logo_side = random.choice(["flex-start", "flex-end"])
 
-    name_text = assets.get_real_arabic_name()
-    role_text = assets.get_real_arabic_text(2, 5)
+    name_text = assets.get_semantic_name()
+    role_text = assets.get_semantic_job_title()
     contact1 = assets.random_fake_phone()
-    contact2 = assets.get_real_arabic_text(3, 6)
+    # Contact 2: org name for realism
+    contact2 = assets.get_semantic_org()
 
     logo_html = components.gen_logo(compact=True)
     hybrid_block = f'<div style="margin-top:6px;">{hybrid.wrap_hybrid_block(hybrid_html, compact_margin=True)}</div>' if hybrid_html else ""

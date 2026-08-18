@@ -555,8 +555,19 @@ async def render_and_extract(browser, html_content, width, height, output_image_
         "blocks": blocks
     }
     
-    if meta:
-        payload["meta"] = meta
+    # Always write meta — ensures consistent schema across originals and augmented images.
+    # If no meta is passed, build a minimal default. The caller (generate.py) passes the full meta.
+    if meta is None:
+        meta = {}
+    # Guarantee augmentation: null for originals (augmented images override this via transform_annotation)
+    if "augmentation" not in meta:
+        meta["augmentation"] = None
+    # Guarantee language meta
+    if "language" not in meta:
+        meta["language"] = "ar"
+        meta["script"] = "arabic"
+        meta["direction"] = "rtl"
+    payload["meta"] = meta
 
     with open(output_json_path, 'w', encoding='utf-8') as f:
         json.dump(payload, f, ensure_ascii=False, indent=4)

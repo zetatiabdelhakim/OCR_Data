@@ -1,5 +1,5 @@
 """Thermal-style receipt: narrow fixed width, content-driven (auto) height.
-Item lines reuse raw corpus text directly - kept intentionally simple."""
+Item lines use semantic product names for realistic document content."""
 
 import random
 from core import assets, components, hybrid
@@ -8,10 +8,11 @@ NAME = "receipt"
 WIDTH_MM_OPTIONS = [58, 80]  # standard thermal roll widths
 
 
-def _line(label, text, bold=False, size=12, align="right"):
+def _line(label, text, bold=False, size=12, align="right", font=None):
     weight = "bold" if bold else "normal"
+    f = font or assets.get_page_body_font()
     return (f'<div class="layout-node autofit-text" data-label="{label}" '
-            f'style="font-family:\'Courier New\', monospace; font-size:{size}px; font-weight:{weight}; '
+            f'style="font-family:\'{f}\'; font-size:{size}px; font-weight:{weight}; '
             f'text-align:{align}; overflow:hidden; padding:2px 0;">{text}</div>')
 
 
@@ -19,14 +20,14 @@ def generate(hybrid_html=""):
     width_mm = random.choice(WIDTH_MM_OPTIONS)
     width = assets.jitter(assets.mm_to_px(width_mm), pct=0.08)
 
-    store_name = assets.get_real_arabic_text(2, 4)
+    store_name = assets.get_semantic_org()
     date_line = f"{random.randint(1,28):02d}/{random.randint(1,12):02d}/{random.randint(2023,2026)} - {random.randint(8,22):02d}:{random.randint(0,59):02d}"
 
     n_items = random.randint(5, 16)
     total = 0.0
     item_lines = ""
     for _ in range(n_items):
-        item_text = assets.get_real_arabic_text(1, 3)
+        item_text = assets.get_semantic_product()
         price = assets.random_fake_price(5, 200)
         total += float(price.replace(",", ""))
         item_lines += (

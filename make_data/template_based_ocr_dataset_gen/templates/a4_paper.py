@@ -9,8 +9,8 @@ BASE_MM = (210, 297)
 
 
 def _gen_title():
-    text = assets.get_real_arabic_text(5, 12)
-    font = random.choice(assets.FONTS)
+    text = assets.get_real_arabic_title()
+    font = assets.get_page_title_font()
     return (f'<div class="layout-node autofit-text" data-label="paper-title" '
             f'style="column-span: all; text-align: center; font-family: \'{font}\'; '
             f'font-size: 30px; font-weight: bold; margin-bottom: 20px; '
@@ -19,7 +19,7 @@ def _gen_title():
 
 def _gen_abstract():
     text = assets.get_real_arabic_text(40, 80)
-    font = random.choice(assets.FONTS)
+    font = assets.get_page_body_font()
     return (f'<div style="break-inside: avoid; max-height: 100%; display: flex; flex-direction: column;">'
             f'<div class="layout-node autofit-text" data-label="abstract" '
             f'style="column-span: all; font-family: \'{font}\'; font-size: 14px; '
@@ -31,17 +31,17 @@ def _gen_abstract():
 
 def _gen_section():
     level_size = random.choice([20, 17])
-    font = random.choice(assets.FONTS)
+    body_font = assets.get_page_body_font()
+    title_font = assets.get_page_title_font()
     para_text = assets.get_real_arabic_text(50, 150)
-    if random.random() < 0.5:
-        words = para_text.split()
-        para_text = " ".join(words)
+    # Use semantic subject for section headings instead of corpus noise
+    section_heading = assets.get_semantic_subject()
     return f"""
     <div style="margin-bottom: 16px; break-inside: avoid; max-height: 100%; display: flex; flex-direction: column;">
         <div class="layout-node autofit-text" data-label="section-heading"
-             style="font-family: '{font}'; font-size: {level_size}px; font-weight: bold; margin-bottom: 8px; color: {random.choice(assets.COLORS)}; flex-shrink: 0; overflow: hidden;">{assets.get_real_arabic_text(3, 8)}</div>
+             style="font-family: '{title_font}'; font-size: {level_size}px; font-weight: bold; margin-bottom: 8px; color: {random.choice(assets.COLORS)}; flex-shrink: 0; overflow: hidden;">{section_heading}</div>
         <div class="layout-node autofit-text" data-label="paragraph"
-             style="font-family: '{font}'; font-size: 14px; text-align: justify; line-height: 1.8; flex: 1; min-height: 0; overflow: hidden;">{para_text}</div>
+             style="font-family: '{body_font}'; font-size: 14px; text-align: justify; line-height: 1.8; flex: 1; min-height: 0; overflow: hidden;">{para_text}</div>
     </div>
     """
 
@@ -75,14 +75,13 @@ def generate(hybrid_html=""):
         flow_blocks.insert(insert_at, hybrid.wrap_hybrid_block(hybrid_html))
 
     headers_html = "".join(header_blocks)
-    
-    # Distribute blocks evenly into columns to simulate flow
+
     col_htmls = ["" for _ in range(cols)]
     for i, block in enumerate(flow_blocks):
         col_htmls[i % cols] += block
-        
+
     grid_content = "".join(
-        f'<div style="display:flex; flex-direction:column; overflow:hidden; height:100%;">{col_html}</div>' 
+        f'<div style="display:flex; flex-direction:column; overflow:hidden; height:100%;">{col_html}</div>'
         for col_html in col_htmls
     )
 

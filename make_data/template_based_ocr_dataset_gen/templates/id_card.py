@@ -9,11 +9,11 @@ BASE_MM = (90, 55)
 
 def generate(hybrid_html=""):
     width, height = assets.jittered_size(*BASE_MM, pct=0.1)
-    font = random.choice(assets.FONTS)
+    font = assets.get_page_body_font()
     color = random.choice(assets.COLORS)
 
-    org_name = assets.get_real_arabic_text(2, 4)
-    holder_name = assets.get_real_arabic_name()
+    org_name = assets.get_semantic_org()
+    holder_name = assets.get_semantic_name()
     id_number = "-".join(str(random.randint(1000, 9999)) for _ in range(2))
 
     photo_html = (

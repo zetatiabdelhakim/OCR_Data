@@ -18,14 +18,15 @@ def generate(hybrid_html=""):
 
     bg_color = random.choice(["#ffffff", "#0f172a", "#f8fafc", "#111111"])
     text_color = "#ffffff" if bg_color in ("#0f172a", "#111111") else random.choice(assets.COLORS)
-    font = random.choice(assets.DISPLAY_FONTS)
-    subfont = random.choice(assets.FONTS)
+    # Title font for the main display text, body font for sub-text
+    title_font = assets.get_page_title_font()
+    body_font = assets.get_page_body_font()
 
-    main_text = assets.get_real_arabic_text(2, 5)
+    main_text = assets.get_real_arabic_title()
     has_subtext = random.random() < 0.55
     subtext_html = (
         f'<div class="layout-node autofit-text" data-label="subtext" '
-        f'style="font-family:\'{subfont}\'; font-size:15px; color:{text_color}; margin-top:10px; text-align:center; overflow:hidden;">{assets.get_real_arabic_text(3, 8)}</div>'
+        f'style="font-family:\'{body_font}\'; font-size:15px; color:{text_color}; margin-top:10px; text-align:center; overflow:hidden;">{assets.get_real_arabic_text(3, 8)}</div>'
         if has_subtext else ""
     )
 
@@ -36,7 +37,7 @@ def generate(hybrid_html=""):
                 display:flex; flex-direction:column; align-items:center; justify-content:center; padding:40px;">
         {components.gen_logo()}
         <div class="layout-node autofit-text" data-label="minimalist-title"
-             style="font-family:'{font}'; font-size:30px; font-weight:bold; color:{text_color};
+             style="font-family:'{title_font}'; font-size:30px; font-weight:bold; color:{text_color};
                     margin-top:22px; text-align:center; overflow:hidden; max-width:90%;">{main_text}</div>
         {subtext_html}
         {hybrid_block}
