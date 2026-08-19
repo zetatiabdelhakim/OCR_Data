@@ -10,16 +10,32 @@ Each sample:
   1. picks ONE document template uniformly at random
   2. with HYBRID_PROBABILITY chance, also picks a random foreign snippet
   3. renders it with Playwright and writes the PNG + JSON pair
+
+Progress is checkpointed in state.yaml after every small batch of samples,
+at every chunk boundary, and on shutdown. The script can be killed at any
+point (Ctrl+C, crash, reboot, upload failure) and simply re-run — it will
+reconcile against whatever is actually on disk / already pushed and resume
+from exactly there, with no manual cleanup.
 """
 
 import os
+
+# Must be set before huggingface_hub is imported anywhere (it's read once at
+# module-import time by huggingface_hub.constants) — raises hf_xet's transfer
+# concurrency for faster pushes. setdefault() so an explicitly-set shell/env
+# value always wins.
+os.environ.setdefault("HF_XET_HIGH_PERFORMANCE", "1")
+
+import json
 import random
 import asyncio
 import multiprocessing
+import threading
+import signal
+import time
 import yaml
 import shutil
-import string
-import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from tqdm import tqdm
 
 
@@ -58,18 +74,35 @@ LOCAL_OUTPUT_DIR = config.get("local_output_dir", "./dataset_local_output")
 ENABLE_AUGMENTATION = config.get("enable_augmentation", True)
 AUGMENTATIONS_PER_IMAGE = config.get("augmentations_per_image", 3)
 
+GLOBAL_COUNT_CHECK_INTERVAL = max(1, int(config.get("global_count_check_interval", 5)))
+PIPELINE_UPLOAD = bool(config.get("pipeline_upload", True))
+STATE_SAVE_INTERVAL = max(1, int(config.get("state_save_interval", 25)))
+PROGRESS_REPORT_BATCH_SIZE = max(1, int(config.get("progress_report_batch_size", 25)))
+UPLOAD_RETRY_ATTEMPTS = max(1, int(config.get("upload_retry_attempts", 4)))
+UPLOAD_RETRY_BACKOFF_SECONDS = float(config.get("upload_retry_backoff_seconds", 10))
+UPLOAD_PROGRESS_BATCHES = max(1, int(config.get("upload_progress_batches", 20)))
+
 STATE_FILE = "state.yaml"
+
+DEFAULT_STATE = {
+    "current_folder_name": "",
+    "current_folder_count": 0,
+    "local_total_pushed": 0,
+    "current_folder_index": 1,
+    "last_global_count": 0,
+    "flushes_since_global_check": 0,
+}
+
 
 def load_state():
     if os.path.exists(STATE_FILE):
         with open(STATE_FILE, "r", encoding="utf-8") as f:
-            return yaml.safe_load(f)
-    return {
-        "current_folder_name": "",
-        "current_folder_count": 0,
-        "local_total_pushed": 0,
-        "current_folder_index": 1
-    }
+            loaded = yaml.safe_load(f) or {}
+        state = dict(DEFAULT_STATE)
+        state.update(loaded)
+        return state
+    return dict(DEFAULT_STATE)
+
 
 def save_state(state):
     # Atomic save to prevent corruption, with retry for Windows
@@ -121,7 +154,10 @@ async def generate_one(browser, index, books_pool, template_name, images_path, a
         current_document.reset(token)
 
 
-async def worker_task(tasks, queue, books_pool):
+async def worker_task(tasks, queue, books_pool, report_batch_size):
+    """Runs in a worker subprocess. Never prints directly (except the one
+    catastrophic pre-work path below) — all diagnostics are sent back through
+    the queue so the main process's progress bars stay uncorrupted."""
     from playwright.async_api import async_playwright
     async with async_playwright() as p:
         browser = None
@@ -130,10 +166,20 @@ async def worker_task(tasks, queue, books_pool):
         except Exception as e:
             print(f"FATAL: Browser launch failed: {e}")
             for _ in tasks:
-                queue.put(False)
+                queue.put({"results": [False], "errors": []})
             return
 
         tasks_done = 0
+        batch_results = []
+        batch_errors = []
+
+        def flush_batch():
+            nonlocal batch_results, batch_errors
+            if batch_results:
+                queue.put({"results": batch_results, "errors": batch_errors})
+                batch_results = []
+                batch_errors = []
+
         try:
             for i, (index, template_name, images_path, annotations_path) in enumerate(tasks):
                 # Relaunch browser periodically to prevent Node.js IPC pipe crashes
@@ -143,25 +189,38 @@ async def worker_task(tasks, queue, books_pool):
                     except Exception:
                         pass
                     browser = await p.chromium.launch(headless=True)
-                    
+
                 try:
                     await generate_one(browser, index, books_pool, template_name, images_path, annotations_path)
-                    queue.put(True)
+                    batch_results.append(True)
                 except Exception as e:
-                    print(f"Error generating sample {index}: {e}")
-                    queue.put(False)
+                    batch_results.append(False)
+                    batch_errors.append((index, str(e)))
                     if "Connection closed" in str(e) or "Target closed" in str(e):
                         try:
                             await browser.close()
                         except Exception:
                             pass
-                        browser = await p.chromium.launch(headless=True)
+                        try:
+                            browser = await p.chromium.launch(headless=True)
+                        except Exception as relaunch_err:
+                            batch_errors.append((index, f"browser relaunch failed, worker giving up: {relaunch_err}"))
+                            flush_batch()
+                            remaining = len(tasks) - (i + 1)
+                            if remaining > 0:
+                                queue.put({"results": [False] * remaining, "errors": []})
+                            tasks_done = len(tasks)
+                            return
                 tasks_done += 1
+                if len(batch_results) >= report_batch_size:
+                    flush_batch()
         except Exception as e:
-            print(f"Worker crashed: {e}")
+            batch_errors.append((-1, f"worker crashed: {e}"))
         finally:
-            for _ in range(len(tasks) - tasks_done):
-                queue.put(False)
+            flush_batch()
+            remaining = len(tasks) - tasks_done
+            if remaining > 0:
+                queue.put({"results": [False] * remaining, "errors": []})
             if browser:
                 try:
                     await browser.close()
@@ -169,13 +228,13 @@ async def worker_task(tasks, queue, books_pool):
                     pass
 
 
-def worker_process(tasks, queue, books_pool):
+def worker_process(tasks, queue, books_pool, report_batch_size):
     try:
-        asyncio.run(worker_task(tasks, queue, books_pool))
+        asyncio.run(worker_task(tasks, queue, books_pool, report_batch_size))
     except RuntimeError:
         import nest_asyncio
         nest_asyncio.apply()
-        asyncio.run(worker_task(tasks, queue, books_pool))
+        asyncio.run(worker_task(tasks, queue, books_pool, report_batch_size))
 
 
 def init_worker():
@@ -183,104 +242,443 @@ def init_worker():
     assets.load_assets()
 
 
-def get_global_count(api):
-    print("Checking global dataset size on Hugging Face...")
-    try:
-        files = api.list_repo_files(repo_id=REPO_ID, repo_type="dataset")
-        # Count only ORIGINAL samples (in data/, not data_aug/) so that
-        # global_limit is interpreted as the number of originals.
-        count = sum(
-            1 for f in files
-            if f.endswith('.json') and f.startswith('data/') and not f.startswith('data_aug/')
-        )
-        print(f"Current global dataset size: ~{count} original samples.")
-        return count
-    except Exception as e:
-        print(f"Error checking repo files (maybe repo doesn't exist yet): {e}")
-        return 0
-
-
 def generate_folder_name(index):
     return f"{USER_NAME}_{index:03d}"
 
 
-def flush_current_folder(state, api):
-    folder_name = state["current_folder_name"]
-    folder_count = state["current_folder_count"]
-    temp_dir = os.path.abspath(f"./temp_generation_{folder_name}")
-    
-    print(f"Processing upload/move for folder {folder_name} ({folder_count} samples)...")
-    if DESTINATION == "hf":
-        # --- Upload originals to data/ ---
-        print(f"Uploading {temp_dir} to Hugging Face: data/{folder_name} ...")
+# ------------------------------------------------------------------
+# Fast, scalable global-count tracking (Problem 1)
+#
+# A folder is only ever uploaded once it holds exactly CHUNK_LIMIT samples
+# (see the main loop below), so every folder except possibly the newest one
+# per contributor prefix is guaranteed to be full. Shallow-listing just the
+# folder names under data/ (O(#folders)) and only exact-counting the newest
+# folder per prefix is thousands of times cheaper than listing every file in
+# the dataset, and gets relatively cheaper as the dataset grows.
+# ------------------------------------------------------------------
+
+def _shallow_list_folder_names(api, path_in_repo):
+    from huggingface_hub import RepoFolder
+    tree = api.list_repo_tree(repo_id=REPO_ID, repo_type="dataset", path_in_repo=path_in_repo, recursive=False)
+    return [item.path.rsplit("/", 1)[-1] for item in tree if isinstance(item, RepoFolder)]
+
+
+def _shallow_count_json_files(api, path_in_repo):
+    from huggingface_hub import RepoFolder
+    tree = api.list_repo_tree(repo_id=REPO_ID, repo_type="dataset", path_in_repo=path_in_repo, recursive=False)
+    return sum(1 for item in tree if not isinstance(item, RepoFolder) and item.path.endswith(".json"))
+
+
+def compute_global_count(api):
+    """Team-wide count of ORIGINAL samples. Returns None on failure (e.g. repo
+    doesn't exist yet) so callers can fall back to the last cached value."""
+    try:
+        folder_names = _shallow_list_folder_names(api, "data")
+    except Exception as e:
+        tqdm.write(f"Global count check failed (repo may not exist yet): {e}")
+        return None
+
+    if not folder_names:
+        return 0
+
+    by_prefix = {}
+    for name in folder_names:
+        prefix, sep, _idx = name.rpartition("_")
+        if not sep:
+            prefix = name
+        by_prefix.setdefault(prefix, []).append(name)
+
+    total = 0
+    for _prefix, names in by_prefix.items():
+        names.sort()
+        total += (len(names) - 1) * CHUNK_LIMIT
+        newest = names[-1]
         try:
-            api.upload_folder(
-                folder_path=temp_dir,
-                path_in_repo=f"data/{folder_name}",
-                repo_id=REPO_ID,
-                repo_type="dataset"
-            )
-            print("Original upload complete.")
-            shutil.rmtree(temp_dir, ignore_errors=True)
+            total += _shallow_count_json_files(api, f"data/{newest}")
+        except Exception:
+            total += CHUNK_LIMIT  # optimistic fallback — don't let one folder abort the whole check
+
+    return total
+
+
+def refresh_global_count(state, api, state_lock, force=False):
+    """Refresh & cache the team-wide count, respecting GLOBAL_COUNT_CHECK_INTERVAL
+    so a soft, team-wide budget doesn't need a network round-trip every flush."""
+    if DESTINATION != "hf" or api is None:
+        return 0
+
+    with state_lock:
+        pending = state.get("flushes_since_global_check", 0)
+        cached = state.get("last_global_count", 0)
+
+    if not force and pending < GLOBAL_COUNT_CHECK_INTERVAL:
+        with state_lock:
+            state["flushes_since_global_check"] = pending + 1
+        return cached
+
+    count = compute_global_count(api)
+    if count is None:
+        with state_lock:
+            state["flushes_since_global_check"] = pending + 1
+        return cached
+
+    with state_lock:
+        state["last_global_count"] = count
+        state["flushes_since_global_check"] = 0
+        save_state(state)
+    return count
+
+
+# ------------------------------------------------------------------
+# Upload / move with retries (Problem 2, Problem 4B)
+# ------------------------------------------------------------------
+
+def _retry(fn, label):
+    last_exc = None
+    for attempt in range(1, UPLOAD_RETRY_ATTEMPTS + 1):
+        try:
+            return fn()
         except Exception as e:
-            print(f"Failed to upload originals to Hugging Face: {e}")
-            return False
+            last_exc = e
+            if attempt < UPLOAD_RETRY_ATTEMPTS:
+                wait = UPLOAD_RETRY_BACKOFF_SECONDS * (2 ** (attempt - 1))
+                tqdm.write(f"  [upload] {label} failed (attempt {attempt}/{UPLOAD_RETRY_ATTEMPTS}): {e} "
+                           f"— retrying in {wait:.0f}s...")
+                time.sleep(wait)
+    tqdm.write(f"  [upload] {label} failed after {UPLOAD_RETRY_ATTEMPTS} attempts: {last_exc}")
+    raise last_exc
 
-        # --- Upload augmented satellite folders to data_aug/ ---
-        if ENABLE_AUGMENTATION:
-            for aug_i in range(1, AUGMENTATIONS_PER_IMAGE + 1):
-                aug_folder_name = f"{folder_name}_aug{aug_i}"
-                aug_temp_dir = os.path.abspath(f"./temp_generation_{aug_folder_name}")
-                if os.path.exists(aug_temp_dir):
-                    print(f"Uploading augmented folder: data_aug/{aug_folder_name} ...")
-                    try:
-                        api.upload_folder(
-                            folder_path=aug_temp_dir,
-                            path_in_repo=f"data_aug/{aug_folder_name}",
-                            repo_id=REPO_ID,
-                            repo_type="dataset"
-                        )
-                        print(f"Augmented upload {aug_i}/{AUGMENTATIONS_PER_IMAGE} complete.")
-                        shutil.rmtree(aug_temp_dir, ignore_errors=True)
-                    except Exception as e:
-                        print(f"Failed to upload augmented folder {aug_folder_name}: {e}")
-                        # Continue — don't block the pipeline for a failed aug upload
-    else:
-        # --- Local destination: move originals ---
-        dest_path = os.path.join(LOCAL_OUTPUT_DIR, "data", folder_name)
-        print(f"Moving {temp_dir} to {dest_path} ...")
-        os.makedirs(os.path.dirname(dest_path), exist_ok=True)
-        if os.path.exists(dest_path):
-            shutil.rmtree(dest_path)
-        shutil.move(temp_dir, dest_path)
 
-        # --- Local destination: move augmented folders ---
-        if ENABLE_AUGMENTATION:
-            for aug_i in range(1, AUGMENTATIONS_PER_IMAGE + 1):
-                aug_folder_name = f"{folder_name}_aug{aug_i}"
-                aug_temp_dir = os.path.abspath(f"./temp_generation_{aug_folder_name}")
-                if os.path.exists(aug_temp_dir):
-                    aug_dest = os.path.join(LOCAL_OUTPUT_DIR, "data_aug", aug_folder_name)
-                    os.makedirs(os.path.dirname(aug_dest), exist_ok=True)
-                    if os.path.exists(aug_dest):
-                        shutil.rmtree(aug_dest)
-                    shutil.move(aug_temp_dir, aug_dest)
-    
-    # Reset state for next chunk
-    state["local_total_pushed"] += folder_count
-    state["current_folder_index"] = state.get("current_folder_index", 1) + 1
-    state["current_folder_name"] = generate_folder_name(state["current_folder_index"])
-    state["current_folder_count"] = 0
-    save_state(state)
-    
+def _list_folder_files(local_path):
+    """Relative paths of every file under local_path (used to split an
+    upload into batches — this is what makes upload progress observable)."""
+    try:
+        return sorted(
+            os.path.relpath(os.path.join(root, f), local_path)
+            for root, _dirs, files in os.walk(local_path) for f in files
+        )
+    except OSError:
+        return []
+
+
+def _plan_batches(files):
+    """Split a file list into UPLOAD_PROGRESS_BATCHES roughly-equal chunks."""
+    if not files:
+        return []
+    batch_count = max(1, min(UPLOAD_PROGRESS_BATCHES, len(files)))
+    batch_size = max(1, -(-len(files) // batch_count))  # ceil division
+    return [files[i:i + batch_size] for i in range(0, len(files), batch_size)]
+
+
+def _plan_job(kind, local_path, path_in_repo):
+    """Precompute how many progress ticks this job (folder) will produce, so
+    the caller can show a real X/Y over the whole chunk before starting."""
     if DESTINATION == "hf":
-        global_count = get_global_count(api)
-        if global_count >= GLOBAL_LIMIT:
-            print(f"Global limit reached! ({global_count} >= {GLOBAL_LIMIT}). Exiting.")
+        batches = _plan_batches(_list_folder_files(local_path))
+        return (kind, local_path, path_in_repo, batches, max(1, len(batches)))
+    return (kind, local_path, path_in_repo, None, 1)
+
+
+def _push_one_folder(api, kind, local_path, path_in_repo, batches, on_batch_done=None):
+    """Upload (hf, retried, in several smaller batches so progress is
+    actually observable instead of one opaque multi-GB call) or move (lcl)
+    a single folder. Returns True/False."""
+    if DESTINATION == "hf":
+        if not batches:
+            # Nothing to upload (shouldn't normally happen — jobs are only
+            # queued for folders that hold generated files) — still tick
+            # once so the aggregate counter this folder was promised in
+            # _plan_job() (max(1, ...)) actually reaches its total.
+            if on_batch_done is not None:
+                on_batch_done()
+            return True
+        for i, batch in enumerate(batches, 1):
+            def _do(batch=batch):
+                api.upload_folder(
+                    folder_path=local_path, path_in_repo=path_in_repo,
+                    repo_id=REPO_ID, repo_type="dataset", allow_patterns=batch,
+                )
+            try:
+                _retry(_do, label=f"{kind} ({path_in_repo}) batch {i}/{len(batches)}")
+            except Exception:
+                return False
+            if on_batch_done is not None:
+                on_batch_done()
+        shutil.rmtree(local_path, ignore_errors=True)
+        return True
+    else:
+        dest_path = os.path.join(LOCAL_OUTPUT_DIR, *path_in_repo.split("/"))
+        try:
+            os.makedirs(os.path.dirname(dest_path), exist_ok=True)
+            if os.path.exists(dest_path):
+                shutil.rmtree(dest_path)
+            shutil.move(local_path, dest_path)
+            if on_batch_done is not None:
+                on_batch_done()
+            return True
+        except Exception as e:
+            tqdm.write(f"  [move] {kind} ({path_in_repo}) failed: {e}")
             return False
-            
+
+
+class UploadProgress:
+    """Thread-safe progress snapshot for an in-flight upload_chunk() call.
+
+    upload_chunk() may run in a background thread while the main thread is
+    busy showing generation progress on the shared bar — it can't safely
+    touch that bar directly. Instead it writes here, and whoever is actually
+    idle and waiting (wait_for_pending_upload(), below) polls this on a timer
+    so the bar keeps visibly ticking (batches pushed + elapsed time) instead
+    of sitting frozen on a single static message for however long the
+    transfer of one large folder takes.
+    """
+    def __init__(self):
+        self._lock = threading.Lock()
+        self.folder_name = None
+        self.done = 0
+        self.total = 0
+        self.started_at = None
+
+    def start(self, folder_name, total):
+        with self._lock:
+            self.folder_name = folder_name
+            self.done = 0
+            self.total = total
+            self.started_at = time.monotonic()
+
+    def tick(self):
+        with self._lock:
+            self.done += 1
+
+    def snapshot(self):
+        with self._lock:
+            return self.folder_name, self.done, self.total, self.started_at
+
+
+def upload_chunk(folder_name, folder_count, state, api, state_lock, stop_event, pbar=None, progress=None):
+    """Push one completed chunk's originals + augmented folders. This is the
+    slow, I/O-bound part — safe to run in a background thread (Problem 2A),
+    and pushes the 4 folders concurrently rather than sequentially (2B)."""
+    jobs = []
+    originals_dir = os.path.abspath(f"./temp_generation_{folder_name}")
+    if os.path.isdir(originals_dir):
+        jobs.append(("originals", originals_dir, f"data/{folder_name}"))
+
+    if ENABLE_AUGMENTATION:
+        for aug_i in range(1, AUGMENTATIONS_PER_IMAGE + 1):
+            aug_folder_name = f"{folder_name}_aug{aug_i}"
+            aug_dir = os.path.abspath(f"./temp_generation_{aug_folder_name}")
+            if os.path.isdir(aug_dir):
+                jobs.append((f"aug{aug_i}", aug_dir, f"data_aug/{aug_folder_name}"))
+
+    if not jobs:
+        return True
+
+    # Plan real, verifiable progress ticks up front: each folder's upload is
+    # split into several smaller batches (each a genuine, completed
+    # upload_folder() call), so the counter below actually advances
+    # continuously through a multi-GB folder instead of sitting on "0/4"
+    # for however long a single opaque call takes.
+    job_plans = [_plan_job(kind, path, repo_path) for kind, path, repo_path in jobs]
+    total_ticks = sum(n for *_, n in job_plans)
+
+    tqdm.write(f"Pushing chunk '{folder_name}' ({folder_count} samples, {len(jobs)} folder(s), "
+               f"{total_ticks} batch(es))...")
+    if pbar is not None:
+        pbar.set_postfix_str(f"uploading {folder_name}: 0/{total_ticks}", refresh=True)
+    if progress is not None:
+        progress.start(folder_name, total_ticks)
+
+    done_lock = threading.Lock()
+    ticks_done = 0
+
+    def _on_batch_done():
+        nonlocal ticks_done
+        with done_lock:
+            ticks_done += 1
+            n = ticks_done
+        if pbar is not None:
+            pbar.set_postfix_str(f"uploading {folder_name}: {n}/{total_ticks}", refresh=True)
+        if progress is not None:
+            progress.tick()
+
+    results = {}
+    with ThreadPoolExecutor(max_workers=len(job_plans)) as ex:
+        futures = {
+            ex.submit(_push_one_folder, api, kind, path, repo_path, batches, _on_batch_done): kind
+            for kind, path, repo_path, batches, _n in job_plans
+        }
+        for fut in as_completed(futures):
+            kind = futures[fut]
+            results[kind] = fut.result()
+
+    if not results.get("originals", False):
+        tqdm.write(f"Chunk '{folder_name}': originals failed to push after retries — left on disk at "
+                   f"{originals_dir}, will be pushed automatically next run.")
+        stop_event.set()
+        return False
+
+    failed_augs = [k for k, ok in results.items() if k != "originals" and not ok]
+    if failed_augs:
+        tqdm.write(f"Chunk '{folder_name}': augmented folder(s) {failed_augs} failed after retries — "
+                   f"left on disk, will be pushed automatically next run.")
+
+    tqdm.write(f"Chunk '{folder_name}' push complete.")
+
+    refresh_global_count(state, api, state_lock)
+    if DESTINATION == "hf":
+        with state_lock:
+            current_global = state.get("last_global_count", 0)
+        if current_global >= GLOBAL_LIMIT:
+            tqdm.write(f"Global limit reached! ({current_global} >= {GLOBAL_LIMIT}). Stopping new work.")
+            stop_event.set()
+
     return True
 
+
+def rotate_to_next_folder(state, state_lock):
+    """Snapshot the just-completed folder and immediately assign the next
+    one, so the caller can start generating the next chunk right away
+    without waiting for this one's upload."""
+    with state_lock:
+        old_name = state["current_folder_name"]
+        old_count = state["current_folder_count"]
+
+        state["local_total_pushed"] = state.get("local_total_pushed", 0) + old_count
+        state["current_folder_index"] = state.get("current_folder_index", 1) + 1
+        state["current_folder_name"] = generate_folder_name(state["current_folder_index"])
+        state["current_folder_count"] = 0
+        save_state(state)
+
+    return old_name, old_count
+
+
+def recover_orphaned_chunks(state, api, state_lock, stop_event, pbar=None):
+    """Find leftover temp_generation_* folders from a previous run that were
+    never successfully pushed (process killed mid-upload, or an upload
+    permanently failed after retries) and push them before starting new
+    work. Makes resume correct across restarts regardless of where a prior
+    run was interrupted."""
+    current = state.get("current_folder_name", "")
+    try:
+        entries = [d for d in os.listdir(".") if os.path.isdir(d) and d.startswith("temp_generation_")]
+    except OSError:
+        return
+
+    bases = set()
+    for d in entries:
+        name = d[len("temp_generation_"):]
+        for suf in ("_aug1", "_aug2", "_aug3"):
+            if name.endswith(suf):
+                name = name[: -len(suf)]
+                break
+        bases.add(name)
+    bases.discard(current)
+
+    for folder_name in sorted(bases):
+        images_dir = os.path.join(f"./temp_generation_{folder_name}", "images")
+        if not os.path.isdir(images_dir):
+            continue
+        count = len([f for f in os.listdir(images_dir) if f.lower().endswith((".png", ".jpg", ".jpeg"))])
+        if count == 0:
+            continue
+        tqdm.write(f"Found un-pushed leftover chunk '{folder_name}' ({count} samples) from a previous run "
+                   f"— pushing it first...")
+        upload_chunk(folder_name, count, state, api, state_lock, stop_event, pbar=pbar)
+        if stop_event.is_set():
+            break
+
+
+# ------------------------------------------------------------------
+# Augmentation catch-up (idempotent — safe to call every loop iteration)
+#
+# Ensures every original currently in a folder has all its augmented
+# variants written, regardless of whether they were produced just now or are
+# left over from an interrupted previous run. This is what makes resume
+# correct even if the process was killed mid-augmentation, where a naive
+# "only augment this round's new samples" approach would otherwise let a
+# folder reach CHUNK_LIMIT and get flushed with missing augmented data.
+# ------------------------------------------------------------------
+
+def catch_up_augmentation(folder_name, images_path, annotations_path, pool, pbar=None):
+    if not ENABLE_AUGMENTATION:
+        return
+
+    aug_dirs = {}
+    for aug_i in range(1, AUGMENTATIONS_PER_IMAGE + 1):
+        aug_dir = os.path.abspath(f"./temp_generation_{folder_name}_aug{aug_i}")
+        os.makedirs(os.path.join(aug_dir, "images"), exist_ok=True)
+        os.makedirs(os.path.join(aug_dir, "annotations"), exist_ok=True)
+        aug_dirs[aug_i] = aug_dir
+
+    if not os.path.isdir(images_path):
+        return
+
+    originals = sorted(f for f in os.listdir(images_path) if f.endswith(".png"))
+
+    pending = []
+    for img_file in originals:
+        json_file = img_file.replace(".png", ".json")
+        img_src = os.path.join(images_path, img_file)
+        json_src = os.path.join(annotations_path, json_file)
+        if not os.path.exists(json_src):
+            continue
+
+        missing_slots = []
+        already_used = set()
+        for aug_i in range(1, AUGMENTATIONS_PER_IMAGE + 1):
+            aug_dir = aug_dirs[aug_i]
+            existing_img = (
+                os.path.exists(os.path.join(aug_dir, "images", img_file))
+                or os.path.exists(os.path.join(aug_dir, "images", os.path.splitext(img_file)[0] + ".jpg"))
+            )
+            if not existing_img:
+                missing_slots.append(aug_i)
+                continue
+            existing_json = os.path.join(aug_dir, "annotations", json_file)
+            try:
+                with open(existing_json, "r", encoding="utf-8") as jf:
+                    name = json.load(jf).get("meta", {}).get("augmentation", {}).get("name")
+                if name:
+                    already_used.add(name)
+            except Exception:
+                pass
+
+        if not missing_slots:
+            continue
+
+        weights = None
+        if already_used:
+            weights = dict(augmentation.AUGMENTATION_WEIGHTS)
+            for name in already_used:
+                weights[name] = 0.0
+
+        aug_names = augmentation.pick_n_distinct(len(missing_slots), weights=weights)
+        for aug_i, aug_name in zip(missing_slots, aug_names):
+            aug_dir = aug_dirs[aug_i]
+            aug_img_path = os.path.join(aug_dir, "images", img_file)
+            aug_json_path = os.path.join(aug_dir, "annotations", json_file)
+            pending.append((img_src, json_src, aug_img_path, aug_json_path, aug_name))
+
+    if not pending:
+        return
+
+    tqdm.write(f"Augmenting {folder_name}: {len(pending)} outstanding (image, variant) pair(s)...")
+    if pbar is not None:
+        pbar.set_postfix_str(f"augmenting {folder_name}: 0/{len(pending)}", refresh=True)
+
+    async_results = [pool.apply_async(augmentation.augment_sample, args=task) for task in pending]
+    done = 0
+    for ar in async_results:
+        try:
+            success, err = ar.get(timeout=60)
+            if not success and err:
+                tqdm.write(f"  [aug] {err}")
+        except Exception as e:
+            tqdm.write(f"  [aug] task failed: {e}")
+        done += 1
+        if pbar is not None:
+            pbar.set_postfix_str(f"augmenting {folder_name}: {done}/{len(pending)}", refresh=True)
 
 
 def main():
@@ -289,7 +687,7 @@ def main():
     from huggingface_hub import login, HfApi
     import queue as queue_module
     load_dotenv()
-    
+
     hf_token = os.environ.get("HF_TOKEN")
     api = None
     if DESTINATION == "hf":
@@ -299,114 +697,203 @@ def main():
         print("Logging in to Hugging Face...")
         login(token=hf_token)
         api = HfApi()
-        
-        global_count = get_global_count(api)
-        if global_count >= GLOBAL_LIMIT:
-            print(f"Global limit of {GLOBAL_LIMIT} reached ({global_count}). Exiting.")
-            return
-    
+
     state = load_state()
-    
+    state_lock = threading.Lock()
+    stop_event = threading.Event()
+    shutdown_requested = threading.Event()
+
+    def _handle_signal(signum, frame):
+        if shutdown_requested.is_set():
+            tqdm.write("\nForce exit.")
+            os._exit(1)
+        shutdown_requested.set()
+        tqdm.write("\nShutdown requested — finishing in-flight work and saving state "
+                   "(press Ctrl+C again to force-exit)...")
+
+    signal.signal(signal.SIGINT, _handle_signal)
+    signal.signal(signal.SIGTERM, _handle_signal)
+
     if not state.get("current_folder_name"):
-        state["current_folder_index"] = state.get("current_folder_index", 1)
-        state["current_folder_name"] = generate_folder_name(state["current_folder_index"])
-        state["current_folder_count"] = 0
-        save_state(state)
-        
-    print("Initializing dataset stream...")
+        with state_lock:
+            state["current_folder_index"] = state.get("current_folder_index", 1)
+            state["current_folder_name"] = generate_folder_name(state["current_folder_index"])
+            state["current_folder_count"] = 0
+            save_state(state)
+
+    # Created early (before recovery/dataset-init/env-checks) so every one of
+    # those startup phases — including pushing a leftover chunk from a killed
+    # prior run, which can itself take a long time — shows up on it too,
+    # instead of the terminal going silent until real generation starts.
+    pbar = tqdm(total=NUM_SAMPLES, desc="Overall progress", leave=True)
+
+    # Push anything left over from a previous run before doing anything else.
+    recover_orphaned_chunks(state, api, state_lock, stop_event, pbar=pbar)
+
+    if DESTINATION == "hf" and not stop_event.is_set():
+        global_count = refresh_global_count(state, api, state_lock, force=True)
+        if global_count >= GLOBAL_LIMIT:
+            tqdm.write(f"Global limit of {GLOBAL_LIMIT} reached ({global_count}). Exiting.")
+            pbar.close()
+            return
+
+    if stop_event.is_set():
+        tqdm.write("Stopped during startup recovery — see messages above. Safe to re-run.")
+        pbar.close()
+        return
+
+    pbar.set_postfix_str("initializing dataset stream", refresh=True)
     try:
-        ds = load_dataset(TEXT_CORPUS_HF_ID, split="train", streaming=True, token=hf_token)
         # Randomize the seed so every execution gets completely different books
+        ds = load_dataset(TEXT_CORPUS_HF_ID, split="train", streaming=True, token=hf_token)
         ds = ds.shuffle(buffer_size=1000, seed=random.randint(0, 1000000))
         dataset_iterator = iter(ds)
     except Exception as e:
-        print(f"Error loading dataset, using fallback text: {e}")
+        tqdm.write(f"Error loading dataset, using fallback text: {e}")
         dataset_iterator = None
 
     templates_list = list(TEMPLATES)
     manager = multiprocessing.Manager()
     queue = manager.Queue()
-    
+
     total_generated_this_run = 0
 
-    print("Running environment checks...")
+    pbar.set_postfix_str("running environment checks", refresh=True)
     try:
         import psutil
         available_gb = psutil.virtual_memory().available / (1024**3)
         global WORKERS
         if available_gb < 2.0:
-            print(f"WARNING: Only {available_gb:.1f}GB RAM available. Reducing workers.")
+            tqdm.write(f"WARNING: Only {available_gb:.1f}GB RAM available. Reducing workers.")
             WORKERS = min(WORKERS, max(2, int(available_gb)))
     except ImportError:
         pass
+
+    pbar.set_postfix_str("checking browser", refresh=True)
 
     async def smoke_test():
         from playwright.async_api import async_playwright
         async with async_playwright() as p:
             browser = await p.chromium.launch(headless=True)
             await browser.close()
-            print("✓ Chromium browser launch OK")
     try:
         asyncio.run(smoke_test())
     except Exception as e:
-        print(f"FATAL: Playwright smoke test failed: {e}. Please run 'playwright install chromium'")
+        tqdm.write(f"FATAL: Playwright smoke test failed: {e}. Please run 'playwright install chromium'")
+        pbar.close()
         return
 
+    # A single bar, updated in place — separate stacked bars need multi-line
+    # ANSI cursor control that not every terminal handles reliably, which
+    # shows up as a new line being printed on every update instead of the
+    # line refreshing. One bar's plain carriage-return update works
+    # everywhere. Current-phase detail (generating/augmenting/uploading)
+    # goes in the postfix text on that same line instead of a second bar.
+    pbar.set_postfix_str("starting", refresh=True)
+
+    pending_upload_thread = None
+    pending_upload_name = None
+    pending_upload_progress = None
+    dirty_samples = 0
+    augmented_upto_cache = {}
+
+    def wait_for_pending_upload():
+        nonlocal pending_upload_thread, pending_upload_name, pending_upload_progress
+        if pending_upload_thread is not None:
+            # Poll instead of a single blocking join() so the bar keeps
+            # visibly ticking (folder count + elapsed seconds) for however
+            # long the transfer takes, instead of freezing on one message.
+            while pending_upload_thread.is_alive():
+                folder, done, total, started_at = pending_upload_progress.snapshot()
+                elapsed = f"{time.monotonic() - started_at:.0f}s" if started_at else "0s"
+                pbar.set_postfix_str(
+                    f"waiting for upload of {pending_upload_name} to finish "
+                    f"({done}/{total} folder(s) pushed, {elapsed} elapsed)",
+                    refresh=True,
+                )
+                pending_upload_thread.join(timeout=1.0)
+            pending_upload_thread = None
+            pending_upload_name = None
+            pending_upload_progress = None
+
     with multiprocessing.Pool(processes=WORKERS, initializer=init_worker) as pool:
-        while total_generated_this_run < NUM_SAMPLES:
-            state = load_state()
-            folder_name = state["current_folder_name"]
-            folder_count = state["current_folder_count"]
-            local_total = state["local_total_pushed"]
-            
+        while (
+            total_generated_this_run < NUM_SAMPLES
+            and not stop_event.is_set()
+            and not shutdown_requested.is_set()
+        ):
+            with state_lock:
+                folder_name = state["current_folder_name"]
+                folder_count = state["current_folder_count"]
+
+            temp_dir = os.path.abspath(f"./temp_generation_{folder_name}")
+            images_path = os.path.join(temp_dir, "images")
+            annotations_path = os.path.join(temp_dir, "annotations")
+
+            os.makedirs(images_path, exist_ok=True)
+            os.makedirs(annotations_path, exist_ok=True)
+
+            # Reconcile in-memory state with actual files on disk. Self-heals
+            # after a crash — bounded by CHUNK_LIMIT, not total dataset size.
+            actual_pairs = len([
+                f for f in os.listdir(images_path) if f.endswith('.png')
+                and os.path.exists(os.path.join(annotations_path, f.replace('.png', '.json')))
+            ])
+            if actual_pairs != folder_count:
+                tqdm.write(f"State correction: state said {folder_count}, actual valid pairs = {actual_pairs}")
+                with state_lock:
+                    state["current_folder_count"] = actual_pairs
+                    save_state(state)
+                folder_count = actual_pairs
+
+            # Catch up any outstanding augmentation for this folder before
+            # deciding whether it's ready to flush — cheap no-op once caught up.
+            if augmented_upto_cache.get(folder_name) != folder_count:
+                catch_up_augmentation(folder_name, images_path, annotations_path, pool, pbar)
+                augmented_upto_cache[folder_name] = folder_count
+
             if folder_count >= CHUNK_LIMIT:
-                print(f"Chunk limit ({CHUNK_LIMIT}) reached for folder {folder_name}.")
-                success = flush_current_folder(state, api)
-                if not success:
+                old_name, old_count = rotate_to_next_folder(state, state_lock)
+                wait_for_pending_upload()  # at most one outstanding upload at a time
+                if stop_event.is_set():
                     break
-                # Continue the loop with new folder
+                if PIPELINE_UPLOAD:
+                    pending_upload_name = old_name
+                    pending_upload_progress = UploadProgress()
+                    pending_upload_thread = threading.Thread(
+                        target=upload_chunk,
+                        args=(old_name, old_count, state, api, state_lock, stop_event, None, pending_upload_progress),
+                        daemon=False,
+                    )
+                    pending_upload_thread.start()
+                else:
+                    upload_chunk(old_name, old_count, state, api, state_lock, stop_event, pbar)
                 continue
-                
+
+            with state_lock:
+                local_total = state["local_total_pushed"]
             user_historical_total = local_total + folder_count
             if user_historical_total >= USER_LOCAL_LIMIT:
-                print(f"User local limit of {USER_LOCAL_LIMIT} reached (Historical Total: {user_historical_total}). Exiting.")
+                tqdm.write(f"User local limit of {USER_LOCAL_LIMIT} reached "
+                           f"(Historical Total: {user_historical_total}). Exiting.")
                 break
-                
+
             remaining_in_chunk = CHUNK_LIMIT - folder_count
             remaining_in_run = NUM_SAMPLES - total_generated_this_run
             remaining_allowed = USER_LOCAL_LIMIT - user_historical_total
             batch_size = min(remaining_in_chunk, remaining_in_run, REFRESH_INTERVAL, remaining_allowed)
-            
+
             if batch_size <= 0:
                 break
-                
-            temp_dir = os.path.abspath(f"./temp_generation_{folder_name}")
-            images_path = os.path.join(temp_dir, "images")
-            annotations_path = os.path.join(temp_dir, "annotations")
-            
-            os.makedirs(images_path, exist_ok=True)
-            os.makedirs(annotations_path, exist_ok=True)
-            
-            # Reconcile state with actual files on disk
-            if os.path.exists(images_path) and os.path.exists(annotations_path):
-                actual_pairs = len([
-                    f for f in os.listdir(images_path) if f.endswith('.png')
-                    and os.path.exists(os.path.join(annotations_path, f.replace('.png', '.json')))
-                ])
-                if actual_pairs != folder_count:
-                    print(f"State correction: state says {folder_count}, actual valid pairs = {actual_pairs}")
-                    state["current_folder_count"] = actual_pairs
-                    folder_count = actual_pairs
-                    save_state(state)
-            
-            print(f"--- Folder: {folder_name} | Progress: {folder_count}/{CHUNK_LIMIT} ---")
-            
+
+            tqdm.write(f"--- Folder: {folder_name} | Progress: {folder_count}/{CHUNK_LIMIT} ---")
+
             tasks_list = []
             for i in range(batch_size):
                 machine_unique_index = local_total + folder_count + i
                 template_name = random.choice(templates_list)
                 tasks_list.append((machine_unique_index, template_name, images_path, annotations_path))
-                
+
             books_pool = []
             if dataset_iterator:
                 try:
@@ -416,93 +903,80 @@ def main():
                         books_pool.append(text)
                 except StopIteration:
                     pass
-                    
+
             if not books_pool:
                 books_pool = ["نص تجريبي افتراضي للاختبار فقط. هذا النص يظهر عند فشل الاتصال بقاعدة البيانات."] * NUM_BOOKS_TO_FETCH
-            
+
             chunk_size = (len(tasks_list) + WORKERS - 1) // WORKERS
             task_chunks = [tasks_list[i:i + chunk_size] for i in range(0, len(tasks_list), chunk_size)]
-            
-            print(f"Generating {len(tasks_list)} samples with {WORKERS} workers...")
-            pbar = tqdm(total=len(tasks_list), desc="Batch Generation")
-            
+
+            gen_done = 0
+            pbar.set_postfix_str(f"generating {folder_name}: {gen_done}/{len(tasks_list)}", refresh=True)
+
             results = []
             for chunk in task_chunks:
-                results.append(pool.apply_async(worker_process, args=(chunk, queue, books_pool)))
-                
-            for _ in range(len(tasks_list)):
+                results.append(pool.apply_async(worker_process, args=(chunk, queue, books_pool, PROGRESS_REPORT_BATCH_SIZE)))
+
+            completed = 0
+            while completed < len(tasks_list):
                 try:
-                    success = queue.get(timeout=120)
+                    payload = queue.get(timeout=120)
                 except queue_module.Empty:
-                    print("WARNING: Worker timeout — some workers may have died.")
+                    tqdm.write("WARNING: Worker timeout — some workers may have died.")
                     break
-                pbar.update(1)
-                
-                if success:
-                    # Atomic State Persistence immediately after every single sample generation
-                    state["current_folder_count"] += 1
-                    save_state(state)
-                total_generated_this_run += 1
-                
-            # Ensure the batch completes
+
+                for err_index, err_msg in payload.get("errors", []):
+                    tqdm.write(f"  [gen] sample {err_index}: {err_msg}")
+
+                for success in payload.get("results", []):
+                    completed += 1
+                    gen_done += 1
+                    pbar.set_postfix_str(f"generating {folder_name}: {gen_done}/{len(tasks_list)}", refresh=False)
+                    pbar.update(1)
+                    if success:
+                        with state_lock:
+                            state["current_folder_count"] += 1
+                            dirty_samples += 1
+                            if dirty_samples >= STATE_SAVE_INTERVAL:
+                                save_state(state)
+                                dirty_samples = 0
+                    total_generated_this_run += 1
+
             for r in results:
                 r.get()
-                
-            pbar.close()
 
-            # ----------------------------------------------------------
-            # AUGMENTATION PASS — runs after each batch of originals
-            # ----------------------------------------------------------
-            if ENABLE_AUGMENTATION:
-                # 1. Create augmented temp directories
-                for aug_i in range(1, AUGMENTATIONS_PER_IMAGE + 1):
-                    aug_dir = os.path.abspath(f"./temp_generation_{folder_name}_aug{aug_i}")
-                    os.makedirs(os.path.join(aug_dir, "images"), exist_ok=True)
-                    os.makedirs(os.path.join(aug_dir, "annotations"), exist_ok=True)
+            # Always persist at the end of a batch — batches are already
+            # infrequent (one per chunk in the common configuration).
+            with state_lock:
+                save_state(state)
+                dirty_samples = 0
 
-                # 2. Collect original images from this batch
-                original_images = sorted([
-                    f"sample_{idx:07d}.png" for idx, _, _, _ in tasks_list
-                    if os.path.exists(os.path.join(images_path, f"sample_{idx:07d}.png"))
-                ])
+        # Final flush of any remaining generated (and now fully augmented)
+        # samples in this run — still inside the pool's lifetime.
+        wait_for_pending_upload()
 
-                # 3. Build augmentation task list
-                aug_tasks = []
-                for img_file in original_images:
-                    json_file = img_file.replace('.png', '.json')
-                    img_src = os.path.join(images_path, img_file)
-                    json_src = os.path.join(annotations_path, json_file)
+        with state_lock:
+            remaining_count = state.get("current_folder_count", 0)
+            final_folder = state.get("current_folder_name", "")
 
-                    if not os.path.exists(json_src):
-                        continue
+        if remaining_count > 0 and not stop_event.is_set():
+            temp_dir = os.path.abspath(f"./temp_generation_{final_folder}")
+            images_path = os.path.join(temp_dir, "images")
+            annotations_path = os.path.join(temp_dir, "annotations")
+            if os.path.isdir(images_path):
+                catch_up_augmentation(final_folder, images_path, annotations_path, pool, pbar)
+            tqdm.write("Finalizing and pushing remaining samples...")
+            old_name, old_count = rotate_to_next_folder(state, state_lock)
+            upload_chunk(old_name, old_count, state, api, state_lock, stop_event, pbar)
 
-                    # Pick 3 DISTINCT augmentations for this image
-                    aug_names = augmentation.pick_n_distinct(AUGMENTATIONS_PER_IMAGE)
-                    for aug_i, aug_name in enumerate(aug_names, 1):
-                        aug_dir = os.path.abspath(f"./temp_generation_{folder_name}_aug{aug_i}")
-                        aug_img_path = os.path.join(aug_dir, "images", img_file)
-                        aug_json_path = os.path.join(aug_dir, "annotations", json_file)
-                        aug_tasks.append((img_src, json_src, aug_img_path, aug_json_path, aug_name))
+    pbar.close()
 
-                # 4. Run augmentation in parallel using the existing pool
-                print(f"Augmenting {len(original_images)} images × {AUGMENTATIONS_PER_IMAGE} variants...")
-                pbar_aug = tqdm(total=len(aug_tasks), desc="Augmentation")
-                aug_results = []
-                for task in aug_tasks:
-                    aug_results.append(pool.apply_async(augmentation.augment_sample, args=task))
-                for ar in aug_results:
-                    try:
-                        ar.get(timeout=60)
-                    except Exception as e:
-                        print(f"  [aug] Error: {e}")
-                    pbar_aug.update(1)
-                pbar_aug.close()
-
-    # Final flush of any remaining un-pushed samples
-    state = load_state()
-    if state.get("current_folder_count", 0) > 0:
-        print("\nFinalizing and pushing remaining un-pushed samples...")
-        flush_current_folder(state, api)
+    if shutdown_requested.is_set():
+        print("\nShutdown complete — state saved, safe to resume with the same command.")
+    elif stop_event.is_set():
+        print("\nStopped (limit reached or a push failed permanently after retries) — state saved, safe to resume.")
+    else:
+        print("\nRun complete — state saved.")
 
 
 if __name__ == "__main__":

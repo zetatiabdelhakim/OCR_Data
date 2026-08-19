@@ -7,7 +7,7 @@
 # 1. TEAM & IDENTITY SETTINGS
 # ------------------------------------------------------------------------------
 # Unique identifier for the developer running this script (used in folder naming)
-user_name: "hakim"
+user_name: "MachineOne"
 
 # Target Hugging Face dataset repository namespace (Format: "org_or_user/repo_name")
 repo_id: "OCR-Data/dataset"
@@ -32,7 +32,7 @@ chunk_limit: 9990
 
 # Number of samples to generate in one run (if not capped by global limit). 
 # Set to a high number to run indefinitely until global_limit is reached.
-num_samples: 10000
+num_samples: 10000000
 
 # Number of concurrent workers (processes) used during generation.
 # Set to 'auto' to use minimum of CPU count or 10. Otherwise, provide an integer.
@@ -45,7 +45,7 @@ maximum_num_of_workers: 10
 hybrid_probability: 0.07
 
 # The refresh interval for batches of sample generation tasks.
-refresh_interval: 9990
+refresh_interval: 5000
 
 # Number of books/texts to fetch from the Hugging Face dataset at a time.
 num_books_to_fetch: 10
@@ -82,3 +82,50 @@ enable_augmentation: true
 
 # Number of augmented copies per original image (each picks a DIFFERENT augmentation from 10 available)
 augmentations_per_image: 3
+
+# Output format for AUGMENTED images only (originals are always lossless PNG, unaffected by this).
+# "png"  : lossless, current behavior (default).
+# "jpeg" : opt-in — noisy/textured augmented content compresses 5-10x smaller as JPEG,
+#          which is by far the biggest lever on upload time, but introduces lossy
+#          compression artifacts into what an OCR model would train on. Validate
+#          quality before relying on this in production.
+augmentation_output_format: "jpeg"
+
+# JPEG quality (1-100) used only when augmentation_output_format is "jpeg".
+augmentation_jpeg_quality: 90
+
+# ------------------------------------------------------------------------------
+# 6. PERFORMANCE, PIPELINING & RESILIENCE
+# ------------------------------------------------------------------------------
+# How many chunk flushes to wait between refreshing the team-wide global sample
+# count from Hugging Face. The check itself is now a cheap shallow folder-count
+# (not a full recursive file listing), but there's still no need to hit the
+# network every single flush for a soft, team-wide budget.
+global_count_check_interval: 5
+
+# Upload the just-completed chunk's originals + augmented folders in a background
+# thread while the NEXT chunk starts generating immediately, instead of blocking
+# the whole pipeline on the upload. At most one upload runs in the background at
+# a time. Set to false to fall back to the old strictly-sequential behavior
+# (useful on disk-constrained machines, since this keeps ~2 chunks of temp data
+# on disk at once instead of 1).
+pipeline_upload: true
+
+# How many successfully-generated samples to batch up before writing state.yaml
+# to disk. State is always saved at chunk boundaries, on shutdown, and on error
+# paths regardless of this interval.
+state_save_interval: 25
+
+# How many samples a worker process batches up before reporting progress back
+# to the main process, to cut down on inter-process communication overhead.
+progress_report_batch_size: 25
+
+# Retry settings for Hugging Face uploads (handles transient network errors
+# without losing a multi-hour transfer or aborting the whole run).
+upload_retry_attempts: 5
+upload_retry_backoff_seconds: 7
+
+# Each folder's push is split into this many smaller batches (each a real,
+# completed upload) so progress is actually visible instead of one silent
+# multi-GB call. Higher = smoother progress but more commits/HTTP overhead.
+upload_progress_batches: 20

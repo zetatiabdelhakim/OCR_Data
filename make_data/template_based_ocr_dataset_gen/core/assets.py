@@ -9,6 +9,7 @@ import os
 import random
 import base64
 import mimetypes
+import functools
 import pandas as pd
 import yaml
 
@@ -531,7 +532,11 @@ def get_page_title_font():
 # Image helpers
 # ------------------------------------------------------------------
 
+@functools.lru_cache(maxsize=None)
 def get_image_base64(img_path):
+    # Cached per worker process: the same nature/background images are reused
+    # across many generated documents, so re-reading + re-encoding them from
+    # disk on every call was pure redundant I/O. Output is byte-identical.
     mime_type, _ = mimetypes.guess_type(img_path)
     if not mime_type:
         mime_type = "image/jpeg"

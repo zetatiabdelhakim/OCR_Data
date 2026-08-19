@@ -26,6 +26,7 @@ import random
 
 import cv2
 import numpy as np
+import yaml
 from PIL import Image, ImageDraw, ImageFont
 import arabic_reshaper
 from bidi.algorithm import get_display
@@ -38,6 +39,17 @@ from augraphy import (
     ReflectedLight,
     ShadowCast,
 )
+
+# -----------------------------------------------------------------------
+# Config — output format for augmented images only. Originals (written by
+# the render engine) are always lossless PNG and are never touched here.
+# -----------------------------------------------------------------------
+_CONFIG_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "config.yaml")
+with open(_CONFIG_PATH, "r", encoding="utf-8") as _f:
+    _config = yaml.safe_load(_f)
+
+AUGMENTATION_OUTPUT_FORMAT = str(_config.get("augmentation_output_format", "png")).lower()
+AUGMENTATION_JPEG_QUALITY = int(_config.get("augmentation_jpeg_quality", 92))
 
 # -----------------------------------------------------------------------
 # Registry of all 10 augmentation names & sampling weights
@@ -552,32 +564,44 @@ def transform_annotation(name, annotation, params, old_shape, new_shape):
 # -----------------------------------------------------------------------
 
 def augment_sample(img_path, json_path, out_img_path, out_json_path, aug_name):
-    """Load original image + JSON → apply one augmentation → save the pair."""
+    """Load original image + JSON → apply one augmentation → save the pair.
+
+    Returns (success: bool, error_message: str | None). Runs inside a worker
+    subprocess (via the multiprocessing pool) — it must never print directly,
+    since that can corrupt the main process's live progress bars; any error
+    detail is returned instead, for the main process to log.
+    """
     img = cv2.imread(img_path)
     if img is None:
-        return False
+        return False, f"could not read image: {img_path}"
 
     try:
         with open(json_path, "r", encoding="utf-8") as f:
             annotation = json.load(f)
-    except Exception:
-        return False
+    except Exception as e:
+        return False, f"could not read annotation {json_path}: {e}"
 
     try:
         augmented_img, params = apply_augmentation(aug_name, img)
     except Exception as e:
-        print(f"  [aug] '{aug_name}' failed on {img_path}: {e}")
-        return False
+        return False, f"'{aug_name}' failed on {img_path}: {e}"
 
     if augmented_img is None or augmented_img.size == 0:
-        return False
+        return False, f"'{aug_name}' produced an empty image for {img_path}"
 
     new_annotation = transform_annotation(
         aug_name, annotation, params, img.shape, augmented_img.shape
     )
 
-    cv2.imwrite(out_img_path, augmented_img)
-    with open(out_json_path, "w", encoding="utf-8") as f:
-        json.dump(new_annotation, f, ensure_ascii=False, indent=4)
+    try:
+        if AUGMENTATION_OUTPUT_FORMAT == "jpeg":
+            out_img_path = os.path.splitext(out_img_path)[0] + ".jpg"
+            cv2.imwrite(out_img_path, augmented_img, [cv2.IMWRITE_JPEG_QUALITY, AUGMENTATION_JPEG_QUALITY])
+        else:
+            cv2.imwrite(out_img_path, augmented_img)
+        with open(out_json_path, "w", encoding="utf-8") as f:
+            json.dump(new_annotation, f, ensure_ascii=False, indent=4)
+    except Exception as e:
+        return False, f"failed writing output for {out_img_path}: {e}"
 
-    return True
+    return True, None
