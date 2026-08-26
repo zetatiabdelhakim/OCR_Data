@@ -59,6 +59,7 @@ GLOBAL_LIMIT = config.get("global_limit", 50000)
 USER_LOCAL_LIMIT = config.get("user_local_limit", 20000)
 CHUNK_LIMIT = config.get("chunk_limit", 9000)
 NUM_SAMPLES = config.get("num_samples", 2000)
+UPLOAD_WORKERS=config.get("upload_workers", 2)
 
 WORKERS = config.get("workers", "auto")
 MAXIMUM_NUM_OF_WORKERS = config.get("maximum_num_of_workers", 10)
@@ -81,6 +82,11 @@ PROGRESS_REPORT_BATCH_SIZE = max(1, int(config.get("progress_report_batch_size",
 UPLOAD_RETRY_ATTEMPTS = max(1, int(config.get("upload_retry_attempts", 4)))
 UPLOAD_RETRY_BACKOFF_SECONDS = float(config.get("upload_retry_backoff_seconds", 10))
 UPLOAD_PROGRESS_BATCHES = max(1, int(config.get("upload_progress_batches", 20)))
+
+# Hub API quota (server side: 1000 requests / 5 min). The limiter stays
+# deliberately below it and blocks (never errors) when the budget is spent.
+HF_RATE_LIMIT_REQUESTS = int(config.get("hf_rate_limit_requests", 900))
+HF_RATE_LIMIT_PERIOD = float(config.get("hf_rate_limit_period", 300))
 
 STATE_FILE = "state.yaml"
 
@@ -370,6 +376,41 @@ def _plan_batches(files):
     return [files[i:i + batch_size] for i in range(0, len(files), batch_size)]
 
 
+def _stage_aug_sharded(aug_dir, base_dir, path_in_repo):
+    """Move one chunk's augmented files into sibling shard folders
+    <base_dir>/data_aug/<folder>_aug1..N/<images_aug|annotations_aug>/.
+
+    The Hub hard-rejects any repository directory holding more than 10,000
+    files. A chunk yields CHUNK_LIMIT originals x AUGMENTATIONS_PER_IMAGE
+    variants, so a flat data_aug/<folder>/ would hold ~30k files in one
+    directory. Variant files are named <stem>_01.._NN; variant slot i lands
+    in <folder>_aug<i>, keeping every directory at exactly CHUNK_LIMIT files
+    (< 10,000 given chunk_limit stays below it).
+
+    Returns the list of (staged_file, original_path) moves so a failed
+    upload can be rolled back and retried from the original layout on the
+    next run.
+    """
+    moves = []
+    for sub in ("images_aug", "annotations_aug"):
+        src_sub = os.path.join(aug_dir, sub)
+        if not os.path.isdir(src_sub):
+            continue
+        for fname in os.listdir(src_sub):
+            stem, _ext = os.path.splitext(fname)
+            slot = stem.rsplit("_", 1)[-1]
+            if not slot.isdigit():
+                slot = "1"
+            shard_repo = f"{path_in_repo}_aug{int(slot)}"
+            shard_dir = os.path.join(base_dir, *shard_repo.split("/"), sub)
+            os.makedirs(shard_dir, exist_ok=True)
+            src = os.path.join(src_sub, fname)
+            dst = os.path.join(shard_dir, fname)
+            shutil.move(src, dst)
+            moves.append((dst, src))
+    return moves
+
+
 def _plan_job(kind, local_path, path_in_repo):
     """Precompute how many progress ticks this job (folder) will produce, so
     the caller can show a real X/Y over the whole chunk before starting."""
@@ -392,27 +433,91 @@ def _push_one_folder(api, kind, local_path, path_in_repo, batches, on_batch_done
             if on_batch_done is not None:
                 on_batch_done()
             return True
-        for i, batch in enumerate(batches, 1):
-            def _do(batch=batch):
-                api.upload_folder(
-                    folder_path=local_path, path_in_repo=path_in_repo,
-                    repo_id=REPO_ID, repo_type="dataset", allow_patterns=batch,
-                )
-            try:
-                _retry(_do, label=f"{kind} ({path_in_repo}) batch {i}/{len(batches)}")
-            except Exception:
-                return False
-            if on_batch_done is not None:
-                on_batch_done()
-        shutil.rmtree(local_path, ignore_errors=True)
+
+        # upload_large_folder() has no path_in_repo argument: files land at the
+        # repo root relative to folder_path. To get repo paths named after the
+        # temp folder (minus the temp_generation_ prefix), the folder is staged
+        # as <staging_root>/<path_in_repo> and the staging root is uploaded
+        # with an allow_patterns filter. The .cache/huggingface resume metadata
+        # lives inside the folder, so it survives the move and retries resume
+        # correctly.
+        folder_base = os.path.basename(local_path)
+        if folder_base.startswith("temp_generation_"):
+            folder_base = folder_base[len("temp_generation_"):]
+        staging_root = os.path.abspath(f"./_hf_stage_{folder_base}")
+
+        aug_moves = []
+        if kind == "aug":
+            # Shard variants into data_aug/<folder>_aug1..N up front (see
+            # _stage_aug_sharded) — a flat data_aug/<folder>/ would exceed the
+            # Hub's 10,000-files-per-directory limit and get rejected.
+            aug_moves = _stage_aug_sharded(local_path, staging_root, path_in_repo)
+            allow_patterns = [f"{path_in_repo}_aug*/**"]
+
+            def _do():
+                _upload_staging()
+        else:
+            staged_path = os.path.join(staging_root, *path_in_repo.split("/"))
+            allow_patterns = [f"{path_in_repo}/**"]
+
+            def _do():
+                os.makedirs(os.path.dirname(staged_path), exist_ok=True)
+                if not os.path.isdir(staged_path):
+                    shutil.move(local_path, staged_path)
+                _upload_staging()
+
+        def _upload_staging():
+            print("############################## UPLOADING LARGE FOLDER ################################")
+            api.upload_large_folder(
+                repo_id=REPO_ID,
+                repo_type="dataset",
+                folder_path=staging_root,
+                allow_patterns=allow_patterns,
+                num_workers=8,          # ajuste selon ta bande passante / CPU
+                print_report=True,
+                print_report_every=60,
+            )
+            print("############################## UPLOADING DONE ################################")
+
+        try:
+            _retry(_do, label=f"{kind} ({path_in_repo}) large-folder upload")
+        except Exception:
+            # Put the folder back under its temp_generation_ name so
+            # recover_orphaned_chunks() finds and re-pushes it on the next run.
+            if kind == "aug":
+                for dst, src in aug_moves:
+                    if os.path.exists(dst) and not os.path.exists(src):
+                        os.makedirs(os.path.dirname(src), exist_ok=True)
+                        shutil.move(dst, src)
+            elif os.path.isdir(staged_path) and not os.path.isdir(local_path):
+                shutil.move(staged_path, local_path)
+            shutil.rmtree(staging_root, ignore_errors=True)
+            return False
+
+        shutil.rmtree(staging_root, ignore_errors=True)
+        if kind == "aug":
+            # The shard staging moved everything out of the temp aug folder;
+            # drop the now-empty husk so it isn't mistaken for pending work.
+            shutil.rmtree(local_path, ignore_errors=True)
+
+        # upload_large_folder fait tout en un seul appel (plusieurs commits en
+        # interne), donc on ne peut plus ticker par batch — on tick une seule
+        # fois pour signaler que ce dossier est terminé.
+        if on_batch_done is not None:
+            on_batch_done()
+
         return True
     else:
-        dest_path = os.path.join(LOCAL_OUTPUT_DIR, *path_in_repo.split("/"))
         try:
-            os.makedirs(os.path.dirname(dest_path), exist_ok=True)
-            if os.path.exists(dest_path):
-                shutil.rmtree(dest_path)
-            shutil.move(local_path, dest_path)
+            if kind == "aug":
+                _stage_aug_sharded(local_path, LOCAL_OUTPUT_DIR, path_in_repo)
+                shutil.rmtree(local_path, ignore_errors=True)
+            else:
+                dest_path = os.path.join(LOCAL_OUTPUT_DIR, *path_in_repo.split("/"))
+                os.makedirs(os.path.dirname(dest_path), exist_ok=True)
+                if os.path.exists(dest_path):
+                    shutil.rmtree(dest_path)
+                shutil.move(local_path, dest_path)
             if on_batch_done is not None:
                 on_batch_done()
             return True
@@ -465,11 +570,9 @@ def upload_chunk(folder_name, folder_count, state, api, state_lock, stop_event, 
         jobs.append(("originals", originals_dir, f"data/{folder_name}"))
 
     if ENABLE_AUGMENTATION:
-        for aug_i in range(1, AUGMENTATIONS_PER_IMAGE + 1):
-            aug_folder_name = f"{folder_name}_aug{aug_i}"
-            aug_dir = os.path.abspath(f"./temp_generation_{aug_folder_name}")
-            if os.path.isdir(aug_dir):
-                jobs.append((f"aug{aug_i}", aug_dir, f"data_aug/{aug_folder_name}"))
+        aug_dir = os.path.abspath(f"./temp_generation_{folder_name}_aug")
+        if os.path.isdir(aug_dir):
+            jobs.append(("aug", aug_dir, f"data_aug/{folder_name}"))
 
     if not jobs:
         return True
@@ -503,7 +606,7 @@ def upload_chunk(folder_name, folder_count, state, api, state_lock, stop_event, 
             progress.tick()
 
     results = {}
-    with ThreadPoolExecutor(max_workers=len(job_plans)) as ex:
+    with ThreadPoolExecutor(max_workers=min(UPLOAD_WORKERS, len(job_plans))) as ex:
         futures = {
             ex.submit(_push_one_folder, api, kind, path, repo_path, batches, _on_batch_done): kind
             for kind, path, repo_path, batches, _n in job_plans
@@ -568,10 +671,8 @@ def recover_orphaned_chunks(state, api, state_lock, stop_event, pbar=None):
     bases = set()
     for d in entries:
         name = d[len("temp_generation_"):]
-        for suf in ("_aug1", "_aug2", "_aug3"):
-            if name.endswith(suf):
-                name = name[: -len(suf)]
-                break
+        if name.endswith("_aug"):
+            name = name[: -len("_aug")]
         bases.add(name)
     bases.discard(current)
 
@@ -604,12 +705,11 @@ def catch_up_augmentation(folder_name, images_path, annotations_path, pool, pbar
     if not ENABLE_AUGMENTATION:
         return
 
-    aug_dirs = {}
-    for aug_i in range(1, AUGMENTATIONS_PER_IMAGE + 1):
-        aug_dir = os.path.abspath(f"./temp_generation_{folder_name}_aug{aug_i}")
-        os.makedirs(os.path.join(aug_dir, "images"), exist_ok=True)
-        os.makedirs(os.path.join(aug_dir, "annotations"), exist_ok=True)
-        aug_dirs[aug_i] = aug_dir
+    aug_dir = os.path.abspath(f"./temp_generation_{folder_name}_aug")
+    aug_images_path = os.path.join(aug_dir, "images_aug")
+    aug_annotations_path = os.path.join(aug_dir, "annotations_aug")
+    os.makedirs(aug_images_path, exist_ok=True)
+    os.makedirs(aug_annotations_path, exist_ok=True)
 
     if not os.path.isdir(images_path):
         return
@@ -618,26 +718,26 @@ def catch_up_augmentation(folder_name, images_path, annotations_path, pool, pbar
 
     pending = []
     for img_file in originals:
-        json_file = img_file.replace(".png", ".json")
+        stem = os.path.splitext(img_file)[0]
+        json_file = stem + ".json"
         img_src = os.path.join(images_path, img_file)
         json_src = os.path.join(annotations_path, json_file)
         if not os.path.exists(json_src):
             continue
 
+        # An augmented variant exists if its suffixed image (or JPEG twin,
+        # when AUGMENTATION_OUTPUT_FORMAT is jpeg) is on disk. Variants of
+        # sample_0000001 are sample_0000001_01.._NN, zero-padded for stable
+        # lexicographic ordering in the repo.
         missing_slots = []
         already_used = set()
         for aug_i in range(1, AUGMENTATIONS_PER_IMAGE + 1):
-            aug_dir = aug_dirs[aug_i]
-            existing_img = (
-                os.path.exists(os.path.join(aug_dir, "images", img_file))
-                or os.path.exists(os.path.join(aug_dir, "images", os.path.splitext(img_file)[0] + ".jpg"))
-            )
-            if not existing_img:
+            base = os.path.join(aug_images_path, f"{stem}_{aug_i:02d}")
+            if not (os.path.exists(base + ".png") or os.path.exists(base + ".jpg")):
                 missing_slots.append(aug_i)
                 continue
-            existing_json = os.path.join(aug_dir, "annotations", json_file)
             try:
-                with open(existing_json, "r", encoding="utf-8") as jf:
+                with open(os.path.join(aug_annotations_path, f"{stem}_{aug_i:02d}.json"), "r", encoding="utf-8") as jf:
                     name = json.load(jf).get("meta", {}).get("augmentation", {}).get("name")
                 if name:
                     already_used.add(name)
@@ -655,9 +755,8 @@ def catch_up_augmentation(folder_name, images_path, annotations_path, pool, pbar
 
         aug_names = augmentation.pick_n_distinct(len(missing_slots), weights=weights)
         for aug_i, aug_name in zip(missing_slots, aug_names):
-            aug_dir = aug_dirs[aug_i]
-            aug_img_path = os.path.join(aug_dir, "images", img_file)
-            aug_json_path = os.path.join(aug_dir, "annotations", json_file)
+            aug_img_path = os.path.join(aug_images_path, f"{stem}_{aug_i:02d}.png")
+            aug_json_path = os.path.join(aug_annotations_path, f"{stem}_{aug_i:02d}.json")
             pending.append((img_src, json_src, aug_img_path, aug_json_path, aug_name))
 
     if not pending:
@@ -685,6 +784,7 @@ def main():
     from dotenv import load_dotenv
     from datasets import load_dataset
     from huggingface_hub import login, HfApi
+    from core.hf_throttle import install as install_hf_throttle
     import queue as queue_module
     load_dotenv()
 
@@ -694,6 +794,13 @@ def main():
         if not hf_token:
             print("Error: HF_TOKEN is not set in .env. Required when destination is 'hf'.")
             return
+        # Must be installed before the first hub API call (login included) —
+        # patches huggingface_hub's shared session so every request from every
+        # thread (upload workers included) shares one rate budget.
+        install_hf_throttle(
+            max_requests=HF_RATE_LIMIT_REQUESTS,
+            period_seconds=HF_RATE_LIMIT_PERIOD,
+        )
         print("Logging in to Hugging Face...")
         login(token=hf_token)
         api = HfApi()
