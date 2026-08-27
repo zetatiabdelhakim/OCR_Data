@@ -10,7 +10,7 @@
 user_name: "Nihal"
 
 # Target Hugging Face dataset repository namespace (Format: "org_or_user/repo_name")
-repo_id: "OCR-Data/datatest"
+repo_id: "OCR-Data/dataset"
 
 # Target destination for generated outputs:
 #   - 'hf'  : Pushes completed batch folders to Hugging Face Hub, then deletes local temporary copies.
@@ -25,7 +25,7 @@ global_limit: 1000000
 
 # Absolute maximum number of images a SINGLE user is allowed to generate on their machine across all runs.
 # The script will completely halt the user once their local historical total reaches this number.
-user_local_limit: 50000
+user_local_limit: 250000
 
 # Maximum number of images allowed per batch subfolder before rotating to a new folder ID.
 # MUST stay below 10000: the Hub caps any repository directory at 10,000 files, and each
@@ -34,7 +34,7 @@ chunk_limit: 9990
 
 # Number of samples to generate in one run (if not capped by global limit). 
 # Set to a high number to run indefinitely until global_limit is reached.
-num_samples: 10000
+num_samples: 20000
 
 # Number of concurrent workers (processes) used during generation.
 # Set to 'auto' to use minimum of CPU count or 10. Otherwise, provide an integer.

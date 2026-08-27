@@ -196,10 +196,29 @@ async def worker_task(tasks, queue, books_pool, report_batch_size):
                         pass
                     browser = await p.chromium.launch(headless=True)
 
-                try:
-                    await generate_one(browser, index, books_pool, template_name, images_path, annotations_path)
+                # captureScreenshot "Unable to capture screenshot" is a
+                # transient Chromium glitch — retry the same sample a few
+                # times with a fresh page/browser instead of losing the slot.
+                succeeded = False
+                last_err = None
+                for attempt in range(1, 4):
+                    try:
+                        await generate_one(browser, index, books_pool, template_name, images_path, annotations_path)
+                        succeeded = True
+                        break
+                    except Exception as e:
+                        last_err = e
+                        if attempt < 3:
+                            await asyncio.sleep(1.0 * attempt)
+                            try:
+                                await browser.close()
+                            except Exception:
+                                pass
+                            browser = await p.chromium.launch(headless=True)
+                if succeeded:
                     batch_results.append(True)
-                except Exception as e:
+                else:
+                    e = last_err
                     batch_results.append(False)
                     batch_errors.append((index, str(e)))
                     if "Connection closed" in str(e) or "Target closed" in str(e):
@@ -995,9 +1014,31 @@ def main():
 
             tqdm.write(f"--- Folder: {folder_name} | Progress: {folder_count}/{CHUNK_LIMIT} ---")
 
+            # folder_count only counts valid pairs; failed samples leave
+            # permanent holes in the numbering, so local_total + folder_count
+            # can point at indices that already exist (or below the current
+            # max). Target the actual holes first, then extend past the max.
+            existing_indices = set()
+            for f in os.listdir(images_path):
+                # Only a png WITH its json counts as occupying a slot — an
+                # orphan png (crash between the two writes) must be regenerated.
+                if f.startswith("sample_") and f.endswith(".png"):
+                    if not os.path.exists(os.path.join(annotations_path, f[:-4] + ".json")):
+                        continue
+                    try:
+                        existing_indices.add(int(f[len("sample_"):-len(".png")]))
+                    except ValueError:
+                        pass
+            target_count = max(local_total + folder_count + batch_size, local_total + folder_count)
+            wanted = set(range(local_total + folder_count, target_count)) - existing_indices
+            next_new = (max(existing_indices) + 1) if existing_indices else (local_total + folder_count)
+            while len(wanted) < batch_size:
+                wanted.add(next_new)
+                next_new += 1
+            batch_indices = sorted(wanted)[:batch_size]
+
             tasks_list = []
-            for i in range(batch_size):
-                machine_unique_index = local_total + folder_count + i
+            for machine_unique_index in batch_indices:
                 template_name = random.choice(templates_list)
                 tasks_list.append((machine_unique_index, template_name, images_path, annotations_path))
 
