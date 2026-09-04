@@ -18,41 +18,109 @@ A4 content style. This replaces all five with:
 - a single launcher (`generate.py`) that picks a template **uniformly at
   random** each sample - no fixed weighting table, so the mix feels
   organic rather than bucketed
-- occasional **hybrid injection**: ~28% of samples also get a random
-  foreign snippet (a chart, an equation, a quote, a mini-table, a
-  figure, or a theorem box) dropped into whatever template was picked -
-  a chart inside a receipt, an equation on a book cover, etc.
-- **Data Augmentation & Hugging Face Integration**: Includes data augmentation steps to make the dataset more robust, and natively connects to Hugging Face for seamless dataset uploading and sharing.
+- occasional **hybrid injection**: a `hybrid_probability` share of samples
+  also get a random foreign snippet (a chart, an equation, a quote, a
+  mini-table, a figure, or a theorem box) dropped into whatever template
+  was picked - a chart inside a receipt, an equation on a book cover, etc.
+- **Data augmentation & Hugging Face integration**: augmented variants of
+  every image, packed into WebDataset shards and pushed to the Hub.
 
 ## Setup
 
 ```bash
-pip install playwright tqdm nest_asyncio
+pip install -r requirements.txt
 playwright install chromium --with-deps
 ```
 
 We use:
-- `../shamela_1M_words.txt` - Our Arabic corpus (space-separated words)
-- `nature_images/` - a folder of photos (used for figures, galleries,
-  book-cover art)
+- a streamed Arabic text corpus from the Hub (`text_corpus_hf_id`)
+- `../nature_images/` - photos used for figures, galleries, book-cover art
+- `../fonts/` - the Arabic font collection
 
-Just run:
+Then set `user_name` and `repo_id` in `config.yaml` and run:
 
 ```bash
 python generate.py
 ```
 
-Output goes to `../dataset/images/sample_XXXXXXX.png` and
-`../dataset/annotations/sample_XXXXXXX.json` (same convention as before).
+## Output format
+
+Samples are packed into **WebDataset `.tar` shards**. Files sharing a
+basename are one sample, so `datasets` exposes the image as an `image`
+column and the annotation as a `json` column with no extra setup.
+
+```
+data/<user>_<NNN>.tar               originals   (PNG + JSON), ~1.2 GB
+data_aug/<user>_<NNN>_aug<K>.tar    variant K   (JPEG + JSON), ~1.1 GB
+```
+
+Each shard holds up to `chunk_limit` samples. `data/` and `data_aug/` are
+separate trees so you can train on clean originals alone.
+
+Reading it back:
+
+```python
+from datasets import load_dataset
+
+# one shard
+ds = load_dataset("webdataset",
+                  data_files="hf://datasets/<repo>/data/<user>_001.tar",
+                  split="train", streaming=True)
+
+# a range of shards
+ds = load_dataset("webdataset",
+                  data_files="hf://datasets/<repo>/data/<user>_{001..010}.tar",
+                  split="train", streaming=True)
+
+# everything, originals + augmented
+ds = load_dataset("webdataset", data_files={"train": [
+        "hf://datasets/<repo>/data/*.tar",
+        "hf://datasets/<repo>/data_aug/*.tar"]},
+      split="train", streaming=True)
+```
+
+To get loose PNG/JSON files back from a shard:
+
+```bash
+python unpack_shard.py path/to/<user>_001.tar --out ./unpacked
+```
+
+## How a run flows
+
+```
+work/current/            loose PNG/JSON pairs for the chunk being generated
+   | chunk hits chunk_limit -> augment, drop incomplete pairs, pack
+   v
+work/outbox/             .tar shards, laid out exactly like the repo
+   | outbox hits push_threshold_gb -> atomic rename
+   v
+work/outbox_pushing_N/   uploaded, VERIFIED against the Hub, then deleted
+```
+
+**Nothing local is deleted until the Hub has been re-read and confirmed to
+hold every shard at its exact byte size.** `upload_large_folder()` swallows
+per-file failures and returns normally, so a push that reports success is
+not evidence the data arrived - the verification step is what makes it
+safe to delete. A push that fails verification leaves its batch on disk;
+re-running picks it up and resumes from the `.cache/huggingface` records
+inside it.
+
+Kill the process at any point (Ctrl+C, crash, reboot) and just re-run.
 
 ### Config knobs
 
-| Where | What |
+Everything lives in `config.yaml`. The ones that matter most:
+
+| Key | What |
 |---|---|
-| `generate.py` → `NUM_SAMPLES` | how many samples to generate |
-| `generate.py` → `HYBRID_PROBABILITY` | chance (0-1) a sample gets a foreign snippet injected |
-| `core/assets.py` → `DEFAULT_JITTER_PCT` | +/- size jitter applied to every canvas (default 12%, i.e. inside the requested 10-15% range) |
-| `core/assets.py` → `DEFAULT_DPI` | mm → px conversion rate for real-world sizes |
+| `num_samples` | max **originals** per run. Total images = `num_samples × (1 + augmentations_per_image)` |
+| `chunk_limit` | originals per shard (9990 ≈ 1.2 GB) |
+| `push_threshold_gb` | how much to accumulate before pushing. **Needs ~2× this free on disk** |
+| `pipeline_upload` | keep generating during a push; set false to halve the disk requirement |
+| `augmentations_per_image` | variants per original, each a different transform |
+| `hybrid_probability` | chance (0-1) a sample gets a foreign snippet injected |
+| `default_jitter_pct` | +/- size jitter applied to every canvas |
+| `default_dpi` | mm → px conversion rate for real-world sizes |
 
 ## The 13 templates
 
@@ -101,21 +169,32 @@ even within one genre you get real size variety.
   the screenshot is taken. If you add a new flow-style template, keep
   this in mind - don't loosen that crop step.
 
-## JSON schema (unchanged, plus two additive fields)
+## JSON schema
 
 ```json
 {
-  "boxes": [ {"label": "...", "text": "...", "x": .., "y": .., "width": .., "height": .., "bottom": .., "right": .., "reading_index": ..}, ... ],
-  "canvas": {"width": .., "height": ..},
-  "template": "receipt",
-  "hybrid": "chart"
+  "dimensions": {"width": 0, "height": 0},
+  "blocks":  [{"type": "text", "text": "...", "top_left_x": 0, "top_left_y": 0,
+               "bottom_right_x": 0, "bottom_right_y": 0, "reading_index": 0}],
+  "images":  [{"top_left_x": 0, "top_left_y": 0,
+               "bottom_right_x": 0, "bottom_right_y": 0}],
+  "tables": [], "markdown": "...", "header": null, "footer": null,
+  "meta": {"template": "receipt", "hybrid": "chart",
+           "page_font": "...", "title_font": "...",
+           "language": "ar", "script": "arabic", "direction": "rtl",
+           "augmentation": null}
 }
 ```
 
-`boxes` is identical in shape to what the original scripts produced, so
-existing downstream code keeps working. `canvas`/`template`/`hybrid` are
-new, purely additive fields - useful for filtering/balancing the dataset
-later, safe to ignore if you don't need them.
+`meta.augmentation` is `null` on originals and
+`{"name": ..., "params": {...}}` on augmented variants, with every applied
+parameter recorded so you can filter or reproduce a transform exactly.
+Rotation is the only augmentation that changes dimensions, and it rewrites
+every bounding box to match.
+
+Annotations are written with compact separators and no indentation - they
+are ~20% of the dataset's bytes, and pretty-printing them was inflating
+each one by roughly half for no benefit.
 
 ## Adding a new template
 

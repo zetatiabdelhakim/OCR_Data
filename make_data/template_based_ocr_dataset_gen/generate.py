@@ -11,21 +11,25 @@ Each sample:
   2. with HYBRID_PROBABILITY chance, also picks a random foreign snippet
   3. renders it with Playwright and writes the PNG + JSON pair
 
-Progress is checkpointed in state.yaml after every small batch of samples,
-at every chunk boundary, and on shutdown. The script can be killed at any
-point (Ctrl+C, crash, reboot, upload failure) and simply re-run — it will
-reconcile against whatever is actually on disk / already pushed and resume
-from exactly there, with no manual cleanup.
+Pipeline shape
+--------------
+    work/current/          loose PNG/JSON pairs for the chunk being generated
+        |  chunk reaches chunk_limit -> augment, verify, pack
+        v
+    work/outbox/           .tar shards, laid out exactly like the repo
+        |  outbox reaches push_threshold_gb -> atomic rename
+        v
+    work/outbox_pushing_N/ uploaded, then VERIFIED against the Hub, then deleted
+
+Nothing is deleted locally until the Hub has been re-read and confirmed to
+hold every shard at its exact byte size. Progress is checkpointed in
+state.yaml after every small batch of samples, at every chunk boundary, and on
+shutdown. The script can be killed at any point (Ctrl+C, crash, reboot, upload
+failure) and simply re-run — it reconciles against whatever is actually on
+disk and resumes from exactly there, with no manual cleanup.
 """
 
 import os
-
-# Must be set before huggingface_hub is imported anywhere (it's read once at
-# module-import time by huggingface_hub.constants) — raises hf_xet's transfer
-# concurrency for faster pushes. setdefault() so an explicitly-set shell/env
-# value always wins.
-os.environ.setdefault("HF_XET_HIGH_PERFORMANCE", "1")
-
 import json
 import random
 import asyncio
@@ -35,7 +39,6 @@ import signal
 import time
 import yaml
 import shutil
-from concurrent.futures import ThreadPoolExecutor, as_completed
 from tqdm import tqdm
 
 
@@ -44,6 +47,8 @@ from core import assets
 from core.render_engine import build_html_page, render_and_extract
 from core.hybrid import maybe_pick_hybrid
 from core import augmentation
+from core import publisher
+from core import shard_writer
 from templates import TEMPLATES
 
 # ------------------------------------------------------------------
@@ -54,12 +59,13 @@ with open("config.yaml", "r", encoding="utf-8") as f:
 
 USER_NAME = config.get("user_name", "user")
 REPO_ID = config.get("repo_id", "org/repo")
+REPO_PRIVATE = bool(config.get("repo_private", True))
 DESTINATION = config.get("destination", "lcl")
 GLOBAL_LIMIT = config.get("global_limit", 50000)
 USER_LOCAL_LIMIT = config.get("user_local_limit", 20000)
 CHUNK_LIMIT = config.get("chunk_limit", 9000)
 NUM_SAMPLES = config.get("num_samples", 2000)
-UPLOAD_WORKERS=config.get("upload_workers", 2)
+UPLOAD_WORKERS = config.get("upload_workers", 8)
 
 WORKERS = config.get("workers", "auto")
 MAXIMUM_NUM_OF_WORKERS = config.get("maximum_num_of_workers", 10)
@@ -68,9 +74,11 @@ if WORKERS == "auto":
 
 HYBRID_PROBABILITY = config.get("hybrid_probability", 0.10)
 REFRESH_INTERVAL = config.get("refresh_interval", 1000)
-NUM_BOOKS_TO_FETCH = config.get("num_books_to_fetch", 7)
+CORPUS_POOL_SIZE = max(1, int(config.get("corpus_pool_size", 3000)))
+CORPUS_RANDOM_JUMP = max(0, int(config.get("corpus_random_jump", 20000)))
 TEXT_CORPUS_HF_ID = config.get("text_corpus_hf_id", "MathematicianNLPer/hamela_books_text_full_ok")
-LOCAL_OUTPUT_DIR = config.get("local_output_dir", "./dataset_local_output")
+LOCAL_OUTPUT_DIR = os.path.abspath(config.get("local_output_dir", "./dataset_local_output"))
+WORK_DIR = os.path.abspath(config.get("work_dir", "./work"))
 
 ENABLE_AUGMENTATION = config.get("enable_augmentation", True)
 AUGMENTATIONS_PER_IMAGE = config.get("augmentations_per_image", 3)
@@ -81,7 +89,16 @@ STATE_SAVE_INTERVAL = max(1, int(config.get("state_save_interval", 25)))
 PROGRESS_REPORT_BATCH_SIZE = max(1, int(config.get("progress_report_batch_size", 25)))
 UPLOAD_RETRY_ATTEMPTS = max(1, int(config.get("upload_retry_attempts", 4)))
 UPLOAD_RETRY_BACKOFF_SECONDS = float(config.get("upload_retry_backoff_seconds", 10))
-UPLOAD_PROGRESS_BATCHES = max(1, int(config.get("upload_progress_batches", 20)))
+
+PUSH_THRESHOLD_GB = float(config.get("push_threshold_gb", 50))
+MIN_FREE_DISK_GB = float(config.get("min_free_disk_gb", 0))
+
+# hf_xet's aggressive transfer mode. Must be set before huggingface_hub is
+# imported anywhere (constants read it at module-import time). Off by default:
+# see the config comment — it coincides with the first chunks that shipped
+# with their annotations present and their images missing.
+if bool(config.get("hf_xet_high_performance", False)):
+    os.environ.setdefault("HF_XET_HIGH_PERFORMANCE", "1")
 
 # Hub API quota (server side: 1000 requests / 5 min). The limiter stays
 # deliberately below it and blocks (never errors) when the budget is spent.
@@ -89,6 +106,14 @@ HF_RATE_LIMIT_REQUESTS = int(config.get("hf_rate_limit_requests", 900))
 HF_RATE_LIMIT_PERIOD = float(config.get("hf_rate_limit_period", 300))
 
 STATE_FILE = "state.yaml"
+
+CURRENT_DIR = os.path.join(WORK_DIR, "current")
+OUTBOX_DIR = os.path.join(WORK_DIR, publisher.OUTBOX_NAME)
+
+IMAGES_PATH = os.path.join(CURRENT_DIR, "images")
+ANNOTATIONS_PATH = os.path.join(CURRENT_DIR, "annotations")
+AUG_IMAGES_PATH = os.path.join(CURRENT_DIR, "images_aug")
+AUG_ANNOTATIONS_PATH = os.path.join(CURRENT_DIR, "annotations_aug")
 
 DEFAULT_STATE = {
     "current_folder_name": "",
@@ -121,6 +146,13 @@ def save_state(state):
             break
         except PermissionError:
             time.sleep(0.1)
+
+
+def free_disk_gb(path):
+    try:
+        return shutil.disk_usage(path).free / (1024 ** 3)
+    except OSError:
+        return float("inf")
 
 
 async def generate_one(browser, index, books_pool, template_name, images_path, annotations_path):
@@ -272,58 +304,33 @@ def generate_folder_name(index):
 
 
 # ------------------------------------------------------------------
-# Fast, scalable global-count tracking (Problem 1)
+# Global-count tracking
 #
-# A folder is only ever uploaded once it holds exactly CHUNK_LIMIT samples
-# (see the main loop below), so every folder except possibly the newest one
-# per contributor prefix is guaranteed to be full. Shallow-listing just the
-# folder names under data/ (O(#folders)) and only exact-counting the newest
-# folder per prefix is thousands of times cheaper than listing every file in
-# the dataset, and gets relatively cheaper as the dataset grows.
+# A chunk is one .tar under data/, packed only when it holds CHUNK_LIMIT
+# originals (the sole exception being a final partial chunk at the end of a
+# run). So a single shallow listing of data/ gives the team-wide total, which
+# is far cheaper than the per-folder recursion this needed when a chunk was
+# 20,000 loose files. A trailing partial chunk makes the figure a slight
+# over-estimate, which is fine for a soft, team-wide budget.
 # ------------------------------------------------------------------
-
-def _shallow_list_folder_names(api, path_in_repo):
-    from huggingface_hub import RepoFolder
-    tree = api.list_repo_tree(repo_id=REPO_ID, repo_type="dataset", path_in_repo=path_in_repo, recursive=False)
-    return [item.path.rsplit("/", 1)[-1] for item in tree if isinstance(item, RepoFolder)]
-
-
-def _shallow_count_json_files(api, path_in_repo):
-    from huggingface_hub import RepoFolder
-    tree = api.list_repo_tree(repo_id=REPO_ID, repo_type="dataset", path_in_repo=path_in_repo, recursive=False)
-    return sum(1 for item in tree if not isinstance(item, RepoFolder) and item.path.endswith(".json"))
-
 
 def compute_global_count(api):
     """Team-wide count of ORIGINAL samples. Returns None on failure (e.g. repo
     doesn't exist yet) so callers can fall back to the last cached value."""
+    from huggingface_hub import RepoFolder
     try:
-        folder_names = _shallow_list_folder_names(api, "data")
+        # list_repo_tree returns a generator, so the HTTP call (and a 404 for a
+        # data/ that does not exist yet) only happens on iteration — it has to
+        # be materialised inside the try or the error escapes.
+        tree = list(api.list_repo_tree(
+            repo_id=REPO_ID, repo_type="dataset", path_in_repo="data", recursive=False
+        ))
     except Exception as e:
-        tqdm.write(f"Global count check failed (repo may not exist yet): {e}")
+        tqdm.write(f"Global count check skipped (no data/ in the repo yet): {e}")
         return None
 
-    if not folder_names:
-        return 0
-
-    by_prefix = {}
-    for name in folder_names:
-        prefix, sep, _idx = name.rpartition("_")
-        if not sep:
-            prefix = name
-        by_prefix.setdefault(prefix, []).append(name)
-
-    total = 0
-    for _prefix, names in by_prefix.items():
-        names.sort()
-        total += (len(names) - 1) * CHUNK_LIMIT
-        newest = names[-1]
-        try:
-            total += _shallow_count_json_files(api, f"data/{newest}")
-        except Exception:
-            total += CHUNK_LIMIT  # optimistic fallback — don't let one folder abort the whole check
-
-    return total
+    shards = [i for i in tree if not isinstance(i, RepoFolder) and i.path.endswith(".tar")]
+    return len(shards) * CHUNK_LIMIT
 
 
 def refresh_global_count(state, api, state_lock, force=False):
@@ -355,297 +362,154 @@ def refresh_global_count(state, api, state_lock, force=False):
 
 
 # ------------------------------------------------------------------
-# Upload / move with retries (Problem 2, Problem 4B)
+# Packing a finished chunk into shards
 # ------------------------------------------------------------------
 
-def _retry(fn, label):
-    last_exc = None
-    for attempt in range(1, UPLOAD_RETRY_ATTEMPTS + 1):
-        try:
-            return fn()
-        except Exception as e:
-            last_exc = e
-            if attempt < UPLOAD_RETRY_ATTEMPTS:
-                wait = UPLOAD_RETRY_BACKOFF_SECONDS * (2 ** (attempt - 1))
-                tqdm.write(f"  [upload] {label} failed (attempt {attempt}/{UPLOAD_RETRY_ATTEMPTS}): {e} "
-                           f"— retrying in {wait:.0f}s...")
-                time.sleep(wait)
-    tqdm.write(f"  [upload] {label} failed after {UPLOAD_RETRY_ATTEMPTS} attempts: {last_exc}")
-    raise last_exc
+def _drop_orphans(images_dir, annotations_dir, label):
+    """Delete half-written pairs so they are regenerated rather than shipped.
 
-
-def _list_folder_files(local_path):
-    """Relative paths of every file under local_path (used to split an
-    upload into batches — this is what makes upload progress observable)."""
-    try:
-        return sorted(
-            os.path.relpath(os.path.join(root, f), local_path)
-            for root, _dirs, files in os.walk(local_path) for f in files
-        )
-    except OSError:
-        return []
-
-
-def _plan_batches(files):
-    """Split a file list into UPLOAD_PROGRESS_BATCHES roughly-equal chunks."""
-    if not files:
-        return []
-    batch_count = max(1, min(UPLOAD_PROGRESS_BATCHES, len(files)))
-    batch_size = max(1, -(-len(files) // batch_count))  # ceil division
-    return [files[i:i + batch_size] for i in range(0, len(files), batch_size)]
-
-
-def _stage_aug_sharded(aug_dir, base_dir, path_in_repo):
-    """Move one chunk's augmented files into sibling shard folders
-    <base_dir>/data_aug/<folder>_aug1..N/<images_aug|annotations_aug>/.
-
-    The Hub hard-rejects any repository directory holding more than 10,000
-    files. A chunk yields CHUNK_LIMIT originals x AUGMENTATIONS_PER_IMAGE
-    variants, so a flat data_aug/<folder>/ would hold ~30k files in one
-    directory. Variant files are named <stem>_01.._NN; variant slot i lands
-    in <folder>_aug<i>, keeping every directory at exactly CHUNK_LIMIT files
-    (< 10,000 given chunk_limit stays below it).
-
-    Returns the list of (staged_file, original_path) moves so a failed
-    upload can be rolled back and retried from the original layout on the
-    next run.
+    An image with no annotation is a crash between the two writes; an
+    annotation with no image is a failed image write. Either way the sample is
+    incomplete and must not reach a shard — the published dataset previously
+    accumulated thousands of the latter.
     """
-    moves = []
-    for sub in ("images_aug", "annotations_aug"):
-        src_sub = os.path.join(aug_dir, sub)
-        if not os.path.isdir(src_sub):
-            continue
-        for fname in os.listdir(src_sub):
-            stem, _ext = os.path.splitext(fname)
-            slot = stem.rsplit("_", 1)[-1]
-            if not slot.isdigit():
-                slot = "1"
-            shard_repo = f"{path_in_repo}_aug{int(slot)}"
-            shard_dir = os.path.join(base_dir, *shard_repo.split("/"), sub)
-            os.makedirs(shard_dir, exist_ok=True)
-            src = os.path.join(src_sub, fname)
-            dst = os.path.join(shard_dir, fname)
-            shutil.move(src, dst)
-            moves.append((dst, src))
-    return moves
+    ok, missing_images, missing_jsons = shard_writer.verify_pairs(images_dir, annotations_dir)
+    if ok:
+        return 0
 
-
-def _plan_job(kind, local_path, path_in_repo):
-    """Precompute how many progress ticks this job (folder) will produce, so
-    the caller can show a real X/Y over the whole chunk before starting."""
-    if DESTINATION == "hf":
-        batches = _plan_batches(_list_folder_files(local_path))
-        return (kind, local_path, path_in_repo, batches, max(1, len(batches)))
-    return (kind, local_path, path_in_repo, None, 1)
-
-
-def _push_one_folder(api, kind, local_path, path_in_repo, batches, on_batch_done=None):
-    """Upload (hf, retried, in several smaller batches so progress is
-    actually observable instead of one opaque multi-GB call) or move (lcl)
-    a single folder. Returns True/False."""
-    if DESTINATION == "hf":
-        if not batches:
-            # Nothing to upload (shouldn't normally happen — jobs are only
-            # queued for folders that hold generated files) — still tick
-            # once so the aggregate counter this folder was promised in
-            # _plan_job() (max(1, ...)) actually reaches its total.
-            if on_batch_done is not None:
-                on_batch_done()
-            return True
-
-        # upload_large_folder() has no path_in_repo argument: files land at the
-        # repo root relative to folder_path. To get repo paths named after the
-        # temp folder (minus the temp_generation_ prefix), the folder is staged
-        # as <staging_root>/<path_in_repo> and the staging root is uploaded
-        # with an allow_patterns filter. The .cache/huggingface resume metadata
-        # lives inside the folder, so it survives the move and retries resume
-        # correctly.
-        folder_base = os.path.basename(local_path)
-        if folder_base.startswith("temp_generation_"):
-            folder_base = folder_base[len("temp_generation_"):]
-        staging_root = os.path.abspath(f"./_hf_stage_{folder_base}")
-
-        aug_moves = []
-        if kind == "aug":
-            # Shard variants into data_aug/<folder>_aug1..N up front (see
-            # _stage_aug_sharded) — a flat data_aug/<folder>/ would exceed the
-            # Hub's 10,000-files-per-directory limit and get rejected.
-            aug_moves = _stage_aug_sharded(local_path, staging_root, path_in_repo)
-            allow_patterns = [f"{path_in_repo}_aug*/**"]
-
-            def _do():
-                _upload_staging()
-        else:
-            staged_path = os.path.join(staging_root, *path_in_repo.split("/"))
-            allow_patterns = [f"{path_in_repo}/**"]
-
-            def _do():
-                os.makedirs(os.path.dirname(staged_path), exist_ok=True)
-                if not os.path.isdir(staged_path):
-                    shutil.move(local_path, staged_path)
-                _upload_staging()
-
-        def _upload_staging():
-            print("############################## UPLOADING LARGE FOLDER ################################")
-            api.upload_large_folder(
-                repo_id=REPO_ID,
-                repo_type="dataset",
-                folder_path=staging_root,
-                allow_patterns=allow_patterns,
-                num_workers=8,          # ajuste selon ta bande passante / CPU
-                print_report=True,
-                print_report_every=60,
-            )
-            print("############################## UPLOADING DONE ################################")
-
+    removed = 0
+    for stem in missing_images:  # annotation without an image
         try:
-            _retry(_do, label=f"{kind} ({path_in_repo}) large-folder upload")
-        except Exception:
-            # Put the folder back under its temp_generation_ name so
-            # recover_orphaned_chunks() finds and re-pushes it on the next run.
-            if kind == "aug":
-                for dst, src in aug_moves:
-                    if os.path.exists(dst) and not os.path.exists(src):
-                        os.makedirs(os.path.dirname(src), exist_ok=True)
-                        shutil.move(dst, src)
-            elif os.path.isdir(staged_path) and not os.path.isdir(local_path):
-                shutil.move(staged_path, local_path)
-            shutil.rmtree(staging_root, ignore_errors=True)
-            return False
+            os.remove(os.path.join(annotations_dir, stem + ".json"))
+            removed += 1
+        except OSError:
+            pass
+    for stem in missing_jsons:  # image without an annotation
+        for ext in shard_writer.IMAGE_EXTS:
+            path = os.path.join(images_dir, stem + ext)
+            if os.path.exists(path):
+                try:
+                    os.remove(path)
+                    removed += 1
+                except OSError:
+                    pass
+                break
 
-        shutil.rmtree(staging_root, ignore_errors=True)
-        if kind == "aug":
-            # The shard staging moved everything out of the temp aug folder;
-            # drop the now-empty husk so it isn't mistaken for pending work.
-            shutil.rmtree(local_path, ignore_errors=True)
-
-        # upload_large_folder fait tout en un seul appel (plusieurs commits en
-        # interne), donc on ne peut plus ticker par batch — on tick une seule
-        # fois pour signaler que ce dossier est terminé.
-        if on_batch_done is not None:
-            on_batch_done()
-
-        return True
-    else:
-        try:
-            if kind == "aug":
-                _stage_aug_sharded(local_path, LOCAL_OUTPUT_DIR, path_in_repo)
-                shutil.rmtree(local_path, ignore_errors=True)
-            else:
-                dest_path = os.path.join(LOCAL_OUTPUT_DIR, *path_in_repo.split("/"))
-                os.makedirs(os.path.dirname(dest_path), exist_ok=True)
-                if os.path.exists(dest_path):
-                    shutil.rmtree(dest_path)
-                shutil.move(local_path, dest_path)
-            if on_batch_done is not None:
-                on_batch_done()
-            return True
-        except Exception as e:
-            tqdm.write(f"  [move] {kind} ({path_in_repo}) failed: {e}")
-            return False
+    tqdm.write(f"  [pack] {label}: dropped {removed} incomplete file(s) "
+               f"({len(missing_images)} annotation(s) without an image, "
+               f"{len(missing_jsons)} image(s) without an annotation)")
+    return removed
 
 
-class UploadProgress:
-    """Thread-safe progress snapshot for an in-flight upload_chunk() call.
+def pack_current_chunk(folder_name, pbar=None):
+    """Pack work/current into shards in work/outbox. Returns samples packed.
 
-    upload_chunk() may run in a background thread while the main thread is
-    busy showing generation progress on the shared bar — it can't safely
-    touch that bar directly. Instead it writes here, and whoever is actually
-    idle and waiting (wait_for_pending_upload(), below) polls this on a timer
-    so the bar keeps visibly ticking (batches pushed + elapsed time) instead
-    of sitting frozen on a single static message for however long the
-    transfer of one large folder takes.
+    Originals become data/<folder>.tar. Each augmentation slot becomes its own
+    data_aug/<folder>_aug<K>.tar, which keeps the variant grouping the previous
+    directory layout had and lets a consumer load, say, only the first variant.
     """
-    def __init__(self):
-        self._lock = threading.Lock()
-        self.folder_name = None
-        self.done = 0
-        self.total = 0
-        self.started_at = None
+    if pbar is not None:
+        pbar.set_postfix_str(f"packing {folder_name}", refresh=True)
 
-    def start(self, folder_name, total):
-        with self._lock:
-            self.folder_name = folder_name
-            self.done = 0
-            self.total = total
-            self.started_at = time.monotonic()
-
-    def tick(self):
-        with self._lock:
-            self.done += 1
-
-    def snapshot(self):
-        with self._lock:
-            return self.folder_name, self.done, self.total, self.started_at
-
-
-def upload_chunk(folder_name, folder_count, state, api, state_lock, stop_event, pbar=None, progress=None):
-    """Push one completed chunk's originals + augmented folders. This is the
-    slow, I/O-bound part — safe to run in a background thread (Problem 2A),
-    and pushes the 4 folders concurrently rather than sequentially (2B)."""
-    jobs = []
-    originals_dir = os.path.abspath(f"./temp_generation_{folder_name}")
-    if os.path.isdir(originals_dir):
-        jobs.append(("originals", originals_dir, f"data/{folder_name}"))
+    _drop_orphans(IMAGES_PATH, ANNOTATIONS_PATH, folder_name)
+    n_samples, size = shard_writer.pack_shard(
+        IMAGES_PATH, ANNOTATIONS_PATH, os.path.join(OUTBOX_DIR, "data", f"{folder_name}.tar")
+    )
+    if n_samples == 0:
+        return 0
+    total_bytes = size
+    tqdm.write(f"  [pack] data/{folder_name}.tar: {n_samples} sample(s), {size / 1024**3:.2f} GB")
 
     if ENABLE_AUGMENTATION:
-        aug_dir = os.path.abspath(f"./temp_generation_{folder_name}_aug")
-        if os.path.isdir(aug_dir):
-            jobs.append(("aug", aug_dir, f"data_aug/{folder_name}"))
+        _drop_orphans(AUG_IMAGES_PATH, AUG_ANNOTATIONS_PATH, f"{folder_name} (aug)")
+        # Variants are named <stem>_NN; split them back out by slot so each
+        # slot gets its own shard.
+        by_slot = _split_aug_by_slot()
+        for slot in sorted(by_slot):
+            slot_images, slot_annotations = by_slot[slot]
+            n_aug, aug_size = shard_writer.pack_shard(
+                slot_images, slot_annotations,
+                os.path.join(OUTBOX_DIR, "data_aug", f"{folder_name}_aug{slot}.tar"),
+            )
+            total_bytes += aug_size
+            tqdm.write(f"  [pack] data_aug/{folder_name}_aug{slot}.tar: "
+                       f"{n_aug} sample(s), {aug_size / 1024**3:.2f} GB")
+        shutil.rmtree(os.path.join(CURRENT_DIR, "_slots"), ignore_errors=True)
 
-    if not jobs:
-        return True
+    # The chunk is now inside immutable tars; the loose copies are redundant.
+    shutil.rmtree(IMAGES_PATH, ignore_errors=True)
+    shutil.rmtree(ANNOTATIONS_PATH, ignore_errors=True)
+    shutil.rmtree(AUG_IMAGES_PATH, ignore_errors=True)
+    shutil.rmtree(AUG_ANNOTATIONS_PATH, ignore_errors=True)
 
-    # Plan real, verifiable progress ticks up front: each folder's upload is
-    # split into several smaller batches (each a genuine, completed
-    # upload_folder() call), so the counter below actually advances
-    # continuously through a multi-GB folder instead of sitting on "0/4"
-    # for however long a single opaque call takes.
-    job_plans = [_plan_job(kind, path, repo_path) for kind, path, repo_path in jobs]
-    total_ticks = sum(n for *_, n in job_plans)
+    tqdm.write(f"Chunk '{folder_name}' packed: {n_samples} sample(s), "
+               f"{total_bytes / 1024**3:.2f} GB total.")
+    return n_samples
 
-    tqdm.write(f"Pushing chunk '{folder_name}' ({folder_count} samples, {len(jobs)} folder(s), "
-               f"{total_ticks} batch(es))...")
-    if pbar is not None:
-        pbar.set_postfix_str(f"uploading {folder_name}: 0/{total_ticks}", refresh=True)
-    if progress is not None:
-        progress.start(folder_name, total_ticks)
 
-    done_lock = threading.Lock()
-    ticks_done = 0
+def _split_aug_by_slot():
+    """Group augmented variants by slot number, as one directory pair per slot.
 
-    def _on_batch_done():
-        nonlocal ticks_done
-        with done_lock:
-            ticks_done += 1
-            n = ticks_done
-        if pbar is not None:
-            pbar.set_postfix_str(f"uploading {folder_name}: {n}/{total_ticks}", refresh=True)
-        if progress is not None:
-            progress.tick()
+    Variants are written flat as ``<stem>_NN.<ext>``, but pack_shard works on a
+    (images_dir, annotations_dir) pair, so each slot needs its own view of the
+    files. Hard links make that free — no second copy of several GB — and the
+    whole scratch tree is deleted immediately after packing.
 
-    results = {}
-    with ThreadPoolExecutor(max_workers=min(UPLOAD_WORKERS, len(job_plans))) as ex:
-        futures = {
-            ex.submit(_push_one_folder, api, kind, path, repo_path, batches, _on_batch_done): kind
-            for kind, path, repo_path, batches, _n in job_plans
-        }
-        for fut in as_completed(futures):
-            kind = futures[fut]
-            results[kind] = fut.result()
+    Returns ``{slot: (images_dir, annotations_dir)}``.
+    """
+    slots_root = os.path.join(CURRENT_DIR, "_slots")
+    shutil.rmtree(slots_root, ignore_errors=True)
 
-    if not results.get("originals", False):
-        tqdm.write(f"Chunk '{folder_name}': originals failed to push after retries — left on disk at "
-                   f"{originals_dir}, will be pushed automatically next run.")
+    by_slot = {}
+    for sub, source in (("images_aug", AUG_IMAGES_PATH), ("annotations_aug", AUG_ANNOTATIONS_PATH)):
+        if not os.path.isdir(source):
+            continue
+        for fname in os.listdir(source):
+            slot_text = os.path.splitext(fname)[0].rsplit("_", 1)[-1]
+            if not slot_text.isdigit():
+                continue
+            slot = int(slot_text)
+
+            by_slot.setdefault(slot, (
+                os.path.join(slots_root, f"aug{slot}", "images_aug"),
+                os.path.join(slots_root, f"aug{slot}", "annotations_aug"),
+            ))
+
+            slot_dir = os.path.join(slots_root, f"aug{slot}", sub)
+            os.makedirs(slot_dir, exist_ok=True)
+            src = os.path.join(source, fname)
+            dst = os.path.join(slot_dir, fname)
+            try:
+                os.link(src, dst)
+            except OSError:
+                shutil.copy2(src, dst)  # different volume, or no link support
+
+    return by_slot
+
+
+# ------------------------------------------------------------------
+# Pushing
+# ------------------------------------------------------------------
+
+def push_pending(api, pushing_dir, state, state_lock, stop_event, progress=None):
+    """Push one pending directory and, if it lands, refresh the global count."""
+    if DESTINATION == "hf":
+        ok = publisher.push_and_verify(
+            api, REPO_ID, pushing_dir,
+            num_workers=UPLOAD_WORKERS,
+            retry_attempts=UPLOAD_RETRY_ATTEMPTS,
+            retry_backoff_seconds=UPLOAD_RETRY_BACKOFF_SECONDS,
+            progress=progress,
+            log=tqdm.write,
+        )
+    else:
+        ok = publisher.move_to_local(pushing_dir, LOCAL_OUTPUT_DIR, log=tqdm.write)
+
+    if not ok:
+        # Leave the directory in place and stop taking on new work rather than
+        # generating more data we may also fail to ship.
         stop_event.set()
         return False
-
-    failed_augs = [k for k, ok in results.items() if k != "originals" and not ok]
-    if failed_augs:
-        tqdm.write(f"Chunk '{folder_name}': augmented folder(s) {failed_augs} failed after retries — "
-                   f"left on disk, will be pushed automatically next run.")
-
-    tqdm.write(f"Chunk '{folder_name}' push complete.")
 
     refresh_global_count(state, api, state_lock)
     if DESTINATION == "hf":
@@ -654,109 +518,73 @@ def upload_chunk(folder_name, folder_count, state, api, state_lock, stop_event, 
         if current_global >= GLOBAL_LIMIT:
             tqdm.write(f"Global limit reached! ({current_global} >= {GLOBAL_LIMIT}). Stopping new work.")
             stop_event.set()
-
     return True
 
 
-def rotate_to_next_folder(state, state_lock):
-    """Snapshot the just-completed folder and immediately assign the next
-    one, so the caller can start generating the next chunk right away
-    without waiting for this one's upload."""
+def rotate_to_next_folder(state, state_lock, packed_count):
+    """Record a packed chunk and move on to the next folder name."""
     with state_lock:
-        old_name = state["current_folder_name"]
-        old_count = state["current_folder_count"]
-
-        state["local_total_pushed"] = state.get("local_total_pushed", 0) + old_count
+        state["local_total_pushed"] = state.get("local_total_pushed", 0) + packed_count
         state["current_folder_index"] = state.get("current_folder_index", 1) + 1
         state["current_folder_name"] = generate_folder_name(state["current_folder_index"])
         state["current_folder_count"] = 0
         save_state(state)
 
-    return old_name, old_count
-
-
-def recover_orphaned_chunks(state, api, state_lock, stop_event, pbar=None):
-    """Find leftover temp_generation_* folders from a previous run that were
-    never successfully pushed (process killed mid-upload, or an upload
-    permanently failed after retries) and push them before starting new
-    work. Makes resume correct across restarts regardless of where a prior
-    run was interrupted."""
-    current = state.get("current_folder_name", "")
-    try:
-        entries = [d for d in os.listdir(".") if os.path.isdir(d) and d.startswith("temp_generation_")]
-    except OSError:
-        return
-
-    bases = set()
-    for d in entries:
-        name = d[len("temp_generation_"):]
-        if name.endswith("_aug"):
-            name = name[: -len("_aug")]
-        bases.add(name)
-    bases.discard(current)
-
-    for folder_name in sorted(bases):
-        images_dir = os.path.join(f"./temp_generation_{folder_name}", "images")
-        if not os.path.isdir(images_dir):
-            continue
-        count = len([f for f in os.listdir(images_dir) if f.lower().endswith((".png", ".jpg", ".jpeg"))])
-        if count == 0:
-            continue
-        tqdm.write(f"Found un-pushed leftover chunk '{folder_name}' ({count} samples) from a previous run "
-                   f"— pushing it first...")
-        upload_chunk(folder_name, count, state, api, state_lock, stop_event, pbar=pbar)
-        if stop_event.is_set():
-            break
-
 
 # ------------------------------------------------------------------
 # Augmentation catch-up (idempotent — safe to call every loop iteration)
 #
-# Ensures every original currently in a folder has all its augmented
-# variants written, regardless of whether they were produced just now or are
-# left over from an interrupted previous run. This is what makes resume
-# correct even if the process was killed mid-augmentation, where a naive
-# "only augment this round's new samples" approach would otherwise let a
-# folder reach CHUNK_LIMIT and get flushed with missing augmented data.
+# Ensures every original currently on disk has all its augmented variants
+# written, regardless of whether they were produced just now or are left over
+# from an interrupted previous run. This is what makes resume correct even if
+# the process was killed mid-augmentation, where a naive "only augment this
+# round's new samples" approach would let a chunk get packed with missing
+# augmented data.
 # ------------------------------------------------------------------
 
-def catch_up_augmentation(folder_name, images_path, annotations_path, pool, pbar=None):
+def catch_up_augmentation(folder_name, pool, pbar=None):
     if not ENABLE_AUGMENTATION:
         return
 
-    aug_dir = os.path.abspath(f"./temp_generation_{folder_name}_aug")
-    aug_images_path = os.path.join(aug_dir, "images_aug")
-    aug_annotations_path = os.path.join(aug_dir, "annotations_aug")
-    os.makedirs(aug_images_path, exist_ok=True)
-    os.makedirs(aug_annotations_path, exist_ok=True)
+    os.makedirs(AUG_IMAGES_PATH, exist_ok=True)
+    os.makedirs(AUG_ANNOTATIONS_PATH, exist_ok=True)
 
-    if not os.path.isdir(images_path):
+    if not os.path.isdir(IMAGES_PATH):
         return
 
-    originals = sorted(f for f in os.listdir(images_path) if f.endswith(".png"))
+    originals = sorted(f for f in os.listdir(IMAGES_PATH) if f.endswith(".png"))
+
+    # Two directory listings instead of a stat per (original, slot) pair. This
+    # runs once per refresh batch, so at chunk_limit 9990 x 3 variants the
+    # naive version was ~60k stat calls a pass — expensive on Windows.
+    existing_variants = {os.path.splitext(f)[0] for f in os.listdir(AUG_IMAGES_PATH)}
+    existing_annotations = {os.path.splitext(f)[0] for f in os.listdir(AUG_ANNOTATIONS_PATH)}
+    have_originals = {os.path.splitext(f)[0] for f in os.listdir(ANNOTATIONS_PATH)}
 
     pending = []
     for img_file in originals:
         stem = os.path.splitext(img_file)[0]
-        json_file = stem + ".json"
-        img_src = os.path.join(images_path, img_file)
-        json_src = os.path.join(annotations_path, json_file)
-        if not os.path.exists(json_src):
+        img_src = os.path.join(IMAGES_PATH, img_file)
+        json_src = os.path.join(ANNOTATIONS_PATH, stem + ".json")
+        if stem not in have_originals:
             continue
 
         # An augmented variant exists if its suffixed image (or JPEG twin,
         # when AUGMENTATION_OUTPUT_FORMAT is jpeg) is on disk. Variants of
         # sample_0000001 are sample_0000001_01.._NN, zero-padded for stable
-        # lexicographic ordering in the repo.
+        # lexicographic ordering in the shard.
         missing_slots = []
         already_used = set()
         for aug_i in range(1, AUGMENTATIONS_PER_IMAGE + 1):
-            base = os.path.join(aug_images_path, f"{stem}_{aug_i:02d}")
-            if not (os.path.exists(base + ".png") or os.path.exists(base + ".jpg")):
+            variant = f"{stem}_{aug_i:02d}"
+            # A slot counts as filled only when BOTH halves are on disk —
+            # a variant image without its annotation (or vice versa) would be
+            # dropped at pack time, so treat it as missing and redo it.
+            if variant not in existing_variants or variant not in existing_annotations:
                 missing_slots.append(aug_i)
                 continue
             try:
-                with open(os.path.join(aug_annotations_path, f"{stem}_{aug_i:02d}.json"), "r", encoding="utf-8") as jf:
+                with open(os.path.join(AUG_ANNOTATIONS_PATH, variant + ".json"), "r", encoding="utf-8") as jf:
                     name = json.load(jf).get("meta", {}).get("augmentation", {}).get("name")
                 if name:
                     already_used.add(name)
@@ -774,8 +602,8 @@ def catch_up_augmentation(folder_name, images_path, annotations_path, pool, pbar
 
         aug_names = augmentation.pick_n_distinct(len(missing_slots), weights=weights)
         for aug_i, aug_name in zip(missing_slots, aug_names):
-            aug_img_path = os.path.join(aug_images_path, f"{stem}_{aug_i:02d}.png")
-            aug_json_path = os.path.join(aug_annotations_path, f"{stem}_{aug_i:02d}.json")
+            aug_img_path = os.path.join(AUG_IMAGES_PATH, f"{stem}_{aug_i:02d}.png")
+            aug_json_path = os.path.join(AUG_ANNOTATIONS_PATH, f"{stem}_{aug_i:02d}.json")
             pending.append((img_src, json_src, aug_img_path, aug_json_path, aug_name))
 
     if not pending:
@@ -787,25 +615,58 @@ def catch_up_augmentation(folder_name, images_path, annotations_path, pool, pbar
 
     async_results = [pool.apply_async(augmentation.augment_sample, args=task) for task in pending]
     done = 0
+    failures = 0
     for ar in async_results:
         try:
-            success, err = ar.get(timeout=60)
-            if not success and err:
-                tqdm.write(f"  [aug] {err}")
+            success, err = ar.get(timeout=300)
+            if not success:
+                failures += 1
+                if err:
+                    tqdm.write(f"  [aug] {err}")
         except Exception as e:
+            failures += 1
             tqdm.write(f"  [aug] task failed: {e}")
         done += 1
-        if pbar is not None:
+        if pbar is not None and done % 25 == 0:
             pbar.set_postfix_str(f"augmenting {folder_name}: {done}/{len(pending)}", refresh=True)
+
+    if failures:
+        tqdm.write(f"  [aug] {failures}/{len(pending)} variant(s) failed — they will be "
+                   f"retried on the next pass, and any incomplete pair is dropped before packing.")
 
 
 def main():
     from dotenv import load_dotenv
-    from datasets import load_dataset
     from huggingface_hub import login, HfApi
     from core.hf_throttle import install as install_hf_throttle
     import queue as queue_module
     load_dotenv()
+
+    # The corpus is a nice-to-have: there is already a fallback text path for
+    # when the stream can't be reached. Importing `datasets` at the top of
+    # main() meant an unimportable pyarrow (a broken wheel, or a Windows
+    # Application Control policy blocking its DLLs) killed the whole run
+    # instead of degrading to that fallback.
+    try:
+        from datasets import load_dataset
+    except Exception as e:
+        load_dataset = None
+        print(f"WARNING: 'datasets' is unavailable ({e}).")
+        print("         Falling back to placeholder text — samples will NOT be "
+              "linguistically varied. Fix this before generating real data.")
+
+    os.makedirs(WORK_DIR, exist_ok=True)
+    os.makedirs(OUTBOX_DIR, exist_ok=True)
+
+    required_gb = MIN_FREE_DISK_GB
+    available_disk = free_disk_gb(WORK_DIR)
+    if required_gb > 0 and available_disk < required_gb:
+        print(f"Error: only {available_disk:.1f} GB free at {WORK_DIR}, but min_free_disk_gb "
+              f"is {required_gb:.0f}. With push_threshold_gb={PUSH_THRESHOLD_GB:.0f} and "
+              f"pipeline_upload={PIPELINE_UPLOAD}, you need roughly "
+              f"{2 * PUSH_THRESHOLD_GB + 5:.0f} GB. Lower push_threshold_gb, set "
+              f"pipeline_upload: false, or free up space.")
+        return
 
     hf_token = os.environ.get("HF_TOKEN")
     api = None
@@ -848,13 +709,26 @@ def main():
             save_state(state)
 
     # Created early (before recovery/dataset-init/env-checks) so every one of
-    # those startup phases — including pushing a leftover chunk from a killed
+    # those startup phases — including pushing a batch left over from a killed
     # prior run, which can itself take a long time — shows up on it too,
     # instead of the terminal going silent until real generation starts.
     pbar = tqdm(total=NUM_SAMPLES, desc="Overall progress", leave=True)
 
-    # Push anything left over from a previous run before doing anything else.
-    recover_orphaned_chunks(state, api, state_lock, stop_event, pbar=pbar)
+    if DESTINATION == "hf":
+        pbar.set_postfix_str("preparing repo", refresh=True)
+        try:
+            publisher.ensure_dataset_card(api, REPO_ID, CHUNK_LIMIT,
+                                          private=REPO_PRIVATE, log=tqdm.write)
+        except Exception as e:
+            tqdm.write(f"Could not prepare repo metadata (continuing): {e}")
+
+    # Finish anything a previous run left mid-push before starting new work.
+    for pending_dir in publisher.pending_pushes(WORK_DIR):
+        tqdm.write(f"Found un-pushed batch from a previous run: {os.path.basename(pending_dir)}")
+        pbar.set_postfix_str(f"resuming push of {os.path.basename(pending_dir)}", refresh=True)
+        push_pending(api, pending_dir, state, state_lock, stop_event)
+        if stop_event.is_set():
+            break
 
     if DESTINATION == "hf" and not stop_event.is_set():
         global_count = refresh_global_count(state, api, state_lock, force=True)
@@ -868,17 +742,54 @@ def main():
         pbar.close()
         return
 
-    pbar.set_postfix_str("initializing dataset stream", refresh=True)
-    try:
-        # Randomize the seed so every execution gets completely different books
-        ds = load_dataset(TEXT_CORPUS_HF_ID, split="train", streaming=True, token=hf_token)
-        ds = ds.shuffle(buffer_size=1000, seed=random.randint(0, 1000000))
-        dataset_iterator = iter(ds)
-    except Exception as e:
-        tqdm.write(f"Error loading dataset, using fallback text: {e}")
-        dataset_iterator = None
+    # ------------------------------------------------------------------
+    # Text corpus, fetched ONCE.
+    #
+    # .shuffle() was costing 4-5 minutes before the first sample rendered: on
+    # a 24-shard streaming dataset it opens and interleaves every shard, and
+    # yields nothing until that is done. Dropping it takes the open from
+    # ~250s to ~10-50s.
+    #
+    # Randomness is preserved by jumping to a random row instead — redrawn
+    # every run, so two machines never start in the same place. Once the
+    # stream is open, reading more rows is essentially free, so the whole
+    # pool is read here and the network is never touched for text again.
+    # ------------------------------------------------------------------
+    books_pool = []
+    if load_dataset is not None:
+        pbar.set_postfix_str("opening text corpus (one-time, ~10-60s)", refresh=True)
+        try:
+            ds = load_dataset(TEXT_CORPUS_HF_ID, split="train", streaming=True, token=hf_token)
+            # Small on purpose: a jump of 250k rows measured at ~10 minutes,
+            # 50k at ~11s. This is plenty to make runs diverge on a 4.6M-row
+            # corpus, and the pool read below scatters further.
+            jump = random.randint(0, CORPUS_RANDOM_JUMP)
+            if jump:
+                ds = ds.skip(jump)
+            iterator = iter(ds)
+            pbar.set_postfix_str(
+                f"reading {CORPUS_POOL_SIZE} corpus pages from row ~{jump:,}", refresh=True)
+            for _ in range(CORPUS_POOL_SIZE):
+                item = next(iterator)
+                books_pool.append(item.get("text", "") or "")
+            books_pool = [b for b in books_pool if b.strip()]
+        except StopIteration:
+            books_pool = [b for b in books_pool if b.strip()]
+        except Exception as e:
+            tqdm.write(f"Error loading text corpus, using fallback text: {e}")
+
+    if books_pool:
+        tqdm.write(f"Text corpus ready: {len(books_pool)} pages "
+                   f"({sum(len(b) for b in books_pool) / 1_000_000:.1f}M chars).")
+    else:
+        tqdm.write("WARNING: no text corpus — falling back to placeholder text. "
+                   "Samples will NOT be linguistically varied.")
+        books_pool = ["نص تجريبي افتراضي للاختبار فقط. هذا النص يظهر عند فشل الاتصال بقاعدة البيانات."]
 
     templates_list = list(TEMPLATES)
+    # Shut down explicitly at the end of main(): the Manager runs its own
+    # server process, and without a shutdown() it survives the parent and has
+    # to be killed by hand.
     manager = multiprocessing.Manager()
     queue = manager.Queue()
 
@@ -913,34 +824,61 @@ def main():
     # ANSI cursor control that not every terminal handles reliably, which
     # shows up as a new line being printed on every update instead of the
     # line refreshing. One bar's plain carriage-return update works
-    # everywhere. Current-phase detail (generating/augmenting/uploading)
+    # everywhere. Current-phase detail (generating/augmenting/packing/pushing)
     # goes in the postfix text on that same line instead of a second bar.
     pbar.set_postfix_str("starting", refresh=True)
 
-    pending_upload_thread = None
-    pending_upload_name = None
-    pending_upload_progress = None
+    pending_push_thread = None
+    pending_push_progress = None
     dirty_samples = 0
-    augmented_upto_cache = {}
+    # num_samples counts successes, so a batch where every sample fails makes
+    # no progress and would otherwise be retried forever. Bail out after a few
+    # completely fruitless batches instead of spinning.
+    empty_batches = 0
+    MAX_EMPTY_BATCHES = 3
 
-    def wait_for_pending_upload():
-        nonlocal pending_upload_thread, pending_upload_name, pending_upload_progress
-        if pending_upload_thread is not None:
-            # Poll instead of a single blocking join() so the bar keeps
-            # visibly ticking (folder count + elapsed seconds) for however
-            # long the transfer takes, instead of freezing on one message.
-            while pending_upload_thread.is_alive():
-                folder, done, total, started_at = pending_upload_progress.snapshot()
-                elapsed = f"{time.monotonic() - started_at:.0f}s" if started_at else "0s"
-                pbar.set_postfix_str(
-                    f"waiting for upload of {pending_upload_name} to finish "
-                    f"({done}/{total} folder(s) pushed, {elapsed} elapsed)",
-                    refresh=True,
-                )
-                pending_upload_thread.join(timeout=1.0)
-            pending_upload_thread = None
-            pending_upload_name = None
-            pending_upload_progress = None
+    def wait_for_pending_push():
+        nonlocal pending_push_thread, pending_push_progress
+        if pending_push_thread is None:
+            return
+        # Poll instead of a single blocking join() so the bar keeps visibly
+        # ticking for however long the transfer takes, instead of freezing on
+        # one message.
+        while pending_push_thread.is_alive():
+            label, stage, shards, total_bytes, started_at = pending_push_progress.snapshot()
+            elapsed = f"{time.monotonic() - started_at:.0f}s" if started_at else "0s"
+            pbar.set_postfix_str(
+                f"{stage} {label}: {shards} shard(s), "
+                f"{total_bytes / 1024**3:.1f} GB, {elapsed} elapsed",
+                refresh=True,
+            )
+            pending_push_thread.join(timeout=1.0)
+        pending_push_thread = None
+        pending_push_progress = None
+
+    def start_push(force=False):
+        """Swap the outbox out and push it, if it is big enough (or forced)."""
+        nonlocal pending_push_thread, pending_push_progress
+        if not force and not publisher.should_push(OUTBOX_DIR, PUSH_THRESHOLD_GB):
+            return
+        # At most one push in flight: two would double the disk footprint and
+        # blow past what min_free_disk_gb budgeted for.
+        wait_for_pending_push()
+        if stop_event.is_set():
+            return
+        pushing_dir = publisher.swap_outbox(WORK_DIR)
+        if pushing_dir is None:
+            return
+        if PIPELINE_UPLOAD and not force:
+            pending_push_progress = publisher.PushProgress()
+            pending_push_thread = threading.Thread(
+                target=push_pending,
+                args=(api, pushing_dir, state, state_lock, stop_event, pending_push_progress),
+                daemon=False,
+            )
+            pending_push_thread.start()
+        else:
+            push_pending(api, pushing_dir, state, state_lock, stop_event)
 
     with multiprocessing.Pool(processes=WORKERS, initializer=init_worker) as pool:
         while (
@@ -952,18 +890,14 @@ def main():
                 folder_name = state["current_folder_name"]
                 folder_count = state["current_folder_count"]
 
-            temp_dir = os.path.abspath(f"./temp_generation_{folder_name}")
-            images_path = os.path.join(temp_dir, "images")
-            annotations_path = os.path.join(temp_dir, "annotations")
-
-            os.makedirs(images_path, exist_ok=True)
-            os.makedirs(annotations_path, exist_ok=True)
+            os.makedirs(IMAGES_PATH, exist_ok=True)
+            os.makedirs(ANNOTATIONS_PATH, exist_ok=True)
 
             # Reconcile in-memory state with actual files on disk. Self-heals
             # after a crash — bounded by CHUNK_LIMIT, not total dataset size.
             actual_pairs = len([
-                f for f in os.listdir(images_path) if f.endswith('.png')
-                and os.path.exists(os.path.join(annotations_path, f.replace('.png', '.json')))
+                f for f in os.listdir(IMAGES_PATH) if f.endswith('.png')
+                and os.path.exists(os.path.join(ANNOTATIONS_PATH, f.replace('.png', '.json')))
             ])
             if actual_pairs != folder_count:
                 tqdm.write(f"State correction: state said {folder_count}, actual valid pairs = {actual_pairs}")
@@ -972,28 +906,11 @@ def main():
                     save_state(state)
                 folder_count = actual_pairs
 
-            # Catch up any outstanding augmentation for this folder before
-            # deciding whether it's ready to flush — cheap no-op once caught up.
-            if augmented_upto_cache.get(folder_name) != folder_count:
-                catch_up_augmentation(folder_name, images_path, annotations_path, pool, pbar)
-                augmented_upto_cache[folder_name] = folder_count
-
             if folder_count >= CHUNK_LIMIT:
-                old_name, old_count = rotate_to_next_folder(state, state_lock)
-                wait_for_pending_upload()  # at most one outstanding upload at a time
-                if stop_event.is_set():
-                    break
-                if PIPELINE_UPLOAD:
-                    pending_upload_name = old_name
-                    pending_upload_progress = UploadProgress()
-                    pending_upload_thread = threading.Thread(
-                        target=upload_chunk,
-                        args=(old_name, old_count, state, api, state_lock, stop_event, None, pending_upload_progress),
-                        daemon=False,
-                    )
-                    pending_upload_thread.start()
-                else:
-                    upload_chunk(old_name, old_count, state, api, state_lock, stop_event, pbar)
+                catch_up_augmentation(folder_name, pool, pbar)
+                packed = pack_current_chunk(folder_name, pbar)
+                rotate_to_next_folder(state, state_lock, packed)
+                start_push()
                 continue
 
             with state_lock:
@@ -1012,6 +929,11 @@ def main():
             if batch_size <= 0:
                 break
 
+            if free_disk_gb(WORK_DIR) < 5:
+                tqdm.write(f"Stopping: less than 5 GB free at {WORK_DIR}. "
+                           f"Free up space (or lower push_threshold_gb) and re-run.")
+                break
+
             tqdm.write(f"--- Folder: {folder_name} | Progress: {folder_count}/{CHUNK_LIMIT} ---")
 
             # folder_count only counts valid pairs; failed samples leave
@@ -1019,11 +941,11 @@ def main():
             # can point at indices that already exist (or below the current
             # max). Target the actual holes first, then extend past the max.
             existing_indices = set()
-            for f in os.listdir(images_path):
+            for f in os.listdir(IMAGES_PATH):
                 # Only a png WITH its json counts as occupying a slot — an
                 # orphan png (crash between the two writes) must be regenerated.
                 if f.startswith("sample_") and f.endswith(".png"):
-                    if not os.path.exists(os.path.join(annotations_path, f[:-4] + ".json")):
+                    if not os.path.exists(os.path.join(ANNOTATIONS_PATH, f[:-4] + ".json")):
                         continue
                     try:
                         existing_indices.add(int(f[len("sample_"):-len(".png")]))
@@ -1040,37 +962,38 @@ def main():
             tasks_list = []
             for machine_unique_index in batch_indices:
                 template_name = random.choice(templates_list)
-                tasks_list.append((machine_unique_index, template_name, images_path, annotations_path))
-
-            books_pool = []
-            if dataset_iterator:
-                try:
-                    for _ in range(NUM_BOOKS_TO_FETCH):
-                        item = next(dataset_iterator)
-                        text = item.get("text", list(item.values())[0])
-                        books_pool.append(text)
-                except StopIteration:
-                    pass
-
-            if not books_pool:
-                books_pool = ["نص تجريبي افتراضي للاختبار فقط. هذا النص يظهر عند فشل الاتصال بقاعدة البيانات."] * NUM_BOOKS_TO_FETCH
+                tasks_list.append((machine_unique_index, template_name, IMAGES_PATH, ANNOTATIONS_PATH))
 
             chunk_size = (len(tasks_list) + WORKERS - 1) // WORKERS
             task_chunks = [tasks_list[i:i + chunk_size] for i in range(0, len(tasks_list), chunk_size)]
+
+            # Each worker gets its own random draw from the pool rather than a
+            # full copy: the pool is pickled to every worker on every batch, so
+            # sending all of it N times would be the dominant IPC cost. Drawing
+            # independently also means two workers rarely render the same page.
+            per_worker = max(1, len(books_pool) // max(1, len(task_chunks)))
+            worker_pools = [
+                random.sample(books_pool, min(len(books_pool), per_worker))
+                for _ in task_chunks
+            ]
 
             gen_done = 0
             pbar.set_postfix_str(f"generating {folder_name}: {gen_done}/{len(tasks_list)}", refresh=True)
 
             results = []
-            for chunk in task_chunks:
-                results.append(pool.apply_async(worker_process, args=(chunk, queue, books_pool, PROGRESS_REPORT_BATCH_SIZE)))
+            for chunk, chunk_books in zip(task_chunks, worker_pools):
+                results.append(pool.apply_async(worker_process, args=(chunk, queue, chunk_books, PROGRESS_REPORT_BATCH_SIZE)))
 
             completed = 0
+            timed_out = False
+            succeeded_this_batch = 0
             while completed < len(tasks_list):
                 try:
                     payload = queue.get(timeout=120)
                 except queue_module.Empty:
-                    tqdm.write("WARNING: Worker timeout — some workers may have died.")
+                    tqdm.write("WARNING: Worker timeout — some workers may have died. "
+                               "Their samples will be regenerated on the next pass.")
+                    timed_out = True
                     break
 
                 for err_index, err_msg in payload.get("errors", []):
@@ -1082,47 +1005,87 @@ def main():
                     pbar.set_postfix_str(f"generating {folder_name}: {gen_done}/{len(tasks_list)}", refresh=False)
                     pbar.update(1)
                     if success:
+                        # Only successes count toward the run budget, so
+                        # num_samples really is "max originals this run".
+                        total_generated_this_run += 1
+                        succeeded_this_batch += 1
                         with state_lock:
                             state["current_folder_count"] += 1
                             dirty_samples += 1
                             if dirty_samples >= STATE_SAVE_INTERVAL:
                                 save_state(state)
                                 dirty_samples = 0
-                    total_generated_this_run += 1
 
+            # A bounded wait: an un-bounded r.get() here would hang the whole
+            # run forever on a worker that died without draining its tasks.
+            # Whatever a dead worker failed to produce is picked up by the
+            # on-disk reconciliation at the top of the next iteration.
             for r in results:
-                r.get()
+                try:
+                    r.get(timeout=5 if timed_out else 300)
+                except Exception as e:
+                    tqdm.write(f"  [gen] worker batch did not finish cleanly: {e}")
 
-            # Always persist at the end of a batch — batches are already
-            # infrequent (one per chunk in the common configuration).
+            # Always persist at the end of a batch.
             with state_lock:
                 save_state(state)
                 dirty_samples = 0
 
-        # Final flush of any remaining generated (and now fully augmented)
-        # samples in this run — still inside the pool's lifetime.
-        wait_for_pending_upload()
+            if succeeded_this_batch == 0:
+                empty_batches += 1
+                tqdm.write(f"WARNING: batch produced no usable samples "
+                           f"({empty_batches}/{MAX_EMPTY_BATCHES} before giving up).")
+                if empty_batches >= MAX_EMPTY_BATCHES:
+                    tqdm.write("Stopping: generation is failing for every sample. "
+                               "Check the [gen] errors above (browser, fonts, or corpus). "
+                               "Whatever was already packed is still safe.")
+                    break
+            else:
+                empty_batches = 0
 
+            # Augment as we go rather than saving 3x the work for the chunk
+            # boundary — this keeps the render/augment stall short and even.
+            catch_up_augmentation(folder_name, pool, pbar)
+
+        # Final flush of whatever this run produced, still inside the pool's
+        # lifetime so augmentation can run.
         with state_lock:
             remaining_count = state.get("current_folder_count", 0)
             final_folder = state.get("current_folder_name", "")
 
         if remaining_count > 0 and not stop_event.is_set():
-            temp_dir = os.path.abspath(f"./temp_generation_{final_folder}")
-            images_path = os.path.join(temp_dir, "images")
-            annotations_path = os.path.join(temp_dir, "annotations")
-            if os.path.isdir(images_path):
-                catch_up_augmentation(final_folder, images_path, annotations_path, pool, pbar)
-            tqdm.write("Finalizing and pushing remaining samples...")
-            old_name, old_count = rotate_to_next_folder(state, state_lock)
-            upload_chunk(old_name, old_count, state, api, state_lock, stop_event, pbar)
+            tqdm.write("Finalizing remaining samples...")
+            catch_up_augmentation(final_folder, pool, pbar)
+            packed = pack_current_chunk(final_folder, pbar)
+            if packed:
+                rotate_to_next_folder(state, state_lock, packed)
+
+    # Push everything still in the outbox, regardless of the byte threshold.
+    # Skipped on Ctrl+C: the user asked to stop, and shards left in the outbox
+    # are not lost — they join the next run's first push.
+    if not stop_event.is_set() and not shutdown_requested.is_set():
+        start_push(force=True)
+    wait_for_pending_push()
 
     pbar.close()
+    try:
+        manager.shutdown()
+    except Exception:
+        pass
+
+    leftover = publisher.pending_pushes(WORK_DIR)
+    if leftover:
+        print(f"\n{len(leftover)} batch(es) still pending on disk under {WORK_DIR} — "
+              f"nothing was deleted. Re-run to retry the push.")
+    waiting = publisher.outbox_bytes(OUTBOX_DIR)
+    if waiting:
+        print(f"{waiting / 1024**3:.2f} GB of packed shards are waiting in the outbox — "
+              f"they will go out with the next push.")
 
     if shutdown_requested.is_set():
         print("\nShutdown complete — state saved, safe to resume with the same command.")
     elif stop_event.is_set():
-        print("\nStopped (limit reached or a push failed permanently after retries) — state saved, safe to resume.")
+        print("\nStopped (limit reached or a push failed verification) — state saved, safe to resume.")
     else:
         print("\nRun complete — state saved.")
 

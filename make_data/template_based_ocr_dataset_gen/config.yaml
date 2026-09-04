@@ -7,10 +7,14 @@
 # 1. TEAM & IDENTITY SETTINGS
 # ------------------------------------------------------------------------------
 # Unique identifier for the developer running this script (used in folder naming)
-user_name: "Nihal"
+user_name: "Zetati"
 
 # Target Hugging Face dataset repository namespace (Format: "org_or_user/repo_name")
-repo_id: "OCR-Data/dataset"
+repo_id: "OCR-Data/ocr_data"
+
+# Visibility used only when the repo is CREATED. An existing repo keeps whatever
+# visibility it already has, so flipping this does not change a live dataset.
+repo_private: false
 
 # Target destination for generated outputs:
 #   - 'hf'  : Pushes completed batch folders to Hugging Face Hub, then deletes local temporary copies.
@@ -25,32 +29,51 @@ global_limit: 1000000
 
 # Absolute maximum number of images a SINGLE user is allowed to generate on their machine across all runs.
 # The script will completely halt the user once their local historical total reaches this number.
-user_local_limit: 250000
+user_local_limit: 500000
 
-# Maximum number of images allowed per batch subfolder before rotating to a new folder ID.
-# MUST stay below 10000: the Hub caps any repository directory at 10,000 files, and each
-# data_aug/<folder>_augN/ shard holds exactly chunk_limit files.
+# Number of ORIGINAL samples packed into one shard (.tar) before rotating to a new
+# folder ID. 9990 lands each shard at roughly 1.2 GB, which is the sweet spot for
+# the Hub. The old 10,000-files-per-directory limit no longer applies now that a
+# chunk is a single tar rather than a directory of loose files, so this is a
+# size-tuning knob, not a hard cap.
 chunk_limit: 9990
 
-# Number of samples to generate in one run (if not capped by global limit). 
-# Set to a high number to run indefinitely until global_limit is reached.
-num_samples: 20000
+# Maximum number of ORIGINAL samples to generate in one run (if not capped by the
+# global or per-user limits). Total images produced is
+#   num_samples * (1 + augmentations_per_image)
+# so at the defaults 200000 originals means 800000 images on the Hub.
+# Only successfully generated samples count toward this.
+num_samples: 500000
 
 # Number of concurrent workers (processes) used during generation.
 # Set to 'auto' to use minimum of CPU count or 10. Otherwise, provide an integer.
 workers: "auto"
 
 # Maximum number of workers to use when workers is set to 'auto'
-maximum_num_of_workers: 8
+maximum_num_of_workers: 10
 
 # Probability threshold (0.0 to 1.0) for injecting hybrid foreign snippets (charts, quotes, tables, etc.)
 hybrid_probability: 0.07
 
-# The refresh interval for batches of sample generation tasks.
+# The refresh interval for batches of sample generation tasks. Also the point at
+# which rendering pauses to let augmentation catch up, so a smaller value spreads
+# that stall out instead of rendering a whole chunk and then augmenting 3x as many
+# images in one block.
 refresh_interval: 5000
 
-# Number of books/texts to fetch from the Hugging Face dataset at a time.
-num_books_to_fetch: 10
+# How many corpus pages to pull into memory at startup. The corpus is 4.6M
+# book pages averaging ~2 KB, and once the stream is open reading more rows is
+# essentially free — so this is read ONCE and the network is never touched for
+# text again. 3000 pages is ~6 MB and gives every run a large, varied pool.
+corpus_pool_size: 3000
+
+# Each run jumps a random number of rows into the corpus before reading its
+# pool, so no two runs (or machines) start from the same text. Redrawn on
+# every run — this is what keeps generation random across the team.
+#
+# Keep it modest: jumping is not free on a remote stream (~11s for 50k rows,
+# but ~10 MINUTES for 250k). 20k is plenty to diverge on a 4.6M-row corpus.
+corpus_random_jump: 20000
 
 # ------------------------------------------------------------------------------
 # 3. ASSETS & CORPUS PATHS
@@ -66,6 +89,12 @@ fonts_dir: "../fonts"
 
 # Local base path used when destination is set to 'lcl'
 local_output_dir: "./dataset_local_output"
+
+# Scratch directory. Holds work/current/ (the chunk being generated, as loose
+# files), work/outbox/ (packed shards waiting for a push, already laid out
+# exactly like the repo) and work/outbox_pushing_NNN/ (a push in flight).
+# Nothing here is ever deleted before the Hub confirms it has the data.
+work_dir: "./work"
 
 # ------------------------------------------------------------------------------
 # 4. RENDERING & PLAYWRIGHT ENGINE SETTINGS
@@ -100,18 +129,40 @@ augmentation_jpeg_quality: 90
 # 6. PERFORMANCE, PIPELINING & RESILIENCE
 # ------------------------------------------------------------------------------
 # How many chunk flushes to wait between refreshing the team-wide global sample
-# count from Hugging Face. The check itself is now a cheap shallow folder-count
-# (not a full recursive file listing), but there's still no need to hit the
-# network every single flush for a soft, team-wide budget.
+# count from Hugging Face. The check is a single shallow listing of data/*.tar
+# now that a chunk is one file, but there's still no need to hit the network
+# every single flush for a soft, team-wide budget.
 global_count_check_interval: 5
 
-# Upload the just-completed chunk's originals + augmented folders in a background
-# thread while the NEXT chunk starts generating immediately, instead of blocking
-# the whole pipeline on the upload. At most one upload runs in the background at
-# a time. Set to false to fall back to the old strictly-sequential behavior
-# (useful on disk-constrained machines, since this keeps ~2 chunks of temp data
-# on disk at once instead of 1).
+# ------------------------------------------------------------------------------
+# 6b. PUSH BATCHING (how much data accumulates before a push)
+# ------------------------------------------------------------------------------
+# Completed chunks are packed into .tar shards and parked in ./work/outbox/.
+# Once the outbox reaches this many GB, the whole outbox is pushed in one go.
+# At ~4.5 GB per 9990-sample chunk, 50 GB is about 11 chunks per push.
+#
+# DISK: with pipeline_upload enabled you hold one batch waiting and one batch
+# uploading, so budget roughly (2 * push_threshold_gb) + 5 GB of free space.
+# Set pipeline_upload to false to halve that at the cost of stalling generation
+# during each push.
+push_threshold_gb: 50
+
+# Refuse to start if less free disk than this is available. Should be at least
+# (2 * push_threshold_gb) + 5.
+min_free_disk_gb: 110
+
+# Upload the accumulated outbox in a background thread while the NEXT chunks keep
+# generating, instead of blocking the pipeline on the upload. At most one push
+# runs at a time. Set to false on disk-constrained machines.
 pipeline_upload: true
+
+# hf_xet's high-performance transfer mode. Left OFF by default: it was enabled
+# unconditionally in an earlier revision and coincides exactly with the first
+# chunks that uploaded with their annotations intact but their images missing.
+# The verification gate will now catch such a failure rather than deleting the
+# only local copy, so this can be turned back on to test whether it is really
+# the culprit.
+hf_xet_high_performance: false
 
 # How many successfully-generated samples to batch up before writing state.yaml
 # to disk. State is always saved at chunk boundaries, on shutdown, and on error
@@ -123,8 +174,11 @@ state_save_interval: 25
 progress_report_batch_size: 25
 
 # Retry settings for Hugging Face uploads (handles transient network errors
-# without losing a multi-hour transfer or aborting the whole run).
-upload_workers: 2
+# without losing a multi-hour transfer or aborting the whole run). A retry
+# resumes from the .cache/huggingface records inside the pending push folder,
+# so already-transferred shards are not re-sent.
+# upload_workers is the thread count handed to upload_large_folder.
+upload_workers: 8
 upload_retry_attempts: 5
 upload_retry_backoff_seconds: 7
 
@@ -135,8 +189,3 @@ upload_retry_backoff_seconds: 7
 # through is retried after Retry-After instead of aborting.
 hf_rate_limit_requests: 900
 hf_rate_limit_period: 300
-
-# Each folder's push is split into this many smaller batches (each a real,
-# completed upload) so progress is actually visible instead of one silent
-# multi-GB call. Higher = smoother progress but more commits/HTTP overhead.
-upload_progress_batches: 20

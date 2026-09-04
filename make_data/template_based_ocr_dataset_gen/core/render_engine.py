@@ -585,5 +585,7 @@ async def render_and_extract(browser, html_content, width, height, output_image_
         meta["direction"] = "rtl"
     payload["meta"] = meta
 
+    # Compact separators, no indent: annotations are ~20% of the dataset's
+    # bytes and indent=4 inflates them by roughly a third for no gain.
     with open(output_json_path, 'w', encoding='utf-8') as f:
-        json.dump(payload, f, ensure_ascii=False, indent=4)
+        json.dump(payload, f, ensure_ascii=False, separators=(',', ':'))

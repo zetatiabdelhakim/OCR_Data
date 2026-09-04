@@ -24,8 +24,13 @@ dataset/
 dataset_local_output/
 nature_images/
 
-# ── Temp generation folders ───────────────────────────────────────────────────
+# ── Scratch: loose files being generated, packed shards awaiting a push ───────
+work/
+unpacked/
+
+# ── Temp generation folders (pre-shard layout, kept so old checkouts stay clean)
 temp_generation_*
+_hf_stage_*
 
 # ── Editors ───────────────────────────────────────────────────────────────────
 .vscode/

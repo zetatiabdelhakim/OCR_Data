@@ -594,13 +594,32 @@ def augment_sample(img_path, json_path, out_img_path, out_json_path, aug_name):
     )
 
     try:
+        # cv2.imwrite reports failure by RETURNING False — it does not raise.
+        # Ignoring that return is how the published dataset ended up with
+        # thousands of annotations whose image was never written: the JSON
+        # below still got created and the caller was told the pair succeeded.
+        # The image must exist and be non-empty before the annotation is
+        # written, so a half-written pair can never reach a shard.
         if AUGMENTATION_OUTPUT_FORMAT == "jpeg":
             out_img_path = os.path.splitext(out_img_path)[0] + ".jpg"
-            cv2.imwrite(out_img_path, augmented_img, [cv2.IMWRITE_JPEG_QUALITY, AUGMENTATION_JPEG_QUALITY])
+            wrote = cv2.imwrite(out_img_path, augmented_img,
+                                [cv2.IMWRITE_JPEG_QUALITY, AUGMENTATION_JPEG_QUALITY])
         else:
-            cv2.imwrite(out_img_path, augmented_img)
+            wrote = cv2.imwrite(out_img_path, augmented_img)
+
+        if not wrote:
+            return False, f"cv2.imwrite returned False for {out_img_path}"
+        if not os.path.exists(out_img_path) or os.path.getsize(out_img_path) == 0:
+            try:
+                os.remove(out_img_path)
+            except OSError:
+                pass
+            return False, f"'{aug_name}' wrote an empty image at {out_img_path}"
+
+        # Compact separators, no indent: annotations are ~20% of the dataset's
+        # bytes and indent=4 inflates them by roughly a third for no gain.
         with open(out_json_path, "w", encoding="utf-8") as f:
-            json.dump(new_annotation, f, ensure_ascii=False, indent=4)
+            json.dump(new_annotation, f, ensure_ascii=False, separators=(",", ":"))
     except Exception as e:
         return False, f"failed writing output for {out_img_path}: {e}"
 
